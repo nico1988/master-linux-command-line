@@ -1,0 +1,251 @@
+1
+00:00:00,200 --> 00:00:04,080
+Hello you beautiful people and welcome to this video where we're going to be talking about how you can
+
+2
+00:00:04,080 --> 00:00:06,330
+download the source code for packages.
+
+3
+00:00:06,390 --> 00:00:11,150
+So at the minute all we've been able to do is download and install precompiled binary packages but we're
+
+4
+00:00:11,160 --> 00:00:15,570
+interested in how we might be able to go about getting source code so we can exercise the freedoms that
+
+5
+00:00:15,570 --> 00:00:16,900
+free software gives us.
+
+6
+00:00:16,900 --> 00:00:22,370
+And it's actually a very easy process in order to do so or what to do is as an administrator.
+
+7
+00:00:22,370 --> 00:00:29,740
+So with the sudo command open up in natto the slash at c slash apt slash sourses doc list file.
+
+8
+00:00:29,790 --> 00:00:34,950
+Ok now in here when you enter your password you're going to be opening up a configuration file the package
+
+9
+00:00:34,950 --> 00:00:39,750
+manager uses to determine which repositories and which package files it downloads.
+
+10
+00:00:39,810 --> 00:00:42,370
+In other words which source is it downloads.
+
+11
+00:00:42,460 --> 00:00:48,240
+OK so what we're going to do in here is you'll notice that there are lines that start with Debb source
+
+12
+00:00:48,240 --> 00:00:52,770
+or Debb dash S or C and those lines have a hash in front of them.
+
+13
+00:00:52,770 --> 00:00:57,630
+What I want to do is I want to just delete all those hashes on those appropriate lines.
+
+14
+00:00:57,840 --> 00:01:03,060
+And what this will do is it will activate the ability for your package manager to be able to download
+
+15
+00:01:03,150 --> 00:01:08,490
+source code which is deactivated by default just to save efficiency basically.
+
+16
+00:01:08,500 --> 00:01:09,930
+So we're going to Haven't done that.
+
+17
+00:01:09,920 --> 00:01:15,360
+I'm going to press control in 0 to save the file or press X control of X to exit.
+
+18
+00:01:15,360 --> 00:01:20,820
+So then what we've done is we've said to the package manager hey why don't you go ahead and download
+
+19
+00:01:21,100 --> 00:01:24,540
+the package lists that contain source code.
+
+20
+00:01:24,690 --> 00:01:29,260
+Ok but to be able to get those things in the cache we've got to update our cash.
+
+21
+00:01:29,280 --> 00:01:36,390
+OK so all I was do sudo apt get updates and it's going to go ahead and start downloading all the source
+
+22
+00:01:36,960 --> 00:01:37,740
+packages here.
+
+23
+00:01:37,760 --> 00:01:43,010
+So you can see that this is is installing all the source packages into cache.
+
+24
+00:01:43,020 --> 00:01:48,630
+This is a very useful thing because now we can we're almost ready to be able to download source code.
+
+25
+00:01:48,700 --> 00:01:55,210
+OK so before we can download source code we need to install one more package which is so to get installed
+
+26
+00:01:55,210 --> 00:01:59,540
+is going to be the package dash dev package the DP K.G. dash dev.
+
+27
+00:01:59,790 --> 00:02:06,860
+You install that you type yes when it asks you and there we are we've managed to now it's going to go
+
+28
+00:02:06,860 --> 00:02:11,760
+ahead and download and unpack that package and now we can go ahead and install source code.
+
+29
+00:02:11,770 --> 00:02:12,830
+It's literally that simple.
+
+30
+00:02:12,860 --> 00:02:17,500
+OK so we've been messing around with the excise package I made over to the desktop and we've been messing
+
+31
+00:02:17,500 --> 00:02:18,660
+around with the excise package.
+
+32
+00:02:18,680 --> 00:02:22,590
+How can we get the source code for the for the excise package or the exercise program.
+
+33
+00:02:22,790 --> 00:02:25,160
+Well it's contained in the x 11 apps package.
+
+34
+00:02:25,160 --> 00:02:31,820
+So if we do sudo apt get and we used to do install right we do install X 11 apps right.
+
+35
+00:02:31,920 --> 00:02:34,140
+That's how you'd get the pre-compiled binary version.
+
+36
+00:02:34,150 --> 00:02:38,600
+But if you want to get the source code it sort of instead of install just put source and you'll see
+
+37
+00:02:38,720 --> 00:02:42,280
+that it goes ahead and downloads these packages to contain source code.
+
+38
+00:02:42,530 --> 00:02:46,200
+Now we can actually go ahead and enter these using CD.
+
+39
+00:02:46,250 --> 00:02:52,520
+So if we CD into the package and take a look around we can see there's is a folder here for X eyes and
+
+40
+00:02:52,520 --> 00:03:00,470
+if we take a look in X eyes a CD X eyes will be seen here that we've got the source code for the exercise
+
+41
+00:03:00,470 --> 00:03:05,610
+program so you can see we've got our config file that we can can use to configure our new C-compiler.
+
+42
+00:03:05,750 --> 00:03:11,840
+But what we're interested in right now is this excise Dotsie which is actually the source code for the
+
+43
+00:03:11,840 --> 00:03:16,400
+exercise program and we can take a look in here and read the source code for the exercise program.
+
+44
+00:03:16,400 --> 00:03:17,960
+It's literally that simple.
+
+45
+00:03:17,990 --> 00:03:18,400
+OK.
+
+46
+00:03:18,470 --> 00:03:23,380
+All we had to do was go ahead and change our slash ETSI slash ops slash sources.
+
+47
+00:03:23,490 --> 00:03:30,380
+Dart last fall and in here just uncomment all the lines that had that had a hash in front of them for
+
+48
+00:03:30,380 --> 00:03:31,450
+Debb source.
+
+49
+00:03:31,460 --> 00:03:36,060
+And those are the repositories that allow you to actually download source code to view and comment all
+
+50
+00:03:36,060 --> 00:03:42,110
+of those and then update your cache using sudo apt get updates then what you've downloaded all the new
+
+51
+00:03:42,110 --> 00:03:50,930
+less We've got to do is install the is install the DP K.G. dev package and then you get to go in there
+
+52
+00:03:50,960 --> 00:03:57,140
+from now on if you ever want to download any source code and all you've got to do is sudo apt get source
+
+53
+00:03:57,380 --> 00:03:58,420
+and then a package name.
+
+54
+00:03:58,570 --> 00:03:59,100
+OK.
+
+55
+00:03:59,180 --> 00:04:02,680
+And that is all you need to know in order to be able to download and play around with source code.
+
+56
+00:04:02,690 --> 00:04:07,730
+But one thing that you should bear in mind is that if you go into the source code packages and you actually
+
+57
+00:04:07,730 --> 00:04:11,930
+compile them you'll lose the ability to install them that way you'll lose the ability to keep them updated
+
+58
+00:04:11,930 --> 00:04:13,070
+with your package manager.
+
+59
+00:04:13,190 --> 00:04:19,580
+So therefore if you have the choice to install a package through the package manager or install it from
+
+60
+00:04:19,580 --> 00:04:23,300
+source make sure that you install it through the package manager and through the repositories rather
+
+61
+00:04:23,300 --> 00:04:24,530
+than compiling it yourself.
+
+62
+00:04:24,620 --> 00:04:30,440
+But this is a really cool way to be able to go ahead and take a look at how code works and maybe incorporate
+
+63
+00:04:30,440 --> 00:04:31,670
+it in your projects.

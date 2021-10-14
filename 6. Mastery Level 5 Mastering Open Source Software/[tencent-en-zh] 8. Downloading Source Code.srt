@@ -1,0 +1,315 @@
+1
+00:00:00,200 --> 00:00:04,080
+大家好，美丽的人们，欢迎收看这段视频，我们将在这里讨论如何
+Hello you beautiful people and welcome to this video where we're going to be talking about how you can
+
+2
+00:00:04,080 --> 00:00:06,330
+下载软件包的源代码。
+download the source code for packages.
+
+3
+00:00:06,390 --> 00:00:11,150
+所以目前我们所能做的就是下载并安装预编译的二进制软件包，但是我们
+So at the minute all we've been able to do is download and install precompiled binary packages but we're
+
+4
+00:00:11,160 --> 00:00:15,570
+感兴趣的是我们如何才能获得源代码，这样我们就可以自由地行使
+interested in how we might be able to go about getting source code so we can exercise the freedoms that
+
+5
+00:00:15,570 --> 00:00:16,900
+自由软件给了我们。
+free software gives us.
+
+6
+00:00:16,900 --> 00:00:22,370
+要做到这一点实际上是一个非常简单的过程，或者作为管理员要做的事情。
+And it's actually a very easy process in order to do so or what to do is as an administrator.
+
+7
+00:00:22,370 --> 00:00:29,740
+因此，使用sudo命令在natto中打开劈开，在c劈开apt劈开上打开文档列表文件。
+So with the sudo command open up in natto the slash at c slash apt slash sourses doc list file.
+
+8
+00:00:29,790 --> 00:00:34,950
+好的，现在在这里，当您输入密码时，您将打开一个配置文件，即包
+Ok now in here when you enter your password you're going to be opening up a configuration file the package
+
+9
+00:00:34,950 --> 00:00:39,750
+管理器使用来确定它下载的存储库和程序包文件。
+manager uses to determine which repositories and which package files it downloads.
+
+10
+00:00:39,810 --> 00:00:42,370
+换句话说，它下载的是哪个源。
+In other words which source is it downloads.
+
+11
+00:00:42,460 --> 00:00:48,240
+好的，我们在这里要做的是，您会注意到有几行以Debb source开头
+OK so what we're going to do in here is you'll notice that there are lines that start with Debb source
+
+12
+00:00:48,240 --> 00:00:52,770
+或者Debb破折号S或C，这些行前面有一个散列。
+or Debb dash S or C and those lines have a hash in front of them.
+
+13
+00:00:52,770 --> 00:00:57,630
+我想要做的是删除适当行上的所有散列。
+What I want to do is I want to just delete all those hashes on those appropriate lines.
+
+14
+00:00:57,840 --> 00:01:03,060
+这将激活您的包管理器能够下载的功能
+And what this will do is it will activate the ability for your package manager to be able to download
+
+15
+00:01:03,150 --> 00:01:08,490
+源代码，默认情况下处于停用状态，基本上只是为了节省效率。
+source code which is deactivated by default just to save efficiency basically.
+
+16
+00:01:08,500 --> 00:01:09,930
+所以我们要去看“还没做过的事”。
+So we're going to Haven't done that.
+
+17
+00:01:09,920 --> 00:01:15,360
+我要按0中的Ctrl保存文件，或者按X的X Ctrl退出。
+I'm going to press control in 0 to save the file or press X control of X to exit.
+
+18
+00:01:15,360 --> 00:01:20,820
+那么我们所做的就是我们已经对软件包管理器说，嘿，为什么不继续下载
+So then what we've done is we've said to the package manager hey why don't you go ahead and download
+
+19
+00:01:21,100 --> 00:01:24,540
+软件包列出了包含源代码的列表。
+the package lists that contain source code.
+
+20
+00:01:24,690 --> 00:01:29,260
+好的，但是为了能够把这些东西放进缓存，我们必须更新我们的现金。
+Ok but to be able to get those things in the cache we've got to update our cash.
+
+21
+00:01:29,280 --> 00:01:36,390
+好的，我所做的就是sudo apt获取更新，它将继续并开始下载所有源代码
+OK so all I was do sudo apt get updates and it's going to go ahead and start downloading all the source
+
+22
+00:01:36,960 --> 00:01:37,740
+包裹在这里。
+packages here.
+
+23
+00:01:37,760 --> 00:01:43,010
+因此您可以看到，这是在将所有源包安装到缓存中。
+So you can see that this is is installing all the source packages into cache.
+
+24
+00:01:43,020 --> 00:01:48,630
+这是一件非常有用的事情，因为现在我们可以了，我们几乎已经准备好能够下载源代码了。
+This is a very useful thing because now we can we're almost ready to be able to download source code.
+
+25
+00:01:48,700 --> 00:01:55,210
+好的，在我们可以下载源代码之前，我们需要再安装一个软件包，以便安装
+OK so before we can download source code we need to install one more package which is so to get installed
+
+26
+00:01:55,210 --> 00:01:59,540
+将是DASH DEV包DP K.G.DASH DEV。
+is going to be the package dash dev package the DP K.G. dash dev.
+
+27
+00:01:59,790 --> 00:02:06,860
+你安装了，当它问你的时候，你输入YES，然后我们就到了，我们已经成功了，现在就要开始了
+You install that you type yes when it asks you and there we are we've managed to now it's going to go
+
+28
+00:02:06,860 --> 00:02:11,760
+然后下载并解压缩该软件包，现在我们可以继续安装源代码了。
+ahead and download and unpack that package and now we can go ahead and install source code.
+
+29
+00:02:11,770 --> 00:02:12,830
+从字面上看就是这么简单。
+It's literally that simple.
+
+30
+00:02:12,860 --> 00:02:17,500
+好的，我们一直在摆弄我转移到桌面上的消费税包裹，我们一直在摆弄
+OK so we've been messing around with the excise package I made over to the desktop and we've been messing
+
+31
+00:02:17,500 --> 00:02:18,660
+带着消费税包裹到处跑。
+around with the excise package.
+
+32
+00:02:18,680 --> 00:02:22,590
+我们怎样才能弄到锻炼套餐或锻炼计划的源代码呢？
+How can we get the source code for the for the excise package or the exercise program.
+
+33
+00:02:22,790 --> 00:02:25,160
+它包含在x11应用程序包中。
+Well it's contained in the x 11 apps package.
+
+34
+00:02:25,160 --> 00:02:31,820
+因此，如果我们使用sudo apt get，并且我们过去是正确安装的，那么我们确实可以正确安装X11应用程序。
+So if we do sudo apt get and we used to do install right we do install X 11 apps right.
+
+35
+00:02:31,920 --> 00:02:34,140
+这就是获取预编译二进制版本的方法。
+That's how you'd get the pre-compiled binary version.
+
+36
+00:02:34,150 --> 00:02:38,600
+但是如果你想要得到源代码，你就会发现，它有点像是，而不是安装，只要把源代码放进去就行了
+But if you want to get the source code it sort of instead of install just put source and you'll see
+
+37
+00:02:38,720 --> 00:02:42,280
+它会继续下载这些包以包含源代码。
+that it goes ahead and downloads these packages to contain source code.
+
+38
+00:02:42,530 --> 00:02:46,200
+现在，我们实际上可以继续使用CD输入这些内容。
+Now we can actually go ahead and enter these using CD.
+
+39
+00:02:46,250 --> 00:02:52,520
+因此，如果我们将CD放入包中并四处看看，我们可以看到这里有一个文件夹，用于存放X Eyes和
+So if we CD into the package and take a look around we can see there's is a folder here for X eyes and
+
+40
+00:02:52,520 --> 00:03:00,470
+如果我们看一下X Eyes，这里会看到CD X Eyes，我们已经获得了该练习的源代码
+if we take a look in X eyes a CD X eyes will be seen here that we've got the source code for the exercise
+
+41
+00:03:00,470 --> 00:03:05,610
+程序，所以您可以看到我们已经有了配置文件，可以用来配置新的C编译器。
+program so you can see we've got our config file that we can can use to configure our new C-compiler.
+
+42
+00:03:05,750 --> 00:03:11,840
+但是我们现在感兴趣的是这个附加部分Dotsie，它实际上是
+But what we're interested in right now is this excise Dotsie which is actually the source code for the
+
+43
+00:03:11,840 --> 00:03:16,400
+练习程序，我们可以在这里看一看，并阅读练习程序的源代码。
+exercise program and we can take a look in here and read the source code for the exercise program.
+
+44
+00:03:16,400 --> 00:03:17,960
+从字面上看就是这么简单。
+It's literally that simple.
+
+45
+00:03:17,990 --> 00:03:18,400
+好的。
+OK.
+
+46
+00:03:18,470 --> 00:03:23,380
+我们所要做的就是继续更改我们的劈开ETSI劈开运营劈开来源。
+All we had to do was go ahead and change our slash ETSI slash ops slash sources.
+
+47
+00:03:23,490 --> 00:03:30,380
+Dart去年秋天在这里只需取消注释前面有散列的所有行
+Dart last fall and in here just uncomment all the lines that had that had a hash in front of them for
+
+48
+00:03:30,380 --> 00:03:31,450
+黛布线人。
+Debb source.
+
+49
+00:03:31,460 --> 00:03:36,060
+这些都是允许您实际下载源代码以查看和评论所有内容的存储库
+And those are the repositories that allow you to actually download source code to view and comment all
+
+50
+00:03:36,060 --> 00:03:42,110
+然后使用sudo apt更新您的缓存，然后获取更新，然后下载所有新的
+of those and then update your cache using sudo apt get updates then what you've downloaded all the new
+
+51
+00:03:42,110 --> 00:03:50,930
+LESS我们要做的就是安装IS，安装DP K.G.dev包，然后您就可以进入那里了
+less We've got to do is install the is install the DP K.G. dev package and then you get to go in there
+
+52
+00:03:50,960 --> 00:03:57,140
+从现在开始，如果你想下载任何源代码，你所要做的就是sudo apt get source
+from now on if you ever want to download any source code and all you've got to do is sudo apt get source
+
+53
+00:03:57,380 --> 00:03:58,420
+然后是包名。
+and then a package name.
+
+54
+00:03:58,570 --> 00:03:59,100
+好的。
+OK.
+
+55
+00:03:59,180 --> 00:04:02,680
+这就是您需要知道的全部内容，以便能够下载和玩弄源代码。
+And that is all you need to know in order to be able to download and play around with source code.
+
+56
+00:04:02,690 --> 00:04:07,730
+但是您应该记住的一件事是，如果您进入源代码包中，并且您实际上
+But one thing that you should bear in mind is that if you go into the source code packages and you actually
+
+57
+00:04:07,730 --> 00:04:11,930
+编译它们您将失去安装它们的能力，这样您将失去保持更新的能力
+compile them you'll lose the ability to install them that way you'll lose the ability to keep them updated
+
+58
+00:04:11,930 --> 00:04:13,070
+和你的套餐经理在一起。
+with your package manager.
+
+59
+00:04:13,190 --> 00:04:19,580
+因此，如果您可以选择通过软件包管理器安装软件包，也可以选择从
+So therefore if you have the choice to install a package through the package manager or install it from
+
+60
+00:04:19,580 --> 00:04:23,300
+源代码请确保您通过包管理器和存储库(而不是通过存储库)安装它
+source make sure that you install it through the package manager and through the repositories rather
+
+61
+00:04:23,300 --> 00:04:24,530
+而不是自己编辑。
+than compiling it yourself.
+
+62
+00:04:24,620 --> 00:04:30,440
+但是，这是一种非常酷的方式，可以继续查看代码是如何工作的，也许还可以合并
+But this is a really cool way to be able to go ahead and take a look at how code works and maybe incorporate
+
+63
+00:04:30,440 --> 00:04:31,670
+把它放在你的项目里。
+it in your projects.
+

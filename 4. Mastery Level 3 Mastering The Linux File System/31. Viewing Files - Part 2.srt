@@ -1,0 +1,643 @@
+1
+00:00:01,010 --> 00:00:02,340
+Hello you beautiful people.
+
+2
+00:00:02,340 --> 00:00:03,410
+And welcome back.
+
+3
+00:00:03,420 --> 00:00:09,780
+So in the last video you learned how to open files and read their contents by using several command
+
+4
+00:00:09,780 --> 00:00:15,030
+line commands So for example the cat command will open up a file and allow us to read its content.
+
+5
+00:00:15,030 --> 00:00:19,150
+So if we use for a 1.60 we can see that it contains the word Hello.
+
+6
+00:00:19,350 --> 00:00:25,130
+And when we open files like this what happens is everything is shown all at once.
+
+7
+00:00:25,200 --> 00:00:31,170
+So no matter how long the file is it will all be spat out right into our terminal and that can be kind
+
+8
+00:00:31,170 --> 00:00:31,740
+of pain.
+
+9
+00:00:31,740 --> 00:00:37,020
+So for example if we try to open up a really long file such as the file that I showed you in the last
+
+10
+00:00:37,020 --> 00:00:41,160
+video which has something to do with printers and stuff on your system.
+
+11
+00:00:41,490 --> 00:00:45,980
+So if I typed that in so cops browsed dot com.
+
+12
+00:00:46,100 --> 00:00:46,680
+OK.
+
+13
+00:00:46,770 --> 00:00:48,060
+And I try to print.
+
+14
+00:00:48,090 --> 00:00:51,870
+You can see that we've just shot a whole bunch of information.
+
+15
+00:00:51,990 --> 00:00:56,090
+And if we want to read it we've got to scroll up and down like this right in our command line.
+
+16
+00:00:56,130 --> 00:00:59,380
+It's a bit of a pain right like this not really a nice way.
+
+17
+00:00:59,520 --> 00:01:02,010
+You want to be able to deal with the long files.
+
+18
+00:01:02,190 --> 00:01:09,030
+So to help with this there are programs on Linux called pager programs that allow you to page through
+
+19
+00:01:09,270 --> 00:01:11,540
+large output to make it easier to read.
+
+20
+00:01:11,660 --> 00:01:15,920
+And the one that we'll be covering in this video is called the last command.
+
+21
+00:01:16,140 --> 00:01:23,550
+So if we just do instead of cat if we do less and then give it the father we want to read you can see
+
+22
+00:01:23,550 --> 00:01:29,760
+now what's happening is we are we sorted first of all at the top of the file and by just using our keyboard
+
+23
+00:01:29,760 --> 00:01:37,110
+keys or arrow keys up and down we can scroll through this content and read it and bicycling up and down
+
+24
+00:01:37,260 --> 00:01:43,190
+a lot easier than if we had it just on the command line and if I press Q You can see it on the bottom
+
+25
+00:01:43,200 --> 00:01:47,010
+Hey we got these two colons if I type q it closes.
+
+26
+00:01:47,010 --> 00:01:47,810
+And they were back on.
+
+27
+00:01:47,810 --> 00:01:50,320
+Come on my with no mess that we have to scroll through.
+
+28
+00:01:50,420 --> 00:01:52,520
+So that's a nice way of doing it.
+
+29
+00:01:52,560 --> 00:01:58,140
+And actually you can pipe to the last command so instead of opening it directly about I could use that
+
+30
+00:01:58,440 --> 00:02:02,490
+to open the file and then pipe into the last command and it will give us the same result.
+
+31
+00:02:02,490 --> 00:02:08,790
+Now this ability to pipe to the last command is incredibly useful because it doesn't just have to be
+
+32
+00:02:08,790 --> 00:02:12,800
+files that you are that you are dealing with.
+
+33
+00:02:12,810 --> 00:02:19,380
+For example if I said OK let's come into our into our home directory and let's find all the text files.
+
+34
+00:02:19,380 --> 00:02:24,010
+Ok so we're going to find by name everything that ends in Dot TXI.
+
+35
+00:02:24,200 --> 00:02:24,940
+OK.
+
+36
+00:02:24,990 --> 00:02:29,130
+And we see that we get a whole bunch of information here and this could be quite long.
+
+37
+00:02:29,400 --> 00:02:31,420
+It could it could be quite a lot of stuff.
+
+38
+00:02:31,530 --> 00:02:37,440
+But what we're going to do is we're going to instead of that actually the end of just attacks is to
+
+39
+00:02:37,440 --> 00:02:41,290
+try and find everything OK it's printed out a whole bunch of stuff that we've got to scroll through.
+
+40
+00:02:41,520 --> 00:02:43,990
+Instead of that we can just pipe it into less.
+
+41
+00:02:44,070 --> 00:02:46,850
+And now we can scroll through line by line.
+
+42
+00:02:46,860 --> 00:02:52,560
+So this last comment is a really useful one when working with the command line because it saves you
+
+43
+00:02:52,560 --> 00:02:55,290
+from having a lot of mess filling up your screen.
+
+44
+00:02:55,340 --> 00:02:55,590
+OK.
+
+45
+00:02:55,620 --> 00:02:58,950
+And piping to it is is really really really useful.
+
+46
+00:02:58,950 --> 00:03:03,350
+The cases that we can to rescue and all the mess has gone now.
+
+47
+00:03:03,360 --> 00:03:08,550
+Sometimes you don't want the whole hour or the whole file and you only want to operate on a piece of
+
+48
+00:03:08,550 --> 00:03:08,760
+it.
+
+49
+00:03:08,820 --> 00:03:14,130
+OK so perhaps you want to take a little piece from a file and pass it through your pipeline instead
+
+50
+00:03:14,130 --> 00:03:18,810
+of having the whole file on your screen and you just want to peek at a little piece before getting on
+
+51
+00:03:18,810 --> 00:03:19,710
+with your work.
+
+52
+00:03:19,710 --> 00:03:25,440
+So for this purpose we can use the head and the tail commands that the head command will allow you to
+
+53
+00:03:25,440 --> 00:03:31,140
+see a little piece of the file starting at the top or the head of the file and the tail command will
+
+54
+00:03:31,410 --> 00:03:32,140
+do the opposite.
+
+55
+00:03:32,150 --> 00:03:36,710
+It would like to see a little piece of the file starting at the bottom or at the tail of the file.
+
+56
+00:03:36,810 --> 00:03:37,380
+OK.
+
+57
+00:03:37,380 --> 00:03:42,900
+So for example let's concatenate together the following files again I'm going to get to our desktop
+
+58
+00:03:43,770 --> 00:03:50,490
+and clear the screen and I'm going to cut together files oops clips being kept together files one to
+
+59
+00:03:50,490 --> 00:03:51,140
+five.
+
+60
+00:03:51,240 --> 00:03:51,600
+OK.
+
+61
+00:03:51,610 --> 00:03:52,520
+That takes two.
+
+62
+00:03:52,780 --> 00:03:55,150
+And we see that we get five rows out.
+
+63
+00:03:55,200 --> 00:03:55,810
+OK.
+
+64
+00:03:55,830 --> 00:04:02,620
+Now if I just pipe this into the head command we just get the same output.
+
+65
+00:04:02,630 --> 00:04:03,630
+So why is that.
+
+66
+00:04:03,770 --> 00:04:09,530
+Well that's because the head command were by default so we the first 10 lines of a file and since there
+
+67
+00:04:09,530 --> 00:04:15,110
+are only five we'll see it all but we can edit this behavior by specifying how many lines that we want
+
+68
+00:04:15,110 --> 00:04:15,700
+to see.
+
+69
+00:04:15,860 --> 00:04:21,990
+So if I just press the barricades to get what we want I can give the the hate speech that had come out
+
+70
+00:04:21,990 --> 00:04:28,670
+of the option and specify how many rows we want to see so we're just going to see the first two lines
+
+71
+00:04:28,910 --> 00:04:33,770
+and you'll see that we go we just see Hello in there the first two lines of the output.
+
+72
+00:04:33,770 --> 00:04:36,770
+Now the head command is very useful in pipeline's again.
+
+73
+00:04:36,770 --> 00:04:41,230
+Let's say we were doing the find command and we're back in our home directory and we run the find command
+
+74
+00:04:41,240 --> 00:04:46,250
+we get a whole bunch of output and let's say you just wanted the first five of these options you can
+
+75
+00:04:46,250 --> 00:04:50,700
+just pipe it to the head command give it an option and say Hey I just want five lines.
+
+76
+00:04:50,780 --> 00:04:51,820
+Let me press enter.
+
+77
+00:04:51,820 --> 00:04:56,270
+And you see there we go we get the first five results and then you can take those and pipe them down
+
+78
+00:04:56,720 --> 00:04:59,860
+down the then the pipeline for whatever reason you wanted.
+
+79
+00:04:59,860 --> 00:05:04,220
+So maybe I wanted to you know then Paso's into the task command and reverse the order that they're in
+
+80
+00:05:04,220 --> 00:05:05,330
+or whatever it might be.
+
+81
+00:05:05,360 --> 00:05:05,800
+OK.
+
+82
+00:05:05,930 --> 00:05:10,460
+So that's a really useful application of the head command that works the same for the tail command but
+
+83
+00:05:10,460 --> 00:05:13,930
+the tail command will show you from the bottom rather than from the top.
+
+84
+00:05:14,230 --> 00:05:18,470
+But I want to show you that actually you don't need to just pipe to the head come on you can operate
+
+85
+00:05:18,470 --> 00:05:20,900
+directly on files.
+
+86
+00:05:20,900 --> 00:05:30,350
+So we had that really long fall didn't we we had it was slush at C cups cups browsed dot com.
+
+87
+00:05:30,380 --> 00:05:32,520
+And you see we got this really really long file.
+
+88
+00:05:32,540 --> 00:05:37,460
+Now if we can actually see how long that is by piping that to the word count command and giving it the
+
+89
+00:05:37,640 --> 00:05:42,890
+option like you've seen a bit earlier in the course you can see we've got 673 lines that's quite a few
+
+90
+00:05:42,890 --> 00:05:43,560
+lines.
+
+91
+00:05:43,700 --> 00:05:47,250
+But what if we just want the first 20 lines with a set of piping it.
+
+92
+00:05:47,450 --> 00:05:48,290
+We don't have to do that.
+
+93
+00:05:48,290 --> 00:05:54,210
+What we can do is we can just say head get the option of the first 20 and then give it the foreigners
+
+94
+00:05:54,230 --> 00:06:00,110
+operate directly on and we will get just the first 20 lines and we can confirm that we do indeed have
+
+95
+00:06:00,110 --> 00:06:05,750
+20 lines by pressing the up arrow key here and piping right to the word count command with the option
+
+96
+00:06:05,750 --> 00:06:07,650
+to count the amount of lines and we'll see that up.
+
+97
+00:06:07,700 --> 00:06:11,010
+We do now only have 20 lines of output.
+
+98
+00:06:11,150 --> 00:06:12,180
+So that's perfect.
+
+99
+00:06:12,200 --> 00:06:17,060
+Now the tail command works basically the same way as the head command except it starts from the bottom
+
+100
+00:06:17,330 --> 00:06:18,340
+of a file.
+
+101
+00:06:18,350 --> 00:06:29,450
+So if we do our casting again we get back to the desktop and we Cateau file 4:59 docked here.
+
+102
+00:06:30,080 --> 00:06:32,640
+And we'll see that yet we get hello you beautiful people.
+
+103
+00:06:32,700 --> 00:06:37,070
+And if we pipe it into the tail commander and say we just want the bottom two lines then we'll just
+
+104
+00:06:37,070 --> 00:06:38,060
+get beautiful people.
+
+105
+00:06:38,060 --> 00:06:39,810
+So the bottom two lines.
+
+106
+00:06:39,830 --> 00:06:40,300
+OK.
+
+107
+00:06:40,490 --> 00:06:45,980
+And if we again we're operating on the really really long file so instead of having cash instead of
+
+108
+00:06:45,980 --> 00:06:50,820
+having head let's have tail get rid of this word count at the end.
+
+109
+00:06:51,050 --> 00:06:56,200
+Now if we if we press ENTER you can see that we just get the bottom 20 lines and we can again pipe that
+
+110
+00:06:56,210 --> 00:06:59,740
+into word count and see that yes we do indeed have 20 lines.
+
+111
+00:06:59,810 --> 00:07:08,450
+So head and tail to cut either the top of a file or the bottom of a file respectively to control exactly
+
+112
+00:07:08,450 --> 00:07:09,060
+what you want.
+
+113
+00:07:09,050 --> 00:07:13,860
+And you can use these together to kind of filter out specific lines.
+
+114
+00:07:13,880 --> 00:07:14,480
+OK.
+
+115
+00:07:14,480 --> 00:07:23,010
+So let's say we did let's go back to our head example and let's say that we cut out the first 20 lines.
+
+116
+00:07:23,010 --> 00:07:23,250
+OK.
+
+117
+00:07:23,270 --> 00:07:25,970
+These are the first 20 lines of that big long file.
+
+118
+00:07:26,270 --> 00:07:35,290
+And then if I pipe that into the tail command and Gates said OK give me just one line from the bottom.
+
+119
+00:07:35,390 --> 00:07:40,010
+OK then this blank here is going to be the 20th line of the file.
+
+120
+00:07:40,010 --> 00:07:43,810
+Maybe it's not that exciting let's say if I get say three OK.
+
+121
+00:07:43,980 --> 00:07:49,230
+That's going to give me lines 18 19 and 20 of the file.
+
+122
+00:07:49,250 --> 00:07:53,990
+And you can use the commands in this way to cut out specific lines.
+
+123
+00:07:53,990 --> 00:07:57,600
+OK so that's that's quite a useful combination right there.
+
+124
+00:07:57,620 --> 00:08:03,540
+But really where these things come into coming to their real use is when you are building your pipeline.
+
+125
+00:08:03,530 --> 00:08:07,820
+So the example I've been using and leaning on is the find command because it gives us a lot of output
+
+126
+00:08:08,120 --> 00:08:15,140
+but you know if you wanted to just get a specific set of lines say I wanted the last three lines I could
+
+127
+00:08:15,140 --> 00:08:19,610
+just pipe those into the tail command and just say OK just give me the last three lines and then continue
+
+128
+00:08:19,610 --> 00:08:28,940
+to pipe that down or even export it lets say into export the text on our on our desktop and then you
+
+129
+00:08:28,940 --> 00:08:34,790
+can save up and keep just the lines that you want rather than having to have a whole bunch of output
+
+130
+00:08:34,880 --> 00:08:35,730
+that you don't need.
+
+131
+00:08:35,750 --> 00:08:37,070
+OK so it's like a filter.
+
+132
+00:08:37,070 --> 00:08:42,620
+The head and Turkomans are best seen as filters that allow your pipelines to get you just what you want
+
+133
+00:08:42,620 --> 00:08:43,470
+to work with.
+
+134
+00:08:45,420 --> 00:08:48,150
+So we've got quite a lot of stuff in the past few videos right.
+
+135
+00:08:48,170 --> 00:08:53,270
+But fortunately none of it is particularly complicated but it's all very useful.
+
+136
+00:08:53,270 --> 00:08:59,330
+So as a quick recap you've seen how to join files together or concatenate files using the cat command
+
+137
+00:08:59,570 --> 00:09:04,880
+which is a great tool for not only joining forces but also allowing you to take a false content and
+
+138
+00:09:04,880 --> 00:09:08,900
+putting it right into standard output so that it can be used in your pipelines.
+
+139
+00:09:08,990 --> 00:09:11,480
+You've also seen how you can reverse files vertically.
+
+140
+00:09:11,570 --> 00:09:18,020
+So using the TAC command and you've also seen how to reverse files horizontally across their lines using
+
+141
+00:09:18,140 --> 00:09:22,770
+the ref command and using both of those together is a real good way to jumble up your files.
+
+142
+00:09:22,820 --> 00:09:27,970
+Now some files that you want to read are very very long and just viewing their contents with the Capcom
+
+143
+00:09:27,980 --> 00:09:32,240
+and for example is a bit of a mess and it gives you a lot of stuff you've got to scroll through.
+
+144
+00:09:32,240 --> 00:09:37,730
+So you saw how to use the less command to page through massive amounts of output or large files from
+
+145
+00:09:37,730 --> 00:09:43,790
+the command line without needing to make unnecessary files just to view the output and piping from commands
+
+146
+00:09:43,790 --> 00:09:48,440
+to the last command is a great way to keep your terminal tidy and make your workflow more effective
+
+147
+00:09:48,440 --> 00:09:51,990
+and just make dealing with large amounts of data a lot easier to handle.
+
+148
+00:09:52,040 --> 00:09:57,610
+And finally you saw how to use the head and tail commands to cut out just what you want from a file.
+
+149
+00:09:57,710 --> 00:10:01,130
+And you know if you would like then pass it straight on down your pipeline.
+
+150
+00:10:01,130 --> 00:10:07,340
+So these are really really useful tools that will come in handy quite often when working with file content.
+
+151
+00:10:07,340 --> 00:10:12,890
+So now you not only know how to manipulate files as a whole so copy a whole file move a whole file delete
+
+152
+00:10:12,890 --> 00:10:16,700
+the whole file but now you know how to operate a bit more on their contents.
+
+153
+00:10:16,850 --> 00:10:21,290
+But there's so much more that you can do with file contents and simply just looking at them or sticking
+
+154
+00:10:21,290 --> 00:10:21,990
+them together.
+
+155
+00:10:22,100 --> 00:10:27,920
+So in the next video you're going to learn how you can sort a command files contents either alphabetically
+
+156
+00:10:28,100 --> 00:10:31,550
+or numerically and being able to sort content's is super useful.
+
+157
+00:10:31,550 --> 00:10:35,900
+It makes finding what you're looking for easier and works perfectly alongside commands such as the head
+
+158
+00:10:35,900 --> 00:10:41,090
+and tail commands that we've seen in this video to make really powerful combinations forgetting just
+
+159
+00:10:41,090 --> 00:10:42,380
+what you want out of a file.
+
+160
+00:10:42,380 --> 00:10:46,390
+So this is going to be epic sorting files is just a really really useful ability.
+
+161
+00:10:46,400 --> 00:10:48,950
+So for all that goodness I'll see you in the next video.

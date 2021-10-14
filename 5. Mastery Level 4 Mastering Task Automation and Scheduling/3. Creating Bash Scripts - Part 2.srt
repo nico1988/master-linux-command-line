@@ -1,0 +1,859 @@
+1
+00:00:00,120 --> 00:00:01,760
+Hello you beautiful people.
+
+2
+00:00:01,770 --> 00:00:07,170
+Welcome back to the second part of our discussion about making your very own bash scripts and in this
+
+3
+00:00:07,170 --> 00:00:11,880
+video we're going to make another bus stripped and that's going to allow us to back up all the folders
+
+4
+00:00:11,940 --> 00:00:16,830
+in our home directory and we're also going to show you how you can set up your script so they can be
+
+5
+00:00:16,830 --> 00:00:19,130
+run in a more convenient way.
+
+6
+00:00:19,200 --> 00:00:21,090
+So let's make another bash script.
+
+7
+00:00:21,090 --> 00:00:22,520
+We're going to call it back up.
+
+8
+00:00:22,590 --> 00:00:28,110
+Sh on our desktops we're going to type nano then back up our DOT sh.
+
+9
+00:00:28,320 --> 00:00:33,750
+I mean there we're going to add as the very first line as Shabangu line and our shebang line tells the
+
+10
+00:00:33,750 --> 00:00:40,580
+shell to not read this code not read this far as a text file but instead to interpret it as a bash script.
+
+11
+00:00:40,590 --> 00:00:45,130
+So the way we do that is we type a hash then a banks or hash and then an exclamation mark.
+
+12
+00:00:45,360 --> 00:00:50,790
+And then the path to the interpreter that we want this file to be interpreted with and that is going
+
+13
+00:00:50,790 --> 00:00:57,240
+to be a bash shell which is located at slash Ben slash Bash and we can check that if I close out of
+
+14
+00:00:57,240 --> 00:00:58,090
+that.
+
+15
+00:00:58,650 --> 00:01:04,830
+And you go back to our command line by typing which and then bash We can see slushed been slash Bash
+
+16
+00:01:04,980 --> 00:01:07,950
+is where the bash interpreter is located.
+
+17
+00:01:07,950 --> 00:01:14,910
+So with that if we open back up our backup script we can now underneath here start writing commands
+
+18
+00:01:14,910 --> 00:01:16,910
+that will make up our script.
+
+19
+00:01:16,920 --> 00:01:25,930
+Now we want the script to him to compress and archive all of the folders inside our home directory or
+
+20
+00:01:25,930 --> 00:01:31,290
+at least the downloads documents desktop pictures and videos folders because they're the best.
+
+21
+00:01:31,290 --> 00:01:33,570
+So let's just let's see how we might do that.
+
+22
+00:01:33,650 --> 00:01:37,770
+I mean if you remember from what we learnt at the end of the last section to make this happen we'll
+
+23
+00:01:37,770 --> 00:01:41,710
+need to use the tar command and we need to give it a few options.
+
+24
+00:01:41,880 --> 00:01:45,280
+So for example we'll give it the C option to create a new god archive.
+
+25
+00:01:45,370 --> 00:01:51,870
+The the option to make it speak to us and the option to tell it that the next argument is going to be
+
+26
+00:01:52,290 --> 00:01:59,160
+our it's going to be our all kuffar and we're going to call it back up dot tar dot Zed.
+
+27
+00:01:59,530 --> 00:02:00,020
+OK.
+
+28
+00:02:00,150 --> 00:02:03,080
+But to make it compressed using Jesus.
+
+29
+00:02:03,280 --> 00:02:05,460
+Actually to give it the Zed option as well.
+
+30
+00:02:05,460 --> 00:02:10,520
+So we're going to compress it through Jesus up into a file called backup Doc tor doc Jesus.
+
+31
+00:02:10,830 --> 00:02:14,280
+But then we need to tell it what we want to actually store.
+
+32
+00:02:14,460 --> 00:02:15,970
+And this is what we're going to tell it.
+
+33
+00:02:16,080 --> 00:02:22,290
+We're going to say hey I want you to put in there we to want to put in there everything in our home
+
+34
+00:02:22,290 --> 00:02:30,210
+directory we're going to put in our documents folder downloads folder Iowa desktop folder pictures folder
+
+35
+00:02:30,480 --> 00:02:32,710
+and our videos folder.
+
+36
+00:02:32,790 --> 00:02:33,210
+OK.
+
+37
+00:02:33,330 --> 00:02:36,930
+So what we're saying here is hey use the Torkham and compress it.
+
+38
+00:02:36,930 --> 00:02:43,210
+Be verbose tell us what's going on zip zip through Jesus up and make the file called backup doc Todd.
+
+39
+00:02:43,230 --> 00:02:43,850
+Geez.
+
+40
+00:02:44,010 --> 00:02:50,310
+And inside there put the documents down those desktop pictures and videos folders from our home directory
+
+41
+00:02:50,310 --> 00:02:53,570
+using a bit of brace expansion to save some typing.
+
+42
+00:02:53,670 --> 00:02:54,130
+OK.
+
+43
+00:02:54,210 --> 00:02:55,320
+So that's it.
+
+44
+00:02:55,410 --> 00:02:55,680
+OK.
+
+45
+00:02:55,680 --> 00:03:01,440
+And then when we run our boss script if we do bash backup dice page you'll see that it's giving us some
+
+46
+00:03:01,440 --> 00:03:07,710
+output and now we've got a backup top target file on our desktop so it's not very cool right and you
+
+47
+00:03:07,710 --> 00:03:14,920
+can see here all the files that have been added into the into the interior into the backup folder now
+
+48
+00:03:15,000 --> 00:03:22,250
+in there we gave it the v option here for verbose and that's what we got to seal the output on the screen
+
+49
+00:03:22,260 --> 00:03:29,490
+maybe we don't want that so if we just get rid of the V and let's say we remove a backup dot tautologies.
+
+50
+00:03:29,680 --> 00:03:31,710
+And now we run again.
+
+51
+00:03:32,370 --> 00:03:37,930
+You can see that now we don't really have as much output from it but we've still got the backup file.
+
+52
+00:03:37,950 --> 00:03:38,820
+So you can see here.
+
+53
+00:03:38,850 --> 00:03:44,550
+One benefit of writing these things in scripts you can save and edit the behavior of those scripts over
+
+54
+00:03:44,550 --> 00:03:48,360
+time as your needs evolve and that always can be there for you to run.
+
+55
+00:03:48,360 --> 00:03:53,070
+For example we might not like the fact that this message comes out on standard error so we can just
+
+56
+00:03:53,070 --> 00:04:02,550
+go back into our backup Dyess page and redirect this this command standard error to place called slash
+
+57
+00:04:02,550 --> 00:04:06,020
+dev slash note which basically gets rid of it.
+
+58
+00:04:06,080 --> 00:04:10,770
+OK so we've redirected some of them to slash dev slash no which is the place on a file system called
+
+59
+00:04:10,770 --> 00:04:14,830
+the bit bucket that basically just deletes whatever is sent to it.
+
+60
+00:04:14,920 --> 00:04:21,690
+And now if we try to run bash backup up sh clear the screen we're running now so that we can get no
+
+61
+00:04:21,690 --> 00:04:22,290
+output.
+
+62
+00:04:22,380 --> 00:04:27,780
+But if I delete this backup archive and run it you can see that the backup is still created but now
+
+63
+00:04:27,780 --> 00:04:28,620
+we don't get any error.
+
+64
+00:04:28,620 --> 00:04:34,020
+So you can see that you can customize these these scripts as time goes on.
+
+65
+00:04:34,080 --> 00:04:38,580
+So we don't want to draw attention to a bit right now is how we can make running the bash scripts a
+
+66
+00:04:38,580 --> 00:04:40,620
+bit more efficient and user friendly.
+
+67
+00:04:40,770 --> 00:04:48,390
+So at the minute what we're doing is we are on our desktop where the bash script is located in the background
+
+68
+00:04:48,420 --> 00:04:52,440
+and then giving it the path to the bash script which at the minute because we're already on the desktop
+
+69
+00:04:52,470 --> 00:04:53,840
+it's just back up to our stage.
+
+70
+00:04:53,880 --> 00:04:57,850
+When I run that we get the the the required output.
+
+71
+00:04:58,080 --> 00:05:03,490
+But that's kind of a bit of hassle because if we weren't on the desktop then we would have to give it
+
+72
+00:05:03,490 --> 00:05:07,000
+a different path and we have to in the background there's a there's a better way to do it in just one
+
+73
+00:05:07,000 --> 00:05:07,500
+step.
+
+74
+00:05:07,600 --> 00:05:08,100
+OK.
+
+75
+00:05:08,320 --> 00:05:13,280
+And this is how you set that up so what you do is you go back to your home directory and you can see
+
+76
+00:05:13,280 --> 00:05:15,450
+in here that we've just got our normal folders.
+
+77
+00:05:15,460 --> 00:05:21,000
+What you do is you make a directory called been all in lower case like I've been.
+
+78
+00:05:21,220 --> 00:05:22,880
+And you can see that's been created.
+
+79
+00:05:22,900 --> 00:05:28,660
+And you what you do is you move all of your shell scripts into that folder it's moved from our desktop
+
+80
+00:05:29,060 --> 00:05:30,960
+the backup.
+
+81
+00:05:31,180 --> 00:05:32,500
+Files are backup Dyess.
+
+82
+00:05:32,530 --> 00:05:35,440
+We're going to move it into bin folder.
+
+83
+00:05:35,560 --> 00:05:41,830
+OK so we're moving from our desktop the backup S.H. folder file into our bin folder because you see
+
+84
+00:05:41,830 --> 00:05:43,420
+it's been moved from there.
+
+85
+00:05:43,420 --> 00:05:45,480
+I mean we now go into our bin.
+
+86
+00:05:45,520 --> 00:05:47,500
+We see the backup Dyas pages in that.
+
+87
+00:05:47,500 --> 00:05:52,560
+And actually I'm just going to rename it from backup to stage into just backup.
+
+88
+00:05:52,720 --> 00:05:53,150
+OK.
+
+89
+00:05:53,290 --> 00:05:57,730
+So now we've just got the same file called backup and if I run it it'll still work.
+
+90
+00:05:57,730 --> 00:05:58,940
+So there's nothing wrong.
+
+91
+00:05:59,100 --> 00:06:00,590
+It's just renamed it a little bit.
+
+92
+00:06:00,690 --> 00:06:01,240
+OK.
+
+93
+00:06:01,570 --> 00:06:06,890
+Now I need to make this so that it can be run from the command line.
+
+94
+00:06:06,940 --> 00:06:09,790
+OK so what we're going to do is two ways to do this.
+
+95
+00:06:09,790 --> 00:06:16,630
+First of all we can open up in our file browser we can go into bin and then we can right click click
+
+96
+00:06:16,630 --> 00:06:23,730
+properties go in permissions and then click allowing executing file as program.
+
+97
+00:06:23,760 --> 00:06:24,220
+OK.
+
+98
+00:06:24,370 --> 00:06:28,540
+That's one way to do it but I'm not going to do it like that for now because I want you to learn the
+
+99
+00:06:28,540 --> 00:06:29,640
+terminal way.
+
+100
+00:06:29,710 --> 00:06:35,510
+So what you do is you type the C Hage mode command never see Hach mode command sense for change mode
+
+101
+00:06:35,860 --> 00:06:40,080
+and what it does is it allows you to change the permissions that a certain file has.
+
+102
+00:06:40,300 --> 00:06:46,390
+And then as the second argument type plus X which means give it executable permission so add executable
+
+103
+00:06:46,390 --> 00:06:48,260
+permissions and then you tell it the file.
+
+104
+00:06:48,280 --> 00:06:52,900
+So just backup when I run that's what we've done is we've added executable missions to the backup.
+
+105
+00:06:52,910 --> 00:06:56,130
+Now when I look at it with LS You can see that it's gone green.
+
+106
+00:06:56,370 --> 00:06:56,910
+OK.
+
+107
+00:06:56,980 --> 00:07:00,340
+So that means that it can be run as a script.
+
+108
+00:07:00,340 --> 00:07:04,810
+Now the cool thing about this is that if we close to actually we're going to do as well just to make
+
+109
+00:07:04,810 --> 00:07:10,420
+it a bit clearer if we go back into backup what we're going to do is I'm going to save make sure that
+
+110
+00:07:10,420 --> 00:07:13,690
+the backup is always saved on the desktop.
+
+111
+00:07:13,780 --> 00:07:16,250
+That's just going to make it a bit clearer to demonstrate what's happening.
+
+112
+00:07:16,510 --> 00:07:20,900
+So what we're going to we're going to close the terminal and delete her backup here.
+
+113
+00:07:21,060 --> 00:07:21,880
+OK.
+
+114
+00:07:22,120 --> 00:07:29,770
+And now I notice I'm in our home directory OK but if I type back up we can see here that we're getting
+
+115
+00:07:29,770 --> 00:07:33,690
+an error saying that the backup program is not currently installed.
+
+116
+00:07:33,690 --> 00:07:36,300
+And if you remember what I told you a long time ago.
+
+117
+00:07:36,320 --> 00:07:41,330
+Right the start this course when the shell says it can't find something that means it's not on the shelves
+
+118
+00:07:41,410 --> 00:07:42,550
+search path.
+
+119
+00:07:42,550 --> 00:07:48,040
+So we need to edit the shell search path to include recently created bin folder.
+
+120
+00:07:48,040 --> 00:07:51,530
+Now the way that we do this is we're in our home directory.
+
+121
+00:07:52,300 --> 00:08:01,090
+If we go ahead and use the Nano command I want you to edit the dot Bash RC file so the doc Bash RC space
+
+122
+00:08:01,110 --> 00:08:05,560
+is all lowercase will open up this very important file.
+
+123
+00:08:05,580 --> 00:08:11,260
+Now if we scroll all the way down to the bottom and Odelein down there this is what I want you to write.
+
+124
+00:08:11,260 --> 00:08:11,500
+OK.
+
+125
+00:08:11,500 --> 00:08:18,190
+And what is the right path in upper case then an equal sign then some double quotes or two double quotes
+
+126
+00:08:18,240 --> 00:08:29,000
+and inside those double quotes dollar sign paff a colon then Dollar Sign home in uppercase slash been
+
+127
+00:08:29,470 --> 00:08:30,000
+OK.
+
+128
+00:08:30,030 --> 00:08:31,410
+So let me explain this a little bit.
+
+129
+00:08:31,610 --> 00:08:34,750
+So what we're saying here is a variable called Path.
+
+130
+00:08:34,760 --> 00:08:42,230
+We're going to have a path equal to what the path currently is then a colon then our home folder slash
+
+131
+00:08:42,230 --> 00:08:46,090
+been so the bin folder in our home folder is going to be added to the path.
+
+132
+00:08:46,090 --> 00:08:52,100
+And when I close that we write to the boss Aussie close it and if we close our terminal and open another
+
+133
+00:08:52,100 --> 00:08:52,850
+one.
+
+134
+00:08:52,850 --> 00:08:59,880
+What that has done if we echo the path what Pat has done is it has added Slash's home slushes Ziyad
+
+135
+00:08:59,930 --> 00:09:03,560
+slash been to our path.
+
+136
+00:09:03,610 --> 00:09:10,280
+Now that means it'll be able to search for our backup script in the path just like it would any of the
+
+137
+00:09:10,280 --> 00:09:13,060
+command center when I run back up.
+
+138
+00:09:13,070 --> 00:09:19,430
+You can see the ascript has just been run and it has now created the backup so if I if I right now go
+
+139
+00:09:19,430 --> 00:09:27,170
+into our bin folder and I create another file called Hello for example and in there I tell it that it's
+
+140
+00:09:27,170 --> 00:09:28,850
+a bash script with the shebang.
+
+141
+00:09:29,360 --> 00:09:32,020
+And I say echo Hello world.
+
+142
+00:09:32,350 --> 00:09:32,710
+OK.
+
+143
+00:09:32,720 --> 00:09:33,600
+And save it.
+
+144
+00:09:33,920 --> 00:09:39,430
+And then I give the file executable permission so S.H. maade plus X Hello.
+
+145
+00:09:39,650 --> 00:09:41,060
+See that it's gone green.
+
+146
+00:09:41,100 --> 00:09:43,600
+Now I can be anywhere in my file system.
+
+147
+00:09:43,640 --> 00:09:45,820
+I could be in my documents folder.
+
+148
+00:09:45,950 --> 00:09:46,980
+OK but if I've run.
+
+149
+00:09:47,000 --> 00:09:47,800
+Hello.
+
+150
+00:09:48,050 --> 00:09:52,730
+You can see that hello world networks and I can pipe these to wherever I want to redirect them so if
+
+151
+00:09:52,730 --> 00:09:57,230
+I redirects it to a file called haloed text here on my desktop there we are.
+
+152
+00:09:57,350 --> 00:10:04,580
+We've now got I Farkle haloed activity on the desktop and wouldn't know basically creating our own commands
+
+153
+00:10:04,580 --> 00:10:06,280
+so isn't that awesome right.
+
+154
+00:10:06,470 --> 00:10:12,230
+We've got our own our own commands on anything that we put in this bin folder if we have executable
+
+155
+00:10:12,230 --> 00:10:15,560
+permissions we can run it just like any other command.
+
+156
+00:10:15,560 --> 00:10:17,010
+So that is incredible.
+
+157
+00:10:17,120 --> 00:10:22,250
+But now you might be thinking OK Ziyad this is cool and everything but what's really the difference
+
+158
+00:10:22,250 --> 00:10:24,110
+between an alias and a script.
+
+159
+00:10:24,140 --> 00:10:30,360
+So remember aliases are things that you put in your in your in your back aliases file.
+
+160
+00:10:30,380 --> 00:10:32,930
+This one is dhaba Batia aliases file.
+
+161
+00:10:33,050 --> 00:10:39,140
+And if we if we take a look in there what we're doing is we are you know setting command names and we're
+
+162
+00:10:39,170 --> 00:10:41,210
+giving them those commands mean.
+
+163
+00:10:41,210 --> 00:10:51,200
+Why didn't we just make a make an alias and we say backup equals toss dash C-v Zed f of you know to
+
+164
+00:10:51,200 --> 00:11:02,060
+our to our desktop and then pull back up dot top dog Zed and say we want in there we want our desktop
+
+165
+00:11:02,580 --> 00:11:12,520
+and our documents and we're and I download pictures and videos and then close it.
+
+166
+00:11:12,650 --> 00:11:16,100
+Why don't we just do that and say I'd like we you know we know how to make aliases.
+
+167
+00:11:16,130 --> 00:11:17,660
+Wouldn't that work the same way.
+
+168
+00:11:17,720 --> 00:11:22,850
+Yes it would work the same in this instance because we have a one line script like I'm going to close
+
+169
+00:11:22,850 --> 00:11:23,660
+out what I'm going to do.
+
+170
+00:11:23,790 --> 00:11:28,760
+And that's because we have a one line script so aliases can become you know of the same as one line
+
+171
+00:11:28,760 --> 00:11:30,170
+scripts really.
+
+172
+00:11:30,230 --> 00:11:34,760
+But the good thing about scripts is that scripts are designed to contain more than one command line
+
+173
+00:11:35,060 --> 00:11:35,270
+was.
+
+174
+00:11:35,270 --> 00:11:39,530
+Aliases are usually just to give more convenient names to just one command line.
+
+175
+00:11:39,530 --> 00:11:45,320
+Now secondly scripts can have more complicated programming constructs such as loops if statements and
+
+176
+00:11:45,320 --> 00:11:46,070
+functions.
+
+177
+00:11:46,070 --> 00:11:48,020
+Now if you've never done any programming before.
+
+178
+00:11:48,110 --> 00:11:52,620
+Suffice it to say that scripts are more heavy duty than alias's can be OK.
+
+179
+00:11:52,670 --> 00:11:56,560
+And thirdly scripts can be scheduled to run at any time.
+
+180
+00:11:56,690 --> 00:12:04,480
+Using cron and not scheduling part is what we're going to focus on in the next video so over the last
+
+181
+00:12:04,480 --> 00:12:07,510
+couple of videos you've seen how to create your very Ambala scripts.
+
+182
+00:12:07,540 --> 00:12:12,580
+And the key about bash scripts is that they allow you to store useful command sequences in files that
+
+183
+00:12:12,580 --> 00:12:14,060
+you can use later on.
+
+184
+00:12:14,230 --> 00:12:18,070
+Now because anything on your computer is changeable and editable through the command line and because
+
+185
+00:12:18,070 --> 00:12:23,470
+you can save the series of commands that can do specific functions you can create you incredibly powerful
+
+186
+00:12:23,620 --> 00:12:28,960
+bash scripts that can do whatever you want and save those backups scripts for later by using the fundamental
+
+187
+00:12:28,960 --> 00:12:31,370
+skills that you've learned in the last two videos.
+
+188
+00:12:31,420 --> 00:12:36,190
+Now a key piece of information is that bash scripts must have the Shabangu line telling them that the
+
+189
+00:12:36,190 --> 00:12:42,130
+file needs to be interpreted as Bash commands using the bash shell interpreter which is located at slash
+
+190
+00:12:42,130 --> 00:12:43,790
+been slash Bash.
+
+191
+00:12:43,810 --> 00:12:48,820
+Now this shebang line is the first line of every script and there wouldn't be anything above it and
+
+192
+00:12:48,820 --> 00:12:53,560
+there mustn't be any spaces in the shebang line the text that's highlighted here in Orange.
+
+193
+00:12:53,560 --> 00:12:58,330
+So it must come just as you see it there and it's the Shabangu line that turns your regular text file
+
+194
+00:12:58,360 --> 00:13:03,460
+into a bash script and tells the shell to interpret everything in that file as Bash commands.
+
+195
+00:13:03,460 --> 00:13:08,680
+Now if you wanted to make a Python script you could put the shebang line something like flashbang slash
+
+196
+00:13:08,910 --> 00:13:14,380
+slash use a slash been slash Python 3 and that would allow the script to be interpreted as a Python
+
+197
+00:13:14,380 --> 00:13:14,880
+program.
+
+198
+00:13:14,950 --> 00:13:19,870
+But this is how you do it in orange here for bash scripts they've also seen how you would make scripts
+
+199
+00:13:19,870 --> 00:13:21,640
+runnable just like regular commands.
+
+200
+00:13:21,670 --> 00:13:27,250
+And you saw how you would make a BIN folder in your home directory and add each script to that bin folder.
+
+201
+00:13:27,250 --> 00:13:31,690
+You would then give each of the scripts executable permissions using the S.H. maade command and add
+
+202
+00:13:31,690 --> 00:13:35,600
+that bin folder to your Shell's path by editing your bash RC file.
+
+203
+00:13:35,650 --> 00:13:39,820
+And this allows you to run scripts just like regular commands so we type back up and our backup script
+
+204
+00:13:39,820 --> 00:13:45,310
+run we thought hello hello script run and this will also work for Python programs as well.
+
+205
+00:13:45,340 --> 00:13:49,480
+Now as an aside if you're interested in learning more about the Python programming language then go
+
+206
+00:13:49,480 --> 00:13:53,890
+to the last video of course where you have some discount coupons for all my courses including my best
+
+207
+00:13:53,890 --> 00:13:59,110
+selling Python course the python Bible which will take you in a project based way from absolutely no
+
+208
+00:13:59,110 --> 00:14:02,960
+previous Python experience all the way to writing 11 Python programs.
+
+209
+00:14:02,970 --> 00:14:04,770
+So for me interested go ahead and check that out.
+
+210
+00:14:04,810 --> 00:14:10,420
+But the bottom line is that scripts are more powerful than aliases and scripts that can be run at any
+
+211
+00:14:10,420 --> 00:14:14,570
+date or time that you like which allows you to automate your workflows.
+
+212
+00:14:14,830 --> 00:14:18,550
+And it's precisely that scheduling that will be coming on to in the next video.
+
+213
+00:14:18,580 --> 00:14:23,200
+So in the next video you're going to learn the true power of shell scripts by learning how to automate
+
+214
+00:14:23,200 --> 00:14:26,820
+them using an incredibly useful utility known as Krumm.
+
+215
+00:14:26,890 --> 00:14:31,380
+So to learn how to schedule automated tasks I'll see you in the next video.

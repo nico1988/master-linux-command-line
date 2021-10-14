@@ -1,0 +1,590 @@
+1
+00:00:00,120 --> 00:00:03,870
+大家好，美丽的人们，欢迎收看这段视频，你们将了解到其中一位
+Hello the beautiful people and welcome to this video what you're going to be learning about one of the
+
+2
+00:00:03,870 --> 00:00:07,740
+所有Linux上最有用、最重要的命令。
+most useful and most important commands on all of Linux.
+
+3
+00:00:07,800 --> 00:00:14,640
+find命令现在的find命令用于在您的文件系统上执行复杂的搜索任务
+The find command now the find command is used to execute sophisticated search tasks on your file system
+
+4
+00:00:14,680 --> 00:00:18,450
+您可以使用FINE命令做很多事情，我们将中断讨论
+and there is so much stuff that you can do with the fine command that we're going to break about discussion
+
+5
+00:00:18,750 --> 00:00:22,830
+制作成几个视频，在接下来的几个视频中，您将了解到如何
+into a few videos and in the next few videos what you're going to learn is you're going to learn how
+
+6
+00:00:22,830 --> 00:00:26,010
+要使用FINE，请来看看FINE命令的默认行为是什么。
+to use the fine come and see what the fine commands default behavior is.
+
+7
+00:00:26,070 --> 00:00:30,900
+您可以了解如何控制find命令search在您的文件系统上的搜索深度。
+You can learn how to control the search depth that the find command search is on your file system.
+
+8
+00:00:30,960 --> 00:00:33,870
+您可以学习如何按类型搜索，以便如何获取文件。
+You can learn how to search by type So how to get the file.
+
+9
+00:00:33,960 --> 00:00:37,240
+Find表示只返回文件或目录。
+The find said come on to only return files or directories.
+
+10
+00:00:37,410 --> 00:00:41,700
+我不得不按名字搜索，所以如果你确切知道你要找的是什么，你可以按名字和
+I've had to search by name so if you know exactly what you're looking for you can search by name and
+
+11
+00:00:41,760 --> 00:00:46,890
+如何按文件大小进行搜索，这样您就可以说，嘿，好吧，来帮我找所有大于的文件
+how to search by file size so you can say hey fine come and find me all the files that are bigger than
+
+12
+00:00:46,890 --> 00:00:51,430
+例如，5兆字节或小于10千字节或介于两者之间。
+5 megabytes or smaller than 10 kilobytes for example or something in between.
+
+13
+00:00:51,570 --> 00:00:55,830
+关于FINE命令，我很酷的一点是，一旦你得到了这一大串结果
+I'm one of the really cool things about the fine command is that once you get this big list of results
+
+14
+00:00:55,830 --> 00:01:02,640
+正如您将在视频中看到的，您可以对每个结果执行其他命令或其他管道。
+as you'll see in the videos you can execute other commands or other pipelines on each of those results.
+
+15
+00:01:02,640 --> 00:01:07,080
+我们将向您展示如何做到这一点，您将在您的Linux中拥有一个非常强大的工具
+We're going to show you how to do that and you're going to have a really powerful tool in your Linux
+
+16
+00:01:07,080 --> 00:01:11,310
+一次处理大量文件的工具包将会非常棒。
+toolkit for manipulating loads of files at once it's going to be awesome.
+
+17
+00:01:11,310 --> 00:01:16,800
+因此，通常到最后，您将能够使用FINE执行复杂的搜索任务
+So by the end in general you're going to be able to perform sophisticated search tasks with the fine
+
+18
+00:01:16,800 --> 00:01:22,440
+命令简而言之就是这样，您一定要注意这一节，因为
+commands that that's it in a nutshell and you to want to pay attention to this section for sure because
+
+19
+00:01:22,440 --> 00:01:25,100
+这对你的作业可能非常有用。
+this may be very useful for your assignment.
+
+20
+00:01:25,110 --> 00:01:25,890
+提示。
+Hint hint.
+
+21
+00:01:25,890 --> 00:01:26,910
+所以我希望你喜欢。
+So I hope you enjoy it.
+
+22
+00:01:26,910 --> 00:01:31,550
+让我们跳到一辆Buntu上，开始使用find命令。
+Let's go ahead and jump over into a buntu and start playing with the find command.
+
+23
+00:01:31,550 --> 00:01:34,180
+好的，现在我们在主目录中。
+All right so here we are in our home directory.
+
+24
+00:01:34,220 --> 00:01:38,220
+因此，让我们继续查看find命令在默认情况下是如何工作的。
+So let's just go ahead and see how the find command will work by default.
+
+25
+00:01:38,270 --> 00:01:40,150
+因此，find命令的默认行为。
+So the default behavior of the find command.
+
+26
+00:01:40,160 --> 00:01:48,380
+如果我们继续运行查找就是列出每个单独的文件和每个下面的文件夹
+If we just go ahead and run a find is to list every single file and every single folder there is lower
+
+27
+00:01:48,380 --> 00:01:52,190
+在我们的文件系统中，而不是我们当前所在的文件夹中。
+down in our file system than the current folder that we're in.
+
+28
+00:01:52,250 --> 00:01:52,560
+好的。
+OK.
+
+29
+00:01:52,580 --> 00:01:54,550
+以及我们所在文件夹中的所有内容。
+And everything inside the folder that we're in.
+
+30
+00:01:54,620 --> 00:01:55,000
+好的。
+OK.
+
+31
+00:01:55,130 --> 00:01:58,030
+很好，因为我们当前在我们的工作目录中。
+So good because we're currently in our working directory.
+
+32
+00:01:58,040 --> 00:02:05,960
+如果我只点击，如果我只键入find，然后按键，我们会看到一个很长的列表，其中包含每个文件和每个文件
+If I just hit if I just type find and press and we see a big long list of every single file and every
+
+33
+00:02:05,960 --> 00:02:11,360
+在我们的主目录及其下面有一个文件夹。
+single folder there is in our home directory and below it.
+
+34
+00:02:11,420 --> 00:02:18,920
+好的，它将进入每个文件夹每个隐藏文件夹并展开并列出
+OK so it will go into every folder every hidden folder and expand and expand and expand out and list
+
+35
+00:02:19,010 --> 00:02:19,460
+所有的一切。
+everything.
+
+36
+00:02:19,460 --> 00:02:21,370
+例如，这里有我们的图片文件夹。
+So for example here we've got our pictures folder.
+
+37
+00:02:21,490 --> 00:02:22,100
+好的。
+OK.
+
+38
+00:02:22,160 --> 00:02:24,090
+它不会只显示我们的图片文件夹。
+It will not just show our pictures folder.
+
+39
+00:02:24,140 --> 00:02:29,880
+它还会显示我们在图片文件夹中有一个名为Holiday的文件夹。
+It'll also show that we have a folder inside the picture folder called holiday.
+
+40
+00:02:30,070 --> 00:02:35,840
+在图片文件夹中有一个名为Find Me 6 Dr.X的文件。举个例子，我们有我们的桌面，我们有
+Have a file inside the picture folder called Find Me 6 Dr. X Take for example we got our desktop we've
+
+41
+00:02:35,840 --> 00:02:39,290
+找到我1.60和我们的桌面本身。
+got find me 1.60 and our desktop itself.
+
+42
+00:02:39,290 --> 00:02:42,270
+视频和视频劈开Find Me 3.0.
+Videos and videos slash find me 3.0.
+
+43
+00:02:42,320 --> 00:02:45,200
+所以奥利斯特看了文件夹和它们旁边的所有东西。
+So Orlistat the folders and everything side them.
+
+44
+00:02:45,440 --> 00:02:48,760
+如果这些文件夹中有文件夹，则它将执行完全相同的操作。
+And if there are folders inside those folders then it will do exactly the same.
+
+45
+00:02:48,770 --> 00:02:50,200
+它将进入这些文件夹。
+It will go into those folders.
+
+46
+00:02:50,300 --> 00:02:54,410
+向外展开这些文件夹，如果有其他文件夹，它将进入这些文件夹并向外展开到
+Expand those out and if there's other folders that it will go into those folders and expand out to an
+
+47
+00:02:54,470 --> 00:02:55,490
+无限的深度。
+infinite depth.
+
+48
+00:02:55,490 --> 00:03:01,250
+它将尽可能深入到您的文件系统中，从当前位置开始
+It will just go as deep as possible into your file system from starting where and starting in the current
+
+49
+00:03:01,580 --> 00:03:02,350
+目录。
+directory.
+
+50
+00:03:02,500 --> 00:03:02,860
+好的。
+OK.
+
+51
+00:03:02,960 --> 00:03:07,960
+所以这对我们来说是LOCATE命令和FIND命令之间的直接区别。
+So this is an immediate difference for us between the locate command and the find command.
+
+52
+00:03:08,120 --> 00:03:14,600
+因此，find命令将列出文件和文件夹，而locate命令将仅列出文件和文件夹
+So the find command will list out files and folders but the locate command will only list files and
+
+53
+00:03:14,600 --> 00:03:20,300
+find命令不需要数据库就可以工作，find命令就在那里工作，并且
+the find command does not need a database in order to work the find command just works right there and
+
+54
+00:03:20,300 --> 00:03:26,030
+所以它总是最新的，因为它直接在我们的系统上运行，它不使用数据库。
+then so it's always up to date because it operates directly on our system it doesn't use a database.
+
+55
+00:03:26,210 --> 00:03:27,610
+所以它总是最新的。
+So it's always up to date.
+
+56
+00:03:27,620 --> 00:03:33,190
+但这样做的一个缺点是，它比使用数据库稍微慢一些。
+But the one downside of that is it's slightly slower than using a database.
+
+57
+00:03:33,320 --> 00:03:35,140
+因此，这是一个需要牢记的权衡。
+So that's a tradeoff to bear in mind.
+
+58
+00:03:35,550 --> 00:03:36,080
+好的。
+OK.
+
+59
+00:03:36,170 --> 00:03:42,560
+因此，由于find命令将在您指定的位置列出每个单独的文件，因此您实际上还可以
+So because the find command will list every single file below where you give it you can actually also
+
+60
+00:03:43,280 --> 00:03:48,070
+例如，给它整个系统的基本文件夹中的劈开文件夹。
+for example give it the slash folder in the base folder for the entire system.
+
+61
+00:03:48,290 --> 00:03:54,130
+这将列出整个系统上的每个文件和每个文件夹。
+And this will list every single file and every single folder on the entire system.
+
+62
+00:03:54,220 --> 00:03:58,830
+因此，如果您感到无聊，并且可能想要砸坏您的计算机，那么尝试一下这是一件很有趣的事情。
+So that's a fun thing to try if you're bored and you potentially want to smash your computer.
+
+63
+00:03:59,210 --> 00:04:06,460
+但是你知道，如果你给它找劈开自动柜员机，那么它会在自动柜员机下面列出系统上的所有东西，
+But you know if you give it find slash ATC then it will list everything on the system below ATC and
+
+64
+00:04:06,470 --> 00:04:08,600
+你可以看到它给了我们文件和文件夹。
+you can see it's giving us files and folders.
+
+65
+00:04:08,690 --> 00:04:16,280
+如果我给它一个查找劈开主页，例如，斜杠齐亚劈开文档，它会列出以下所有内容
+If I give it a find slash home slashes Ziyad slash documents for example it will list everything below
+
+66
+00:04:16,700 --> 00:04:17,760
+Documents文件夹。
+the documents folder.
+
+67
+00:04:17,820 --> 00:04:23,120
+好的，我们可以看到它为我们提供了Documents文件夹和Find Me 2.6。
+OK so we can see that it's given us the documents folder and the find me 2.6 inside there.
+
+68
+00:04:23,210 --> 00:04:23,730
+好的。
+OK.
+
+69
+00:04:23,740 --> 00:04:34,190
+如果我把它放在Documents文件夹上，如果我再做一个文件夹，我们就叫它废话吧
+And if I if I make it on documents folder if I make another folder let's call it blah blah let's just
+
+70
+00:04:34,190 --> 00:04:39,030
+叫它，然后复制粘贴到那里，我们就叫它。
+call it that and copy and paste into there we're going to call it.
+
+71
+00:04:39,320 --> 00:04:40,170
+我们要把这个叫作。
+We're going to call this one.
+
+72
+00:04:40,170 --> 00:04:42,540
+测试DOT需要t。
+Test DOT takes t.
+
+73
+00:04:42,860 --> 00:04:43,410
+好的。
+OK.
+
+74
+00:04:43,640 --> 00:04:51,160
+现在，如果我再次发现Documents文件夹中的主页斜杠没有问题，Ziyad，我应该这样做。
+Now if I do find again with the documents folder OK for home slashes Ziyad I should do this.
+
+75
+00:04:51,170 --> 00:04:52,240
+跳蒂尔达。
+Do the Tilda.
+
+76
+00:04:52,640 --> 00:04:53,580
+好的。
+OK.
+
+77
+00:04:54,350 --> 00:05:00,020
+这里将要发生的是，您将看到它也在挡路文件夹下完成，它是
+What's going to happen here is you'll see that it's done the down the block folder as well and it's
+
+78
+00:05:00,020 --> 00:05:03,450
+已进入文件夹以查找测试腾讯通Take。
+gone into the folder to find test RTX take.
+
+79
+00:05:03,530 --> 00:05:03,960
+好的。
+OK.
+
+80
+00:05:04,070 --> 00:05:05,450
+上面说我们把它卖了。
+So it said we sold it.
+
+81
+00:05:05,450 --> 00:05:09,780
+看看它列出的“文档”文件夹，“也找我”，它们都在这里叫做“blah”的文件夹下。
+Look in the documents folder it listed out find me too and it's all under the folder here called blah.
+
+82
+00:05:09,800 --> 00:05:12,320
+我打开它，把里面的所有东西都列了出来。
+And I opened it and listed everything inside there.
+
+83
+00:05:12,320 --> 00:05:15,700
+如果我再做一个叫废话的文件夹。
+If I make another folder called blah blah.
+
+84
+00:05:15,890 --> 00:05:22,820
+在里面，我复制并粘贴它，所以它写着test to Dottie XTi。
+And inside there I copy and paste it so it says test to Dottie XTi.
+
+85
+00:05:23,120 --> 00:05:28,580
+现在我只是说在Documents文件夹中查找所有内容，您会看到它也列出了诸如此类的内容
+And now I just say find everything in the Documents folder you'll see that it's also listing out blah
+
+86
+00:05:28,580 --> 00:05:35,840
+BLAH和TEST，找到一种对文件系统进行越来越深入的搜索，深入到无穷无尽的地步
+blah and test to find kind of searching deeper and deeper and deeper into the file system to an infinite
+
+87
+00:05:36,080 --> 00:05:36,760
+深度。
+depth.
+
+88
+00:05:36,830 --> 00:05:37,600
+好的。
+OK.
+
+89
+00:05:37,880 --> 00:05:39,350
+所以这一点需要牢记在心。
+So that's something to bear in mind.
+
+90
+00:05:39,350 --> 00:05:43,320
+它从当前目录开始。
+And it starts either with the current directory.
+
+91
+00:05:43,430 --> 00:05:46,220
+所以我可以从主目录开始，这就是我们目前所处的位置。
+So I can start at the home directory which is where we are at the minute.
+
+92
+00:05:46,340 --> 00:05:46,820
+好的。
+OK.
+
+93
+00:05:46,850 --> 00:05:49,100
+无论你在哪里付出，都是你自己。
+All you where ever you give it.
+
+94
+00:05:49,100 --> 00:05:54,950
+因此，如果我被告知从Documents文件夹开始，它将从那里开始并不断加深挖洞
+So if I'm start tell to start at the Documents folder it will start there and continually dig deeper
+
+95
+00:05:54,980 --> 00:05:59,900
+进入文件系统，直到它显示每个文件和每个文件夹，无论它们是否隐藏
+into the file system until it showed you every file and every folder no matter whether they're hidden
+
+96
+00:05:59,900 --> 00:06:01,160
+不管是不是，这都无关紧要。
+or not it doesn't matter.
+
+97
+00:06:01,210 --> 00:06:05,860
+因此，每个文件夹中比文件系统上该点更深的每个文件。
+So every file in every folder deeper than that point on the file system.
+
+98
+00:06:05,870 --> 00:06:13,000
+如果我转到Documents文件夹，因为我当前在Documents文件夹中，那么我只是想弄清楚这一点
+So just to make this clear if I go to the documents folder because I'm currently in the Documents folders
+
+99
+00:06:13,040 --> 00:06:18,920
+您可以通过pwt命令看到，现在我是否只运行find命令，因为find命令
+you can see by the PWT command if now I would just run the find command and because the find command
+
+100
+00:06:19,160 --> 00:06:23,420
+将在默认情况下从我们当前所在的文件夹启动。
+will start by default at the folder we're currently in.
+
+101
+00:06:23,480 --> 00:06:29,120
+如果我这样做了，你可以看到它现在开始列出和这里一样的东西，它的侧面。
+If I do that you can see now that it started listing out the same stuff as up here it's side.
+
+102
+00:06:29,130 --> 00:06:35,090
+有了这些，我们就有了博客文件夹，博客劈开之类的，我要展示这个测试
+So with that we've got the blog folder the blog slash blah blah I am going into showing this test to
+
+103
+00:06:35,090 --> 00:06:41,330
+测试并找到我们在这里的Documents文件夹中到底得到了什么，因为我们
+and test and find me to exactly what we were getting in our documents folder up here because we were
+
+104
+00:06:41,390 --> 00:06:44,790
+在我们运行find命令时，在Documents文件夹中。
+in the Documents folder when we ran the find command.
+
+105
+00:06:44,960 --> 00:06:50,390
+因此，您既可以位于要开始搜索的目录中，也可以在不位于目录中的情况下开始搜索，例如
+So you can either be in the directory that you want to start searching from or if you're not for example
+
+106
+00:06:50,390 --> 00:06:52,340
+我们不在Sloshy DC文件夹里。
+we're not in the sloshy DC folder.
+
+107
+00:06:52,340 --> 00:06:57,950
+我们可以从那里开始搜索，它将从EDC文件夹进行搜索，然后继续搜索到无限大
+We can start the search from there and it will search from the EDC folder and continue to go to an infinite
+
+108
+00:06:57,950 --> 00:06:59,830
+从那一点开始的深度。
+depth from that point.
+
+109
+00:06:59,890 --> 00:07:00,280
+好的。
+OK.
+
+110
+00:07:00,350 --> 00:07:04,970
+这就是find命令的意义所在，它不使用数据库，而是直接在您的文件系统上操作
+So that's what the find command is it doesn't use a database it operates directly on your file system
+
+111
+00:07:04,980 --> 00:07:09,310
+所以它比LOCATE命令慢一点，但是它的功能非常强大。
+so it's a bit slower than the locate command but it's incredibly powerful.
+
+112
+00:07:09,380 --> 00:07:14,090
+我想您已经了解了find命令的基本功能，我们将在下一个视频中进行介绍
+So I think you've understood the basics of what the find command does in the next video we're going
+
+113
+00:07:14,090 --> 00:07:19,700
+向您展示如何自定义它的一些行为，首先介绍如何控制
+to show you how you can customize some of its behavior starting with how you can control can control
+
+114
+00:07:19,700 --> 00:07:23,180
+它搜索的深度和搜索的内容。
+the depth to which it searches and what it searches for.
+
+115
+00:07:23,220 --> 00:07:23,590
+好的。
+OK.
+
+116
+00:07:23,690 --> 00:07:28,820
+因此，find命令搜索是从获取它的位置开始的，或者默认情况下是从当前目录进行搜索，并且
+So the find command search is from where you get it or from the current directory by default and the
+
+117
+00:07:28,820 --> 00:07:33,200
+下一个视频，我们将看一看如何控制搜索的一些方式
+next video we're going to take a look at how you can can control some of the way that it searches so
+
+118
+00:07:33,230 --> 00:07:34,580
+下一个视频再见。
+see you in the next video.
+

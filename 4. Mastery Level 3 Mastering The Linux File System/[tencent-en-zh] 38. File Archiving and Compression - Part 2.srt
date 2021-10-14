@@ -1,0 +1,1040 @@
+1
+00:00:00,570 --> 00:00:01,950
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,950 --> 00:00:03,180
+欢迎回来。
+And welcome back.
+
+3
+00:00:03,180 --> 00:00:08,370
+在上一个视频中，我们将文件放入压缩包中，现在我们要了解如何压缩
+Now in the last video we put our files into a tarball and now we want to learn about how to compress
+
+4
+00:00:08,370 --> 00:00:12,040
+为了节省我们硬盘上的空间。
+that tabel to save space on our hard drive.
+
+5
+00:00:12,090 --> 00:00:15,060
+压缩使用压缩算法进行。
+Compression happens using compression algorithms.
+
+6
+00:00:15,090 --> 00:00:19,280
+Linux世界中使用的主要压缩算法有两种。
+And there are two main compression algorithms in use in the Linux world.
+
+7
+00:00:19,410 --> 00:00:26,550
+第一个是JE的it算法，第二个是B zip to OK，主要区别是
+And the first is the JE's it algorithm and the second is B zip zip to OK and the main difference between
+
+8
+00:00:26,550 --> 00:00:31,010
+它们通常速度较快，但压缩功率较小。
+them is usually is faster but has less compression power.
+
+9
+00:00:31,170 --> 00:00:36,900
+另一方面，因为它通常也可以将文件压缩到比耶稣更小的大小，但它确实做到了
+And because it too on the other hand can generally compress files to a smaller size than Jesus but does
+
+10
+00:00:36,900 --> 00:00:39,050
+需要更多的计算时间。
+require more computational time.
+
+11
+00:00:39,120 --> 00:00:44,270
+这两种压缩算法都非常容易使用，让我们从Giza开始。
+So both these compression algorithms are really easy to use Let's just start by talking about Giza.
+
+12
+00:00:44,370 --> 00:00:44,790
+好的。
+OK.
+
+13
+00:00:44,940 --> 00:00:49,870
+因此，要使用JEES UP压缩表，您只需键入G即可。
+So to compress a table using Jees up all you need to do is type G.
+
+14
+00:00:50,220 --> 00:00:57,390
+然后将归档名称归档到TA上，然后按Enter键，我们将看到该文件已
+And then the archive names are archived on TA and press enter and we'll see that that file has been
+
+15
+00:00:57,810 --> 00:01:05,880
+使用jesse算法压缩INS，如果我们使用ls命令，我们可以看到它是正确的
+compressed ins in place using the Jesus algorithm and we can see that it has if we use the ls command
+
+16
+00:01:06,300 --> 00:01:13,380
+在这里，我们可以看到已经自动添加了DOT G Zed文件扩展名，我们可以使用该文件
+here we can see that the DOT G Zed file extension has automatically been added and we can use the file
+
+17
+00:01:13,380 --> 00:01:18,400
+命令确认这确实是ZIPP压缩数据。
+command to confirm that yep this is indeed Zipp compressed data.
+
+18
+00:01:18,570 --> 00:01:20,610
+而且它被存档了。
+And it was archived.
+
+19
+00:01:20,640 --> 00:01:24,580
+TA OK，它还会告诉您上次修改的时间。
+Ta ok and it tells you when it was last modified as well.
+
+20
+00:01:24,610 --> 00:01:25,060
+好的。
+OK.
+
+21
+00:01:25,140 --> 00:01:25,910
+所以这真的很酷。
+So that's really cool.
+
+22
+00:01:25,910 --> 00:01:27,660
+关于这一点，我们可以看到相当多的信息。
+We can see quite a lot of information about that.
+
+23
+00:01:27,660 --> 00:01:29,860
+现在我们来看一下文件大小。
+Now let's take a look at the file size.
+
+24
+00:01:29,980 --> 00:01:37,080
+因此，如果我使用l h选项(如actionless)执行ls命令，仅该选项就会看到FALL
+So if I do the ls command with the l h option like actionless just the option will see the fall one
+
+25
+00:01:37,080 --> 00:01:40,510
+两个和四个三千或一万字节的大小。
+for two and four three or ten thousand bytes in size.
+
+26
+00:01:40,650 --> 00:01:49,740
+但是我存档的压缩档案只有23000字节，所以大约是7,000字节或7千字节
+But I archive the compressed archive is only 23000 bytes so it's about 7000 bytes or seven kilobytes
+
+27
+00:01:49,740 --> 00:01:53,010
+比文件原来的大小要小。
+less than what the files would have been originally.
+
+28
+00:01:53,010 --> 00:01:57,640
+所以我们实际上已经设法做到了大约23%的压缩。
+So we actually have managed to do a compression of about 23 percent.
+
+29
+00:01:57,660 --> 00:01:58,590
+所以这还不错。
+So that's not bad.
+
+30
+00:01:58,600 --> 00:02:02,040
+这将随文件类型和实际压缩内容的不同而不同。
+This will vary from file type to file type and what you're actually compressing.
+
+31
+00:02:02,040 --> 00:02:05,990
+但在这种情况下，我们对耶稣的压缩是23%。
+But in this case we've got a compression of 23 percent with Jesus.
+
+32
+00:02:06,120 --> 00:02:09,240
+因此，不仅仅是压缩是一个两阶段的事情。
+So not just how compression is a two stage thing.
+
+33
+00:02:09,240 --> 00:02:16,110
+首先，我们制作一个压缩包，然后使用压缩算法OK压缩该压缩包，在这个压缩算法中
+First we make a tarball and then we compress that tarball with a compression algorithm OK which in this
+
+34
+00:02:16,110 --> 00:02:17,410
+就是这个案子。
+case was it.
+
+35
+00:02:17,790 --> 00:02:20,370
+好的，把GS反转一下怎么样。
+Ok cause How about reversing the GS.
+
+36
+00:02:20,490 --> 00:02:22,320
+我们怎么才能把禁忌拿回来。
+How can we get the Tabo back.
+
+37
+00:02:22,590 --> 00:02:23,850
+嗯，这很容易。
+Well this is very easy.
+
+38
+00:02:23,850 --> 00:02:31,330
+我们所需要做的就是点击屏幕G并压缩存档点点。
+All we need to do is just click the screen G and zip archive dot dot dot.
+
+39
+00:02:31,430 --> 00:02:38,050
+好的，您只需对它使用gunzip，当您这样做时，您会看到它现在返回到tar文件中。
+OK so you just use g unzip on whatever it was and when you do that you see it's now back to a tar file.
+
+40
+00:02:38,070 --> 00:02:43,150
+如果我们看一下，我们可以看到这是一个顶层文件，使用的文件命令都存档在tar上。
+And if we look we can see that it's a top file using the file commands are archived on TAR.
+
+41
+00:02:43,200 --> 00:02:46,500
+它告诉你这对我们的档案馆来说是个谜。
+And it tells you it's a puzzle to our archive.
+
+42
+00:02:46,500 --> 00:02:47,080
+万岁。
+Hooray.
+
+43
+00:02:47,100 --> 00:02:50,830
+好的，我们已经成功地撤销了GS应用程序操作。
+OK so we've managed to undo the GS app operation.
+
+44
+00:02:51,150 --> 00:02:53,230
+好的，那也拉上拉链怎么样？
+OK so what about being zipped too.
+
+45
+00:02:53,430 --> 00:02:58,230
+嗯，因为它也是一种更重负荷的压缩算法，需要更多的计算时间
+Well because it too is a more heavy duty compression algorithm and it takes more computational time
+
+46
+00:02:58,230 --> 00:03:05,470
+比je‘s up，但通常不总是，但通常会返回比您使用它得到的更多的压缩文件。
+than JE's up but usually not always but usually returns more compressed files than you get with it.
+
+47
+00:03:05,500 --> 00:03:07,100
+因为这有点权衡。
+Because it's a bit of a tradeoff.
+
+48
+00:03:07,100 --> 00:03:10,240
+现在让我们在禁忌上也用BS压缩，看看我们会得到什么。
+Now let's compress at Tabo with BS too and see what we get like.
+
+49
+00:03:10,260 --> 00:03:11,200
+所以这很容易。
+So it's very easy.
+
+50
+00:03:11,300 --> 00:03:14,770
+我们要做的就是把它传到档案馆。
+All we have to do is BS it to archive.
+
+51
+00:03:14,820 --> 00:03:15,590
+Dr。
+DR.
+
+52
+00:03:15,790 --> 00:03:21,930
+当我们这样说的时候，我们现在看到它已经消失了，并且获得了BS必须提交的扩展名，如果我们使用
+And when we say that we now see that it's gone and got the BS had to file extension and if we use the
+
+53
+00:03:21,930 --> 00:03:26,430
+FILE命令在它上面，我们可以看到它说它是因为它要压缩数据。
+file command on it we can see that it says it because it to compress data.
+
+54
+00:03:26,430 --> 00:03:31,620
+它没有告诉你它被压缩之前是什么，所以我们丢失了一些信息，但是它
+It doesn't tell you what it was before it was compressed so we lose a bit of that information but it
+
+55
+00:03:31,620 --> 00:03:34,770
+确实已被压缩，并且文件命令知道它已被压缩。
+has indeed been compressed and the file command knows that it has.
+
+56
+00:03:34,980 --> 00:03:35,700
+那么它有多大呢。
+So how big is it.
+
+57
+00:03:35,760 --> 00:03:41,250
+如果我们看一下l选项，我们就可以看一下这里，我们可以看到这个
+Well if we take a look with the l option we can just have a look right there and we can see that this
+
+58
+00:03:41,250 --> 00:03:44,430
+是23000个137字节。
+is 23000 137 bytes.
+
+59
+00:03:44,490 --> 00:03:51,930
+所以它比GS版本的23000稍大一些，23个字节的纳比通常保存得最好
+So it's slightly larger than the GS version of 23000 and 23 bytes Nabby's it to is usually best saved
+
+60
+00:03:51,930 --> 00:03:54,140
+直到您拥有非常大的文件。
+until you have really large files.
+
+61
+00:03:54,160 --> 00:03:59,820
+现在，对于这些相对较小的文本文件，使用它不是很好，而是比较大的文件
+Now for these relatively small text files it didn't do as much good to use it to but rather large file
+
+62
+00:03:59,820 --> 00:04:00,900
+例如视频。
+such as a video.
+
+63
+00:04:00,900 --> 00:04:05,690
+您肯定会看到b.s to和gza实现的压缩结果有很大的不同。
+You'll definitely see a large difference between the compression results achieved by b.s up to and GZA.
+
+64
+00:04:05,840 --> 00:04:07,910
+让我们撤销一个BS应用程序的压缩。
+Let's undo a BS app to compression.
+
+65
+00:04:07,920 --> 00:04:08,740
+实际上这很容易。
+It's actually very easy.
+
+66
+00:04:08,730 --> 00:04:13,550
+我们要做的就是解压到，然后蜜蜂把它归档。
+All we've got to do is be unzip to and then whatever the bees have to archive it.
+
+67
+00:04:13,560 --> 00:04:17,350
+因此，在我们的情况下，这份存档的贸发会议很容易，我们按下Enter键。
+So in our case this archived UNCTAD are easy to we press enter.
+
+68
+00:04:17,520 --> 00:04:22,710
+我们看到我们已经返回到tar文件，并且再次可以使用file命令进行检查，我们已经
+We see that we've come back to the tar file and again we can use the file command to check and we've
+
+69
+00:04:22,710 --> 00:04:25,450
+拿回了我们的焦油档案。
+got our tar archive back.
+
+70
+00:04:25,460 --> 00:04:29,990
+现在有其他压缩算法传递ex-head压缩算法。
+Now there are other compression algorithms that Messers the ex-head compression algorithm.
+
+71
+00:04:30,090 --> 00:04:34,920
+如果您想要更深入地比较它对蜜蜂G的性能和
+And if you want to see a more in-depth comparison between the performance of Gs of bees it to and the
+
+72
+00:04:34,920 --> 00:04:39,900
+退出算法我在资源部分放了一个链接，让你找出来。
+exit algorithm I put a link in the resources section for you to find out.
+
+73
+00:04:39,900 --> 00:04:44,710
+不过，现在有一件事您应该牢记，那就是如何创建zip文件。
+Now there is something that you should bear in mind however which is how do you create zip files.
+
+74
+00:04:44,750 --> 00:04:50,060
+现在，zip文件是您知道在Windows或Mac上常用的文件。
+Now zip files are files that you know are commonly used on Windows or Mac.
+
+75
+00:04:50,160 --> 00:04:52,410
+你知道压缩档案。
+And do you know as compressed archives.
+
+76
+00:04:52,470 --> 00:04:54,360
+现在他们不是了。
+Now they're not.
+
+77
+00:04:54,700 --> 00:05:01,580
+我认为它们不像你用BE得到的那样压缩，但是它们通常用在其他
+I don't think they are as compressed as what you'll get with be too but they are commonly used on other
+
+78
+00:05:01,810 --> 00:05:03,280
+在其他操作系统上。
+on other operating systems.
+
+79
+00:05:03,350 --> 00:05:07,600
+因此，如果您想要创建一个zip文件，实际上是一个简单的过程。
+So if you want to create a zip file it's actually a one step process.
+
+80
+00:05:07,730 --> 00:05:08,880
+您只需键入zip即可。
+You'll just type zip.
+
+81
+00:05:09,050 --> 00:05:13,060
+好的，那么你把文件放进去，让我们杀了它，让我们称之为东西。
+OK then you put the files let's kill let's call it thing.
+
+82
+00:05:13,100 --> 00:05:13,980
+点拉链。
+Dot zip.
+
+83
+00:05:14,090 --> 00:05:18,370
+然后我们将文件1.60放入2.6的文件中，放入3.6的文件中。
+And then we'll put file 1.60 for 2.6 for 3.6.
+
+84
+00:05:18,550 --> 00:05:19,690
+我想当总统。
+I want to be president.
+
+85
+00:05:19,850 --> 00:05:28,450
+我们将看到我们现在有一个压缩文件，所以如果我按下FILES FILE，那么对不起，压缩它做的事情了吗
+We'll see that we now have a zip file in there so if I press files file are things sorry zip it does
+
+86
+00:05:28,460 --> 00:05:34,510
+它是压缩存档数据，这是您可以在其他操作系统(如Windows)上使用的数据
+that it's a zip archive data and this is what you can use on other operating systems such as Windows
+
+87
+00:05:34,520 --> 00:05:42,710
+您通常可以使用压缩文件或压缩文件，因为它们往往不太管用
+and you usually can with zipped files or zip to compressed files because they don't tend to work too
+
+88
+00:05:42,710 --> 00:05:48,170
+在其他操作系统上，默认情况下，您不必安装其他软件，如7zip或
+well on other operating systems by default you don't have to install other software like 7 zip or when
+
+89
+00:05:48,170 --> 00:05:50,400
+不管是生的还是什么都可以用来提取它们。
+raw or whatever it might be to extract them.
+
+90
+00:05:50,480 --> 00:05:56,890
+当然，您只需解压缩该zip文件，系统会询问您是否要将它们全部解压缩，然后
+And of course you can just unzip that zip file and it'll ask you do you want to extract them all and
+
+91
+00:05:56,930 --> 00:05:58,340
+然后你可以把它们全部提取出来。
+then you can extract them all.
+
+92
+00:05:58,340 --> 00:06:02,500
+这只是在问我们，因为它就像，哦，我必须重写一些东西。
+This is just asking us because it was like oh I have to overwrite some stuff.
+
+93
+00:06:02,570 --> 00:06:04,530
+这没问题，我们刚刚答应了，而且奏效了。
+That's no problem we just said yes and that worked.
+
+94
+00:06:04,640 --> 00:06:08,570
+因此，如果您想要将zip文件压缩，那么解压是可行的。
+So if you want to make zip files zip and unzip is the way to go.
+
+95
+00:06:08,870 --> 00:06:14,150
+因此，如果我们清除屏幕，到目前为止，我们一直将压缩视为一个两步过程。
+So if we clear the screen no so far we've been looking at compression as a two step process.
+
+96
+00:06:14,160 --> 00:06:19,600
+好的，首先，我们使用命令创建了一个tarball，然后使用以下任一命令压缩该tabbouleh
+OK first we've been creating a tarball using the command and then compressing that tabbouleh using either
+
+97
+00:06:19,780 --> 00:06:23,730
+Zip或将其压缩为您知道的任何其他压缩算法。
+zip or it to or you know any other compression algorithm.
+
+98
+00:06:23,750 --> 00:06:24,140
+好的。
+OK.
+
+99
+00:06:24,290 --> 00:06:26,970
+但有没有办法一步到位。
+But is there any way to do it in one step.
+
+100
+00:06:27,200 --> 00:06:29,780
+嗯，因为创建备份是一件很常见的事情。
+Well because creating backups is such a common thing to do.
+
+101
+00:06:29,780 --> 00:06:34,880
+答案是肯定的，您实际上可以创建一个表，然后直接使用压缩算法对其进行压缩
+The answer is yes you can actually create a table and compress it using a compression algorithm straight
+
+102
+00:06:34,880 --> 00:06:36,490
+从Tor命令内部。
+from within the Tor command.
+
+103
+00:06:36,600 --> 00:06:42,080
+所以让我们删除我们的顶部或现象，因为它跟在我们后面，或者tar档案点，我们要删除
+So let's just delete our top or phenomenas it followed us or tar archive dot tar we're going to remove
+
+104
+00:06:42,080 --> 00:06:44,120
+那玩意儿有点拉链。
+that thing dot zip.
+
+105
+00:06:44,180 --> 00:06:48,890
+因此，我们将处理掉我们拥有的所有档案，然后我们将采取正确的措施
+So we're going to get rid of all every archive that we've got and then we're going to take it right
+
+106
+00:06:48,890 --> 00:06:54,080
+从这里的原始数据开始，这些原始文件一下子就变成了压缩的归档文件。
+from just the raw data here these raw files straight to a compressed archive in one go.
+
+107
+00:06:54,170 --> 00:06:54,730
+好的。
+OK.
+
+108
+00:06:54,980 --> 00:07:00,130
+那么，要创建选项卡来创建焦油球本身，我们应该如何做呢？
+So to create the tab to create the tar ball itself how would we do that.
+
+109
+00:07:00,140 --> 00:07:06,860
+我们要做的是创建我们要做的，tar cvf，所以创建Verbose，并允许它接受文件。
+Well what we do is we'd create what we do TAR CVF so create verbose and allow it to accept files.
+
+110
+00:07:06,860 --> 00:07:10,140
+我们要创建我们的档案点。
+We're going to create our archive dot.
+
+111
+00:07:11,000 --> 00:07:14,390
+我们去申请一到三份。
+There we go and file one to three.
+
+112
+00:07:14,390 --> 00:07:16,000
+所以这就是我们通常的做法。
+So this is the way that we normally do it.
+
+113
+00:07:16,090 --> 00:07:16,740
+好的。
+OK.
+
+114
+00:07:16,940 --> 00:07:21,660
+但是现在要压缩文件，我们只需要再给它一个选项。
+But now to compress the files we just need to give it one more option.
+
+115
+00:07:21,710 --> 00:07:22,230
+好的。
+OK.
+
+116
+00:07:22,340 --> 00:07:27,070
+因此，要使用GZA执行此操作，只需给它ZED选项即可。
+So to do it with GZA you just give it the Zed option.
+
+117
+00:07:27,310 --> 00:07:27,940
+好的。
+OK.
+
+118
+00:07:28,040 --> 00:07:32,250
+如果我们这么做了，就可以用老头压缩了。
+And if if we do that that will compress using geezer.
+
+119
+00:07:32,570 --> 00:07:37,460
+我们应该记住，不是将其命名为在tar上存档，因为这将是一个压缩文件
+And we should remember that instead of naming it as archived on TAR because this is going to be a zip
+
+120
+00:07:37,460 --> 00:07:43,460
+我们应该在文件的末尾添加点G Zed，这只是为了约定，因为它不会自动添加
+file we should add dot G Zed at the end as well just for convention because it won't be added automatically
+
+121
+00:07:43,460 --> 00:07:44,630
+在使用此方法时。
+when using this method.
+
+122
+00:07:44,720 --> 00:07:45,230
+好的。
+OK.
+
+123
+00:07:45,500 --> 00:07:50,430
+在自动添加文档所需的文件扩展名之前对其运行JEES。
+When you run Jees upon it before it was added automatically the doc desired file extension.
+
+124
+00:07:50,510 --> 00:07:54,400
+但是现在，因为我们在一个步骤中完成了所有这些操作，所以我们必须提供文件名。
+But now because we're doing it all in one step we have to provide the file name.
+
+125
+00:07:54,410 --> 00:07:58,220
+因此，我们需要添加这一点，以便您知道更容易看到正在发生的情况。
+So we need to add on that just so you know it's a bit easier to see what's going on.
+
+126
+00:07:58,370 --> 00:08:04,700
+当我们完成后，当我们按Enter键时，我们将看到已创建的归档ALGY已创建，并且
+And when we have when we press Enter we'll see the archived Algy's that has been has been created and
+
+127
+00:08:04,700 --> 00:08:08,110
+我们可以使用file命令检查它是否确实是GSit文件。
+we can check that it is in fact GS It file using the file command.
+
+128
+00:08:08,130 --> 00:08:12,250
+它说这只是一个压缩的数据，所以它非常酷。
+And it says that it is just a compressed data so it's super cool.
+
+129
+00:08:12,290 --> 00:08:12,700
+好的。
+OK.
+
+130
+00:08:12,800 --> 00:08:15,350
+现在你也要怎么用它呢？
+Now how would you do it using it too.
+
+131
+00:08:15,380 --> 00:08:20,120
+嗯，如果我们清除屏幕，废话，它也是完全相同的，除了代替ZED。
+Well if we clear the screen BS It too is exactly the same except instead of zed.
+
+132
+00:08:20,270 --> 00:08:21,790
+你只有J。
+You just have J.
+
+133
+00:08:22,070 --> 00:08:24,100
+好的，如果您有J，请按。
+OK so if you press if you have J.
+
+134
+00:08:24,110 --> 00:08:31,300
+现在请记住，我们要将扩展名更改为02%，否则我们将看到董贝的档案
+And now remember we're going to change our extension to be 0 2 percent or we'll see that archive Dombey's
+
+135
+00:08:31,390 --> 00:08:37,190
+2已创建，我们可以使用告诉它的FILE命令检查它是否确实有效
+2 has been created and we can check that that is indeed valid by using the file command telling it to
+
+136
+00:08:37,190 --> 00:08:41,780
+看看要存档的BE，它告诉我们压缩数据是胡说八道。
+look at the bes to archive and it tells us that it's BS to compressed data.
+
+137
+00:08:41,810 --> 00:08:44,910
+这就是你可以一口气压缩的方法。
+So that's how you can compress in one go.
+
+138
+00:08:44,930 --> 00:08:49,630
+我们怎么才能一口气从那些压缩的档案中提取出来呢。
+How would we go about extracting from those compressed archives in one go.
+
+139
+00:08:49,730 --> 00:08:52,070
+嗯，凯勒斯再把它们删除一次也很容易。
+Well it's really easy as well Caylus delete them again.
+
+140
+00:08:52,110 --> 00:08:53,890
+实际上，我不是因为我们需要它们才这么做的。
+Actually I was not doing them because we'll need them right.
+
+141
+00:08:54,020 --> 00:08:57,120
+那么我们通常如何从文件中提取。
+So how would we normally extract from a file.
+
+142
+00:08:57,170 --> 00:08:58,420
+嗯，我通常会这么做。
+Well I would normally do it.
+
+143
+00:08:58,550 --> 00:09:02,520
+如果你记得是TA那就是X V.F.
+If you remember is TA then X V.F..
+
+144
+00:09:02,640 --> 00:09:08,190
+所以X-Fi解压Abodh的VIF，我必须接受一个文件，你会给它这个文件。
+So X-Fi extract VIF of Abodh and I have to accept a file and you'd give it the file.
+
+145
+00:09:08,210 --> 00:09:14,690
+好的，但让我们尝试提取耶稣选项，而不是删除这些原始文件，然后尝试
+OK but let's try and extract the Jesus option versus delete these original files and then trying to
+
+146
+00:09:14,690 --> 00:09:17,340
+首先解压GS选项。
+extract the the GS option first.
+
+147
+00:09:17,360 --> 00:09:22,730
+所以，为了提取耶稣的选项，我们将再次这样做，因为那是富士的。
+So to extract the Jesus option we will do is that again because that is Fuji's.
+
+148
+00:09:22,790 --> 00:09:23,200
+好的。
+OK.
+
+149
+00:09:23,300 --> 00:09:27,830
+所以压缩的时候有ZED，解压的时候有ZED，你要做的就是改变
+So you had the Zed when compressing you have the Zed when extracting all you've got to do is change
+
+150
+00:09:27,830 --> 00:09:30,210
+把C改成X，你就可以走了。
+the C to an X and you get to go.
+
+151
+00:09:30,290 --> 00:09:36,140
+所以当我们按下这一键时，我们会看到现在我们又把它们全部提取出来了，我们拿回了数据。
+So when we press that we'll see that now we've extracted them all out again and we've got the data back.
+
+152
+00:09:36,350 --> 00:09:39,080
+如果我们在这里删除这些文件，如果我们在那里删除它们。
+So if we delete these files here if we just delete them there.
+
+153
+00:09:39,080 --> 00:09:41,850
+现在用它来提取怎么样。
+Now how about extracting using it.
+
+154
+00:09:41,990 --> 00:09:44,260
+你要记住J代表。
+Well you remember that J is for.
+
+155
+00:09:44,300 --> 00:09:46,600
+因此，与其使用XEDIT，不如将J。
+So instead of having XEDIT let's just put the J.
+
+156
+00:09:46,670 --> 00:09:50,890
+然后我们只需要告诉它归档是什么，并记住它是一个归档的BS应用程序，
+And then we just need to tell it what the archive is and remember that it's a BS app to archives which
+
+157
+00:09:50,900 --> 00:09:52,480
+实际上改了名字。
+actually change the name.
+
+158
+00:09:52,580 --> 00:09:59,270
+因此，我们通过Baeza提取详细信息，然后将文件提供给它，我们已经
+So we are Taar extracting verbose through Baeza up to and then giving it the file and that we are we've
+
+159
+00:09:59,300 --> 00:10:02,610
+它也被提取出来了，所以只要你还记得，它就非常非常容易。
+extracted it too so it's very very easy as long as you can remember.
+
+160
+00:10:02,690 --> 00:10:05,910
+富士的EP J也是赞成的吗？
+Is Fuji's EP J is for it too.
+
+161
+00:10:06,010 --> 00:10:10,370
+你看到了，你可以一次提取和压缩所有的东西，万岁。
+You saw it and you can extract and compress all in one go Hooray.
+
+162
+00:10:10,390 --> 00:10:15,190
+我们在前两个视频中已经看到了很多，很搞笑的是，一个关于压缩的部分
+So we've seen so much in the last two videos it's quite hilarious that a section on compression would
+
+163
+00:10:15,190 --> 00:10:16,400
+要花很长时间才能向右走。
+take so long right.
+
+164
+00:10:16,750 --> 00:10:22,510
+总之，让我们快速回顾一下，您首先了解了tarball的概念，现在是tar文件或
+Anyway let's have a quick recap so you first learned about the concept of a tarball now tar files or
+
+165
+00:10:22,510 --> 00:10:26,920
+焦油球或仅供您存储想要压缩的文件的容器。
+tar balls or just containers for you to store the files that you want to compress.
+
+166
+00:10:26,980 --> 00:10:27,520
+好的。
+OK.
+
+167
+00:10:27,590 --> 00:10:33,400
+它们可以使用tar命令创建tarball，并且表实际上不会对其
+They can create tarballs using the tar command and tables do not really do any compression on their
+
+168
+00:10:33,400 --> 00:10:34,090
+属于自己的。
+own.
+
+169
+00:10:34,150 --> 00:10:40,150
+这是压缩算法的工作，tarball只包含文件，您看到了如何添加
+That's the job of a compression algorithm the tarball just contains the files and you saw how to add
+
+170
+00:10:40,150 --> 00:10:44,630
+将文件压缩到tarball中，以及如何使用命令从tarball中提取文件。
+files into tarballs and how to extract files from tarballs using the command.
+
+171
+00:10:44,650 --> 00:10:48,760
+请记住，在这段视频的参考资料部分有一张小抄，它将列出
+And remember that there's a cheat sheet in the resources section for this video that will list out the
+
+172
+00:10:48,760 --> 00:10:51,680
+不同的选项不同的Talk命令的使用方式。
+different options different ways of using the talk command.
+
+173
+00:10:51,700 --> 00:10:56,530
+现在，有了表之后，为了压缩它，您需要使用压缩算法。
+Now once you have the table in order to compress it you need to use a compression algorithm.
+
+174
+00:10:56,620 --> 00:10:57,010
+好的。
+OK.
+
+175
+00:10:57,130 --> 00:11:00,790
+因此，可以使用各种不同的压缩算法来压缩tarball。
+So tarballs can be compressed using a variety of different compression algorithms.
+
+176
+00:11:00,970 --> 00:11:02,750
+我们看了一下GS。
+And we took a look at GS.
+
+177
+00:11:02,830 --> 00:11:05,920
+这两个是Linux上常见的选项。
+And these two which are common options on Linux.
+
+178
+00:11:05,980 --> 00:11:09,940
+但是exect选项是另一个选项，我们在这里没有讨论它，但是如果您想阅读更多关于
+But the exect option is another option we didn't discuss it here but if you want to read more about
+
+179
+00:11:09,940 --> 00:11:14,110
+不同算法之间的比较我还在
+the comparison between the different algorithms I've also put a link to a intrusting blog post in the
+
+180
+00:11:14,110 --> 00:11:16,680
+这盘录像带的参考资料部分，让你也看一看。
+resources section for this videotape for you to have a look at as well.
+
+181
+00:11:16,760 --> 00:11:17,510
+好的。
+OK.
+
+182
+00:11:17,770 --> 00:11:25,090
+但是对于JE的UP NBC到GS来说，它往往更快，但提供的压缩比更少，它倾向于
+But with regards to JE's up NBC to GS It tends to be faster but give less compression Busby's it tends
+
+183
+00:11:25,090 --> 00:11:25,950
+以提供更多的压缩。
+to give more compression.
+
+184
+00:11:25,960 --> 00:11:27,770
+但是要多花一点计算时间。
+But take a bit more computation time.
+
+185
+00:11:27,780 --> 00:11:32,170
+好的，这只是一些需要记住的事情，但请务必查看参考资料部分中的链接
+OK so that's just something to bear in mind but by all means check out the link in the resources section
+
+186
+00:11:32,170 --> 00:11:34,400
+进行更深入的讨论。
+for a more in-depth discussion.
+
+187
+00:11:34,510 --> 00:11:41,530
+您还了解了如何使用创建zip文件来与Windows或Mac之类的东西兼容
+You saw also how you can create zip files for compatibility with things like Windows or Mac using the
+
+188
+00:11:41,530 --> 00:11:46,100
+压缩和解压缩命令，所以这也是您记录在案的内容。
+zip and unzip commands so that's something as well that you've got on record as well.
+
+189
+00:11:46,180 --> 00:11:46,750
+好的。
+OK.
+
+190
+00:11:46,810 --> 00:11:53,050
+你也看到了如何不只是制作油球，然后压缩成步骤。
+And you saw as well how to not just do making the tarball and then compressing into steps.
+
+191
+00:11:53,050 --> 00:11:58,810
+所以我必须使用各种快捷方式和所有的东西在一个步骤中完成归档和压缩
+So I had to do archiving and compression in just one step using variety of shortcuts and all that stuff
+
+192
+00:11:58,930 --> 00:12:00,080
+都在小抄里。
+is in the cheat sheet.
+
+193
+00:12:00,130 --> 00:12:04,340
+如果您需要复习一下，可以在本视频的参考资料部分找到。
+You can find in the resources section for this video if you ever need a refresher.
+
+194
+00:12:04,360 --> 00:12:07,960
+好的，一切都很简单，一旦你看了小抄，你可能就能看到图案了
+OK it's all very simple and once you look at the cheat sheet probably you'll be able to see the pattern
+
+195
+00:12:09,040 --> 00:12:10,650
+但这真的是相当简单的事情。
+but it's really quite simple stuff.
+
+196
+00:12:10,650 --> 00:12:12,010
+一旦你做了一两次。
+Once you've done it once or twice.
+
+197
+00:12:12,060 --> 00:12:12,430
+好的。
+OK.
+
+198
+00:12:12,520 --> 00:12:19,010
+总而言之，您现在可以使用Linux命令行创建自己的归档和备份
+So all in all you can now create your own archives and backups using Linux using the Linux command line
+
+199
+00:12:19,030 --> 00:12:23,860
+这是非常棒的，因为在这一节中，所有的内容都是关于学习如何使用文件的。
+which is super awesome because on this section all about learning how to use files.
+
+200
+00:12:23,860 --> 00:12:27,190
+现在，当您创建了Defarge时，您已经对它们进行了编辑，它们已经复制、粘贴，您已经移动了它们
+Now when you've created Defarge you've edited them they've copy paste them you've moved them you've
+
+201
+00:12:27,190 --> 00:12:28,540
+对他们为所欲为。
+done whatever you want with them.
+
+202
+00:12:28,540 --> 00:12:32,920
+您还可以创建自己的备份，并以节省空间的方式保存以备将来使用。
+You can also create your own backups and save for later in a say in a space efficient way.
+
+203
+00:12:32,950 --> 00:12:39,730
+欢迎大家在下一个视频中我们要做的是，我们将结束我们的讨论
+So Welden you now in the next video what we're going to be doing is we're going to be closing our discussion
+
+204
+00:12:39,760 --> 00:12:45,670
+关于文件和文件系统的章节，我想说您在
+for the section on files and the file system and I want to say that you've really come so very far in
+
+205
+00:12:45,670 --> 00:12:49,600
+这一节和下一段视频我想花点时间来回顾一下我们在这篇文章中学到的东西
+this section and the next video I want to take the time to have a recap of what we've learned in this
+
+206
+00:12:49,600 --> 00:12:52,250
+也是为了庆祝你们的进步。
+section and also to celebrate your progress.
+
+207
+00:12:52,270 --> 00:12:57,860
+因此，现在欢迎您对课程的这一部分进行总结，以及一些应得的赞扬。
+So Welden you now for a summary of the section of the Course as well as some a deserved set of praises.
+
+208
+00:12:57,880 --> 00:12:59,630
+我将在下一个视频中见到你。
+I'll see you in the next video.
+

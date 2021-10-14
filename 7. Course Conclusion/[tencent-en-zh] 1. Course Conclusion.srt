@@ -1,0 +1,130 @@
+1
+00:00:00,240 --> 00:00:04,340
+大家好，漂亮的人们，祝贺你们顺利通过了这门课程。
+Hello you beautiful people and congratulations for making it through the course.
+
+2
+00:00:04,380 --> 00:00:09,000
+所以我们一起的旅程让你从学习如何打开航站楼和运行命令开始
+So our journey together has taken you right from learning how to open the terminal and run commands
+
+3
+00:00:09,330 --> 00:00:14,850
+一直到创建文件归档、编写自动化脚本和管理数以千计的
+all the way to creating file archives writing automated scripts and managing thousands of pieces of
+
+4
+00:00:14,850 --> 00:00:16,760
+使用包管理器的软件。
+software using the package manager.
+
+5
+00:00:16,770 --> 00:00:20,510
+所以你们真的走了一段令人难以置信的漫长道路，我为你们感到难以置信的骄傲。
+So you truly have come an incredibly long way and I'm incredibly proud of you.
+
+6
+00:00:20,670 --> 00:00:21,590
+9~10成熟。
+Well done.
+
+7
+00:00:21,690 --> 00:00:25,950
+我只想拍这段视频，非常感谢你们陪我走这趟旅程
+And I just wanted to shoot this video to say thank you very much for coming along with me on this journey
+
+8
+00:00:26,160 --> 00:00:30,390
+通过Linux命令行，我希望您从我们的共同旅程中获益良多
+through that Linux command line and I hope that you've received some benefit from our journey together
+
+9
+00:00:30,660 --> 00:00:32,800
+我祝你在未来一帆风顺。
+and I wish you the very best in the future.
+
+10
+00:00:32,910 --> 00:00:36,780
+如果你真的想学到更多，一定要看一下我的其他课程，并密切关注
+And if you do want to learn more do take a look at some of my other courses and keep an eye out for
+
+11
+00:00:36,780 --> 00:00:41,120
+有关更高级课程的信息，使您的学习更上一层楼。
+information about more advanced courses to take your learning to the next level.
+
+12
+00:00:41,220 --> 00:00:45,840
+事实上，我会在资源部分为您提供特别折扣优惠券链接
+And in fact I'll be putting special discount coupon links for you in the resources section for this
+
+13
+00:00:45,840 --> 00:00:47,400
+录像带或者这附近的某个地方。
+video or somewhere around here.
+
+14
+00:00:47,520 --> 00:00:51,770
+对于我所有的课程，只是为了感谢你成为一名学生，所以，去吧，报名参加你想要的任何课程吧
+For all my courses just to say thank you for being a student so go ahead and enroll in whatever you'd
+
+15
+00:00:51,770 --> 00:00:52,240
+喜欢。
+like.
+
+16
+00:00:52,340 --> 00:00:55,380
+如果你有什么特别想学的，或者你想学的另一门课程
+And if there's something in particular that you would like to learn or another course that you would
+
+17
+00:00:55,380 --> 00:00:56,280
+喜欢我去创造。
+like me to create.
+
+18
+00:00:56,430 --> 00:01:01,500
+我总是听取建议，所以给我发个信息，我会尽我所能去实现它。
+I always listen to suggestions so send me a message and I'll do what ever I can to make that happen.
+
+19
+00:01:01,560 --> 00:01:03,460
+如果你百分之百修完了这门课。
+And if you finish the course 100 percent.
+
+20
+00:01:03,570 --> 00:01:08,040
+你应该很快就会收到你给我的电子邮件的结业证书，让你打印出来，然后
+You should soon receive a certificate of completion from you to me by email for you to print off and
+
+21
+00:01:08,040 --> 00:01:13,710
+放上你的链接个人资料，或者自豪地向世界展示你现在是Linux的大师。
+put on your linked in profile or to show proudly to the world that you are now and Linux master.
+
+22
+00:01:13,710 --> 00:01:17,580
+如果您在通过认证时遇到任何问题，请与我的支持团队联系
+And if you do have any troubles getting the certificate through do contact you to me support team on
+
+23
+00:01:17,580 --> 00:01:20,850
+支持你到我的网站，他们会帮你解决的。
+support at you to me dot com and they'll sort it all out for you.
+
+24
+00:01:21,030 --> 00:01:25,530
+除此之外，我祝你万事如意，并希望你能得到我最大的敬意和感激
+And other than that I wish you the absolute best and hope you have my utmost respect and gratitude for
+
+25
+00:01:25,560 --> 00:01:27,050
+试着投资于你的学习。
+trying to invest in your learning.
+
+26
+00:01:27,090 --> 00:01:30,890
+祝你一切顺利，希望不久能再次见到你。
+So good luck with everything and I hope to have the pleasure of meeting you again soon.
+

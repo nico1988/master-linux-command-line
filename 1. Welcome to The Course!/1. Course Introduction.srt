@@ -1,0 +1,179 @@
+1
+00:00:00,300 --> 00:00:05,420
+Hello and congratulations for making the decision to sign up to the cause and propel yourself towards
+
+2
+00:00:05,420 --> 00:00:06,390
+the next mastery.
+
+3
+00:00:06,570 --> 00:00:11,250
+Hi I'm Ziyad and I wanted to do a quick video to congratulate you for making the excellent decision
+
+4
+00:00:11,250 --> 00:00:15,780
+to sign up and I wanted to give you a quick introduction to what we'll be covering in the course.
+
+5
+00:00:15,780 --> 00:00:19,830
+So first we're going to get you all set up with Linux by walking you through step by step through an
+
+6
+00:00:19,830 --> 00:00:22,770
+installation of Linux on your own virtual machine.
+
+7
+00:00:22,770 --> 00:00:26,610
+Now doing it this way means that you can play around with whatever you like without risking anything
+
+8
+00:00:26,640 --> 00:00:29,320
+or damaging anything and anything can really go wrong.
+
+9
+00:00:29,460 --> 00:00:34,080
+Think of it as your perfect playground to the awesome skills that you'll learn in the course.
+
+10
+00:00:34,110 --> 00:00:37,260
+Then we're going to move on to learn all about the Linux terminal.
+
+11
+00:00:37,260 --> 00:00:42,030
+An incredibly powerful program that is your gateway to doing anything that you want on your Linux machine.
+
+12
+00:00:42,030 --> 00:00:46,800
+We'll discuss what the terminal is how to use it how to enter commands and clear up popular misconceptions
+
+13
+00:00:46,890 --> 00:00:48,370
+that may be floating around.
+
+14
+00:00:48,380 --> 00:00:52,200
+Now the important concepts that you'll learn in that section of the Course will lay the critical foundations
+
+15
+00:00:52,200 --> 00:00:56,980
+for everything that you'll do within an X command line and it will make it all start to make sense.
+
+16
+00:00:57,180 --> 00:01:01,340
+Well then move on to discuss the Linux file system and how to work with files that work working with
+
+17
+00:01:01,330 --> 00:01:04,680
+files is probably 99 percent of what we do on a on an everyday basis.
+
+18
+00:01:04,740 --> 00:01:08,430
+And so when something had to work with files effectively and efficiently using the command line is an
+
+19
+00:01:08,430 --> 00:01:10,080
+incredible ability to game.
+
+20
+00:01:10,220 --> 00:01:15,810
+Now in this section you'll have to create delete copy paste edit rename move find open search archive
+
+21
+00:01:15,840 --> 00:01:20,240
+and compress files and so much more and it'll make you able to do anything you want with files.
+
+22
+00:01:20,310 --> 00:01:23,120
+But with the efficiency of the command line it's going to be awesome.
+
+23
+00:01:23,280 --> 00:01:28,320
+We'll then move on to how to automate tasks using bash scripts so you had to write bash scripts and
+
+24
+00:01:28,320 --> 00:01:30,900
+how to schedule these scripts to run at certain dates and times.
+
+25
+00:01:31,020 --> 00:01:36,390
+So you can automate your daily workflow and finally you'll learn all about installing third party software
+
+26
+00:01:36,390 --> 00:01:37,520
+on your Linux machine.
+
+27
+00:01:37,560 --> 00:01:41,870
+You don't have to search for new software from the software repositories and how to manage your software
+
+28
+00:01:41,910 --> 00:01:43,550
+using software managers.
+
+29
+00:01:43,590 --> 00:01:47,700
+You'll also learn about open source software and what it means to be part of the open source community
+
+30
+00:01:47,970 --> 00:01:52,230
+as well as learning how to take source code and compile it into working programs.
+
+31
+00:01:52,410 --> 00:01:55,980
+Now by the end of this course you'll be comfortable using the Linux operating system and you'll wonder
+
+32
+00:01:56,070 --> 00:01:58,360
+why you haven't been using it all along.
+
+33
+00:01:58,360 --> 00:02:03,150
+And one thing I always aim for in my courses is to make the content on forgetable so I had to help cement
+
+34
+00:02:03,150 --> 00:02:03,810
+the learning.
+
+35
+00:02:03,840 --> 00:02:08,310
+You have quizzes to check your grasping the concepts and you also have some assignments for you to complete
+
+36
+00:02:08,550 --> 00:02:13,050
+to really test and improve your skills and there are also some cheat sheets summarizing the concepts
+
+37
+00:02:13,050 --> 00:02:17,510
+from the course so you don't need to take notes to sit back relax and practice the skills.
+
+38
+00:02:17,520 --> 00:02:22,560
+And rest assured that the important information is jotted down for you in professionally designed cheat
+
+39
+00:02:22,560 --> 00:02:25,200
+sheets for free to refer to whenever you want.
+
+40
+00:02:25,200 --> 00:02:29,190
+Now if you ever need any help feel free to ask questions in the questions area and when you feel you've
+
+41
+00:02:29,190 --> 00:02:33,210
+got immersed in the course please leave a review to encourage other students take the course so we can
+
+42
+00:02:33,210 --> 00:02:36,770
+make the joys of the Linux operating system accessible to everyone.
+
+43
+00:02:36,780 --> 00:02:41,070
+Other than that I wish you a very pleasant time learning Linux in the course and I bet you can't wait
+
+44
+00:02:41,070 --> 00:02:41,880
+to get started.
+
+45
+00:02:41,880 --> 00:02:46,030
+So let's jump right in and get you set up with your own Linux virtual machine.

@@ -1,0 +1,560 @@
+1
+00:00:00,330 --> 00:00:02,010
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:02,040 --> 00:00:07,190
+上一个视频，你直接进入并使用Linux操作系统上最强大的工具。
+The last video you got stuck right in and use the most powerful tool on the Linux operating system.
+
+3
+00:00:07,320 --> 00:00:10,940
+但正如他们所说，强大的力量伴随着巨大的责任。
+But as they say with great power comes great responsibility.
+
+4
+00:00:10,950 --> 00:00:16,020
+因此，为了最大限度地控制Linux操作系统，您需要对
+So in order to maximize your control over the Linux operating system you need to get a solid understanding
+
+5
+00:00:16,020 --> 00:00:18,660
+当你输入你的命令时会发生什么。
+of what's going on when you type your commands.
+
+6
+00:00:18,660 --> 00:00:22,650
+在接下来的几个视频中，我们将对实际发生的事情做一些深入的研究
+So over the next few videos we're going to be doing a bit of a deep dive on what is actually going on
+
+7
+00:00:22,650 --> 00:00:26,970
+当您运行命令时，还可以详细了解命令的结构，以便您可以
+when you run your commands and also go into detail on how the commands are structured so that you can
+
+8
+00:00:27,030 --> 00:00:29,530
+了解如何正确使用它们。
+understand how to use them properly.
+
+9
+00:00:29,550 --> 00:00:34,770
+现在，如果你已经有过一些以前的经验，但感觉不是很有经验，或者什么都没有
+Now if you do already have some previous experience but didn't feel as you quite got it or that something
+
+10
+00:00:34,770 --> 00:00:39,590
+在你的理解中是缺失的，很可能你不是百分之百清楚
+is missing in your understanding it's very likely that you aren't 100 percent clear on the stuff that
+
+11
+00:00:39,590 --> 00:00:41,560
+我们将在接下来的几个视频中进行报道。
+we're going to be covering in the next few videos.
+
+12
+00:00:41,570 --> 00:00:43,530
+所以这是非常重要的事情。
+So this is super important stuff.
+
+13
+00:00:43,530 --> 00:00:48,990
+现在，不管你以前有过什么经验，还是完全是个初学者，我真的希望你付钱
+Now whether you do have some previous experience or a complete beginner to it I really want you to pay
+
+14
+00:00:48,990 --> 00:00:53,190
+我们将在接下来的几个视频中介绍的主题将是您最关注的主题，因为它们是如此
+your best attention to the topics that we'll be covering in the next few videos because they are so
+
+15
+00:00:53,280 --> 00:00:56,830
+对您理解Linux操作系统至关重要。
+critically important to your understanding of the Linux operating system.
+
+16
+00:00:56,970 --> 00:01:00,930
+如果您理解我们在接下来的几个视频中介绍的内容，那么您在Linux中所做的一切都将开始
+And if you do understand what we cover in the next few videos everything you do in Linux will start
+
+17
+00:01:00,930 --> 00:01:02,550
+才能说得更有意义。
+to make a whole lot more sense.
+
+18
+00:01:02,550 --> 00:01:05,640
+所以让我们非常非常兴奋的是，我们将会把这些事情弄清楚。
+So be very very excited that we're going to clear this stuff up.
+
+19
+00:01:05,700 --> 00:01:10,740
+现在，在这段视频中，您将了解终端命令和名为
+Now in this video you're going to learn the difference between commands the terminal and something called
+
+20
+00:01:10,800 --> 00:01:11,520
+贝壳。
+the shell.
+
+21
+00:01:11,520 --> 00:01:16,440
+这些都是非常重要的区别，它们将基本上支撑你所做的每一件事
+These are very important distinctions that will underpin basically every single thing that you do on
+
+22
+00:01:16,500 --> 00:01:17,150
+命令行。
+the command line.
+
+23
+00:01:17,160 --> 00:01:21,600
+在本视频结束时，您将了解终端命令和
+And by the end of this video you'll have understood the difference between the terminal commands and
+
+24
+00:01:21,600 --> 00:01:26,130
+外壳，您将对其背后的实际情况有更丰富、更深入的理解
+the shell and you'll have a much richer and deeper understanding of what is actually going on behind
+
+25
+00:01:26,130 --> 00:01:26,730
+场景。
+the scenes.
+
+26
+00:01:26,790 --> 00:01:28,290
+当你使用航站楼的时候。
+When you use the terminal.
+
+27
+00:01:28,350 --> 00:01:30,390
+所以这将是一场极其重要的讲座。
+So this is going to be a critically important lecture.
+
+28
+00:01:30,540 --> 00:01:31,940
+让我们继续往前走，开始做这件事吧。
+Let's go ahead and get into it.
+
+29
+00:01:32,690 --> 00:01:35,250
+那么，当我们键入命令时，实际上发生了什么。
+So what is actually going on when we type a command.
+
+30
+00:01:35,450 --> 00:01:40,870
+要理解这一点，我们需要知道命令和所谓的shell之间的区别。
+Well to understand this we need to know the difference between a command and something called the shell.
+
+31
+00:01:40,930 --> 00:01:42,450
+这些命令只是文本。
+The commands are just text.
+
+32
+00:01:42,530 --> 00:01:49,200
+但是当你按Enter键时，文本的意思就会由一个叫做外壳的计算机程序来解释。
+But when you press enter the meaning of that text is interpreted by a computer program called the shell.
+
+33
+00:01:49,310 --> 00:01:49,880
+好的。
+OK.
+
+34
+00:01:49,880 --> 00:01:51,970
+让我们举一个真实世界的例子。
+So let's take a real world example.
+
+35
+00:01:52,130 --> 00:01:58,140
+如果我们在左边的rasboras上看到这个词，在物理层面上，这个词就是字母是a
+If we see the word here on the left rasboras on a physical level that word is just the letters are a
+
+36
+00:01:58,190 --> 00:02:02,330
+s p b e r e s，就像任何其他单词一样。
+s p b e r r r e s and just like any other word.
+
+37
+00:02:02,330 --> 00:02:05,790
+如果你不懂这门语言，它对你就没有多大意义。
+If you can't read the language it won't mean much to you.
+
+38
+00:02:05,810 --> 00:02:10,820
+对，但是如果你用了这个词，比如说你可以读英语，那么你会发生什么呢？
+Right but if you took this word and you could for example read English then what would happen is you
+
+39
+00:02:10,820 --> 00:02:15,800
+你会看到那篇文章，你会解读它的意思吗，可能会出来的是这个
+would you would see that text and you would interpret it for meaning and what might come out is this
+
+40
+00:02:15,890 --> 00:02:16,310
+水果。
+fruit.
+
+41
+00:02:16,350 --> 00:02:19,900
+好的，你会看到这段文字，你会把它和这个水果，树莓相匹配。
+Ok you'd see that text and you would match it with this fruit the raspberries.
+
+42
+00:02:20,060 --> 00:02:25,160
+但是，在将文本解释成具体含义的过程中，有一个过程，那就是
+But there's a process in the middle of interpreting that text into specific meaning and that is the
+
+43
+00:02:25,160 --> 00:02:26,200
+贝壳的工作。
+job of the shell.
+
+44
+00:02:26,300 --> 00:02:26,790
+好的。
+OK.
+
+45
+00:02:26,990 --> 00:02:30,690
+为了更清楚一点，我们假设你接受了“礼物”这个词。
+So to make this a bit clearer let's say you took the word gift.
+
+46
+00:02:30,890 --> 00:02:31,340
+好的。
+OK.
+
+47
+00:02:31,580 --> 00:02:38,240
+你用英语阅读这个单词，可能会产生这样的意思
+And you read that word using the English language and the meaning that might come out might be the idea
+
+48
+00:02:38,240 --> 00:02:40,750
+在某人生日时送他们礼物或其他东西。
+of giving someone a present or something on their birthday.
+
+49
+00:02:40,860 --> 00:02:45,920
+好的，所以你可能会说，你可能会从阅读“礼物”这个词中得到这个意思，而不是
+Ok so you might say you might get this meaning coming out from reading the word gift but instead of
+
+50
+00:02:45,920 --> 00:02:47,720
+用英语用英语读它，用英语外壳。
+reading it in English with an English shell.
+
+51
+00:02:47,720 --> 00:02:53,270
+所以我们叫它，假设你拿了完全相同的单词礼物，但是这一次你和一个德国人一起读到了它
+So we call it let's say you took exactly the same word gift but this time you read it with a German
+
+52
+00:02:53,350 --> 00:02:54,570
+壳。
+shell.
+
+53
+00:02:54,680 --> 00:02:58,820
+现在，如果你用德语阅读礼物，而不是一份礼物，它可能会表达出这样的意思
+Now instead of a present coming out the meaning that might come out of that if you read it in German
+
+54
+00:02:59,060 --> 00:03:05,150
+可能是毒药，讽刺的是，这不是最好的礼物，但你可以在这里看到，文本完全是
+would be the poison which is ironically not the best gift but you can see here that the text is exactly
+
+55
+00:03:05,150 --> 00:03:10,750
+同样的，但根据解释它的外壳的不同，表达出来的意思是不同的。
+the same but the meaning that comes out is different depending upon the shell that interpreted it.
+
+56
+00:03:10,880 --> 00:03:11,320
+好的。
+OK.
+
+57
+00:03:11,540 --> 00:03:17,860
+再举一个例子，假设我们把单词Smoking(吸烟)放在英语外壳里再读一遍
+As another example let's say we took the word smoking smoking if you read that again in an English shell
+
+58
+00:03:18,410 --> 00:03:22,290
+它的意思将会是使用香烟的想法。
+the meaning that would come out would be the idea of using a cigarette.
+
+59
+00:03:22,520 --> 00:03:27,740
+但是如果你取了完全相同的单词，在这段时间里，它通过了一个法语外壳。
+But if you took exactly the same word and in this time passed it through a French shell.
+
+60
+00:03:27,820 --> 00:03:28,030
+好的。
+OK.
+
+61
+00:03:28,040 --> 00:03:35,090
+在这里使用人类解释的类比，出来的将是一件燕尾服，这是一种奇特的东西。
+Using the analogy here of human interpretation what would come out would be a tuxedo which is a fancy
+
+62
+00:03:35,090 --> 00:03:36,090
+衣服的类型。
+type of clothing.
+
+63
+00:03:36,230 --> 00:03:41,540
+所以您可以在这里看到文本可以完全相同，但是shell解释文本可以提供给它
+So you can see here the text can be exactly the same but the shell interprets that text can give it
+
+64
+00:03:41,540 --> 00:03:44,510
+不同的意思，这在你的电脑上是完全相同的。
+different meaning and that is exactly the same on your computer.
+
+65
+00:03:44,690 --> 00:03:49,790
+那么，我们现在了解的命令和shell之间的区别的终端又如何呢？
+So what about the terminal that we now understand the difference between a command and the shell.
+
+66
+00:03:49,790 --> 00:03:51,070
+那么航站楼是用来做什么的。
+So what's the terminal for.
+
+67
+00:03:51,200 --> 00:03:56,020
+航站楼不过是打开外壳的一扇窗而已。
+Well the terminal is nothing more than just a window into the shell.
+
+68
+00:03:56,090 --> 00:03:58,770
+所以让我们把这个变得更容易理解一些。
+So let's make this a bit easier to understand.
+
+69
+00:03:58,790 --> 00:04:07,360
+所以，如果我问你，你会如何在不打开终端的情况下在节目中键入命令呢？
+So if I asked you how would you type commands on to your show without opening the terminal Well you
+
+70
+00:04:07,360 --> 00:04:08,080
+写不出来。
+couldn't write.
+
+71
+00:04:08,200 --> 00:04:14,040
+这就是终端这个术语，有点像中间的部分，使用
+And that's exactly what the terminal is the term that is kind of like the middle piece in between using
+
+72
+00:04:14,420 --> 00:04:17,040
+在键入命令的间隙出来，并将它们召唤到shell。
+come out in between typing commands and summon them to the shell.
+
+73
+00:04:17,050 --> 00:04:21,340
+您不能在任何地方真正键入命令，除非您打开了一个终端，这就是您要做的
+You can't really type commands anywhere unless you've opened a terminal and that's all is what you're
+
+74
+00:04:21,340 --> 00:04:25,720
+所做的是在终端中键入命令，然后按Enter键，然后将它们提交到
+doing is you're typing commands in the terminal and you press enter and then they are submitted to the
+
+75
+00:04:25,720 --> 00:04:28,680
+航站楼的架子有点像中间的部分。
+shelves of the terminal is kind of like the middle piece.
+
+76
+00:04:28,750 --> 00:04:29,200
+好的。
+OK.
+
+77
+00:04:29,530 --> 00:04:34,420
+实际上有不同类型的贝壳，所以不同类型的货架就像
+And there are actually different types of shells so different types of shelves just like there were
+
+78
+00:04:34,420 --> 00:04:39,060
+不同类型的人类语言实际上可以用不同的方式解释相同的命令。
+different types of human languages can actually interpret the same command in different ways.
+
+79
+00:04:39,100 --> 00:04:44,770
+但幸运的是，有一种外壳类型已经出现，这是最常见的类型，称为
+But fortunately there is one type of shell which has been which is the most common type which is called
+
+80
+00:04:44,770 --> 00:04:46,120
+重击炮弹。
+the bash shell.
+
+81
+00:04:46,120 --> 00:04:50,710
+因此，如果您曾经听说过术语bash shell脚本或bash脚本或类似的东西，它的意思是
+So if you've ever heard the term bash shell scripting or bash scripting or something like that it means
+
+82
+00:04:50,710 --> 00:04:56,750
+编写bash shell和Linux可以读取的程序和脚本。
+writing programs and writing scripts that can be read by the bash shell and Linux.
+
+83
+00:04:56,770 --> 00:05:01,660
+大多数Linux发行版都使用bash shell，而boon Buntu在默认情况下肯定是这样做的。
+Most Linux distribution use the bash shell and aboon buntu definitely does by default.
+
+84
+00:05:01,660 --> 00:05:04,480
+所以这一点需要记住，Linux上有不同类型的shell。
+So that's something to bear in mind that there are different types of shells on Linux.
+
+85
+00:05:04,480 --> 00:05:08,650
+它们可以用不同的方式解释命令，但最常见的是bash shell。
+They can interpret commands in different ways but the most common one is the bash shell.
+
+86
+00:05:08,680 --> 00:05:11,370
+所以我们就是这样，我们在那里有一些标准化。
+So there we are we've got some standardization there.
+
+87
+00:05:11,830 --> 00:05:17,530
+总而言之，命令a RealAge就是您在终端中键入的文本，当您按Enter键时
+So to summarize commands a RealAge the text that you type in the terminal and when you press enter that
+
+88
+00:05:17,530 --> 00:05:20,420
+文本由外壳解释。
+text is interpreted by the shell.
+
+89
+00:05:20,420 --> 00:05:26,360
+现在外壳是一个将文本转换成计算机操作的程序。
+Now the shell is a program that translates that text into into actions for the computer.
+
+90
+00:05:26,650 --> 00:05:31,270
+现在，这意味着不同的shell实际上可以不同地解释相同的文本，这可能会导致
+Now this means that different shells can actually interpret the same text differently which might cause
+
+91
+00:05:31,270 --> 00:05:34,930
+有些问题，但幸运的是，大多数Linux机器都使用bash shell。
+some problems but fortunately most Linux machines use the bash shell.
+
+92
+00:05:34,930 --> 00:05:41,920
+因此，大多数机器都是一致的，正如我们所说的，终端只是一个窗口
+So there is consistency across most machines and as we said as well the terminal is just a window to
+
+93
+00:05:42,070 --> 00:05:46,240
+shell只是中间的一部分，它允许您键入命令并将它们提交到
+the shell it just it's just the middle piece that allows you to type your commands and submit them to
+
+94
+00:05:46,240 --> 00:05:46,930
+贝壳。
+the shell.
+
+95
+00:05:47,010 --> 00:05:51,760
+作为额外的一条信息，您的命令实际上也区分大小写。
+And as a bonus piece of information your commands are actually also case sensitive.
+
+96
+00:05:51,850 --> 00:05:57,460
+因此，如果您键入全大写的命令(如果shell不期望看到该命令)，则很可能
+So if you type a command in all uppercase if the shell isn't expecting to see that it will probably
+
+97
+00:05:57,460 --> 00:05:58,110
+给你一个错误。
+give you an error.
+
+98
+00:05:58,120 --> 00:06:01,910
+因此，您需要确保拼写方式完全正确。
+So you need to make sure that things are spelled in exactly the correct way.
+
+99
+00:06:02,060 --> 00:06:06,820
+好的，它的好处是允许您有更多的选择，因为细微的差异可以
+OK which has the benefits of allowing you to have more more options because slight differences can give
+
+100
+00:06:06,820 --> 00:06:10,950
+不同的功能，但这意味着在实际键入命令时必须非常小心
+different functionality but it means you have to be really careful on how you actually type your commands
+
+101
+00:06:10,960 --> 00:06:12,960
+如果你想让他们按照你想要的方式工作。
+if you want them to work the way you want them to.
+
+102
+00:06:13,300 --> 00:06:20,200
+接下来，因为我们将在本课程中花费大量时间键入命令
+Now what's coming up next is because we're going to spend a lot of the time in this course typing commands
+
+103
+00:06:20,200 --> 00:06:21,770
+并将它们提交给外壳。
+and submitting them to the shell.
+
+104
+00:06:21,790 --> 00:06:25,660
+我不想让你们学完这门课，只需要记住装货、装货和装货的不同
+I don't want you to go through this course and just have to memorize loads and loads and loads different
+
+105
+00:06:25,660 --> 00:06:29,170
+就像几乎所有其他原因一样，命令会让你做你要做的事情，那就是我们要
+commands just like pretty much every other cause makes you do what you're going to do is we're going
+
+106
+00:06:29,170 --> 00:06:33,550
+花点时间了解命令的实际内容以及它们的结构，以便您
+to take a bit of time to understand what commands actually are and how they are structured so that you
+
+107
+00:06:33,550 --> 00:06:38,800
+我可以开始看到每件事背后的模式，你可以开始将命令视为一种语言类型
+can start to see a pattern behind everything you can start to look at the commands as a type of language
+
+108
+00:06:39,070 --> 00:06:41,970
+而不是你必须记住的屏幕上的随机文本。
+rather than just random text on the screen that you've got to memorize.
+
+109
+00:06:42,010 --> 00:06:46,120
+现在很可能你们以前没有看过这个，所以这将是一个完整的游戏
+Now it's likely you'll probably not have been shown this before so this is going to be a complete game
+
+110
+00:06:46,120 --> 00:06:50,740
+改变您学习Linux操作系统和学习终端的实际方式。
+changer in how you actually approach learning the Linux operating system and learning the terminal.
+
+111
+00:06:50,770 --> 00:06:54,400
+所以我真的迫不及待地想向你们展示这个，这将是非常有帮助的。
+So I really can't wait to show you this it's going to be really really really helpful.
+
+112
+00:06:54,400 --> 00:06:57,880
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

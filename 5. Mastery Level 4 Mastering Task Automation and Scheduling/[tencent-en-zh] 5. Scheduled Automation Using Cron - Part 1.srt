@@ -1,0 +1,935 @@
+1
+00:00:00,300 --> 00:00:03,060
+大家好，美女们，欢迎收看这个视频。
+Hello you beautiful people and welcome to this video.
+
+2
+00:00:03,070 --> 00:00:08,040
+我们将利用您在最后几个视频中学到的关于bash脚本的知识，为它增压
+We're going to take what you've learned about bash scripts in the last few videos and supercharge it
+
+3
+00:00:08,040 --> 00:00:11,640
+通过使用Crohn使这些脚本按计划运行。
+by using Crohn to make those scripts run on a schedule.
+
+4
+00:00:11,640 --> 00:00:13,870
+一定会非常棒的。
+It's going to be super awesome.
+
+5
+00:00:13,920 --> 00:00:19,010
+在接下来的几个视频中，您将制作一些糟糕的脚本，并安排它们自动运行。
+And over the next few videos you're going to make some bad scripts and schedule them to run automatically.
+
+6
+00:00:19,050 --> 00:00:24,060
+除此之外，我们还将向您展示如何安排文件的自动备份
+And we're also going to top it off by showing you how you can schedule automatic backups of your files
+
+7
+00:00:24,540 --> 00:00:25,470
+太史诗了，对吧。
+so epic right.
+
+8
+00:00:25,590 --> 00:00:30,570
+在接下来的几个视频结束时，您将能够通过安排
+So by the end of the next few videos you're going to be able to automate your workflow by scheduling
+
+9
+00:00:30,570 --> 00:00:33,330
+您的脚本可以在您想要的任何地方运行。
+your scripts to run where ever you want.
+
+10
+00:00:33,360 --> 00:00:37,720
+这真的为未来无尽的惊艳敞开了大门。
+And this really does open the doors to untold awesomeness going forward.
+
+11
+00:00:37,740 --> 00:00:40,460
+因此，让我们继续并直接投入其中。
+So let's go ahead and jump right into it.
+
+12
+00:00:40,980 --> 00:00:45,630
+好的，Crumbed是一个基于命令行的程序，用于调度任务。
+OK so crumbed is a command line based program that is used to schedule tasks.
+
+13
+00:00:45,810 --> 00:00:49,970
+现在克鲁姆的名字来源于希腊语“克罗诺斯”，意思是“时间”。
+Now Krumm gets its name from the Greek word Cronos which means time.
+
+14
+00:00:50,070 --> 00:00:54,320
+如果你想知道的话，那么克罗恩现在其实有一个相当不错的日程安排节目的名字。
+In case you were wondering so Crohn actually has quite a good name for a scheduling program right now.
+
+15
+00:00:54,330 --> 00:01:00,300
+每个用户都有一个所谓的拐杖选项卡，基本上就是一个文本文件和每个交叉表列表
+Each user has what is known as a crutch tab which basically is just a text file and each cross-tab lists
+
+16
+00:01:00,300 --> 00:01:03,500
+哪些命令或脚本将由该用户自动运行。
+which commands or scripts will be run automatically by that user.
+
+17
+00:01:03,570 --> 00:01:08,910
+它还列出了现在计划运行它们的时间，以便编辑您刚刚使用的用户的正面
+And it also lists when they will be scheduled to be run now to edit the front of your user you just
+
+18
+00:01:08,940 --> 00:01:09,660
+打开命令。
+open a command.
+
+19
+00:01:09,690 --> 00:01:12,850
+打开一个终端，然后键入Kramm tab dash。
+Open a terminal and type Krumm tab dash.
+
+20
+00:01:13,020 --> 00:01:17,760
+该选项用于编辑，当您打开它时，您将看到该选项卡开始打开。
+And the option is for edits and when you open it you'll see that the tab begins to open.
+
+21
+00:01:17,880 --> 00:01:23,120
+但如果这是第一次打开，它可能会询问您要使用哪种编辑器。
+But if this is the first time the opening opens up it might ask you what editor you want to use.
+
+22
+00:01:23,130 --> 00:01:28,920
+因此，我们将按1表示NONNO，然后按ENTER，我们将看到现在我们已经从
+So we're going to press one for Nonno and press enter and we will see that now we've opened up from
+
+23
+00:01:28,920 --> 00:01:30,490
+以纳米为单位的标签。
+tab in nano.
+
+24
+00:01:30,520 --> 00:01:34,650
+现在你会注意到的第一件事是这里有很多文字，这是一种介绍
+Now the first thing you'll notice is that there's a lot of text in here and this is a kind of introduction
+
+25
+00:01:34,920 --> 00:01:36,710
+铬制标签的工作原理。
+to how chrome tabs work.
+
+26
+00:01:36,720 --> 00:01:41,850
+但这些都是注释行，我的意思是交叉表不会将它们解释为
+But these are commented lines and what I mean by that is they are not interpreted by the cross-tab as
+
+27
+00:01:41,850 --> 00:01:43,940
+真正有价值的信息。
+actual valuable information.
+
+28
+00:01:43,950 --> 00:01:49,200
+你可以看出这一点，因为他们每一行都以散列开头，这让你知道人们可以写
+And you can tell that because they start each line with a hash and that allows you know people to write
+
+29
+00:01:49,200 --> 00:01:54,720
+他们在文件中想要什么，就像你知道一些注释，但它不是由实际解释的，而是由实际解释的
+what they want in a file like you know some notes but it's not interpreted by the actual by the actual
+
+30
+00:01:55,050 --> 00:01:56,430
+Cron实用程序。
+cron utility.
+
+31
+00:01:56,490 --> 00:02:03,330
+但是在底部，每个Kramm选项卡都是一个Cantab，它被分成几行，每个命令占一行
+But down the bottom each Krumm tab is a Cantab is broken up into rows and one row is for each command
+
+32
+00:02:03,360 --> 00:02:07,720
+或您想要调度的脚本，每行将有六列。
+or script that you want to schedule and each row will have six columns.
+
+33
+00:02:07,800 --> 00:02:14,130
+因此，前五列是计划信息，最后第六列是命令或脚本
+So the first five columns are schedule information and the final sixth column is the command or script
+
+34
+00:02:14,130 --> 00:02:16,040
+在预定的时间运行。
+to be run at that scheduled time.
+
+35
+00:02:16,050 --> 00:02:18,690
+因此，您需要进入底部并输入您的信息。
+So you need to get to the bottom and to enter your information.
+
+36
+00:02:18,730 --> 00:02:19,220
+好的。
+OK.
+
+37
+00:02:19,320 --> 00:02:23,460
+现在，这确实是一件容易展示而不是解释的事情。
+Now this is really one of those things that's easier to be shown than explain.
+
+38
+00:02:23,460 --> 00:02:25,370
+那么让我向你们展示一下它是如何工作的。
+So let me show you how this works.
+
+39
+00:02:25,530 --> 00:02:30,960
+因此，假设我们想要运行一个命令，该命令仅将文本Hello World输出到名为Hello的文件
+So let's say that we want to run a command that just outputs the text Hello World to a file called Hello
+
+40
+00:02:30,960 --> 00:02:37,590
+在我们桌面上测试DirectX，我们希望该命令全年每一天的每一分钟都在运行，因为
+directx t on our desktop and we want that command to run every minute of every day all year round because
+
+41
+00:02:37,590 --> 00:02:39,970
+出于某种原因，我们真的很喜欢打招呼。
+for some reason we just really like saying hello.
+
+42
+00:02:40,050 --> 00:02:41,000
+好的。
+OK.
+
+43
+00:02:41,040 --> 00:02:44,850
+因此，为了实现这一点，我们需要在我们的克罗恩上衣中加入一个新的行。
+So to make this happen we need to enter a new row in our Crohn top.
+
+44
+00:02:45,000 --> 00:02:50,910
+所以我们在这里，我们在一个新的行上，该行中有六列，每列都是分开的
+And so here we are we're on a new row and there are six columns in that row each column being separated
+
+45
+00:02:51,120 --> 00:02:52,540
+在一些空白处。
+by some blank space.
+
+46
+00:02:52,590 --> 00:02:53,010
+好的。
+OK.
+
+47
+00:02:53,100 --> 00:02:54,900
+所以让我们一步一步来。
+So let's take it step by step.
+
+48
+00:02:55,080 --> 00:03:02,310
+现在，行的第一列用于您希望命令运行的小时的分钟数
+Now the first column of the row is for the for the minutes of the hour the you want the command to run
+
+49
+00:03:02,310 --> 00:03:02,960
+在……上面。
+on.
+
+50
+00:03:02,970 --> 00:03:07,830
+那么让我们转到第一列，我们可以在这里放入任何我们想要的数字，只要它是有效的
+So let's go to the first column and we could put any number we want in here as long as it's a valid
+
+51
+00:03:07,830 --> 00:03:10,100
+分钟，例如，我们可以输入15分钟。
+minutes so we could type 15 for example.
+
+52
+00:03:10,130 --> 00:03:13,410
+现在，这将使命令在每小时15分钟运行。
+Now this would make the command run at 15 minutes past the hour.
+
+53
+00:03:13,440 --> 00:03:18,290
+比如12点15分到15点15分，7点15分等等。
+So things like 12 15 to 15 915 7:15 and so on.
+
+54
+00:03:18,300 --> 00:03:18,800
+好的。
+OK.
+
+55
+00:03:18,890 --> 00:03:24,540
+现在分钟数可以从0变为59，因为正常情况下分钟数就是这样
+Now the numbers for minutes can go from zero to 59 because that's what numbers for minutes do on a normal
+
+56
+00:03:24,540 --> 00:03:25,110
+时钟是对的。
+clock right.
+
+57
+00:03:25,130 --> 00:03:29,820
+所以他们现在可以从0到59，因为我们希望命令每分钟运行一次。
+So they can go from 0 to 59 now because we want the command to run every minute.
+
+58
+00:03:29,820 --> 00:03:33,550
+我们只要在里面放一颗星就行了，随时都可以跑。
+We'll just put a star in there to say run any minute.
+
+59
+00:03:33,640 --> 00:03:34,130
+好的。
+OK.
+
+60
+00:03:34,140 --> 00:03:36,880
+不，不，这不完全像外卡。
+No no this isn't exactly like a wild card.
+
+61
+00:03:36,900 --> 00:03:40,120
+在这种情况下，这颗星恰好指的是任何一颗星。
+And the star happens to mean any in this case.
+
+62
+00:03:40,430 --> 00:03:46,290
+但是交叉表并不真正支持其他通配符，所以不要将问号或
+But crosstabs don't really support other wild cards so don't put symbols such as question marks or you
+
+63
+00:03:46,290 --> 00:03:49,270
+知道那里的括号，因为它们不起作用。
+know the brackets in there because they won't work.
+
+64
+00:03:49,270 --> 00:03:49,650
+好的。
+OK.
+
+65
+00:03:49,680 --> 00:03:52,920
+星号只是被接受的，它只是表示任何价值。
+The star is only what's accepted and it just means any value.
+
+66
+00:03:52,920 --> 00:03:53,910
+我们真的不在乎。
+We don't really care.
+
+67
+00:03:54,000 --> 00:03:54,460
+好的。
+OK.
+
+68
+00:03:54,600 --> 00:04:01,710
+第一列是小时的分钟数，下一列是我们的数字，我们可以把数字
+So the first column is the minutes of the hour the next column is the our number and we could put numbers
+
+69
+00:04:01,710 --> 00:04:03,030
+比如11。
+like for example 11.
+
+70
+00:04:03,180 --> 00:04:09,210
+所以这将使它成为我们计划只在上午11点运行的命令或其他任何东西。每一天。
+So this would make it the command or whatever we scheduled to only run at 11 a.m. each day.
+
+71
+00:04:09,420 --> 00:04:12,930
+我们可以放14个，这样它只会在下午2点开始。每一天。
+We could put 14 so that it would only run at 2 p.m. each day.
+
+72
+00:04:12,930 --> 00:04:20,070
+现在这里的数字是以24小时为基础的，可以从0到23，我们，但我们并不特别介意
+Now the numbers here are based on a 24 hour clock and can go from 0 to 23 and we but we don't mind particularly
+
+73
+00:04:20,070 --> 00:04:23,910
+我们的指挥部指挥我们的，也就是在那里放上一颗星。
+what our command runs us which is put a star there as well.
+
+74
+00:04:23,910 --> 00:04:31,110
+但是如果我在小时栏和20分钟栏的法律上加上11，那么我们的指挥部
+But if I put for example an 11 in the law in the hour column and a 20 minute column then our command
+
+75
+00:04:31,110 --> 00:04:33,770
+将于上午11点20分播出。
+would run at 11:20 a.m..
+
+76
+00:04:33,840 --> 00:04:39,570
+第一列是分钟，第二列是小时，顺便说一下，它不
+So the first column is for the minutes and the second column is for the hours and by the way it doesn't
+
+77
+00:04:39,570 --> 00:04:43,710
+重要的是我们把这些柱子放在哪里，只要它们之间留有一定的空间。
+really matter where we place these columns as long as there's some space between them.
+
+78
+00:04:43,710 --> 00:04:48,700
+好的，我们可以像你知道的那样，用不止一个空格把它们分开，但只要有
+OK so we could like you know separate them out like that with more than one space but as long as there's
+
+79
+00:04:48,700 --> 00:04:53,940
+在每一列之间留出一些空白，克罗恩对一半的东西不太挑剔
+some blank space in between each of the columns Crohn isn't too fussy about how about the half the stuff
+
+80
+00:04:53,940 --> 00:04:54,490
+已经布置好了。
+is laid out.
+
+81
+00:04:54,490 --> 00:04:57,660
+所以我的意思是，试着让它更清楚一点，我们在这里填写的是哪一栏。
+So I mean just try to make it a bit clearer which column we're filling in here.
+
+82
+00:04:57,660 --> 00:05:02,360
+第一列是分钟，第二列是我们的，等等，我要展开一下
+So there's the first column is minute second column ours and so on I'm just going to kind of spread
+
+83
+00:05:02,360 --> 00:05:04,440
+把我们的东西拿出来一点。
+out our stuff a little bit here.
+
+84
+00:05:05,300 --> 00:05:10,710
+所以我们有了一个更好的布局，但我们并不真正关心那里的微小巨星。
+So we got a bit of a nicer layout but we don't really care about the minute superstar there.
+
+85
+00:05:10,730 --> 00:05:12,320
+我们并不真的在乎工作时间。
+We don't really care about the hours.
+
+86
+00:05:12,400 --> 00:05:14,100
+所以我也在那里放了一颗星。
+So I put a star there too.
+
+87
+00:05:14,120 --> 00:05:17,180
+现在第三列是我们在这里看到的。
+Now the third column is the what we see here.
+
+88
+00:05:17,180 --> 00:05:19,970
+DOMA是每月的一天。
+DOMA is the day of the month.
+
+89
+00:05:20,030 --> 00:05:25,000
+所以如果我们在这里放一个，那么它只会在这个月的第一天运行。
+So if we put a one here then it would only run on the first day of the month.
+
+90
+00:05:25,100 --> 00:05:31,530
+举个例子，如果我们在分钟栏中有20分，在I is Call栏中有11分，那么我们在分钟栏中有20分，在I is call中有11分。
+And so for example if we had a 20 in the minutes column and we had in the I was called we had an 11.
+
+91
+00:05:31,670 --> 00:05:38,510
+在这里，假设第三列中有一个10，那么我们给出的命令中的这一个将
+And here we had a let's say 10 in the third column then this one of a command that we gave it would
+
+92
+00:05:38,540 --> 00:05:42,590
+只在本月10日11点20分开跑。
+only run on the tenth day of the month at 11:20.
+
+93
+00:05:42,650 --> 00:05:46,320
+好的，但是它会在一年中的所有月份运行，但只在一个月的第十天运行。
+OK but it would run all of the months of the year but only on the tenth day of the month.
+
+94
+00:05:46,340 --> 00:05:51,360
+上午11点20分但同样，我们并不介意一个月中的哪一天，所以我们会在那里放一颗星。
+At 11:20 a.m. But again we don't really mind what day of the month so we'll put a star there.
+
+95
+00:05:51,400 --> 00:05:56,690
+我也会在其他栏目上加一颗星。
+I will put a star in the other columns as well.
+
+96
+00:05:56,690 --> 00:05:57,120
+我们走吧。
+There we go.
+
+97
+00:05:57,120 --> 00:05:59,700
+所以让我把这件事说得更好一点。
+So just let me lay this out a bit nicer.
+
+98
+00:05:59,840 --> 00:06:00,590
+好的，酷。
+Ok cool.
+
+99
+00:06:00,770 --> 00:06:04,920
+现在第四列实际上是月份本身。
+Now the fourth column is actually the month itself.
+
+100
+00:06:04,970 --> 00:06:07,800
+现在我们可以在这里放上数字，这样我们就可以放一个。
+Now in here we can put numbers so we could put one.
+
+101
+00:06:07,810 --> 00:06:13,160
+1月12日是12月，其他所有月份都在这两个月之间。
+Being January 12 being December and all the other months in between.
+
+102
+00:06:13,490 --> 00:06:15,590
+但您也可以使用文本来完成此操作。
+But you could also do it using text.
+
+103
+00:06:15,590 --> 00:06:23,330
+例如，在大写字母中，比如John代表一月，Febe代表二月，我可以用May或D.C.代表
+So for example in capital letters like John for January FEBE for February I could do may or D.C. for
+
+104
+00:06:23,330 --> 00:06:23,750
+十二月。
+December.
+
+105
+00:06:23,750 --> 00:06:29,820
+因此，如果您用大写字母书写月份，也可以使用三个字母月份。
+So three letter months can be used as well for the months if you write them in capital letters.
+
+106
+00:06:29,840 --> 00:06:34,140
+但在这里，我们并不真正关心月份，也不关心什么会把一颗星也放上来。
+But here we don't really care about the months or what is going to put a star as well.
+
+107
+00:06:34,250 --> 00:06:40,880
+所以我想看看如果我们第一列有20个人，我们有两个人，这一切是如何结合在一起的，如果我们的第一个专栏有20个人，我们的
+And so just to see how this is all coming together if we had 20 in the first column and we had in our
+
+108
+00:06:40,880 --> 00:06:44,340
+专栏里我们有11分，而在当月的那一天我们有10分。
+column we had an 11 and in the day the month we had a 10.
+
+109
+00:06:44,480 --> 00:06:51,620
+在这个月里，我们有一个6月份的J UN，然后这个命令将在10月10日运行
+And in the month we had a you know J UN for June then this command would run on the 10th day of the
+
+110
+00:06:51,620 --> 00:06:52,940
+十号的一个月。
+month on the 10th.
+
+111
+00:06:52,940 --> 00:06:56,040
+对不起，6月10日上午11点20分。
+Sorry on the 10th of June at 11:20 a.m..
+
+112
+00:06:56,330 --> 00:06:56,780
+好的。
+OK.
+
+113
+00:06:56,930 --> 00:06:59,020
+所以这就是它的工作原理。
+So that's that's how that works.
+
+114
+00:06:59,060 --> 00:07:02,030
+我们将再次用商店取代它们。
+We're going to replace them again with stores.
+
+115
+00:07:02,810 --> 00:07:03,560
+好的。
+OK.
+
+116
+00:07:03,560 --> 00:07:09,020
+所以，正如我所说的，交叉表并不真正关心空间的大小，只是每列
+So as I say the cross-tab doesn't really care about the amount of space is just that each column is
+
+117
+00:07:09,020 --> 00:07:11,530
+至少有一个空格隔开的。
+separated by at least one space.
+
+118
+00:07:11,540 --> 00:07:12,100
+好的。
+OK.
+
+119
+00:07:12,770 --> 00:07:18,110
+好了，下一列是星期几，现在星期几的数字可以是
+So there we go the next column is the day of the week now the day of the week can have numbers from
+
+120
+00:07:18,110 --> 00:07:22,830
+从0到6，0是星期天，6是星期六。
+zero to six with zero being Sunday and six being Saturday.
+
+121
+00:07:22,940 --> 00:07:24,130
+但你也可以做到这一点。
+But as well you can do this.
+
+122
+00:07:24,130 --> 00:07:28,520
+一周中的每一天都用三个字母写短信，这样你就可以在星期天结束了。
+Doing text using three letters for each day of the week so you end would be Sunday.
+
+123
+00:07:28,520 --> 00:07:29,950
+我想应该是星期一。
+IMO it would be Monday.
+
+124
+00:07:29,960 --> 00:07:33,730
+她是星期四，星期六是星期六，以此类推。
+Th she would be Thursday and Saturday would be Saturday and so on.
+
+125
+00:07:33,800 --> 00:07:34,420
+好的。
+OK.
+
+126
+00:07:34,850 --> 00:07:43,400
+假设我们在那里有一个星期天，这个月是6月，这个月的一天是10点，
+So let's say if we had a Sunday in there and the month was June and the day of the month was 10 and
+
+127
+00:07:43,400 --> 00:07:53,660
+然后是11小时，然后是20分钟，然后这将在上午11点20分开始。在6月10日。
+then the hour was 11 and then the minute was 20 then this would run at 11:20 a.m. on the 10th of June.
+
+128
+00:07:53,690 --> 00:07:57,970
+只要那一年的6月10日是星期天。
+As long as the 10th of June on that year was a Sunday.
+
+129
+00:07:58,070 --> 00:07:58,550
+好的。
+OK.
+
+130
+00:07:58,550 --> 00:08:03,890
+因此，您可以看到如何才能对如何安排命令的运行方式变得令人难以置信地具体，但是
+So you can see how you can become incredibly specific with how you schedule your commands to run but
+
+131
+00:08:03,890 --> 00:08:06,720
+你也可以很笼统，也可以很放松。
+you can also be very general and very relaxed as well.
+
+132
+00:08:06,730 --> 00:08:09,940
+对于这类东西，Trani实用程序的交叉表是令人惊叹的。
+The cross-tab the Trani utility is amazing for that kind of stuff.
+
+133
+00:08:09,940 --> 00:08:12,570
+你可以对你的日程安排非常有表现力。
+You can be very expressive with your scheduling.
+
+134
+00:08:12,740 --> 00:08:17,660
+所以我们要把它们放回原处，因为我们不在乎一周中的哪一天
+So there we go where we're going to set those back to store because we don't care what day of the week
+
+135
+00:08:17,660 --> 00:08:21,950
+我们想让它每分每秒开机一整天。
+it is we want this on to run all day every minute.
+
+136
+00:08:22,040 --> 00:08:24,120
+一年到头，所以我们真的不在乎。
+All year around so we don't really care.
+
+137
+00:08:24,170 --> 00:08:29,160
+这是前五列，前五列是日程安排信息。
+So those are the first five columns and these first five are scheduling information.
+
+138
+00:08:29,180 --> 00:08:29,780
+好的。
+OK.
+
+139
+00:08:29,780 --> 00:08:35,410
+现在，最后一部分实际上是告诉它您想要运行的命令或脚本的位置。
+Now the final bit is actually where you tell it the command or script that you wanted to run.
+
+140
+00:08:35,570 --> 00:08:36,170
+好的。
+OK.
+
+141
+00:08:36,170 --> 00:08:39,800
+因此，第六列也是最后一列是要实际运行的命令。
+So the sixth and final column is the command to actually run.
+
+142
+00:08:39,800 --> 00:08:45,490
+现在，我们要将输出Hello World命令到一个名为Hello DirectX T的文件中。
+Now we said that we want to command the output Hello World to a file called Hello directx T.
+
+143
+00:08:45,830 --> 00:08:47,190
+比方说在我们的桌面上。
+Let's say on our desktop.
+
+144
+00:08:47,250 --> 00:08:48,820
+好的，那我们该怎么写呢？
+OK so how would we write that.
+
+145
+00:08:49,060 --> 00:08:51,080
+嗯，我们可能会有正确的回声。
+Well we might right echo.
+
+146
+00:08:51,260 --> 00:08:52,000
+那好吧。
+Okay then.
+
+147
+00:08:52,040 --> 00:08:53,810
+你好，世界。
+Hello world.
+
+148
+00:08:53,810 --> 00:09:00,350
+然后用桌面上某个位置的钢笔，展开一个名为Hello Dottie XTi Case的文件
+And then with a pen that is somewhere on our desktop a file called Hello Dottie XTi case if I just expand
+
+149
+00:09:00,350 --> 00:09:02,620
+窗户在这里，你必须看得更清楚，我们走吧。
+the window here you have to see it better there we go.
+
+150
+00:09:02,750 --> 00:09:07,390
+所以你可以在这里看到，我们只是在说，这只是一个命令，基本上就是ECHO Hello world。
+So you can see here that we're just saying this is just the command basically echo Hello world.
+
+151
+00:09:07,580 --> 00:09:10,560
+然后把它放在一个叫光晕ATX拍摄的漏斗上。
+And put that on a funnel called haloed ATX take.
+
+152
+00:09:10,700 --> 00:09:14,630
+但是我们在这里使用两个箭头来允许此命令在任何时候运行。
+But we are using the two arrows here to allow whenever this command runs.
+
+153
+00:09:14,630 --> 00:09:19,740
+它将附加到文件中，这样我们就可以在每次运行命令时看到添加的额外数据。
+It will append to the file so we can see extra data being added each time the command runs.
+
+154
+00:09:19,740 --> 00:09:20,100
+好的。
+OK.
+
+155
+00:09:20,270 --> 00:09:26,450
+因此，当我们将Kramm选项卡保存得如此崩溃时，请确保此命令现在每分钟都在运行
+So when we save the Krumm tab so crumble make sure that this command is now run at every minute of every
+
+156
+00:09:26,450 --> 00:09:31,050
+每个月的每一天的小时，而不管一周中的哪一天。
+hour of every day of the month for every month no matter the day of the week.
+
+157
+00:09:31,160 --> 00:09:35,240
+这个命令全年每分钟都会运行，因为如果我们按下Ctrl一小时来保存
+So this command is going to run every minute all year round because if we press control an hour to save
+
+158
+00:09:35,240 --> 00:09:41,210
+该文件和我退出，您可以在这里看到，我们收到一条消息，说它正在安装新的交叉表
+that file and I exit you can see here that we get a message saying that it's installing a new cross-tab
+
+159
+00:09:41,420 --> 00:09:47,150
+我们在这里可以看到，“你好，XTi博士”实际上是刚刚被处决的。
+and we can see here that Hello Dr. XTi has actually just been has just been executed.
+
+160
+00:09:47,140 --> 00:09:47,550
+好的。
+OK.
+
+161
+00:09:47,660 --> 00:09:50,890
+所以，如果我们看一下，你会发现它实际上是正确运行的。
+So if we take a look at you can see that it actually just ran right.
+
+162
+00:09:50,900 --> 00:09:57,710
+然后我们可以看到它实际上执行了hello world，并将其放入文件的内部。
+Then we can see that it's actually executed hello world and put it inside inside the inside the file.
+
+163
+00:09:57,710 --> 00:10:03,870
+现在，如果我运行date命令，您可以看到，在此命令再次运行之前，我们有大约40秒的时间。
+Now if I run the date command you can see the we've got about 40 seconds until this command runs again.
+
+164
+00:10:03,930 --> 00:10:08,530
+所以我要做的是，我要把这里的视频剪下来，然后回到更接近它运行的时间。
+So I'm going to do is I'm going to cut the video here and come back closer to the time when that runs.
+
+165
+00:10:08,660 --> 00:10:12,210
+好了，我们到了，我们可以看到，它就像我今天报道的那样，真的消失了。
+OK so here we are we can see that it's just gone as literally as I press day.
+
+166
+00:10:12,210 --> 00:10:12,950
+太棒了。
+That's awesome.
+
+167
+00:10:13,120 --> 00:10:19,260
+刚刚过去一分钟，如果我们现在查看一下，应该会看到现在有两行数据
+It's just past the minute so if we look in there now we should see that we now have two rows of data
+
+168
+00:10:19,260 --> 00:10:20,160
+所以祈祷吧。
+so fingers crossed.
+
+169
+00:10:20,220 --> 00:10:21,000
+是的，我们有。
+Yes we do.
+
+170
+00:10:21,090 --> 00:10:28,130
+我们现在有两行数据，因为当前应用程序再次执行。
+We now have two rows of data in there because the the the current app has executed again.
+
+171
+00:10:28,170 --> 00:10:30,000
+就在这一小时的顶端。
+Right at the top of the hour.
+
+172
+00:10:30,130 --> 00:10:38,100
+我们将继续等待，直到下一分钟过去，它将继续运行它
+And and we'll just continue to wait until the next minute passes and it will continue to run that it
+
+173
+00:10:38,120 --> 00:10:45,760
+将继续一遍又一遍地运行该命令，并填满此Hello Dr.65。
+will continue to run the command over and over and over again and fill up this Hello Dr. 65.
+
+174
+00:10:45,900 --> 00:10:46,390
+好的。
+OK.
+
+175
+00:10:46,620 --> 00:10:52,210
+现在，当它实际运行时，我们将看到添加了更多数据。
+Now when when that actually runs we'll see that more data has been added.
+
+176
+00:10:52,260 --> 00:10:57,200
+我们有大约18秒的时间，如果你能和我一起等18秒，我们会看到这件事发生的。
+We've got about 18 seconds or so so if you can wait with me for like 18 seconds we'll see this happen
+
+177
+00:10:57,210 --> 00:10:57,700
+好的。
+OK.
+
+178
+00:10:57,870 --> 00:11:01,910
+所以让我们看看，如果我们去的话，我们会看到另外11秒左右。
+So let's see if we go we see another 11 seconds or so.
+
+179
+00:11:02,820 --> 00:11:08,760
+现在，如果我检查一下这里，我们可以看到，5秒后是5秒，2秒后是5秒
+And now if I if I check here now we can see that it's five seconds to go five seconds to go two seconds
+
+180
+00:11:08,760 --> 00:11:09,880
+带走。
+to go.
+
+181
+00:11:10,110 --> 00:11:11,180
+它现在就应该这么做。
+It should have done it now.
+
+182
+00:11:11,180 --> 00:11:12,800
+所以如果我们往里面看。
+So if we look inside.
+
+183
+00:11:12,850 --> 00:11:13,200
+是。
+Yes.
+
+184
+00:11:13,320 --> 00:11:17,930
+它正在运行，并且向文件中添加了另一行，而我没有碰任何我承诺的东西。
+It's run and it's added another row to the file and I didn't touch anything I promise.
+
+185
+00:11:18,270 --> 00:11:19,890
+所以阿克伦标签起作用了。
+So the Akron tab is working.
+
+186
+00:11:19,890 --> 00:11:20,420
+万岁。
+Hooray.
+
+187
+00:11:20,430 --> 00:11:23,700
+好的，我们刚刚让它一遍又一遍地运行命令。
+OK we've just made it run a command over and over again.
+

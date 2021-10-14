@@ -1,0 +1,423 @@
+1
+00:00:00,200 --> 00:00:05,280
+Hello you beautiful people and I'm massive congratulations from me for making it through this section
+
+2
+00:00:05,280 --> 00:00:08,860
+of the course on managing software with your package manager.
+
+3
+00:00:08,970 --> 00:00:13,560
+Now I know it was a tough one with loads of new concepts for you to have to digest but you got there
+
+4
+00:00:13,560 --> 00:00:18,000
+anyway and in fact we covered so many concepts in this section of the course that I wanted to take the
+
+5
+00:00:18,000 --> 00:00:23,190
+time to have a quick recap of what we covered and to give you some wholehearted and well-deserved praise
+
+6
+00:00:23,370 --> 00:00:24,580
+for making it this far.
+
+7
+00:00:24,660 --> 00:00:26,700
+So congratulations and well done.
+
+8
+00:00:26,700 --> 00:00:30,600
+I don't know of any other course or resource on the Internet that covers these concepts in that much
+
+9
+00:00:30,600 --> 00:00:35,520
+detail so you should be very proud of yourself for digesting it and making it all the way through.
+
+10
+00:00:35,550 --> 00:00:37,100
+Massive Congratulations.
+
+11
+00:00:37,110 --> 00:00:41,100
+So let's have a quick recap of what we covered in this section of the course.
+
+12
+00:00:41,100 --> 00:00:45,580
+So first we started off by discussing the new project and free software in general.
+
+13
+00:00:45,750 --> 00:00:50,910
+And you he you learned about the history of the new project that was started by Richard Stallman in
+
+14
+00:00:50,910 --> 00:00:52,190
+1983.
+
+15
+00:00:52,290 --> 00:00:57,600
+The new project started with the aim of operate of creating an operating system based upon giving users
+
+16
+00:00:57,600 --> 00:01:01,220
+freedom to control how the software was used and how it functions.
+
+17
+00:01:01,350 --> 00:01:06,000
+And you learned about the four freedoms that free software gives you and you learn that a prerequisite
+
+18
+00:01:06,000 --> 00:01:10,660
+requirement for those freedoms is to have access to the source code of the software.
+
+19
+00:01:10,680 --> 00:01:16,350
+Now because this software is openly accessible such software is called open source software.
+
+20
+00:01:16,400 --> 00:01:16,830
+OK.
+
+21
+00:01:16,920 --> 00:01:21,990
+Now when we headed over one then we headed over to the Web site and downloaded modified and compiled
+
+22
+00:01:22,050 --> 00:01:26,550
+our very own version of the ls command so that it said hello there you beautiful people whenever it
+
+23
+00:01:26,550 --> 00:01:26,990
+was run.
+
+24
+00:01:27,000 --> 00:01:31,220
+And in that process you so I to configure the goodnews C-compiler using the make command.
+
+25
+00:01:31,310 --> 00:01:34,530
+And so I had to compile code and install it on your system.
+
+26
+00:01:34,620 --> 00:01:40,500
+But this was a rather tedious process and so Munich's introduced to you how to how to use package managers
+
+27
+00:01:40,560 --> 00:01:45,780
+and software repositories of buntu and many of the distributions have thousands and thousands of software
+
+28
+00:01:45,780 --> 00:01:50,730
+packages available for you to download and try out and respond to these packages are stored in four
+
+29
+00:01:50,730 --> 00:01:55,620
+repositories that help keep software separated based upon the different freedoms and levels of reliability
+
+30
+00:01:55,800 --> 00:01:56,920
+they give to the user.
+
+31
+00:01:57,090 --> 00:02:02,280
+So the main repository is maintained by canonical which is the company that makes a buntu and therefore
+
+32
+00:02:02,280 --> 00:02:09,000
+the main repository should be your first port of call the universe repository contains free software
+
+33
+00:02:09,000 --> 00:02:11,130
+that is maintained by the community.
+
+34
+00:02:11,130 --> 00:02:17,190
+And then you've got the restricted repository which contains software for device drivers and then you've
+
+35
+00:02:17,190 --> 00:02:24,140
+got the multiverse repository which contains software restricted by legal and copy rights issues.
+
+36
+00:02:24,180 --> 00:02:29,490
+So we then headed over to package's dot buntu dot com and browse through the packages that are available
+
+37
+00:02:29,490 --> 00:02:30,460
+to us.
+
+38
+00:02:30,480 --> 00:02:35,520
+We saw that there are thousands and thousands of packages that can be and they can each have different
+
+39
+00:02:35,520 --> 00:02:40,680
+dependencies they can have different recommendations they can have different version numbers and so
+
+40
+00:02:40,680 --> 00:02:46,010
+on and you realize that this would be an absolute nightmare to try and organize all manually.
+
+41
+00:02:46,020 --> 00:02:51,000
+And that's where you learned about the benefit of a Bantus package manager that will do all of that
+
+42
+00:02:51,000 --> 00:02:51,820
+for us.
+
+43
+00:02:51,940 --> 00:02:57,540
+Now pretty much every Linux distribution has a package manager but the one on Kubuntu is called apt
+
+44
+00:02:57,660 --> 00:03:00,160
+which stands for Advanced packaging tool.
+
+45
+00:03:00,210 --> 00:03:03,160
+So AAPT for advance packaging talk.
+
+46
+00:03:03,300 --> 00:03:06,230
+Now we then started to look at how the package manager works.
+
+47
+00:03:06,240 --> 00:03:12,270
+We saw that it down those lists of available packages into the cache on your system and you can search
+
+48
+00:03:12,270 --> 00:03:17,880
+this cache for packages relevant to a search term using apt cache search and so more information about
+
+49
+00:03:17,880 --> 00:03:20,360
+a given package using apt cache.
+
+50
+00:03:20,470 --> 00:03:25,080
+And the most important thing about having a cache is making sure that it's always up to date and you
+
+51
+00:03:25,080 --> 00:03:31,050
+learn how to update the cache using sudo apt get update and one amazing thing about the package manager
+
+52
+00:03:31,080 --> 00:03:36,760
+is their ability to make sure that all the software on your system is completely up to date in one go.
+
+53
+00:03:36,810 --> 00:03:39,760
+Now to do this you use sudo apt get upgrade.
+
+54
+00:03:39,840 --> 00:03:45,150
+But remember that you should always make sure that the package lists in your cache up to date first
+
+55
+00:03:45,270 --> 00:03:50,290
+using sudo apt get update before upgrading packages to the new version numbers.
+
+56
+00:03:50,300 --> 00:03:52,170
+Using sudo apt get upgrade.
+
+57
+00:03:52,290 --> 00:03:57,090
+However in order to be able to keep a package up to date it needs to be installed through the package
+
+58
+00:03:57,090 --> 00:03:59,290
+manager and not compile it from source.
+
+59
+00:03:59,290 --> 00:04:04,110
+So Sadu bear that in mind and try to install packages from the software repositories wherever possible
+
+60
+00:04:04,500 --> 00:04:07,420
+which is actually the next topic that we came onto installing.
+
+61
+00:04:07,560 --> 00:04:13,410
+You saw that you can install new packages on your system using sudo apt get install and the packages
+
+62
+00:04:13,420 --> 00:04:16,080
+come pre-compiled and ready to go.
+
+63
+00:04:16,080 --> 00:04:17,990
+You don't even need to reboot your system.
+
+64
+00:04:18,000 --> 00:04:23,220
+OK it's all ready to go as soon as you install it and we install the x 11 apps package which gave us
+
+65
+00:04:23,220 --> 00:04:28,530
+the fun excised package to play around with and as we saw so many other applications such as X-Man which
+
+66
+00:04:28,530 --> 00:04:33,450
+is a graphical way of browsing the manual pages but because the package is installed via the package
+
+67
+00:04:33,450 --> 00:04:38,510
+manager a pre-compiled that means we need another way to take a look at the source code right.
+
+68
+00:04:38,640 --> 00:04:44,220
+So then we discuss about highly buntu archives a structured and how to configure our sources daat list
+
+69
+00:04:44,220 --> 00:04:48,090
+file to allow us to actually download source code.
+
+70
+00:04:48,120 --> 00:04:52,810
+We then downloaded the source code for the exit of an apps package and took a look at the code for the
+
+71
+00:04:52,810 --> 00:04:58,770
+next ise program so we saw behind the scenes and this code can be compiled and installed in the same
+
+72
+00:04:58,770 --> 00:05:04,630
+way as the code we it from the web site but remember that code that's compiled and installed manually
+
+73
+00:05:04,720 --> 00:05:08,350
+loses its loses its ability to be kept up to date with the package managers.
+
+74
+00:05:08,540 --> 00:05:13,720
+Oh by the way everything that is on the new Web site is also in the software repositories so you can
+
+75
+00:05:13,720 --> 00:05:15,900
+just use the repositories going forward.
+
+76
+00:05:16,120 --> 00:05:21,260
+And finally we saw how to uninstall packages using the package manager to remove a package.
+
+77
+00:05:21,280 --> 00:05:27,250
+The best method is the sudo apt get Perge because that removes and moves any configuration files that
+
+78
+00:05:27,250 --> 00:05:28,420
+came with the package.
+
+79
+00:05:28,540 --> 00:05:31,320
+Might just stay behind and clog up your hard drive.
+
+80
+00:05:31,330 --> 00:05:36,940
+So sudo apt get purged to remove packages and when you install a package it often comes with some dependencies
+
+81
+00:05:36,940 --> 00:05:38,660
+that might no longer be needed.
+
+82
+00:05:38,710 --> 00:05:45,430
+When you uninstall that package so to get rid of any dangling dependencies you can use sudo apt get
+
+83
+00:05:45,630 --> 00:05:46,690
+auto remove.
+
+84
+00:05:46,750 --> 00:05:51,820
+So you also learned that when a package is installed it's not dead file is saved locally on the computer.
+
+85
+00:05:51,910 --> 00:05:55,710
+And if a lot of these doc deadfalls build up they can really take up a lot of space.
+
+86
+00:05:55,850 --> 00:06:00,880
+So to remove all of these dark deadfalls you simply run sudo apt get clean.
+
+87
+00:06:00,880 --> 00:06:05,530
+Now you may not want to remove them all but instead just remove the ones that are no longer accessible
+
+88
+00:06:05,530 --> 00:06:06,570
+from the repositories.
+
+89
+00:06:06,640 --> 00:06:10,180
+So to do that run sudo apt get auto clean.
+
+90
+00:06:10,250 --> 00:06:16,120
+OK now with that you now have a solid understanding of what open source and free software is all about
+
+91
+00:06:16,420 --> 00:06:17,270
+where it came from.
+
+92
+00:06:17,350 --> 00:06:22,780
+How to search for how to install it how to manage it and how to uninstall it on your new Linux computer.
+
+93
+00:06:22,900 --> 00:06:27,790
+So remember that each of these pieces of software comes with its own man page for you to read and learn
+
+94
+00:06:27,790 --> 00:06:31,190
+about the package as well so you've got complete freedom now.
+
+95
+00:06:31,210 --> 00:06:35,530
+I've put a cheat sheet in the resources section for this video that lays out each of the commands and
+
+96
+00:06:35,530 --> 00:06:40,450
+useful files and folders on the system that we've covered in this section so we can refer to that when
+
+97
+00:06:40,450 --> 00:06:41,530
+you're working with packages.
+
+98
+00:06:41,530 --> 00:06:47,630
+If you ever need a bit of a refresher but in all honesty you have come so far in this section because
+
+99
+00:06:47,700 --> 00:06:49,740
+I am so unbelievably proud of you.
+
+100
+00:06:49,750 --> 00:06:54,670
+There is a whole massive world of software out there for you to explore and if you can think of it it's
+
+101
+00:06:54,670 --> 00:06:57,850
+probably in the repository so go and have an explore one ahead of it.
+
+102
+00:06:57,850 --> 00:07:03,350
+Packages that are to dot com and have a search around and see and install some stuff and try it out
+
+103
+00:07:03,580 --> 00:07:03,930
+now.
+
+104
+00:07:03,960 --> 00:07:08,380
+Unfortunately all good things must come to an end and the time has come that we need to wrap up the
+
+105
+00:07:08,380 --> 00:07:08,900
+course.
+
+106
+00:07:08,980 --> 00:07:11,830
+So to say goodbye I'll see you in the next video.

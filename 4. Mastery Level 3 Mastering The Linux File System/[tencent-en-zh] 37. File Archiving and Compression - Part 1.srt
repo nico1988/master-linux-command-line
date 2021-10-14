@@ -1,0 +1,890 @@
+1
+00:00:00,600 --> 00:00:02,150
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:02,220 --> 00:00:07,310
+欢迎来到这个领域，在这里您将开始学习所有关于文件归档和压缩的知识。
+And welcome to this field where you're going to start learning all about file archiving and compression.
+
+3
+00:00:07,350 --> 00:00:12,630
+现在我相信你已经听说过数百万次关于保留数据备份的好处，那就是
+Now I'm sure you've heard millions of times about the benefits of keeping backups of your data and that's
+
+4
+00:00:12,690 --> 00:00:16,170
+我们将在接下来的几个视频中介绍您将在下面几个视频中介绍的内容
+exactly what we're going to be covering in the next few videos in the next few videos you're going to
+
+5
+00:00:16,170 --> 00:00:20,310
+在下一节中了解如何存档和压缩您的文件以创建备份。
+learn how to archive and compress your files in the next to create backups.
+
+6
+00:00:20,310 --> 00:00:25,050
+现在，仅仅创建备份是不够的，您还将了解如何恢复数据
+Now just creating the backups isn't good enough you're also going to learn how you can restore data
+
+7
+00:00:25,080 --> 00:00:27,090
+在将来从这些备份中恢复。
+from those backups in the future.
+
+8
+00:00:27,090 --> 00:00:31,650
+所以，当你需要解压它的时候，你每天都会把它完美地解压出来，到最后，你基本上是在
+So when you need to uncompress it you day it will come back out perfectly by the end you basically going
+
+9
+00:00:31,650 --> 00:00:35,840
+能够创建和恢复您自己的备份，以确保您不会丢失任何重要数据。
+to be able to create and restore your own backups to make sure you don't lose any important data.
+
+10
+00:00:35,880 --> 00:00:40,360
+您还将了解各种压缩算法，以便最大限度地节省
+You're also going to learn about various compression algorithms so you can save the maximum amount of
+
+11
+00:00:40,380 --> 00:00:42,560
+文件系统上的空间越大越好。
+space on your file system as possible.
+
+12
+00:00:42,570 --> 00:00:44,970
+因此，让我们继续并直接投入其中。
+So let's go ahead and jump right into it.
+
+13
+00:00:46,100 --> 00:00:46,530
+好的。
+OK.
+
+14
+00:00:46,550 --> 00:00:51,320
+因此，当您在Linux中压缩和归档文件时，您首先需要知道的是
+So when you're compressing and archiving files in Linux the first thing you need to know about is something
+
+15
+00:00:51,320 --> 00:00:53,060
+叫高球。
+called a tall ball.
+
+16
+00:00:53,060 --> 00:00:57,740
+现在我想让你想象一下，你是一个购物中心，或者去你当地的商店，你正在买一些
+Now I want you to imagine that you're a shopping center or to your local store and you're buying some
+
+17
+00:00:57,770 --> 00:00:58,640
+苹果。
+apples.
+
+18
+00:00:58,640 --> 00:00:59,080
+好的。
+OK.
+
+19
+00:00:59,210 --> 00:01:00,760
+现在让我问你一个问题。
+Now let me ask you a question.
+
+20
+00:01:00,950 --> 00:01:03,230
+你把那些苹果捡起来后怎么做呢？
+How would you make those apples after picking them up.
+
+21
+00:01:03,290 --> 00:01:06,480
+更容易携带，如果你把它们放在袋子里的话。
+Easier to carry Well you put them in a bag right.
+
+22
+00:01:06,690 --> 00:01:13,140
+这就是创建表基本上可以做的事情，所以创建表基本上是一种将
+And that's what creating a table is basically doing OK so creating a table is basically a way of putting
+
+23
+00:01:13,140 --> 00:01:17,180
+将您的文件放在包中，使其更易于压缩和存储。
+your files in a bag to make them easier to compress and make them easier to store.
+
+24
+00:01:17,230 --> 00:01:23,520
+好的，当您将文件添加到表中时，您可以将所有文件存储在一个位置。
+OK and when you add files to a table you make it possible to store all of your files in one place.
+
+25
+00:01:23,760 --> 00:01:31,060
+表本身不执行任何压缩，但是可以使用压缩算法压缩tarball。
+The table itself doesn't do any compression but tarballs can be compressed using compression algorithms.
+
+26
+00:01:31,110 --> 00:01:34,620
+好的，归档文件基本上是一个两步过程。
+OK so archiving files is basically a two step process.
+
+27
+00:01:34,620 --> 00:01:38,090
+首先，你做一张桌子，然后再做一张桌子。
+First you make a table and you make a table.
+
+28
+00:01:38,220 --> 00:01:43,550
+其次，您可以使用某种压缩算法来压缩tarball。
+And then secondly you compress the tarball using some kind of compression algorithm.
+
+29
+00:01:43,590 --> 00:01:44,030
+好的。
+OK.
+
+30
+00:01:44,130 --> 00:01:47,160
+因此，让我们继续创建他们的第一个Tabo。
+So let's go ahead and create their first Tabo.
+
+31
+00:01:47,240 --> 00:01:53,620
+现在我们在桌面上，我们可以看到文件1.60Faltu，它接受3.6。
+And so we're on our desktop now we can see that we've got file 1.60 Faltu that takes the 3.6.
+
+32
+00:01:53,830 --> 00:01:56,210
+我要把这些放到桌子里。
+I'm going to put those inside a table.
+
+33
+00:01:56,430 --> 00:02:02,000
+现在，如果我对这些文件执行一个l操作，只需看一眼，您就可以看到它们都是关于
+Now if I do an ls on on these files and just have a look at them you can see that they're all about
+
+34
+00:02:02,010 --> 00:02:04,080
+10千字节大小。
+10 kilobytes in size.
+
+35
+00:02:04,090 --> 00:02:09,780
+9.8千字节大约是10千字节大小，我们将把所有这些放入
+OK nine point eight kilobytes are about 10 kilobytes in size and we're going to put all of these into
+
+36
+00:02:09,960 --> 00:02:10,920
+一张桌子。
+a table.
+
+37
+00:02:11,010 --> 00:02:11,530
+好的。
+OK.
+
+38
+00:02:11,700 --> 00:02:15,980
+为此，我们将使用tar命令，即tjr命令。
+So to do so we're going to use the tar command the TJR command.
+
+39
+00:02:16,050 --> 00:02:16,730
+好的。
+OK.
+
+40
+00:02:16,740 --> 00:02:21,580
+现在，该命令接受相当多不同的选项。
+Now the command takes quite a few different options.
+
+41
+00:02:21,720 --> 00:02:22,840
+才能让这件事奏效。
+In order for this to work.
+
+42
+00:02:23,040 --> 00:02:24,400
+所以首先我们输入TA。
+So first we type TA.
+
+43
+00:02:24,480 --> 00:02:26,420
+那么我们需要给它三个选择。
+Then we need to give it three options.
+
+44
+00:02:26,540 --> 00:02:29,530
+表示A类破折号，第一个选项是C选项。
+Says Type A dash and the first option is the C option.
+
+45
+00:02:29,730 --> 00:02:35,130
+现在，C选项让普通用户知道我们想要创建一个新的存档。
+Now the C option lets the common know that we want to create a new archive.
+
+46
+00:02:35,240 --> 00:02:35,850
+好的。
+OK.
+
+47
+00:02:36,050 --> 00:02:42,390
+下一个是vi，它让我们可以和他交谈，我知道我们想要做的事情，我们想要和我们交谈。
+The next is vi which lets the to talk him I know that we want to do we wanted to speak to us.
+
+48
+00:02:42,390 --> 00:02:44,920
+我们想给我们一些反馈，这样我们就知道它做得怎么样了。
+We wanted to give us some feedback so we know how it's doing.
+
+49
+00:02:44,920 --> 00:02:49,960
+Nivea是Beauce的缩写，它的意思是，嘿，和他谈谈，不要默默地做这件事。
+Nivea stands for Beauce and it basically says hey talk him and don't do this silently.
+
+50
+00:02:49,980 --> 00:02:51,810
+告诉我，让我知道发生了什么事。
+Talk to me and let me know what's up.
+
+51
+00:02:51,840 --> 00:02:54,590
+就像我说的，v选项完全是可选的。
+Like I said the v option is entirely optional.
+
+52
+00:02:54,590 --> 00:02:55,950
+你不需要它来存档。
+You don't need it to make an archive.
+
+53
+00:02:55,960 --> 00:02:57,760
+但是你知道把它放在那里是很好的练习。
+But you know it's good practice to keep it there.
+
+54
+00:02:57,840 --> 00:02:58,330
+好的。
+OK.
+
+55
+00:02:58,470 --> 00:03:00,990
+最后一个选项是f选项。
+And the final option is the f option.
+
+56
+00:03:00,990 --> 00:03:05,610
+现在，f选项是这样的，这样就可以讨论接受文件的问题。
+Now the f option is so that it lets the talk about accept files.
+
+57
+00:03:05,640 --> 00:03:06,280
+好的。
+OK.
+
+58
+00:03:06,900 --> 00:03:11,770
+所以，不，我们需要告诉脱口秀节目我们想给我们的Tabo起什么名字。
+So no we need to tell the talkathon what we want to call our Tabo.
+
+59
+00:03:11,880 --> 00:03:12,310
+好的。
+OK.
+
+60
+00:03:12,420 --> 00:03:16,440
+现在，按照惯例，我们使用TA文件扩展名输入所有文件。
+Now by convention we enter all files with the TA file extension.
+
+61
+00:03:16,440 --> 00:03:17,480
+这只是个大会。
+This is just a convention.
+
+62
+00:03:17,490 --> 00:03:19,260
+这样我们以后就知道它们叫什么了。
+So we know what they are called later.
+
+63
+00:03:19,260 --> 00:03:23,890
+所以让我们称它为Archive dot tar。
+So let's call it archive dot tar.
+
+64
+00:03:24,180 --> 00:03:24,800
+好吧。
+Okay.
+
+65
+00:03:25,260 --> 00:03:30,660
+最后，我们现在需要做的是告诉tar命令在我们的
+And finally what we need to do now is we need to tell the tar command what's going to go inside our
+
+66
+00:03:30,660 --> 00:03:31,460
+迫击球。
+tarball.
+
+67
+00:03:31,560 --> 00:03:32,060
+好的。
+OK.
+
+68
+00:03:32,190 --> 00:03:37,370
+所以我们想要一架1.60的法尔图，而不是THC，然后下降3，这需要t。
+So we want to a 1.60 Faltu not THC and fall 3 that takes t.
+
+69
+00:03:37,480 --> 00:03:42,940
+因此，她使用通配符节省了一些打字时间，并将文件1放入3到60。
+So she use a wild card to save some typing and put file 1 to 3 to 60.
+
+70
+00:03:43,070 --> 00:03:43,410
+好的。
+OK.
+
+71
+00:03:43,440 --> 00:03:45,430
+有了这些，我们就可以出发了。
+And with that we're ready to go.
+
+72
+00:03:45,510 --> 00:03:49,590
+所以我们要说的是，嘿，托克汉姆，我们想要创建一个新的档案。
+So what we're saying is hey Torkham and we wanted to create a new archive.
+
+73
+00:03:49,620 --> 00:03:50,750
+所以我们给它C选项。
+So we give it the C option.
+
+74
+00:03:51,000 --> 00:03:53,060
+我们是说告诉我们我们知道发生了什么。
+We're saying Speak to us we know what's going on.
+
+75
+00:03:53,070 --> 00:03:54,140
+这只是v选项。
+It's just the v option.
+
+76
+00:03:54,410 --> 00:03:58,380
+我们会给它一个f选项，这样它就可以接受新文件，并创建一个新的存档。
+And we're going to give it the f option so that it can accept new files and create a new archive.
+
+77
+00:03:58,380 --> 00:04:00,690
+所以让我们继续按Enter键。
+So let's just go ahead and press enter.
+
+78
+00:04:01,410 --> 00:04:06,630
+我们看到它告诉了我们发生了什么，现在我们有了这个新的tar文件，它实际上是
+And we see that it told us what's going on and now we've got this new tar file that's actually being
+
+79
+00:04:06,660 --> 00:04:11,000
+创建的，你可以看到它看起来像一个小盒子，就像你知道的一个移动的盒子。
+created and you can see that it looks like a little box like a like you know a moving box.
+
+80
+00:04:11,210 --> 00:04:13,030
+所以你知道这是一个档案馆。
+So you know that it's that it's an archive.
+
+81
+00:04:13,230 --> 00:04:19,090
+如果我们进行分析，我们实际上可以看到tar ball文件实际上以红色突出显示。
+And if we do analysis we can actually see that the tar ball file has actually been highlighted in red.
+
+82
+00:04:19,110 --> 00:04:21,570
+只是为了让它站得更直一点，这是相当不错的。
+Just to make it stand a bit more which is quite nice.
+
+83
+00:04:21,570 --> 00:04:28,020
+太好了，我们实际上已经成功地创造了我们的第一个标签，现在命令这个演讲，我有相当的
+So hooray we've actually managed to create our first tabel now that command this talk and I've had quite
+
+84
+00:04:28,020 --> 00:04:29,520
+里面有几个不同的选项。
+a few different options in it.
+
+85
+00:04:29,520 --> 00:04:32,720
+所以我所做的是针对所有处理存档的命令。
+So what I've done is for all the commands dealing with archiving.
+
+86
+00:04:32,720 --> 00:04:37,170
+因此，在下一个视频的这段视频中，我为您制作了一份小抄，供您下载如何操作的详细信息
+So in this video on the next video I've made a cheat sheet for you to download that details how to do
+
+87
+00:04:37,170 --> 00:04:38,820
+不同的归档任务。
+different archiving tasks.
+
+88
+00:04:38,820 --> 00:04:40,330
+不要担心记忆的问题。
+Don't worry about memorizing.
+
+89
+00:04:40,490 --> 00:04:43,860
+您可以在下一个视频的参考资料部分找到Not。
+You can find not in the resources section for the next video.
+
+90
+00:04:43,860 --> 00:04:45,610
+当我们处理完归档问题的时候。
+When we finished dealing with archiving.
+
+91
+00:04:45,690 --> 00:04:46,080
+好的。
+OK.
+
+92
+00:04:46,140 --> 00:04:51,480
+因此，让我们通过使用带有l选项的ls来查看该文件有多大，以及我们实际是什么
+So let's take a look at how large the file is by using ls with the l option and actually what we're
+
+93
+00:04:51,480 --> 00:04:55,830
+我们要做的是使用GRAMP查找其中有点焦油的那些。
+going to do is we look for the ones that have dot tar in them using using Gramp.
+
+94
+00:04:55,830 --> 00:05:02,520
+所以我们只是看看医生有什么，把我们的结果稍微集中一下，我们就会看到它实际上是关于
+So we just see what has doctorand to focus our results a little bit and we see the actually it's about
+
+95
+00:05:02,540 --> 00:05:06,280
+40000 960字节。
+40000 960 bytes.
+
+96
+00:05:06,590 --> 00:05:17,070
+这很奇怪，因为我们有三个大约10000字节的文件，然后我们有40000个960字节用于
+Well that's strange because we had three about 10000 byte files and then we've got 40000 960 bytes for
+
+97
+00:05:17,070 --> 00:05:18,480
+这张桌子。
+the table.
+
+98
+00:05:18,480 --> 00:05:21,240
+它不应该是30000字节或附近的某个地方吗？
+Shouldn't it be 30000 bytes or somewhere near there.
+
+99
+00:05:21,510 --> 00:05:22,430
+嗯，不完全是。
+Well not exactly.
+
+100
+00:05:22,440 --> 00:05:22,730
+好的。
+OK.
+
+101
+00:05:22,750 --> 00:05:24,510
+但是想想苹果的例子。
+But think of the apple's example.
+
+102
+00:05:24,750 --> 00:05:30,630
+如果每个苹果重100克，你有三个苹果，然后你把它们和一个完整的袋子放在一起
+If each apple weighed 100 grams and you have three apples and then you put them in a bag with a whole
+
+103
+00:05:30,630 --> 00:05:32,340
+包重300克。
+bag weigh 300 grams.
+
+104
+00:05:33,200 --> 00:05:35,780
+不是，因为包也有点重，对吧？
+No because the bag has some weight as well right.
+
+105
+00:05:35,930 --> 00:05:40,940
+我们在这里看到的只是为了创建表，我们需要添加一些数据。
+So what we're seeing here is just that in order to create a table we need to add some data.
+
+106
+00:05:40,940 --> 00:05:45,510
+所以，只要把运动想象成把苹果放进袋子里时，它就像是袋子里的额外重量。
+So just think of the exercise being like the extra weight from a bag when you put apples in it.
+
+107
+00:05:45,560 --> 00:05:50,540
+这只是建立禁忌的便利的一部分，但当我们压缩焦油球时，请不要担心
+It's just part of the convenience of building a tabo But don't worry when we compress the tar ball it
+
+108
+00:05:50,540 --> 00:05:54,370
+将比瀑布本身要小得多。
+will be much much smaller than the falls would have been on their own.
+
+109
+00:05:54,410 --> 00:05:54,950
+好的。
+OK.
+
+110
+00:05:55,220 --> 00:05:59,720
+现在，我们可以通过查看doc tor文件扩展名来判断这是一个选项卡。
+Now we can tell that this is a tab all by looking the doc tor file extension.
+
+111
+00:05:59,720 --> 00:06:00,160
+正确的。
+Right.
+
+112
+00:06:00,350 --> 00:06:03,890
+但请记住，在Linux中，文件扩展名实际上没有任何意义。
+But remember that in Linux file extensions don't really mean anything.
+
+113
+00:06:03,910 --> 00:06:09,080
+它们通常只是一种便利，这样我们就可以像人类一样看东西，但它们并不意味着任何必要的东西
+They're usually just a convenience so that we can see as humans but they don't mean anything necessary
+
+114
+00:06:09,080 --> 00:06:09,900
+添加到系统中。
+to the system.
+
+115
+00:06:10,070 --> 00:06:14,330
+因此，为了再次检查它是否为制表符，我们可以使用您在前面了解的文件命令
+So to double check that it is a tab all we can use the file commands that you learned about earlier
+
+116
+00:06:14,330 --> 00:06:14,840
+在课程中。
+in the course.
+
+117
+00:06:14,840 --> 00:06:19,410
+如果我们做文件，我可以点击屏幕上的文件存档文档。
+If we do file I can click the screen file archive doc.
+
+118
+00:06:19,750 --> 00:06:23,960
+你会看到，它告诉我们，它确实是一个档案馆。
+You'll see that it tells us that it is indeed up ta archive.
+
+119
+00:06:23,990 --> 00:06:24,500
+好的。
+OK.
+
+120
+00:06:24,710 --> 00:06:30,360
+现在，如果我们重命名这个表，所以我们将它重命名为我们的存档。
+Now if we rename this table so we renamed it to be our archive.
+
+121
+00:06:30,500 --> 00:06:31,680
+天哪，布拉姆。
+Gosh BLAM.
+
+122
+00:06:31,850 --> 00:06:34,760
+我们现在就说如果我们这么做了。
+Let's say now if we do.
+
+123
+00:06:34,880 --> 00:06:37,920
+如果我们对此执行file命令。
+If we do the file command on that.
+
+124
+00:06:38,270 --> 00:06:41,150
+所以我们存档的自动博客的文件。
+So file of our archived Autoblog.
+
+125
+00:06:41,180 --> 00:06:48,290
+您可以看到，系统没有被欺骗，即使它没有被欺骗，它仍然知道它是一个tar归档文件
+You see that the system wasn't tricked and it still knows that it's a tar archive even though it didn't
+
+126
+00:06:48,290 --> 00:06:54,200
+具有TAR文件扩展名，因此让我们将其改回，因为我们不需要更多的念力
+have the tar file extension so let's change that back because we don't need any more confusion than
+
+127
+00:06:54,200 --> 00:06:55,190
+是必要的。
+is necessary.
+
+128
+00:06:55,190 --> 00:06:59,360
+最好让您知道，文档文件扩展名的顶部并没有什么特别之处
+Best just to let you know that the top the doc file extension isn't particularly anything special to
+
+129
+00:06:59,360 --> 00:07:00,250
+这个系统。
+the system.
+
+130
+00:07:00,400 --> 00:07:06,080
+但同样，它可能是您安装在其上的其他程序，但您始终可以检查
+But again it might be to other programs you have installed upon it but you can always check what the
+
+131
+00:07:06,080 --> 00:07:09,190
+事情的真正本质是使用file命令。
+true nature of something is using the file command.
+
+132
+00:07:09,200 --> 00:07:15,050
+好的，但是文档文件扩展名只是让您和潜在的其他用户知道
+OK but the doc file extension is just something that allows you and potentially other users to know
+
+133
+00:07:15,050 --> 00:07:17,420
+什么类型的文件一目了然。
+what type of file is at a glance.
+
+134
+00:07:17,420 --> 00:07:21,770
+现在，您可以实际查看tarball中的内容，而不必将其提取出来。
+Now you can actually take a look at what is in a tarball without having to extract it.
+
+135
+00:07:21,770 --> 00:07:23,320
+假设你下载了这个。
+So let's say you downloaded this.
+
+136
+00:07:23,410 --> 00:07:24,370
+这个档案馆。
+This archive.
+
+137
+00:07:24,560 --> 00:07:25,050
+从…。
+From.
+
+138
+00:07:25,070 --> 00:07:26,410
+从互联网上。
+From the interweb.
+
+139
+00:07:26,600 --> 00:07:28,910
+你想看看里面有什么吗。
+And do you want to take a look at what's inside.
+
+140
+00:07:29,030 --> 00:07:29,660
+好的。
+OK.
+
+141
+00:07:29,930 --> 00:07:35,210
+您可以使用tar命令来执行此操作，您要做的就是将其提供给选项，如如何执行
+You can do that using the tar command and what you do is you give it to options like how you do the
+
+142
+00:07:35,210 --> 00:07:39,220
+t选项和f选项，然后告诉它阿拉卡利医生。
+t option and the f option and then you tell it aracari doctor.
+
+143
+00:07:39,260 --> 00:07:46,330
+好的，T选项表示测试标签，它基本上允许您检查文件和f文件中的内容
+OK so the T option means test label and it basically lets you check what's inside the file and the f
+
+144
+00:07:46,340 --> 00:07:50,790
+选项，它只是将文件传递给TOC命令所必需的。
+option it's just necessary in order to pass a file to the TOC command.
+
+145
+00:07:50,870 --> 00:07:56,760
+当我们这样做的时候，它告诉我们，文件1，4，2，4，3都在表中。
+OK so when we do that it tells us that file 1 and 4 2 and 4 3 are inside the table.
+
+146
+00:07:56,780 --> 00:08:00,380
+现在很酷，我们稍后会进入压缩状态。
+That's pretty cool right now we're going to come into compression in a little bit.
+
+147
+00:08:00,560 --> 00:08:04,730
+但首先看看我们如何将这些文件放到tarball之外。
+But first take a look at how we can get these files outside of our tarball.
+
+148
+00:08:04,730 --> 00:08:06,830
+同样，电缆实际上非常简单。
+Again the cable is actually very simple.
+
+149
+00:08:06,920 --> 00:08:12,670
+首先，让我们删除文件，不管是什么dotti xti，因为它们都消失了。
+First let's delete the file whatever Dotti XTi because they've all disappeared.
+
+150
+00:08:12,870 --> 00:08:16,960
+我们这里只有tabel，我们要从中提取文件。
+We've got just tabel here and we're going to extract the files out of that.
+
+151
+00:08:17,120 --> 00:08:17,530
+好的。
+OK.
+
+152
+00:08:17,780 --> 00:08:20,960
+所以让我们现在就试着这样做。
+So let's try and do this now.
+
+153
+00:08:21,290 --> 00:08:24,980
+我们做这件事的方式其实很简单。
+The way we'll do it is just it's actually very simple.
+
+154
+00:08:24,980 --> 00:08:28,700
+对，所以您必须与他们交谈，并记得创建一个归档文件。
+Right so you'll have to talk them and remember to create an archive.
+
+155
+00:08:28,880 --> 00:08:36,920
+你有CVF，然后你读到我们写了存档文件，然后我们给了它一些文件，现在可以解压了。
+You had CVF and then you read we wrote our archive doc Taung then we gave it some files OK now to extract.
+
+156
+00:08:36,920 --> 00:08:37,710
+这很简单。
+It's very simple.
+
+157
+00:08:37,760 --> 00:08:43,970
+好的，用x代替C表示创建，使用x表示提取，其他一切都是一样的，但是您甚至没有
+OK instead of C for create you use x for extract and everything else is the same but you don't even
+
+158
+00:08:43,970 --> 00:08:49,440
+必须提供任何文件，因为您没有将任何文件放入存档中，您应该停止tar X-Fi
+have to give any files because you're not putting any files into the archive you should stop tar X-Fi
+
+159
+00:08:49,460 --> 00:08:55,000
+提取VIF表示详细，这样它就会告诉我们它实际在做什么，并且APH是必需的，这样您就可以通过
+extract VIF of for verbose so it tells us what it's actually doing and APH is necessary so you can pass
+
+160
+00:08:55,000 --> 00:09:01,070
+一个文件到谈话中，当我们按Enter键时，我们会看到它确实已经为我们解压出来了。
+a file to the talk and when we press Enter we'll see that it has indeed extracted out for us.
+
+161
+00:09:01,070 --> 00:09:07,640
+一个Faltu和三个Fall，我们把它们放回我们的目录中
+For one Faltu and fall three from the archive and we have those back in that in the directory that we
+
+162
+00:09:08,000 --> 00:09:09,230
+我们运行指挥部时所处的位置。
+that we were in when we ran the command.
+
+163
+00:09:09,230 --> 00:09:10,790
+这样我们就很容易了，对吧。
+So there we go pretty easy right.
+
+164
+00:09:10,940 --> 00:09:14,120
+再说一次，所有这些都在我们的小抄里。
+And again all of this is in the cheat sheet for us.
+
+165
+00:09:14,120 --> 00:09:19,310
+现在您可能会想，好的，我们刚刚从表的顶部提取了这些文件，即
+So now you might be thinking OK we've just extracted these files from the top from the table is the
+
+166
+00:09:19,310 --> 00:09:20,610
+桌子现在是空的。
+table now empty.
+
+167
+00:09:20,750 --> 00:09:21,860
+其实不是这样的。
+Well actually it's not.
+
+168
+00:09:21,860 --> 00:09:22,390
+你可以直接。
+You can just.
+
+169
+00:09:22,390 --> 00:09:27,500
+实际上，您可以像检查之前看到的那样，通过告诉文件来检查文件是否仍在其中
+You can actually check that the files are still in there by telling it just like you saw before checking
+
+170
+00:09:27,500 --> 00:09:29,270
+里面有TANF选项。
+inside with the TANF options.
+
+171
+00:09:29,300 --> 00:09:35,300
+你可以检查文件，一个要展开的文件，还有三个还在桌子里，所以不管多少次
+You can check the file one file to unfold three are still inside the table so no matter how many times
+
+172
+00:09:35,300 --> 00:09:39,560
+您从表中提取，表中仍然包含它内部的内容。
+you extract from a table the table still contains what's inside of it.
+
+173
+00:09:39,560 --> 00:09:44,710
+所以它就像一个A，这是一个可重复使用的袋子，也许你可以从商店里买到。
+So it's like an A it's a reusable bag that maybe you get from shops.
+
+174
+00:09:44,820 --> 00:09:46,420
+好的，现在这真是太棒了。
+OK that's pretty awesome right now.
+
+175
+00:09:46,430 --> 00:09:48,100
+我要在这里破解这盘录像带。
+I'm going to break the video here.
+
+176
+00:09:48,200 --> 00:09:52,490
+为了节省时间，在下一个视频中，我们将讨论如何压缩我们的tar
+In interest of time and in the next video we're going to be talking about how we can compress our tar
+
+177
+00:09:52,490 --> 00:09:53,830
+让它们变小的球。
+balls to make them smaller.
+
+178
+00:09:53,990 --> 00:09:56,780
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

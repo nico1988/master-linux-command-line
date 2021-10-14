@@ -1,0 +1,675 @@
+1
+00:00:00,180 --> 00:00:06,330
+Hello the beautiful people and welcome to this very exciting section of the Course all about bash scripts
+
+2
+00:00:06,360 --> 00:00:11,340
+and in the next few videos you're going to learn how you can create your own bad scripts which are incredibly
+
+3
+00:00:11,340 --> 00:00:14,810
+useful tools that will allow you to automate your workflows.
+
+4
+00:00:14,850 --> 00:00:20,370
+Now learning about bad scripts is a massive field in and of itself and it would require its own course
+
+5
+00:00:20,610 --> 00:00:21,880
+to cover properly.
+
+6
+00:00:21,990 --> 00:00:26,520
+But by the end of the next few videos you're going to have the fundamental understanding required about
+
+7
+00:00:26,520 --> 00:00:32,850
+how bad scripts work and how to create them so that you can begin automating your workflows using the
+
+8
+00:00:32,850 --> 00:00:35,250
+commands that you've learned so far in the course.
+
+9
+00:00:35,250 --> 00:00:40,500
+So it's going to be an incredible an incredible piece of learning for you and to let you understand
+
+10
+00:00:40,520 --> 00:00:47,250
+how you know what bash scripts or how to use them or you know how they basically work so it can be very
+
+11
+00:00:47,250 --> 00:00:48,320
+very exciting.
+
+12
+00:00:48,360 --> 00:00:52,480
+Hope you're ready to gain some serious superpowers so let's not let's not mess around anymore.
+
+13
+00:00:52,560 --> 00:00:57,000
+Let's go jump right in and start making our very first batch script.
+
+14
+00:00:57,000 --> 00:01:00,290
+All right so let's go ahead and make a simple bash script.
+
+15
+00:01:00,460 --> 00:01:01,070
+Let's do that.
+
+16
+00:01:01,080 --> 00:01:03,280
+All we need to do is just make a text file.
+
+17
+00:01:03,390 --> 00:01:10,160
+So to do that let's go ahead and open up Nonno on our desktop and make a file called our script doc.
+
+18
+00:01:10,230 --> 00:01:11,640
+SH OK.
+
+19
+00:01:11,850 --> 00:01:17,910
+So all I'm doing here when I give the file SH fartleks file extension is just making it easier for us
+
+20
+00:01:17,910 --> 00:01:23,120
+to see that this is a bash script and with SH being short for for the bash shell.
+
+21
+00:01:23,250 --> 00:01:23,690
+OK.
+
+22
+00:01:23,850 --> 00:01:29,490
+So if I open and press control and O to save it you'll see that the script has popped up on the left
+
+23
+00:01:29,490 --> 00:01:33,470
+and if I just close that and clear the screen we've now got this file.
+
+24
+00:01:33,480 --> 00:01:35,400
+Let's take a closer look at this file.
+
+25
+00:01:35,400 --> 00:01:37,700
+Let's see if it's anything special to the shell.
+
+26
+00:01:37,770 --> 00:01:39,540
+Using the file command.
+
+27
+00:01:39,690 --> 00:01:45,650
+If I do file script SH We see that it's not it's nothing special as far as the shell is concerned.
+
+28
+00:01:45,690 --> 00:01:48,060
+It's just an empty file.
+
+29
+00:01:48,060 --> 00:01:51,800
+It doesn't matter whether this was done sage or datcha sublime or dot whatever.
+
+30
+00:01:51,810 --> 00:01:53,700
+It's just an empty file.
+
+31
+00:01:53,790 --> 00:01:54,220
+OK.
+
+32
+00:01:54,390 --> 00:02:00,750
+So with that piece of information let's go ahead and open our script and let's do the most important
+
+33
+00:02:00,750 --> 00:02:01,940
+thing that you need to do.
+
+34
+00:02:01,960 --> 00:02:04,550
+When ever you write a new script.
+
+35
+00:02:04,750 --> 00:02:05,160
+OK.
+
+36
+00:02:05,370 --> 00:02:10,380
+You need to tell it that this is actually a special file and that this file isn't just a text file.
+
+37
+00:02:10,380 --> 00:02:17,400
+It needs to be read using a certain interpreter there interpreter is something that will read a file
+
+38
+00:02:17,610 --> 00:02:22,480
+and interpret each of the lines in that file as a certain type of code.
+
+39
+00:02:22,610 --> 00:02:23,060
+OK.
+
+40
+00:02:23,160 --> 00:02:29,160
+So instead of just reading cat OK if I told this that this is a bash script it would read this is the
+
+41
+00:02:29,160 --> 00:02:31,950
+cat command instead of just Katter's And you know the animal.
+
+42
+00:02:32,020 --> 00:02:36,990
+OK if I read eg if I typed echo it would interpret this file as the echo command.
+
+43
+00:02:36,990 --> 00:02:42,030
+It wouldn't just interpret it as an echo that you hear in you know when you are in a cave when you show
+
+44
+00:02:42,030 --> 00:02:44,800
+into into a hole or somewhere like made of stone.
+
+45
+00:02:44,850 --> 00:02:45,450
+OK.
+
+46
+00:02:45,450 --> 00:02:49,620
+So this is the important part we attended that this isn't a normal text file.
+
+47
+00:02:49,620 --> 00:02:54,970
+It needs to be interpreted as code and more specifically as a bash script.
+
+48
+00:02:54,990 --> 00:02:58,370
+So to do that you need to first type what's called the Shabangu.
+
+49
+00:02:58,380 --> 00:03:00,890
+Now the Shabangu is a hash.
+
+50
+00:03:00,900 --> 00:03:01,650
+So.
+
+51
+00:03:01,800 --> 00:03:07,990
+And then Abangan exclamation mark and a hash symbol the exclamation mark is called the Shabangu.
+
+52
+00:03:08,160 --> 00:03:10,880
+And then you type the path to the interpreter.
+
+53
+00:03:11,070 --> 00:03:15,250
+Now the bash interpreter is at slash bin slash Bash.
+
+54
+00:03:15,450 --> 00:03:17,150
+So this is our first line.
+
+55
+00:03:17,160 --> 00:03:19,200
+We type the Shabangu hash bang.
+
+56
+00:03:19,290 --> 00:03:19,870
+OK.
+
+57
+00:03:20,040 --> 00:03:22,410
+Then slash bin slash.
+
+58
+00:03:22,500 --> 00:03:29,460
+BASH Now that that slash been slash Bash is the path to abash interpreter and we can see that if I close
+
+59
+00:03:29,460 --> 00:03:35,310
+out of nano by using the command and typing Bash and we see that we get slash been slash bash as the
+
+60
+00:03:35,310 --> 00:03:37,680
+path to the bash shell.
+
+61
+00:03:37,800 --> 00:03:38,270
+OK.
+
+62
+00:03:38,400 --> 00:03:42,710
+So what we're saying here is hey this isn't a normal text file.
+
+63
+00:03:42,780 --> 00:03:50,610
+You need to interpret this file using the bash the bash shell interpreter run this is a bash shell script.
+
+64
+00:03:50,760 --> 00:03:56,370
+And the key is this line needs to be the first line it cannot be the second line has the absolute first
+
+65
+00:03:56,370 --> 00:04:00,020
+line and the Campione space is on the line so you finish the line right away.
+
+66
+00:04:00,090 --> 00:04:00,510
+OK.
+
+67
+00:04:00,630 --> 00:04:01,580
+And when we save that.
+
+68
+00:04:01,620 --> 00:04:07,590
+Now if we look at the script with the with the fork and we see that it is now a shell script.
+
+69
+00:04:07,590 --> 00:04:12,380
+In fact I'm a born again shellscript never born again shell is bash.
+
+70
+00:04:12,390 --> 00:04:16,290
+So you've got born again shall I born again.
+
+71
+00:04:16,290 --> 00:04:17,480
+Shell is bash.
+
+72
+00:04:17,970 --> 00:04:24,570
+So this is saying it's a bash shell script and it knows that because it's got this this Shabangu line.
+
+73
+00:04:24,600 --> 00:04:28,950
+Now if you know anything at Python programming you'll know that the Python programming language is also
+
+74
+00:04:28,950 --> 00:04:33,470
+an interpreted programming language and the command to run something is a Python script.
+
+75
+00:04:33,490 --> 00:04:38,580
+On on on Linux is Python 3 OK for Python 3.
+
+76
+00:04:38,610 --> 00:04:44,970
+So if we type which Python 3 it'll tell us the path to the to the Python 3 interpreter just like it
+
+77
+00:04:44,970 --> 00:04:46,420
+did for the of Jupiter.
+
+78
+00:04:46,470 --> 00:04:52,770
+And if I copy the Open up script again and I write the shebang line again and write Shabangu.
+
+79
+00:04:53,130 --> 00:04:56,940
+So shebang and then I paste in there the path to the Python interpreter.
+
+80
+00:04:56,940 --> 00:05:00,540
+So sloshy uses rapin slash Peiffer and three and save the repped.
+
+81
+00:05:00,810 --> 00:05:06,420
+If I now look at scripts you can see that the shell sees that this is now a Python script so that's
+
+82
+00:05:06,420 --> 00:05:11,250
+how you would do this kind of stuff if you wanted to write a script in the Python programming language
+
+83
+00:05:11,520 --> 00:05:18,030
+because we want to write a bash script which is going to give it the path to the to the bash interpreter
+
+84
+00:05:18,030 --> 00:05:21,260
+which is a slash being slash bash save that.
+
+85
+00:05:21,330 --> 00:05:26,490
+And then when we look we see that it's again a born again shell script bash script.
+
+86
+00:05:26,490 --> 00:05:31,800
+OK so with that important concept understood Let's go back to editing bash cryptanalysis clear the screen
+
+87
+00:05:32,160 --> 00:05:33,190
+in nano.
+
+88
+00:05:33,270 --> 00:05:38,490
+Now anything that we write in here with this special line added anything that we write below will now
+
+89
+00:05:38,490 --> 00:05:41,940
+be interpreted as they do in the normal shell.
+
+90
+00:05:41,940 --> 00:05:45,260
+So for example if I write Ecko and then something like.
+
+91
+00:05:45,360 --> 00:05:47,020
+Hello world.
+
+92
+00:05:47,200 --> 00:05:48,000
+OK.
+
+93
+00:05:48,330 --> 00:05:51,600
+This line will be interpreted as a command.
+
+94
+00:05:51,600 --> 00:05:54,660
+It's as if I just typed echo Hello world in my shell.
+
+95
+00:05:54,660 --> 00:05:55,800
+So let's see this in action.
+
+96
+00:05:55,800 --> 00:05:58,620
+OK let's save the file using control.
+
+97
+00:05:58,650 --> 00:05:59,730
+Oh OK.
+
+98
+00:06:00,030 --> 00:06:06,180
+And now if we type bash script we see that it's run.
+
+99
+00:06:06,180 --> 00:06:06,960
+Hello world.
+
+100
+00:06:06,960 --> 00:06:07,650
+How cool is that.
+
+101
+00:06:07,650 --> 00:06:07,890
+Right.
+
+102
+00:06:07,890 --> 00:06:10,410
+So it ran the commands that are inside there.
+
+103
+00:06:10,620 --> 00:06:12,970
+Now we can do what ever we want in our script.
+
+104
+00:06:12,960 --> 00:06:14,580
+Let's just try and add more stuff.
+
+105
+00:06:14,580 --> 00:06:17,500
+OK let's let's let's open it up with another.
+
+106
+00:06:18,150 --> 00:06:23,940
+And now let's clear out this echo thing let's just get rid of this using the cut command the control
+
+107
+00:06:23,940 --> 00:06:25,350
+OK or just go to the whole line.
+
+108
+00:06:25,380 --> 00:06:27,350
+That's a nice little shortcut for deleting a line.
+
+109
+00:06:27,570 --> 00:06:30,030
+Now let's actually use in here.
+
+110
+00:06:30,030 --> 00:06:33,690
+Let's let's try and create a file a folder called Magic.
+
+111
+00:06:33,810 --> 00:06:42,450
+OK on our desktop now inside the magic folder we're going to make one hundred files and then we'll use
+
+112
+00:06:42,450 --> 00:06:47,790
+the ls command to get information about each of those files and save it to save all the information
+
+113
+00:06:47,790 --> 00:06:49,940
+to a log file on our desktop.
+
+114
+00:06:50,150 --> 00:06:50,570
+OK.
+
+115
+00:06:50,760 --> 00:06:52,520
+So what command.
+
+116
+00:06:52,680 --> 00:06:58,400
+Here's a test for you know what come on would we need to create a folder called Magic on our desktop.
+
+117
+00:07:00,120 --> 00:07:03,020
+Well M K D I'll come and write the Moktar command.
+
+118
+00:07:03,150 --> 00:07:04,670
+So let's make a director this type.
+
+119
+00:07:04,680 --> 00:07:08,810
+M d I are on our desktop.
+
+120
+00:07:09,390 --> 00:07:11,280
+Let's make a file called Magic.
+
+121
+00:07:11,390 --> 00:07:14,550
+OK so that's going to be our magic directory.
+
+122
+00:07:14,550 --> 00:07:16,840
+Now we need to make 100 files in it.
+
+123
+00:07:16,980 --> 00:07:18,720
+So what might we do that.
+
+124
+00:07:18,900 --> 00:07:25,950
+Well we might move into the Directory so we might move into the magic directory using CD then we might
+
+125
+00:07:25,950 --> 00:07:32,180
+touch I guess 100 files of file one to 100.
+
+126
+00:07:32,210 --> 00:07:32,640
+OK.
+
+127
+00:07:32,700 --> 00:07:33,830
+That might be what we do.
+
+128
+00:07:34,110 --> 00:07:34,920
+So far so good.
+
+129
+00:07:34,920 --> 00:07:37,680
+We've created a file called a folder called Magic.
+
+130
+00:07:37,680 --> 00:07:41,510
+We've gone into the folder and then we've created 100 files.
+
+131
+00:07:41,700 --> 00:07:46,610
+Now let's let's like you know create Let's use the LS command to get data about each of those files.
+
+132
+00:07:46,800 --> 00:07:54,990
+So if we use the ls command and we let's say give it let's say we want to use long form information
+
+133
+00:07:55,080 --> 00:08:03,020
+and human readable information and save all that to a file on our desktop called magic dot log.
+
+134
+00:08:04,010 --> 00:08:06,230
+OK let's leave it there.
+
+135
+00:08:06,300 --> 00:08:12,180
+OK so what we've done we've used the make We've made a directory on our desktop we have changed into
+
+136
+00:08:12,180 --> 00:08:19,670
+that directory we've created 100 files and then we use the last dash El-Hage command on our.
+
+137
+00:08:19,760 --> 00:08:20,750
+I should actually.
+
+138
+00:08:20,800 --> 00:08:22,470
+Good thing I checked.
+
+139
+00:08:22,650 --> 00:08:28,490
+I should check our magic folder and then redirect all the information into a file called Magic don't
+
+140
+00:08:28,490 --> 00:08:28,770
+log.
+
+141
+00:08:28,770 --> 00:08:31,810
+So if I save that they're closed.
+
+142
+00:08:32,070 --> 00:08:37,270
+And now we we can see the contents of this file using the cat command just like any other file we can
+
+143
+00:08:37,280 --> 00:08:40,330
+do and we can see the contents.
+
+144
+00:08:40,620 --> 00:08:43,790
+But now let's go ahead and actually run it.
+
+145
+00:08:43,920 --> 00:08:44,230
+OK.
+
+146
+00:08:44,310 --> 00:08:52,580
+So if we try to bash our script buah Did you see that we've managed to create a folder on the desktop.
+
+147
+00:08:52,760 --> 00:09:01,130
+Inside there there are now 100 files and if we look in this magic dot log file we see detailed information
+
+148
+00:09:01,220 --> 00:09:07,610
+about every single one of the files inside that folder just like we told the script to do so isn't that
+
+149
+00:09:07,730 --> 00:09:13,790
+absolutely awesome right so this is how bad scripts work you basically type in the commands that you
+
+150
+00:09:13,790 --> 00:09:18,100
+want it to do just as if you were typing them in in the in the normal shell.
+
+151
+00:09:18,170 --> 00:09:24,550
+But the benefit is we now have this file that we can keep and do stuff with whenever we want.
+
+152
+00:09:24,660 --> 00:09:27,630
+Said you can actually you know save that for later.
+
+153
+00:09:28,010 --> 00:09:30,200
+Now this should be a moment of amazement for you.
+
+154
+00:09:30,230 --> 00:09:31,550
+So think about this for a moment.
+
+155
+00:09:31,560 --> 00:09:32,070
+OK.
+
+156
+00:09:32,120 --> 00:09:36,770
+In Linux you can control anything using the command line whatever you want whenever you want to change
+
+157
+00:09:36,770 --> 00:09:41,120
+whether it be your desktop background whether it be the font color whether it be you know messages that
+
+158
+00:09:41,120 --> 00:09:44,360
+pop up when you log in you can change anything using the command line.
+
+159
+00:09:44,420 --> 00:09:44,890
+OK.
+
+160
+00:09:45,080 --> 00:09:49,400
+And you can write scripts to hold command line commands.
+
+161
+00:09:49,400 --> 00:09:55,010
+So therefore you can write scripts that can do anything on your computer and save them for later.
+
+162
+00:09:55,020 --> 00:09:59,840
+And you can run them whenever you want and bash scripts are therefore part of what give you complete
+
+163
+00:09:59,930 --> 00:10:06,250
+customized ability of a Linux machine and they are incredibly incredibly powerful tools.
+
+164
+00:10:06,260 --> 00:10:10,610
+So you've seen in this video how to make a bash script but in the next video what we're going to do
+
+165
+00:10:10,610 --> 00:10:14,510
+is we're going to do it all over again and we're going to show you how you can write a batch script
+
+166
+00:10:14,750 --> 00:10:18,410
+to make regular backups for use that's going to be very very cool.
+
+167
+00:10:18,410 --> 00:10:22,010
+I'm going to show you how to run it in a much more convenient way as well.
+
+168
+00:10:22,010 --> 00:10:26,120
+So we're going to break the video here and in the next video we're going to pick it up again by showing
+
+169
+00:10:26,120 --> 00:10:29,080
+you how to make a bash script to do backups.

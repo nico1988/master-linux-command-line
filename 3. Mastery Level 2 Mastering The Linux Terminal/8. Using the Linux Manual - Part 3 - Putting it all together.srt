@@ -1,0 +1,1079 @@
+1
+00:00:00,240 --> 00:00:06,190
+Hello you beautiful people know in the last video you learn how to search the manual for specific keywords.
+
+2
+00:00:06,330 --> 00:00:10,750
+Open up manual pages and how to read them to learn how to use specific commands.
+
+3
+00:00:10,800 --> 00:00:13,770
+But there was quite a lot of stuff in that video and a lot to take in.
+
+4
+00:00:13,770 --> 00:00:17,560
+So in this video what we want to do is we want to give you some practice.
+
+5
+00:00:17,580 --> 00:00:21,690
+So in this video we're going to take a look at a completely new command that we haven't seen before
+
+6
+00:00:21,920 --> 00:00:23,630
+and we're going to learn how to use it.
+
+7
+00:00:23,630 --> 00:00:24,690
+We're going to search the manual for it.
+
+8
+00:00:24,690 --> 00:00:27,910
+We're going to learn how to use it using the synopsis in the manual page.
+
+9
+00:00:27,930 --> 00:00:29,440
+We're going to read through its various options.
+
+10
+00:00:29,440 --> 00:00:33,310
+I'm going to try some of them out and see how you can customize commands and stuff like that.
+
+11
+00:00:33,420 --> 00:00:39,030
+And the idea is that this is going to show you how to independently search for stuff using the manual
+
+12
+00:00:39,030 --> 00:00:42,300
+we're going to put the whole process together we can take everything we've learned put it all together
+
+13
+00:00:42,510 --> 00:00:46,040
+and show you how you would learn about a new command from scratch.
+
+14
+00:00:46,080 --> 00:00:50,100
+And the idea is you can have the independence to search for new stuff and learn how it works and that's
+
+15
+00:00:50,100 --> 00:00:52,750
+really where the value comes from the manual.
+
+16
+00:00:52,740 --> 00:00:56,970
+It's not having people randomly show you things that they find cool is being able to go out there and
+
+17
+00:00:56,970 --> 00:01:01,920
+find stuff that you find cool and learn how to use it independently and it can take your Linux abilities
+
+18
+00:01:02,100 --> 00:01:03,840
+to a whole new level.
+
+19
+00:01:03,840 --> 00:01:09,770
+So let's go ahead and jump into it and start learning about our brand new command.
+
+20
+00:01:09,800 --> 00:01:15,610
+OK so what we're going to do is we're going to look at a command that will allow us to list out what
+
+21
+00:01:15,640 --> 00:01:18,460
+is in a folder also known as a directory.
+
+22
+00:01:18,520 --> 00:01:22,940
+OK so we want to come and that will list out a directory's contents.
+
+23
+00:01:22,940 --> 00:01:23,330
+OK.
+
+24
+00:01:23,530 --> 00:01:25,140
+So now that we know that.
+
+25
+00:01:25,180 --> 00:01:29,410
+Let's go ahead and search for what might be available so the first step is to search for what might
+
+26
+00:01:29,410 --> 00:01:32,670
+be available in the manual and you might have to try this multiple times.
+
+27
+00:01:32,660 --> 00:01:36,970
+OK you might not get the search terms available right away you might have to try different words and
+
+28
+00:01:36,970 --> 00:01:39,120
+different keywords but let's try that.
+
+29
+00:01:39,160 --> 00:01:44,920
+So let's try this type the man come and give it the k option and then we tell what we want to search
+
+30
+00:01:44,920 --> 00:01:45,480
+for.
+
+31
+00:01:45,730 --> 00:01:49,950
+Now I'm going to put in quotes list directory contents.
+
+32
+00:01:50,190 --> 00:01:50,630
+OK.
+
+33
+00:01:50,640 --> 00:01:54,340
+And the reason I put it in quotes is because I want to search for this search term in one go.
+
+34
+00:01:54,340 --> 00:01:58,190
+I don't want to search for the word list then the word directory than the word contents.
+
+35
+00:01:58,210 --> 00:02:01,040
+I want to search for list directory contents in one go.
+
+36
+00:02:01,130 --> 00:02:03,170
+OK so once I do that I press enter.
+
+37
+00:02:03,400 --> 00:02:04,090
+And here we go.
+
+38
+00:02:04,090 --> 00:02:05,520
+We get some results.
+
+39
+00:02:06,000 --> 00:02:06,470
+OK.
+
+40
+00:02:06,520 --> 00:02:08,560
+Now they all seem to pretty much do what we want right.
+
+41
+00:02:08,560 --> 00:02:13,450
+They all seem to say list directory contents but the one that I'm specifically looking for I've heard
+
+42
+00:02:13,450 --> 00:02:16,310
+about online is the l s command.
+
+43
+00:02:16,360 --> 00:02:21,560
+OK now the ls command is one that we will come onto as well in the layout section of the course but
+
+44
+00:02:21,650 --> 00:02:25,300
+we can see that it's a user command because it's in the first section of the manual.
+
+45
+00:02:25,480 --> 00:02:30,610
+So we could open it using MAN 1 LS but because it's in the first section we would have to have even
+
+46
+00:02:30,610 --> 00:02:32,310
+have the one we can type man.
+
+47
+00:02:32,450 --> 00:02:33,880
+S And here we go.
+
+48
+00:02:33,910 --> 00:02:37,060
+Where in the manual page for the ls command.
+
+49
+00:02:37,210 --> 00:02:39,110
+So there we are now right at the top.
+
+50
+00:02:39,130 --> 00:02:44,050
+We can see the where in the press command is in the first section of the manual which is apparently
+
+51
+00:02:44,050 --> 00:02:50,950
+user commands and we can see the name of the command is ls and it lists directory contents and that's
+
+52
+00:02:50,950 --> 00:02:52,530
+from the name section.
+
+53
+00:02:52,540 --> 00:02:59,110
+Now looking at the synopsis section we can see that if you type L S then you can have multiple optional
+
+54
+00:02:59,140 --> 00:02:59,640
+options.
+
+55
+00:02:59,650 --> 00:03:02,890
+We know they're optional because they're surrounded by square brackets and you can have multiple of
+
+56
+00:03:02,890 --> 00:03:09,910
+them because they've got the ellipsis after it and then you have multiple optional filenames or paths
+
+57
+00:03:09,910 --> 00:03:14,670
+to directories and can have multiple of those because we can see the dot dot dot.
+
+58
+00:03:14,800 --> 00:03:21,030
+But the one thing that you might notice is because everything else is optional right.
+
+59
+00:03:21,070 --> 00:03:25,780
+The only thing you actually need to enter is the ls command itself and it will work.
+
+60
+00:03:25,780 --> 00:03:26,790
+So let's try that.
+
+61
+00:03:26,860 --> 00:03:31,150
+OK let's try and see that we don't even have to give the command any input so if we press lower case
+
+62
+00:03:31,150 --> 00:03:33,420
+Q to quit We're back in.
+
+63
+00:03:33,610 --> 00:03:35,760
+We're backing out of it all.
+
+64
+00:03:36,160 --> 00:03:38,950
+Now as I said the thing we need to do is enter the Alaskan itself.
+
+65
+00:03:38,960 --> 00:03:47,730
+If I just type LS I press enter that it has indeed listed all the contents of our home directory which
+
+66
+00:03:47,730 --> 00:03:50,200
+is the directory that we're currently in.
+
+67
+00:03:50,250 --> 00:03:50,960
+So how cool.
+
+68
+00:03:50,970 --> 00:03:55,010
+OK now go back in the man page just go back in the main page.
+
+69
+00:03:55,080 --> 00:03:59,550
+We can see that there's a whole bunch of options that we can use we can look down in the description
+
+70
+00:03:59,550 --> 00:04:01,440
+section.
+
+71
+00:04:01,620 --> 00:04:06,810
+It says here that list information about the files which is the current working directory by default
+
+72
+00:04:07,170 --> 00:04:08,890
+sort's entries alphabetically.
+
+73
+00:04:08,940 --> 00:04:15,750
+If non of these options or the sort option is specified and mandatory arguments to long options are
+
+74
+00:04:15,780 --> 00:04:17,350
+mandatory for short options as well.
+
+75
+00:04:17,420 --> 00:04:19,530
+OK so that's fair enough.
+
+76
+00:04:19,530 --> 00:04:22,130
+Now we've got loads of different options in here.
+
+77
+00:04:22,180 --> 00:04:26,640
+OK loads of them let me just scroll through loads of them guys.
+
+78
+00:04:26,640 --> 00:04:27,170
+OK.
+
+79
+00:04:27,300 --> 00:04:30,920
+So memorizing all these is just not possible.
+
+80
+00:04:30,930 --> 00:04:31,130
+OK.
+
+81
+00:04:31,140 --> 00:04:32,630
+Just don't even don't even try.
+
+82
+00:04:32,700 --> 00:04:36,240
+You're not going to be able to do all that and even if you did there were thousands and thousands of
+
+83
+00:04:36,240 --> 00:04:38,750
+Linux commands so it's kind of a waste of time to do it all.
+
+84
+00:04:38,760 --> 00:04:41,760
+This is what you need to know how to use a manual page effectively.
+
+85
+00:04:41,930 --> 00:04:42,580
+OK.
+
+86
+00:04:43,020 --> 00:04:44,220
+There's a whole bunch of options.
+
+87
+00:04:44,400 --> 00:04:49,900
+One that I might like to show you which is a good one is the l option.
+
+88
+00:04:50,050 --> 00:04:50,700
+OK.
+
+89
+00:04:50,770 --> 00:04:53,980
+Now of course you can browse through these and have a look at what they do.
+
+90
+00:04:54,120 --> 00:04:58,520
+But you've got the option here which stands for long listing format.
+
+91
+00:04:58,530 --> 00:04:58,810
+OK.
+
+92
+00:04:58,830 --> 00:04:59,540
+So let's try that.
+
+93
+00:04:59,550 --> 00:05:00,230
+Sounds pretty cool.
+
+94
+00:05:00,250 --> 00:05:01,320
+Let's see what that means.
+
+95
+00:05:01,360 --> 00:05:05,760
+If I type ls and give it the l option or press enter.
+
+96
+00:05:05,760 --> 00:05:10,050
+We now see that everything is kind of listed in a much more detailed fashion.
+
+97
+00:05:10,050 --> 00:05:12,720
+This was put before and this is the output.
+
+98
+00:05:12,900 --> 00:05:18,000
+Now OK so we've got much more detailed view of what's in our folder now to explain what this means a
+
+99
+00:05:18,000 --> 00:05:19,330
+bit later in the course.
+
+100
+00:05:19,380 --> 00:05:23,510
+But for now I hope you can see that the process that you might follow for discovering a new command.
+
+101
+00:05:23,520 --> 00:05:29,430
+OK we search for manual pages we browsed a few of the options and we tried them out as well as seeing
+
+102
+00:05:29,520 --> 00:05:32,910
+how to actually use the command in the first place.
+
+103
+00:05:32,910 --> 00:05:34,890
+Now let's let's have another look in.
+
+104
+00:05:34,980 --> 00:05:37,590
+We can see that this is a bit it's a bit difficult to read.
+
+105
+00:05:37,680 --> 00:05:42,720
+Perhaps if we look at the ls command again and we scroll down we can see that there's another option
+
+106
+00:05:42,930 --> 00:05:49,110
+here called the hate option which stands for human readable I guess you can see here we've got a short
+
+107
+00:05:49,110 --> 00:05:53,180
+form option dash h or a long form option dash dash human readable.
+
+108
+00:05:53,190 --> 00:05:59,370
+And this is how you can tell whether whether an option has a long form or not because it will move right
+
+109
+00:05:59,370 --> 00:06:00,780
+next to it in the manual page.
+
+110
+00:06:00,810 --> 00:06:03,910
+OK you may want to set some options have long forms and some don't.
+
+111
+00:06:03,910 --> 00:06:05,620
+And this is how you can tell.
+
+112
+00:06:05,760 --> 00:06:12,520
+And it says that with the l option and or the s option this will print human readable sizes of files.
+
+113
+00:06:12,520 --> 00:06:15,910
+For example one kilobyte to integrate four megabytes two gigabytes etc..
+
+114
+00:06:15,960 --> 00:06:17,620
+OK so let's take a look at that here.
+
+115
+00:06:17,640 --> 00:06:20,600
+This column this column here is actually all the file sizes.
+
+116
+00:06:20,730 --> 00:06:24,900
+And it just says 4000 a nice six or eight thousand nine hundred eighty or whatever it might be.
+
+117
+00:06:24,950 --> 00:06:31,000
+OK but to make that human readable you can type LS dash L and then give it the option as well and we'll
+
+118
+00:06:31,020 --> 00:06:31,340
+see that.
+
+119
+00:06:31,340 --> 00:06:35,000
+Now it's said because it's four kilobytes eight point eight kilobytes and so on and so on.
+
+120
+00:06:35,010 --> 00:06:36,140
+OK.
+
+121
+00:06:36,360 --> 00:06:40,910
+But as well because we have a long form option and we don't have to just type hey we might type page
+
+122
+00:06:41,100 --> 00:06:45,930
+but we could also type dash dash human readable.
+
+123
+00:06:45,930 --> 00:06:47,750
+I think it was like that.
+
+124
+00:06:47,910 --> 00:06:49,710
+Let me check if I type.
+
+125
+00:06:49,710 --> 00:06:54,620
+LS It's dash dash human human readable.
+
+126
+00:06:54,650 --> 00:06:57,390
+I'm Pop-Pop I apologize human Dasch readable.
+
+127
+00:06:57,410 --> 00:06:57,980
+OK.
+
+128
+00:06:58,330 --> 00:06:58,810
+And there we go.
+
+129
+00:06:58,820 --> 00:07:01,900
+Now we've got exactly the same output that we have before you say.
+
+130
+00:07:02,060 --> 00:07:08,350
+So you can see here the way we use a long form option which means now we know it's a bit easier to read
+
+131
+00:07:08,350 --> 00:07:09,030
+what.
+
+132
+00:07:09,080 --> 00:07:12,180
+Well you know what that means than it is to just see what hate means.
+
+133
+00:07:12,190 --> 00:07:12,620
+OK.
+
+134
+00:07:12,770 --> 00:07:17,400
+But it kind of makes the command a bit more difficult to type so there's a bit of a tradeoff there.
+
+135
+00:07:17,410 --> 00:07:18,760
+But you get the same output.
+
+136
+00:07:18,850 --> 00:07:19,480
+OK.
+
+137
+00:07:19,870 --> 00:07:24,650
+So you can see just how useful reading the man pages actually is and if we just go back into the ls
+
+138
+00:07:24,650 --> 00:07:29,490
+command and be clear the screen go back into the ls command and scroll all the way down.
+
+139
+00:07:29,990 --> 00:07:35,540
+You will see a section if we we keep scrolling down it's a long manual page much longer than that which
+
+140
+00:07:35,540 --> 00:07:36,460
+come on right.
+
+141
+00:07:36,500 --> 00:07:40,220
+You'll see a section that says that is called See also.
+
+142
+00:07:40,390 --> 00:07:49,100
+OK so this section here that says See also it's got a hyperlink and you can click on this hyperlink
+
+143
+00:07:49,190 --> 00:07:54,210
+or any hyperlink that's in a manual page by holding the control key and left clicking OK.
+
+144
+00:07:54,260 --> 00:07:59,770
+Now if we control the left click that's going to do if I if I clicked it right.
+
+145
+00:08:01,190 --> 00:08:04,530
+Have to wait I think there we go.
+
+146
+00:08:04,530 --> 00:08:05,870
+It's opening up.
+
+147
+00:08:05,870 --> 00:08:10,310
+So I clicked it multiple times but it's opened up in the Firefox browser.
+
+148
+00:08:10,310 --> 00:08:11,380
+The link that was in there.
+
+149
+00:08:11,450 --> 00:08:11,840
+OK.
+
+150
+00:08:11,930 --> 00:08:17,820
+So it's going to give you more information about the command as long as you have internet access.
+
+151
+00:08:17,840 --> 00:08:23,540
+OK so that sometimes in manual pages there are there are links that you can click on so there's another
+
+152
+00:08:23,540 --> 00:08:24,830
+one here for example.
+
+153
+00:08:24,830 --> 00:08:26,060
+Another one here.
+
+154
+00:08:26,140 --> 00:08:30,650
+If you hold the control key and click them and then you will open up in your browser and you'll be able
+
+155
+00:08:30,650 --> 00:08:31,830
+to see what they're pointing at.
+
+156
+00:08:31,830 --> 00:08:33,080
+So that's very very useful.
+
+157
+00:08:33,230 --> 00:08:36,700
+And that's something you'll definitely want to do if you want more information.
+
+158
+00:08:36,770 --> 00:08:41,840
+And as a final know although you can find pretty much information on pretty much all the commands that
+
+159
+00:08:41,840 --> 00:08:45,890
+you'll ever need using the man pages you can't quite get all of them.
+
+160
+00:08:45,890 --> 00:08:50,590
+So some commands are defined directly in the shell and don't have man pages for them.
+
+161
+00:08:50,720 --> 00:08:54,720
+So to find those commands you will need to use the help command instead of the man.
+
+162
+00:08:54,710 --> 00:08:55,000
+Come on.
+
+163
+00:08:55,010 --> 00:08:55,840
+Let me just show you what I mean.
+
+164
+00:08:55,880 --> 00:08:56,300
+OK.
+
+165
+00:08:56,510 --> 00:09:03,130
+So for example one of them is the cd command and the cd command is one you will use all the time.
+
+166
+00:09:03,140 --> 00:09:04,820
+Actually it's used to change a directory.
+
+167
+00:09:04,820 --> 00:09:06,690
+You'll see this in the next section of the course.
+
+168
+00:09:06,720 --> 00:09:08,610
+What about navigating the file system.
+
+169
+00:09:08,660 --> 00:09:15,650
+But if I type man CD it's like there's no manual entry for the cd command but if I type the help command
+
+170
+00:09:15,800 --> 00:09:21,580
+and then do CD we then get something that's very similar to a man page and we can see how to use it.
+
+171
+00:09:21,700 --> 00:09:23,380
+Here we get a description.
+
+172
+00:09:23,450 --> 00:09:25,200
+We get the options and so on.
+
+173
+00:09:25,190 --> 00:09:29,140
+It's like OK so it works pretty much just the same as a manual page.
+
+174
+00:09:29,280 --> 00:09:33,790
+It's just you have to use help instead to find the commands that are that need the help command to use
+
+175
+00:09:33,800 --> 00:09:35,690
+if you just type help and press enter.
+
+176
+00:09:35,750 --> 00:09:42,770
+You get a big list and every single one of these in here is need needs the needs the help command to
+
+177
+00:09:42,770 --> 00:09:43,010
+see it.
+
+178
+00:09:43,020 --> 00:09:52,220
+So for example his CD ok for example if we do P.W. day of here if we do man PWT there actually is a
+
+179
+00:09:52,220 --> 00:09:53,350
+man page for it.
+
+180
+00:09:53,480 --> 00:09:57,450
+But if for one of those commands it didn't come up with a man page you would just type help.
+
+181
+00:09:57,620 --> 00:10:02,510
+PETER BEATTIE And it would give you basically the same basic like a very similar kind of output.
+
+182
+00:10:02,660 --> 00:10:07,630
+So if man doesn't work and you know the command is correct use the help command instead.
+
+183
+00:10:07,640 --> 00:10:12,350
+And there's a lot of other things in here like for example doing wild loops in the in the shell for
+
+184
+00:10:12,350 --> 00:10:14,050
+loops and other things like that.
+
+185
+00:10:14,120 --> 00:10:18,710
+OK so it's it's quite it's quite an advanced thing more about the shell rather than about the programs
+
+186
+00:10:18,710 --> 00:10:20,650
+that are installed on your computer.
+
+187
+00:10:20,690 --> 00:10:20,920
+OK.
+
+188
+00:10:20,930 --> 00:10:23,070
+So that's just something to bear in mind.
+
+189
+00:10:23,090 --> 00:10:30,290
+Now another thing that has actually come to my mind in the ls command here notice this is this works
+
+190
+00:10:30,290 --> 00:10:31,310
+for pretty much all commands.
+
+191
+00:10:31,310 --> 00:10:32,850
+Notice when you've got a long form.
+
+192
+00:10:32,860 --> 00:10:39,590
+So for example almost all or block size or ignore backups when you have a long form come on like this.
+
+193
+00:10:39,590 --> 00:10:41,820
+They tend to break up the words with a dash.
+
+194
+00:10:41,900 --> 00:10:51,920
+OK so ignore dash backups block dash size almost dash all all you know down here full dash time group
+
+195
+00:10:51,920 --> 00:10:54,460
+dash directories no dash group Human dash readable.
+
+196
+00:10:54,500 --> 00:10:58,180
+OK so when you're making a long form option.
+
+197
+00:10:58,520 --> 00:11:04,520
+When I wanted you know the human readable one instead of going human readable like the mistake I made
+
+198
+00:11:04,520 --> 00:11:09,880
+before because human is one word and readable is another word is going to be human readable.
+
+199
+00:11:09,990 --> 00:11:11,060
+And that gives us the output.
+
+200
+00:11:11,180 --> 00:11:15,990
+OK so that's just something to bear in mind with regards to spelling and things like that.
+
+201
+00:11:16,160 --> 00:11:23,570
+But the main thing to remember when you are reading these manual pages is each Linux command is designed
+
+202
+00:11:23,570 --> 00:11:27,780
+to do one thing and do it extremely well.
+
+203
+00:11:27,800 --> 00:11:32,760
+That's why you've got a the LS kind with so many different options.
+
+204
+00:11:32,810 --> 00:11:37,130
+Anything that you can possibly imagine to do with listing things out of directories.
+
+205
+00:11:37,130 --> 00:11:39,190
+The LS command is going to be able to do it.
+
+206
+00:11:39,290 --> 00:11:39,770
+OK.
+
+207
+00:11:39,770 --> 00:11:43,480
+So that's why the manual pages have a lot of information to really get the information out of that.
+
+208
+00:11:43,660 --> 00:11:50,270
+Unfortunately if you want to become a master of the ls command or you know even just start using any
+
+209
+00:11:50,270 --> 00:11:53,690
+new command there's going to be no shortcut to reading.
+
+210
+00:11:53,810 --> 00:11:55,980
+Unfortunately I wish there was.
+
+211
+00:11:56,030 --> 00:12:00,560
+You can skim read and sometimes they give you quick intros and quick starts to commands and things like
+
+212
+00:12:00,560 --> 00:12:05,510
+that in the manual pages but for all these options if you want to learn it you're going to have to read
+
+213
+00:12:05,510 --> 00:12:05,710
+it.
+
+214
+00:12:05,810 --> 00:12:07,400
+OK so there's no other way around that.
+
+215
+00:12:07,400 --> 00:12:10,670
+So that's how you will go through and you'll learn about a new command.
+
+216
+00:12:10,670 --> 00:12:13,370
+So let's do it really quick in quick succession.
+
+217
+00:12:13,370 --> 00:12:17,270
+We wanted to learn about a command that shows you how to direct your content so we use man with the
+
+218
+00:12:17,270 --> 00:12:20,600
+k option list directory contents.
+
+219
+00:12:20,710 --> 00:12:23,890
+It came up with some possible page names.
+
+220
+00:12:23,890 --> 00:12:25,740
+The sections they were in and the explanations.
+
+221
+00:12:25,790 --> 00:12:28,690
+The ls command caught our eye we noticed it was in the first section.
+
+222
+00:12:28,700 --> 00:12:34,190
+So we just typed man ls and gave us the manual page we saw that yes it lists directory contents we see
+
+223
+00:12:34,190 --> 00:12:36,350
+a quick description and we saw how to use it.
+
+224
+00:12:36,350 --> 00:12:37,690
+You have to type the ls command.
+
+225
+00:12:37,730 --> 00:12:41,870
+The options are optional you can have multiple of those and the files are optional and you can have
+
+226
+00:12:41,870 --> 00:12:42,800
+multiple of those.
+
+227
+00:12:42,800 --> 00:12:47,030
+So we saw that actually you can just type the ls command and you get some output but there are plenty
+
+228
+00:12:47,030 --> 00:12:47,890
+of other options.
+
+229
+00:12:47,900 --> 00:12:49,190
+There's loads of things in here.
+
+230
+00:12:49,190 --> 00:12:53,340
+One thing that we liked was the idea that you could have a long form option.
+
+231
+00:12:53,840 --> 00:12:59,960
+OK so the long form option we found it whereas it's down here we found it under L use a long listing
+
+232
+00:12:59,970 --> 00:13:00,400
+format.
+
+233
+00:13:00,440 --> 00:13:01,400
+So we had to look at that.
+
+234
+00:13:01,460 --> 00:13:04,420
+We do ls dat L We got lot.
+
+235
+00:13:04,520 --> 00:13:07,620
+We also saw that you can have long form options as well.
+
+236
+00:13:08,330 --> 00:13:09,360
+OK.
+
+237
+00:13:09,380 --> 00:13:15,720
+One other thing is that you can see here there's a lower case which gives you one option and uppercase
+
+238
+00:13:15,920 --> 00:13:17,260
+which gives you another option.
+
+239
+00:13:17,390 --> 00:13:21,780
+And here while you've got a lower case b gives you one option an uppercase B gives you another option.
+
+240
+00:13:21,860 --> 00:13:22,820
+That's very common.
+
+241
+00:13:22,820 --> 00:13:29,210
+So you need to make sure that when you are spelling things in Linux you get the case correct.
+
+242
+00:13:29,210 --> 00:13:31,000
+So for example Anastacia will give us that.
+
+243
+00:13:31,010 --> 00:13:34,900
+But if I do start capital L I didn't even do anything.
+
+244
+00:13:34,970 --> 00:13:35,280
+OK.
+
+245
+00:13:35,390 --> 00:13:41,030
+So you need to make sure that you get that stuff right and just just for curiosity what does the capital
+
+246
+00:13:41,040 --> 00:13:43,820
+L say if there is a capital L option.
+
+247
+00:13:44,650 --> 00:13:48,960
+Yeah dereference when followed when showing falling for mation for a symbolic link.
+
+248
+00:13:48,980 --> 00:13:54,440
+So information for the file in the link for information for the file the link references rather than
+
+249
+00:13:54,440 --> 00:13:55,700
+for the link itself.
+
+250
+00:13:55,700 --> 00:13:57,000
+So there you go.
+
+251
+00:13:57,730 --> 00:14:00,740
+OK so you need to make sure that your case is correct.
+
+252
+00:14:00,740 --> 00:14:05,270
+Things have to be spelt precisely you have a very sharp eye and not make mistakes and make sure you're
+
+253
+00:14:05,270 --> 00:14:09,350
+doing stuff right because the power of these commands is so so powerful they can do so many different
+
+254
+00:14:09,350 --> 00:14:12,820
+things but you just need to make sure that you enter them correctly.
+
+255
+00:14:12,890 --> 00:14:13,260
+OK.
+
+256
+00:14:13,430 --> 00:14:14,480
+So there we go.
+
+257
+00:14:14,540 --> 00:14:19,970
+That's a quick summary of this video what we're going to do in the next video is we're going to actually
+
+258
+00:14:19,970 --> 00:14:22,880
+be moving on from the manual.
+
+259
+00:14:23,120 --> 00:14:28,370
+And what we're going to be showing you is how to how commands take input and actually give output because
+
+260
+00:14:28,370 --> 00:14:33,080
+one of the most powerful things that Linux commands that you do is to train different commands together
+
+261
+00:14:33,080 --> 00:14:36,610
+to make up super powerful command pipelines.
+
+262
+00:14:36,620 --> 00:14:43,410
+Now because each command is amazing at what it does when you can chain them together chain these each
+
+263
+00:14:43,410 --> 00:14:47,740
+of these separate commands that is amazing what it does but chained them together you can break create
+
+264
+00:14:47,730 --> 00:14:50,610
+some incredibly powerful functionality with very little effort.
+
+265
+00:14:50,670 --> 00:14:51,060
+OK.
+
+266
+00:14:51,150 --> 00:14:52,590
+So I'm going to show you how to do that.
+
+267
+00:14:52,590 --> 00:14:57,390
+But first we need to take a little bit of a look into how commands take input and give output so you
+
+268
+00:14:57,390 --> 00:15:00,460
+can actually start building together these Capan and pipelines.
+
+269
+00:15:00,570 --> 00:15:04,070
+You need to understand how they take input and give outputs for all that good stuff.
+
+270
+00:15:04,100 --> 00:15:05,700
+We see you in the next video.

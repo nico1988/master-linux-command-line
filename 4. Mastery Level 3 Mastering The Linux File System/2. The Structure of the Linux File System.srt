@@ -1,0 +1,723 @@
+1
+00:00:00,300 --> 00:00:05,640
+Hello you beautiful people so one really amazing thing about Linux is the way that pretty much everything
+
+2
+00:00:05,640 --> 00:00:07,870
+on the system can be treated as a file.
+
+3
+00:00:07,950 --> 00:00:12,360
+And I saw this earlier when we did the totally awesome magic trick will be redirected data from one
+
+4
+00:00:12,360 --> 00:00:17,460
+terminal to the other and that was possible because the terminal was treated as a file by the Linux
+
+5
+00:00:17,460 --> 00:00:21,960
+operating system and can redirect data between devices on your system just like you can redirect data
+
+6
+00:00:22,080 --> 00:00:23,430
+between files.
+
+7
+00:00:23,430 --> 00:00:28,940
+Now every one of the files on the system is on a structure known as the Linux file system tree.
+
+8
+00:00:29,100 --> 00:00:33,030
+And in this video you're going to learn how the Linux file system is structured and you're also going
+
+9
+00:00:33,030 --> 00:00:37,510
+to get a tour of what some of the most important places on the file system are.
+
+10
+00:00:37,590 --> 00:00:40,770
+By the end of the video you'll know the map of the land so to speak.
+
+11
+00:00:40,770 --> 00:00:45,030
+And by knowing what you're actually navigating and how it's laid out you'll be much better prepared
+
+12
+00:00:45,030 --> 00:00:47,210
+to actually navigate it and modify it.
+
+13
+00:00:47,280 --> 00:00:50,280
+And that's what we'll start learning in the next video.
+
+14
+00:00:50,340 --> 00:00:54,650
+So you're going to learn about some very important locations on your computer and also therefore which
+
+15
+00:00:54,660 --> 00:00:58,380
+will help you navigate even better loads of really awesome stuff in this video guys.
+
+16
+00:00:58,380 --> 00:01:00,870
+So let's go ahead and get into it.
+
+17
+00:01:00,930 --> 00:01:05,880
+The first thing you need to know is that the entire Linux file system follows a tree structure.
+
+18
+00:01:05,970 --> 00:01:12,000
+So if there's no partitions on your hard drive every single thing on the system can be accessed in one
+
+19
+00:01:12,180 --> 00:01:13,780
+large tree structure.
+
+20
+00:01:13,860 --> 00:01:15,660
+So let's go ahead and take a look at it.
+
+21
+00:01:15,810 --> 00:01:18,860
+Here's an image of what the file system looks like.
+
+22
+00:01:18,960 --> 00:01:25,090
+Now at the top of the tree we have what we call the root directory represented by the slash here.
+
+23
+00:01:25,320 --> 00:01:29,850
+Now just to be clear in case you haven't come across the word before when I say the word directory I
+
+24
+00:01:29,850 --> 00:01:31,700
+basically just mean the word folder.
+
+25
+00:01:31,800 --> 00:01:36,540
+OK so when I say a root directory I'm just referring to the root folder on the file system.
+
+26
+00:01:36,540 --> 00:01:41,880
+The slash here now that folder is called the root directory because everything on the file system can
+
+27
+00:01:41,880 --> 00:01:43,330
+be traced back to that.
+
+28
+00:01:43,470 --> 00:01:47,980
+Just like every branch and leaf on a tree can be traced back to the root of the tree.
+
+29
+00:01:48,000 --> 00:01:53,100
+Now under that root directory there's a whole bunch of other directories these directories are said
+
+30
+00:01:53,100 --> 00:01:56,540
+to be subdirectories of the root directory.
+
+31
+00:01:56,550 --> 00:02:02,010
+Another way to say that is that the root directory is the parent directory for all of these directories.
+
+32
+00:02:02,040 --> 00:02:07,200
+In orange here now there may be more folders or directories present on your system but I've taken the
+
+33
+00:02:07,200 --> 00:02:12,730
+most important ones to show here in this image because a slide only has so much space.
+
+34
+00:02:12,740 --> 00:02:18,390
+Now each of these directories can have all the directories and files inside of them and the directories
+
+35
+00:02:18,450 --> 00:02:24,040
+inside those directories can have their own directories and files and so on and so on and so on.
+
+36
+00:02:24,090 --> 00:02:30,280
+So the whole system does eventually look like a really big tree with hundreds and hundreds of branches.
+
+37
+00:02:30,300 --> 00:02:35,670
+Now one of the most important directories on this tree is the home directory the home directory holds
+
+38
+00:02:35,700 --> 00:02:40,230
+individual directories for each of the different regular users on the system.
+
+39
+00:02:40,260 --> 00:02:42,650
+We can see that the system has three regular users.
+
+40
+00:02:42,690 --> 00:02:48,420
+We've got Alice Bob and Charlie and each of those users can have their own files.
+
+41
+00:02:48,540 --> 00:02:54,570
+So for example if we take Bob we can see the Bob has folders in the home directory for their desktop
+
+42
+00:02:54,840 --> 00:02:58,890
+documents downloads music pictures and so on.
+
+43
+00:02:59,010 --> 00:03:04,860
+And each of those folders can have files and folders inside them Alice will have a similar structure
+
+44
+00:03:05,070 --> 00:03:07,690
+and so will Charlie.
+
+45
+00:03:07,900 --> 00:03:12,010
+You can access your home directory by clicking on this file's icon over here.
+
+46
+00:03:12,010 --> 00:03:15,090
+And what opens up by default will be your home directory.
+
+47
+00:03:15,100 --> 00:03:19,330
+Now everything that we've been doing in the course up until now so just playing with pipeline's redirection
+
+48
+00:03:19,330 --> 00:03:24,520
+and stuff and creating files they've all those files have all been in our home directory and you can
+
+49
+00:03:24,520 --> 00:03:29,860
+see that in our home directory We have a desktop documents downloads music pictures and so on and so
+
+50
+00:03:29,860 --> 00:03:31,690
+on just like Bob did in the diagram.
+
+51
+00:03:31,870 --> 00:03:36,190
+And if you are navigating around your file system you can always get back to your home directory by
+
+52
+00:03:36,190 --> 00:03:43,860
+clicking on this home icon here or by finding it in the path that appears at the top you can think of
+
+53
+00:03:43,860 --> 00:03:46,950
+everything on the file system as being in two major parts.
+
+54
+00:03:46,950 --> 00:03:51,390
+And this is a bit of an oversimplification but you can think of everything below the users home folder
+
+55
+00:03:51,690 --> 00:03:53,580
+as being specific to that user.
+
+56
+00:03:53,760 --> 00:03:58,140
+And everything that's above the users home folder tending to affect the whole system.
+
+57
+00:03:58,140 --> 00:04:04,080
+Now what good would it be if regular users could modify or even delete files that the whole system requires
+
+58
+00:04:04,080 --> 00:04:05,120
+to run.
+
+59
+00:04:05,280 --> 00:04:06,340
+Not very good at all.
+
+60
+00:04:06,420 --> 00:04:11,640
+And that's why special files and folders that tend to affect the whole system usually require elevated
+
+61
+00:04:11,640 --> 00:04:13,970
+administrator or root privileges.
+
+62
+00:04:14,130 --> 00:04:18,810
+The root user on the system is similar to the administrator in windows on Linux.
+
+63
+00:04:18,810 --> 00:04:22,620
+The root user has absolute power over the entire system.
+
+64
+00:04:22,620 --> 00:04:26,250
+Now I'll show you how you can perform actions of the root user in a later video.
+
+65
+00:04:26,280 --> 00:04:29,260
+But for now just be aware of their existence.
+
+66
+00:04:29,460 --> 00:04:33,290
+For now I just want to discuss what these folders at the top here do.
+
+67
+00:04:33,300 --> 00:04:34,220
+Now there's a lot of them.
+
+68
+00:04:34,260 --> 00:04:38,460
+So to save you from memorizing I've made a cheat sheet that you can download from the resources section
+
+69
+00:04:38,490 --> 00:04:39,480
+in this lecture.
+
+70
+00:04:39,480 --> 00:04:41,570
+Let's go ahead and go through it together now.
+
+71
+00:04:43,390 --> 00:04:48,430
+OK so as I said you can get a copy of this cheat sheet from the resources section in this video and
+
+72
+00:04:48,430 --> 00:04:54,970
+what it basically contains is a list of the different folders that are right underneath the root directory
+
+73
+00:04:54,970 --> 00:05:00,760
+written with a slash and a bit of a description about what they do so that you can have a bit more of
+
+74
+00:05:00,760 --> 00:05:03,770
+an understanding of what each of the folders does on your system.
+
+75
+00:05:03,790 --> 00:05:08,170
+Let's just do a quick whistle stop tour of each of them and then you can look at it later in more detail
+
+76
+00:05:08,170 --> 00:05:08,840
+for yourself.
+
+77
+00:05:08,920 --> 00:05:09,340
+OK.
+
+78
+00:05:09,550 --> 00:05:14,080
+So we've got the slash directory to zoom in a little bit make it make the thing a bit bigger.
+
+79
+00:05:14,080 --> 00:05:14,890
+There we go.
+
+80
+00:05:14,980 --> 00:05:20,230
+So you've got the slash directory which is the very top or the root of the factory and this directory
+
+81
+00:05:20,230 --> 00:05:23,950
+holds everything else there is nothing higher up than the slash directory.
+
+82
+00:05:23,950 --> 00:05:26,920
+If you get here you are at the very top of the tree.
+
+83
+00:05:26,980 --> 00:05:33,640
+You've got the bin directory which stores common Linux user command binary b.n binary is where Ben gets
+
+84
+00:05:33,640 --> 00:05:35,890
+its name from for example the date command.
+
+85
+00:05:35,910 --> 00:05:42,390
+Come on now commands that are all stored in the binary is sex in the binary folder.
+
+86
+00:05:43,030 --> 00:05:51,130
+You've got the boot folder boot is for everything that is required to boot the system so bootable linux
+
+87
+00:05:51,130 --> 00:05:55,370
+kernel and boot loader configuration files over the dev folder.
+
+88
+00:05:55,480 --> 00:05:58,330
+So this is these are files representing devices.
+
+89
+00:05:58,330 --> 00:06:00,870
+Now there's many different files in that folder.
+
+90
+00:06:00,940 --> 00:06:03,600
+If the filename starts with T.T. why that's a terminal.
+
+91
+00:06:03,620 --> 00:06:05,980
+If it's also with F.D. that's a floppy disk.
+
+92
+00:06:06,040 --> 00:06:08,860
+If it's starts with SD or Haiti that's a hard disk.
+
+93
+00:06:08,860 --> 00:06:13,110
+If it starts with RAM then it's RAM and if it's also a CD then it's a CD-ROM.
+
+94
+00:06:13,300 --> 00:06:17,250
+You've got slash ATC which is administrative configuration files.
+
+95
+00:06:17,260 --> 00:06:22,240
+No ATC or ETSI as it's normally said is a very common folder.
+
+96
+00:06:22,450 --> 00:06:27,100
+You'll be using it a lot if you ever want to edit configuration files and how you edit those configuration
+
+97
+00:06:27,100 --> 00:06:30,510
+files is where Section 5 of the Linux manual comes into play.
+
+98
+00:06:30,670 --> 00:06:34,910
+Which is all about file formats and things like that so for editing many of the configuration files
+
+99
+00:06:34,940 --> 00:06:38,380
+are in the ETSI folder you'll be able to find a man page that'll show you how to do it.
+
+100
+00:06:38,560 --> 00:06:42,130
+Then you've got the home folder and the home folder is where the home directory is.
+
+101
+00:06:42,130 --> 00:06:48,400
+For regular users are stored so under the home folder you have a home directory for each of the different
+
+102
+00:06:48,400 --> 00:06:52,820
+users so for example I have one at slash home slash Ziyad.
+
+103
+00:06:52,870 --> 00:06:58,960
+I have my home folder inside the big home directory so if I had 3 other people on my computer called
+
+104
+00:06:59,020 --> 00:07:03,770
+Alice Bob and Charlie they'd be slash home slash and slash home slash Bob slash slash Charlie.
+
+105
+00:07:03,910 --> 00:07:06,390
+But in my case just slash slash Ziyad.
+
+106
+00:07:06,460 --> 00:07:10,930
+So that's where your home directory is stored in the home folder.
+
+107
+00:07:10,930 --> 00:07:16,450
+You've got slushed media which is where removable media such as us be stick's external hard drives and
+
+108
+00:07:16,450 --> 00:07:22,210
+things are mounted and anything that is removable from the system unlike hard drives like actual hard
+
+109
+00:07:22,210 --> 00:07:23,440
+drives.
+
+110
+00:07:23,440 --> 00:07:30,010
+Anything that's removable usually gets mounted on slash media slash lib is where shared libraries so
+
+111
+00:07:30,010 --> 00:07:36,190
+lib being short for libraries needed by applications in the slush business last Espen folders to boot
+
+112
+00:07:36,190 --> 00:07:36,670
+the system.
+
+113
+00:07:36,670 --> 00:07:42,730
+So this is where all that stuff is all loaded basically loads of installed stuff cause it's slash lib
+
+114
+00:07:43,230 --> 00:07:43,590
+slash.
+
+115
+00:07:43,600 --> 00:07:47,260
+MT is a place to mount external devices you don't use it that often.
+
+116
+00:07:47,260 --> 00:07:51,020
+Usually slash media is used instead slash misc.
+
+117
+00:07:51,160 --> 00:07:55,930
+Being short for miscellaneous is a director we use to sometimes automate filesystems it's just there
+
+118
+00:07:55,930 --> 00:07:58,290
+just in case the system can use it.
+
+119
+00:07:58,450 --> 00:08:05,550
+Slash OPEC or Opt. is where you can store additional or in other words optional software.
+
+120
+00:08:05,560 --> 00:08:12,940
+So anything that you install any programs that you install usually the files go in slash O.P. to slash
+
+121
+00:08:12,940 --> 00:08:18,160
+prok is about system resources as more administrative kind of stuff slash route.
+
+122
+00:08:18,160 --> 00:08:20,830
+Now this is the home folder for the root user.
+
+123
+00:08:20,830 --> 00:08:23,560
+So this is sometimes a point of confusion.
+
+124
+00:08:23,620 --> 00:08:30,280
+You've got the roof folder which is the slash sometimes called the slash directory and you've got slash
+
+125
+00:08:30,400 --> 00:08:36,130
+root and slash root is the home folder for the root user.
+
+126
+00:08:36,160 --> 00:08:40,240
+So it's a bit of a confusing terminology but just just bear in Bear that in mind.
+
+127
+00:08:40,260 --> 00:08:42,840
+OK the slash is the root directory.
+
+128
+00:08:42,850 --> 00:08:50,650
+It is the very top of the file tree and slash route is the home folder for the root user or the super
+
+129
+00:08:50,650 --> 00:08:52,090
+user or the administrator.
+
+130
+00:08:52,090 --> 00:08:57,280
+Similar city administrator if you are on Windows that's the home directory for the administrator almost
+
+131
+00:08:57,280 --> 00:09:02,380
+there now you've got slush Espen which contains administrative administrative commands or Beiner is
+
+132
+00:09:02,680 --> 00:09:04,520
+for the root or super user.
+
+133
+00:09:04,540 --> 00:09:11,320
+So Espen being super use a binary is OK so these are commands that can be run by the super user or the
+
+134
+00:09:11,320 --> 00:09:12,210
+root user.
+
+135
+00:09:12,520 --> 00:09:17,830
+You've got slashed VMP which contains temporary files run by applications sometimes when programs are
+
+136
+00:09:17,830 --> 00:09:21,660
+running they create temporary files to make them more efficient to run.
+
+137
+00:09:21,670 --> 00:09:23,330
+That's where those are stored.
+
+138
+00:09:23,620 --> 00:09:31,210
+The DMP folders usually cleared out very regularly or when the program's shut slushing us our last user
+
+139
+00:09:31,210 --> 00:09:37,600
+contains files pertaining to users that in theory don't change after installation and slash var contains
+
+140
+00:09:37,600 --> 00:09:41,610
+directories of variable data or data that changes a lot.
+
+141
+00:09:41,620 --> 00:09:46,820
+That can be used by various So for example system log files are usually found in here and log files
+
+142
+00:09:46,820 --> 00:09:47,930
+change a lot.
+
+143
+00:09:48,380 --> 00:09:53,350
+That's why they're in the slash or slash variable slash var being short for variable.
+
+144
+00:09:53,360 --> 00:09:55,420
+So they are these are the different folders.
+
+145
+00:09:55,470 --> 00:10:01,700
+The only at least the most common ones that are directly underneath the slash folder so have a look
+
+146
+00:10:01,700 --> 00:10:06,170
+at this Jiechi read through it once again and you know maybe with my video with my voice playing in
+
+147
+00:10:06,170 --> 00:10:08,600
+the background you don't have to memorize this.
+
+148
+00:10:08,600 --> 00:10:13,310
+The cheap seats there just in case you don't have to memorize this stuff you very quickly become familiar
+
+149
+00:10:13,310 --> 00:10:15,350
+with the most common ones that you'll use.
+
+150
+00:10:15,410 --> 00:10:21,650
+Most likely you'll just stick to using ETSI which is where configuration files are the home folder and
+
+151
+00:10:21,680 --> 00:10:26,740
+maybe media if you plug in a USP drive or something like that and maybe slash user if you want to and
+
+152
+00:10:26,740 --> 00:10:28,190
+it's something to do with programs.
+
+153
+00:10:28,280 --> 00:10:33,110
+But usually those are the most common ones you'll be you'll be dealing with but you'll become very familiar
+
+154
+00:10:33,110 --> 00:10:34,420
+at where files are.
+
+155
+00:10:34,550 --> 00:10:37,880
+We'll be using a lot of these different folders as we go through the course or don't worry if it all
+
+156
+00:10:37,880 --> 00:10:42,040
+seems like a bit we're right now that information is there forever.
+
+157
+00:10:42,110 --> 00:10:43,790
+Just take it take it one step at a time.
+
+158
+00:10:43,790 --> 00:10:45,240
+Don't be overwhelmed by it.
+
+159
+00:10:45,650 --> 00:10:49,610
+It's going to be fine and you'll very quickly become accustomed to it.
+
+160
+00:10:50,360 --> 00:10:51,840
+OK so there you have it.
+
+161
+00:10:51,950 --> 00:10:55,880
+You should now have a much better understanding of the Linux file system and how it's structured.
+
+162
+00:10:56,060 --> 00:11:00,830
+So as a quick recap we discussed that the Linux file system follows a tree like structure starting at
+
+163
+00:11:00,830 --> 00:11:04,320
+a base directory which is represented by the slash.
+
+164
+00:11:04,340 --> 00:11:09,680
+Now you lumber everything on the file system can be traced back to that base directory.
+
+165
+00:11:09,680 --> 00:11:14,990
+You also learned that there's a special user on HLN next system called the root user the root user is
+
+166
+00:11:14,990 --> 00:11:19,820
+similar to the administrator on Windows and the root user has absolute power over the entire system.
+
+167
+00:11:19,820 --> 00:11:21,740
+They can do anything that they want.
+
+168
+00:11:21,740 --> 00:11:27,170
+You learn that the home directory or the slash home directory holds individual home directories for
+
+169
+00:11:27,170 --> 00:11:31,720
+all the regular users on the system so that they have a place to store their personal files.
+
+170
+00:11:31,910 --> 00:11:37,970
+And you learn that the slash route folder is the home directory for the root user for the administrator.
+
+171
+00:11:38,030 --> 00:11:42,530
+You also have to look at a bunch of really important folders that are right underneath the base directory
+
+172
+00:11:42,760 --> 00:11:45,530
+and there's a cheat sheet that you can download in the resources section.
+
+173
+00:11:45,530 --> 00:11:48,230
+Well all that information is summarized for you.
+
+174
+00:11:48,690 --> 00:11:49,060
+OK.
+
+175
+00:11:49,070 --> 00:11:53,360
+Brilliant so that you understand the whole structure of the file system which is totally epic in its
+
+176
+00:11:53,360 --> 00:11:54,050
+own right.
+
+177
+00:11:54,050 --> 00:11:58,700
+I've also put a link to a series of blog posts in the resources section to learn more about the Linux
+
+178
+00:11:58,700 --> 00:11:59,470
+file system.
+
+179
+00:11:59,510 --> 00:12:05,210
+If you want to but for now we're going to go ahead and jump into using the command line to start navigating
+
+180
+00:12:05,210 --> 00:12:07,480
+the file system which is going to be really exciting.
+
+181
+00:12:07,480 --> 00:12:10,550
+So for all that goodness I'll see you in the next video.

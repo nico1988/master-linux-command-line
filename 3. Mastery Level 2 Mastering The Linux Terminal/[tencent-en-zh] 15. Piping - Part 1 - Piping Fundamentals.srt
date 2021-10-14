@@ -1,0 +1,955 @@
+1
+00:00:00,420 --> 00:00:05,580
+所以，我们是美丽的人们，你们将要学习Linux操作系统皇冠上的明珠
+So here we are you beautiful people you're about to learn the crown jewel of the Linux operating system
+
+2
+00:00:05,940 --> 00:00:06,820
+管道。
+piping.
+
+3
+00:00:06,870 --> 00:00:11,340
+在上几个视频中，您已经了解到可以使用重定向来更改位置
+So in the last few videos you've learned that you can use redirection to change the location of where
+
+4
+00:00:11,340 --> 00:00:15,200
+您可以发送命令输出以及从哪里获得命令输入。
+you send command output and where you get command input.
+
+5
+00:00:15,390 --> 00:00:20,490
+但是，如果您想要连接一个命令的标准输出，使其流入标准
+But what if you wanted to connect the standard output of one command so that it flowed into the standard
+
+6
+00:00:20,550 --> 00:00:22,160
+输入另一个命令。
+input of another command.
+
+7
+00:00:22,380 --> 00:00:26,220
+这就是管道的用武之地，它的威力大得离谱。
+Well that's where piping comes in and it's ridiculously powerful.
+
+8
+00:00:26,250 --> 00:00:30,030
+每个Linux命令都被设计成非常好地完成一项任务。
+Each Linux command is designed to do one task extremely well.
+
+9
+00:00:30,030 --> 00:00:35,070
+因此，如果您能够不断地将这些高度专门化的命令输送到一起，并在它们之间传递数据
+So if you can continually pipe these highly specialized commands together and pass data between them
+
+10
+00:00:35,310 --> 00:00:39,990
+你可以建造先进的管道来完成几乎任何你能想到的任务，一旦你知道
+you can build advanced pipelines to do pretty much any task that you can think of and once you know
+
+11
+00:00:39,990 --> 00:00:42,830
+如何做到这一点，会让人感觉真的像是一个超级大国。
+how to do it it will really feel like a super power.
+
+12
+00:00:43,020 --> 00:00:47,030
+因此，在这段视频中，您将了解如何构建您自己的命令管道。
+So in this video you're going to learn how to build your very own command pipelines.
+
+13
+00:00:47,160 --> 00:00:51,570
+然后在第二部分的下一个视频中，您将学习如何使您的管道更加灵活
+And then in the next video in part two you're going to learn how to make your pipelines more flexible
+
+14
+00:00:51,600 --> 00:00:54,300
+通过使用T和Exarchs命令。
+by using the T and the Exarchs commands.
+
+15
+00:00:54,330 --> 00:00:58,830
+这将是课程的一个很棒的部分，在你学习之后，你将不会认出你自己。
+This is going to be a great section of the course and you will not recognize yourself after you learn
+
+16
+00:00:58,830 --> 00:00:59,690
+我接下来要教你的东西。
+what I'm about to teach you.
+
+17
+00:00:59,700 --> 00:01:00,780
+所以我希望你会很兴奋。
+So I hope you're excited.
+
+18
+00:01:00,900 --> 00:01:02,210
+让我们继续往前走，开始做这件事吧。
+Let's go ahead and get into it.
+
+19
+00:01:03,400 --> 00:01:03,780
+好的。
+OK.
+
+20
+00:01:03,790 --> 00:01:08,860
+因此，管道就是获取一个命令的标准输出，并将其连接到标准输入
+So piping is all about taking the standard output of one command and connecting it to the standard input
+
+21
+00:01:09,070 --> 00:01:10,270
+执行另一个命令。
+of another command.
+
+22
+00:01:10,270 --> 00:01:14,980
+让我们以data命令为例，我们知道date命令会显示日期。
+So let's take for example the DATA command the date command as we know will show us the date.
+
+23
+00:01:14,980 --> 00:01:20,380
+现在，我们可以使用以下命令将DATE命令的标准输出写入名为DATE DirectX DXi的文本文件
+Now we can write the standard output of the date command to a text file called Date directx DXi using
+
+24
+00:01:20,380 --> 00:01:21,430
+重定向。
+redirection.
+
+25
+00:01:21,460 --> 00:01:22,830
+所以这是一个小小的挑战。
+So it a mini challenge.
+
+26
+00:01:22,890 --> 00:01:24,890
+看看你能不能记得怎么做。
+See if you can remember how to do that.
+
+27
+00:01:25,030 --> 00:01:29,950
+如何使用DATA命令并将其重定向到名为DATE的文件中。
+How would you take the data command and redirect it into a file called Date.
+
+28
+00:01:29,950 --> 00:01:33,420
+XTi博士试一试，然后回来看看你做得怎么样。
+Dr. XTi give it a go and then come back to see how you did.
+
+29
+00:01:39,130 --> 00:01:39,920
+你成功了吗。
+Did you manage it.
+
+30
+00:01:40,150 --> 00:01:44,470
+这是一种您可以这样做的方法，您可以键入date命令，然后说我想重定向
+Well this is one way you could do it you could type the date command and then say I want to redirect
+
+31
+00:01:44,710 --> 00:01:47,920
+将标准输出转换为Data Darty XTi。
+the standard output into data Darty XTi.
+
+32
+00:01:47,950 --> 00:01:51,460
+现在你可以把这个符号放在数字1的位置来表示
+Now you could have just had the symbol like this where you could have put the number one to indicate
+
+33
+00:01:51,460 --> 00:01:57,170
+您想要将第一个数据流，即标准输出写入到DATEDET60。
+that you wanted the first data stream which is standard output to be written to date dot 60.
+
+34
+00:01:57,310 --> 00:02:00,940
+如果你做了那么多的祝贺，你已经学到了。
+And if you did that massive Congratulations you're learning already.
+
+35
+00:02:01,090 --> 00:02:06,250
+现在我们已经完成了这项工作，我们将在这里查看我们的文件资源管理器，我们会看到一个名为
+But now that we've done it we are going to take a look at our file explorer here and we see a file called
+
+36
+00:02:06,250 --> 00:02:11,720
+Dottie XTi，我们看到日期信息确实已经写入到该文件中。
+Dottie XTi and we see that the date information has indeed been written into that file.
+
+37
+00:02:11,850 --> 00:02:12,240
+好的。
+OK.
+
+38
+00:02:12,520 --> 00:02:17,310
+但是现在，如果我们只想删掉一周中的某一天，在本例中是星期一，该怎么办呢？
+But now what if we wanted to just cut out the day of the week which in this case is Monday.
+
+39
+00:02:17,400 --> 00:02:17,770
+好的。
+OK.
+
+40
+00:02:17,890 --> 00:02:19,960
+我们怎么才能把一周中的某一天。
+How would we cut out just the day of the week.
+
+41
+00:02:20,140 --> 00:02:23,530
+要做到这一点，一种方法是使用CUT命令。
+Well one way to do it would be to use the cut command.
+
+42
+00:02:23,620 --> 00:02:27,970
+你以前没见过厨师上场，但它的操作非常简单，而且可能更容易展示
+Now you haven't seen the cook come on before but it works very simply and it's probably easier to show
+
+43
+00:02:27,970 --> 00:02:29,160
+你通过做什么。
+you by doing.
+
+44
+00:02:29,200 --> 00:02:35,390
+首先，我们要读取将文件放入命令的标准输入的日期。
+First we want to read the date that takes the file into the standard input for the command.
+
+45
+00:02:35,470 --> 00:02:41,080
+因此，要做到这一点，我们需要键入Cut，然后读取标准输入日期。
+So to do that we would type cut and then read into the standard input date.
+
+46
+00:02:41,110 --> 00:02:42,110
+多蒂·西蒂。
+Dottie XTi.
+
+47
+00:02:42,530 --> 00:02:42,970
+好的。
+OK.
+
+48
+00:02:43,060 --> 00:02:47,470
+你不一定要有零，所以你可以只得到零，你知道的，只要做到这一点就行了
+And you don't have to have the zero so you could just get with zero and just you know just do that have
+
+49
+00:02:48,010 --> 00:02:49,940
+少于号，然后是日期。
+the less than sign and then date takes.
+
+50
+00:02:49,950 --> 00:02:51,200
+记住这里的空间。
+And remember the space here.
+
+51
+00:02:51,220 --> 00:02:52,000
+这是可选的。
+This is optional.
+
+52
+00:02:52,010 --> 00:02:54,610
+好的，我可能会留着它，因为它看起来更好看一些。
+Ok I'll probably just keep it because it looks a bit nicer.
+
+53
+00:02:54,610 --> 00:03:00,050
+现在，库克要做的是，它将切割一个文件，并为您提供特定的列。
+Now what Cook will do what the cook does is it will cut up a file and give you specific columns.
+
+54
+00:03:00,160 --> 00:03:07,030
+如果我们看一下Dottie XTi，您可以想象文件被分成几列，其间有一个空格
+So if we look at Dottie XTi you can imagine that the file is broken up into columns with a space between
+
+55
+00:03:07,030 --> 00:03:07,700
+每列。
+each column.
+
+56
+00:03:07,870 --> 00:03:13,360
+在本例中，星期一是一周中的第几天，它是第一列或第一个字段，这在
+The day of the week in this case Monday is the first column or the first field as it's known in the
+
+57
+00:03:13,420 --> 00:03:14,030
+指挥部。
+command.
+
+58
+00:03:14,050 --> 00:03:15,250
+这将是第二个字段。
+This would be the second field.
+
+59
+00:03:15,250 --> 00:03:17,420
+这将是第三个领域，以此类推。
+This would be the third field and so on and so on.
+
+60
+00:03:17,440 --> 00:03:22,300
+但是我们希望第一场比赛能够取得成功，并且对我们来说是正确的。
+But we want the first field to make the cut come on and work correctly for us.
+
+61
+00:03:22,300 --> 00:03:25,390
+我们认为使用期权的两条信息。
+We think that two pieces of information using options.
+
+62
+00:03:25,630 --> 00:03:30,680
+首先，我们需要给它指定长形式的分隔符选项，所以分隔符。
+First we need to give it the delimiter long form option so delimiter.
+
+63
+00:03:30,900 --> 00:03:31,370
+好吧。
+Okay.
+
+64
+00:03:31,540 --> 00:03:36,740
+这就是一个分隔符，它告诉你是什么分隔了这些列。
+And what that was a delimiter is is it tells you what divides the columns.
+
+65
+00:03:36,800 --> 00:03:43,990
+好的，我们需要告诉它空格是被分割的，或者分隔列，因为空格就是被分割的
+OK so we need to tell it that space is divide or delimit the columns because spaces are what divided
+
+66
+00:03:43,990 --> 00:03:46,040
+在文件中向上显示这些特定的列。
+up these specific columns in The File.
+
+67
+00:03:46,120 --> 00:03:46,490
+好的。
+OK.
+
+68
+00:03:46,630 --> 00:03:54,120
+要做到这一点，我们只需键入分隔符as，作为空格，然后用引号将其放入空格。
+So to do that we just type delimiter as along for a space and then in quotes put into the space.
+
+69
+00:03:54,120 --> 00:03:58,540
+好的，我们说空格是这个文件或输入的分隔符。
+OK so we're saying a space is what delimits this file or this input.
+
+70
+00:03:58,540 --> 00:03:58,970
+好的。
+OK.
+
+71
+00:03:59,440 --> 00:04:03,910
+然后我们需要说明我们想要哪个字段，现在我们已经告诉它文件是如何分割的，所以我们给出
+Then we need to say which field we want and now that we've told it how the file is cut up so we give
+
+72
+00:04:03,910 --> 00:04:08,800
+这也是长格式选项，即字段，然后是空格，然后是一个。
+it again the long form option which is fields and then a space and then one.
+
+73
+00:04:09,170 --> 00:04:09,840
+好的。
+OK.
+
+74
+00:04:09,860 --> 00:04:12,930
+现在，当我们运行它的时候，我们得到了什么。
+And now what we've got there when we run that.
+
+75
+00:04:13,060 --> 00:04:13,400
+好的。
+OK.
+
+76
+00:04:13,420 --> 00:04:15,920
+我们要看到的是我们要对科赫指挥部说。
+What we're going to see is we're saying to the Koch command.
+
+77
+00:04:16,170 --> 00:04:17,870
+好的，读取DirectX Take的日期。
+OK read Date directx take.
+
+78
+00:04:18,070 --> 00:04:22,530
+它被分成几列，每一列都有空格隔开。
+It's broken up into columns with us each with a space separating each column.
+
+79
+00:04:22,600 --> 00:04:23,850
+我们想要第一块地。
+And we want the first field.
+
+80
+00:04:23,850 --> 00:04:27,480
+现在，当我按Enter键时，您可以看到我们得到的是星期一作为输出。
+Now when I press enter you can see that we get Monday as an output.
+
+81
+00:04:27,610 --> 00:04:28,390
+是不是太棒了，对吧。
+Isn't that awesome right.
+
+82
+00:04:28,390 --> 00:04:28,960
+那真是太酷了。
+That's pretty cool.
+
+83
+00:04:28,960 --> 00:04:30,450
+你以前没见过来吧。
+You've not seen the come on before.
+
+84
+00:04:30,520 --> 00:04:35,820
+这是一个很酷的命令，但是这个很管用，但是有点笨拙。
+It's very cool command but this this works but it's kind of clunky.
+
+85
+00:04:35,900 --> 00:04:41,320
+好的，首先，我们将date命令的标准输出写入一个文件，该文件占用了
+OK first we're writing the standard output of the date command to a file which takes up space on our
+
+86
+00:04:41,320 --> 00:04:42,030
+电脑。
+computer.
+
+87
+00:04:42,080 --> 00:04:45,470
+现在，我们必须将该文件读入命令。
+Right then we have to read that file into the command.
+
+88
+00:04:45,670 --> 00:04:46,170
+好的。
+OK.
+
+89
+00:04:46,300 --> 00:04:51,400
+也许在获得正确的数据之后，我们必须删除这个原始文件，因为
+And maybe we would also after getting this data right we then have to delete this original file because
+
+90
+00:04:51,400 --> 00:04:54,590
+我们不再需要了，这是我们必须进行的另一个过程。
+we don't need anymore which is another process that we have to undertake.
+
+91
+00:04:54,640 --> 00:04:59,560
+因此，通过将数据保存到文件中，然后分两步读取该文件，这样做需要一个
+So doing it this way by saving the data into a file and then reading that file in two steps takes a
+
+92
+00:04:59,560 --> 00:05:00,860
+打字要多得多。
+lot more typing.
+
+93
+00:05:00,910 --> 00:05:04,700
+它会产生不必要的文件，您必须删除这些文件，否则它们只会占用空间。
+It makes unnecessary files which you've got to remove or they just take up space.
+
+94
+00:05:04,750 --> 00:05:07,370
+这只是一种低效和笨拙的做事方式。
+It's just inefficient and awkward way of doing things.
+
+95
+00:05:07,660 --> 00:05:14,260
+因此，我们可以通过管道将DATA命令的标准输出直接传输到
+So instead we can pipe the standard output of the data command directly into the standard input of the
+
+96
+00:05:14,260 --> 00:05:14,930
+剪切命令。
+cut command.
+
+97
+00:05:15,010 --> 00:05:15,460
+好的。
+OK.
+
+98
+00:05:15,550 --> 00:05:18,550
+所以如果我只用箭头键来保留我们以前拥有的东西。
+So if I just use the arrow key to keep what we have before.
+
+99
+00:05:18,610 --> 00:05:19,060
+好的。
+OK.
+
+100
+00:05:19,210 --> 00:05:26,710
+现在不是说read into the read into标准输入命令date xti，而是我要
+Now instead of saying read into the read into the standard input command date XTi what I'm going to
+
+101
+00:05:26,710 --> 00:05:30,420
+我要做的就是输入日期，然后使用这个管子符号。
+do is I'm going to type date and then use this pipe symbol.
+
+102
+00:05:30,610 --> 00:05:37,540
+现在，您可以通过按住Shift键，然后在大多数键盘上使用反斜杠来找到此管道符号
+Now this pipe symbol you can find by holding Shift and then backslash on your on your most keyboards
+
+103
+00:05:37,540 --> 00:05:38,050
+不管怎么说。
+anyway.
+
+104
+00:05:38,180 --> 00:05:41,160
+所以，是的，大多数键盘上都是这样。
+So yep that's the way it is on most keyboards.
+
+105
+00:05:41,170 --> 00:05:46,810
+但是如果键盘上没有，如果按住Shift和反斜杠是不可能的，那就跳起来吧
+But if it's not there on your keyboard if it's not possible by holding Shift and backslash just hop
+
+106
+00:05:46,810 --> 00:05:50,100
+放到搜索引擎上，看看如何在键盘布局上做管道符号。
+onto a search engine and look for how to do the pipe symbol on your keyboard layout.
+
+107
+00:05:50,140 --> 00:05:52,690
+如果你找不到它，你应该马上上来。
+If you have trouble finding it you should should come up straight away.
+
+108
+00:05:52,750 --> 00:05:59,230
+但是现在发生的情况是，我们说通过管道将来自标准输出的日期中的数据输入到
+But now what's happening is we're saying pipe the data from the date come on standard output into the
+
+109
+00:05:59,240 --> 00:06:01,280
+柯克曼的标准输入。
+Kirkman's standard input.
+
+110
+00:06:01,360 --> 00:06:05,950
+现在，因为最多60个数据实际上是date命令的标准输出，所以它将
+Now because data up to 60 was effectively the standard output from the date command this is going to
+
+111
+00:06:05,950 --> 00:06:10,240
+都有同样的效果，所以我们会按Enter键，这样我们就可以在周一出来了。
+have the same effect so will we press enter that we get Monday out.
+
+112
+00:06:10,420 --> 00:06:14,110
+而这一切都是一步到位的。
+And this happened all in one step.
+
+113
+00:06:14,140 --> 00:06:18,820
+这真的很酷，我们设法直接从date命令中获取数据，并将其通过管道传输到
+So that's really cool we managed to take the data straight from the date command and pipe it into the
+
+114
+00:06:18,820 --> 00:06:21,810
+命令的标准输入，以便可以对其进行操作。
+standard input of the command so that it can be operated on.
+
+115
+00:06:21,820 --> 00:06:27,700
+我们给厨师命令提供了一些选项，使我们可以直接切出当天的名称
+We gave the cook command some options that allowed us to cut out directly the name of the day of the
+
+116
+00:06:27,700 --> 00:06:28,190
+星期。
+week.
+
+117
+00:06:28,360 --> 00:06:33,020
+现在我要按下“向上都可以”，现在我要给你们看一些很酷的东西。
+Now I'm just going to press the up are OK and now I'm going to show you something really cool.
+
+118
+00:06:33,040 --> 00:06:38,900
+我们所能做的就是将这些数据放入文件中。
+What we can do is we can actually put that data into file.
+
+119
+00:06:39,020 --> 00:06:39,500
+好的。
+OK.
+
+120
+00:06:39,510 --> 00:06:43,650
+所以我们实际上可以使用重定向将其保存到一个名为TODAY的文件中。
+So we could actually save that using redirection into a file called today.
+
+121
+00:06:43,790 --> 00:06:44,390
+逃离。
+Xscape.
+
+122
+00:06:44,490 --> 00:06:45,230
+来看看这个。
+So check this out.
+
+123
+00:06:45,280 --> 00:06:48,690
+使用date命令在此处获取所有这些信息。
+Using the date command to get all this information here.
+
+124
+00:06:48,720 --> 00:06:54,510
+我们把它剪掉，只得到周一，然后我们把这些数据写入一个名为今天的文件中，该文件
+We're cutting it out to get just Monday and then we're writing that data into a file called today that
+
+125
+00:06:54,660 --> 00:06:56,770
+痒痒的，相当棒的，对吧。
+tickety pretty awesome right.
+
+126
+00:06:56,880 --> 00:06:57,540
+所以让我们试一试。
+So let's try.
+
+127
+00:06:57,660 --> 00:07:01,460
+我们继续按Enter键，知道它已经熄灭了。
+Let's go ahead and press enter and know that that's gone out.
+
+128
+00:07:01,470 --> 00:07:03,290
+这一次它没有出现在屏幕上。
+It doesn't come up on the screen this time.
+
+129
+00:07:03,360 --> 00:07:05,810
+如果我们看这里，我们有一个叫做今天的文件。
+And if we look in here we've got a file called today that takes t.
+
+130
+00:07:05,820 --> 00:07:08,740
+如果我们点击它，我们现在看到的是周一。
+And if we click it we've now got Monday.
+
+131
+00:07:08,790 --> 00:07:10,240
+这不是很棒吗。
+Isn't that awesome.
+
+132
+00:07:10,410 --> 00:07:12,570
+我觉得这太棒了。
+I think that's fantastic.
+
+133
+00:07:12,590 --> 00:07:16,740
+现在作为附注，实际上我将重定向放在哪里并不重要。
+Now as a side note it doesn't actually matter where I put the redirection.
+
+134
+00:07:16,810 --> 00:07:17,190
+好的。
+OK.
+
+135
+00:07:17,310 --> 00:07:19,760
+这样我就可以在这里结束重定向了。
+So I could have the redirection at the end here.
+
+136
+00:07:19,860 --> 00:07:25,930
+我可以在这里重定向，但它仍然会工作得一模一样。
+I could have the redirection over here and it would still work exactly the same.
+
+137
+00:07:26,140 --> 00:07:27,040
+好的。
+OK.
+
+138
+00:07:27,280 --> 00:07:30,240
+这绝对行得通。
+That that works absolutely fine.
+
+139
+00:07:30,240 --> 00:07:37,540
+我甚至可以把它放在不同的选项之间，这样我就可以把它放在这里。
+I could even actually put it in between the different options so I could put it here.
+
+140
+00:07:39,780 --> 00:07:41,490
+我也会一如既往地工作。
+And I will also work exactly the same.
+
+141
+00:07:41,520 --> 00:07:41,810
+好的。
+OK.
+
+142
+00:07:41,810 --> 00:07:45,460
+我们今天还会看到XTi博士周一在里面。
+We're still getting today Dr. XTi with Monday inside.
+
+143
+00:07:45,510 --> 00:07:47,350
+所以这只是一件需要牢记在心的事情。
+So that's just something to bear in mind.
+
+144
+00:07:47,350 --> 00:07:49,860
+好的，不要害怕打错东西。
+OK don't be scared about typing stuff wrong.
+
+145
+00:07:49,890 --> 00:07:53,490
+所有这些都是有效的方法，但有些只是比其他的可读性强得多。
+All of these are valid ways to do it but some are just a lot more readable than others.
+
+146
+00:07:53,530 --> 00:07:58,410
+好的，但是假设我们不是重定向，而是希望发送Cut命令的标准输出
+OK but let's say that instead of redirecting we wanted to send the standard output of the cut command
+
+147
+00:07:58,800 --> 00:08:04,200
+对于另一个命令，我们将如何做到这一点，而不是将其保存到文件中，我们将如何
+to yet another command how would we do that how would instead of saving it into a file how would we
+
+148
+00:08:04,200 --> 00:08:07,610
+将数据从该命令发送到另一个命令。
+send the data from the command into yet another command.
+
+149
+00:08:07,860 --> 00:08:08,580
+嗯，这很简单。
+Well it's simple.
+
+150
+00:08:08,580 --> 00:08:09,660
+你只要往管子里加水就行了。
+You just add into the pipe.
+
+151
+00:08:09,720 --> 00:08:11,850
+好的，所以你只要说，好的，让我把它剪掉。
+OK so you just say OK let me cut that.
+
+152
+00:08:12,130 --> 00:08:15,810
+但是不，对不起，让我把它放到管子下面，然后我们分开指挥。
+But no sorry let me just put under the pipe and then let's separate command.
+
+153
+00:08:15,810 --> 00:08:19,830
+我有一些选项，然后我有一些命令行参数，这就是它的工作方式。
+I've got some options and then I've got some command line arguments and that's how that would work.
+
+154
+00:08:19,830 --> 00:08:20,400
+好的。
+OK.
+
+155
+00:08:20,630 --> 00:08:26,850
+这个新命令可以接受它自己的选项，它自己的命令行参数，并且它还可以读取
+That this new command could take its own options its own command line arguments and it could also read
+
+156
+00:08:26,850 --> 00:08:30,390
+来自命令行的标准输入，这样您就可以看到它是如何工作的。
+standard input from the command line so you can see how this works.
+
+157
+00:08:30,410 --> 00:08:35,340
+我们花了一天的时间，将输出通过管道传输到标准输入，即给定的CUT命令的CUT命令
+We take taken the day come and piping the output into standard input the cut command given the cut command
+
+158
+00:08:35,340 --> 00:08:36,350
+它自己的选择。
+its own options.
+
+159
+00:08:36,540 --> 00:08:41,610
+然后，我们将输出通过管道传输到另一个命令，该命令有自己的选项和自己的命令
+Then we're piping the output into another command given that command its own options and its own command
+
+160
+00:08:41,730 --> 00:08:44,820
+争论等等等等。
+arguments and so on and so on and so on.
+
+161
+00:08:44,850 --> 00:08:49,980
+好的，你可以继续把这些东西放在一起，做你想做的，然后给他们选择
+OK you can just keep on going piping these things together doing what you want and giving them options
+
+162
+00:08:50,070 --> 00:08:51,000
+随便你。
+as you wish.
+
+163
+00:08:51,000 --> 00:08:55,210
+这就是整个Linux终端的动力所在。
+So this is what gives the the whole Linux terminal its power.
+
+164
+00:08:55,260 --> 00:08:55,640
+好的。
+OK.
+
+165
+00:08:55,770 --> 00:09:01,140
+到目前为止，我们一直在做一些很酷但不一定真的有用的事情，但是当你可以
+Up until now we've been doing things that are cool but not really necessarily useful but when you can
+
+166
+00:09:01,140 --> 00:09:07,440
+将真正强大的命令组合在一起，让它们完全按照您想要的方式运行
+combine together really powerful commands and have them operating exactly exactly the way that you want
+
+167
+00:09:07,440 --> 00:09:11,960
+在他们之间和你的计算机上传递数据，这真的很令人惊叹。
+to impart the data between them and all over your computer it really gets amazing.
+
+168
+00:09:11,970 --> 00:09:16,380
+所以你可以看到这些管道可以不停地延伸，你可以看到如何建造一条强大的管道
+So you can see that this pipings can go on and on and you can see how to build a powerful pipeline this
+
+169
+00:09:16,380 --> 00:09:17,510
+道路。
+way.
+
+170
+00:09:17,610 --> 00:09:20,630
+实际上非常简单，您只需将不同的命令组合在一起即可。
+It's actually really straightforward you just pipe together different commands.
+
+171
+00:09:20,640 --> 00:09:22,050
+这不是很棒吗。
+Isn't that awesome.
+
+172
+00:09:22,910 --> 00:09:24,270
+所以让我问你一个问题。
+So let me ask you a question.
+
+173
+00:09:24,380 --> 00:09:29,880
+如果我们希望将整个日期保存在一个文件中，然后将其传递到管道中，该怎么办？
+What if we wanted to actually keep the whole date in a file and then pass it into a pipe.
+
+174
+00:09:30,290 --> 00:09:36,410
+我们不能在这里简单地使用重定向，因为我们已经传递了
+Well we can't simply use a redirection at the end here because we're already passing the the sum of
+
+175
+00:09:36,410 --> 00:09:38,540
+将它们的DATE命令部分转换为命令。
+their part of the date command into the command.
+
+176
+00:09:38,630 --> 00:09:39,280
+正确的。
+Right.
+
+177
+00:09:39,380 --> 00:09:44,820
+所以我们不能真的将其保存在文件中，因为我们已经在沿着管道传递它了。
+So we can't really save it in a file because we're already passing it on down the pipeline.
+
+178
+00:09:45,140 --> 00:09:52,220
+如果我们试着这样做，如果我们试着这样做，你知道，如果我们试着只通过管道输出，那么就去掉末尾
+And if we tried to do it if we tried to you know get rid of the end if we tried to just pipe the output
+
+179
+00:09:52,310 --> 00:09:57,420
+进入Dotti XTi的日子里，如果我们这样做，那么我们就会删除这里的所有东西。
+into day Dotti XTi if we do that then we just delete everything we've got in here.
+
+180
+00:09:57,710 --> 00:09:59,110
+这样我们就可以看到效果了。
+So we can see the effect.
+
+181
+00:09:59,390 --> 00:10:03,850
+如果我试一下，我们会发现我们得到的只是Date dot t s t。
+If I try this we'll see the all we get is just date dot t s t.
+
+182
+00:10:03,950 --> 00:10:07,480
+好的，所有的数据都保存在今天的胶带里。
+OK the whole data is saved in today duct tape.
+
+183
+00:10:07,490 --> 00:10:10,090
+但这样就没有什么可以传递给指挥部了。
+But then there's nothing to pass on into the command.
+
+184
+00:10:10,190 --> 00:10:10,760
+好的。
+OK.
+
+185
+00:10:10,970 --> 00:10:14,690
+这是因为改道前处理的管道在淋浴的地方。
+This is because redirections a processed before pipes where in the shower.
+
+186
+00:10:14,700 --> 00:10:17,990
+因此，您找到重定向，并在它看到管道之前执行此操作。
+So you find the redirection and do that before it ever sees the pipe.
+
+187
+00:10:18,080 --> 00:10:18,520
+好的。
+OK.
+
+188
+00:10:18,680 --> 00:10:21,000
+这基本上切断了我们的管道。
+And this basically breaks our pipeline.
+
+189
+00:10:21,290 --> 00:10:23,830
+所以数据不可能同时到达两个地方。
+So the data can't really go two places at once.
+
+190
+00:10:25,340 --> 00:10:31,020
+很好，我们将使用一个叫做T命令的命令，它是一种高级的
+It well to make this work we're going to use a command called the T command and it's these kind of advanced
+
+191
+00:10:31,020 --> 00:10:33,690
+我们将在下一个视频中向您展示的内容。
+stuff that we're going to be showing you in the next video.
+

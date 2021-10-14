@@ -1,0 +1,310 @@
+1
+00:00:00,270 --> 00:00:01,670
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,670 --> 00:00:02,850
+欢迎收看这段视频。
+And welcome to this video.
+
+3
+00:00:02,860 --> 00:00:06,520
+我们将在您的计算机上设置虚拟盒。
+We're going to be getting you set up with virtual box on your computer.
+
+4
+00:00:06,600 --> 00:00:11,160
+现在，Virtual Box是一款令人惊叹的软件，它允许您运行所谓的虚拟机
+Now virtual box is an amazing piece of software that allows you to run what are called virtual machines
+
+5
+00:00:11,520 --> 00:00:12,980
+在你的电脑上。
+on your computer.
+
+6
+00:00:12,990 --> 00:00:18,390
+现在，除了有一个听起来非常棒的名称之外，虚拟机还允许您运行虚拟计算机
+Now virtual machines other than having a totally awesome sounding name allow you to run virtual computers
+
+7
+00:00:18,660 --> 00:00:24,390
+在不影响实际计算机的情况下安装在您的计算机内，因此它们非常适合运行诸如
+inside your computer without affecting your actual computer so they're perfect for running things like
+
+8
+00:00:24,390 --> 00:00:28,320
+新操作系统，并在不影响当前计算机工作方式的情况下试用它们
+new operating systems and trying them out without affecting the way that your current computer works
+
+9
+00:00:28,330 --> 00:00:33,120
+因此，通过虚拟机器运行虚拟机将为我们创建完美的游乐场
+so running a virtual machine through virtual box is going to create the perfect playground for us to
+
+10
+00:00:33,120 --> 00:00:36,900
+尝试使用影响您的实际计算机工作方式的Linux操作系统。
+try the Linux operating system that is affecting the way that your actual computer works.
+
+11
+00:00:36,900 --> 00:00:41,140
+所以实际上不会出什么差错，所以这是我们试用该软件的完美场所。
+So nothing can actually go wrong so it's the perfect playground for us to try out the software.
+
+12
+00:00:41,310 --> 00:00:46,830
+所以我想要做的总是去虚拟盒子网站，它不是虚拟盒子网站org
+So what I want to do is always a head over to the Virtual Box website which is not virtual box dot org
+
+13
+00:00:47,070 --> 00:00:49,350
+用于维基下载。
+for Wiki for downloads.
+
+14
+00:00:49,350 --> 00:00:53,340
+我在这段视频的资源部分放了一个链接，或者你可以直接拥有它，或者你可以直接
+I put a link in the resources section for this video or you could just have it or you could just head
+
+15
+00:00:53,340 --> 00:00:58,440
+转到您最喜欢的搜索引擎，只需搜索Virtual Box下载，它很可能是
+over to your favorite search engine and just search for Virtual Box download and it will likely be the
+
+16
+00:00:58,440 --> 00:00:59,640
+出现的第一个链接。
+first link that comes up.
+
+17
+00:00:59,680 --> 00:01:03,030
+当你点击它的时候，你会看到一个这样的页面。
+And when you click it you'll come to a page like this.
+
+18
+00:01:03,030 --> 00:01:03,450
+好的。
+OK.
+
+19
+00:01:03,600 --> 00:01:10,740
+现在，您可以在这里找到一些指向某些特定的可执行安装程序文件的链接，我希望您
+Now here you go find some some links to some specific executable installer files that I want you to
+
+20
+00:01:10,740 --> 00:01:15,120
+如果您使用Windows，请下载案例。如果您是Mac，请单击Windows主机，我们将单击
+download a case if you're on Windows I want you to click Windows hosts if you're a Mac and we to click
+
+21
+00:01:15,180 --> 00:01:19,650
+OS10主机运行正常，如果您愿意，如果您已经在Linux上，那么基本上不需要安装Linux
+OS 10 hosts OK and if you want if you're already on Linux you basically don't need to install Linux
+
+22
+00:01:19,650 --> 00:01:23,640
+这样你就可以跳过整个部分，转到实际学习的内容。
+do you so you can just skip this entire section and move on to actual learning stuff.
+
+23
+00:01:23,760 --> 00:01:28,080
+但是我们在这里，如果你想要Windows，点击Windows，如果你在Mac上，我10岁，但我在Windows Sangli上
+But here we are if you want Windows click Windows if you are on Mac I was 10 but I'm on Windows Sangli
+
+24
+00:01:28,120 --> 00:01:31,430
+单击该按钮，您可以在此处下载并安装文件。
+click that and you can download and install a file here.
+
+25
+00:01:31,470 --> 00:01:31,920
+好的。
+OK.
+
+26
+00:01:32,040 --> 00:01:36,030
+现在我要做的是将其保存在我的Downloads文件夹中，但您可以将其保存
+Now what I'm going to do is I'm going to just save that in my downloads folder but you can save that
+
+27
+00:01:36,030 --> 00:01:40,870
+任何最适合你的地方，但我可以将它保存在我的下载文件夹中，它将被下载并安装。
+wherever is best for you but I can save it in my downloads folder and it's going to download and install.
+
+28
+00:01:41,040 --> 00:01:43,560
+它将为我们安装虚拟盒子。
+And it's going to install Virtual Box for us.
+
+29
+00:01:43,560 --> 00:01:44,020
+好的。
+OK.
+
+30
+00:01:44,170 --> 00:01:48,790
+所以这将是头端下载，应该是在大约两秒钟内完成的。
+So that's going to headend downloaded what should be in just about two seconds or so.
+
+31
+00:01:49,740 --> 00:01:50,610
+我们到了。
+There we are.
+
+32
+00:01:50,730 --> 00:01:54,800
+正在下载，我要单击它，或者转到我的下载文件夹并双击。
+It's downloading I'm going to click that or head over to my downloads folder and double click.
+
+33
+00:01:54,810 --> 00:01:59,460
+然而，我希望我能用同样的东西双击这张票，它就会打开
+However however I wish I could double click the ticket with the same thing and it's going to open up
+
+34
+00:01:59,460 --> 00:02:03,420
+这个安装了一个巫师，基本上是要给人通电的。
+this install a wizard which were just going to basically power through guys.
+
+35
+00:02:03,420 --> 00:02:04,980
+因此，我将在这里单击“下一步”。
+So I'm going to click next here.
+
+36
+00:02:05,070 --> 00:02:06,540
+将再次单击“下一步”。
+Going to click next again.
+
+37
+00:02:06,960 --> 00:02:10,400
+然后它会问你想把捷径放在哪里。
+And then it will ask you where do you want to put some shortcuts.
+
+38
+00:02:10,440 --> 00:02:15,630
+我只会在我的开始菜单和桌面上有一个令人震惊的东西，但我真的不想要一个
+I'm just going to have a shocker in my Start Menu and on the desktop but I don't really want one in
+
+39
+00:02:15,630 --> 00:02:18,690
+快速启动栏，但请确保这里有这个。
+the quicklaunch bar but make sure you have this one here.
+
+40
+00:02:18,690 --> 00:02:24,100
+请确保无论您选择什么，都不要取消选中寄存器堆关联，只需在该选项上打勾即可。
+Make sure whatever you choose just don't uncheck register file associations just leave that with a tick.
+
+41
+00:02:24,150 --> 00:02:25,550
+好的，这一点必须保持不变。
+OK that must stay the same.
+
+42
+00:02:25,620 --> 00:02:29,880
+根据您希望将系统设置在您想要快捷方式的位置，与其他人一起玩耍。
+Be play around with the others depending on how you want your system set up where you want the shortcuts.
+
+43
+00:02:29,880 --> 00:02:30,450
+这真的无关紧要。
+It doesn't really matter.
+
+44
+00:02:30,450 --> 00:02:34,760
+无论如何，您都可以删除它们，但是您知道自己的喜好，然后继续并单击下一步。
+You can remove them anyway but you know your preference then go ahead and click next.
+
+45
+00:02:34,830 --> 00:02:38,520
+它会说，嘿，我们可能需要访问您的网络接口。
+It's going to say hey we might need to access your network interface.
+
+46
+00:02:38,610 --> 00:02:40,780
+只要说是就行了，不管怎么说，不用担心。
+Just say yes don't worry about that whatsoever.
+
+47
+00:02:41,010 --> 00:02:42,350
+然后单击Install(安装)。
+And click install.
+
+48
+00:02:42,390 --> 00:02:43,950
+它可能会给我们弹出窗口。
+It might give us the pop ups.
+
+49
+00:02:43,950 --> 00:02:49,110
+继续，对弹出的任何弹出窗口单击是，或单击安装或仅授予其任何权限
+Go ahead and click yes to any pop ups that come up or click install or just give it permission whatever
+
+50
+00:02:49,110 --> 00:02:51,220
+它的意思是，你只管去做就行了。
+it means just go ahead and do it.
+
+51
+00:02:51,360 --> 00:02:55,080
+它将使虚拟虚拟机器能够让您的虚拟机访问
+It's just going to be giving virtual virtual box the ability to have your virtual machines access the
+
+52
+00:02:55,080 --> 00:02:57,890
+互联网，这通常是一个有用的功能。
+Internet which is usually a useful function.
+
+53
+00:02:57,990 --> 00:03:02,610
+因此，只要对它要求的任何内容单击“是”，它就会进入“Installation Complete”(安装完成)屏幕
+So just click yes to whatever it asks for and then it will come to the installation complete screen
+
+54
+00:03:02,970 --> 00:03:06,960
+这里会有一个勾选框，上面写着“安装后启动虚拟框”(Start Virtual Box After Installation)。
+and there'll be a tick box here that says start virtual box after installation.
+
+55
+00:03:06,960 --> 00:03:12,470
+确保其中有一个勾号，然后单击Finish，它将继续并打开一个虚拟框。
+Make sure that that has a tick in it and click Finish and it will go ahead and open up a virtual box.
+
+56
+00:03:12,480 --> 00:03:15,290
+好了，伙计们，这就是你安装虚拟盒子的方法。
+There you are guys that's how you go ahead and install virtual box.
+
+57
+00:03:15,360 --> 00:03:16,370
+很好，很容易。
+Nice and easy.
+
+58
+00:03:16,410 --> 00:03:18,920
+单击“处理”。
+Click click click click click process.
+
+59
+00:03:18,960 --> 00:03:23,160
+现在我们已经继续并在下一个视频中安装了虚拟盒，我们向您展示了如何设置
+So now that we've gone ahead and install virtual box in the next video we showed you how you can set
+
+60
+00:03:23,160 --> 00:03:25,860
+安装您自己的Linux虚拟机。
+up your own Linux virtual machine.
+
+61
+00:03:25,860 --> 00:03:29,550
+所以观看这段视频的朋友们，你们现在已经在你们的机器上安装了虚拟盒。
+So folks watching this video guys you've now got virtual box installed on your machine.
+
+62
+00:03:29,550 --> 00:03:31,080
+让我们继续为您设置Linux。
+Let's go ahead and set you up with Linux.
+

@@ -1,0 +1,447 @@
+1
+00:00:00,330 --> 00:00:02,010
+Hello you beautiful people.
+
+2
+00:00:02,040 --> 00:00:07,190
+The last video you got stuck right in and use the most powerful tool on the Linux operating system.
+
+3
+00:00:07,320 --> 00:00:10,940
+But as they say with great power comes great responsibility.
+
+4
+00:00:10,950 --> 00:00:16,020
+So in order to maximize your control over the Linux operating system you need to get a solid understanding
+
+5
+00:00:16,020 --> 00:00:18,660
+of what's going on when you type your commands.
+
+6
+00:00:18,660 --> 00:00:22,650
+So over the next few videos we're going to be doing a bit of a deep dive on what is actually going on
+
+7
+00:00:22,650 --> 00:00:26,970
+when you run your commands and also go into detail on how the commands are structured so that you can
+
+8
+00:00:27,030 --> 00:00:29,530
+understand how to use them properly.
+
+9
+00:00:29,550 --> 00:00:34,770
+Now if you do already have some previous experience but didn't feel as you quite got it or that something
+
+10
+00:00:34,770 --> 00:00:39,590
+is missing in your understanding it's very likely that you aren't 100 percent clear on the stuff that
+
+11
+00:00:39,590 --> 00:00:41,560
+we're going to be covering in the next few videos.
+
+12
+00:00:41,570 --> 00:00:43,530
+So this is super important stuff.
+
+13
+00:00:43,530 --> 00:00:48,990
+Now whether you do have some previous experience or a complete beginner to it I really want you to pay
+
+14
+00:00:48,990 --> 00:00:53,190
+your best attention to the topics that we'll be covering in the next few videos because they are so
+
+15
+00:00:53,280 --> 00:00:56,830
+critically important to your understanding of the Linux operating system.
+
+16
+00:00:56,970 --> 00:01:00,930
+And if you do understand what we cover in the next few videos everything you do in Linux will start
+
+17
+00:01:00,930 --> 00:01:02,550
+to make a whole lot more sense.
+
+18
+00:01:02,550 --> 00:01:05,640
+So be very very excited that we're going to clear this stuff up.
+
+19
+00:01:05,700 --> 00:01:10,740
+Now in this video you're going to learn the difference between commands the terminal and something called
+
+20
+00:01:10,800 --> 00:01:11,520
+the shell.
+
+21
+00:01:11,520 --> 00:01:16,440
+These are very important distinctions that will underpin basically every single thing that you do on
+
+22
+00:01:16,500 --> 00:01:17,150
+the command line.
+
+23
+00:01:17,160 --> 00:01:21,600
+And by the end of this video you'll have understood the difference between the terminal commands and
+
+24
+00:01:21,600 --> 00:01:26,130
+the shell and you'll have a much richer and deeper understanding of what is actually going on behind
+
+25
+00:01:26,130 --> 00:01:26,730
+the scenes.
+
+26
+00:01:26,790 --> 00:01:28,290
+When you use the terminal.
+
+27
+00:01:28,350 --> 00:01:30,390
+So this is going to be a critically important lecture.
+
+28
+00:01:30,540 --> 00:01:31,940
+Let's go ahead and get into it.
+
+29
+00:01:32,690 --> 00:01:35,250
+So what is actually going on when we type a command.
+
+30
+00:01:35,450 --> 00:01:40,870
+Well to understand this we need to know the difference between a command and something called the shell.
+
+31
+00:01:40,930 --> 00:01:42,450
+The commands are just text.
+
+32
+00:01:42,530 --> 00:01:49,200
+But when you press enter the meaning of that text is interpreted by a computer program called the shell.
+
+33
+00:01:49,310 --> 00:01:49,880
+OK.
+
+34
+00:01:49,880 --> 00:01:51,970
+So let's take a real world example.
+
+35
+00:01:52,130 --> 00:01:58,140
+If we see the word here on the left rasboras on a physical level that word is just the letters are a
+
+36
+00:01:58,190 --> 00:02:02,330
+s p b e r r r e s and just like any other word.
+
+37
+00:02:02,330 --> 00:02:05,790
+If you can't read the language it won't mean much to you.
+
+38
+00:02:05,810 --> 00:02:10,820
+Right but if you took this word and you could for example read English then what would happen is you
+
+39
+00:02:10,820 --> 00:02:15,800
+would you would see that text and you would interpret it for meaning and what might come out is this
+
+40
+00:02:15,890 --> 00:02:16,310
+fruit.
+
+41
+00:02:16,350 --> 00:02:19,900
+Ok you'd see that text and you would match it with this fruit the raspberries.
+
+42
+00:02:20,060 --> 00:02:25,160
+But there's a process in the middle of interpreting that text into specific meaning and that is the
+
+43
+00:02:25,160 --> 00:02:26,200
+job of the shell.
+
+44
+00:02:26,300 --> 00:02:26,790
+OK.
+
+45
+00:02:26,990 --> 00:02:30,690
+So to make this a bit clearer let's say you took the word gift.
+
+46
+00:02:30,890 --> 00:02:31,340
+OK.
+
+47
+00:02:31,580 --> 00:02:38,240
+And you read that word using the English language and the meaning that might come out might be the idea
+
+48
+00:02:38,240 --> 00:02:40,750
+of giving someone a present or something on their birthday.
+
+49
+00:02:40,860 --> 00:02:45,920
+Ok so you might say you might get this meaning coming out from reading the word gift but instead of
+
+50
+00:02:45,920 --> 00:02:47,720
+reading it in English with an English shell.
+
+51
+00:02:47,720 --> 00:02:53,270
+So we call it let's say you took exactly the same word gift but this time you read it with a German
+
+52
+00:02:53,350 --> 00:02:54,570
+shell.
+
+53
+00:02:54,680 --> 00:02:58,820
+Now instead of a present coming out the meaning that might come out of that if you read it in German
+
+54
+00:02:59,060 --> 00:03:05,150
+would be the poison which is ironically not the best gift but you can see here that the text is exactly
+
+55
+00:03:05,150 --> 00:03:10,750
+the same but the meaning that comes out is different depending upon the shell that interpreted it.
+
+56
+00:03:10,880 --> 00:03:11,320
+OK.
+
+57
+00:03:11,540 --> 00:03:17,860
+As another example let's say we took the word smoking smoking if you read that again in an English shell
+
+58
+00:03:18,410 --> 00:03:22,290
+the meaning that would come out would be the idea of using a cigarette.
+
+59
+00:03:22,520 --> 00:03:27,740
+But if you took exactly the same word and in this time passed it through a French shell.
+
+60
+00:03:27,820 --> 00:03:28,030
+OK.
+
+61
+00:03:28,040 --> 00:03:35,090
+Using the analogy here of human interpretation what would come out would be a tuxedo which is a fancy
+
+62
+00:03:35,090 --> 00:03:36,090
+type of clothing.
+
+63
+00:03:36,230 --> 00:03:41,540
+So you can see here the text can be exactly the same but the shell interprets that text can give it
+
+64
+00:03:41,540 --> 00:03:44,510
+different meaning and that is exactly the same on your computer.
+
+65
+00:03:44,690 --> 00:03:49,790
+So what about the terminal that we now understand the difference between a command and the shell.
+
+66
+00:03:49,790 --> 00:03:51,070
+So what's the terminal for.
+
+67
+00:03:51,200 --> 00:03:56,020
+Well the terminal is nothing more than just a window into the shell.
+
+68
+00:03:56,090 --> 00:03:58,770
+So let's make this a bit easier to understand.
+
+69
+00:03:58,790 --> 00:04:07,360
+So if I asked you how would you type commands on to your show without opening the terminal Well you
+
+70
+00:04:07,360 --> 00:04:08,080
+couldn't write.
+
+71
+00:04:08,200 --> 00:04:14,040
+And that's exactly what the terminal is the term that is kind of like the middle piece in between using
+
+72
+00:04:14,420 --> 00:04:17,040
+come out in between typing commands and summon them to the shell.
+
+73
+00:04:17,050 --> 00:04:21,340
+You can't really type commands anywhere unless you've opened a terminal and that's all is what you're
+
+74
+00:04:21,340 --> 00:04:25,720
+doing is you're typing commands in the terminal and you press enter and then they are submitted to the
+
+75
+00:04:25,720 --> 00:04:28,680
+shelves of the terminal is kind of like the middle piece.
+
+76
+00:04:28,750 --> 00:04:29,200
+OK.
+
+77
+00:04:29,530 --> 00:04:34,420
+And there are actually different types of shells so different types of shelves just like there were
+
+78
+00:04:34,420 --> 00:04:39,060
+different types of human languages can actually interpret the same command in different ways.
+
+79
+00:04:39,100 --> 00:04:44,770
+But fortunately there is one type of shell which has been which is the most common type which is called
+
+80
+00:04:44,770 --> 00:04:46,120
+the bash shell.
+
+81
+00:04:46,120 --> 00:04:50,710
+So if you've ever heard the term bash shell scripting or bash scripting or something like that it means
+
+82
+00:04:50,710 --> 00:04:56,750
+writing programs and writing scripts that can be read by the bash shell and Linux.
+
+83
+00:04:56,770 --> 00:05:01,660
+Most Linux distribution use the bash shell and aboon buntu definitely does by default.
+
+84
+00:05:01,660 --> 00:05:04,480
+So that's something to bear in mind that there are different types of shells on Linux.
+
+85
+00:05:04,480 --> 00:05:08,650
+They can interpret commands in different ways but the most common one is the bash shell.
+
+86
+00:05:08,680 --> 00:05:11,370
+So there we are we've got some standardization there.
+
+87
+00:05:11,830 --> 00:05:17,530
+So to summarize commands a RealAge the text that you type in the terminal and when you press enter that
+
+88
+00:05:17,530 --> 00:05:20,420
+text is interpreted by the shell.
+
+89
+00:05:20,420 --> 00:05:26,360
+Now the shell is a program that translates that text into into actions for the computer.
+
+90
+00:05:26,650 --> 00:05:31,270
+Now this means that different shells can actually interpret the same text differently which might cause
+
+91
+00:05:31,270 --> 00:05:34,930
+some problems but fortunately most Linux machines use the bash shell.
+
+92
+00:05:34,930 --> 00:05:41,920
+So there is consistency across most machines and as we said as well the terminal is just a window to
+
+93
+00:05:42,070 --> 00:05:46,240
+the shell it just it's just the middle piece that allows you to type your commands and submit them to
+
+94
+00:05:46,240 --> 00:05:46,930
+the shell.
+
+95
+00:05:47,010 --> 00:05:51,760
+And as a bonus piece of information your commands are actually also case sensitive.
+
+96
+00:05:51,850 --> 00:05:57,460
+So if you type a command in all uppercase if the shell isn't expecting to see that it will probably
+
+97
+00:05:57,460 --> 00:05:58,110
+give you an error.
+
+98
+00:05:58,120 --> 00:06:01,910
+So you need to make sure that things are spelled in exactly the correct way.
+
+99
+00:06:02,060 --> 00:06:06,820
+OK which has the benefits of allowing you to have more more options because slight differences can give
+
+100
+00:06:06,820 --> 00:06:10,950
+different functionality but it means you have to be really careful on how you actually type your commands
+
+101
+00:06:10,960 --> 00:06:12,960
+if you want them to work the way you want them to.
+
+102
+00:06:13,300 --> 00:06:20,200
+Now what's coming up next is because we're going to spend a lot of the time in this course typing commands
+
+103
+00:06:20,200 --> 00:06:21,770
+and submitting them to the shell.
+
+104
+00:06:21,790 --> 00:06:25,660
+I don't want you to go through this course and just have to memorize loads and loads and loads different
+
+105
+00:06:25,660 --> 00:06:29,170
+commands just like pretty much every other cause makes you do what you're going to do is we're going
+
+106
+00:06:29,170 --> 00:06:33,550
+to take a bit of time to understand what commands actually are and how they are structured so that you
+
+107
+00:06:33,550 --> 00:06:38,800
+can start to see a pattern behind everything you can start to look at the commands as a type of language
+
+108
+00:06:39,070 --> 00:06:41,970
+rather than just random text on the screen that you've got to memorize.
+
+109
+00:06:42,010 --> 00:06:46,120
+Now it's likely you'll probably not have been shown this before so this is going to be a complete game
+
+110
+00:06:46,120 --> 00:06:50,740
+changer in how you actually approach learning the Linux operating system and learning the terminal.
+
+111
+00:06:50,770 --> 00:06:54,400
+So I really can't wait to show you this it's going to be really really really helpful.
+
+112
+00:06:54,400 --> 00:06:57,880
+So for all that goodness I'll see you in the next video.

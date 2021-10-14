@@ -1,0 +1,1300 @@
+1
+00:00:00,390 --> 00:00:05,100
+你们好，美丽的人们，当你们在最后一段视频中了解到有一种叫贝壳的东西
+Hello you beautiful people so when the last video you learn that there is something called the shell
+
+2
+00:00:05,280 --> 00:00:08,460
+这就是解释您在终端中键入的命令。
+that is interpreting the commands that you type into the terminal.
+
+3
+00:00:08,610 --> 00:00:13,530
+现在Linux令人惊叹的一个原因是您键入的命令都遵循类似类型的
+Now one reason that Linux is amazing is that the commands that you type all follow a similar type of
+
+4
+00:00:13,530 --> 00:00:15,790
+以您键入的方式构造它们。
+structure in the way that you type them.
+
+5
+00:00:15,840 --> 00:00:19,950
+现在，通过理解该结构，您将能够从简单地记忆命令过渡到
+Now by understanding the structure you'll be able to transition from simply just memorizing commands
+
+6
+00:00:19,950 --> 00:00:25,050
+并希望能更好地真正理解所有Linux命令使用的公共语言
+and hoping for the best to actually understanding the common language that all Linux commands use and
+
+7
+00:00:25,050 --> 00:00:28,680
+这会大大提高你的能力。
+that will give you a massive boost in your abilities.
+
+8
+00:00:28,680 --> 00:00:33,970
+因此，在这段视频中，您将了解什么是命令，以及它们是如何构建的。
+So in this video you're going to learn what commands actually are and how they are structured.
+
+9
+00:00:34,110 --> 00:00:38,460
+在本视频结束时，您将对什么是命令以及命令有更深入的理解
+And by the end of this video you'll have a much deeper understanding of what commands are and the commands
+
+10
+00:00:38,460 --> 00:00:44,060
+他们实际上会开始看起来像一种语言，而不是屏幕上随意的胡言乱语。
+themselves will actually start to look like a language rather than just random jibberish on the screen.
+
+11
+00:00:44,190 --> 00:00:47,350
+所以这将是一场非常改变游戏规则的讲座。
+So this is going to be a very game changing lecture.
+
+12
+00:00:47,430 --> 00:00:53,220
+如果您完全理解我在这里向您展示的内容，您使用航站楼的工作就会轻松很多。
+If you understand fully what I show you here it will make your work with the terminal so much easier.
+
+13
+00:00:53,220 --> 00:00:55,800
+所以我们不要浪费时间，直接开始吧。
+So let's not waste any time and get right into it.
+
+14
+00:00:57,790 --> 00:00:58,210
+好的。
+OK.
+
+15
+00:00:58,230 --> 00:01:02,700
+所以你需要知道的第一件事是，所有的命令实际上都只是一些小的计算机程序
+So the first thing you need to know is that all commands are effectively just little computer programs
+
+16
+00:01:02,790 --> 00:01:05,360
+安装在您计算机上的某个位置。
+that are installed somewhere on your computer.
+
+17
+00:01:05,370 --> 00:01:11,230
+例如，Date是一个程序，Cal是一个程序，Ecca是另一个程序，等等。
+So for example date is a program Cal is a program Ecca was another program and so on.
+
+18
+00:01:11,280 --> 00:01:17,030
+现在，您要使用的命令或程序名始终是命令的第一部分。
+Now the command or program name that you want to use is always the first part of the command.
+
+19
+00:01:17,040 --> 00:01:21,780
+因此，我们使用单词data开始命令，或者使用单词count开始命令，使用单词echo，就像您之前看到的那样。
+So we start a command with the word data or with the word count with the word echo like you saw before.
+
+20
+00:01:21,790 --> 00:01:25,010
+目前，每个命令都有自己独特的行为。
+Right now each command has its own unique behavior.
+
+21
+00:01:25,080 --> 00:01:29,520
+实际上，您可以使用称为手册页的东西进行查找，稍后我将向您演示如何操作
+You can actually look up using something called the manual pages which I'll show you how to do later
+
+22
+00:01:29,520 --> 00:01:30,800
+在课程的这一部分。
+in this section of the course.
+
+23
+00:01:30,930 --> 00:01:34,260
+但是总的指挥结构是这样的。
+But the general command structure goes like this.
+
+24
+00:01:34,350 --> 00:01:36,270
+首先，您需要键入命令名。
+First you type out the command name.
+
+25
+00:01:36,300 --> 00:01:39,090
+所以我会像约会牛回声之类的。
+So I would be like date cow echo or whatever it would be.
+
+26
+00:01:39,170 --> 00:01:42,260
+然后给出选项的注释以自定义其行为。
+Then you give the comments of options to customize its behavior.
+
+27
+00:01:42,480 --> 00:01:46,720
+然后给命令一些实际操作的输入。
+Then you give the command some inputs to actually operate on.
+
+28
+00:01:46,740 --> 00:01:49,390
+现在，您键入的第一件事是命令名。
+Now the first thing you type is the command name.
+
+29
+00:01:49,440 --> 00:01:52,860
+现在，这会让shell知道您实际想要运行的程序。
+Now that lets the shell know what program you actually want to run.
+
+30
+00:01:53,010 --> 00:01:56,880
+一旦Shell知道您要运行的程序，它就会知道您要运行的程序的名称
+And once the Shell knows what program you want to run it knows the name of the program you want to run
+
+31
+00:01:57,180 --> 00:02:02,730
+然后，该节目将在一个名为Your Shell‘s Path程序上搜索该程序，该程序只是一个列表
+the show will then search for that program on something called your Shell's path which is just a list
+
+32
+00:02:02,730 --> 00:02:05,610
+包含这些程序的文件夹的。
+of folders that contain these programs.
+
+33
+00:02:05,610 --> 00:02:09,120
+现在，您可以通过键入echo实际查看Shell的路径。
+Now you can actually see your Shell's path by typing echo.
+
+34
+00:02:09,570 --> 00:02:12,180
+然后是美元符号，然后是路径。
+Then a dollar sign then path.
+
+35
+00:02:12,180 --> 00:02:18,900
+好的，ECKO空格而不是美元符号和路径，然后按Enter键，您会看到这个可怕的输出
+OK so Ecko space than dollar sign and path and you press enter and you see this terrifying output come
+
+36
+00:02:18,900 --> 00:02:19,310
+出去。
+out.
+
+37
+00:02:19,440 --> 00:02:24,060
+但实际上，当你注意到这些只是不同的时候，它实际上是很容易理解的
+But it's actually it's actually very easy to understand when you notice that these are just different
+
+38
+00:02:24,060 --> 00:02:28,280
+文件夹路径，每个路径用冒号分隔，在这里用这两个点分隔。
+folder paths each separated by a colon by these two dots here.
+
+39
+00:02:28,410 --> 00:02:33,210
+例如，这里有一个集合，这里有一个文件夹，名为Slush Use a劈开Local
+So for example there's a there's a set there's a folder here that's called slushed use a slash local
+
+40
+00:02:33,210 --> 00:02:34,270
+劈开易旋。
+slash Espin.
+
+41
+00:02:34,320 --> 00:02:39,090
+这里有另一个文件夹，Slusser使用的本地垃圾桶比这里的另一个文件夹要少
+Then you've got another folder here Slusser uses less local slushed bin than another folder here and
+
+42
+00:02:39,090 --> 00:02:41,510
+这里是另一个文件夹，这里是另一个文件夹，以此类推。
+another folder here and another folder here and so on and so on.
+
+43
+00:02:41,510 --> 00:02:41,930
+好的。
+OK.
+
+44
+00:02:42,120 --> 00:02:48,390
+因此，shell将从路径的最左侧开始，并查看该文件夹内部
+So what the shell will do is it'll start at the very left of the path and it will look inside that folder
+
+45
+00:02:48,600 --> 00:02:52,920
+对于名为Echo或Kallo的命令，名为Data或任何您称之为它的命令。
+for a command called Echo or called Kallo called data or whatever you called it.
+
+46
+00:02:52,920 --> 00:02:53,490
+好的。
+OK.
+
+47
+00:02:53,490 --> 00:02:56,520
+因此它将在最左边的文件夹中查找，如果在那里找不到它，它将移动到
+So it will look in the left most folder and it will if it doesn't find it there it will move to the
+
+48
+00:02:56,520 --> 00:02:57,010
+下一个。
+next one.
+
+49
+00:02:57,060 --> 00:03:01,150
+所以它会从最左边开始，可能会移动到这个文件夹。
+So it would start at the very left and it would move to maybe to this folder.
+
+50
+00:03:01,290 --> 00:03:04,800
+好的，如果它没有找到它，那么它将移动到这个文件夹，如果它没有找到它，那么它将在那里
+OK then if it didn't find it then it would move to this folder and if it didn't find it there would
+
+51
+00:03:04,800 --> 00:03:08,350
+移动到这个文件夹，依此类推，直到它一直放到最后。
+move to this folder and so on and so on and so on until it got right to the ends.
+
+52
+00:03:08,430 --> 00:03:11,020
+所以去劈开不去劈开就可以了。
+So to slash not slash been OK.
+
+53
+00:03:11,220 --> 00:03:15,520
+如果在这些文件夹中找不到具有该名称的文件夹。
+And if it didn't find a folder with that name in any of those folders.
+
+54
+00:03:15,620 --> 00:03:16,000
+好的。
+OK.
+
+55
+00:03:16,110 --> 00:03:19,930
+然后，该节目会给出一个命令错误，如命令未找到(COMMAND NOT FOUND)。
+Then the show would give you a command an error like command not found.
+
+56
+00:03:19,950 --> 00:03:26,020
+如果我尝试做一篇是命令的文章，它会说找不到这个命令。
+If I tried to do an article that was a command it says it couldn't find this command.
+
+57
+00:03:26,020 --> 00:03:29,910
+所以shell所做的就是在每个文件夹中查找名为this的命令。
+So what the shell did is it looked for a command called this in each of these folders.
+
+58
+00:03:29,910 --> 00:03:32,220
+没有找到，并且说没有找到指挥部。
+Didn't find it and said command not found.
+
+59
+00:03:32,230 --> 00:03:36,130
+现在这是一些，这有一个非常有趣的影响。
+Now this is some this has an interesting and interesting impact.
+
+60
+00:03:36,270 --> 00:03:39,570
+事实上，它是从最左边一直读到最右边的事实。
+The fact that it the fact that it reads from the very left all the way to the very right.
+
+61
+00:03:39,690 --> 00:03:43,420
+假设你有一个叫做“好的，好的，好的”的程序。
+Let's say you had a program called blah OK and blah.
+
+62
+00:03:43,420 --> 00:03:52,310
+它实际上在这个文件夹里，这里是劈开埃斯彭，但它也在最左边的文件夹里。
+It was actually in this folder here is a slash Espen but it was also in the very far left folder.
+
+63
+00:03:52,470 --> 00:03:58,760
+你认为哪一个实际上会运行得很好实际上会发生的是，它只会运行
+Which one do you think will actually be run well actually what would happen is it would only run the
+
+64
+00:03:58,760 --> 00:04:01,260
+版本在这里，因为这是它第一次发现它的地方。
+version in here because that's where it found it first.
+
+65
+00:04:01,370 --> 00:04:07,130
+如果您想让它运行，这个版本在这个文件夹中是不可能的，因为它找到了
+And if you wanted it to run this version was in this folder that wouldn't be possible because it found
+
+66
+00:04:07,130 --> 00:04:09,120
+在这里先取同样的名字。
+the same name here first.
+
+67
+00:04:09,200 --> 00:04:09,710
+好的。
+OK.
+
+68
+00:04:09,710 --> 00:04:13,910
+所以这只是一些需要记住的事情，并不是你真的会遇到的事情，而只是一些事情
+So that's just something to bear in mind it's not something you'll really run into but it's just something
+
+69
+00:04:13,910 --> 00:04:14,700
+牢记在心。
+to bear in mind.
+
+70
+00:04:14,770 --> 00:04:15,300
+好的。
+OK.
+
+71
+00:04:15,310 --> 00:04:19,410
+现在，您可以使用Which命令实际查看命令存储在哪个文件夹中。
+Now you can actually see which folder the command is stored in by using the which command.
+
+72
+00:04:19,410 --> 00:04:21,700
+所以这就像是这个命令在哪个文件夹中。
+So it's like which folder is this command in.
+
+73
+00:04:21,710 --> 00:04:24,110
+这样我就能说出是哪一个然后再数。
+So I could say which and then count.
+
+74
+00:04:24,230 --> 00:04:24,490
+好的。
+OK.
+
+75
+00:04:24,500 --> 00:04:30,960
+如果我按Enter键，它会告诉我该命令实际上位于最慢的用户劈开bin文件夹中。
+And if I press enter it will tell me that the command is actually in the slowest user slash bin folder.
+
+76
+00:04:31,010 --> 00:04:36,080
+如果我们看一下路径，我们可以看到劈开使用的劈开垃圾箱位于这里。
+And if we look at the path we can see that slash use a slash bin is located here.
+
+77
+00:04:36,080 --> 00:04:40,670
+所以它就在我们的路上，所以才能找到曹操。
+So it is on our path and therefore Cao was able to be found.
+
+78
+00:04:40,670 --> 00:04:41,870
+让我们为Echo再试一次。
+And let's try that again for Echo.
+
+79
+00:04:41,870 --> 00:04:47,600
+如果我们做了哪个回声，你可以说劈开被劈开回声了。
+If we do which echo you can say slash been slash echo.
+
+80
+00:04:47,690 --> 00:04:54,720
+如果我们往这里看，我们会发现劈开垃圾箱在某个地方，劈开垃圾箱。
+And if we look on here we'll find somewhere slash bin is somewhere slash bin.
+
+81
+00:04:54,740 --> 00:04:55,190
+我们走吧。
+There we go.
+
+82
+00:04:55,190 --> 00:04:57,590
+所以劈开也在我们的路上。
+So slash bin is also on our path.
+
+83
+00:04:57,610 --> 00:04:59,190
+实际上，你还可以看看哪种情况会发生。
+You actually also look at the which come on.
+
+84
+00:04:59,190 --> 00:05:03,020
+那么哪个文件夹中的哪个就是命令的那个。
+So the which of which which folder is that which commanded.
+
+85
+00:05:03,050 --> 00:05:06,490
+我们说它在冰激凌里，用这里的冰激凌桶。
+And we say it's in slushed use a slush bin which is here.
+
+86
+00:05:06,730 --> 00:05:11,510
+这就是冰雪用户劈开本·盖伊，我们可以看到其中的命令也可以运行，这就是它是如何运行的
+There we go slushed user slash Ben Gay and we see the which command also runs as well so that's how
+
+87
+00:05:11,720 --> 00:05:14,950
+Shell知道在哪里可以找到您的命令。
+the Shell knows where to find your commands.
+
+88
+00:05:14,960 --> 00:05:20,060
+现在，您可以通过为命令提供不同的选项和不同的输入来自定义命令的工作方式。
+Now you can customize the way that commands work by giving them different options and different inputs.
+
+89
+00:05:20,270 --> 00:05:22,680
+让我们继续，从输入开始。
+Let's go ahead and start with the inputs.
+
+90
+00:05:22,700 --> 00:05:29,030
+因此需要注意的是，并不是所有命令实际上都需要输入，有些输入是可选的。
+So it's important to note that not all commands actually require inputs some inputs are optional.
+
+91
+00:05:29,060 --> 00:05:33,010
+例如，date命令并不严格要求输入。
+For example the date command doesn't strictly require an input.
+
+92
+00:05:33,010 --> 00:05:36,250
+你只需输入日期，然后你就知道它已经结束了。
+You can just type date and be you know be done with it.
+
+93
+00:05:36,320 --> 00:05:42,960
+好的，但是大多数命令确实需要某种形式的输入，实际上可以有一个称为操作数的奇特名称。
+OK but most commands do require some form of input which can actually have a fancy name called an operand.
+
+94
+00:05:42,980 --> 00:05:43,410
+好的。
+OK.
+
+95
+00:05:43,550 --> 00:05:48,260
+因为命令在输入上操作，所以输入有时被称为操作数。
+Because commands operate on the input the input is sometimes called an operand.
+
+96
+00:05:48,320 --> 00:05:54,290
+好的，要给命令一个输入或一个操作数，只需在命令名后键入一个空格，然后
+OK so to give the command an input or an operand you simply type a space after the command name then
+
+97
+00:05:54,470 --> 00:05:55,360
+键入输入。
+type the input.
+
+98
+00:05:55,400 --> 00:05:57,910
+好吧，那是假设你没有任何选择。
+OK that's assuming you don't have any options.
+
+99
+00:05:57,920 --> 00:06:05,450
+例如，如果我们执行COW命令，我只需键入COW OK，然后按Enter键，我就会得到以下内容
+So for example if we take the cow command I could just type cow OK and press enter and I would get this
+
+100
+00:06:05,450 --> 00:06:06,390
+月历。
+month's calendar.
+
+101
+00:06:06,530 --> 00:06:08,930
+但是要自定义行为，我可以给它一个输入。
+But to customize the behavior I can give it an input.
+
+102
+00:06:08,930 --> 00:06:15,300
+例如，如果我想要获得2017年的日历，我可以输入cow 2017。
+So for example if I want to get the calendar for the year 2017 I could type cow 20 17.
+
+103
+00:06:15,400 --> 00:06:21,650
+如果我现在按Enter键，我会得到一个完全不同的输入输出，抱歉，因为我给出了命令
+And if I press Enter now I get a completely different input output sorry because I gave the command
+
+104
+00:06:21,920 --> 00:06:22,960
+此输入。
+this input.
+
+105
+00:06:23,110 --> 00:06:23,980
+好的。
+OK.
+
+106
+00:06:24,200 --> 00:06:26,090
+您还可以提供1个以上的输入。
+You can also give more than 1 inputs.
+
+107
+00:06:26,090 --> 00:06:31,070
+让我使用控件和所有漂亮的快捷键清除屏幕，这样您就可以提供多个输入。
+Let me clear the screen using control and all the nice shortcut so that you can give more than one input.
+
+108
+00:06:31,070 --> 00:06:36,110
+例如，我可以键入cow1220：17，然后按Enter键。
+So for example I could type cow 12 20:17 and press enter.
+
+109
+00:06:36,200 --> 00:06:43,310
+你可以看到，现在我得到了，我已经给出了，在calc命令上，两个输入，一个是12，这意味着
+You can see now that I get I've given Come on the calc command two inputs one being 12 which means the
+
+110
+00:06:43,310 --> 00:06:47,330
+第十二个月，下一个月是2017年。
+twelfth month and the next one being the year which is 2017.
+
+111
+00:06:47,330 --> 00:06:52,010
+所以我在这里说，你能给我2017年12月的日历吗？
+So I said here can you give me the calendar for December 2017.
+
+112
+00:06:52,310 --> 00:06:55,900
+好的，我们把它提供给输入，这也是自定义输出。
+All right so we gave it to inputs and that also customize output.
+
+113
+00:06:56,180 --> 00:07:03,020
+所以基本上你可以像你一样给出命令输入，如果我打招呼的时候说ECHO，那就说ECHO
+So basically you can just give commands inputs like you and if I say echo when I say hello then echo
+
+114
+00:07:03,420 --> 00:07:06,510
+那么hello抱歉就是ECHO命令的输入。
+then hello sorry was the input to the echo command.
+
+115
+00:07:06,590 --> 00:07:07,610
+所以这是相当直截了当的。
+So it's quite straightforward.
+
+116
+00:07:07,610 --> 00:07:11,690
+我们所做的就是键入命令名，然后shell在路径上找到该命令，然后我们给出该命令
+All we did was type the command name which the shell then found on the path and we gave that command
+
+117
+00:07:11,930 --> 00:07:13,470
+该程序需要一些输入。
+that that program some input.
+
+118
+00:07:13,590 --> 00:07:18,580
+好的，我们理解了输入，让我们来讨论一下选项，因为这才是真正有趣的地方。
+OK so that we understand inputs Let's discuss options because this is where stuff gets really interesting.
+
+119
+00:07:18,650 --> 00:07:19,160
+好的。
+OK.
+
+120
+00:07:19,280 --> 00:07:25,010
+您已经看到您在Kalkhoven上也使用了一个选项，所以COW命令我们给了它y
+You've seen you seen as use an option with the Kalkhoven as well so the cow command we gave it the y
+
+121
+00:07:25,010 --> 00:07:25,900
+之前的选项。
+option before.
+
+122
+00:07:25,970 --> 00:07:32,320
+好的，如果我默认这样做，破折号Y将显示当前年份的日历。
+OK so if I do it by default the dash Y will show the current year's calendar.
+
+123
+00:07:32,840 --> 00:07:33,340
+好的。
+OK.
+
+124
+00:07:33,450 --> 00:07:38,720
+我们已经成功地为命令命令提供了一个选项，您可以看到y选项具有
+So we've managed we gave the command command an option which the y option which you can see that has
+
+125
+00:07:38,720 --> 00:07:41,780
+前面有这个破折号，这在命令中很常见。
+been preceded by this dash and that's common for commands.
+
+126
+00:07:41,780 --> 00:07:44,980
+它们的前面往往有破折号、连字符和其他东西。
+They tend to be preceded by dashes and hyphens and things.
+
+127
+00:07:44,990 --> 00:07:49,730
+因此，我们来看一下date命令，以了解选项是如何更好地工作的。
+So let's take a look at the date command to understand how options work even better.
+
+128
+00:07:49,820 --> 00:07:50,240
+好的。
+OK.
+
+129
+00:07:50,330 --> 00:07:54,440
+默认情况下，日期将显示当前时区中的今天日期。
+Date by default will show today's date in our current time zone.
+
+130
+00:07:54,450 --> 00:07:59,630
+如果我说日期，这里是当前时区的日期和时间，显然
+So if I say date it says here's the here's the date and time in the current time zone which is apparently
+
+131
+00:07:59,630 --> 00:08:02,280
+英国夏令时好的。
+British Summer Time OK.
+
+132
+00:08:02,330 --> 00:08:10,920
+所以以世界时(如协调世界时或格林威治标准时间)获取日期，我们可以键入日期劈开，您可以
+So get the day in universal time such as UTC or Greenwich mean time we can type a date slash you and
+
+133
+00:08:10,920 --> 00:08:16,770
+我们现在可以看到我回去的那一天了，好的，因为我们现在是在UTC，而不是英国夏令时
+we can see now the day I was gone back one OK because now we're in UTC rather than British Summer Time
+
+134
+00:08:16,770 --> 00:08:19,470
+目前正处于我们的前锋位置。
+which is currently in our forward.
+
+135
+00:08:19,860 --> 00:08:22,470
+因此，我们为date命令提供了you选项。
+So we gave the date command the you option.
+
+136
+00:08:22,470 --> 00:08:25,770
+现在，如果我们有其他选项来给出命令，我们可以一个接一个地列出它们。
+Now if we had other options to give the commands we could list them right after one another.
+
+137
+00:08:25,770 --> 00:08:33,750
+例如，我们可以做日期劈开，破折号B，C，D，E，F，D，这会给它带来这些不同
+So for example we could do date slash dash a dash B C D E F D and this would give it these different
+
+138
+00:08:33,750 --> 00:08:38,570
+选项或选项B选项，查看选项d选项喷发f选项g选项。
+options or the option B option to see option the d option the eruption the f option the g option.
+
+139
+00:08:38,580 --> 00:08:39,040
+好的。
+OK.
+
+140
+00:08:39,090 --> 00:08:43,240
+或者更简单地说，你可以只做破折号A、B、C、D、G。
+Or more simply you could just do dash A B C D G.
+
+141
+00:08:43,300 --> 00:08:43,630
+好的。
+OK.
+
+142
+00:08:43,680 --> 00:08:44,900
+这是一条不错的捷径。
+That's a nice shortcut.
+
+143
+00:08:44,900 --> 00:08:46,580
+你可以把它们像那样粘在一起。
+You can just stick them all together like that.
+
+144
+00:08:46,650 --> 00:08:47,300
+好的。
+OK.
+
+145
+00:08:47,370 --> 00:08:49,390
+现在这个具体的例子不起作用了。
+Now the specific example doesn't work.
+
+146
+00:08:49,400 --> 00:08:55,380
+因此，如果我尝试这样做，它会显示无效选项，但它只是说明了如果您更改这些选项
+So if I try that it will say Invalid option but it just illustrates the point that if you change these
+
+147
+00:08:55,380 --> 00:09:00,060
+选项放在一起，实际上可以将它们链接在一起，顺序并不重要。
+options together you can actually chain them together and the order doesn't really matter.
+
+148
+00:09:00,060 --> 00:09:03,230
+这样我就可以约会了。
+So I could do date.
+
+149
+00:09:03,510 --> 00:09:07,740
+它会产生完全相同的效果。
+G d g f and it would have exactly the same effect.
+
+150
+00:09:07,800 --> 00:09:08,380
+好的。
+OK.
+
+151
+00:09:09,350 --> 00:09:09,990
+那好吧。
+All right then.
+
+152
+00:09:10,040 --> 00:09:13,370
+因此，现在有时很难理解这些选项的含义。
+So now it can be sometimes be difficult to understand what these options mean.
+
+153
+00:09:13,370 --> 00:09:16,790
+所以有时选项实际上有很长的表单名称。
+So sometimes options actually have long form names.
+
+154
+00:09:16,790 --> 00:09:19,720
+举个例子，数据槽你没问题。
+So for example data slots you ok.
+
+155
+00:09:19,950 --> 00:09:20,470
+抱歉的。
+Sorry.
+
+156
+00:09:20,570 --> 00:09:23,570
+这就给了它世界时的日期。
+Which gives it the date in universal time.
+
+157
+00:09:23,570 --> 00:09:29,560
+现在，您还可以执行DATE DASH、DASH、UBERNAL和LONG，并给出相同的输出。
+You can also do date dash dash universal now long and gives us the same output.
+
+158
+00:09:29,570 --> 00:09:38,690
+没有通用的长名称前面有两个破折号Z是通用的破折号，而短格式
+No universal long names are preceded by two dashes Z's a dash dash universal whereas the short form
+
+159
+00:09:38,840 --> 00:09:42,190
+选项只有一个字母，前面通常有一个破折号。
+options which are just one letter usually preceded by one dash.
+
+160
+00:09:42,310 --> 00:09:42,810
+好的。
+OK.
+
+161
+00:09:42,890 --> 00:09:47,690
+现在，长格式命令可以使命令更易于阅读，但并不是所有选项都可以使用它们。
+Now the long form commands can make commands easier to read but they're not available for all options.
+
+162
+00:09:47,690 --> 00:09:50,170
+这真的取决于您使用的命令。
+It really depends upon the command that you're using.
+
+163
+00:09:50,180 --> 00:09:56,140
+同样需要注意的是，对于短表单命令，我在一个破折号上使用了两个破折号来表示长表单。
+And again just note is the fact that I use two dashes for long forms on one dash for short form commands.
+
+164
+00:09:56,150 --> 00:10:00,760
+现在，如果您想要使用，例如，三个长形式选项，您需要这样做。
+Now if you wanted to use for example three long form options you need to do something like this.
+
+165
+00:10:00,830 --> 00:10:03,380
+所以它必须使用DATE DASH DASH Universal。
+So it has to do date dash dash universal.
+
+166
+00:10:03,470 --> 00:10:08,920
+这是一个长格式选项，然后是破折号长格式选项，然后是破折号长格式选项3。
+That's one long form option then dash dash long form option to then dash dash long form option 3.
+
+167
+00:10:08,930 --> 00:10:12,660
+您不能像使用缩写选项那样一起更改这些内容。
+You can't really change those together like you can with the short form options.
+
+168
+00:10:12,790 --> 00:10:13,170
+好的。
+OK.
+
+169
+00:10:13,280 --> 00:10:14,800
+所以这是行不通的。
+So that's not going to work.
+
+170
+00:10:14,810 --> 00:10:16,160
+但是你可以做的是缩写选项。
+But the short form options you can do.
+
+171
+00:10:16,160 --> 00:10:24,620
+戴夫·劈开a、b、c、d、f、g，但是使用长格式选项时，您必须将它们分开，只需使用通用破折号
+Dave slash a b c d e f g but with long form options you can have to separate them just universal dash
+
+172
+00:10:24,620 --> 00:10:29,860
+长划线选项2和长划线选项3。
+dash long form option 2 and dash dash long form option 3.
+
+173
+00:10:29,870 --> 00:10:31,550
+好的。
+OK.
+
+174
+00:10:31,650 --> 00:10:35,770
+现在，重要的是要知道Linux上的所有内容(包括命令)都区分大小写。
+Now it's important to know that everything on Linux including commands is case sensitive.
+
+175
+00:10:35,780 --> 00:10:38,920
+因此，例如，小写的date命令是有效的。
+So for example the date command in lowercase is valid.
+
+176
+00:10:38,960 --> 00:10:44,570
+因此，它们的组合和定位是有效的，但日期命令(如大写D)将无效。
+So they combine and locate is valid but the date command like with a capital D would not be valid.
+
+177
+00:10:44,570 --> 00:10:47,990
+日期命令我们想要一个大写的A，在这里也是无效的。
+The date command we'd like a capital A here that would not be valid either.
+
+178
+00:10:48,290 --> 00:10:53,480
+因此，您需要确保您的材料拼写正确，并且区分正确的大小写，并且
+So you need to make sure that you spell your stuff correctly and with the right case sensitivity and
+
+179
+00:10:53,480 --> 00:10:55,950
+选项和投入也是如此。
+that goes for options and inputs too.
+
+180
+00:10:56,000 --> 00:11:01,880
+所以不只是命令的名称和日期代码，例如，有一个新的选项，但我没有
+So it's not just the name of the commands and the date code on for example has a new option but I don't
+
+181
+00:11:01,880 --> 00:11:03,930
+认为它有一个大写的U选项c，它没有。
+think it has a capital U option c it doesn't.
+
+182
+00:11:03,930 --> 00:11:10,130
+所以按人均收入，它没有给我普遍的产出，因为它不知道它有资本
+So per capital human it didn't give me the universal output because it doesn't know that it has a capital
+
+183
+00:11:10,170 --> 00:11:10,630
+你。
+you.
+
+184
+00:11:10,660 --> 00:11:12,470
+我知道它有一个小写的选项。
+I knows that it has a lowercase you options.
+
+185
+00:11:12,480 --> 00:11:18,200
+请确保您的命令拼写区分大小写正确。
+Make sure that you spell your commands with the right case sensitivity.
+
+186
+00:11:18,200 --> 00:11:22,720
+现在唯一要知道的另一件事是，有时期权可以有自己的输入。
+Now the only other thing to know is that sometimes options can have their own inputs.
+
+187
+00:11:22,730 --> 00:11:26,170
+举个例子，如果我们去看一头牛，如果我们去了，我就去玩屏幕。
+So for example if we go to a cow I'm going to play the screen if we get to.
+
+188
+00:11:26,630 --> 00:11:33,460
+我们可以通过将其提供给当前12个2017年的投入来查看2017年12月的赤字，而不是选择
+We could see the of deficit for December 2017 by giving it to inputs right now 12 2017 not options to
+
+189
+00:11:33,470 --> 00:11:34,220
+输入。
+inputs.
+
+190
+00:11:34,430 --> 00:11:38,170
+但也有一个选项可以让我们在那之后的几个月里看到这一点。
+But there is an option that will allow us to see a certain amount of months after that too.
+
+191
+00:11:38,360 --> 00:11:46,940
+因此，例如，如果我做了COW，给了它一个资本的选择权，那么更确切地说，是第112个2017年。
+So for example if I did cow gave it the capital a option then rather number 1 12 2017.
+
+192
+00:11:47,180 --> 00:11:55,340
+好的，这将显示2017年12月，一个月后，选项提供给您，但我们做到了
+Okay this will show December 2017 with one month after and the the option gives you after but we did
+
+193
+00:11:55,360 --> 00:11:57,440
+它还需要知道几个月后。
+it also need to know how many months after.
+
+194
+00:11:57,470 --> 00:11:58,480
+所以我说了一个。
+So I said one.
+
+195
+00:11:58,550 --> 00:12:05,410
+所以这里的这个实际上是选项的输入，然后你就得到了命令的输入。
+So this one here is actually an input to the option and then you've got the inputs for the command.
+
+196
+00:12:05,660 --> 00:12:06,480
+好吧。
+Okay.
+
+197
+00:12:06,650 --> 00:12:08,120
+你也可以提前一个月展示。
+You can also show a month before.
+
+198
+00:12:08,120 --> 00:12:17,660
+例如，Kouddous为1 12 2017，它将向我们显示2017年12月27日设置为1
+So for example KOUDDOUS be 1 12 2017 that will show us December 27 set to in December 2017 with one
+
+199
+00:12:17,660 --> 00:12:27,070
+之前的一个月实际上也加在一起了，所以现在是2017年12月前一个月的一个月。
+month before it's actually also combined together so now one month after one month before December 2017.
+
+200
+00:12:27,350 --> 00:12:27,740
+好吧。
+Okay.
+
+201
+00:12:27,860 --> 00:12:32,960
+现在是2017年12月，之后的一个月通常是2018年，11月之前的一个月
+So now you've got December 2017 with one month after which is generally 2018 and one month before November
+
+202
+00:12:33,140 --> 00:12:34,160
+2017年。
+2017.
+
+203
+00:12:34,190 --> 00:12:39,140
+在这里，您可以看到如何使用自己的输入实际提供选项，以及如何使用选项
+So here you can see how you can actually provide options with their own inputs and how options are okay
+
+204
+00:12:39,140 --> 00:12:41,200
+在您发出命令时使用它自己的输入。
+to use when you give commands it's own input.
+
+205
+00:12:41,270 --> 00:12:44,450
+好的，你可以用这些不同的方法把这些东西组合在一起。
+Okay so you can use those different ways to combine this stuff together.
+
+206
+00:12:44,450 --> 00:12:49,820
+这里我们有A和B选项，有我们自己的输入，而COW On有它自己的两个输入
+So here we have the A and B options with our own inputs and the cow come on has its own two inputs 12
+
+207
+00:12:50,150 --> 00:12:52,320
+2017年是20到12个。
+and 20 so 12 in 2017.
+
+208
+00:12:52,580 --> 00:12:56,660
+所以这开始变得有点疯狂，就像它开始变得有点超前，有点毛茸茸的，但是
+So this is starting to get a bit crazy right like it's on to get a bit advanced and a bit hairy but
+
+209
+00:12:56,660 --> 00:13:01,360
+这才刚刚开始突显Linux命令实际上可以变得多么强大。
+this is just should just begin to highlight just how powerful Linux commands can actually become.
+
+210
+00:13:01,670 --> 00:13:05,660
+您可能需要知道的唯一另一件事是，有些命令允许您将等号
+And the only other thing you might need to know is that some commands allow you to put an equal sign
+
+211
+00:13:05,660 --> 00:13:10,580
+将这些选项与适当的部分更明确地匹配起来，使内容更易于阅读。
+to match up those options with the appropriate parts more explicitly to make stuff a bit easier to read.
+
+212
+00:13:10,580 --> 00:13:17,570
+这对牛不起作用，但如果真的这样做，那就像是先等一再等的牛。
+This doesn't work for cow but if it did it would be something like a cow after equals one before equals
+
+213
+00:13:17,580 --> 00:13:19,450
+2017年为112人。
+1 12 in 2017.
+
+214
+00:13:19,470 --> 00:13:24,040
+现在，这对COW不起作用，因为它是手册页，让它发生。
+Now that doesn't work for cow and because it's manual pages and let it happen.
+
+215
+00:13:24,380 --> 00:13:29,450
+所以我们只有12到17个不太起作用，但这就是它的工作方式，如果有可能的话
+So we only get 12 to 17 that didn't quite work but that's how it would work if it was possible for the
+
+216
+00:13:29,640 --> 00:13:30,030
+指挥部。
+command.
+
+217
+00:13:30,050 --> 00:13:34,870
+它不会的，你知道，这可能会使它更容易阅读，选项与
+And it won't you know it might just make it a bit easier to read the options are linked up with the
+
+218
+00:13:34,880 --> 00:13:36,550
+适当的投入。
+appropriate inputs.
+
+219
+00:13:36,650 --> 00:13:42,380
+如果有长形式选项，您会做一些类似于牛短划线的操作，然后再进行等于一个短划线的操作
+If there were long form options you would do something like cow dash dash before equals one dash dash
+
+220
+00:13:42,470 --> 00:13:45,680
+在等于1和1220：17之后。
+after equals 1 and 12 20:17.
+
+221
+00:13:45,680 --> 00:13:52,240
+在这里，您知道您有长表单选项也与它们的输入相链接，这是不可能的
+So here you know you've got long form options also being linked with their inputs again that's not possible
+
+222
+00:13:52,240 --> 00:13:52,690
+为了那头牛。
+for the cow.
+
+223
+00:13:52,690 --> 00:13:55,760
+来吧，具体地说，你可以看到这样的功能是如何。
+Come on specifically you can see how features like that.
+
+224
+00:13:55,930 --> 00:14:01,330
+您知道，将输入与实际选项连接起来可以使命令更易于阅读。
+You know joining up the inputs with the actual options can make commands easier to read.
+
+225
+00:14:02,540 --> 00:14:07,520
+在这段相当深入的视频中，你已经了解到命令基本上被分解成
+So in this admittedly rather in-depth video you've learned that commands are basically broken up into
+
+226
+00:14:07,520 --> 00:14:08,920
+三个主要部分。
+three main parts.
+
+227
+00:14:08,930 --> 00:14:15,170
+首先是命令名，然后是一些前面有破折号和连字符的选项。
+First you've got the command name then you've got some options which are preceded by dashes and hyphens.
+
+228
+00:14:15,290 --> 00:14:18,380
+然后，您还可以获得该命令的一些输入。
+And you've also then got some inputs for the command.
+
+229
+00:14:18,380 --> 00:14:23,260
+现在，命令名需要与工具架搜索路径上的程序匹配。
+Now the command name needs to match a program that is on the shelf search path.
+
+230
+00:14:23,320 --> 00:14:27,600
+现在，路径只是存储在shell中的一段文本，其中列出了一堆文件夹。
+Now the path is just a piece of text that stored in the shell that lists a bunch of folders.
+
+231
+00:14:27,590 --> 00:14:32,870
+外壳程序将从左到右开始搜索，每个文件夹之间用冒号分隔
+The shell will start searching from the left to the right separating each folder with a colon which
+
+232
+00:14:32,870 --> 00:14:34,280
+就是两个点叠加在一起。
+is the two dots on top of each other.
+
+233
+00:14:34,310 --> 00:14:39,350
+如果外壳程序找到合适的程序，则该程序将运行，并且外壳程序将传递到
+And if the shell finds an appropriate program then that program will run and the shell will pass to
+
+234
+00:14:39,350 --> 00:14:40,280
+那个节目。
+that program.
+
+235
+00:14:40,310 --> 00:14:43,290
+您在命令中提供的任何输入。
+Any inputs that you have given in the command.
+
+236
+00:14:43,430 --> 00:14:48,460
+确定，这样您现在也可以使用选项自定义命令的行为。
+OK so you can also customize a Command's behavior using options now.
+
+237
+00:14:48,470 --> 00:14:55,250
+选项通常只是用连字符分隔的字母，因此您在最上面看到的破折号
+Options are usually just letters that are separated by hyphens so a dash like you see at the very top
+
+238
+00:14:55,250 --> 00:15:01,850
+在此处的摘要幻灯片中，您可以在每个选项前面加上破折号，也可以更改小字母
+of the summary slide here you give each option a dash before it or you can change the little letters
+
+239
+00:15:01,850 --> 00:15:03,290
+一气呵成。
+together in one go.
+
+240
+00:15:03,290 --> 00:15:04,690
+顺序并不重要。
+The order does not matter.
+
+241
+00:15:04,790 --> 00:15:10,730
+有时它们有很长的表单版本，需要两个破折号，但允许您更容易地使用
+And sometimes they have long form versions which are need two dashes but allow you to use easier to
+
+242
+00:15:10,730 --> 00:15:15,660
+阅读单词，这样就可以使用破折号Universal，而不是用Dasch来代替通用选项。
+read words so instead of having Dasch you for the universal option you can use dash dash universal.
+
+243
+00:15:15,740 --> 00:15:19,690
+好的，但这真的取决于命令是否允许这样做。
+OK but that really depends on whether the command allows that to be possible.
+
+244
+00:15:19,760 --> 00:15:21,870
+而且每个命令都略有不同。
+And each command is slightly different.
+
+245
+00:15:21,980 --> 00:15:27,080
+在这段视频中，有一件事变得非常清楚，那就是每个命令的行为都非常不同
+And one thing that became very clear in this video is that each command behaves very differently to
+
+246
+00:15:27,140 --> 00:15:28,160
+其他命令。
+other commands.
+
+247
+00:15:28,160 --> 00:15:32,030
+因此，例如，一些命令可以接受多个输入，而另一些命令则不接受任何输入。
+So for example some commands can take multiple inputs and others take none.
+
+248
+00:15:32,030 --> 00:15:34,970
+一些可以采用长表单选项，而另一些则不能。
+Some can take long form options and others can't.
+
+249
+00:15:34,970 --> 00:15:39,870
+有些可以用等号将选项输入与适当的选项相匹配，而另一些则不能。
+Some can have an equal sign to match option inputs with the appropriate option and others can't.
+
+250
+00:15:39,890 --> 00:15:45,560
+现在您理解了最重要的命令名，然后是选项，然后是输入该命令的结构
+So now that you understand the overarching command name then options then input structure that commands
+
+251
+00:15:45,560 --> 00:15:49,720
+遵循和实现它的不同方式，以及你拥有的不同选择。
+follow and the different ways of implementing that and the different options that you've got.
+
+252
+00:15:49,790 --> 00:15:55,190
+如何知道某个特定命令可能执行的操作以及如何使用每个特定命令。
+How can you know what is possible for a specific command and how you use each specific command.
+
+253
+00:15:55,190 --> 00:15:59,870
+实际上，每个命令在手册页上都有自己的手册页。
+Well each command actually comes with their own manual page on man page for short.
+
+254
+00:15:59,870 --> 00:16:01,480
+告诉你如何使用它们。
+That shows you how to use them.
+
+255
+00:16:01,520 --> 00:16:05,830
+在下一个视频中，我将向您展示如何访问和阅读手册页。
+And in the next video I'm going to show you how to access and read the man pages.
+
+256
+00:16:05,840 --> 00:16:10,820
+所以，想象一下，在一大堆计算机程序上，所有的细节都只是坐在那里等待
+So just imagine having all the deets on a big catalog of computer programs just sat there waiting to
+
+257
+00:16:10,820 --> 00:16:15,890
+使用手册页进行探索将彻底改变您的游戏规则，如果您想成为
+be explored using the man pages is going to be a complete game changer for you if you want to become
+
+258
+00:16:15,950 --> 00:16:18,590
+独立于您使用Linux操作系统的方式。
+independent in the way that you use the Linux operating system.
+
+259
+00:16:18,650 --> 00:16:20,110
+我真的迫不及待想给你看了。
+And I really can't wait to show it to you.
+
+260
+00:16:20,110 --> 00:16:23,550
+所以出于好意，我会在下一个视频中见到你。
+So for that goodness I'll see you in the next video.
+

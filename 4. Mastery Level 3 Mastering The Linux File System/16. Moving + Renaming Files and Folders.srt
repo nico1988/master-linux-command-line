@@ -1,0 +1,459 @@
+1
+00:00:00,330 --> 00:00:04,830
+Hello you beautiful people and welcome to this video where you're going to learn everything you need
+
+2
+00:00:04,830 --> 00:00:10,380
+to know all about moving and renaming files and directories using the command line.
+
+3
+00:00:10,380 --> 00:00:15,570
+Now the interesting thing is both of these functions can be completed with just one command.
+
+4
+00:00:15,570 --> 00:00:21,200
+So in this video you're going to learn how to use the envie command to move and rename files and folders.
+
+5
+00:00:21,360 --> 00:00:25,980
+And by learning the one command we're going to cover in this video you're going to gain two very important
+
+6
+00:00:25,980 --> 00:00:28,270
+abilities for working with your file system.
+
+7
+00:00:28,290 --> 00:00:29,410
+Talk about efficiency.
+
+8
+00:00:29,610 --> 00:00:32,010
+So let's go ahead and get right into it.
+
+9
+00:00:33,930 --> 00:00:34,280
+OK.
+
+10
+00:00:34,300 --> 00:00:38,350
+So let's first talk about renaming files now on the desktop.
+
+11
+00:00:38,350 --> 00:00:45,710
+I have a file called old name Dotti XTi and I want to rename it to be called new name Datti XTi.
+
+12
+00:00:45,910 --> 00:00:46,840
+Very imaginative.
+
+13
+00:00:46,870 --> 00:00:47,560
+I know.
+
+14
+00:00:47,680 --> 00:00:49,930
+Now to do this do this rename.
+
+15
+00:00:49,960 --> 00:00:52,790
+It's really very simple to do using the M.V. command.
+
+16
+00:00:52,780 --> 00:00:54,240
+So first we get to the desktop.
+
+17
+00:00:54,400 --> 00:00:57,770
+OK so now I'm on the desktop where the files actually are.
+
+18
+00:00:58,030 --> 00:01:01,320
+And to rename all name to the new name.
+
+19
+00:01:01,390 --> 00:01:09,460
+All I have to do is just do envy then old name Datti XTi which is the current name of the file and then
+
+20
+00:01:09,460 --> 00:01:13,100
+give it its nooning which is the new name Datti XTi.
+
+21
+00:01:13,120 --> 00:01:17,700
+And when I press Enter you'll see that the file has been renamed.
+
+22
+00:01:17,860 --> 00:01:18,180
+OK.
+
+23
+00:01:18,190 --> 00:01:20,040
+And we can see that using the LS commands.
+
+24
+00:01:20,040 --> 00:01:26,380
+Well it's now a new name Dottie XTi simple and the same thing works for directories so I have a folder
+
+25
+00:01:26,380 --> 00:01:28,020
+here called old folder.
+
+26
+00:01:28,210 --> 00:01:36,370
+And as we can see old folder actually contains a few files so it's got file one to fall 10 inside there.
+
+27
+00:01:36,450 --> 00:01:36,930
+OK.
+
+28
+00:01:37,060 --> 00:01:37,880
+Now to rename.
+
+29
+00:01:37,890 --> 00:01:41,380
+Old folder to be called new folder and clear the screen.
+
+30
+00:01:41,470 --> 00:01:49,270
+All you need to do is move old folder folder and when I press Enter we can see that the folder has been
+
+31
+00:01:49,270 --> 00:01:52,570
+renamed and it's just that simple.
+
+32
+00:01:52,770 --> 00:01:58,960
+And even though we've just changed the name of the folder if we open it up all the files are still in
+
+33
+00:01:58,960 --> 00:02:01,540
+there exactly as they were before.
+
+34
+00:02:01,540 --> 00:02:05,670
+So renaming folders doesn't damage any of the contents inside.
+
+35
+00:02:05,680 --> 00:02:11,850
+So with that said how can we move files from one folder into another folder.
+
+36
+00:02:11,860 --> 00:02:13,660
+This is also actually really simple.
+
+37
+00:02:13,660 --> 00:02:18,670
+All we need to do is give the move command what we wanted to move and then the directory that we wanted
+
+38
+00:02:18,670 --> 00:02:19,390
+to move them to.
+
+39
+00:02:19,390 --> 00:02:24,220
+So this is very similar to the copy command with the copy command you gave it a list of all the things
+
+40
+00:02:24,220 --> 00:02:29,140
+you wanted to copy and then the final command line argument you gave it was where you wanted to move
+
+41
+00:02:29,140 --> 00:02:30,820
+it to copy it to sorry.
+
+42
+00:02:30,820 --> 00:02:32,710
+And it's the same idea with the move command.
+
+43
+00:02:32,710 --> 00:02:41,020
+OK so if we want to move everything from a new folder onto the desktop then all we have to do is say
+
+44
+00:02:41,320 --> 00:02:44,800
+move from new folder OK move new folder.
+
+45
+00:02:44,890 --> 00:02:48,380
+Everything in there to here which is the desktop.
+
+46
+00:02:48,480 --> 00:02:48,720
+OK.
+
+47
+00:02:48,730 --> 00:02:52,330
+So the doctor Remember means the current working directory.
+
+48
+00:02:52,330 --> 00:02:55,220
+And this is you can see from the shell prompt that is the desktop.
+
+49
+00:02:55,220 --> 00:02:59,890
+So what we're saying is move everything from within new folder to the current working directory which
+
+50
+00:02:59,890 --> 00:03:02,150
+is the desktop option if I press enter.
+
+51
+00:03:02,290 --> 00:03:08,320
+You'll see that all of the files have been shifted onto onto the desktop which we can see using.
+
+52
+00:03:08,350 --> 00:03:10,550
+Alas we've got a one to 10.
+
+53
+00:03:10,840 --> 00:03:14,590
+And if we look inside New Folder we can see that they haven't just been copied.
+
+54
+00:03:14,590 --> 00:03:19,320
+They have indeed been moved because the folder is completely empty.
+
+55
+00:03:20,930 --> 00:03:24,690
+OK so let's move all of these files back into a new folder.
+
+56
+00:03:24,690 --> 00:03:30,980
+So if I move everything that starts with file back into new folder that should take care of all that.
+
+57
+00:03:30,980 --> 00:03:35,190
+So there we go we've moved them all back into this new folder folder.
+
+58
+00:03:35,330 --> 00:03:35,840
+OK.
+
+59
+00:03:35,960 --> 00:03:40,380
+Now how can we move the whole of new folder just as Wonga.
+
+60
+00:03:40,380 --> 00:03:44,640
+How can we move this into our documents folder for example.
+
+61
+00:03:44,720 --> 00:03:46,110
+Well that's really easy to do as well.
+
+62
+00:03:46,250 --> 00:03:48,560
+And it works just like you might expect.
+
+63
+00:03:48,560 --> 00:03:54,890
+We just do move new folder and where's our destination when we want it to go into the documents folder
+
+64
+00:03:55,160 --> 00:03:56,650
+which is in our home directory.
+
+65
+00:03:56,660 --> 00:04:02,870
+So we put the tilter to say our home directory slash and then documents so the documents folder inside
+
+66
+00:04:02,910 --> 00:04:09,590
+our home directory we press enter and then when we look inside our home directory and go into our documents
+
+67
+00:04:09,590 --> 00:04:15,990
+folder there we are there's new folder sitting there all intact.
+
+68
+00:04:16,010 --> 00:04:23,030
+So now for the jackpot how can I move a new folder inside of documents or move it somewhere and rename
+
+69
+00:04:23,030 --> 00:04:24,290
+it at the same time.
+
+70
+00:04:24,290 --> 00:04:30,800
+So let's say I want to move it from our documents folder to the desktop and rename it to the jackpot
+
+71
+00:04:31,070 --> 00:04:32,090
+at the same time.
+
+72
+00:04:32,090 --> 00:04:33,070
+So how would we do that.
+
+73
+00:04:33,290 --> 00:04:36,950
+Well first we need to sell it we sell and move on what we want to move.
+
+74
+00:04:36,950 --> 00:04:43,130
+So let's say we want to move the new folder folder inside our documents folder.
+
+75
+00:04:43,160 --> 00:04:47,540
+And this is something you should be comfortable with by the way using the tilter to represent your home
+
+76
+00:04:47,540 --> 00:04:51,680
+folder then documents then new folder.
+
+77
+00:04:51,760 --> 00:04:52,210
+OK.
+
+78
+00:04:52,310 --> 00:04:56,660
+The slash at the end is optional but I think it comes with the table to completion so we'll well we'll
+
+79
+00:04:56,660 --> 00:04:57,220
+leave it there.
+
+80
+00:04:57,280 --> 00:04:57,890
+OK.
+
+81
+00:04:58,010 --> 00:04:59,970
+Now where do we want to move it to.
+
+82
+00:04:59,980 --> 00:05:06,170
+We want to move it to our desktop so we could say the current working directory because as you can see
+
+83
+00:05:06,170 --> 00:05:07,190
+we're on the desktop.
+
+84
+00:05:07,340 --> 00:05:13,990
+So we're going to get the current working directory but we're going to call it jackpot.
+
+85
+00:05:14,640 --> 00:05:19,470
+So jackpot now because the jackpot folder doesn't exist.
+
+86
+00:05:19,520 --> 00:05:22,280
+New Folder will become jackpot.
+
+87
+00:05:22,310 --> 00:05:26,250
+If I press Enter we'll see that jackpot has been created.
+
+88
+00:05:26,360 --> 00:05:30,950
+Inside there are all the content or every single one of the files from new folder.
+
+89
+00:05:30,950 --> 00:05:35,630
+And if we go back into our documents we will see that new folder is no longer there.
+
+90
+00:05:35,630 --> 00:05:36,680
+So what happened.
+
+91
+00:05:36,890 --> 00:05:43,820
+We said move the new folder folder from within our documents folder and put it in this directory which
+
+92
+00:05:43,820 --> 00:05:44,660
+is the desktop.
+
+93
+00:05:44,810 --> 00:05:48,070
+But as as a folder called jackpot.
+
+94
+00:05:48,170 --> 00:05:52,340
+So that is how you can move a folder and rename it at the same time.
+
+95
+00:05:52,340 --> 00:05:53,560
+Pretty awesome stuff right.
+
+96
+00:05:55,140 --> 00:05:56,310
+So there you have it.
+
+97
+00:05:56,310 --> 00:06:01,200
+The M.V. command is a very simple but very effective command for anything that you'll ever need to do
+
+98
+00:06:01,410 --> 00:06:03,230
+with moving or renaming files.
+
+99
+00:06:03,360 --> 00:06:08,110
+And in this video you've seen how to move and rename files and directories using the ENVI command.
+
+100
+00:06:08,190 --> 00:06:09,410
+And this is how it works.
+
+101
+00:06:09,420 --> 00:06:15,060
+So if you want to move files and directories first you type the M.V. command then you give it command
+
+102
+00:06:15,060 --> 00:06:15,990
+line arguments.
+
+103
+00:06:15,990 --> 00:06:20,130
+Everything that you want to move and you can give it multiple of those and then the final command line
+
+104
+00:06:20,130 --> 00:06:23,780
+argument is the destination of where you want to move all of those things to.
+
+105
+00:06:24,000 --> 00:06:28,950
+And if you want to rename files and directories we can only do one at a time but you give it what you
+
+106
+00:06:28,950 --> 00:06:35,010
+want to rename and then the new name and location if you want to move and rename at the same time and
+
+107
+00:06:35,010 --> 00:06:37,120
+you've seen how to do that in this video.
+
+108
+00:06:37,140 --> 00:06:42,720
+So just remember that if you have want to move or rename a file the NV command is what you need.
+
+109
+00:06:42,750 --> 00:06:46,560
+So in the last few videos you've learned how to modify the file tree quite a lot.
+
+110
+00:06:46,680 --> 00:06:50,850
+You can now create files and directories using the touch and and KTAR commands.
+
+111
+00:06:51,090 --> 00:06:56,340
+You can delete files and directories using the Ahriman or MDR commands you can copy files and directories
+
+112
+00:06:56,340 --> 00:07:01,380
+using the C.P. command and you can even move and rename files and directories using the command.
+
+113
+00:07:01,590 --> 00:07:06,240
+Well in the next video you're going to learn how to actually edit these files using the command line.
+
+114
+00:07:06,240 --> 00:07:10,570
+Now obviously this is going to be something that you'll do all the time.
+
+115
+00:07:10,650 --> 00:07:13,770
+So for all that good stuff I'll see you in the next video.

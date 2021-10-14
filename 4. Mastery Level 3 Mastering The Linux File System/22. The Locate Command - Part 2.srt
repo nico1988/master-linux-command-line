@@ -1,0 +1,475 @@
+1
+00:00:00,540 --> 00:00:06,210
+Hello you beautiful people so in this video we're going to be finishing off our discussion of the locate
+
+2
+00:00:06,210 --> 00:00:12,940
+command and in particular you're going to learn how to update the database using the update d be command.
+
+3
+00:00:13,030 --> 00:00:17,490
+And you're also going to learn in the process how to gain super user privileges.
+
+4
+00:00:17,490 --> 00:00:20,630
+So administrator privileges using the sudo command.
+
+5
+00:00:20,630 --> 00:00:25,350
+So this is going to be a very important lecture touching not only on how to make the most out of the
+
+6
+00:00:25,350 --> 00:00:31,310
+locate command but also giving you an absolute nugget of information on how to gain administrator privileges
+
+7
+00:00:31,320 --> 00:00:36,630
+which is such a useful thing to be able to do more higher level things on your system.
+
+8
+00:00:36,630 --> 00:00:40,680
+So by the end of this video you're going to know how to update the database at the locate command uses.
+
+9
+00:00:40,740 --> 00:00:46,020
+So the locate command always gives you accurate and correct results and you also know how to run administrator
+
+10
+00:00:46,020 --> 00:00:47,520
+commands using sudo.
+
+11
+00:00:47,520 --> 00:00:49,270
+So this is going to be a very important lecture.
+
+12
+00:00:49,380 --> 00:00:51,270
+Let's go ahead and jump right into it.
+
+13
+00:00:52,300 --> 00:00:52,690
+OK.
+
+14
+00:00:52,720 --> 00:00:59,190
+So let's start learning about the update D-B command which is short for update database Hebel name right.
+
+15
+00:00:59,380 --> 00:01:05,410
+So let's create a new file on our desktops and move to our desktop and we're going to create a new file
+
+16
+00:01:05,410 --> 00:01:11,510
+called Find me Dr. XTi so we can use the touch command find me Pontiac's T.
+
+17
+00:01:11,550 --> 00:01:15,500
+And there we are we have a file called Finding activity on our desktop.
+
+18
+00:01:15,520 --> 00:01:25,540
+Now if I try and run the locate command because this find me file has been created before our database
+
+19
+00:01:25,540 --> 00:01:31,060
+has been updated and the locate command won't be able to find it in the database if I try and locate
+
+20
+00:01:31,060 --> 00:01:32,200
+find me not here.
+
+21
+00:01:32,320 --> 00:01:34,510
+We'll see if we get absolutely nothing back.
+
+22
+00:01:34,600 --> 00:01:35,110
+OK.
+
+23
+00:01:35,170 --> 00:01:42,140
+Even though the file exists it's not been entered into the database yet and therefore it the location
+
+24
+00:01:42,180 --> 00:01:43,900
+can't find it by searching the database.
+
+25
+00:01:43,980 --> 00:01:44,440
+OK.
+
+26
+00:01:44,620 --> 00:01:49,530
+So to update the database were added to the database we need to update the database.
+
+27
+00:01:49,570 --> 00:01:53,770
+And that's where the update D-B come command comes in.
+
+28
+00:01:53,770 --> 00:01:59,770
+So if we try it will notice that we actually get an error and the error says that the shell cannot open
+
+29
+00:02:00,580 --> 00:02:02,530
+the actual database file.
+
+30
+00:02:02,680 --> 00:02:07,840
+And the reason for that is the update D-B command requires administrator privileges in order to run
+
+31
+00:02:08,020 --> 00:02:14,470
+and we can see this by looking at the man page for the update D-B command and we see at the top of the
+
+32
+00:02:14,470 --> 00:02:21,730
+update D-B command that is in the system managers section it's in Section 8 of the manual.
+
+33
+00:02:21,730 --> 00:02:27,490
+And that means it requires elevated privileges in order to run and you can see here what I was saying
+
+34
+00:02:27,490 --> 00:02:30,150
+about Update D-B being run daily.
+
+35
+00:02:30,190 --> 00:02:32,360
+So you can read more about that if you like.
+
+36
+00:02:32,440 --> 00:02:37,030
+But the important thing here is that it's in Section 8 of the manual and therefore requires administrator
+
+37
+00:02:37,030 --> 00:02:41,580
+privileges in order to run and refer back to the Chichi about the manual structure.
+
+38
+00:02:41,580 --> 00:02:45,280
+If that if you need a bit of reminder of that and what the sections of the manual do.
+
+39
+00:02:45,420 --> 00:02:45,790
+OK.
+
+40
+00:02:46,000 --> 00:02:51,260
+So how can we get the administrative privileges in order to run this command.
+
+41
+00:02:51,550 --> 00:02:59,680
+Well to do that you use the pseudo command I'm not sure if it's pronounced sudo or su do but am I.
+
+42
+00:03:00,050 --> 00:03:02,070
+I like sudo so we'll stick with that.
+
+43
+00:03:02,240 --> 00:03:09,130
+So the sudo command is very simple you just write it before any command you want to run as the administrator.
+
+44
+00:03:09,140 --> 00:03:11,890
+So I'm going to type update debate and that's it.
+
+45
+00:03:11,960 --> 00:03:12,630
+OK.
+
+46
+00:03:12,710 --> 00:03:18,740
+Now when I do that because we're trying to get administrator privileges and the sudo command is going
+
+47
+00:03:18,740 --> 00:03:24,950
+to ask us for our password to enter my password which is the password I just use normally to log in
+
+48
+00:03:25,430 --> 00:03:26,550
+to the next computer.
+
+49
+00:03:26,660 --> 00:03:30,260
+But you know it's that we don't see any password being typed out.
+
+50
+00:03:30,260 --> 00:03:34,420
+Now this is a security feature that's built into the shell that stops people from knowing the length
+
+51
+00:03:34,470 --> 00:03:35,660
+of your passwords.
+
+52
+00:03:35,660 --> 00:03:41,030
+And the reason is that if people know the length of your password it makes cracking it so much easier.
+
+53
+00:03:41,030 --> 00:03:42,890
+So don't worry that you don't see any feedback.
+
+54
+00:03:42,890 --> 00:03:47,990
+Just type your password type the password is being accepted by the shell when you've done that press
+
+55
+00:03:48,110 --> 00:03:55,250
+enter and we'll see that the shell will pause for a bit as it updates the database.
+
+56
+00:03:55,250 --> 00:03:59,900
+And then we have a shell prompt backed ad which lets us know that the command has completed.
+
+57
+00:03:59,900 --> 00:04:04,880
+So now that we've updated our database they find me file should be in the database now.
+
+58
+00:04:04,880 --> 00:04:13,300
+So let's try and see if the locate command can find it let's type locate find me find me that text.
+
+59
+00:04:13,490 --> 00:04:18,830
+When I press Enter you'll see that yes it did find it this time it tells us it's on our desktop and
+
+60
+00:04:18,830 --> 00:04:21,570
+it's called Find me not text and we don't have to be on the desktop.
+
+61
+00:04:21,570 --> 00:04:26,120
+We could be in our let's say in our documents folder.
+
+62
+00:04:26,200 --> 00:04:27,740
+We can press Primack and directory.
+
+63
+00:04:27,740 --> 00:04:29,180
+We see that in our documents.
+
+64
+00:04:29,180 --> 00:04:36,200
+But if I do locate find me anything like that and you say it comes up with slush home slashes the odd
+
+65
+00:04:36,260 --> 00:04:43,360
+slash desktop slash find me dot XTi So it tells us where the where the actual file is.
+
+66
+00:04:43,370 --> 00:04:48,200
+Now if we take a look at the database file as well let's just head back to our desktop for a minute
+
+67
+00:04:49,610 --> 00:04:54,790
+and let's take a look at the database file so we use locate with a capital S option.
+
+68
+00:04:55,100 --> 00:05:03,770
+We can see that actually this is changed if I save that as data base after Dr. XTi.
+
+69
+00:05:03,800 --> 00:05:08,540
+So here we are we've got a database before and database after if I open up a database before we see
+
+70
+00:05:08,540 --> 00:05:14,540
+that we have what sixteen thousand eight directories one four thousand eight hundred fifty three files
+
+71
+00:05:14,960 --> 00:05:15,890
+and whatever else.
+
+72
+00:05:15,890 --> 00:05:20,490
+Now if I try to open up afterwards we can see here that we've got this before.
+
+73
+00:05:20,660 --> 00:05:23,740
+Forty four thousand eight hundred fifty three files afterwards.
+
+74
+00:05:23,750 --> 00:05:26,410
+Under-vote four thousand eight hundred forty eight.
+
+75
+00:05:26,450 --> 00:05:34,180
+So it looks like some files have actually been deleted or something from the System 7 have what seven
+
+76
+00:05:34,190 --> 00:05:39,720
+million five in 2008 and 26 bytes afterwards.
+
+77
+00:05:40,160 --> 00:05:46,960
+Yeah it actually looks as though since we last updated the database some files have indeed been deleted.
+
+78
+00:05:47,210 --> 00:05:50,840
+So maybe there was some temporary files in operation or something like that but you can see that the
+
+79
+00:05:50,840 --> 00:05:54,410
+size of the database does change when you update it.
+
+80
+00:05:54,500 --> 00:05:55,190
+OK.
+
+81
+00:05:55,370 --> 00:06:02,570
+But if I do that again if I do database after two and take a look there should be absolutely no difference
+
+82
+00:06:02,870 --> 00:06:03,950
+between these two.
+
+83
+00:06:03,950 --> 00:06:11,330
+So this is day base after and I look at database after two and will see that they are actually exactly
+
+84
+00:06:11,330 --> 00:06:11,910
+the same.
+
+85
+00:06:12,080 --> 00:06:12,550
+OK.
+
+86
+00:06:12,650 --> 00:06:20,240
+So when you update the database it does indeed change now because the update D-B command needs administrator
+
+87
+00:06:20,240 --> 00:06:22,700
+privileges or root privileges in order to run.
+
+88
+00:06:22,700 --> 00:06:28,520
+You can see why the existing and follow options exist for the locate command so you can see why these
+
+89
+00:06:28,520 --> 00:06:35,120
+ones exist existing and follow them so that when you're waiting for your administrator to update the
+
+90
+00:06:35,120 --> 00:06:41,990
+database you as a regular user can still get on with your work even if you know you don't have administrator
+
+91
+00:06:41,990 --> 00:06:42,710
+privileges.
+
+92
+00:06:42,830 --> 00:06:47,480
+You could just get on with your work while the administrator is you know probably catching up on emails
+
+93
+00:06:47,480 --> 00:06:49,110
+or something pretty clever right.
+
+94
+00:06:50,190 --> 00:06:53,200
+So you've learnt a lot about the locate command in the past few videos.
+
+95
+00:06:53,220 --> 00:06:57,200
+So let's just take a quick recap of what you've learned to make sure that you've got it all.
+
+96
+00:06:57,270 --> 00:07:02,640
+First of all the locate command search is a database that stored on your computer for the first four
+
+97
+00:07:02,640 --> 00:07:08,790
+files matching the pattern that you give it returns a list of results and using a database is a very
+
+98
+00:07:08,790 --> 00:07:14,610
+fast method of searching but it requires that the database be updated in order to give you a complete
+
+99
+00:07:14,670 --> 00:07:16,740
+and correct list of results.
+
+100
+00:07:16,740 --> 00:07:23,730
+Now you can protect yourself against errors using the existing and follow options for the from the locate
+
+101
+00:07:23,730 --> 00:07:24,170
+command.
+
+102
+00:07:24,270 --> 00:07:28,350
+But that's not really the best solution the best thing to do is just to update the database using the
+
+103
+00:07:28,350 --> 00:07:30,180
+update DB command.
+
+104
+00:07:30,240 --> 00:07:33,330
+But this is done automatically daily as well.
+
+105
+00:07:33,330 --> 00:07:38,850
+Now in order to do that it does require administrative administrative privileges or privileges or super
+
+106
+00:07:38,850 --> 00:07:40,760
+user privileges whatever you want to call it.
+
+107
+00:07:40,920 --> 00:07:47,620
+And therefore you need to use the sudo command the sudo command in order to actually gain those privileges.
+
+108
+00:07:47,640 --> 00:07:51,030
+Enter your password and then the command is ran as the administrator.
+
+109
+00:07:51,030 --> 00:07:56,400
+So in order to update that base you don't just type update debug you type sudo update DBI enter your
+
+110
+00:07:56,400 --> 00:08:01,530
+password and then the database is up dated and then you can use the locate command from that point on
+
+111
+00:08:01,540 --> 00:08:05,390
+and know that your results will be 100 percent correct and up to date.
+
+112
+00:08:05,430 --> 00:08:09,980
+So Lowkey is a fantastically useful command and I use it all the time.
+
+113
+00:08:09,990 --> 00:08:14,790
+It's really quick to use but there's another command that doesn't require a database and it can actually
+
+114
+00:08:14,790 --> 00:08:16,940
+be way way more powerful.
+
+115
+00:08:17,100 --> 00:08:20,520
+It's called Find command and we'll be covering that in the next video.
+
+116
+00:08:20,730 --> 00:08:21,750
+So it's amazing.
+
+117
+00:08:21,750 --> 00:08:25,390
+It really really is cool you can do such powerful things with it in a calm way to show you.
+
+118
+00:08:25,410 --> 00:08:26,510
+So for all that good stuff.
+
+119
+00:08:26,550 --> 00:08:28,210
+I'll see you in the next video.

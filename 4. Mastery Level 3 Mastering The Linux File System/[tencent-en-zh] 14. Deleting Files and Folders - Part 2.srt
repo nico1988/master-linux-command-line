@@ -1,0 +1,940 @@
+1
+00:00:00,360 --> 00:00:01,800
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,800 --> 00:00:06,450
+欢迎收看这段视频，在这段视频中，我们将结束关于如何删除文件的讨论
+And welcome to this video where we're going to be finishing off our discussion of how to delete files
+
+3
+00:00:06,540 --> 00:00:08,900
+以及使用命令行的目录。
+and directories using the command line.
+
+4
+00:00:09,000 --> 00:00:15,250
+因此，在这个视频中，您将学习如何使用Ahram和MDR命令来删除文件夹。
+So in this video you're going to learn how to use the Ahram and are MDR commands to delete folders.
+
+5
+00:00:15,280 --> 00:00:19,140
+在本视频结束时，您将了解有关删除文件所需了解的几乎所有内容
+And by the end of this video you'll know pretty much everything you need to know about deleting files
+
+6
+00:00:19,200 --> 00:00:21,330
+以及使用命令行的文件夹。
+and folders using the command line.
+
+7
+00:00:21,420 --> 00:00:25,260
+所以，让我们继续直截了当地谈吧。
+So let's go ahead and get right into it.
+
+8
+00:00:25,260 --> 00:00:31,940
+好的，让我们首先在主目录中创建一个名为Del Folder的文件夹。
+All right so let's start off by creating a folder in our home directory called Del folder.
+
+9
+00:00:31,950 --> 00:00:38,730
+因此，如果我使用mkdir命令并键入Del Folder，我们将看到我们在
+So if I use the mkdir command and type Del folder we'll see that we created a new folder inside our
+
+10
+00:00:38,730 --> 00:00:40,530
+名为Del Folder的主目录。
+home directory called Del folder.
+
+11
+00:00:40,630 --> 00:00:41,040
+好的。
+OK.
+
+12
+00:00:41,220 --> 00:00:42,320
+所以我们把它移走吧。
+So let's remove it.
+
+13
+00:00:42,390 --> 00:00:49,160
+好的，现在我们要做的就是删除它，再次使用r.m命令来使用Ahram和del
+OK now all we have to do actually to remove it is use the r.m command again for use Ahram and use del
+
+14
+00:00:49,170 --> 00:00:52,270
+文件夹，然后按Enter键。
+folder and press enter.
+
+15
+00:00:52,300 --> 00:00:54,140
+我们实际上得到了一个错误。
+We actually get an error.
+
+16
+00:00:54,190 --> 00:01:00,940
+现在这是因为是的，我们将使用R.M命令，但为了让R M命令删除文件夹
+Now this is because yes we will use the r.m command but in order for the R M command to remove folders
+
+17
+00:01:01,270 --> 00:01:08,950
+我们需要给r.m命令提供r选项，但是r选项代表递归或递归。
+we need to give the r.m command the r option but the r option stands for recursive or recursively.
+
+18
+00:01:09,100 --> 00:01:16,110
+现在，如果您递归地删除某些内容，这意味着您将删除该内容以及其中的其他所有内容
+Now if you delete something recursively that means you'll delete that thing and everything else inside
+
+19
+00:01:16,120 --> 00:01:16,520
+关于它的。
+of it.
+
+20
+00:01:16,630 --> 00:01:22,260
+如果我们现在尝试这样做，我们的公羊，劈开，我们的，然后删除文件夹，OK，然后按Enter键。
+So if we try that now our ram slash our and then del folder OK and press enter.
+
+21
+00:01:22,780 --> 00:01:26,730
+现在我们将看到Del文件夹确实已被删除。
+We'll see now that Del folder has indeed been deleted.
+
+22
+00:01:26,740 --> 00:01:33,970
+所以让我们再做一次，再做一次，让Del Folder OK，让我们在里面做一些更多的文件夹。
+So let's make it again make it again make Del folder OK and let's make some more folders inside of it.
+
+23
+00:01:33,970 --> 00:01:36,280
+所以我们现在要使用括号扩展。
+So we're going to use brace expansion for this now.
+
+24
+00:01:36,330 --> 00:01:36,800
+好的。
+OK.
+
+25
+00:01:36,970 --> 00:01:43,360
+我们可以创建make directory Del文件夹，在里面我们将创建三个名为Delete的文件夹
+We can do make make directory Del folder and inside there we're going to make three folders called Delete
+
+26
+00:01:43,360 --> 00:01:44,990
+我是一号、二号和三号。
+me one two and three.
+
+27
+00:01:45,160 --> 00:01:45,560
+好的。
+OK.
+
+28
+00:01:45,640 --> 00:01:50,170
+因此，如果我按Enter键并查看戴尔文件夹，我们可以看到我们已经找到了我想要找到的销售线索
+So if I press enter and take a look at Dell folder we can see we've got the lead me want to get me to
+
+29
+00:01:50,210 --> 00:01:51,160
+把我删掉3号。
+and delete me 3.
+
+30
+00:01:51,310 --> 00:01:52,630
+所以这就是它的运作方式。
+So that's how this works.
+
+31
+00:01:52,630 --> 00:01:58,310
+我们先让它让我想要进入戴尔，然后它可能也会删除我。
+We made first it made me want inside of Dell for that then it may delete me too.
+
+32
+00:01:58,330 --> 00:02:02,220
+然后它又让我删除了3个大括号扩展。
+Then it made delete me 3 comsats brace expansion again.
+
+33
+00:02:02,410 --> 00:02:05,900
+那么让我们在每个文件中创建一些文件。
+So let's make some files inside each of those.
+
+34
+00:02:05,920 --> 00:02:14,810
+因此，如果我们触摸戴尔文件夹，删除我，请删除我1、2和3，然后在他们的make文件中删除
+So if we touch Dell folder delete me delete me one two and three and then inside of their make file
+
+35
+00:02:14,860 --> 00:02:16,380
+一、二、三。
+one two and three.
+
+36
+00:02:16,890 --> 00:02:19,000
+现在，如果我们看一看，我们可以看到并删除我的一个。
+And now if we take a look we can see and delete me one.
+
+37
+00:02:19,060 --> 00:02:24,280
+我们有4，1，2和3，然后删除12，2和3中的我2，然后删除我3。
+We've got four one two and three and delete me 2 for 1 2 and 3 and then delete me 3.
+
+38
+00:02:24,280 --> 00:02:26,100
+我们有12号文件，2号文件和3号文件。
+We've got file 1 2 and 3.
+
+39
+00:02:26,110 --> 00:02:33,460
+现在，如果我们继续查看，这里有Del文件夹，我们的
+So now if we if we go ahead and if we just look we've got Del folder here we've got Dell folder in our
+
+40
+00:02:33,460 --> 00:02:34,270
+主目录。
+home directory.
+
+41
+00:02:34,450 --> 00:02:42,310
+现在，如果我们将RAM与删除该Del文件夹的选项一起使用，请记住递归删除某些内容
+Now if we use our ram with the option to delete that Del folder remember to delete something recursively
+
+42
+00:02:42,700 --> 00:02:46,330
+意味着删除它和它里面的其他所有东西。
+means to delete it and everything else inside of it.
+
+43
+00:02:46,330 --> 00:02:54,100
+因此，如果我使用带有选项的r.m，并将其指定为Delphos，则按Enter键将看到该文件夹确实
+So if I use r.m with the option and give it Delphos then press enter will see that folder has indeed
+
+44
+00:02:54,220 --> 00:02:58,300
+已经被删除了，里面的其他东西也都被删除了。
+been deleted and so has everything else inside of it.
+
+45
+00:02:58,300 --> 00:03:04,330
+现在，您可能会注意到一件事，当rm命令这样做时，它实际上没有为我们提供任何
+Now one thing you might notice is that the r.m command when it did that it actually didn't give us any
+
+46
+00:03:04,330 --> 00:03:04,880
+警告。
+warning.
+
+47
+00:03:04,900 --> 00:03:09,720
+它只是继续并删除了戴尔文件夹中的所有内容。
+It just went ahead and deleted everything inside the Dell folder folder.
+
+48
+00:03:09,790 --> 00:03:10,270
+好的。
+OK.
+
+49
+00:03:10,330 --> 00:03:16,030
+正因为如此，我们的公羊冲向他们的腐败是一个非常强大的命令，应该是
+Now because of this our ram dash on em with the corruption is a very powerful command that should be
+
+50
+00:03:16,030 --> 00:03:21,010
+处理得非常小心，特别是当你开始使用星牌通配符的时候。
+dealt with very carefully especially when you start using the Star wild card as well.
+
+51
+00:03:21,010 --> 00:03:25,480
+所有事情都可能出错，您会发现自己只是删除了所有内容，无法获取
+All things can go wrong and you can find yourself just deleting everything and not being able to get
+
+52
+00:03:25,480 --> 00:03:27,820
+你的文件回来了，这是悲哀的时候。
+your files back which is sad sad times.
+
+53
+00:03:27,820 --> 00:03:33,780
+例如，如果我现在继续这样做，如果我只是在我们系统上的所有内容上删除它，对吗？
+So for example if I do go ahead and do that now if I just delete that on everything on our system right
+
+54
+00:03:33,780 --> 00:03:35,110
+现在我不打算这么做了，我在开玩笑。
+now I'm not going to do it I'm joking.
+
+55
+00:03:35,110 --> 00:03:42,160
+所以，让论点变得更安全的一种方法，实际上是给它一个选择。
+So one way to make the argument safer is actually to give it the option.
+
+56
+00:03:42,370 --> 00:03:42,900
+好的。
+OK.
+
+57
+00:03:42,910 --> 00:03:49,470
+因此，该选项代表交互，这将使命令中的r交互倾斜。
+So the option stands for interactive and this will make the r in command askew interactively.
+
+58
+00:03:49,540 --> 00:03:52,320
+是否删除每个文件。
+Whether to delete each file or not.
+
+59
+00:03:52,330 --> 00:03:57,420
+现在我们没有戴尔文件夹了。
+Now at the moment we don't have we don't have the Dell folder anymore.
+
+60
+00:03:57,520 --> 00:04:02,440
+因此，要同时创建戴尔文件夹并删除我的1、2和3。
+So to make Dell folder and delete me one two and three all at once.
+
+61
+00:04:02,480 --> 00:04:07,030
+我将使用make the命令，并为其提供允许您创建完整路径的选项
+I'm going to use the make the command give it the option which allows you to create an entire path and
+
+62
+00:04:07,030 --> 00:04:11,850
+Do Del Too和Telic Create Delete Me 1、2和3。
+do Del too and Telic create delete me 1 2 and 3.
+
+63
+00:04:11,860 --> 00:04:14,560
+因此，如果我这样做，实际上也不会处理。
+So if I do that actually not dealt too.
+
+64
+00:04:14,680 --> 00:04:16,160
+抱歉，戴尔文件夹。
+Sorry Dell folder.
+
+65
+00:04:16,240 --> 00:04:23,140
+好的，我把我想要的戴尔文件夹放在里面，现在可以呼叫三个，让我们创建
+OK then I get Dell folder inside there that me wanted me to do it three can call right now let's create
+
+66
+00:04:23,140 --> 00:04:29,020
+贝索戴尔文件夹转发劈开里面的文件，删除我一、二、三，我们要制作
+the files inside Besso Dell folder forward slash delete me one two and three and we're going to make
+
+67
+00:04:29,200 --> 00:04:34,710
+归档1、2和3，每一个，所以每一个，我们都拿回了我们的文件。
+file one two and three and so each of those and so each of those We've got our files back.
+
+68
+00:04:34,810 --> 00:04:35,260
+好的。
+OK.
+
+69
+00:04:35,440 --> 00:04:36,850
+所以我们就到这里了。
+So there we are.
+
+70
+00:04:36,850 --> 00:04:38,730
+一点也没花太长时间。
+Didn't take too long at all.
+
+71
+00:04:38,830 --> 00:04:41,110
+顺便说一句，我们已经拿回了我们的文件。
+We've got our files back by the way.
+
+72
+00:04:41,110 --> 00:04:44,140
+你能看到这比指着点然后点击要快得多吗？
+Can you see just how much quicker this is than pointing and clicking.
+
+73
+00:04:44,170 --> 00:04:49,240
+我们创建了所有这些文件，甚至不需要输入从创建它们的文件夹
+We created all those files without ever even needing to enter the folders which created them right from
+
+74
+00:04:49,230 --> 00:04:50,400
+主目录。
+a home directory.
+
+75
+00:04:50,440 --> 00:04:50,880
+所以。
+So.
+
+76
+00:04:50,950 --> 00:04:52,150
+太酷了。
+So cool.
+
+77
+00:04:52,150 --> 00:04:58,930
+现在，如果我们再次尝试删除所有内容，请尝试通过给出命令R来删除DEL文件夹
+So now if we tried to delete everything again try and delete Del folder by giving the command the R
+
+78
+00:04:59,080 --> 00:05:00,620
+和R选项。
+and R options.
+
+79
+00:05:00,640 --> 00:05:02,190
+好的，你按什么顺序做并不重要。
+OK it doesn't matter which order you do it.
+
+80
+00:05:02,230 --> 00:05:05,130
+所以我们给它Del文件夹，我们会看到的。
+So we give it Del folder we'll see that.
+
+81
+00:05:05,140 --> 00:05:12,250
+现在，它请求允许我们实际删除内容，因此它说我可以进入戴尔文件夹吗。
+Now it's asking permission for us to actually delete things so it's saying Can I go into Dell folder.
+
+82
+00:05:12,250 --> 00:05:13,380
+我们就说是吧。
+Let's tell it yes.
+
+83
+00:05:13,510 --> 00:05:14,120
+好的。
+OK.
+
+84
+00:05:14,470 --> 00:05:17,220
+现在它会说我可以进去删除我的一个吗？
+It will now say can I go in to delete me one.
+
+85
+00:05:17,950 --> 00:05:19,020
+我们说好吧。
+Let's say yes.
+
+86
+00:05:19,340 --> 00:05:22,000
+我也可以删除一个文件吗？
+And can I delete a file too.
+
+87
+00:05:22,090 --> 00:05:23,720
+是的，可以删除4：03 3。
+Yes you can can delete 4:03 three.
+
+88
+00:05:23,740 --> 00:05:26,210
+是的，她不能删除里面的一个。
+Yes she can cannot delete for one inside.
+
+89
+00:05:26,350 --> 00:05:30,800
+删除我想，如果她可以，我可以删除目录，删除我一个。
+Delete me want if she can can I remove the directory delete me one.
+
+90
+00:05:30,880 --> 00:05:31,880
+不，她可以。
+Yes she can.
+
+91
+00:05:31,900 --> 00:05:33,520
+我可以删除任意三个吗？
+Can I go into delete any three.
+
+92
+00:05:33,520 --> 00:05:37,270
+你看，它并没有特别按照任何顺序做，但它在做之前会问你。
+You see it's not particularly doing it in any order but it's asking you before it does it.
+
+93
+00:05:37,330 --> 00:05:37,900
+好的。
+OK.
+
+94
+00:05:37,900 --> 00:05:41,390
+所以说，是的，你可以这样做，你可以删除，你可以这样做。
+So say yes you can do it that you can delete that you can do that.
+
+95
+00:05:41,510 --> 00:05:45,570
+现在让我们离开它，让我们把文件留在里面，把我也删除。
+Now let's leave it let's leave file to inside delete me too.
+
+96
+00:05:45,700 --> 00:05:46,150
+好的。
+OK.
+
+97
+00:05:46,240 --> 00:05:47,810
+这样你就可以删除我3了。
+So you can delete delete me 3.
+
+98
+00:05:47,930 --> 00:05:49,570
+我也要删除了。
+Going to delete me too.
+
+99
+00:05:49,600 --> 00:05:51,410
+不，不要删除Fall。
+No don't delete fall.
+
+100
+00:05:51,910 --> 00:05:55,040
+是，删除5：3，赞成一人。
+Yes delete 5:3 yes to the for one.
+
+101
+00:05:55,060 --> 00:06:00,510
+不，不要删除整个文件夹，不，不要删除文件夹，仅此而已。
+No don't delete the entire folder no don't delete folder and that's it.
+
+102
+00:06:00,620 --> 00:06:03,840
+凯特说，如果我们查看戴尔文件夹，我们应该也会看到删除我。
+Kate said if we look inside Dell folder we should see delete me too.
+
+103
+00:06:04,030 --> 00:06:06,250
+法尔图还没吃完。
+And Faltu still leftover.
+
+104
+00:06:06,260 --> 00:06:07,560
+好的，这很酷，对吧。
+OK so that's quite cool right.
+
+105
+00:06:07,570 --> 00:06:14,570
+您可以控制该命令删除的内容，但这有点单调乏味，每次都要回答是和否
+You can control what the command deletes But this is kind of tedious right saying yes and no every time
+
+106
+00:06:14,560 --> 00:06:14,800
+是个。
+it's a.
+
+107
+00:06:14,800 --> 00:06:20,350
+如果你有很多文件，那将会是一个巨大的麻烦。
+If you had a lot of files that would that would really be a massive hassle.
+
+108
+00:06:20,350 --> 00:06:26,110
+幸运的是，还有另一个专门用于删除空目录的命令
+So fortunately there's another command that specialized for only removing directories that are empty
+
+109
+00:06:26,370 --> 00:06:29,150
+现在，因为此命令只删除空目录。
+now because this command only removes empty directories.
+
+110
+00:06:29,290 --> 00:06:31,670
+这意味着您可以告诉它删除所有内容。
+This means that you can tell it to delete everything.
+
+111
+00:06:31,690 --> 00:06:34,380
+它将只删除实际为空的文件夹。
+It will only delete the folders that are actually empty.
+
+112
+00:06:34,390 --> 00:06:36,770
+这意味着你永远不会不小心删除文件。
+Which means you'll never delete a file accidentally.
+
+113
+00:06:37,000 --> 00:06:43,060
+该命令称为MDI或REMOVE DIRECTORY命令集，以查看REMOVE DIRECTORY命令
+And that command is called the MDI or the remove directory command set to see the remove directory command
+
+114
+00:06:43,060 --> 00:06:43,840
+在行动中。
+in action.
+
+115
+00:06:43,840 --> 00:06:51,730
+首先，让我们继续删除Dell文件夹中的所有内容，递归删除DLL文件夹和Ardell
+First let's go ahead and delete everything inside Dell folder remove recursively DLL folder and Ardell
+
+116
+00:06:51,730 --> 00:06:53,770
+文件夹已删除。
+folder has been deleted.
+
+117
+00:06:53,770 --> 00:06:59,130
+现在，让我们继续创建一些文件夹，因此我们将使用带有创建选项的mkdir。
+Now let's go ahead and create some folders so we're going to use mkdir with the option to create.
+
+118
+00:06:59,170 --> 00:07:04,080
+让我们称其为戴尔文件夹，然后将其放入1到3个文件夹。
+Let's call it Dell folder and then folder one to three.
+
+119
+00:07:04,090 --> 00:07:07,800
+这是另一种方式，你不必键入一个逗号到三个逗号。
+That's another way of doing it by the way you don't have to type one comma to comma three.
+
+120
+00:07:07,810 --> 00:07:09,740
+你可以只做一点三。
+You can just do one dot dot three.
+
+121
+00:07:10,120 --> 00:07:18,280
+如果我们查看Del文件夹，我们有4票对1票投3票，将10个文件夹放入1个文件夹中
+And if we look in Del folder We've got 4 to 1 vote to vote 3 and as put ten folders inside folders one
+
+122
+00:07:18,340 --> 00:07:20,220
+两个，但不在一号文件夹里。
+and two but not in folder one.
+
+123
+00:07:20,230 --> 00:07:30,840
+124 9：43说也要触摸Delph文件夹1，然后放入他们的文件1到10到16。
+124 9:43 says to touch Delph folder folder one too and then put inside their file 1 to 10 to 16.
+
+124
+00:07:31,180 --> 00:07:35,770
+所以如果我们看一下里面的那个，我们现在有10个文本文件，我们在里面看这两个。
+So if we look inside for the one we've now got 10 text files we look inside for the two.
+
+125
+00:07:35,770 --> 00:07:38,400
+我们在文件夹3中有10个文本文件。
+We've got 10 text files in folder 3.
+
+126
+00:07:38,410 --> 00:07:39,760
+我们没有了。
+We don't have any.
+
+127
+00:07:39,880 --> 00:07:46,510
+好的，现在我们在戴尔文件夹中有三个文件夹想要在其中包含10个文件
+OK so now we've got three folders inside Dell folder folders want to follow to have 10 files in them
+
+128
+00:07:46,540 --> 00:07:49,020
+但是文件夹3完全是空的。
+but folder 3 is completely empty.
+
+129
+00:07:49,150 --> 00:07:58,030
+现在，如果我试着做删除目录，我说删除目录，删除文件夹，劈开所有东西。
+Now if I tried to do remove directory and I say remove directory Del folder slash everything.
+
+130
+00:07:58,450 --> 00:08:03,340
+好的，我们现在要说的是删除Del文件夹内的所有内容。
+OK what we're saying here is delete everything inside Del folder.
+
+131
+00:08:03,340 --> 00:08:05,310
+删除文件夹内的空文件夹。
+Delete the empty folders inside folder.
+
+132
+00:08:05,320 --> 00:08:12,100
+基本上，如果我这样做了，将会看到它无法删除文件夹1，因为目录不是空的
+Basically if I do that will see it failed to remove folder one because the directory is not empty it
+
+133
+00:08:12,100 --> 00:08:17,990
+删除文件夹也失败，因为控制器不是空的，但2：56确实已被删除。
+failed to remove folder too because the director is not empty but 2:56 has indeed been deleted.
+
+134
+00:08:18,160 --> 00:08:25,000
+所以，您要知道，如果我们只是删除戴尔文件夹的目录而不删除目录，这是不会起作用的
+So just so you know this wouldn't have worked if we'd just done remove directory of Dell folder without
+
+135
+00:08:25,000 --> 00:08:29,070
+把星号CC放在这里我们有星号通配符。
+putting the star CC we've got the star asterisk wildcard here.
+
+136
+00:08:29,200 --> 00:08:31,960
+如果我们刚刚移除了航天飞机站点的Delph文件夹。
+If we just have removed Delph folder the shuttle site.
+
+137
+00:08:32,010 --> 00:08:33,640
+但是戴尔文件夹不是空的。
+But Dell folders not empty.
+
+138
+00:08:33,640 --> 00:08:34,960
+我怎么能就这么把它删掉呢。
+How can I just delete it.
+
+139
+00:08:35,170 --> 00:08:42,080
+我们所做的是删除空的戴尔文件夹中的所有内容。
+Well what we did is we said remove everything that is inside Dell folder that is empty.
+
+140
+00:08:42,190 --> 00:08:45,540
+好的，所以我们必须有明星在那里，才能做到这一点。
+OK so we have to have the star there to make that work.
+
+141
+00:08:45,550 --> 00:08:48,280
+这只是一件需要牢记在心的事情。
+That's just something to bear in mind.
+
+142
+00:08:48,820 --> 00:08:54,820
+好的，最后一个挑战是，在上一个视频中，我们创建了一个项目文件夹，其中包含一大堆其他文件夹
+OK so one final challenge in the last video we created a project folder that had a whole bunch of other
+
+143
+00:08:54,820 --> 00:08:57,450
+里面的文件夹，我们想要无数的文件。
+folders inside we'd like a jillion files.
+
+144
+00:08:57,450 --> 00:09:00,400
+好的，在最后几个视频中，你一定要记住这一点。
+Ok you must remember this for the last few videos.
+
+145
+00:09:00,430 --> 00:09:06,310
+现在我想让你们做的是，我想试着删除所有这些文件夹、目录和文件
+Now what I want you to do is I want to try and delete all of those folders and directories and files
+
+146
+00:09:06,310 --> 00:09:09,190
+所有的东西都集中在一个命令里。
+and stuff in one command.
+
+147
+00:09:09,300 --> 00:09:10,980
+好的，这就是你们的挑战。
+OK so that's your challenge.
+
+148
+00:09:11,040 --> 00:09:15,550
+这是很自然的挑战，您必须尝试删除包含所有内容的整个项目文件夹
+That's natural challenge you've got to try and delete the entire project folder with everything inside
+
+149
+00:09:15,550 --> 00:09:19,070
+因此，在一个命令中包含数千个文件。
+of it all the thousands of files in one command so.
+
+150
+00:09:19,110 --> 00:09:22,540
+现在就上传这段视频，看看你是否能想出如何做到这一点。
+Post the video now and see if you can figure out figure out how to do it.
+
+151
+00:09:22,600 --> 00:09:30,260
+然后再回来看看你做得怎么样。
+Then come back and see how you did.
+
+152
+00:09:30,300 --> 00:09:31,100
+你成功了吗。
+Did you manage it.
+
+153
+00:09:31,290 --> 00:09:31,890
+如果是这样的话。
+If so.
+
+154
+00:09:31,920 --> 00:09:35,130
+干得好，你学得超快，超快。
+Well done you learn super super quick.
+
+155
+00:09:35,250 --> 00:09:36,460
+所以我是这样做的。
+So here is how I do it.
+
+156
+00:09:36,510 --> 00:09:40,880
+好的，现在我有一个名为“项目”的文件夹，写在桌面上，就是这样的移位。
+OK now I have the folder was called Project write it was on the desktop such shift there.
+
+157
+00:09:41,020 --> 00:09:42,940
+这就是所谓的“项目”。
+It's it's called Project.
+
+158
+00:09:43,110 --> 00:09:50,490
+因此，我们希望删除所有内容，因此不希望使用R mdr命令，因为这只会删除
+So we want to delete everything so we don't want to use the R MDR command because that only deletes
+
+159
+00:09:50,640 --> 00:09:51,540
+空目录。
+empty directories.
+
+160
+00:09:51,570 --> 00:09:55,750
+我们希望使用r.m命令，因为我们希望删除其中包含内容的目录。
+We want to use the r.m command instead because we want to delete directories that have stuff in them.
+
+161
+00:09:55,820 --> 00:10:01,850
+好的，现在我们要删除项目文件夹和其中的所有内容。
+OK now we want to delete the project folder and everything inside it.
+
+162
+00:10:01,950 --> 00:10:06,980
+所以我们需要递归删除，为此，我们将使用r选项。
+So we need to delete recursively so to do that we're going to use the r option.
+
+163
+00:10:07,220 --> 00:10:07,710
+好的。
+OK.
+
+164
+00:10:07,980 --> 00:10:14,040
+把所有这些放在一起，基本上意味着我们只需要递归地删除项目文件夹。
+And putting it all together basically means we'll just do remove recursively the project folder.
+
+165
+00:10:14,160 --> 00:10:19,900
+或者，如果我在我的主目录中，像这样，我会递归地删除桌面的劈开项目。
+Or if I was in my home directory like this I would remove recursively desktop's slash project.
+
+166
+00:10:19,920 --> 00:10:24,730
+好的，只要给出该文件夹的路径，当我按Enter键时。
+OK just given the path to that folder and when I press enter.
+
+167
+00:10:25,470 --> 00:10:27,030
+就像施了魔法一样。
+As if by magic.
+
+168
+00:10:27,480 --> 00:10:31,540
+然而，那里有许多文件夹，数千个文件已被删除。
+However many folders there were the thousands of files have been deleted.
+
+169
+00:10:31,560 --> 00:10:40,050
+这是多么的史诗，所以我们关于删除文件和文件夹的讨论差不多就到此为止了
+How absolutely epic is that so that'll just about wrap up our discussion of deleting files and folders
+
+170
+00:10:40,140 --> 00:10:41,460
+使用命令行。
+using the command line.
+
+171
+00:10:41,460 --> 00:10:47,640
+因此，在本视频中，您了解到r.m命令需要该选项才能删除文件夹和
+So in this video you learn that the r.m command needs the option in order to delete folders and the
+
+172
+00:10:47,660 --> 00:10:50,750
+选项代表递归删除。
+option stands for recursive deleting.
+
+173
+00:10:50,910 --> 00:10:56,460
+因此递归删除某物意味着删除该物件及其内部的所有其他内容。
+So delete something recursively means to delete that thing and everything else inside it.
+
+174
+00:10:56,460 --> 00:11:01,590
+这就是您在使用该选项时需要特别小心的地方，因为您最终可能会删除
+And this is what you need to be especially careful when using the option because you can end up deleting
+
+175
+00:11:01,590 --> 00:11:08,400
+您不想知道的使其更安全的一种方法是使用R.M.
+stuff that you didn't want to know one way to make that a bit safer is to use the option for the r.m
+
+176
+00:11:08,400 --> 00:11:13,020
+命令，该命令将允许R.m命令在执行其删除操作时是交互式的。
+command which will allow the r.m command to be interactive when it does it's deleting.
+
+177
+00:11:13,020 --> 00:11:21,120
+这就是您可以对每个要删除的文件夹说是或不是的地方，但最好的是
+So this is where you can say yes or no to each file folder being deleted but the best thing is there's
+
+178
+00:11:21,120 --> 00:11:22,620
+你真的没有太多可以信赖的东西。
+not really much you can rely on.
+
+179
+00:11:22,680 --> 00:11:25,020
+删除的时候一定要小心。
+Just be careful when doing your deleting.
+
+180
+00:11:25,020 --> 00:11:25,440
+好的。
+OK.
+
+181
+00:11:25,650 --> 00:11:31,500
+但是，所有选项中最安全的是使用R mdr命令，该命令将只删除空的文件夹。
+But the safest of all options is to use the R MDR command which will only delete folders that are empty.
+
+182
+00:11:31,530 --> 00:11:35,910
+因此，如果您只想稍微整理一下并删除其中没有任何内容的文件夹，您可以
+So if you just want to do a bit of tidying up and delete folders that don't have anything in them you
+
+183
+00:11:35,910 --> 00:11:37,510
+可以使用mdr命令。
+can use the MDR command.
+
+184
+00:11:37,530 --> 00:11:41,180
+睡觉保证你不会删除任何数据。
+And rest assured that you won't delete any data.
+
+185
+00:11:41,490 --> 00:11:47,190
+接下来，我们将讨论如何使用
+So coming up next we're going to discuss how you might copy and paste files and directories using the
+
+186
+00:11:47,190 --> 00:11:47,790
+命令行。
+command line.
+
+187
+00:11:47,880 --> 00:11:50,870
+因此，我们不会砍掉我们的文件树，而是让它生长。
+So instead of cutting our file tree we're going to make it grow.
+
+188
+00:11:50,880 --> 00:11:53,880
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

@@ -1,0 +1,800 @@
+1
+00:00:00,450 --> 00:00:01,930
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,930 --> 00:00:07,170
+现在，尽管每个Linux命令本身都非常强大，但是Linux命令的真正功能
+Now although each of the Linux commands are very powerful on their own the true power of the Linux command
+
+3
+00:00:07,170 --> 00:00:13,140
+LINE来自于我们一起更改这些命令以构建所谓的命令管道的能力。
+line comes from our ability to change these commands together to build what are known as command pipelines.
+
+4
+00:00:13,140 --> 00:00:17,430
+现在，每个Linux命令都被设计成只做一件事，而且做得非常好。
+Now each Linux command is designed to do one thing and do it incredibly well.
+
+5
+00:00:17,520 --> 00:00:22,710
+因此，通过将功能强大且功能丰富的构建块组合在一起，您可以创建
+So by being able to combine together loads of powerful and feature rich building blocks you can create
+
+6
+00:00:22,710 --> 00:00:27,280
+非常强大的工作流和管道，根本不需要太多工作。
+very powerful workflows and pipelines without much work at all.
+
+7
+00:00:27,480 --> 00:00:31,980
+但是为了一起更改命令并创建这些强大的工作流，这些管道
+But in order to change the commands together and create these powerful workflows these pipelines we
+
+8
+00:00:31,980 --> 00:00:36,690
+我需要更好地理解Linux命令实际上是如何接受输入和输出的，这样我们就可以
+need to understand a bit better how Linux commands actually take input and give output so that we can
+
+9
+00:00:36,690 --> 00:00:38,700
+将输出和输入链接在一起。
+link the outputs and inputs together.
+
+10
+00:00:38,700 --> 00:00:43,320
+在这段视频中，您将了解命令接受输入和提供信息的不同方式
+So in this video you're going to learn about the different ways that a command can take input and give
+
+11
+00:00:43,410 --> 00:00:44,020
+输出。
+output.
+
+12
+00:00:44,250 --> 00:00:48,210
+最后，您将能够了解数据流入和流出的不同方式
+And by the end you'll be able to understand the different ways that data can flow into and out of a
+
+13
+00:00:48,210 --> 00:00:49,770
+命令，您就可以连接了。
+command and you'll be ready to connect.
+
+14
+00:00:49,770 --> 00:00:54,600
+这些命令、这些数据流一起构建强大的Linux管道。
+These commands these data flows together to build powerful Linux pipelines.
+
+15
+00:00:54,600 --> 00:00:58,510
+对于你的Linux能力来说，这将是一个绝对革命性的时刻。
+This is going to be an absolutely revolutionary time for your Linux abilities.
+
+16
+00:00:58,620 --> 00:01:02,550
+因为我们将从只接受一个命令并了解它到真正学习
+Because we're going to step up from taking just one command and learning about it to actually learn
+
+17
+00:01:02,550 --> 00:01:04,470
+如何同时更改多个命令。
+how to change multiple commands together.
+
+18
+00:01:04,470 --> 00:01:06,690
+所以我希望你会非常非常兴奋。
+So I hope you're very very excited.
+
+19
+00:01:06,690 --> 00:01:08,940
+让我们直接跳进去吧。
+Let's go ahead and jump right into it.
+
+20
+00:01:09,720 --> 00:01:13,700
+所以，正如你们前面了解到的，每个命令基本上都是它自己的计算机程序。
+So as you learned earlier each command is basically its own computer program.
+
+21
+00:01:13,770 --> 00:01:19,600
+现在，计算机程序只是一种自动获取输入、处理输入和输出的方式。
+Now a computer program is simply an automated way to take inputs process them and give outputs.
+
+22
+00:01:19,620 --> 00:01:24,680
+下面的图表向您展示了命令获取输入和输出的不同方式。
+So here's a diagram that shows you the different ways that a command can take inputs and give outputs.
+
+23
+00:01:24,900 --> 00:01:31,410
+现在您可以看到，Gen X命令可以从两个位置接受输入，并将输出到另外两个位置
+Now you can see that a Gen X command can take input from two places and will output to two other places
+
+24
+00:01:31,740 --> 00:01:36,720
+使得总共有四种可能的方式将数据传入和传出传统的Linux命令。
+making a total of four possible ways to get data into and out of a conventional Linux command.
+
+25
+00:01:36,900 --> 00:01:44,220
+因此，输入是命令参数，标准输入和输出是标准输出和标准输出
+So the inputs are command arguments and standard inputs and outputs are standard output and standard
+
+26
+00:01:44,220 --> 00:01:45,270
+错误。
+error.
+
+27
+00:01:45,360 --> 00:01:50,610
+您可以看到其中三个是由黄色虚线箭头指示的，它们是以下内容的示例
+You can see that three of these are indicated by the yellow dashed arrows and are examples of something
+
+28
+00:01:50,610 --> 00:01:52,590
+称为标准数据流。
+called a standard data stream.
+
+29
+00:01:52,620 --> 00:01:56,050
+你可以从他们的名字看出这一点，因为他们都是以标准这个词开头的。
+You can tell this from their names because they all start with the word standard.
+
+30
+00:01:56,070 --> 00:01:57,300
+所以你有标准输入。
+So you've got standard input.
+
+31
+00:01:57,510 --> 00:02:03,000
+标准输出和标准错误，它们都是标准数据流，而命令行参数
+Standard output and standard error and they're all standard data streams whereas the command line arguments
+
+32
+00:02:03,000 --> 00:02:06,290
+有一个实心的蓝色箭头，并且不是标准数据流。
+have a solid blue arrow and aren't a standard data stream.
+
+33
+00:02:06,300 --> 00:02:10,790
+因此，在这段视频中，我将向您解释不同的输入或输出选项是什么，您将
+So in this video I'm going to explain to you what the different input or output options are and you'll
+
+34
+00:02:10,830 --> 00:02:15,690
+此外，还将了解标准数据流的特殊之处以及如何使用这些数据流进行连接
+also learn what is special about a standard data stream and how these data streams can be used to connect
+
+35
+00:02:15,690 --> 00:02:16,920
+命令在一起。
+commands together.
+
+36
+00:02:16,920 --> 00:02:23,430
+那么，让我们莱斯特去一辆邦图，实时地看到所有这些东西，好的，那么在这次讨论中，它将
+So let's Lester over to a buntu and see all this stuff in real time OK so for this discussion it makes
+
+37
+00:02:23,430 --> 00:02:25,160
+从输出开始更有意义。
+more sense to start with the outputs.
+
+38
+00:02:25,170 --> 00:02:26,580
+那么我们就从这里开始吧。
+So let's start there.
+
+39
+00:02:26,580 --> 00:02:31,620
+现在，当命令成功运行时，从命令输出数据的主要方式是
+Now when a command has run successfully the primary way that the data is output from the command is
+
+40
+00:02:31,620 --> 00:02:34,180
+在称为标准输出的通道上。
+on the channel called standard output.
+
+41
+00:02:34,380 --> 00:02:39,900
+现在标准输出是一种叫做标准数据流的东西，就像水数据流一样
+Now standard output is something called a standard data stream just like a stream of water data stream
+
+42
+00:02:39,900 --> 00:02:42,020
+开始于某处，结束于某处。
+start somewhere and they end somewhere.
+
+43
+00:02:42,090 --> 00:02:44,120
+那么，标准输出会把我们引向何方呢？
+So where does standard output lead.
+
+44
+00:02:44,370 --> 00:02:47,640
+默认情况下，标准输出将通向您的终端。
+Well by default standard output will lead to your terminal.
+
+45
+00:02:47,640 --> 00:02:51,830
+这就是为什么当我们键入命令时，命令的输出会出现在屏幕上。
+So that's why when we type commands the output of the command appears on the screen.
+
+46
+00:02:52,020 --> 00:02:57,240
+例如，如果我们键入DATE并在告诉DATE命令时按ENTER键，让我们使用DATA命令
+So for example let's take the DATA command if we type date and press ENTER when we tell the date command
+
+47
+00:02:57,240 --> 00:03:02,700
+若要运行，将从DATE命令发送输出，并沿标准输出流向下流动，该标准输出流
+to run the output will be sent from the date command and flow down the standard output stream which
+
+48
+00:03:02,700 --> 00:03:05,160
+默认情况下连接到我们的终端屏幕。
+by default is connected to our terminal screen.
+
+49
+00:03:05,220 --> 00:03:08,050
+因此，我们可以看到数据出现在我们的命令下面。
+Therefore we see the data appear below our command.
+
+50
+00:03:08,330 --> 00:03:08,720
+好的。
+OK.
+
+51
+00:03:08,820 --> 00:03:09,690
+所以这很酷。
+So that's pretty cool.
+
+52
+00:03:09,690 --> 00:03:13,920
+但我想先在你的脑海里种下一点种子，然后再回来，记住我是怎么说的
+But I want to plant a little seed in your mind first to come back to later and remember how I said that
+
+53
+00:03:13,920 --> 00:03:17,660
+默认情况下，命令的标准输出到达终端。
+by default the standard output of a command comes to the terminal.
+
+54
+00:03:17,850 --> 00:03:22,950
+输出数据流的惊人之处在于，您可以使用进程重定向它们的去向
+Well the amazing thing about output data streams is that you can redirect where they go using a process
+
+55
+00:03:22,990 --> 00:03:25,760
+富于想象力的，富于想象力的称为重定向。
+imaginative imaginatively called redirection.
+
+56
+00:03:25,860 --> 00:03:30,780
+因此，就像重定向管道或更改水流的位置一样，重定向数据流的位置也会更改
+So just like redirecting a pipe or change where water flows redirecting a data stream will change where
+
+57
+00:03:30,780 --> 00:03:31,750
+数据是这样的。
+the data goes.
+
+58
+00:03:32,100 --> 00:03:35,940
+好了，这些种子已经种好了，一会儿就回来。
+OK so of that seed has been planted and will come back to it in a moment.
+
+59
+00:03:35,940 --> 00:03:39,200
+现在第二种类型的输出是所谓的标准时代。
+Now the second type of output is something called Standard era.
+
+60
+00:03:39,330 --> 00:03:44,550
+因此，当命令给出错误消息或日志消息或类似消息时，任何不是
+So when a command gives an error message or a log message or something like that anything that isn't
+
+61
+00:03:44,640 --> 00:03:50,980
+输出到流中的命令的主要输出称为标准错误。
+the primary output of the command that is outputted into the stream known as standard error.
+
+62
+00:03:51,210 --> 00:03:55,140
+这有助于将有用的输出和日志信息分开。
+This helps keep useful output and log information separate.
+
+63
+00:03:55,260 --> 00:03:57,370
+例如，让我们再次使用data命令。
+So for example let's take the data command again.
+
+64
+00:03:57,630 --> 00:04:03,130
+如果我们通过给它一些无效的命令参数来使日期开始失败，如下所示。
+If we make the date come on fail by giving it some invalid command arguments like this.
+
+65
+00:04:03,410 --> 00:04:03,920
+好的。
+OK.
+
+66
+00:04:04,140 --> 00:04:05,380
+然后我按Enter键。
+And then I press enter.
+
+67
+00:04:05,550 --> 00:04:10,100
+您会看到我们收到一条错误消息，上面写着无效等等。
+You'll see that we get an error message and it says invalidate blah blah blah blah blah.
+
+68
+00:04:10,200 --> 00:04:10,670
+好的。
+OK.
+
+69
+00:04:10,680 --> 00:04:16,170
+现在，因为这是一个错误消息，所以它被发送到标准错误流中，并且因为错误消息
+Now because it's an error message it was sent down the standard error stream and because the error message
+
+70
+00:04:16,200 --> 00:04:21,060
+到达该终端屏幕时，我们可以看到标准误差也自动连接到
+arrived at that terminal screen we can see that the standard error is also automatically connected to
+
+71
+00:04:21,060 --> 00:04:23,720
+终端就像标准输出一样。
+a terminal just like standard output is.
+
+72
+00:04:23,880 --> 00:04:30,030
+但同样，因为标准错误是数据流，所以它可以重定向到我们希望的任何位置。
+But again because standard error is a data stream it can be redirected wherever we wish.
+
+73
+00:04:30,040 --> 00:04:34,430
+现在我们了解了标准输出是命令的主输出。
+So now that we understand that standard output is where the main output for the commands go.
+
+74
+00:04:34,450 --> 00:04:38,860
+该标准错误是命令的错误和日志消息以及这两者的位置
+And that standard error is where the error and log messages for the command go and the both of those
+
+75
+00:04:38,860 --> 00:04:41,410
+默认情况下连接到终端。
+are by default connected to the terminal.
+
+76
+00:04:41,410 --> 00:04:47,150
+现在让我们将注意力转向输入，如前所述，命令也有两种获取输入的方式。
+Let's now turn our attention to inputs as mentioned there are also two ways for a command to get input.
+
+77
+00:04:47,170 --> 00:04:51,520
+第一个我们要讨论的是另一种类型的标准数据流，正如您可以猜到的那样，称为
+The first we would discuss is another type of standard data stream which as you can guess is called
+
+78
+00:04:51,610 --> 00:04:53,050
+标准输入。
+standard input.
+
+79
+00:04:53,080 --> 00:04:56,980
+现在，标准输入默认连接到键盘。
+Now standard input is by default connected to the keyboard.
+
+80
+00:04:56,980 --> 00:05:01,000
+因此，为了演示这一点，我将引入一个名为Cat的新命令。
+So to demonstrate this I will introduce a new command called Cat.
+
+81
+00:05:01,030 --> 00:05:05,560
+现在我们将在后面的部分讨论CAT，但我现在只用它来解释
+Now we're going to discuss cat in a later section but I'll just use it now to explain the concept of
+
+82
+00:05:05,560 --> 00:05:06,560
+标准输入。
+standard input.
+
+83
+00:05:06,760 --> 00:05:10,560
+如果我们看一下cat的手册页，那么我们输入man cat。
+If we take a look at the man page for cat so we type man cat.
+
+84
+00:05:10,750 --> 00:05:11,260
+好的。
+OK.
+
+85
+00:05:11,530 --> 00:05:16,590
+我们在它的描述部分看到，猫没有得到任何东西。
+We see in its description section the cat is not given any.
+
+86
+00:05:16,630 --> 00:05:22,900
+如果没有给出任何内容，我怎么能这样说呢？如果有任何命令行参数，CAT将从其中读取内容
+If it's not given any how can I say so given any command line arguments that that cat will read from
+
+87
+00:05:22,930 --> 00:05:23,680
+标准输入。
+standard input.
+
+88
+00:05:23,680 --> 00:05:27,520
+因此，如果没有给定文件，则读取它，否则它将从标准输入读取。
+So if no file is given then read it or it'll read from standard input.
+
+89
+00:05:27,640 --> 00:05:28,150
+好的。
+OK.
+
+90
+00:05:28,990 --> 00:05:29,810
+那我们就这么做吧。
+So let's do that.
+
+91
+00:05:30,010 --> 00:05:36,250
+如果我只键入cat，不给它任何其他形式的输入，我们可以看到终端有点挂起
+If I just type cat and don't give it any other form of input we can see the terminal kind of just hangs
+
+92
+00:05:36,250 --> 00:05:36,720
+那里。
+there.
+
+93
+00:05:36,970 --> 00:05:43,060
+但是如果我开始键入，然后键入hello，然后按Enter键，我们会看到文本是从键盘上读取的。
+But if I start typing and I type hello and press ENTER we see that the text is read from our keyboard.
+
+94
+00:05:43,100 --> 00:05:49,040
+您是否从标准输入开始，然后进行封顶处理，并将结果输出到标准输出。
+Are you from standard input and then cap processes and outputs the results to standard output.
+
+95
+00:05:49,060 --> 00:05:54,010
+现在，因为默认情况下标准输出附加到我们的终端，所以我们可以看到输出显示在
+Now because standard output is by default attached to our terminal we see the output appear right in
+
+96
+00:05:54,010 --> 00:05:54,980
+我们的航站楼。
+our terminal.
+
+97
+00:05:54,990 --> 00:05:55,230
+好的。
+OK.
+
+98
+00:05:55,250 --> 00:05:58,600
+现在非常棒，因为标准输入是数据流。
+It's pretty awesome now because standard input is a data stream.
+
+99
+00:05:58,600 --> 00:06:00,550
+它也可以被重定向。
+It can be redirected as well.
+
+100
+00:06:00,550 --> 00:06:03,740
+这意味着我们可以告诉命令应该从哪里读取数据。
+That means we can tell a command where it should read data from.
+
+101
+00:06:03,850 --> 00:06:08,500
+这可能是一个文件，我们在其中已经有一些预先配置的输入，或者功能更强大。
+And this could be a file where we already have some pre-configured input or more powerfully.
+
+102
+00:06:08,500 --> 00:06:10,890
+它可能是另一个数据流。
+It could be another data stream.
+
+103
+00:06:11,110 --> 00:06:14,120
+这就是数据流连接在一起的能力。
+And it's this ability for data streams to connect together.
+
+104
+00:06:14,170 --> 00:06:19,960
+这使得它们非常强大，您可以简单地将标准输出流从一个命令传递到标准
+That makes them so powerful you can simply pass the standard output stream from one command to the standard
+
+105
+00:06:19,960 --> 00:06:24,850
+另一个命令输入流然后将该第二命令的标准输出流传递给该标准
+input stream of another then pass the standard output stream of that second command to the standard
+
+106
+00:06:24,850 --> 00:06:30,520
+第三个命令的输入流等等，直到你建立了一个非常强大的管道连接
+input stream of the third command and so on and so on until you build up a very powerful pipeline connecting
+
+107
+00:06:30,550 --> 00:06:35,650
+以这种方式输出到输入的内容称为将命令通过管道连接在一起，这是一个极其重要的
+outputs to inputs in this way is known as piping together commands and it's an incredibly important
+
+108
+00:06:35,650 --> 00:06:40,240
+Linux中的概念，因为它使使用命令行变得如此强大和有效，因为您将
+concept in Linux as it's what makes working with the command line so powerful and effective as you you'll
+
+109
+00:06:40,240 --> 00:06:42,430
+请参见后续视频中的。
+see in coming videos.
+
+110
+00:06:42,460 --> 00:06:46,630
+现在导入的最后一种类型是命令行参数，我们实际上已经看到了命令行
+Now the final type of import is command line arguments and we've already actually seen command line
+
+111
+00:06:46,630 --> 00:06:48,470
+争论已经在行动了。
+arguments in action already.
+
+112
+00:06:48,580 --> 00:06:52,870
+例如，在前面研究命令结构时，我们查看了Cal命令，我们
+For example when studying the command structure previously we took a look at the Cal command and we
+
+113
+00:06:52,870 --> 00:06:58,180
+顺便说一下，我要按下Ctrl，看看取消这个控制，看看我的顾问，然后按
+saw by the way I'm going to press control and see to cancel this control and see my counsels and press
+
+114
+00:06:58,180 --> 00:06:59,430
+控件未清除屏幕。
+control not clear the screen.
+
+115
+00:06:59,650 --> 00:07:06,250
+所以我们，我们正在使用COW命令，我们看到了类似Cowe 12 20：17的内容，它允许我们查看日历
+So we we're using the cow command we saw something like cowe 12 20:17 which allows us to see the calendar
+
+116
+00:07:06,340 --> 00:07:13,320
+对于2017年12月，数字12和2017是命令行参数。
+for December 2017 and the numbers 12 and 2017 were command line arguments.
+
+117
+00:07:13,420 --> 00:07:18,300
+您可以看出这一点，因为它们是作为命令的输入添加到命令行中的。
+And you can tell that because they were added on the command line as an input to the command.
+
+118
+00:07:18,310 --> 00:07:23,080
+如果你还记得我们在首都给了COW一个选择权的话，我们还把命令做得更高级了
+We also made the command more advanced like this if you remember we had cow gave at the capital a option
+
+119
+00:07:23,290 --> 00:07:28,600
+给那个期权一个输入，给大写B期权，给期权它自己的输入，然后给出
+gave that option an input gave the capital B option gave the option it's own input and then gave the
+
+120
+00:07:28,810 --> 00:07:30,650
+命令发送到其他输入。
+command to other inputs.
+
+121
+00:07:30,670 --> 00:07:35,410
+好的，这很复杂，它向我们显示了2017年12月的日历，以及一个月后的日历
+OK so it was quite complicated and it showed us the calendar for December 2017 with one month after
+
+122
+00:07:35,560 --> 00:07:36,610
+一个月前。
+one month before.
+
+123
+00:07:36,850 --> 00:07:43,540
+现在，A和B选项有自己的命令行参数，这里的选项有命令行参数
+Now the A and B options have their own command line arguments here the option has the command line argument
+
+124
+00:07:43,630 --> 00:07:44,830
+这是第一名。
+which is number one.
+
+125
+00:07:44,950 --> 00:07:48,320
+B还有一个数字为1的命令行参数。
+And B also has a command line argument of the number one.
+
+126
+00:07:48,430 --> 00:07:55,410
+最重要的是，整个CAU命令有自己的命令行参数12和20：17。
+And on top of those the overall cau command has 12 and 20:17 as its own command line arguments.
+
+127
+00:07:55,450 --> 00:08:00,310
+在选项1的这一个参数的情况下，我将它提供给B选项，并给出两个参数
+In case of this one argument for the option one I'll give it for the B option and two arguments for
+
+128
+00:08:00,310 --> 00:08:05,080
+总体计数命令与命令行参数和数据流之间的区别在于
+the overall count command and the difference between command line arguments and data streams is that
+
+129
+00:08:05,080 --> 00:08:06,880
+数据流可以流动。
+data streams can flow.
+
+130
+00:08:06,880 --> 00:08:12,460
+可以将它们重定向并通过管道将它们一起输送到仅与命令关联的命令行参数或
+They can be redirected and piped together command line arguments only associate with the command or
+
+131
+00:08:12,520 --> 00:08:15,040
+他们目前正在处理的选择。
+option that they're dealing with at the moment.
+
+132
+00:08:15,040 --> 00:08:19,240
+现在有一个命令，如X OGS命令，它允许您模糊一些
+Now there are a command such as the X OGs command that allows you to blur the lines a little bit between
+
+133
+00:08:19,240 --> 00:08:20,620
+数据流命令行参数。
+data streams a command line arguments.
+
+134
+00:08:20,720 --> 00:08:25,180
+但一般而言，不同之处在于数据流可以流动，也可以一起修补，但命令行
+But in general the difference is that data streams can flow and be patched together but command line
+
+135
+00:08:25,180 --> 00:08:29,950
+争论更多的是静电，还有一个关键区别需要牢记，尽管在
+arguments are more static and still there is one other key difference to keep in mind though in the
+
+136
+00:08:30,250 --> 00:08:33,010
+并非所有命令都接受标准输入。
+not all commands accept standard input.
+
+137
+00:08:33,010 --> 00:08:38,020
+例如，echo命令不接受标准输入，但几乎每个命令都可以
+For example the echo command doesn't accept standard input but pretty much every command can except
+
+138
+00:08:38,020 --> 00:08:39,480
+命令行参数。
+command line arguments.
+
+139
+00:08:39,580 --> 00:08:43,860
+如果您想知道某个命令是否确实可以接受标准输入，只需查看它的手册页
+And if you want to know whether a command can actually accept standard input just check its man page
+
+140
+00:08:43,870 --> 00:08:47,460
+如果它不在那里，只是为了向你展示它可以令人惊叹。
+and if it's not there just to show you that it can awesome.
+
+141
+00:08:47,460 --> 00:08:52,500
+在这段视频中，您学习了一些非常重要的概念，作为简要回顾，我们了解到
+So in this video you've learned some incredibly important concepts as a quick recap we learned that
+
+142
+00:08:52,500 --> 00:08:56,980
+有两种方法可以将数据放入命令中，两种方法可以将数据取出。
+there are two ways to get data into commands and two ways to get data out.
+
+143
+00:08:57,090 --> 00:09:02,400
+标准输入和命令行参数中的方法以及标准输出和标准的方法
+The ways in our standard input and command line arguments and the ways out our standard output and standard
+
+144
+00:09:02,490 --> 00:09:08,820
+错误有三种以单词Standard开头的方式都是标准数据流的示例。
+error there are three ways that start with the word standard are examples of standard data streams.
+
+145
+00:09:08,850 --> 00:09:13,500
+我们提到标准输出是突击队的输出数据和标准错误
+We mentioned that standard output is where the output data for a commando's and that standard error
+
+146
+00:09:13,560 --> 00:09:16,300
+是命令的错误和日志消息所在的位置。
+is where the error and log messages for a command goes.
+
+147
+00:09:16,410 --> 00:09:20,560
+默认情况下，标准输出和标准误差附加到您的终端。
+And by default standard output and standard error are attached to your terminal.
+
+148
+00:09:20,580 --> 00:09:22,430
+但这是可以改变的。
+But this can be changed.
+
+149
+00:09:22,470 --> 00:09:27,840
+您还了解了标准输入，现在默认情况下标准输入已附加到键盘上，并且
+You also learned about standard input now standard input by default is attached to your keyboard and
+
+150
+00:09:27,840 --> 00:09:34,260
+也是一种数据流，这意味着它可以将数据从其他地方转移到称为重定向的东西上。
+is also a data stream which means it can take data from other places to using something called redirection.
+
+151
+00:09:34,260 --> 00:09:39,720
+没错，数据流可以从它们的默认位置重定向到您希望使用的任何位置
+That's right data streams can be redirected from their default locations to where ever you wish using
+
+152
+00:09:39,720 --> 00:09:41,670
+一个称为重定向的过程。
+a process called redirection.
+
+153
+00:09:41,670 --> 00:09:47,340
+我们还提到，您实际上可以将一个命令的输出流连接到标准输入
+We also mentioned that you can actually connect the output streams of one command to the standard input
+
+154
+00:09:47,400 --> 00:09:54,300
+另一种是使用称为管道的方法，管道和重定向是令人难以置信的强大功能，
+of another using a method called piping piping and redirection are incredibly powerful abilities that
+
+155
+00:09:54,300 --> 00:09:55,130
+Linux为我们提供了。
+Linux gives us.
+
+156
+00:09:55,260 --> 00:10:00,060
+能够有效地使用它们基本上会赋予您与您的
+And being able to use them effectively will basically give you super powers for interacting with your
+
+157
+00:10:00,060 --> 00:10:03,030
+以你从未想过可能的方式使用计算机。
+computer in ways that you never thought possible.
+
+158
+00:10:03,210 --> 00:10:08,010
+我希望你会超级兴奋，因为管道和重定向将是
+And I hope that you're super excited because piping and redirection are going to be the topic of the
+
+159
+00:10:08,010 --> 00:10:09,160
+接下来的几节课。
+next few lectures.
+
+160
+00:10:09,180 --> 00:10:12,960
+所以，如果你想获得超能力，我会在下一个视频中见到你。
+So if you want to gain superpowers I'll see you in the next video.
+

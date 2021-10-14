@@ -1,0 +1,645 @@
+1
+00:00:00,150 --> 00:00:01,500
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,500 --> 00:00:06,180
+在上几个视频中，您已经学习了如何创建和修改文件和目录
+So in the last few videos you've been learning how to create and modify files and directories in all
+
+3
+00:00:06,180 --> 00:00:07,390
+各种不同的方式。
+kinds of different ways.
+
+4
+00:00:07,560 --> 00:00:11,970
+当您处理计算机中的文件时，很容易将一两个文件放错位置并感到疑惑
+And when you're working with files in your computer it's really easy to misplace one or two and wonder
+
+5
+00:00:11,970 --> 00:00:15,910
+对您来说很新的重要文件(如配置文件)可能隐藏在哪里。
+where an important file that's new to you such a configuration file might be hiding.
+
+6
+00:00:16,080 --> 00:00:20,700
+在这段视频中，我将向您展示如何使用LOCATE命令实际搜索文件
+So in this video I'm going to show you how you can use the locate command to actually search for files
+
+7
+00:00:20,700 --> 00:00:26,020
+按名称查找它们，无论它们可能隐藏在您的计算机上还是通过命令行。
+by name and find them no matter where they might be hiding on your computer or with the command line.
+
+8
+00:00:26,130 --> 00:00:26,870
+很酷，对吧。
+Pretty cool right.
+
+9
+00:00:26,970 --> 00:00:31,170
+在这段视频中，我们将把它分成两部分，您将了解如何使用Locate
+So we're going to break this up into two parts in this video you're going to learn how to use the locate
+
+10
+00:00:31,170 --> 00:00:32,580
+司令部和他的一些选择。
+command and some of his options.
+
+11
+00:00:32,670 --> 00:00:38,740
+您还将了解LOCATE命令可能具有的一些限制。
+And you're also going to appreciate some of the limitations that the locate command can have.
+
+12
+00:00:38,880 --> 00:00:42,840
+然后在接下来的视频中，您可以了解如何克服这些限制
+And then in the next video the one after this one you can to learn how to overcome those limitations
+
+13
+00:00:43,140 --> 00:00:49,920
+以及如何访问系统上的管理员权限以更新数据库。
+and also how to access administrator privileges on the system in order to update a database.
+
+14
+00:00:49,920 --> 00:00:52,620
+所以这一切都将是非常酷的东西，非常非常令人兴奋。
+So this is all going to be very cool stuff very very exciting.
+
+15
+00:00:52,620 --> 00:00:58,650
+它基本上会给你超能力，所以让我们继续，直接进入。
+It's going to give you superpowers basically So let's just go ahead and get right into.
+
+16
+00:00:58,820 --> 00:01:04,610
+好的，定位命令实际上使用起来非常简单，但是它非常非常有用。
+OK so the locate command is actually really simple to use but it's very very useful.
+
+17
+00:01:04,610 --> 00:01:09,170
+现在，关于LOCATE命令，您需要知道的第一件事是它通过搜索数据库来工作
+Now the first thing you need to know about the locate command is that it works by searching a database
+
+18
+00:01:09,170 --> 00:01:11,360
+你系统上的文件。
+file that's on your system.
+
+19
+00:01:11,360 --> 00:01:16,550
+现在，此数据库保存有关系统上每个文件的位置信息，以及
+Now this database holds location information about every file that's on your system and the way that
+
+20
+00:01:16,560 --> 00:01:21,770
+Locate命令的工作原理是，您将给它一些要查找的模式，然后Locate将进行搜索
+the locate command works is that you will give it some pattern to look for and then locate will search
+
+21
+00:01:21,770 --> 00:01:27,450
+匹配该模式的每条路径的数据库，并在标准输出中将其返回给您。
+the database for every path that matches that pattern and give it back to you on standard output.
+
+22
+00:01:27,540 --> 00:01:31,610
+那么这实际上非常简单，所以让我们直接开始，来感受一下它是如何工作的。
+Then this is actually really easy so let's just jump right in and get a feel for how this works.
+
+23
+00:01:31,810 --> 00:01:39,270
+好的，例如，让我们尝试查找系统中以点、c、o和f结尾的每个文件。
+OK so for example let's try and find every file in our system that ends in dot c o and F..
+
+24
+00:01:39,400 --> 00:01:39,890
+好的。
+OK.
+
+25
+00:01:39,950 --> 00:01:46,730
+现在，Dot CNF是Linux上常见的文件扩展名，表示该文件是无法读取的配置
+Now Dot CNF is a file extension that is common on Linux to indicate that this file is a uneatable configuration
+
+26
+00:01:46,730 --> 00:01:47,160
+文件。
+file.
+
+27
+00:01:47,210 --> 00:01:47,600
+好的。
+OK.
+
+28
+00:01:47,720 --> 00:01:50,290
+因为文件扩展名对Linux来说并不重要。
+Because file extensions don't really matter to Linux.
+
+29
+00:01:50,290 --> 00:01:55,820
+Linux用户和开发人员通常会留下有意义的文件扩展名，如.com，这样您就可以理解
+Linux users and developers usually leave meaningful file extensions like dot com so that you can understand
+
+30
+00:01:55,820 --> 00:02:01,250
+仅从读取文件扩展名日志来看表单可能是什么，这是另一个常见的示例
+what the form might be about just from reading the file extension log is another common example and
+
+31
+00:02:01,250 --> 00:02:05,360
+它用于存储来自程序和服务器应用程序错误消息的日志文件。
+it's use for log files that store error messages from programs and server applications.
+
+32
+00:02:05,480 --> 00:02:09,590
+所以你知道你可以在以后查看这些日志文件，以防有什么损坏，看看这些东西在哪里
+So you know you can look at these log files later on in case anything breaks and see where the stuff
+
+33
+00:02:09,590 --> 00:02:10,150
+出了差错。
+went wrong.
+
+34
+00:02:10,220 --> 00:02:13,570
+好的，我们来看一下以.com结尾的文件。
+OK we're going to look at files end in dot com.
+
+35
+00:02:13,710 --> 00:02:17,210
+现在确定搜索我们系统上的所有.com文件。
+OK now to search for all the dot com files on our system.
+
+36
+00:02:17,220 --> 00:02:21,900
+一种方法是键入LOCATE命令，然后给它提供我们想要搜索的专利。
+One way to do is type the locate command and then give it the paten we want to search for.
+
+37
+00:02:21,920 --> 00:02:25,740
+现在您应该开始记住我们是如何处理正则表达式和通配符的。
+Now you should start remembering what we did about regular expressions and wildcards.
+
+38
+00:02:25,760 --> 00:02:31,500
+所以只要想一分钟，你将如何制作一个与任何以.com结尾的文件相匹配的模式。
+So just think for a minute how would you make a pattern that matched any file that ended in dot com.
+
+39
+00:02:31,520 --> 00:02:32,850
+想一想吧。
+Just think about it for a second.
+
+40
+00:02:35,180 --> 00:02:40,540
+您可能还记得，您可能需要使用星号通配符，然后使用.com。
+And you might remember that perhaps you need to have the star wildcard and then dot com.
+
+41
+00:02:40,680 --> 00:02:45,540
+这表示与这里的模式匹配的任何内容，这意味着它可以以任何内容开头，然后
+This says anything that matches this pattern here and that means it can start with anything and then
+
+42
+00:02:45,540 --> 00:02:46,630
+以.com结尾。
+end in dot com.
+
+43
+00:02:46,720 --> 00:02:51,490
+好的，因此此模式将检查以.com结尾的文件。
+OK so this pattern will check for files that end in dot com.
+
+44
+00:02:51,720 --> 00:02:53,900
+实际上，这就是我们需要做的所有事情。
+And that's actually all we need to do right.
+
+45
+00:02:53,980 --> 00:03:03,270
+如果我们这样做，然后按Enter键，你就会看到一大堆不同的秋天路径出现了
+So if we do that and press ENTER wo right you'll see like a whole bunch of different fall paths come
+
+46
+00:03:03,270 --> 00:03:03,750
+出去。
+out.
+
+47
+00:03:03,860 --> 00:03:11,010
+但是您将看到这些文件中的每个文件都以.com结尾。
+But you'll see that every single one of these files ends in dot com.
+
+48
+00:03:11,450 --> 00:03:16,510
+现在值得注意的是，默认情况下Linux区分大小写。
+Now it's worth noting that by default Linux is case sensitive.
+
+49
+00:03:16,520 --> 00:03:22,520
+但是您可以使用LOCATE命令进行不区分大小写的搜索，方法是给LOCATE命令
+But you can make searches using the locate command case insensitive by giving the locate command the
+
+50
+00:03:22,850 --> 00:03:23,630
+选项。
+option.
+
+51
+00:03:23,630 --> 00:03:33,410
+举个例子，如果我们只点击屏幕，我们确实找到了，并且只说了.com，但是拼写了所有的内容
+So for example if we just click the screen and we do locate and just say dot com but spell everything
+
+52
+00:03:33,410 --> 00:03:40,780
+现在您会看到，我们实际上没有得到任何结果，因为Linux搜索大小写敏感。
+in uppercase now you'll see that we actually get no results because Linux searched case sensitively.
+
+53
+00:03:40,790 --> 00:03:43,750
+它必须全部用大写字母表示。
+It had to be exactly everything in uppercase.
+
+54
+00:03:43,870 --> 00:03:44,450
+好的。
+OK.
+
+55
+00:03:44,600 --> 00:03:52,730
+但是要以不区分大小写的方式进行定位搜索，我们可以将选项和
+But to make locate search in a case insensitive way we could give the locate command the option and
+
+56
+00:03:52,730 --> 00:03:56,540
+这样做是在说，嘿，别担心这个案子，我只是在找这些信，当我找到的时候
+what this does is say hey don't worry about the case I'm just looking for these letters and when I do
+
+57
+00:03:56,540 --> 00:04:01,470
+我们又得到了以.com结尾的文件。
+that we get again files that end in dot com.
+
+58
+00:04:01,570 --> 00:04:01,850
+好的。
+OK.
+
+59
+00:04:01,850 --> 00:04:04,470
+所以这一点需要牢记在心。
+So that's something to bear in mind there.
+
+60
+00:04:04,670 --> 00:04:07,010
+你还可以限制你得到的结果的数量。
+And you can also limit the amount of results that you get.
+
+61
+00:04:07,010 --> 00:04:11,080
+我们有数百个结果，这一个看看有多少个配置文件。
+So we have hundreds of results coming out this one look how many there are a lot of configuration files.
+
+62
+00:04:11,090 --> 00:04:19,760
+但是如果我们单击屏幕，我们的代码会说OK，让我们以不区分大小写的方式进行搜索，但是让我们限制它。
+But if we click the screen we code say OK let's search in a case insensitive way but let's limit it.
+
+63
+00:04:19,760 --> 00:04:22,730
+将输出限制为仅三个结果。
+Limit the outputs to just three results.
+
+64
+00:04:22,850 --> 00:04:23,350
+好的。
+OK.
+
+65
+00:04:23,390 --> 00:04:26,960
+你们可以看到我在使用长格式。
+And you can see here I am using the long form.
+
+66
+00:04:27,200 --> 00:04:28,220
+限制选项。
+Limit options.
+
+67
+00:04:28,220 --> 00:04:33,140
+我们得到两个破折号，然后是单词限制，然后我们给出它的命令行参数，也就是3。
+We got the two dashes then the word limit and then we give it's command line argument which is three.
+
+68
+00:04:33,170 --> 00:04:37,020
+因此，此限制选项的输入为3。
+So this limit option has an input of three.
+
+69
+00:04:37,310 --> 00:04:44,120
+因此，当我这样做时，您可以看到，我们只是将其限制为3个结果，如果我将其更改为5，我们将
+So when I do that you can see that we are just limiting it to three results if I change that to 5 we'll
+
+70
+00:04:44,120 --> 00:04:46,930
+更改为10会得到5个结果。
+get five results for change to 10.
+
+71
+00:04:47,240 --> 00:04:50,180
+我们会得到10个结果，以此类推。
+We will get 10 results and so on and so on.
+
+72
+00:04:50,180 --> 00:04:51,990
+所以这是很有用的。
+So this is useful.
+
+73
+00:04:52,220 --> 00:04:56,510
+你知道，如果你只想得到最初的几个结果，你只想找到几个你可以限制的结果
+You know if you just want to get the first few results you only want to find a few results you can limit
+
+74
+00:04:56,510 --> 00:04:58,160
+它也是这样的。
+it like that as well.
+
+75
+00:04:58,160 --> 00:05:04,040
+现在，在使用LOCATE命令时需要考虑的关键问题是了解它使用的是数据库。
+Now the key consideration to have when using the locate command is to understand that it uses a database.
+
+76
+00:05:04,040 --> 00:05:09,050
+实际上，您可以使用大写S选项查找有关数据库的信息。
+In fact you can actually find out information about the database using the capital S option.
+
+77
+00:05:09,050 --> 00:05:15,770
+因此，如果我清除屏幕并使用locate并给它提供大写字母，请询问大写字母的选项，我可以
+So if I clear the screen and we use locate and give it the capital ask the uppercase s option I can
+
+78
+00:05:15,770 --> 00:05:20,860
+按Enter键，您将看到我们获得了有关数据库本身的一些信息。
+press enter and you'll see that we get some information about the database itself.
+
+79
+00:05:21,050 --> 00:05:29,570
+所以它告诉我们数据库文件的路径以及一些大小关于一般看到的一些信息
+So it tells us the path to the database file as well as some size about the general saw some information
+
+80
+00:05:29,570 --> 00:05:32,560
+关于日间基地的一般规模和复杂性。
+about the general size and complexity of the day base.
+
+81
+00:05:32,570 --> 00:05:37,820
+如果我要保存LOCATE ACET，那么实际上我要使用重定向来保存此信息
+So I'm actually going to save this information using a redirects if I use locate acet I'm going to save
+
+82
+00:05:37,820 --> 00:05:40,560
+放到我们桌面上的某个东西里。
+that into something on our desktop.
+
+83
+00:05:40,730 --> 00:05:44,660
+在发短信之前我们称它为数据库吧。
+Let's call it database before texting.
+
+84
+00:05:44,710 --> 00:05:48,330
+所以在那天之前我们的桌面上已经有了Farkle数据库。
+So we've got Farkle database before that day on our desktop.
+
+85
+00:05:48,410 --> 00:05:51,080
+所有信息都保存在里面。
+With all the information saved in it.
+
+86
+00:05:51,260 --> 00:05:51,890
+好的。
+OK.
+
+87
+00:05:52,160 --> 00:05:56,210
+所以你可以看到，重定向实际上是一项非常有用的技能，你会一直使用它，而你
+So you can see redirection is actually a very useful skill and you'll just use it all the time and you
+
+88
+00:05:56,210 --> 00:05:56,750
+应该感到自豪。
+should be proud.
+
+89
+00:05:56,750 --> 00:05:59,270
+现在您明白了如何使用它，就好像它什么都不是一样。
+Now you understand how to use it as if it's nothing.
+
+90
+00:05:59,300 --> 00:06:00,400
+正确的。
+Right.
+
+91
+00:06:00,500 --> 00:06:07,950
+因此，这个数据库就像任何其他日期基地一样，只有在其中的信息是最新的情况下才有用。
+So this database just like any other day base is only useful if the information in it is up to date.
+
+92
+00:06:08,120 --> 00:06:08,610
+好的。
+OK.
+
+93
+00:06:08,610 --> 00:06:12,770
+默认情况下，数据库每天只更新一次。
+And the database by default is updated just once a day.
+
+94
+00:06:12,770 --> 00:06:18,470
+因此，这意味着同时发生的任何事情都不会记录在数据库文件中
+So this means that anything that happens in the mean time is not logged in the database files could
+
+95
+00:06:18,470 --> 00:06:25,190
+已创建、移动、删除，除非更新数据库，否则将启动定位命令
+have been created moved deleted and unless the database is updated then the locate command will start
+
+96
+00:06:25,190 --> 00:06:27,620
+给出不正确的结果。
+to give incorrect results.
+
+97
+00:06:27,620 --> 00:06:31,490
+现在，定位命令提供了一些选项来帮助将此问题降至最低。
+Now there are a few options that come with the locate command to help minimize this issue.
+
+98
+00:06:31,490 --> 00:06:36,260
+他们无法创建尚未添加到其中的数据库列表文件，因为这是不可能的。
+They can't make the database list files that haven't been added to it yet because that's impossible.
+
+99
+00:06:36,380 --> 00:06:39,960
+但它们可以阻止LOCATE命令显示已删除的文件。
+But they can prevent the locate command from showing files that have been deleted.
+
+100
+00:06:39,980 --> 00:06:42,390
+在此期间，所有不再起作用的东西。
+In the meantime all things that no longer work.
+
+101
+00:06:42,410 --> 00:06:48,380
+例如，有一个选项需要LOCATE命令来检查文件是否存在
+For example there is the option that requires the locate command to check that the file is existing
+
+102
+00:06:48,440 --> 00:06:49,900
+在它报告之前。
+before it reports it back.
+
+103
+00:06:50,060 --> 00:06:57,440
+例如，如果我们确实使用以.com结尾的所有内容的选项进行定位，那么这将检查
+So for example if we did locate with the option of everything that ends in dot com then this would check
+
+104
+00:06:57,440 --> 00:07:03,860
+所有以.com结尾的文件的数据库，但也要进行检查以确保这些文件实际上
+the database for all files that ended in dot com but also do a check to make sure that those files actually
+
+105
+00:07:03,860 --> 00:07:09,680
+在报告它们之前就存在了，而不是直接从数据库中获取。
+existed before reporting them rather than just taking it from the database directly.
+
+106
+00:07:09,710 --> 00:07:13,430
+它将从数据库中取出它们，但也会进行检查以确保它们在那里。
+It will take them from the database but also do a check to make sure that they are there.
+
+107
+00:07:13,430 --> 00:07:19,010
+因此，它为您提供了额外的保证，选项有一个很长的格式选项，而不是键入
+So it gives you that extra bit of assurance there is a long form option for the options instead of typing
+
+108
+00:07:19,260 --> 00:07:20,100
+破折号8。
+a dash 8.
+
+109
+00:07:20,110 --> 00:07:22,280
+您可以键入Double Dash Existing。
+You could type Double Dash existing.
+
+110
+00:07:22,370 --> 00:07:22,700
+好的。
+OK.
+
+111
+00:07:22,700 --> 00:07:24,850
+它们做的是完全一样的事情。
+And that does exactly the same thing.
+
+112
+00:07:24,860 --> 00:07:26,320
+所以这是非常非常有用的东西。
+So it's very very useful stuff.
+
+113
+00:07:26,480 --> 00:07:32,720
+有时，您的系统上有一些称为符号链接的快捷方式和链接可能会中断
+And sometimes there are shortcuts and links on your system called symbolic links that might be broken
+
+114
+00:07:32,930 --> 00:07:38,600
+如果文件在定位之前四处移动以检查这些快捷方式和链接是否仍然有效
+if files get moved around to check whether these shortcuts and links are still valid before the locate
+
+115
+00:07:38,600 --> 00:07:40,100
+司令部向他们汇报情况。
+Command reports them back.
+
+116
+00:07:40,100 --> 00:07:48,200
+您可以像这样使用大写的L或Follow选项，这样就可以定位Follow一切都以.com结尾
+You can use the capital L or the follow option like this so locate follow everything ends in dot com
+
+117
+00:07:48,200 --> 00:07:48,600
+为了这个。
+for this.
+
+118
+00:07:48,600 --> 00:07:53,960
+因此，如果有任何符号链接，是否有指向文件的链接，它将检查它们不只是
+So if there are any symbolic links are there any links to files it will check that they aren't just
+
+119
+00:07:53,960 --> 00:07:59,180
+他们实际上到达了某个地方，到达了报告的正确地点。
+dandling they actually arrive somewhere arrived at the right place for reporting it back.
+
+120
+00:07:59,200 --> 00:08:06,000
+这是另一个保证，当然你可以同时做这两件事，所以现有的和后续的给出了
+That's another assurance and of course you can do both at the same time so existing and follow gives
+
+121
+00:08:06,000 --> 00:08:08,840
+你基本上是你能到达那里的最大保证。
+you basically the maximum assurance you can get there.
+
+122
+00:08:09,000 --> 00:08:15,210
+同样，您可以将其与不区分大小写并限制为仅显示5进行组合
+And again you can combine it with case insensitivity and limited to just show 5 and you can combine
+
+123
+00:08:15,210 --> 00:08:20,520
+所有这些选项在这里向您展示了Linux命令行拥有多个
+all these options showing you here just how powerful the Linux command line can be to have multiple
+
+124
+00:08:20,520 --> 00:08:23,610
+不同的功能同时进行。
+different functions going at the same time.
+
+125
+00:08:23,610 --> 00:08:28,440
+现在这些安全功能都很好，但我们真正需要解决的问题是
+Now these safety features are all well and good but what we really need to solve our problem is to have
+
+126
+00:08:28,440 --> 00:08:35,280
+有一种随时更新数据库的方法，称为update D-B命令。
+a way to update the database whenever we like and there is it's called the update D-B command.
+
+127
+00:08:35,280 --> 00:08:39,900
+出于时间的目的，我们将在这里剪切视频，并开始学习如何更新
+And for the purposes of time we're going to cut the video here and pick up learning how to update the
+
+128
+00:08:39,900 --> 00:08:41,510
+下一个视频中的数据库。
+database in the next video.
+
+129
+00:08:41,550 --> 00:08:42,360
+所以我会看到的。
+So I'll see that.
+

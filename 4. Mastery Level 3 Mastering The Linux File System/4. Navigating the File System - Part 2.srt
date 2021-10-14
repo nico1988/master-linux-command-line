@@ -1,0 +1,731 @@
+1
+00:00:00,120 --> 00:00:02,590
+Lovin you beautiful people are welcome to part two.
+
+2
+00:00:02,670 --> 00:00:04,780
+Navigating the Linux file system.
+
+3
+00:00:04,830 --> 00:00:09,660
+So in this video we're going to build upon what we learned in the last video about using the PWT and
+
+4
+00:00:09,660 --> 00:00:10,910
+the LS commands.
+
+5
+00:00:10,970 --> 00:00:16,910
+But in this video you're going to learn how to use the cd command to actually move around the file system.
+
+6
+00:00:17,010 --> 00:00:20,440
+You're going to learn the difference between absolute and relative paths.
+
+7
+00:00:20,460 --> 00:00:25,140
+You can learn some awesome keyboard shortcuts that will make navigating the file system so quick and
+
+8
+00:00:25,140 --> 00:00:31,950
+so easy and you basically going to see how you can put together the PWT the Ls and the CD commands to
+
+9
+00:00:32,040 --> 00:00:34,510
+elegantly navigate the file system.
+
+10
+00:00:34,630 --> 00:00:39,390
+By the end of this video you're going to know everything you need to know about navigating the Linux
+
+11
+00:00:39,390 --> 00:00:44,220
+file system using the command line and you watch with a bit of practice you'll soon agree with me that
+
+12
+00:00:44,220 --> 00:00:50,250
+doing it this way is a lot faster and a lot more effective than using your pointy clicky graphical methods
+
+13
+00:00:50,250 --> 00:00:51,360
+that you've been using.
+
+14
+00:00:51,360 --> 00:00:53,540
+Probably all of your life so far.
+
+15
+00:00:53,640 --> 00:00:58,220
+So let's go ahead and jump right into this next part of your superhero training.
+
+16
+00:00:58,530 --> 00:00:59,060
+OK.
+
+17
+00:00:59,070 --> 00:01:04,530
+So in the last video we saw that we could use the P W D command to see where we were on the file system
+
+18
+00:01:04,800 --> 00:01:09,510
+and we saw that we could use the ls command with a variety of different options to basically look around
+
+19
+00:01:09,540 --> 00:01:11,760
+and list what was in the directory the way in.
+
+20
+00:01:11,790 --> 00:01:17,130
+But using just these two commands we're kind of stuck in the one place right how can we actually move
+
+21
+00:01:17,370 --> 00:01:19,070
+from our home directory.
+
+22
+00:01:19,200 --> 00:01:25,790
+Well the missing piece is the C D command and the cd command stands for change directory.
+
+23
+00:01:25,800 --> 00:01:30,930
+So let's say that we used our last kind and we saw that the downloads folder by noting that it's in
+
+24
+00:01:30,930 --> 00:01:35,280
+blue and it's a folder and we wanted to go into the downloads folder.
+
+25
+00:01:35,280 --> 00:01:36,260
+How would we do that.
+
+26
+00:01:36,300 --> 00:01:37,960
+What we could do it in a few ways.
+
+27
+00:01:38,130 --> 00:01:44,010
+Firstly we can give the cd command the absolute path for where we want to go with a go starting at the
+
+28
+00:01:44,010 --> 00:01:51,810
+base directory we'd go slash then home then Ziyad then downloads OK and we could type that in like that
+
+29
+00:01:51,840 --> 00:01:58,020
+and that would totally work or if we didn't want to have to write the entire path to our home directory
+
+30
+00:01:58,260 --> 00:02:00,830
+we could just replace all that with the Tilda.
+
+31
+00:02:00,860 --> 00:02:07,030
+We say OK go change to our home directory and then download that's where you'd use the tilde at a shortcut
+
+32
+00:02:07,540 --> 00:02:15,330
+or what we could use is something known as a relative path number relative path is a path relative to
+
+33
+00:02:15,330 --> 00:02:17,400
+where you currently are.
+
+34
+00:02:17,570 --> 00:02:22,670
+OK so because we're currently in the home folder how do we get to the downloads folder.
+
+35
+00:02:22,890 --> 00:02:26,420
+Well let's think about it if we open up the graphical graphical menu.
+
+36
+00:02:26,730 --> 00:02:28,990
+Here we are we're in the home folder from here.
+
+37
+00:02:29,010 --> 00:02:31,350
+What do we do to get to the downloads folder.
+
+38
+00:02:32,660 --> 00:02:39,110
+We literally all we have to do is just click downloads right so that you can say that that's a relative
+
+39
+00:02:39,110 --> 00:02:42,870
+path which is going from here to the download that's all we've got to do.
+
+40
+00:02:43,100 --> 00:02:49,370
+So to change to the downloads folder all we've got to do is type downloads.
+
+41
+00:02:49,580 --> 00:02:56,870
+So if we do that if we just type CD and then downloads just like that and press ENTER you can see that
+
+42
+00:02:56,870 --> 00:03:02,060
+we have changed directory and a shell prompt has changed as well before it was just the tilda telling
+
+43
+00:03:02,060 --> 00:03:04,430
+us that we were in our home directory.
+
+44
+00:03:04,430 --> 00:03:08,590
+Now it's saying we're in our home directory and the downloads folder inside.
+
+45
+00:03:08,730 --> 00:03:09,270
+OK.
+
+46
+00:03:09,290 --> 00:03:15,580
+So this is this text in blue here shows us the path to where we currently on if we use the PWT command
+
+47
+00:03:15,620 --> 00:03:21,950
+now we can see that we get slash home slashy or slash downloads and we can also look around by pressing
+
+48
+00:03:21,950 --> 00:03:26,050
+the ls command and we can see that there's actually nothing inside that folder.
+
+49
+00:03:26,270 --> 00:03:28,410
+OK so neither We're not Downloads folder.
+
+50
+00:03:28,460 --> 00:03:30,090
+Here's a challenge for you.
+
+51
+00:03:30,140 --> 00:03:37,080
+Go ahead and post the video and see if you can use the CD command to change back to our home directory.
+
+52
+00:03:37,100 --> 00:03:40,700
+So go ahead and pause the video and give it a shot and then come back to see how you did.
+
+53
+00:03:47,110 --> 00:03:47,810
+Did you manage it.
+
+54
+00:03:47,830 --> 00:03:49,860
+If so really really well done.
+
+55
+00:03:49,900 --> 00:03:55,600
+You learn super quickly now you could have done it using an absolute path like this you could type CD
+
+56
+00:03:55,600 --> 00:04:00,350
+then slash home slash your username or whatever would be in my case it Ziyad slash.
+
+57
+00:04:00,520 --> 00:04:01,340
+And that's it.
+
+58
+00:04:01,390 --> 00:04:02,620
+OK that would work.
+
+59
+00:04:02,620 --> 00:04:08,510
+Or you could have used a Tilda to make it nice and easy just use CD and then Attilla.
+
+60
+00:04:08,590 --> 00:04:12,040
+Now I kind of cheated a little bit because there's another way that you could have done it.
+
+61
+00:04:12,160 --> 00:04:14,710
+And this is the way you probably do it from now on.
+
+62
+00:04:15,100 --> 00:04:16,510
+But I haven't shown you this before.
+
+63
+00:04:16,690 --> 00:04:22,780
+Now by default if you don't give me any input the CD command will take you to your home folder.
+
+64
+00:04:22,780 --> 00:04:28,570
+So if we just type CD like from scratch type CD and press ENTER you can see by just looking at the shell
+
+65
+00:04:28,570 --> 00:04:33,190
+prompt that we've ended up back in our home directory we can use Peter Beattie to confirm that.
+
+66
+00:04:33,220 --> 00:04:39,520
+I mean it tells us that we are back in our home directory and that will work no matter where I was previously
+
+67
+00:04:39,730 --> 00:04:44,220
+on the file system I could have been anywhere on the file system all of the do is type CD or press Enter
+
+68
+00:04:44,490 --> 00:04:47,230
+then I will end up back in the home directory.
+
+69
+00:04:47,270 --> 00:04:48,140
+Pretty cool right.
+
+70
+00:04:48,420 --> 00:04:49,030
+Okay great.
+
+71
+00:04:49,030 --> 00:04:54,340
+So now we're back in the home folder I want to show you a very useful option for the ls command.
+
+72
+00:04:54,360 --> 00:04:56,900
+It's kind of like wearing X-ray glasses.
+
+73
+00:04:57,010 --> 00:05:00,860
+And it's the A option that the option is short for all.
+
+74
+00:05:00,970 --> 00:05:05,760
+And it allows you to see all of the files in a directory even the hidden files.
+
+75
+00:05:05,770 --> 00:05:08,950
+So if I type ls and give it the option OK.
+
+76
+00:05:09,000 --> 00:05:13,620
+If I press Enter you'll notice that we see a whole lot of stuff in here.
+
+77
+00:05:13,620 --> 00:05:14,250
+Print it out.
+
+78
+00:05:14,290 --> 00:05:19,240
+OK if I clear the screen on top you just the last option and then show you the ls with the A option
+
+79
+00:05:19,250 --> 00:05:22,740
+you'll see we get a lot more stuff with the A option.
+
+80
+00:05:22,870 --> 00:05:28,830
+Now a lot of these files you'll notice have fall names beginning with dots and that means that there
+
+81
+00:05:28,840 --> 00:05:31,760
+hidden files or even hidden directories.
+
+82
+00:05:31,840 --> 00:05:32,300
+OK.
+
+83
+00:05:32,410 --> 00:05:37,690
+Now if we look in the graphical editor we may not be able to actually see them by default but if we
+
+84
+00:05:37,690 --> 00:05:42,780
+click up here like we do in the last few videos and show hidden files we can now see them as well so
+
+85
+00:05:42,790 --> 00:05:46,630
+you look you can see that we're getting exactly the same output so that's how you show hidden files
+
+86
+00:05:47,020 --> 00:05:51,120
+using the using the the the ls command.
+
+87
+00:05:51,190 --> 00:05:51,580
+OK.
+
+88
+00:05:51,760 --> 00:05:57,450
+And you may also notice in here that we've got our bash alias's file that we made a few videos ago.
+
+89
+00:05:57,460 --> 00:06:04,900
+Now the reason I mention this is because these two very important hidden folders inside each folder.
+
+90
+00:06:05,230 --> 00:06:08,850
+They are the dot and the double dot folders.
+
+91
+00:06:08,890 --> 00:06:09,100
+OK.
+
+92
+00:06:09,100 --> 00:06:14,050
+Now these are shortcuts to allow you to move around easier or refer to stuff on your file system a whole
+
+93
+00:06:14,050 --> 00:06:14,600
+lot easier.
+
+94
+00:06:14,670 --> 00:06:18,960
+The doc folder simply refers to the current directory.
+
+95
+00:06:19,090 --> 00:06:19,430
+OK.
+
+96
+00:06:19,540 --> 00:06:24,430
+So for example if I go to the Desktop folder OK then we can print.
+
+97
+00:06:24,670 --> 00:06:29,500
+My apologies if I can do print working directory and we can see that we have that we are in the desktop
+
+98
+00:06:29,770 --> 00:06:34,050
+and if our list its contents this shouldn't really be anything on my desktop.
+
+99
+00:06:34,120 --> 00:06:40,270
+But there always is this data and double dot folders which are only visible using the ls with the option
+
+100
+00:06:40,270 --> 00:06:41,260
+of just the normal address.
+
+101
+00:06:41,290 --> 00:06:43,260
+It doesn't show up for duellists dash 8.
+
+102
+00:06:43,360 --> 00:06:43,930
+They show up.
+
+103
+00:06:44,050 --> 00:06:44,590
+OK.
+
+104
+00:06:44,800 --> 00:06:48,250
+Now in here we've got the dot and the double dot folders.
+
+105
+00:06:48,250 --> 00:06:57,190
+If I try to do cd to the doc folder Bash is basically going to stay where is the shell is going to stay
+
+106
+00:06:57,190 --> 00:06:59,480
+exactly where is if I do that.
+
+107
+00:07:00,280 --> 00:07:05,080
+You can see that we're still in the desktop looking at the shell prompt because the DOT folder refers
+
+108
+00:07:05,080 --> 00:07:07,690
+to the current folder that we're in.
+
+109
+00:07:07,780 --> 00:07:08,210
+OK.
+
+110
+00:07:08,320 --> 00:07:10,600
+It's just a way of saying this folder.
+
+111
+00:07:10,960 --> 00:07:11,480
+OK.
+
+112
+00:07:11,680 --> 00:07:13,880
+Now what if I went to the doubleback.
+
+113
+00:07:13,930 --> 00:07:16,230
+What if I do cd doubled up OK.
+
+114
+00:07:17,110 --> 00:07:22,930
+You noticed that we did actually change and were in fact back in our home folder the doubled up folder
+
+115
+00:07:23,140 --> 00:07:28,610
+means the parent folder or the folder above where we currently are.
+
+116
+00:07:28,750 --> 00:07:29,170
+OK.
+
+117
+00:07:29,290 --> 00:07:34,260
+So if I go back to the desktop you can see that we've got the doubled up for if I press CD double that
+
+118
+00:07:34,360 --> 00:07:36,280
+we've gone back up a folder.
+
+119
+00:07:36,280 --> 00:07:40,620
+Which brings us into the home directory in case we're back in a home directory let's clear the screen.
+
+120
+00:07:40,870 --> 00:07:42,240
+What if I kept going.
+
+121
+00:07:42,420 --> 00:07:50,830
+OK if I go see the dot dot I'm now in the actual home folder which is not my home folder but it's the
+
+122
+00:07:50,830 --> 00:07:53,170
+folder above my home folder.
+
+123
+00:07:53,260 --> 00:07:54,400
+OK let's keep going.
+
+124
+00:07:54,400 --> 00:07:55,600
+See the dot dot.
+
+125
+00:07:55,780 --> 00:08:03,630
+And now we're actually just in the slash for the we're in the base directory for the whole system.
+
+126
+00:08:03,640 --> 00:08:04,180
+OK.
+
+127
+00:08:04,390 --> 00:08:07,280
+See if we can go any higher we go C.D dot dot.
+
+128
+00:08:07,330 --> 00:08:13,510
+You can see that we can't go any higher because the dust the slush folder is the highest point on the
+
+129
+00:08:13,510 --> 00:08:14,430
+file system.
+
+130
+00:08:14,440 --> 00:08:15,020
+OK.
+
+131
+00:08:15,280 --> 00:08:19,270
+And we can actually have a look around if I do an ls what's in the base directory.
+
+132
+00:08:19,770 --> 00:08:24,670
+See there's quite a lot of files here that you saw when we had a little bit of next mation of the file
+
+133
+00:08:24,670 --> 00:08:30,070
+system you've got the bin folder the boot folder the folder the ETSI folder which is full of your configuration
+
+134
+00:08:30,070 --> 00:08:30,730
+files.
+
+135
+00:08:30,730 --> 00:08:33,530
+The home folder which is where we just were to get our home stuff.
+
+136
+00:08:33,580 --> 00:08:39,060
+The library's media which is where you have your room remove wardrobe's your optional stuff.
+
+137
+00:08:39,250 --> 00:08:43,030
+The route users home folder and so on.
+
+138
+00:08:43,030 --> 00:08:49,150
+So on the variable files temp files user stuff and so on and so on I guess these are the folders and
+
+139
+00:08:49,150 --> 00:08:53,050
+the most important of these anyway are the ones that I gave you a cheat sheet where we talked about
+
+140
+00:08:53,320 --> 00:08:54,670
+the file system.
+
+141
+00:08:54,790 --> 00:08:55,160
+OK.
+
+142
+00:08:55,310 --> 00:08:56,880
+And see what happens.
+
+143
+00:08:56,890 --> 00:08:59,110
+This is the root user's home folder right.
+
+144
+00:08:59,110 --> 00:09:02,650
+This is the home folder for the administrator.
+
+145
+00:09:03,400 --> 00:09:05,450
+Let's try and see what happens if we try to enter it.
+
+146
+00:09:05,530 --> 00:09:12,160
+If we do see the route OK and press enter you can see that we get permission denied.
+
+147
+00:09:12,160 --> 00:09:17,340
+OK so there's some folders that you were allowed into and some folders that you're not allowed into.
+
+148
+00:09:17,530 --> 00:09:22,250
+So we don't have enough privileges to be able to access the root user's home directory.
+
+149
+00:09:22,330 --> 00:09:25,760
+Well what about the ETSI folder OK along with the configuration files as try that.
+
+150
+00:09:25,800 --> 00:09:30,670
+If we try CD and see how we can get into that one let's see what's in there for us.
+
+151
+00:09:30,670 --> 00:09:34,530
+Ls us who you can see the whole bunch of stuff in there right.
+
+152
+00:09:34,570 --> 00:09:36,030
+And you get some folders in here.
+
+153
+00:09:36,110 --> 00:09:41,040
+The blue ones or folders and the white ones files and some of them have different types as well.
+
+154
+00:09:41,050 --> 00:09:42,430
+But you don't have to worry about that.
+
+155
+00:09:42,430 --> 00:09:48,430
+Mostly what you'll see are blue and white blue ones folders white one files and you can enter anything
+
+156
+00:09:48,430 --> 00:09:49,060
+that you want in there.
+
+157
+00:09:49,060 --> 00:09:52,130
+For example there's one here where are we looking.
+
+158
+00:09:52,150 --> 00:09:55,270
+There's one here called DHC pay we could go into that folder.
+
+159
+00:09:55,300 --> 00:09:57,710
+We could try CD DHC page.
+
+160
+00:09:58,120 --> 00:09:58,720
+OK.
+
+161
+00:09:58,720 --> 00:10:00,060
+Now what's in there.
+
+162
+00:10:00,170 --> 00:10:03,340
+We could do ls and we can have a look around we can see this other stuff in there.
+
+163
+00:10:03,340 --> 00:10:04,250
+There's another one there.
+
+164
+00:10:04,270 --> 00:10:06,580
+De D.H. climbed and to hook day.
+
+165
+00:10:06,640 --> 00:10:12,040
+Let's try to get the D.H. client dash and dash hooks.
+
+166
+00:10:12,400 --> 00:10:16,410
+You can see that we're in there what's in there two Ls we see this other stuff in there.
+
+167
+00:10:16,540 --> 00:10:23,020
+The green ones here are programs but you can see here right the way that we are moving around the file
+
+168
+00:10:23,020 --> 00:10:30,820
+system using either CD to move LS to see what's around us or Peter Beattie to confirm exactly where
+
+169
+00:10:30,880 --> 00:10:31,620
+we are.
+
+170
+00:10:31,690 --> 00:10:37,420
+And it's this way that you will actually move around the entire system and it doesn't change no matter
+
+171
+00:10:37,420 --> 00:10:41,560
+where you are as long as you've got the permissions to enter those folders you can get there using just
+
+172
+00:10:41,560 --> 00:10:45,820
+the cd command and you can look around using the ls command and you can confirm where you are using
+
+173
+00:10:45,820 --> 00:10:47,260
+the Pido EDI command.
+
+174
+00:10:47,260 --> 00:10:49,790
+Now how do we get all the way back to our home folder.
+
+175
+00:10:49,810 --> 00:10:55,850
+Very easy just press CD press enter and we are back in our home folder.
+
+176
+00:10:56,020 --> 00:11:00,290
+So you can see the pretty much anything that you need to do in the Linux file system anywhere in the
+
+177
+00:11:00,400 --> 00:11:04,710
+expansion that you want to move to as long as you have the required permissions on the CD.
+
+178
+00:11:04,840 --> 00:11:09,750
+LS And Peter really commands and you can get wherever you want and if you get lost or shoes the Pido
+
+179
+00:11:09,760 --> 00:11:11,910
+E-D command to check where you are pretty epic right.
+
+180
+00:11:12,130 --> 00:11:16,460
+So now that we're back in our home folder there's one final thing that I want to teach you.
+
+181
+00:11:16,660 --> 00:11:18,940
+And that's called tab completion.
+
+182
+00:11:19,330 --> 00:11:24,190
+But for goodness as well as a summary of everything we've learned in the past few videos I'll see you
+
+183
+00:11:24,520 --> 00:11:25,600
+in the next video.

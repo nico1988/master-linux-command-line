@@ -1,0 +1,785 @@
+1
+00:00:00,150 --> 00:00:01,590
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,590 --> 00:00:07,110
+现在，吸引您使用Linux的一个关键因素可能是开源软件的想法。
+Now one key thing that probably brought you to work with Linux is the idea of open source software.
+
+3
+00:00:07,320 --> 00:00:09,220
+但是这个词到底是什么意思呢。
+But what does that term really mean.
+
+4
+00:00:09,400 --> 00:00:13,470
+在这段视频中，我们将讨论新项目以及它对软件的实际意义
+Well in this video we're going to talk about the new project and what it actually means for software
+
+5
+00:00:13,470 --> 00:00:17,350
+开放源码和整个开放源码运动的历史。
+to be open source and the history of the whole open source movement.
+
+6
+00:00:17,370 --> 00:00:19,470
+所以，让我们继续下去，开始吧。
+So let's go ahead and get into it.
+
+7
+00:00:19,530 --> 00:00:19,860
+好的。
+OK.
+
+8
+00:00:19,890 --> 00:00:24,330
+因此，我们可能首先需要了解的是，当我们听到这个词时，Linux实际上是什么
+So the first thing that we probably need to understand is what Linux actually is when we hear the word
+
+9
+00:00:24,330 --> 00:00:29,430
+我们可能会认为我们使用的整个操作系统就是Linux操作系统。
+Linux we probably think of a whole operating system that we use as being the Linux operating system.
+
+10
+00:00:29,430 --> 00:00:34,710
+现在，令人惊讶的是，事实并非如此，Linux实际上只是整个体系中的一部分
+Now surprisingly this is actually not the case and Linux is actually just one of the pieces of the whole
+
+11
+00:00:34,710 --> 00:00:36,840
+操作系统是内核。
+operating system the kernel.
+
+12
+00:00:36,870 --> 00:00:38,290
+所以让我解释一下。
+So let me explain.
+
+13
+00:00:38,370 --> 00:00:45,060
+9月1日1983年9月，一个叫理查德·斯托尔曼的人宣布，他将开始
+On Sept. 27 the September in 1983 a person called Richard Stallman announced that he was going to begin
+
+14
+00:00:45,060 --> 00:00:51,900
+开发一个类似于Unix操作系统但完全免费的操作系统
+developing a operating system that was similar to the Unix operating system but made of entirely free
+
+15
+00:00:51,900 --> 00:00:52,890
+软件。
+software.
+
+16
+00:00:52,890 --> 00:00:58,710
+现在这个操作系统被称为新的操作系统，拼写为g和U，它代表Ganu is
+Now the operating system was called the new operating system spelled g and U which stands for Ganu is
+
+17
+00:00:58,710 --> 00:01:01,870
+而不是他们喜欢称之为递归缩写的Unix。
+not Unix which they like to call a recursive acronym.
+
+18
+00:01:01,980 --> 00:01:02,610
+好的。
+OK.
+
+19
+00:01:02,610 --> 00:01:08,520
+1984年1月，理查德·斯托尔曼(Richard Stallman)辞去了人工智能实验室(AI Lab)的工作
+Now in nine in January 1984 Richard Stallman quit his job in the Artificial Intelligence Lab at the
+
+20
+00:01:08,520 --> 00:01:14,820
+麻省理工学院让麻省理工学院全职致力于GANU项目的目标是创造
+Massachusetts Institute of Technology so MIT to work on the Ganu project full time in the aims of creating
+
+21
+00:01:14,850 --> 00:01:18,660
+由完全自由的软件组成的操作系统。
+an operating system made of completely free software.
+
+22
+00:01:18,660 --> 00:01:24,360
+现在，术语自由软件实际上指的是软件给予用户的几个自由，而不是
+Now the term free software actually refers to several freedoms that the software gives the user rather
+
+23
+00:01:24,360 --> 00:01:26,090
+而不是像金钱一样自由。
+than being free as in money.
+
+24
+00:01:26,250 --> 00:01:31,080
+因此，当你听到“自由软件”这个词时，想想言论自由，而不是免费午餐。
+So when you hear the term free software think free speech and not free lunch.
+
+25
+00:01:31,080 --> 00:01:33,060
+现在，这些自由是第一次。
+Now these freedoms are the first.
+
+26
+00:01:33,060 --> 00:01:37,990
+第一个是出于任何目的随心所欲地运行程序的自由。
+First one is the freedom to run the program as you wish for any purpose.
+
+27
+00:01:38,010 --> 00:01:43,680
+第一个自由，第二个自由是研究程序如何工作并对其进行更改的自由
+The first freedom the second freedom is the freedom to study how the program works and change it so
+
+28
+00:01:43,680 --> 00:01:45,630
+它可以按照你的意愿进行计算。
+that it does the computing as you wish.
+
+29
+00:01:45,630 --> 00:01:46,860
+这就是一个人的自由。
+Which is what freedom one is.
+
+30
+00:01:46,860 --> 00:01:49,500
+好的，自由一是程序会做你想做的事。
+OK freedom one is that the program will do what you wish.
+
+31
+00:01:49,500 --> 00:01:54,510
+对我来说，自由就是研究程序是如何工作的自由，并对其进行更改，使其按照您的方式运行
+Freedom to me is the freedom to study how the program works and to change it so that it does as you
+
+32
+00:01:54,510 --> 00:01:55,230
+祝愿。
+wish.
+
+33
+00:01:55,290 --> 00:01:59,340
+现在，访问程序的源代码是实现这一点的前提条件。
+Now access to the source code for a program is a precondition for this.
+
+34
+00:01:59,340 --> 00:02:02,620
+你不能研究一个程序是如何工作的，你可以看它的代码。
+You can't study how a program works and you can look at its code.
+
+35
+00:02:02,640 --> 00:02:06,960
+因此，能够访问源代码是自由号的前提条件。
+So having access to the source code is a precondition for freedom number.
+
+36
+00:02:07,290 --> 00:02:12,600
+第三个自由是重新分发软件副本的自由，这样您就可以像他们说的那样
+The third freedom is the freedom to redistribute copies of the software so that you can as they say
+
+37
+00:02:12,780 --> 00:02:19,140
+帮助您的邻居，而不是以前的自由是分发修改版本的副本的自由
+help your neighbor and freedom not before is the freedom to distribute copies of your modified version
+
+38
+00:02:19,590 --> 00:02:21,720
+你的软件。
+of your software.
+
+39
+00:02:21,750 --> 00:02:26,230
+如果你修改它，你可以将这个愿望重新分配给帮助他人的自由3号。
+If you modify it you can redistribute that Wishings to freedom number 3 of helping other people.
+
+40
+00:02:26,370 --> 00:02:27,660
+而是由和。
+But by and.
+
+41
+00:02:27,780 --> 00:02:32,250
+显然，通过这样做，您可以让整个社区有机会从您的更改中受益。
+Apparently by doing this you can give the whole community a chance to benefit from your changes.
+
+42
+00:02:32,340 --> 00:02:36,190
+同样，访问源代码是实现这一点的前提条件。
+And again access to the source code is a precondition for this.
+
+43
+00:02:36,230 --> 00:02:41,760
+好的，所以如果您想修改软件并重新分发它，您需要有权访问源代码
+OK so if you want to modify software and redistribute it you need to have access to the source code
+
+44
+00:02:41,760 --> 00:02:43,620
+以便能够改变它。
+in order to be able to change it.
+
+45
+00:02:43,620 --> 00:02:48,960
+现在有了一个许可证，它合法地向软件用户提供这些自由，被称为
+Now there's a license that legally provides a user of software with these freedoms and is known as the
+
+46
+00:02:48,960 --> 00:02:51,710
+皮划艇公共执照或GPL。
+canoe public license or the GPL.
+
+47
+00:02:51,720 --> 00:02:56,250
+现在有多个版本的Gonu公共许可证或GPL，但在录制GPL时
+Now are several versions of the Gonu public license or the GPL but at the time of recording the GPL
+
+48
+00:02:56,250 --> 00:03:00,790
+版本3是最现代的版本。
+version 3 is the most modern version.
+
+49
+00:03:00,990 --> 00:03:07,590
+但是在1991年，新的系统几乎完工，但是新的操作仍然缺少一个部分。
+But in 1991 the new system was almost finished but there was still one part missing from the new operating
+
+50
+00:03:07,590 --> 00:03:09,510
+这是一个重要的组成部分。
+system and it was an important part.
+
+51
+00:03:09,630 --> 00:03:14,280
+这最后一个部分是每个操作系统的主要部分，它被称为内核。
+This final piece is a major part of every operating system and it's called the kernel.
+
+52
+00:03:14,430 --> 00:03:18,870
+内核负责分配计算机硬件上的资源，这些资源由
+The kernel is responsible for allocating the resources on the computer's hardware that is required by
+
+53
+00:03:18,870 --> 00:03:24,120
+正在运行的软件，因此它是计算机硬件和应用程序之间的接口层
+the software that is running so it's the interface layer between the computers hardware and the applications
+
+54
+00:03:24,120 --> 00:03:24,910
+它正在运行。
+that it's running.
+
+55
+00:03:25,000 --> 00:03:32,760
+好的，1991年的这个时候，一个叫莱纳斯·托瓦尔兹的人正在大学完成他的MFC论文
+OK now at this time in 1991 a man called like Linus Torvalds was completing his MFC thesis at the University
+
+56
+00:03:32,760 --> 00:03:39,990
+作为这项工作的一部分，Lenas发明了一个类似Unix的内核，称为Linux，它
+of Helsinki in Finland and as part of this work Lenas invented a Unix like kernel called Linux and it
+
+57
+00:03:39,990 --> 00:03:41,780
+以他自己的名字命名为Linux。
+was called Linux after his own name.
+
+58
+00:03:41,790 --> 00:03:44,930
+但是Unix世界中的所有东西都是以X结尾的。
+But everything in the Unix world kind of ends in an X..
+
+59
+00:03:45,000 --> 00:03:46,670
+所以Linux在下一步就结束了。
+So Linux ending in the next.
+
+60
+00:03:46,680 --> 00:03:48,080
+Linux可以吗？
+Is Linux OK.
+
+61
+00:03:48,270 --> 00:03:53,940
+在一位同学邀请维特去看理查德·斯托尔曼的演讲后，
+And after being VEIDT after being invited by a fellow student to go see a talk by Richard Stallman who
+
+62
+00:03:53,990 --> 00:04:00,360
+在Lenas发布linux内核的第2版时，他也是一位著名的活动家。
+is also a prominent activist at the time Lenas released the Linux kernel under the version 2 of the
+
+63
+00:04:00,360 --> 00:04:07,140
+新的公共许可证或GPL，从而使Linux内核成为免费软件，因此Fang对Linux内核来说也是如此
+new Public License or GPL thereby making the Linux kernel free software so Fang's to the Linux kernel
+
+64
+00:04:07,140 --> 00:04:13,140
+新的操作系统是完整的，并且是完全可运行的操作系统，由完全免费的
+the new operating system was complete and and was fully runnable operating system made of entirely free
+
+65
+00:04:13,140 --> 00:04:14,240
+软件。
+software.
+
+66
+00:04:14,250 --> 00:04:19,320
+有了我们之前谈到的这四个自由，它开始流行起来，实际上是Linux
+With those four freedoms we talked about before and it began to gain popularity and it in fact the Linux
+
+67
+00:04:19,320 --> 00:04:25,980
+今天在Android设备甚至Chrome OS上使用的内核，所以如果你曾经听到人们说哦
+kernel that is used today on on Android devices and even Chrome OS so if you ever hear people say oh
+
+68
+00:04:26,010 --> 00:04:32,550
+Android运行Linux或Chrome OS运行Linux，他们的意思是使用Linux内核进行接口
+Android runs Linux or Chrome OS runs Linux what they mean is they use the Linux kernel to interface
+
+69
+00:04:32,550 --> 00:04:36,750
+位于计算机的软件层和硬件层之间。
+between the software layer and the hardware layer of your computer.
+
+70
+00:04:37,290 --> 00:04:42,450
+但是因为linux内核是最后一块，所以它得到了很大的关注，睡觉
+But because the Linux kernel was the final piece it kind of got a whole lot of attention and the rest
+
+71
+00:04:42,450 --> 00:04:46,160
+在新的操作系统中所做的工作都被遗忘了。
+of the work that went into the new operating system was kind of forgotten.
+
+72
+00:04:46,290 --> 00:04:51,150
+而是因为当我们运行像Buntu或任何其他Linux发行版这样的发行版时，我们运行的实际上是
+But because what we run when we run a distribution like a buntu or any other Linux distribution is actually
+
+73
+00:04:51,360 --> 00:04:54,000
+新的操作系统和Linux内核。
+the new operating system and the Linux kernel.
+
+74
+00:04:54,060 --> 00:04:58,110
+有人建议，为了给团队项目以信任，而不是仅仅给整个项目打电话
+It was recommended that in order to give the group project its credit instead of just calling the whole
+
+75
+00:04:58,110 --> 00:05:00,050
+Linux的东西，我们应该叫它新的。
+thing Linux we should call it new.
+
+76
+00:05:00,150 --> 00:05:01,650
+加上Linux。
+Plus Linux.
+
+77
+00:05:02,010 --> 00:05:07,320
+事实上，有一个名为you name命令的命令，它实际上会告诉您大量的信息
+In fact there is a command called the you name command that will actually tell you loads of information
+
+78
+00:05:07,380 --> 00:05:11,800
+关于您的计算机的信息，例如它有什么硬件，它正在运行什么操作系统。
+about your computer such as what hardware it has and what operating system that it's running.
+
+79
+00:05:11,800 --> 00:05:16,430
+因此，如果您使用o选项在命令中运行该单元，它将告诉您您的操作系统。
+So if you run the unit in command with the o option it'll tell you your operating systems.
+
+80
+00:05:16,430 --> 00:05:21,560
+如果我们运行它，我们可以看到我们可以获得GANU劈开LINUX作为操作系统。
+If we run that we see that we can we get Ganu slash Linux as the operating system.
+
+81
+00:05:21,560 --> 00:05:22,590
+听起来很酷，对吧。
+Sounds pretty cool right.
+
+82
+00:05:22,870 --> 00:05:27,540
+好的，了解了历史之后，我们现在知道了到目前为止您在
+OK so with that history understood we now know pretty much all of the commands of you so far in the
+
+83
+00:05:27,540 --> 00:05:33,480
+课程(如ls命令、find命令等)都是新项目的一部分，并给出
+course such as the ls command of the find command and so on are all part of the new project and to give
+
+84
+00:05:33,480 --> 00:05:35,930
+用户可以享受自由软件提供的自由。
+the users the freedoms that free software provides.
+
+85
+00:05:36,000 --> 00:05:41,190
+源代码需要可供阅读，因为访问源代码是以下各项的前提条件
+The source code needs to be available to read because access to the source code is a precondition for
+
+86
+00:05:41,190 --> 00:05:42,300
+这些自由是对的。
+those freedoms right.
+
+87
+00:05:42,300 --> 00:05:46,160
+因此，换句话说，该软件必须是开源的。
+So in other words the software must be open source.
+
+88
+00:05:46,260 --> 00:05:48,900
+好的，所以源代码必须是开放的，才能访问。
+Ok so the source code must be open be accessible.
+
+89
+00:05:48,900 --> 00:05:50,370
+它是开源的。
+It's open source.
+
+90
+00:05:50,370 --> 00:05:53,640
+那么，为什么我们要看一下我们的计算机运行的代码。
+So how come we have a look at the code that our computer runs.
+
+91
+00:05:53,640 --> 00:05:59,410
+实际上，在独木舟项目的官方网站Ganu.com org上都可以免费访问。
+Well it's actually all freely accessible on the canoe project's official Web site Ganu dot org.
+
+92
+00:05:59,550 --> 00:06:06,410
+所以，如果我在这里打开一个Firefox浏览器，当它启动后，我们就转到新的.org。
+So if I just open up a Firefox browser here and when that boots up we head over to the new dot org.
+
+93
+00:06:06,600 --> 00:06:09,090
+我们可以看到我在说什么，所以我们就在这里。
+We'll be able to see what I'm talking about so here we are.
+
+94
+00:06:09,090 --> 00:06:10,040
+有Firefox。
+Has Firefox.
+
+95
+00:06:10,140 --> 00:06:13,260
+让我们转到Ganu dot org并按Enter键。
+Let's go to Ganu dot org and press enter.
+
+96
+00:06:15,450 --> 00:06:16,280
+我们走吧。
+There we go.
+
+97
+00:06:16,320 --> 00:06:23,250
+所以你可以更详细地阅读自由软件思想背后的哲学，你可以
+So you can read all about the philosophy behind the Free Software ideology in more detail and you can
+
+98
+00:06:23,250 --> 00:06:25,840
+看这里，它在告诉您在这里尝试新的Linux。
+see here it's telling you to try new Linux here.
+
+99
+00:06:26,090 --> 00:06:31,350
+但是如果您转到软件部分，如果我们单击此处的软件并向下滚动到某个部件
+But if you head over to the software section if we click on software here and scroll down to a part
+
+100
+00:06:31,350 --> 00:06:33,660
+上面写着都是好的新包裹。
+that says all good new packages.
+
+101
+00:06:33,660 --> 00:06:36,440
+这里写着组织新包裹。
+Here it says org new packages.
+
+102
+00:06:36,570 --> 00:06:42,240
+您可以在这里看到，这里基本上链接到运行在其上的每一段代码
+You can you can see here that there's every This basically links to every bit of code that is run on
+
+103
+00:06:42,240 --> 00:06:48,510
+一个包含Linux内核本身的自由软件版本的新系统，我们可以在
+a new system including a free software version of the Linux kernel itself which we can find under the
+
+104
+00:06:48,510 --> 00:06:51,660
+Linux lb.软件包显示我们是Linux 1b..
+Linux lb. package say we are Linux lb..
+
+105
+00:06:51,700 --> 00:06:56,520
+好的，这就是软件包，这是包含所有源代码的完整可下载文件夹
+OK that's the that's the package that's the full downloadable folder that contains all of the source
+
+106
+00:06:56,520 --> 00:06:59,850
+Linux内核本身的V代码。
+code for V for the Linux kernel itself.
+
+107
+00:06:59,850 --> 00:07:00,980
+这真是太棒了。
+That's pretty awesome.
+
+108
+00:07:01,170 --> 00:07:07,300
+现在，对于您到目前为止已经运行的所有命令，这是ls命令grep find，不管它是什么。
+Now for all the commands that you've run so far this is the ls command grep find whatever it might be.
+
+109
+00:07:07,470 --> 00:07:08,390
+好的。
+OK.
+
+110
+00:07:08,520 --> 00:07:13,310
+您可以在核心utils包下找到它们，我们会叫您Tell。
+You can find those under the core utils package that we'll call you tell.
+
+111
+00:07:13,370 --> 00:07:13,780
+好的。
+OK.
+
+112
+00:07:13,860 --> 00:07:17,200
+所以你可以在那里找到你告诉我们的电话包裹里的东西。
+So that's where you can find the stuff in there in that call you tell us package.
+
+113
+00:07:17,190 --> 00:07:23,880
+在下一个视频中，我们将下载call utos包，对其进行修改并安装新版本
+And in the next video we're going to download the call utos package modify it and install a new version
+
+114
+00:07:23,880 --> 00:07:29,250
+将ls命令发送到我们的计算机，这将是非常令人兴奋的。
+of the ls command to our computer which is going to be super super exciting.
+
+115
+00:07:29,410 --> 00:07:32,830
+但首先让我们快速回顾一下我们在这段视频中学到了什么。
+But first let's just take a quick recap of what we've learned in this video.
+
+116
+00:07:32,910 --> 00:07:33,150
+好的。
+OK.
+
+117
+00:07:33,160 --> 00:07:38,410
+在这段视频中，您了解到Richard Stallman开始开发新的操作系统
+So in this video you learned about Richard Stallman beginning the development of the new operating system
+
+118
+00:07:38,440 --> 00:07:45,400
+在1983年，当时的想法是创建一个完全由自由软件组成的类似Unix的操作系统。
+in 1983 and the idea was to create a Unix like operating system that was made of entirely free software.
+
+119
+00:07:45,580 --> 00:07:50,800
+你会发现，当我们说自由软件时，我们指的是为用户提供特定功能的软件
+And you learn that when we say the words free software we mean software that provides users with certain
+
+120
+00:07:50,800 --> 00:07:54,520
+自由所以想想言论自由，而不是免费午餐。
+freedoms so think of free speech rather than free lunch.
+
+121
+00:07:54,560 --> 00:07:54,750
+好的。
+OK.
+
+122
+00:07:54,760 --> 00:08:00,310
+第四，自由软件给了用户四种自由
+Now the Fourth there are four freedoms that the free the free software gives the users so gives the
+
+123
+00:08:00,310 --> 00:08:03,600
+用户可以出于任何目的随心所欲地运行程序。
+users the ability to run programs as they wish for any purpose.
+
+124
+00:08:03,640 --> 00:08:08,740
+它使用户能够研究程序是如何工作的，并将其更改为
+It gives the users the ability to study how a program works and change it so it does the computing as
+
+125
+00:08:08,740 --> 00:08:14,230
+他们希望并且能够访问源代码是实现这一目标的前提条件，它使用户能够
+they wish and access to source code is a precondition for that and it gives the users the ability to
+
+126
+00:08:14,230 --> 00:08:19,910
+免费分发他们得到的任何副本，这样他们就可以帮助其他人。
+freely freely distribute any copies they get so that they can help other people.
+
+127
+00:08:19,960 --> 00:08:25,270
+它还使用户能够分发他们创建的软件的修改版本
+And it also gives the users the ability to distribute modified versions of the software that they create
+
+128
+00:08:25,340 --> 00:08:26,490
+其他人。
+other people.
+
+129
+00:08:26,500 --> 00:08:30,770
+因此，这允许整个社区从用户所做的任何更改中受益。
+So this allows the whole community to benefit from any changes that a user makes.
+
+130
+00:08:30,790 --> 00:08:34,330
+同样，访问源代码也是实现这一目标的前提条件。
+And again access to source code is a precondition for that as well.
+
+131
+00:08:34,330 --> 00:08:40,160
+现在，这些自由被合法地提供给使用新的公共许可证或GPL的用户。
+Now these freedoms are legally provided to users using the new Public License or the GPL.
+
+132
+00:08:40,210 --> 00:08:47,320
+正如我录制GPL的时候一样，GPL的第三版GPL版本3是最现代的
+And as I as the time of recording the the third version of the GPL GPL version 3 is the most modern
+
+133
+00:08:47,410 --> 00:08:53,650
+许可版本和开放获取源代码是给予这些自由的前提条件。
+version of the license and open access to the source code is a precondition for giving these freedoms.
+
+134
+00:08:53,680 --> 00:09:00,130
+因此，当拥有可公开访问源代码的软件时，它被称为开源软件，这样您就可以
+So when have software has openly accessible source code it is known as open source software so you can
+
+135
+00:09:00,130 --> 00:09:07,180
+说自由软件是开放源码的，但并不是所有的软件或不是所有的开放源码软件都是自由软件
+say that free software is open source but not all soft or not all open source software is free software
+
+136
+00:09:07,210 --> 00:09:12,010
+因为虽然人们可能会让你看到源代码，但这并不意味着他们一定会给你
+because while people might let you see the source code that doesn't mean they necessarily give you the
+
+137
+00:09:12,010 --> 00:09:14,110
+修改和分发它所需的自由。
+freedoms required to modify and distribute it.
+
+138
+00:09:14,110 --> 00:09:20,470
+他们可能只会让你看到源代码，但是自由软件确实需要开源软件
+They might just let you see the source code OK but the free software does does require open source software
+
+139
+00:09:20,470 --> 00:09:22,380
+因此，它以一种方式工作，而不是以另一种方式工作。
+so it works one way but not the other.
+
+140
+00:09:22,660 --> 00:09:28,150
+你们也已经了解到，1991年，新项目几乎完工，但它有一个重要的缺失
+And you've also learned that in 1991 the new project was almost finished but it had a important missing
+
+141
+00:09:28,150 --> 00:09:31,650
+它是内核，内核是操作系统的一部分。
+piece which was the kernel and the kernel is the part of the operating system.
+
+142
+00:09:31,750 --> 00:09:38,860
+硬件和之间的接口根据软件从硬件分配资源
+The interfaces between the hardware and allocates resources from the hardware depending upon what software
+
+143
+00:09:38,860 --> 00:09:39,540
+需要它。
+requires it.
+
+144
+00:09:39,640 --> 00:09:47,800
+1991年，Linus Torvalds创建了他自己的内核版本，并将其命名为Linux内核并发布
+And in 1991 Linus Torvalds created his own version of a kernel and called it the Linux kernel and released
+
+145
+00:09:47,800 --> 00:09:55,600
+1991年，它也在新的公共许可证版本下运行，从而使其成为自由软件。
+it in 1991 under the new Public License version too thereby making it free software.
+
+146
+00:09:55,600 --> 00:10:01,810
+所以Linux内核是新操作系统的最后一块，现在两者倾向于协同工作。
+So the Linux kernel was the final piece for the new operating system and now the two tend to work together.
+
+147
+00:10:01,810 --> 00:10:07,480
+因此，当您下载Buntu或下载任何其他类型的Linux发行版时，您实际上
+So when you download a buntu or when you download any other type of Linux distribution what you're actually
+
+148
+00:10:07,480 --> 00:10:11,050
+下载是新的Plus Linux操作系统的一个版本。
+downloading is a version of the new Plus Linux operating system.
+
+149
+00:10:11,050 --> 00:10:16,180
+因此，从今以后，我们不再只称它为Linux，我们将称它为新的Linux操作系统。
+So henceforth we won't just call it Linux we'll call it the new Linux operating system.
+
+150
+00:10:16,190 --> 00:10:21,010
+好了，在接下来的视频中，既然我们理解了我们所理解的这一小段历史课程
+OK so in the next video now that we understand this little bit of a history lesson we understand about
+
+151
+00:10:21,010 --> 00:10:23,560
+自由和开放源码软件的全部内容。
+the freedoms and what open source software is all about.
+
+152
+00:10:23,560 --> 00:10:24,940
+我们将使用一些源代码。
+We're going to play with some source code.
+
+153
+00:10:24,940 --> 00:10:28,660
+好的，我们将下载并查看一些核心命令的源代码。
+OK we're going to download and take a look at some of the source code for some core commands.
+
+154
+00:10:28,810 --> 00:10:34,020
+修改他们的代码，并在我们的计算机上安装修改后的代码，看看他们的行为有何不同。
+Modify their code and install that modified code on our computer and see how they behave differently.
+
+155
+00:10:34,030 --> 00:10:38,410
+所以这将是令人惊叹的，它将真正让你看到哪些开放源码的自由软件
+So it's going to be amazing and it's going to really allow you to see what open source free software
+
+156
+00:10:38,410 --> 00:10:39,260
+都是关于。
+is all about.
+
+157
+00:10:39,400 --> 00:10:42,580
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

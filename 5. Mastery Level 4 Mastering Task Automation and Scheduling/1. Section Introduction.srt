@@ -1,0 +1,95 @@
+1
+00:00:00,180 --> 00:00:05,250
+Hello you beautiful person and welcome to this very exciting section of the Course all about automating
+
+2
+00:00:05,250 --> 00:00:08,210
+tasks using bash scripts and Crohn.
+
+3
+00:00:08,250 --> 00:00:12,860
+Now up until now you've been learning how to do commands one after the other on the command line.
+
+4
+00:00:13,020 --> 00:00:17,470
+But sometimes however you want to complete tasks that require multiple steps.
+
+5
+00:00:17,480 --> 00:00:22,500
+So instead of just memorizing the steps and entering those steps those command steps every single time
+
+6
+00:00:22,500 --> 00:00:23,900
+you need to complete that task.
+
+7
+00:00:23,940 --> 00:00:28,980
+You can instead write those commands into a text file known as a bash script and then just run the script
+
+8
+00:00:29,180 --> 00:00:29,530
+again.
+
+9
+00:00:29,670 --> 00:00:35,430
+And when you run the script each of the commands in the script will be run one after the other from
+
+10
+00:00:35,430 --> 00:00:39,720
+top to the bottom so the show will start at the top of the script and work its way down through the
+
+11
+00:00:39,720 --> 00:00:42,800
+script executing all of the commands on the way.
+
+12
+00:00:42,960 --> 00:00:43,380
+All right.
+
+13
+00:00:43,470 --> 00:00:48,540
+So in this section of the course you're going to learn how to create and run your very own bash scripts
+
+14
+00:00:48,810 --> 00:00:53,700
+but you're also going to see how you can schedule those commands and backflips to be run at certain
+
+15
+00:00:53,700 --> 00:00:58,050
+times using a really handy scheduling program called Krumm.
+
+16
+00:00:58,080 --> 00:01:01,050
+Now bash scripting is a whole massive field in and of itself.
+
+17
+00:01:01,050 --> 00:01:05,160
+So this won't be an overly detailed section of the course but I hope that by the end of the section
+
+18
+00:01:05,160 --> 00:01:09,720
+you'll have the fundamental concepts and understanding of what bad scripting is all about so that you
+
+19
+00:01:09,720 --> 00:01:12,010
+can start writing your own simple script.
+
+20
+00:01:12,030 --> 00:01:15,860
+You also know how to schedule and automate commands and scripts.
+
+21
+00:01:15,910 --> 00:01:21,840
+Any time you choose by using Krumm book and combining these two skills will allow you to truly set your
+
+22
+00:01:21,840 --> 00:01:23,670
+workflow on autopilot.
+
+23
+00:01:23,790 --> 00:01:27,720
+So now that you've got a quick heads up about what's going to be covered in this section let's jump
+
+24
+00:01:27,720 --> 00:01:32,060
+right in in the next video by learning how to write your very own scripts.

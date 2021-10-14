@@ -1,0 +1,945 @@
+1
+00:00:00,360 --> 00:00:06,210
+你好，这些漂亮的人，走进这个视频，所有关于Linux的文件扩展名，现在是一个操作
+Hello these beautiful people and walk into this video all about file extensions in Linux now an operating
+
+2
+00:00:06,210 --> 00:00:10,530
+Windows文件扩展名等系统允许您告诉您处理的是哪种类型的文件
+system such as Windows file extensions allow you to tell what type of file that you're dealing with
+
+3
+00:00:10,710 --> 00:00:11,780
+一目了然。
+at a glance.
+
+4
+00:00:11,790 --> 00:00:17,190
+例如，我们知道名称以DR XTi结尾的文件是文本文件，而名称以DR XTi结尾的文件
+For example we know that files with names ending in Dr XTi are text files and files with names ending
+
+5
+00:00:17,190 --> 00:00:23,940
+在Dot中，J-P或PNB很可能是图像在Linux中的字体扩展名，通常与系统无关
+in Dot J-P or PNB are likely to be images in Linux font extensions usually don't matter and the system
+
+6
+00:00:23,940 --> 00:00:29,970
+倾向于查看文件的内容，而不仅仅是它的名称，有时还会真正地查看文件扩展名
+tends to look at the contents of the file rather than just its name but sometimes file extensions really
+
+7
+00:00:29,970 --> 00:00:30,810
+确实很重要。
+do matter.
+
+8
+00:00:30,810 --> 00:00:36,090
+在这段视频中，我们将深入了解Linux中的文件扩展名
+So in this video we're going to take a bit of a deep dive into understanding file extensions in Linux
+
+9
+00:00:36,390 --> 00:00:39,340
+给他们奇怪的行为带来一些光芒。
+and shine some light onto their strange behavior.
+
+10
+00:00:39,360 --> 00:00:43,110
+在视频的最后，您将了解Linux操作系统在命名时为您提供了哪些自由
+And by the end of the video you'll know what freedoms the Linux operating system gives you when naming
+
+11
+00:00:43,110 --> 00:00:43,780
+你的文件。
+your files.
+
+12
+00:00:43,830 --> 00:00:46,880
+可以发生什么有趣的事情，以及你需要注意什么。
+What interesting things can happen and what you need to be aware of.
+
+13
+00:00:47,040 --> 00:00:51,600
+此外，您的工具包中还会有一个新命令，该命令将在处理上的文件时为您提供帮助
+And you'll also have a new command in your tool kit that will help you when dealing with files on your
+
+14
+00:00:51,600 --> 00:00:52,410
+文件系统。
+file system.
+
+15
+00:00:52,560 --> 00:00:54,660
+所以这些都是非常有用的东西，非常令人兴奋的东西。
+So this is all very useful stuff very exciting stuff.
+
+16
+00:00:54,670 --> 00:00:56,980
+让我们直接跳进去吧。
+Let's go ahead and jump right into it.
+
+17
+00:00:57,660 --> 00:01:01,120
+好的，我已经把一些文件放到我的桌面上了。
+All right so I've gone ahead and put some files on my desktop.
+
+18
+00:01:01,120 --> 00:01:06,900
+首先，我这里有一张tuks的图片，这是Linux的传统企鹅徽标，是P和G格式的。
+First of all I've got an image of tuks the traditional penguin logo for Linux here in P and G format.
+
+19
+00:01:06,910 --> 00:01:12,040
+如果你感兴趣的话，现在就说吧，这个词是燕尾服的缩写，是一种奇特的黑色和
+Now talks in case you're interested is short for the word tuxedo which is a fancy type of black and
+
+20
+00:01:12,040 --> 00:01:16,880
+通常是服务员穿的白色西装，可能只有参加高级聚会的人才穿。
+white suit usually worn by waiters and possibly just people at high class parties.
+
+21
+00:01:16,900 --> 00:01:21,130
+据说这些企鹅看起来像是穿着小燕尾服，因为它们的颜色是黑白相间的。
+The penguins are said to look like they're wearing little tuxedos because of their black and white coloring.
+
+22
+00:01:21,250 --> 00:01:23,990
+这就是塔克斯从燕尾服得名的地方。
+And that's where tuks gets his name from a tuxedo.
+
+23
+00:01:24,040 --> 00:01:28,990
+如果你感兴趣，除了这里关于随机琐事的可爱演讲的照片外，我还
+In case you were interested but besides a picture of the lovely talks here on random trivia I've also
+
+24
+00:01:28,990 --> 00:01:35,170
+我这里有一个文本文件，里面有一些莎士比亚作品，叫做莎士比亚文档文本，我还有一个电子表格
+got a text file here with some Shakespeare in it called Shakespeare doc text and I also have a spreadsheet
+
+25
+00:01:35,170 --> 00:01:37,170
+里面有一些随机数字的文件。
+file with some random numbers in it.
+
+26
+00:01:37,300 --> 00:01:45,140
+好的，让我们继续看一下file命令，看看Linux是如何处理文件类型的。
+OK so let's go ahead and take a look at the file command to see how Linux handles file types.
+
+27
+00:01:45,140 --> 00:01:50,230
+因此，如果我继续使用CONTROL ALT反键盘快捷键打开一个终端，并将其拖出
+So if I go ahead and open a terminal using the control alt anti keyboard shortcut and just drag it out
+
+28
+00:01:50,230 --> 00:01:52,340
+这条路让我们还能看到文件。
+the way so we can still see the files.
+
+29
+00:01:52,420 --> 00:01:55,770
+我将向您介绍一个名为file命令的新命令。
+I'm going to introduce you to a new command called the file command.
+
+30
+00:01:55,810 --> 00:02:00,700
+现在，file命令将基本上告诉我们正在处理的是哪种类型的文件。
+Now the file command will tell us basically what type of file we are dealing with.
+
+31
+00:02:00,700 --> 00:02:04,690
+举个例子，如果我们试着看一下这里的TUK。
+So for example if we tried to have a look at tuks here.
+
+32
+00:02:04,690 --> 00:02:11,680
+如果我们做了文件，就在这里停下来，我们实际上把它拿到了我们的桌面上，首先转移到了桌面上。
+If we do file took it stop here and we actually took it to our desktop first shift over to a desktop.
+
+33
+00:02:11,680 --> 00:02:14,650
+清除屏幕并执行文件TUT。
+Clear the screen and do file tuks.
+
+34
+00:02:14,840 --> 00:02:17,910
+实际上只是想让你知道我可以和你在一起。
+Actually just just so you see I can actually just with you.
+
+35
+00:02:17,910 --> 00:02:22,930
+往前走，按Tab键，它也会自动填充，只会向您显示到完工工程的工作台
+Go ahead and press tab and it will auto filled as well just showing you the table to completion works
+
+36
+00:02:22,930 --> 00:02:27,780
+完全适用于文件名，就像适用于文件夹一样，所以这是我们学到的一件很棒的事情
+perfectly fine for filenames just like it does for folders so it's a great great thing that we learnt
+
+37
+00:02:27,780 --> 00:02:28,540
+在最后一段视频中。
+in the last video.
+
+38
+00:02:28,640 --> 00:02:35,940
+好的，让我们看一看谈话的文件，停止DNJ，它会告诉我们这是P，N.G.图像数据。
+OK so let's have a look file of talks stop DNJ and it will tell us that this is P N.G. image data.
+
+39
+00:02:35,940 --> 00:02:38,740
+它将告诉我们文件的大小以及加载的其他内容。
+It will tell us the size of the file and loads of other stuff as well.
+
+40
+00:02:38,760 --> 00:02:41,410
+好的，但是它会告诉我们文件类型。
+OK but it tells us the file type.
+
+41
+00:02:41,550 --> 00:02:45,340
+好的，现在，如果我改名为tok，停止dnj。
+OK now if I rename tok stop DNJ.
+
+42
+00:02:45,550 --> 00:02:51,640
+好的，如果我将其重命名为Take Start JP G。
+OK if I rename this to took start JP G.
+
+43
+00:02:51,910 --> 00:02:54,150
+OK，这是另一种类型的图像文件。
+OK which is another type of image file.
+
+44
+00:02:54,280 --> 00:02:57,480
+你可以看到那里已经改名了，但是我想再来一次。
+You can see there's been renamed there but I to do that again.
+
+45
+00:02:57,580 --> 00:03:02,830
+好的，试一下盘点JP的文件，让我们看看会发生什么。
+OK try file of took stock JP and let's see what happens.
+
+46
+00:03:02,830 --> 00:03:07,990
+现在你可以在这里看到，它仍然说这是一个p和g文件。
+Now you can see here that it still says that it is a P and g file.
+
+47
+00:03:07,990 --> 00:03:09,070
+这一点很重要。
+Now this is important.
+
+48
+00:03:09,070 --> 00:03:13,550
+Linux文件扩展名中的点数1无关紧要。
+Point number 1 in linux file extensions don't matter.
+
+49
+00:03:13,670 --> 00:03:17,020
+好的，与Windows不同，Linux不确定文件类型。
+Ok unlike Windows Linux doesn't determine file type.
+
+50
+00:03:17,020 --> 00:03:18,690
+使用文件扩展名。
+Using the file extension.
+
+51
+00:03:18,820 --> 00:03:24,730
+相反，它读取插入到每个文件顶部的一段代码，这段代码是已知的
+But instead it reads a piece of code inserted at the top of every file and that piece of code is known
+
+52
+00:03:24,730 --> 00:03:30,580
+作为标头，它充当Linux要读取的一种标签，当Linux读取该标签时，它知道
+as a header and it serves as a kind of label for Linux to read and when Linux reads that label it knows
+
+53
+00:03:30,760 --> 00:03:31,550
+文件类型。
+the file type.
+
+54
+00:03:31,570 --> 00:03:37,570
+因此，只更改文件名不会有什么不同，因为文件头不会更改。
+So changing just the name of the file won't make a difference because that file header won't have changed.
+
+55
+00:03:37,570 --> 00:03:41,490
+好的，这里我们有一些文本格式的莎士比亚剧本。
+OK so here we have some Shakespeare script in text format.
+
+56
+00:03:41,500 --> 00:03:47,560
+如果我打开，你可以看到里面有很多我刚刚复制和粘贴的文本
+If I open the up you can see that there is plenty of text in there which I just copied and pasted from
+
+57
+00:03:47,560 --> 00:03:48,740
+罗密欧与朱丽叶。
+Romeo and Juliet.
+
+58
+00:03:48,850 --> 00:03:56,330
+好的，当我们检查这里的文件类型时，如果我们确实将莎士比亚归档，我会这样做
+OK so this kind of stuff that I do so when we check the file type we have here if we do file Shakespeare
+
+59
+00:03:56,360 --> 00:04:01,650
+如果要发送文本，它会告诉我们这是一个ASCII文本文件。
+to text it will tell us that it is an ASCII text file.
+
+60
+00:04:01,820 --> 00:04:08,870
+好的，但是现在，如果我试着把它变成PTF，如果我重命名，然后试着说，好的，这就是莎士比亚。
+Ok but now if I try to turn this into a PTF So if I rename it and try to say OK this is now Shakespear.
+
+61
+00:04:08,880 --> 00:04:12,850
+DOC PTF OK并重命名它。
+Doc PTF OK and rename it.
+
+62
+00:04:12,940 --> 00:04:15,600
+现在，系统似乎已向右更改了图标。
+Now the system appears to have changed the icon right.
+
+63
+00:04:15,610 --> 00:04:18,290
+看起来那是个PDA文件。
+It looks like that's a PDA file.
+
+64
+00:04:18,610 --> 00:04:26,290
+但是如果我再次尝试从命令运行莎士比亚或PTF的文件，它仍然告诉我们它是ASCII
+But if I try to run the file from command again for Shakespeare or PTF it still tells us that it's ASCII
+
+65
+00:04:26,740 --> 00:04:35,590
+文本所以Linux读取了Linux，读取了文件头，发现它仍然是一个文本文件。
+text so Linux read the Linux read the header of the file and saw that it was still a text file.
+
+66
+00:04:35,710 --> 00:04:41,200
+但当我们试图打开它时会发生什么，因为它看起来像是系统认为它是PTF，因为您
+But what happens when we try to open it because it looks like the system thinks it's a PTF because you
+
+67
+00:04:41,200 --> 00:04:44,890
+我可以看到徽标改变了，但它仍然告诉我们这是一个文本文件。
+can see the logos changed but it's still telling us it is a text file.
+
+68
+00:04:44,890 --> 00:04:45,660
+那里发生了什么事。
+What's going on there.
+
+69
+00:04:45,660 --> 00:04:49,310
+为什么它认为如果我们试着打开它会有什么不同。
+Why is it think it's different if we try to open it what happens.
+
+70
+00:04:50,370 --> 00:04:51,700
+现在我们得到了一个。
+Well now we get an.
+
+71
+00:04:51,780 --> 00:04:58,750
+OK是PDA阅读器，它是打开名称以Dot PTF结尾的文件的默认程序。
+OK which is the default program to open files with names ending in Dot PTF is a PDA reader.
+
+72
+00:04:58,790 --> 00:05:04,110
+当我们尝试在PDA阅读器中打开此文件时，程序会出现错误，因为它正在尝试打开
+When we try to open this file in the PDA reader we get an error from the program as it's trying to open
+
+73
+00:05:04,110 --> 00:05:11,820
+我们的文件是PDA文件，系统基本上是说，啊，这是一个以点PTF结尾的文件。
+our file is a PDA file and what the system basically did is say ah that's a file that ends in Dot PTF.
+
+74
+00:05:11,820 --> 00:05:13,650
+很可能是PDA文件。
+It's probably a PDA file.
+
+75
+00:05:13,710 --> 00:05:18,190
+因此，让我提供帮助，并允许用户在PDA查看器中打开它。
+So let me be helpful and allow the user to open it in a PDA viewer.
+
+76
+00:05:18,210 --> 00:05:24,140
+很明显，PDA读取程序不是为读取文本文件而设计的，而是为读取PTF而设计的。
+Now obviously a PDA reading program isn't designed to read text files is designed to read PTF.
+
+77
+00:05:24,330 --> 00:05:26,130
+这就是导致这里问题的原因。
+And that's what's causing the issue here.
+
+78
+00:05:26,130 --> 00:05:28,670
+现在这是重要的，这是一个重要的区别。
+Now this is import this is an important distinction to make.
+
+79
+00:05:28,740 --> 00:05:34,650
+要点二，尽管操作系统将知道实际文件的文件格式
+Important point number two although the operating system will know what file format the actual file
+
+80
+00:05:34,650 --> 00:05:36,290
+就是通过读取标题。
+is by reading the header.
+
+81
+00:05:36,360 --> 00:05:42,270
+安装在操作系统顶部的额外程序(如此PDA查看器)正在尝试
+The extra programs that are installed on top of the operating system such as this PDA viewer are trying
+
+82
+00:05:42,270 --> 00:05:47,660
+若要打开可能需要特定格式或文件扩展名才能工作的文件，请执行以下操作。
+to open the files that might require a certain formats or the file extensions in order to work.
+
+83
+00:05:47,850 --> 00:05:53,130
+这是怎么回事，这一切都是为了让它自动打开，你想把它作为PDA打开，它刚刚看到
+So what's happening is it all this to make this automatic you want to open as a PDA it just saw the
+
+84
+00:05:53,130 --> 00:05:58,840
+文件名它只看了文件名，但内容仍然是文本。
+file name it just looked at the file name but the content is still text.
+
+85
+00:05:59,070 --> 00:06:05,720
+它说这里有一种文件类型，不支持纯文本，但它让程序上当了，它看到了
+And it says here are a file type plain text is not supported but it got the program got tricked it saw
+
+86
+00:06:05,730 --> 00:06:09,090
+文件名，这就是它想要将其作为PDA打开的原因。
+the file name and that's why it wanted to open it as a PDA.
+
+87
+00:06:09,090 --> 00:06:14,910
+如果我将其重命名为Text，只需将文本改回即可。
+If I rename it back to text just change the text change back.
+
+88
+00:06:15,060 --> 00:06:17,900
+现在您将看到它将作为文本文件正常打开。
+You'll see now that it will open fine as a text file.
+
+89
+00:06:18,090 --> 00:06:22,740
+好的，这是使安装在操作之上的程序存在的重要区别
+OK so that's the important distinction to make there the programs that are installed on top of the operating
+
+90
+00:06:22,740 --> 00:06:28,410
+系统(如PDA视图)以及它们可能需要文件具有特定文件扩展名的事实
+system such as PDA views and the fact that they might need the file to have a specific file extension
+
+91
+00:06:28,740 --> 00:06:30,130
+才能打开它们。
+in order to open them.
+
+92
+00:06:30,240 --> 00:06:33,310
+但是操作系统本身并不关心。
+But the operating system itself does not care.
+
+93
+00:06:33,330 --> 00:06:36,870
+如果我看一下这里的电子表格，这是一个更详细的信息。
+So this is a bit more detail if I take a look at the spreadsheet here.
+
+94
+00:06:36,930 --> 00:06:40,930
+它被称为数据O.D.，就好像我做的数据文件那样令人讨厌。
+It's called data O.D. as if I do file of data that odious.
+
+95
+00:06:41,070 --> 00:06:41,670
+好的。
+OK.
+
+96
+00:06:41,970 --> 00:06:46,250
+它说这是一个令人讨厌的转账开放文档电子表格。
+It says that it's an odious forward transfer open document spreadsheet.
+
+97
+00:06:46,480 --> 00:06:46,970
+好的。
+OK.
+
+98
+00:06:47,100 --> 00:06:52,800
+现在，这意味着我们可以在Libra office calc中打开它，它基本上是Microsoft的Linux版本
+Now this means we can open it up in Libris office calc which is basically the Linux version of Microsoft
+
+99
+00:06:52,800 --> 00:06:53,370
+Excel。
+Excel.
+
+100
+00:06:53,490 --> 00:06:56,260
+好的，所有苹果的等价物都类似于电子表格程序。
+OK all the Apple equivalent is like the spreadsheet program.
+
+101
+00:06:56,310 --> 00:06:56,820
+好的。
+OK.
+
+102
+00:06:57,060 --> 00:06:58,900
+里面有几个数字。
+And it's got it's got a few numbers in there.
+
+103
+00:06:59,010 --> 00:07:00,250
+好的。
+OK.
+
+104
+00:07:00,900 --> 00:07:06,370
+但是如果我关闭电子表格并重命名，例如采用Ex-Sea文件。
+But if I close the spreadsheet and rename that for example to adopt Ex-Sea file.
+
+105
+00:07:06,620 --> 00:07:07,130
+好的。
+OK.
+
+106
+00:07:07,470 --> 00:07:11,980
+因此，如果我将其重命名为Data RTX，则将其重命名。
+So if I rename it to data RTX to rename that.
+
+107
+00:07:12,090 --> 00:07:15,820
+好的，您可以看到，现在它想要以成人文本格式打开。
+OK you can see that now it wants to be opened up in adult text format.
+
+108
+00:07:16,250 --> 00:07:16,730
+好的。
+OK.
+
+109
+00:07:16,830 --> 00:07:24,120
+现在我尝试在Libra office calc中打开它，所以如果我单击此处，我键入calc，它就会出现
+And now I tried to open that up in Libris office calc so if I click here I type calc and it comes up
+
+110
+00:07:24,280 --> 00:07:26,480
+天秤座是卡尔。
+Libra is calc.
+
+111
+00:07:26,620 --> 00:07:28,700
+等它启动。
+Wait for that to boot up.
+
+112
+00:07:28,740 --> 00:07:38,650
+文件打开转到我的桌面，即主页，然后转到桌面，然后尝试打开Data腾讯日，您可以
+File Open go to my desktop so home and then desktop and then try to open up data RTX day and you can
+
+113
+00:07:38,650 --> 00:07:41,130
+现在你看，我们这里发生了各种各样的问题。
+see now that we've got all kinds of problems happening here.
+
+114
+00:07:41,130 --> 00:07:44,620
+好的，如果我试着像这样打开它，强烈的点击OK。
+OK so if I try to just open it like that a strong click OK.
+
+115
+00:07:44,840 --> 00:07:45,790
+我们会收到一个错误。
+We're going to get an error.
+
+116
+00:07:45,910 --> 00:07:46,690
+好的。
+OK.
+
+117
+00:07:46,780 --> 00:07:53,560
+这是因为DOT TXI文件扩展名愚弄了LIBRIS OFFICE CLAQUE LIBRAD OFFICE CALQUE
+And this is because the DOT TXI file extension is fooling Libris office calque libral office calque
+
+118
+00:07:53,560 --> 00:07:58,400
+犯了读取文件扩展名并尝试将文件作为点打开的错误。
+made the mistake of reading the file extension and trying to open the file as a dot.
+
+119
+00:07:58,400 --> 00:08:00,080
+t x t文件。
+T x t file.
+
+120
+00:08:00,210 --> 00:08:00,670
+好的。
+OK.
+
+121
+00:08:00,790 --> 00:08:07,210
+这里是实际内容，我们可以看到，这里是一个电子表格文件，而不是文本文件。
+Where is the actual content as we can see here is a spreadsheet file it's not a text file.
+
+122
+00:08:07,300 --> 00:08:12,400
+好的，但是如果我们把它重新命名，我们把它重新命名，这样它就有日期了。
+Ok but if we rename that back and we rename it so that it's dated.
+
+123
+00:08:12,580 --> 00:08:13,350
+是。
+Yes.
+
+124
+00:08:13,510 --> 00:08:15,310
+现在它会开得很好。
+Now it will open fine.
+
+125
+00:08:15,460 --> 00:08:19,630
+因此，这是我们需要进行的重要区分，并强调文件扩展名
+So this is the important distinction that we need to make and to hammer this home the file extension
+
+126
+00:08:19,720 --> 00:08:25,390
+对于Linux操作系统来说并不重要，但是对于
+isn't important to the Linux operating system but it might be important to the software packages that
+
+127
+00:08:25,390 --> 00:08:28,010
+我们安装在Linux之上。
+we install on top of Linux.
+
+128
+00:08:28,030 --> 00:08:33,520
+所以请记住，基本上不要给你的文件名提供非常奇怪的文件扩展名
+So do bear in mind that don't basically don't give your file names really weird file extensions that
+
+129
+00:08:33,520 --> 00:08:39,550
+与其内容不匹配，因为这可能会混淆安装正常的第三方软件
+don't match their content because it might confuse third party software that is installed OK even though
+
+130
+00:08:39,550 --> 00:08:41,560
+你不一定非得这么做。
+you don't necessarily have to.
+
+131
+00:08:41,740 --> 00:08:45,300
+好的，那么让我们给这个电子表格一个完全未知的东西，尝试一下其他的东西。
+OK so let's give the spreadsheet a completely unknown try something else.
+
+132
+00:08:45,300 --> 00:08:46,880
+这是一件相当有趣的事情。
+This is something quite interesting.
+
+133
+00:08:47,050 --> 00:08:50,640
+让我们给电子表格一个完全虚构的文件扩展名。
+Let's give the spreadsheet a completely made up file extensions.
+
+134
+00:08:50,650 --> 00:08:57,910
+如果我把它叫做电子表格点香巴拉，好的，我会把它叫做电子表格数据之类的。
+If I call it spreadsheet dot Shambhala OK I'll call it spreadsheet datcha blah.
+
+135
+00:08:58,460 --> 00:08:59,830
+那真是太有趣了。
+That was interesting.
+
+136
+00:08:59,830 --> 00:09:05,560
+注意它是如何自动地仍然想要在电子表格软件中打开它的。
+Notice how it automatically still wants to open it up in the spreadsheet software.
+
+137
+00:09:05,620 --> 00:09:13,150
+现在我们在这里注意到，我们没有欺骗软件，它仍然知道这是一个令人讨厌的文件，并且
+Now we notice here that we didn't fool the the the software and it still knows it's an odious file and
+
+138
+00:09:13,150 --> 00:09:19,050
+我们实际上可以打开它，只要我继续双击，它就会完全打开。
+we can actually open it up if I just go ahead and double click the it's going to open up perfectly fine.
+
+139
+00:09:19,050 --> 00:09:20,750
+你看，我们这里有我们的数据。
+You see we've got our data in here.
+
+140
+00:09:20,760 --> 00:09:22,830
+这次可不是闹着玩的。
+No funny business this time.
+
+141
+00:09:22,830 --> 00:09:31,160
+那么，为什么这个系统可以，为什么它不能打开一个奇怪的文件名，而不是像Dotti XTi这样简单的文件名。
+So why can this system why can it open up a weird file name but not a simple one like Dotti XTi.
+
+142
+00:09:31,260 --> 00:09:37,660
+原因是软件根本无法识别荷兰语pablum文件扩展名，所以它可能
+Well the reason is the software just simply didn't recognize the Dutch pablum file extension so it might
+
+143
+00:09:37,660 --> 00:09:41,550
+而是求助于操作系统来帮助确定文件类型。
+have looked to the operating system to help determine the file type instead.
+
+144
+00:09:41,610 --> 00:09:45,430
+但是当我们称它为Datti XTi文件时，嗯。
+But when we called it a Datti XTi file huh.
+
+145
+00:09:45,540 --> 00:09:52,170
+当我们实际将其直接命名为Datti XTi时，软件认为它会有点聪明
+When we actually named it directly to be Datti XTi the software thought it would be a bit clever and
+
+146
+00:09:52,170 --> 00:09:55,950
+它想，啊哈，我知道怎么处理这件事，它给自己开了一条捷径，而且是
+it thought aha I know how to deal with this and it made a little bit of a shortcut to itself and was
+
+147
+00:09:55,950 --> 00:09:59,220
+就像我会自动把它作为文本文件打开一样。
+like I'm just going to open this automatically as a text file.
+
+148
+00:09:59,430 --> 00:10:03,510
+但在这种情况下，这种假设是错误的，因为内容是电子表格。
+But that assumption was wrong in this case because the content is a spreadsheet.
+
+149
+00:10:03,510 --> 00:10:08,340
+我们只是将其命名为Dotty XTi，这导致程序在发现它不是Dotty XTi时抛出一个错误
+We just named it Dotty XTi and that caused the program to throw an error when it found out it wasn't
+
+150
+00:10:08,340 --> 00:10:11,490
+毕竟是文本文件，但实际上是电子表格。
+a text file after all but actually was a spreadsheet.
+
+151
+00:10:11,780 --> 00:10:17,640
+底线是在Linux中有很大的自由来命名文件，您甚至可以将其称为
+The bottom line is have a lot of freedom to name files what ever you want in Linux you can even call
+
+152
+00:10:17,640 --> 00:10:18,350
+他们。
+them.
+
+153
+00:10:18,450 --> 00:10:21,990
+您甚至可以为他们提供文件扩展名，如Dot shoeBlack。
+You can even give them file extensions like Dot shoeblack.
+
+154
+00:10:22,020 --> 00:10:25,980
+当然，这在任何其他操作系统中都做不到。
+Which of course you couldn't do in any other operating system.
+
+155
+00:10:26,070 --> 00:10:28,440
+这对于拥有文件来说是很常见的。
+This is common for having files.
+
+156
+00:10:28,530 --> 00:10:34,800
+例如，如果我只是尝试复制并粘贴此文件，如果我复制并粘贴此文件，您知道您可能会有
+For example if I just try and copy and paste this if I copy and paste this file you know you might have
+
+157
+00:10:34,800 --> 00:10:36,520
+一个后备。
+a backup.
+
+158
+00:10:36,660 --> 00:10:42,270
+例如，您可以将1个文件称为原始文件，因此您会说，好的，我将把这个点称为山脊
+You might for example call 1 file an original So you'd say OK I'm going to call this one dot a ridge
+
+159
+00:10:42,870 --> 00:10:45,500
+然后我会给这个打个电话。
+and then I'd call this one.
+
+160
+00:10:45,600 --> 00:10:54,570
+也许我会把一个点打回来，或者你知道一份复印件，叫它点复印件或类似的东西
+Maybe I'll call in the one dot back or you know a copy and call it dot dot dot copy or something like
+
+161
+00:10:54,570 --> 00:10:54,860
+那。
+that.
+
+162
+00:10:54,900 --> 00:10:58,180
+好的，您可以这样命名您的文件。
+OK and this is how you might name your files.
+
+163
+00:10:58,180 --> 00:11:03,030
+我相信这是原件，这是我只看文件名就能看到的副本，实际上并没有
+I believe this is the original this is the copy I can see just by looking at the file name without actually
+
+164
+00:11:03,030 --> 00:11:05,540
+影响系统的运作方式。
+affecting the way the system works.
+
+165
+00:11:05,560 --> 00:11:11,520
+因此，这有时被用来允许人们读取更具人类可读性的文件扩展名
+So this is sometimes used to allow people to read file extensions that are a lot more human readable
+
+166
+00:11:11,750 --> 00:11:15,200
+而不是你知道的像点恶心或点之类的东西。
+than you know things like dot odious or dot whatever.
+
+167
+00:11:15,310 --> 00:11:21,150
+好的，但是请确保，如果您以这种方式命名文件，请不要为它们指定可能
+Ok but just make sure that if you name your files in such a way don't give them file names that might
+
+168
+00:11:21,150 --> 00:11:27,320
+混淆你期望打开它们的软件，因为并不是所有的软件都喜欢与陌生的软件打交道
+confuse the software that you expect to open them because not all softwares like to play ball with strange
+
+169
+00:11:27,320 --> 00:11:28,890
+文件名。
+file names.
+
+170
+00:11:29,560 --> 00:11:33,380
+好了，关于Linux文件扩展名的讨论到此为止。
+OK so that will bring a discussion of Linux file extensions to a close.
+
+171
+00:11:33,480 --> 00:11:35,060
+这是你在这段视频中学到的内容的总结。
+So it's a summary of what you learn in this video.
+
+172
+00:11:35,080 --> 00:11:39,700
+您将了解到，您可以使用FILE命令来确定您正在处理的是哪种类型的文件。
+You learn that you can use the file command to know for sure what type of file that you're dealing with.
+
+173
+00:11:39,700 --> 00:11:44,040
+或者您知道文件扩展名对Linux操作系统并不重要，这意味着您可以
+Or you know that file extensions aren't important to the Linux operating system which means you can
+
+174
+00:11:44,040 --> 00:11:45,890
+随你怎么命名文件。
+name files whatever you want.
+
+175
+00:11:45,900 --> 00:11:47,750
+是的，甚至是DOT鞋黑。
+Yes even DOT shoeblack.
+
+176
+00:11:47,940 --> 00:11:53,040
+但当您这样做时，请确保不要混淆第三方软件，这些软件可能需要
+But while you're doing that make sure you try not to confuse third party software that might need to
+
+177
+00:11:53,040 --> 00:11:57,760
+打开该文件，因为它可能需要特定的文件扩展名。
+open the file because it might be expecting specific file extensions.
+
+178
+00:11:57,780 --> 00:12:01,860
+如果你试图混淆它，那么你知道你只会在一个非常非常糟糕的时候得到错误。
+And if you try to confuse it then you know you'll just get errors in a very very bad time.
+
+179
+00:12:02,130 --> 00:12:08,340
+接下来，在下一个视频中，我们将把您的命令行技能提升到一个全新的水平
+So coming up next in the next video we're going to take your command line skills to a whole new level
+
+180
+00:12:08,490 --> 00:12:11,370
+通过观察通配符的概念。
+by looking at the concept of wild cards.
+
+181
+00:12:11,520 --> 00:12:15,510
+假设您有一个非常杂乱的桌面，您想要将所有图像移动到一个文件夹中
+So let's say you had a really messy desktop and you wanted to move all of your images to one folder
+
+182
+00:12:15,510 --> 00:12:19,050
+您的所有PDA都放到一个文件夹中，而您所有的电子表格和办公室都在该文件夹下
+and all of your PDA to one or the folder and all of your spreadsheets and office falls under the folder
+
+183
+00:12:19,470 --> 00:12:20,690
+使用命令行。
+using the command line.
+
+184
+00:12:20,850 --> 00:12:24,280
+你怎么能使用一个如此具体的命令。
+How can you use a command that's actually so specific.
+
+185
+00:12:24,630 --> 00:12:27,480
+您可以使用通配符来实现这一点。
+Well you can do that using wildcards.
+
+186
+00:12:27,570 --> 00:12:32,940
+通配符允许您将命令变得非常具体，也非常通用，从而允许
+Wildcards allow you to make your commands really really specific and also really general thereby allowing
+
+187
+00:12:32,940 --> 00:12:36,870
+您需要提高对实际操作的命令的控制级别。
+you to level up your control over what commands actually operate on.
+
+188
+00:12:36,870 --> 00:12:42,210
+在处理文件时，这是一种非常有用的能力，再来看看史诗超级大国的另一剂
+Now this is an incredibly useful ability when dealing with files so for another dose of epic superpower's
+
+189
+00:12:42,360 --> 00:12:44,340
+我将在下一个视频中见到你。
+I'll see you in the next video.
+

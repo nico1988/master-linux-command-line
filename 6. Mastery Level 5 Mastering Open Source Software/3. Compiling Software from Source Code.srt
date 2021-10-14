@@ -1,0 +1,1019 @@
+1
+00:00:00,330 --> 00:00:04,860
+Hello you beautiful people and welcome to this video where we're going to be learning how to turn source
+
+2
+00:00:04,860 --> 00:00:08,480
+code into runnable programs with our own little modifications.
+
+3
+00:00:08,490 --> 00:00:13,500
+So in this video you're going to learn how to download source code editor and use the Ganu C-compiler
+
+4
+00:00:13,650 --> 00:00:16,900
+to turn that code into runnable binary programs.
+
+5
+00:00:16,920 --> 00:00:21,660
+You also got to learn how to install software from source code using the make command.
+
+6
+00:00:21,660 --> 00:00:26,760
+I'm also going to modify the code slightly so that we can see that it is indeed our modified code that
+
+7
+00:00:26,760 --> 00:00:31,010
+is being installed by the end of the video you should have a much better understanding of the awesome
+
+8
+00:00:31,010 --> 00:00:36,180
+this of open source free software and you should also know how to compile software from source code
+
+9
+00:00:36,270 --> 00:00:37,230
+for yourself.
+
+10
+00:00:37,230 --> 00:00:39,520
+So let's go ahead and get right into it.
+
+11
+00:00:39,900 --> 00:00:46,440
+All right so here we are again on the new dot org Web site and we can see on the software tab here that
+
+12
+00:00:46,500 --> 00:00:53,450
+we can get each of the packages going down to the bottom that comes with the new operating system.
+
+13
+00:00:53,460 --> 00:00:58,170
+Now all the source code for the commands that we've run so far such as the find command the ls command
+
+14
+00:00:58,170 --> 00:01:01,990
+and so on cannot be found in this core utils package of here.
+
+15
+00:01:02,160 --> 00:01:04,910
+So let's go ahead and download this package and take a look at it.
+
+16
+00:01:04,950 --> 00:01:08,490
+So to do that we click on the link and it'll open up another page.
+
+17
+00:01:08,700 --> 00:01:14,160
+And if we scroll down to the download section here it'll give us a couple of links and it tells us that
+
+18
+00:01:14,160 --> 00:01:17,280
+the stable source releases can be found at this link.
+
+19
+00:01:17,280 --> 00:01:20,520
+And the test source releases can be found at this link.
+
+20
+00:01:20,520 --> 00:01:24,990
+Now the difference between the stable and test is that stable source releases you know are known to
+
+21
+00:01:24,990 --> 00:01:25,340
+work.
+
+22
+00:01:25,340 --> 00:01:26,430
+They've been tested.
+
+23
+00:01:26,430 --> 00:01:30,450
+Whereas test sorceresses I mean you know maybe where they're trying new things and you know it's it's
+
+24
+00:01:30,450 --> 00:01:33,790
+not 47 it might it's not final.
+
+25
+00:01:33,790 --> 00:01:37,740
+Right so we're going to try it at the stable source I'm going to click on that link and we can see here
+
+26
+00:01:37,740 --> 00:01:43,520
+that we get a bunch of packages a bunch of bundles that are that are in a list format.
+
+27
+00:01:43,530 --> 00:01:47,620
+And the most recent versions are towards the bottom of the list.
+
+28
+00:01:47,640 --> 00:01:53,850
+So if we scroll down as far as we can to the bottom of the list will see we get call utils version 8
+
+29
+00:01:53,850 --> 00:01:55,520
+point to 8.
+
+30
+00:01:55,590 --> 00:02:00,510
+And what we're going to click on is the one that ends in Dot X zeds and on the ends it Dot exec dot
+
+31
+00:02:00,510 --> 00:02:03,920
+sig just the one that ends in Dot X Zed.
+
+32
+00:02:03,930 --> 00:02:08,880
+So if I go ahead and click on that right now we'll see that we see a pop come here and I'm going to
+
+33
+00:02:09,050 --> 00:02:10,060
+save file.
+
+34
+00:02:10,090 --> 00:02:11,240
+I'm going to click OK.
+
+35
+00:02:11,550 --> 00:02:16,920
+And that has been saved in our downloads folder so if I just head over to our downloads folder right
+
+36
+00:02:16,920 --> 00:02:21,170
+now in the terminal you can see it the minute I'm in a home directory.
+
+37
+00:02:21,300 --> 00:02:27,330
+I go to the downloads folder and list out and you can see that we have got this core utils version eight
+
+38
+00:02:27,350 --> 00:02:30,050
+point 8.2 a 8. Todd X Zed.
+
+39
+00:02:30,120 --> 00:02:37,440
+Now that's a compressed tar archive that's been compressed using the X Zad compression algorithms if
+
+40
+00:02:37,440 --> 00:02:38,040
+I look at that.
+
+41
+00:02:38,040 --> 00:02:42,370
+We'll see what the find command will say that it's ex-head compressed data.
+
+42
+00:02:42,390 --> 00:02:48,360
+Now ex-editor just a compression algorithm just like the BS app or the GS EP compression RPMs that we
+
+43
+00:02:48,360 --> 00:02:50,850
+touched on in the fall compression archiving video.
+
+44
+00:02:50,850 --> 00:02:56,380
+Very briefly because it's not one of the more common algorithms but we can unpack it using the tar command.
+
+45
+00:02:56,460 --> 00:02:57,770
+OK so let's just do that.
+
+46
+00:02:57,900 --> 00:03:03,140
+Well we can do is we can type Taar And you know as you know harder to extract a file you give it the
+
+47
+00:03:03,150 --> 00:03:09,650
+x and f options and then you tell it which archive to extract through the zip compression algorithm
+
+48
+00:03:09,920 --> 00:03:15,690
+to give it the capital J option so the lowercase j option is Phoebes it to put the capital J option
+
+49
+00:03:15,800 --> 00:03:20,310
+is for exit and if you want more information on this check out the file compression and archiving cheat
+
+50
+00:03:20,310 --> 00:03:22,340
+sheet that I gave you in the appropriate video.
+
+51
+00:03:22,380 --> 00:03:22,920
+OK.
+
+52
+00:03:22,920 --> 00:03:28,280
+So if we go ahead and press ENTER we'll see that we didn't get any information because we didn't give
+
+53
+00:03:28,280 --> 00:03:29,450
+the talk about the Wii option.
+
+54
+00:03:29,460 --> 00:03:31,070
+But if now I use less we'll see.
+
+55
+00:03:31,070 --> 00:03:35,820
+We've now got a new folder called Call utils eight point to eight.
+
+56
+00:03:35,820 --> 00:03:41,880
+So if we see the Internet CD into core utils and take a look see that we've got a whole bunch of stuff
+
+57
+00:03:41,880 --> 00:03:42,350
+in there.
+
+58
+00:03:42,450 --> 00:03:45,280
+OK but we can specifically pay attention to this.
+
+59
+00:03:45,300 --> 00:03:49,940
+S r c directory now that SIRC is short for source.
+
+60
+00:03:49,980 --> 00:03:56,820
+And that's where the source code is capice if we CD into S or C and take a look in the screen take a
+
+61
+00:03:56,820 --> 00:04:02,940
+look we can see that we've got a whole bunch of files in here let's pipe that data into the last command.
+
+62
+00:04:02,940 --> 00:04:07,770
+First of all now that makes it easier to scroll up and down and you see now we can see that we get loads
+
+63
+00:04:07,770 --> 00:04:09,600
+of files that end in dot.
+
+64
+00:04:09,600 --> 00:04:15,900
+See now that dot Dotsie indicates to us that these files are all written in the C programming language.
+
+65
+00:04:15,900 --> 00:04:17,760
+OK which is a very common programming language.
+
+66
+00:04:17,760 --> 00:04:19,900
+The good news software is written in.
+
+67
+00:04:20,160 --> 00:04:24,950
+Given the date of when it was written being in the know the the 1980s 1990s.
+
+68
+00:04:24,960 --> 00:04:28,790
+So let's take a look at the code behind the ls command.
+
+69
+00:04:28,790 --> 00:04:30,790
+For example we could last Nestor's.
+
+70
+00:04:30,870 --> 00:04:35,290
+LS We can see that we've got this LS Dotsie file going on here.
+
+71
+00:04:35,290 --> 00:04:36,090
+So let's take a look at it.
+
+72
+00:04:36,090 --> 00:04:39,130
+Nano LS dot see.
+
+73
+00:04:39,450 --> 00:04:40,520
+And there we are.
+
+74
+00:04:40,530 --> 00:04:43,590
+This is actually the source code in here.
+
+75
+00:04:43,590 --> 00:04:49,020
+This is all the source code of the Maximizer of it the source code for the LS commands.
+
+76
+00:04:49,020 --> 00:04:50,200
+Isn't that awesome right.
+
+77
+00:04:50,370 --> 00:04:55,710
+Now if you had the time the ability and the intention you could go through this code and study exactly
+
+78
+00:04:55,710 --> 00:05:00,600
+what it was doing which is one of the freedoms that the free software movement aims to give you.
+
+79
+00:05:01,060 --> 00:05:06,670
+But we can actually also modify this code and recompile it into running software which is what we're
+
+80
+00:05:06,670 --> 00:05:07,550
+going to do now.
+
+81
+00:05:07,580 --> 00:05:12,760
+Now this isn't a course on C programming but in every C program there was a function in there called
+
+82
+00:05:12,760 --> 00:05:14,210
+the main function.
+
+83
+00:05:14,220 --> 00:05:16,290
+It's a very important function that always runs.
+
+84
+00:05:16,300 --> 00:05:21,640
+Ok now I'm going to modify that function so that whenever class runs the computer will print out.
+
+85
+00:05:21,700 --> 00:05:24,120
+Hello you beautiful people onto the screen.
+
+86
+00:05:24,160 --> 00:05:28,880
+OK so I going to type a bit of code into the main function that makes that happen.
+
+87
+00:05:29,050 --> 00:05:33,850
+Now after preparing a bit for this lecture I found that the main function in this file starts at about
+
+88
+00:05:33,850 --> 00:05:36,560
+line 1443.
+
+89
+00:05:36,580 --> 00:05:43,930
+So if we use Nanos go to line function using the control and underscore option if I put in line 1 4
+
+90
+00:05:43,930 --> 00:05:50,170
+4 3 and press ENTER you can see that we've ended up at the main function magic.
+
+91
+00:05:50,170 --> 00:05:55,930
+So the line code right at the top here that does that printing stuff so print F and I'm going to put
+
+92
+00:05:55,930 --> 00:05:56,850
+in there.
+
+93
+00:05:57,220 --> 00:06:04,090
+Hello there you beautiful people and make sure that it ends on a new line with the backslash and character
+
+94
+00:06:04,090 --> 00:06:04,560
+right there.
+
+95
+00:06:04,630 --> 00:06:05,020
+OK.
+
+96
+00:06:05,200 --> 00:06:07,460
+And I'm just going to tap this.
+
+97
+00:06:07,480 --> 00:06:11,510
+It doesn't make a difference but you know that that's a bit nicer.
+
+98
+00:06:11,970 --> 00:06:15,430
+Try and get rid of this extra space at the end the line it doesn't matter.
+
+99
+00:06:15,860 --> 00:06:18,540
+OK so we've put in the function there.
+
+100
+00:06:18,550 --> 00:06:22,440
+Hello there beautiful people with a new line character.
+
+101
+00:06:22,490 --> 00:06:25,050
+OK so you know the line it goes to a new line.
+
+102
+00:06:25,270 --> 00:06:32,740
+Now if we save the fire with control in 0 and we exit with control of X we've now modified the LS commands
+
+103
+00:06:32,740 --> 00:06:33,190
+code.
+
+104
+00:06:33,260 --> 00:06:34,350
+OK that's pretty cool.
+
+105
+00:06:34,420 --> 00:06:38,980
+But now how do we turn this code into a runnable program and install it on our computer.
+
+106
+00:06:39,190 --> 00:06:44,710
+Well because they're written in C the code needs to be compiled into machine language before it can
+
+107
+00:06:44,710 --> 00:06:45,210
+be run.
+
+108
+00:06:45,220 --> 00:06:46,840
+And for that we need a compiler.
+
+109
+00:06:46,900 --> 00:06:50,220
+And most specifically a compiler for the C programming language.
+
+110
+00:06:50,230 --> 00:06:57,220
+Now the new C compiler or GCC is the compiler that's used on Ganu Linux systems and we can get it by
+
+111
+00:06:57,220 --> 00:07:03,860
+answering the following command and not following commands sudo apt get install GCC.
+
+112
+00:07:03,880 --> 00:07:08,440
+Now for now I don't want to worry too much about this because we'll be explaining in great detail later
+
+113
+00:07:08,440 --> 00:07:13,600
+on what this command actually means and will be doing it in this section of course but in short what
+
+114
+00:07:13,600 --> 00:07:17,770
+we're doing is we're telling the computer to look on the software repositories available for a buntu
+
+115
+00:07:18,040 --> 00:07:22,270
+and download and install the new C compiler or GCC package.
+
+116
+00:07:22,270 --> 00:07:26,580
+Again this will become much clearer in the next few videos but as type it as I have done so here and
+
+117
+00:07:26,590 --> 00:07:28,200
+when you're happy press enter.
+
+118
+00:07:28,330 --> 00:07:35,110
+And because we've used sudo it asks for a password just like when we've used sudo before so I'm just
+
+119
+00:07:35,110 --> 00:07:38,080
+going to add to that in there hopefully correctly.
+
+120
+00:07:38,080 --> 00:07:39,370
+Fingers crossed.
+
+121
+00:07:39,570 --> 00:07:40,910
+Let's try it again.
+
+122
+00:07:41,680 --> 00:07:42,340
+There we go.
+
+123
+00:07:42,410 --> 00:07:48,710
+And now it's saying hey we've got to install a whole bunch of packages in order to get this GCC package
+
+124
+00:07:48,940 --> 00:07:52,280
+that's going to be about 72 megabytes of additional disk space.
+
+125
+00:07:52,300 --> 00:07:53,470
+Do you want to continue.
+
+126
+00:07:53,500 --> 00:07:54,790
+Now I can just type yes.
+
+127
+00:07:54,820 --> 00:07:56,030
+I'm going to type Y.
+
+128
+00:07:56,140 --> 00:07:59,120
+Press enter and it's going to go ahead and do that.
+
+129
+00:07:59,220 --> 00:08:06,640
+OK and this might take a while depending on your internet connection but it appears to have downloaded
+
+130
+00:08:06,640 --> 00:08:06,770
+it.
+
+131
+00:08:06,770 --> 00:08:09,730
+In my case and now it's just doing the installation.
+
+132
+00:08:09,730 --> 00:08:13,510
+It's going to start unpacking each of those different packages that it's download.
+
+133
+00:08:13,510 --> 00:08:16,600
+And we are actually seeing an installation process happen right now.
+
+134
+00:08:16,600 --> 00:08:21,160
+We will look into this a lot more in more detail later in the course but you can see that where we didn't
+
+135
+00:08:21,160 --> 00:08:25,690
+have to download any wizard and click next next next next next agree to any terms of conditions or anything
+
+136
+00:08:25,690 --> 00:08:31,540
+like that because all of the software is under the new Public License and it all gives you the same
+
+137
+00:08:32,260 --> 00:08:36,720
+same different the same freedoms as each other.
+
+138
+00:08:36,790 --> 00:08:39,640
+OK so now that's going to happen and still we don't have to do anything.
+
+139
+00:08:39,640 --> 00:08:44,810
+We've now installed a new C compiler and a whole bunch of other stuff so we're ready to compile our
+
+140
+00:08:44,980 --> 00:08:45,370
+code.
+
+141
+00:08:45,400 --> 00:08:48,200
+OK so let's turn our attention to our beautiful source code.
+
+142
+00:08:48,230 --> 00:08:51,750
+No because different computers have different architectures.
+
+143
+00:08:51,770 --> 00:08:55,160
+We had to configure the installation of this code to our specific machine.
+
+144
+00:08:55,360 --> 00:09:02,290
+Now there's a script that comes with that call to configure the source in the source folder has a backup
+
+145
+00:09:02,290 --> 00:09:05,120
+of all the with CD dot dot to go back up a folder.
+
+146
+00:09:05,130 --> 00:09:09,070
+Play the screen and take another look and we can see here there's a script called configure and we know
+
+147
+00:09:09,070 --> 00:09:10,760
+it's a script because it's green.
+
+148
+00:09:10,870 --> 00:09:15,500
+OK let's run that by typing bash configure and we press enter.
+
+149
+00:09:15,720 --> 00:09:23,080
+What this is doing is it's configuring the new C compiler the GCC to get make sure that when it compiles
+
+150
+00:09:23,080 --> 00:09:29,050
+all this the software that we tell it to it's going to do it in a way that's appropriate for our computers
+
+151
+00:09:29,110 --> 00:09:35,050
+architecture is making the appropriate adjustments and the important thing that this configure script
+
+152
+00:09:35,050 --> 00:09:40,570
+does besides configuring the Ghannouchi C-compiler is that it creates a new file called the Makefile
+
+153
+00:09:40,900 --> 00:09:45,710
+and makefile is responsible for the installation of this new software package.
+
+154
+00:09:45,710 --> 00:09:51,670
+But to make the makefile work which is a massive tongue twister by the way we need a new command called
+
+155
+00:09:51,730 --> 00:09:52,410
+make.
+
+156
+00:09:52,450 --> 00:09:57,340
+So when this thing has finished configuring we're going to install the make command in a very similar
+
+157
+00:09:57,340 --> 00:10:01,270
+way to the we just installed the new C compiler.
+
+158
+00:10:01,270 --> 00:10:05,680
+So if we just sit tight here for a second while we see all this beautiful text flying up the screen
+
+159
+00:10:06,520 --> 00:10:07,400
+looks pretty awesome right.
+
+160
+00:10:07,430 --> 00:10:11,310
+It's like something you might see unlike on like a film with hackers you know and stuff like that and
+
+161
+00:10:11,330 --> 00:10:13,500
+it's we're literally doing that right now.
+
+162
+00:10:13,500 --> 00:10:17,620
+So I'd be very proud of OK so now that's finished.
+
+163
+00:10:17,790 --> 00:10:22,470
+If we just take a look in this directory we should be able to see this new file here called the make
+
+164
+00:10:22,470 --> 00:10:27,570
+fun of the make file is an important file but we need to be able to run that we need to have the make
+
+165
+00:10:27,570 --> 00:10:28,040
+command.
+
+166
+00:10:28,050 --> 00:10:32,000
+So to get that we're going to type sudo apt get install make.
+
+167
+00:10:32,130 --> 00:10:32,410
+OK.
+
+168
+00:10:32,430 --> 00:10:36,990
+And when we press Enter it's going to go through a very similar process of installation.
+
+169
+00:10:37,300 --> 00:10:40,090
+Now that's all installed very quick very easy to install that one.
+
+170
+00:10:40,140 --> 00:10:46,680
+OK so now when we're in the same folder as the make file if we just run the make command you can see
+
+171
+00:10:46,680 --> 00:10:53,640
+that it's going to go through and it's going to compile all of the all of the c files that it finds
+
+172
+00:10:53,640 --> 00:11:00,180
+have not been compiled recently and there are still some changes outstanding which is effectively all
+
+173
+00:11:00,180 --> 00:11:05,110
+of the C code in this folder including LS file.
+
+174
+00:11:05,190 --> 00:11:13,920
+Ok so what this is doing is it's compiling it all into into machine code into binary code that can be
+
+175
+00:11:14,250 --> 00:11:15,230
+run on the computer.
+
+176
+00:11:15,280 --> 00:11:15,520
+OK.
+
+177
+00:11:15,540 --> 00:11:19,730
+So this is what's necessary when you run a compiled language like the C programming language.
+
+178
+00:11:19,920 --> 00:11:26,290
+So when that's done we'll be able to install the newly compiled programs.
+
+179
+00:11:26,370 --> 00:11:31,620
+But I'm going to cut the video here to save time and you know stop you waiting around too much.
+
+180
+00:11:32,930 --> 00:11:33,290
+OK.
+
+181
+00:11:33,310 --> 00:11:34,250
+Now that's completed.
+
+182
+00:11:34,270 --> 00:11:38,220
+So what's happened is what we found the code for the ls command.
+
+183
+00:11:38,320 --> 00:11:45,310
+OK we edited that code and then we installed something called the new C compiler which is what's required
+
+184
+00:11:45,310 --> 00:11:50,170
+to turn that code into machine code that the computer needs in order to run.
+
+185
+00:11:50,260 --> 00:11:50,800
+OK.
+
+186
+00:11:50,800 --> 00:11:56,710
+So what we did is we installed the Ghannouchi compiler and we had to configure that compiler before
+
+187
+00:11:56,710 --> 00:12:00,520
+it would could work correctly for our computers specific requirements.
+
+188
+00:12:00,520 --> 00:12:05,990
+OK so we configured the compiler and then when it was configured we'd just run it using the make command.
+
+189
+00:12:06,010 --> 00:12:06,350
+OK.
+
+190
+00:12:06,370 --> 00:12:11,610
+To make sure that every single bit of code is now turned into machine code.
+
+191
+00:12:11,620 --> 00:12:12,010
+OK.
+
+192
+00:12:12,190 --> 00:12:17,110
+So the only step that remains now that we've got this machine code is to install that machine code in
+
+193
+00:12:17,110 --> 00:12:20,220
+the required places on our path for it to actually work.
+
+194
+00:12:20,220 --> 00:12:25,540
+And the way that we can do that is using the pseudo sudo make install.
+
+195
+00:12:25,550 --> 00:12:31,270
+OK come on if I see the screen to suit or make install what it's doing is it's installing all of the
+
+196
+00:12:31,270 --> 00:12:32,190
+stuff like that.
+
+197
+00:12:32,200 --> 00:12:33,100
+That was very very quick.
+
+198
+00:12:33,100 --> 00:12:38,350
+We've now installed each of the different pieces of software that came with this version 8.2 out of
+
+199
+00:12:38,350 --> 00:12:39,990
+the core utils package.
+
+200
+00:12:40,090 --> 00:12:40,630
+OK.
+
+201
+00:12:40,720 --> 00:12:43,620
+So let's take a look at how that works.
+
+202
+00:12:43,630 --> 00:12:47,360
+OK so if we just close our terminal and reopen it again then.
+
+203
+00:12:47,380 --> 00:12:52,180
+Now if we run the ls command we can see that it says hello there beautiful people.
+
+204
+00:12:52,210 --> 00:12:56,740
+Every time that it runs because we modified our code and installed it.
+
+205
+00:12:56,740 --> 00:12:59,840
+How awesome is that.
+
+206
+00:12:59,840 --> 00:13:03,040
+Right so hooray for open source and free software.
+
+207
+00:13:03,040 --> 00:13:07,620
+So this is actually a much faster process in reality than what I've shown you here.
+
+208
+00:13:07,630 --> 00:13:13,150
+So to change back we would just rewrite the source code recompile with make then re-install with make
+
+209
+00:13:13,150 --> 00:13:13,900
+install.
+
+210
+00:13:13,900 --> 00:13:19,780
+So if I head back to our downloads OK it's actually a much faster process when you get a bit better
+
+211
+00:13:19,780 --> 00:13:20,380
+with it.
+
+212
+00:13:20,380 --> 00:13:22,710
+So here we are we're in our call you far.
+
+213
+00:13:22,710 --> 00:13:27,390
+We're going to go over to our source code for the library in there.
+
+214
+00:13:27,400 --> 00:13:27,840
+OK.
+
+215
+00:13:27,940 --> 00:13:31,250
+So let's go to Nonno LS Dotsie.
+
+216
+00:13:31,360 --> 00:13:35,220
+Let's head over to line 1443.
+
+217
+00:13:35,350 --> 00:13:37,710
+I'm going to delete this line that I put in there.
+
+218
+00:13:37,790 --> 00:13:38,900
+Save the file.
+
+219
+00:13:38,980 --> 00:13:39,510
+OK.
+
+220
+00:13:39,610 --> 00:13:49,380
+Now if I could clear the screen now will we have to do is do make sudo make install.
+
+221
+00:13:49,630 --> 00:13:51,020
+Oh because I'm not I'm in the wrong folder.
+
+222
+00:13:51,040 --> 00:14:00,200
+There we go make and sudo make install so now notice how the make command is just really compiling the
+
+223
+00:14:00,200 --> 00:14:02,640
+ls command because it notices that what's different.
+
+224
+00:14:02,640 --> 00:14:08,990
+I we run with our enter my password there so it can install it and then when I close the terminal and
+
+225
+00:14:08,990 --> 00:14:10,610
+reopen it and use the ls command.
+
+226
+00:14:10,640 --> 00:14:11,840
+Now it's back to normal.
+
+227
+00:14:11,840 --> 00:14:13,710
+So you see how much faster that was right.
+
+228
+00:14:13,790 --> 00:14:19,760
+Once we've configured the C-compiler once or at least for free for the package it's really fast to just
+
+229
+00:14:19,760 --> 00:14:21,990
+go and edit edit it thereafter.
+
+230
+00:14:22,040 --> 00:14:23,410
+OK.
+
+231
+00:14:23,720 --> 00:14:28,100
+That's because the make command knew as well that it only needed to recompile the code that was affected
+
+232
+00:14:28,310 --> 00:14:32,590
+by the change not the whole package which was new to the system the first time we did it.
+
+233
+00:14:32,610 --> 00:14:34,700
+So make is a very clever program.
+
+234
+00:14:34,820 --> 00:14:40,220
+And as I say now that we've installed the new version of ELAS program now hello the people message has
+
+235
+00:14:40,400 --> 00:14:40,980
+disappeared.
+
+236
+00:14:41,000 --> 00:14:43,790
+And it's back the way that it was.
+
+237
+00:14:43,820 --> 00:14:47,970
+So there you are you beautiful people in this video you've seen how to access source code from the new
+
+238
+00:14:47,980 --> 00:14:54,410
+the old web site had to modify that source code and how to use configure make and make install to install
+
+239
+00:14:54,410 --> 00:14:55,480
+the new software.
+
+240
+00:14:55,490 --> 00:15:00,410
+Now the great thing is you can access and modify the source code for everything on a new Linux operating
+
+241
+00:15:00,410 --> 00:15:00,910
+system.
+
+242
+00:15:01,010 --> 00:15:05,930
+And if you care to exercise it you have absolute power over how your computer works.
+
+243
+00:15:05,930 --> 00:15:11,440
+So hopefully you can see how having open source free software running on your computer is a great asset.
+
+244
+00:15:11,520 --> 00:15:16,540
+You also you can appreciate the effort that the pioneers of such a system took to build it.
+
+245
+00:15:16,730 --> 00:15:19,700
+But the process that we went through in this video is relatively lengthy.
+
+246
+00:15:19,700 --> 00:15:23,230
+And sometimes you just want to install software and get on with what you were doing.
+
+247
+00:15:23,240 --> 00:15:28,850
+So for this there are massive bodies of maintained and pre-compiled code in what is known as the software
+
+248
+00:15:28,910 --> 00:15:34,370
+repositories and we use the repositories in this section actually to install the Ganu C-compiler and
+
+249
+00:15:34,370 --> 00:15:38,120
+the make command and software repositories are what you'll use to install software.
+
+250
+00:15:38,120 --> 00:15:43,790
+99 percent of the time and they come with so many really cool features so now that you understand that
+
+251
+00:15:43,790 --> 00:15:49,160
+yes you can look up source code to modify how your computer works however you like manually.
+
+252
+00:15:49,160 --> 00:15:53,780
+Let's take a look at how the software repositories which give you access to a massive library of software
+
+253
+00:15:54,020 --> 00:15:56,230
+that is Priore pre-compiled and ready to go.
+
+254
+00:15:56,240 --> 00:15:58,300
+Some will look at how they work as well.
+
+255
+00:15:58,400 --> 00:16:01,580
+So for all that goodness I'll see you in the next video.

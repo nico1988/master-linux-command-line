@@ -1,0 +1,803 @@
+1
+00:00:00,390 --> 00:00:05,940
+All right scenary know how to make files and directories using the touch and M.K. DL commands.
+
+2
+00:00:05,940 --> 00:00:08,580
+Let's take it up a notch and mess around a bit.
+
+3
+00:00:08,760 --> 00:00:14,190
+So let's say that you're working on a big five year project and every month because the admin staff
+
+4
+00:00:14,190 --> 00:00:14,840
+hate you.
+
+5
+00:00:15,000 --> 00:00:20,670
+You need to write a 100 memo files to keep track of the project and the folder should be named something
+
+6
+00:00:20,670 --> 00:00:29,160
+like Jan. 2017 FEBE 2017 March 20th of March 2017 and so on and so on for five years and in each of
+
+7
+00:00:29,160 --> 00:00:37,720
+these folders there should be 100 files for 1 4 2 4 3 all the way until fall 100.
+
+8
+00:00:37,830 --> 00:00:42,250
+How can you create those files and folders up front.
+
+9
+00:00:42,910 --> 00:00:45,960
+Well doing it graphically would be horrific.
+
+10
+00:00:45,960 --> 00:00:47,960
+There's actually just no way around it.
+
+11
+00:00:48,050 --> 00:00:51,830
+There will be a whole lot of copying and pasting and a whole lot of renaming.
+
+12
+00:00:51,840 --> 00:00:56,760
+And you're right click finger would be basically in agony by the end of the whole ordeal.
+
+13
+00:00:56,900 --> 00:01:01,570
+But let me show you how easy it is to do on the come on line so to make this possible.
+
+14
+00:01:01,590 --> 00:01:06,290
+We're going to use a powerful feature of the shell known as Brace expansion.
+
+15
+00:01:06,410 --> 00:01:08,100
+And this is totally awesome.
+
+16
+00:01:08,100 --> 00:01:08,930
+Check this out.
+
+17
+00:01:09,180 --> 00:01:13,740
+So let's go ahead and open our terminal using our control or anti keyboard shortcut.
+
+18
+00:01:13,920 --> 00:01:18,330
+And then what we're going to do is we're going to head over to the desktop using our cd command.
+
+19
+00:01:18,330 --> 00:01:21,910
+I'm going to make a big folder called Project.
+
+20
+00:01:21,970 --> 00:01:22,580
+And there we are.
+
+21
+00:01:22,590 --> 00:01:25,600
+It has appeared now in here.
+
+22
+00:01:25,820 --> 00:01:29,730
+This is this good change into it change into that product folder if we can see that now we're in the
+
+23
+00:01:29,940 --> 00:01:31,220
+Project for the on the desktop.
+
+24
+00:01:31,320 --> 00:01:33,550
+And this is where the magic happens.
+
+25
+00:01:33,600 --> 00:01:34,050
+OK.
+
+26
+00:01:34,170 --> 00:01:36,070
+We need to make 60 folders.
+
+27
+00:01:36,210 --> 00:01:36,490
+Right.
+
+28
+00:01:36,540 --> 00:01:37,900
+And they should all be in the format.
+
+29
+00:01:38,030 --> 00:01:48,270
+Jan 20:17 FEBE 2017 ma 2017 20:17 OK so three three letters then 2017 all the way up until December
+
+30
+00:01:48,450 --> 00:01:49,220
+2022.
+
+31
+00:01:49,230 --> 00:01:50,600
+So DEC 2022.
+
+32
+00:01:50,690 --> 00:01:52,430
+OK which is when the project evidence.
+
+33
+00:01:52,680 --> 00:01:57,570
+So what if I told you we could make all of those folders in one line.
+
+34
+00:01:57,600 --> 00:02:01,570
+This is all possible using the power of brace expansion.
+
+35
+00:02:01,710 --> 00:02:02,820
+So here comes the command.
+
+36
+00:02:02,850 --> 00:02:06,420
+And what I'm going to do is I'm actually going to maximize the screen because it's kind of a big one.
+
+37
+00:02:06,540 --> 00:02:08,800
+What we're going to do is win type M.K. DVR.
+
+38
+00:02:08,920 --> 00:02:09,310
+OK.
+
+39
+00:02:09,390 --> 00:02:14,250
+I'm going to open up a pair of braces and the braces are these squiggly brackets here and then we're
+
+40
+00:02:14,250 --> 00:02:16,190
+going to type without any spaces.
+
+41
+00:02:16,210 --> 00:02:20,250
+Jan comma FEBE comma March comma.
+
+42
+00:02:20,250 --> 00:02:30,430
+April May June July August September October November December without any spaces at all.
+
+43
+00:02:30,540 --> 00:02:33,690
+OK I'm going to double underscore the moment Open.
+
+44
+00:02:33,750 --> 00:02:35,740
+Open up another pair of braces.
+
+45
+00:02:35,800 --> 00:02:48,110
+OK then 2017 2018 2019 2020 two thousand twenty one and 2022.
+
+46
+00:02:48,160 --> 00:02:49,770
+So that's quite a long come on right.
+
+47
+00:02:49,980 --> 00:02:54,120
+But what's happening here is something called brace expansion.
+
+48
+00:02:54,150 --> 00:03:01,080
+And here we have some braces so we've got one say here and another set here for the for the years and
+
+49
+00:03:01,080 --> 00:03:06,360
+the way that the shell is going to expand these braces is similar to how you would expand brackets in
+
+50
+00:03:06,360 --> 00:03:07,390
+algebra class.
+
+51
+00:03:07,440 --> 00:03:07,930
+OK.
+
+52
+00:03:08,040 --> 00:03:17,970
+So what happened first is you get January 2017 then February 2017 then March 2017 and so on and so on
+
+53
+00:03:17,970 --> 00:03:20,280
+until you get December 2017.
+
+54
+00:03:20,460 --> 00:03:29,310
+OK then it'll just start all over again you get January 28 in February 2018 then March April May June
+
+55
+00:03:29,310 --> 00:03:32,620
+July all the way until you get December 2018.
+
+56
+00:03:33,000 --> 00:03:33,510
+Okay.
+
+57
+00:03:33,720 --> 00:03:39,140
+And so on and so on until you get all the way until December 2022.
+
+58
+00:03:39,360 --> 00:03:39,760
+Okay.
+
+59
+00:03:39,840 --> 00:03:43,260
+So enough in suspense Let's go ahead and press enter.
+
+60
+00:03:43,680 --> 00:03:47,050
+Let's go ahead and run that now let's see if it works.
+
+61
+00:03:47,050 --> 00:03:49,410
+We're going to go into our project folder.
+
+62
+00:03:49,940 --> 00:03:52,440
+Oh oh my goodness.
+
+63
+00:03:52,500 --> 00:03:53,820
+Look how amazing that is right.
+
+64
+00:03:53,820 --> 00:04:00,840
+So we've managed to create folders in that wonderful format there for every single one of the years
+
+65
+00:04:01,080 --> 00:04:06,510
+and if we highlight them it tells us that the 72 folders actually created.
+
+66
+00:04:06,510 --> 00:04:16,080
+So from January 2017 right here all the way until December 20 22 which is right there and everything
+
+67
+00:04:16,110 --> 00:04:16,680
+in between.
+
+68
+00:04:16,680 --> 00:04:18,840
+Isn't that awesome.
+
+69
+00:04:19,020 --> 00:04:24,330
+Just as an aside as well if I just maximize this here to say it was a bit of typing we could have actually
+
+70
+00:04:24,330 --> 00:04:30,300
+instead of typing out each of the dates because it's just numbers they're just numbers right that are
+
+71
+00:04:30,300 --> 00:04:32,020
+in a in a constant pattern.
+
+72
+00:04:32,070 --> 00:04:33,600
+We could have just done dot dot.
+
+73
+00:04:33,750 --> 00:04:38,340
+So 2017 to 2022 that's another aside right there.
+
+74
+00:04:38,490 --> 00:04:44,070
+Now imagine how long it would have taken to do that stuff using point and click method you imagine how
+
+75
+00:04:44,070 --> 00:04:45,530
+annoying that would have been.
+
+76
+00:04:45,750 --> 00:04:52,700
+Well we just did it in one command line a case so that we're sitting here feeling very smug that our
+
+77
+00:04:52,720 --> 00:04:57,420
+command line has just created like a jillion folders all in one go we've still got a little bit to do.
+
+78
+00:04:57,610 --> 00:05:03,300
+And that is we've got to create 100 files in each of these folders.
+
+79
+00:05:03,340 --> 00:05:04,840
+Now how are we going to do that.
+
+80
+00:05:04,840 --> 00:05:08,200
+Well actually it's quite easy we'll just use brace expansion again.
+
+81
+00:05:08,260 --> 00:05:12,970
+So we're going to do is we're going to open up our terminals again go onto the desktop go into the product
+
+82
+00:05:12,970 --> 00:05:13,460
+folder.
+
+83
+00:05:13,530 --> 00:05:14,000
+OK.
+
+84
+00:05:14,110 --> 00:05:15,390
+Now I'm here.
+
+85
+00:05:15,730 --> 00:05:18,010
+I'm actually gonna maximize the screen watch what.
+
+86
+00:05:18,010 --> 00:05:20,830
+Just watch what I do and then we'll see how it works.
+
+87
+00:05:20,830 --> 00:05:21,520
+OK.
+
+88
+00:05:22,030 --> 00:05:24,920
+So don't touch then I'm going to open up the Brace's.
+
+89
+00:05:25,120 --> 00:05:35,490
+John FEBE March April May June July August September October November December.
+
+90
+00:05:35,740 --> 00:05:42,110
+Underscore and our years 2017 2022.
+
+91
+00:05:42,220 --> 00:05:44,250
+Oh by the way it doesn't just have to be numbers.
+
+92
+00:05:44,260 --> 00:05:51,970
+It could be a to Zed or a to Zed or something like B to F or something like that.
+
+93
+00:05:51,980 --> 00:05:57,430
+OK so anything is it that has a pattern like you know the alphabet or numbers you can use the dot dot
+
+94
+00:05:57,520 --> 00:05:58,510
+thing to make that happen.
+
+95
+00:05:58,540 --> 00:06:02,790
+OK but we're after 2017 till 2022.
+
+96
+00:06:02,970 --> 00:06:03,450
+OK.
+
+97
+00:06:03,760 --> 00:06:11,040
+Now inside each of those folders we're not going to make a file called the source file and then has
+
+98
+00:06:11,080 --> 00:06:12,150
+one to wonder.
+
+99
+00:06:12,160 --> 00:06:15,960
+Ok so what is going on here.
+
+100
+00:06:15,970 --> 00:06:20,040
+This is Matt Ziyad Where where has this command come from.
+
+101
+00:06:20,140 --> 00:06:26,500
+Well basically what I'm saying is for each of these folders from January 2017 all the way until December
+
+102
+00:06:26,500 --> 00:06:27,400
+2022.
+
+103
+00:06:27,400 --> 00:06:29,890
+In each of those make file 1 to 100.
+
+104
+00:06:29,990 --> 00:06:32,020
+OK now this is just a bit of fun.
+
+105
+00:06:32,020 --> 00:06:34,930
+Ok so don't worry if it seems a bit like what.
+
+106
+00:06:35,540 --> 00:06:38,330
+It's just to show you how powerful the shell can be.
+
+107
+00:06:38,360 --> 00:06:39,530
+Let's take a look at it again.
+
+108
+00:06:39,590 --> 00:06:41,660
+Run that.
+
+109
+00:06:41,800 --> 00:06:43,090
+Let's close the terminal again.
+
+110
+00:06:43,180 --> 00:06:44,140
+Let's go ahead and take a look.
+
+111
+00:06:44,140 --> 00:06:44,800
+Let's open up.
+
+112
+00:06:44,800 --> 00:06:46,880
+June 2022.
+
+113
+00:06:46,970 --> 00:06:47,480
+OK.
+
+114
+00:06:47,620 --> 00:06:49,420
+Because that's a good date.
+
+115
+00:06:49,420 --> 00:06:55,330
+So if we open up June 2022 we click that oh my goodness we've got file one to 100.
+
+116
+00:06:55,480 --> 00:07:00,670
+OK maybe that was just a fluke What if we open up December 2020 and hope this fall one to 100 in there
+
+117
+00:07:00,670 --> 00:07:01,360
+as well.
+
+118
+00:07:01,390 --> 00:07:06,400
+What if we open up January I say April 2020.
+
+119
+00:07:06,490 --> 00:07:09,830
+There we go again we've got fall 1 to 100.
+
+120
+00:07:09,880 --> 00:07:10,250
+OK.
+
+121
+00:07:10,330 --> 00:07:17,390
+So isn't that awesome guys like you can see the way that we've just used brace expansion to make our
+
+122
+00:07:17,710 --> 00:07:20,660
+terminal command unbelievably powerful.
+
+123
+00:07:20,770 --> 00:07:25,540
+And if we've got 72 folders and I say well we're only going to do it for five years we ended up doing
+
+124
+00:07:25,540 --> 00:07:26,320
+it for six.
+
+125
+00:07:26,440 --> 00:07:33,940
+But if we have now got 72 folders with 100 files in each we just use one command line to create about
+
+126
+00:07:33,940 --> 00:07:38,060
+seven thousand two hundred files in one go.
+
+127
+00:07:38,170 --> 00:07:43,820
+I hope you can see just how powerful the shell is from from that little example right there.
+
+128
+00:07:43,960 --> 00:07:44,590
+OK.
+
+129
+00:07:44,620 --> 00:07:49,870
+And by the way brace expansion isn't only possible for the touch and Cadia are commands.
+
+130
+00:07:49,870 --> 00:07:53,310
+By the way it's actually usable across the whole shelf.
+
+131
+00:07:53,320 --> 00:07:56,750
+So for example let's take the ls command the ls command.
+
+132
+00:07:57,160 --> 00:08:00,560
+We can look in every single folder and get a list of what's in there.
+
+133
+00:08:00,660 --> 00:08:01,180
+So if I do.
+
+134
+00:08:01,180 --> 00:08:14,160
+John FEBE March April May June July August September October November December and then 2017 till 2022.
+
+135
+00:08:14,740 --> 00:08:20,130
+OK so I'm saying list out the contents of every single one of these folders basically and I press enter.
+
+136
+00:08:20,420 --> 00:08:20,640
+Oops.
+
+137
+00:08:20,650 --> 00:08:21,920
+I'm in the wrong place.
+
+138
+00:08:22,090 --> 00:08:29,380
+So good desk top slash projects now press up key twice to get back there go again.
+
+139
+00:08:29,540 --> 00:08:36,910
+Well we can see the contents of every single one of the folders and you can see they all have 100 files
+
+140
+00:08:37,000 --> 00:08:38,190
+in it.
+
+141
+00:08:38,650 --> 00:08:44,260
+And we can see that we get the for 1 to 100 in every folder and it might look like the file ends in
+
+142
+00:08:44,260 --> 00:08:45,540
+fall 99.
+
+143
+00:08:45,640 --> 00:08:50,710
+But what's actually happening is if you look over here and see a file what it's doing is it's sorting
+
+144
+00:08:50,710 --> 00:08:56,920
+them alphabetically or sorting them numerically here so you see for one for 10 for 100 because they
+
+145
+00:08:56,920 --> 00:08:59,650
+all start with one right and then the nines end up over there.
+
+146
+00:08:59,650 --> 00:09:03,310
+But now we are getting as 1 to 100 in each.
+
+147
+00:09:03,550 --> 00:09:08,560
+And let's let's say that we wanted to take all of this output right this massive output and we just
+
+148
+00:09:08,560 --> 00:09:13,470
+got and redirect it redirect all the output into a file called out Dottie XTi.
+
+149
+00:09:13,810 --> 00:09:18,670
+And now when we when we take a look we've now got a file called out Dr. XTi.
+
+150
+00:09:19,240 --> 00:09:25,600
+And if when we take a look in there we can see that we've got all of that content in there.
+
+151
+00:09:25,690 --> 00:09:31,450
+April 2017 it tells us the files that that has and then it tells us what's in April 2018 and it tells
+
+152
+00:09:31,450 --> 00:09:34,760
+the following that this is all alphabetically sorted in there.
+
+153
+00:09:34,810 --> 00:09:36,320
+Isn't that awesome.
+
+154
+00:09:36,370 --> 00:09:43,030
+I'm just showing you here we have an epic file with the contents of 72 folders and in about 7200 files
+
+155
+00:09:43,510 --> 00:09:49,210
+in just one command line tell me that is an epic and would have took you for ever to do using point
+
+156
+00:09:49,470 --> 00:09:55,200
+methods now I appreciate this is really is this is really going to be a bit like whoa and that's OK.
+
+157
+00:09:55,200 --> 00:09:55,470
+All right.
+
+158
+00:09:55,470 --> 00:09:57,510
+I'm just showing you these basic skills.
+
+159
+00:09:57,660 --> 00:10:02,970
+Have these basic skills or just creating one file or creating one folder can easily be turbo charged
+
+160
+00:10:03,000 --> 00:10:04,140
+with very little effort.
+
+161
+00:10:04,230 --> 00:10:09,750
+As long as you understand a little bit about brace expansion of wildcards cards but I'll leave the imagination
+
+162
+00:10:09,750 --> 00:10:13,640
+as to why why you would do so up to you.
+
+163
+00:10:13,680 --> 00:10:18,000
+Because these skills can be applied to many different things and you know just just just to show a much
+
+164
+00:10:18,000 --> 00:10:19,900
+simpler case of brace expansion.
+
+165
+00:10:20,040 --> 00:10:28,380
+If we go to the desktop right here and say we just want instead of saying tourch file a text file be
+
+166
+00:10:28,460 --> 00:10:31,910
+Dottie XTi and file see tickety which will work fine.
+
+167
+00:10:31,920 --> 00:10:38,910
+We'll create three files brace expansion it makes that a bit easier by saying file you give it some
+
+168
+00:10:38,910 --> 00:10:39,460
+brackets.
+
+169
+00:10:39,510 --> 00:10:45,260
+A B C D C C because we're using the break the braces here.
+
+170
+00:10:45,270 --> 00:10:48,020
+Who's going to file a text file be that text.
+
+171
+00:10:48,070 --> 00:10:50,410
+Force-Iraq tasty presenter.
+
+172
+00:10:50,490 --> 00:10:52,880
+Now we are we've used brace expansion to expand that out.
+
+173
+00:10:52,950 --> 00:10:53,320
+OK.
+
+174
+00:10:53,430 --> 00:10:56,570
+So Bracey expansion comes into play all over the place.
+
+175
+00:10:56,580 --> 00:11:01,980
+And because here we are we've got some text which is a follows a very simple pattern we can use the
+
+176
+00:11:01,980 --> 00:11:08,020
+dot dot here and we're going to get the same result again we could we could maybe say OK I want file
+
+177
+00:11:08,580 --> 00:11:11,380
+F all the way to the.
+
+178
+00:11:11,490 --> 00:11:17,610
+We are going to get 4 v all the way to F on the desktop as well.
+
+179
+00:11:17,610 --> 00:11:19,710
+So here we are here f as V.
+
+180
+00:11:19,710 --> 00:11:23,400
+So to show you this brace expansion it's not particularly complicated thing.
+
+181
+00:11:23,490 --> 00:11:28,740
+Trust me there are useful things for what I'm showing you here but I just wanted to show you just how
+
+182
+00:11:28,740 --> 00:11:32,640
+powerful the shell can be with just a little bit of tweaking.
+
+183
+00:11:32,640 --> 00:11:37,590
+So that's sort of command line craziness for now let's just have a quick recap of what was actually
+
+184
+00:11:37,590 --> 00:11:39,790
+important from the last two videos.
+
+185
+00:11:39,810 --> 00:11:44,280
+So first of all you saw how to use the touch command to create new files and the use also so how to
+
+186
+00:11:44,280 --> 00:11:50,070
+use the mkdir command to create new directories which is my favorite way of saying the command.
+
+187
+00:11:50,070 --> 00:11:50,760
+By the way.
+
+188
+00:11:50,850 --> 00:11:56,670
+And you also saw that the mkdir command also has a powerful p option that can be used to create entire
+
+189
+00:11:56,670 --> 00:11:57,620
+folder paths.
+
+190
+00:11:57,630 --> 00:12:01,680
+So this is creating one folder inside of another folder inside of the folder.
+
+191
+00:12:01,710 --> 00:12:04,820
+All from scratch which is very very powerful stuff.
+
+192
+00:12:04,900 --> 00:12:11,130
+Use learn creating for files and folders in Linux is case sensitive and you learn that it's kind of
+
+193
+00:12:11,130 --> 00:12:15,920
+a bad idea to have spaces in your font aims so use underscores instead.
+
+194
+00:12:15,930 --> 00:12:21,260
+And finally we took file and folder creation to the next level by using brace expansion and embrace
+
+195
+00:12:21,270 --> 00:12:24,970
+expansion is kind of an advanced technique so don't worry if you didn't understand it.
+
+196
+00:12:25,050 --> 00:12:28,520
+It's not technically part of the course but you got to see it here anyway.
+
+197
+00:12:28,590 --> 00:12:29,660
+So lucky you.
+
+198
+00:12:29,790 --> 00:12:34,740
+But now that we've got a whole bunch of files and folders cluttering up our computer in the next video
+
+199
+00:12:34,890 --> 00:12:36,800
+you're going to learn how to remove them.
+
+200
+00:12:36,810 --> 00:12:39,260
+So to learn how to delete files and folders.
+
+201
+00:12:39,300 --> 00:12:41,260
+I'll see you in the next video.

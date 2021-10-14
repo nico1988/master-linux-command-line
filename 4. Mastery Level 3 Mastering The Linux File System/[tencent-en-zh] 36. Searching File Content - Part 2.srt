@@ -1,0 +1,810 @@
+1
+00:00:00,210 --> 00:00:04,760
+欢迎回来，女士们，先生们，我相信你们一定被期待得要死了。
+Welcome back ladies and gents I'm sure the anticipation has been killing you.
+
+2
+00:00:04,770 --> 00:00:09,830
+所以我们在这里，我们试图找出Gadsby是否真的用了字母e。
+So here we are we're trying to find out whether Gadsby does in fact use the letter e.
+
+3
+00:00:09,850 --> 00:00:13,410
+现在盖茨比有1914行长。
+Now Gatsby is 1914 lines long.
+
+4
+00:00:13,560 --> 00:00:18,480
+所以如果在这里使用这个命令，我们得到的答案是1914。
+So if by using this command here we get the answer 1914.
+
+5
+00:00:18,480 --> 00:00:22,540
+那么我们就知道并不是每一行都包含这个字母。
+Then we know that every line doesn't contain the letter.
+
+6
+00:00:22,710 --> 00:00:24,990
+好的，那么让我们继续按Enter键。
+OK so let's go ahead and press enter.
+
+7
+00:00:24,990 --> 00:00:30,870
+让我们看看我们是否能像我们预期的那样得到1914年的线条。
+Let's see if we get 1914 lines just like we expected.
+
+8
+00:00:30,880 --> 00:00:33,070
+人群变得疯狂起来。
+And the crowd goes wild.
+
+9
+00:00:33,510 --> 00:00:34,180
+所以我们就到这里了。
+So there we are.
+
+10
+00:00:34,200 --> 00:00:34,880
+是啊。
+Yep.
+
+11
+00:00:35,250 --> 00:00:37,580
+该集团的指挥官也设法以这种方式工作。
+The the group commanders manage to work that way as well.
+
+12
+00:00:37,580 --> 00:00:39,750
+我们从两方面都得到了相同的答案。
+We got the same answer both ways.
+
+13
+00:00:39,900 --> 00:00:43,500
+现在，您可以使用grep命令一次在多个文件内部进行搜索。
+Now you can use the grep command to search inside multiple files at once.
+
+14
+00:00:43,500 --> 00:00:44,010
+顺便说一下。
+By the way.
+
+15
+00:00:44,070 --> 00:00:44,410
+好的。
+OK.
+
+16
+00:00:44,550 --> 00:00:50,760
+所以我有我在桌面上有一个文件，如果我只是返回ESTOP，我是不是调用了光晕腾讯州(Haloed RTX States)
+So I have I have a file on the desktop don't I called haloed RTX States if I just head back to the estop
+
+17
+00:00:50,760 --> 00:00:53,430
+稍等片刻，卡塔就出来了，它打了声招呼。
+a little bit and Katta out it says hello.
+
+18
+00:00:53,430 --> 00:00:55,260
+在那里，你可以看到它是为人们服务的，令人惊讶的是。
+There you see it for people and surprisingly.
+
+19
+00:00:55,260 --> 00:01:02,340
+现在，如果我们想要比较我的光环光学“秋天”和“盖茨比”手稿的文学天才
+Now if we wanted to compare the literary genius of my haloed optics the fall and the Gadsby manuscript
+
+20
+00:01:02,790 --> 00:01:05,710
+那我们就可以用Grabbe Dash了。
+then we could use GRABBE dash.
+
+21
+00:01:05,750 --> 00:01:11,500
+我会搜索盖茨比手稿里面的字母E，所以它会在盖茨比的文件夹里。
+I would search for the letter E inside the Gatsby manuscript so that's going to be in the Gadsby folder.
+
+22
+00:01:11,520 --> 00:01:20,460
+在我的Hello文本文件上的Gatsby手稿我们可以看到，它向我们展示了我在这里晕圈的结果
+Gatsby manuscript on my Hello textfile we can see that it's shown us that my haloed out here has a result
+
+23
+00:01:20,670 --> 00:01:20,980
+这里。
+here.
+
+24
+00:01:21,000 --> 00:01:25,020
+结果，在这里，在这里，结果是，你看不到任何关于上帝的贝达赫特的东西
+And as a result here as a result here it has a result that you don't see anything for God's Bedacht
+
+25
+00:01:25,020 --> 00:01:30,090
+文本，你也可以计算，所以如果我这样做，你可以看到盖茨比手稿返回0
+text and you can count as well so if I just do that you can see that the Gatsby manuscript returns zero
+
+26
+00:01:30,090 --> 00:01:35,060
+后面的a和my Hello 0.60文件返回的结果是。
+results for the latter a and my Hello 0.60 file returns for.
+
+27
+00:01:35,130 --> 00:01:43,420
+所以，尽管我有五行文字，盖茨比的那一行有1914年的猜测，但我的五行中有四行是猜中的。
+So even though I had five lines of text and the Gadsby one had 1914 guess four out of my five lines.
+
+28
+00:01:43,440 --> 00:01:48,630
+我80%的短信里有一个字母，而他们的一个字母都没有。
+80 percent of my text had a letter in it and theirs had none.
+
+29
+00:01:48,630 --> 00:01:52,820
+所以这就是我认为盖茨比在炫耀的意思。
+So that's just what I just think Gadsby was was showing off.
+
+30
+00:01:53,280 --> 00:02:00,000
+所以现在您知道了如何使用grep命令来分析文学杰作，这是最常见的
+So now that you know how to use the grep command to analyze literary masterpiece is the most common
+
+31
+00:02:00,000 --> 00:02:04,870
+实际使用它的方法是在您通过管道传送到它的数据中进行搜索。
+way to actually use it is to search within data that you pipe to it.
+
+32
+00:02:04,980 --> 00:02:11,040
+好的，如果我只是清理一下这里的命令行，我们将向你们展示
+OK so if I just if I just clean this this command line here we're going to show you how actually the
+
+33
+00:02:11,040 --> 00:02:17,200
+屏幕将向您展示如何使用grep命令使用find执行更繁重的操作。
+screen will show you how you can do something a bit more heavy duty with the find with the grep command.
+
+34
+00:02:17,220 --> 00:02:22,440
+假设您想要查看一个大文件夹内是否有文件。
+So let's say that you wanted to look inside a big folder to see whether a file is inside.
+
+35
+00:02:22,530 --> 00:02:23,470
+好的。
+OK.
+
+36
+00:02:23,940 --> 00:02:29,130
+是的，我们可以使用find命令，但也许我们认为find命令对
+Yes we could use the find command but perhaps we decided that the find command is a bit heavy duty for
+
+37
+00:02:29,130 --> 00:02:30,610
+检查得真快。
+such a quick check.
+
+38
+00:02:30,670 --> 00:02:37,800
+好的，让我们在桌面上创建一个名为Hello的文件夹，然后将hello移动到0.60
+OK so let's make let's make a folder on the desktop called Hello in there and let's move the hello 0.60
+
+39
+00:02:38,550 --> 00:02:40,120
+放到hello文件夹中。
+into that hello folder.
+
+40
+00:02:40,300 --> 00:02:43,130
+好的，当我们看的时候，我们应该看到确实是这样的。
+OK when we look we should see that that is indeed the case.
+
+41
+00:02:43,290 --> 00:02:43,930
+好的，我们走吧。
+Yep there we go.
+
+42
+00:02:43,950 --> 00:02:45,630
+您好，腾讯通，我在里面。
+Hello RTX t inside.
+
+43
+00:02:45,710 --> 00:02:49,980
+好的，让我们在里面创建更多的文件，让我们来看看hello文件夹的内部。
+OK let's create some more files inside let's touch inside the hello folder.
+
+44
+00:02:49,980 --> 00:02:55,300
+我不知道，我猜是文件说是100，或者是里面的科萨文件。
+I dunno I guess like files say 100 or the files Kosa in there.
+
+45
+00:02:55,320 --> 00:02:58,740
+现在我们可以看到，这里有100个文件，其中某处有晕圈文本。
+Now we can see that there's 100 of the files somewhere in there is haloed text.
+
+46
+00:02:58,740 --> 00:02:59,600
+好的。
+OK.
+
+47
+00:03:00,150 --> 00:03:05,860
+因此，假设我们希望使用ls命令列出Hello中的内容。
+So let's say that we wanted to use the ls command to list what's in Hello.
+
+48
+00:03:05,910 --> 00:03:10,740
+您能看到您从ls命令中获得了相当多的信息吗，特别是如果我们有
+Can you see you get quite a bit of information coming out of the ls command especially if we have the
+
+49
+00:03:10,920 --> 00:03:12,100
+选项。
+option.
+
+50
+00:03:12,120 --> 00:03:15,010
+从那里传出的信息肯定很多。
+Definitely a lot of information coming out there.
+
+51
+00:03:15,400 --> 00:03:21,960
+但是您可以只使用最后一个选项，并将其通过管道传递给grep命令，然后说嘿，我们正在
+But you can do is you can just use the last option and pipe it to the grep command and say hey we're
+
+52
+00:03:21,960 --> 00:03:25,980
+查找Hello Dotti XTi，您会看到它被突出显示。
+looking for Hello Dotti XTi and you'll see that it is highlighted.
+
+53
+00:03:26,070 --> 00:03:30,150
+你好，多蒂，就像在场的东西一样。
+Hello Dottie XTi as as something thats being present.
+
+54
+00:03:30,150 --> 00:03:33,400
+好的，这可以帮助你搜索里面的东西。
+OK so that can help you search things in there.
+
+55
+00:03:33,420 --> 00:03:38,160
+我经常使用的另一个示例是我正在查找有关特定文件或文件夹的详细信息
+Another example that I use often is what I'm looking for details about a particular file or folders
+
+56
+00:03:38,160 --> 00:03:39,860
+使用ls命令的权限。
+permissions using the ls command.
+
+57
+00:03:39,870 --> 00:03:46,000
+因此，例如，如果我想要查看Root主目录的权限，我可以使用L
+So for example if I want to see the permissions for The Root home directory I could do ls with the L
+
+58
+00:03:46,000 --> 00:03:48,170
+和大写f选项。
+and capital f option.
+
+59
+00:03:48,280 --> 00:03:53,610
+但是使用第四个斜杠时，请查看所有内容，即基本目录中所有内容的所有权限。
+But with the fourth slashes see everything all the permissions for everything in the base directory.
+
+60
+00:03:53,700 --> 00:03:59,050
+好的，但是假设我想特别查看名为Root的文件夹。
+OK but let's say I wanted to look specifically at the folder called Root.
+
+61
+00:03:59,190 --> 00:04:04,650
+好的，那么我可以将其输入grep并输入root，它将告诉我们您将能够看到
+Well then I could just pipe it into grep and say root and it will tell us that you'll be able to see
+
+62
+00:04:04,650 --> 00:04:07,450
+听到根文件夹就这样出来了。
+hear the root folder coming out like that.
+
+63
+00:04:07,450 --> 00:04:12,140
+或者我们可以看看OPT或OPTIONAL文件夹(如果您想看的话)。
+Or we could have a look at the OPT or the optional folder if you want to look at that.
+
+64
+00:04:12,140 --> 00:04:18,300
+我们只要看一看，它就会为你剪掉那条线，你可以看到，所以你可以看到
+We just look at it and it will just cut out that line for you and you can just see that so you can see
+
+65
+00:04:18,300 --> 00:04:22,280
+你是如何过滤掉你要找的东西的。
+how you're filtering out just what you're looking for.
+
+66
+00:04:22,310 --> 00:04:24,300
+好的，这是一个非常非常有用的选项。
+OK so this is a very very useful option.
+
+67
+00:04:24,300 --> 00:04:26,080
+比方说我们在往里面看。
+Let's say we were looking in.
+
+68
+00:04:26,220 --> 00:04:32,280
+所以您知道我想要ETSI目录中的所有文件，而不是文件夹。
+So you know I wanted all of the files not the folders in the ETSI directory.
+
+69
+00:04:32,310 --> 00:04:37,470
+比方说，我可以做的是，我可以使用ETSI文件夹的f选项来表示ls，您可以看到
+Let's say then what I could do is I could say ls with the f option for the ETSI folder and you can see
+
+70
+00:04:37,470 --> 00:04:38,950
+它向我们展示了这里的一切。
+that it showed us everything in here.
+
+71
+00:04:38,970 --> 00:04:43,370
+所有的文件夹后面都有劈开，而所有的文件都没有。
+All the folders have a slash after them and all the files don't.
+
+72
+00:04:43,530 --> 00:04:48,810
+好的，如果我想找到所有的文件，我只需要找到所有没有劈开的东西就行了。
+OK so if I want to find all the files I just have to find everything that doesn't have a slash right.
+
+73
+00:04:49,020 --> 00:04:53,100
+因此，如果我将所有数据放入grep，就会给它一个v选项和一个劈开。
+So if I take all that data into grep give it the v option and a slash.
+
+74
+00:04:53,100 --> 00:04:58,710
+这就是说，好的，拿出所有的数据，给我没有劈开的每一行，我们有
+This is saying OK take all that data and give me every line that doesn't have a slash and that we are
+
+75
+00:04:58,800 --> 00:05:04,240
+我们有所有的游戏，也许我可以把它重定向到一个文件列表中。
+we've got all of the the game that I could maybe redirect that into a list of files.
+
+76
+00:05:04,280 --> 00:05:08,880
+XTi博士，现在我有了N.Z.文件夹中的文件列表。
+Dr. XTi And now here I've got a list of files that are in the N.Z. folder.
+
+77
+00:05:08,990 --> 00:05:09,350
+好的。
+OK.
+
+78
+00:05:09,380 --> 00:05:14,180
+当然，如果您愿意，我们可以对所有这些和其他任何东西进行分类，这样您就知道我们可以
+And of course we could sort all of those and whatever else if you wanted so you know we could take it
+
+79
+00:05:14,420 --> 00:05:21,590
+从那里开始，然后反向排序，比方说我们想要它们向后，然后放入文件中。
+from there and then sort it reverse let's say we wanted them backwards and then put that into the files.
+
+80
+00:05:21,740 --> 00:05:28,200
+团队，我们将看到所有内容现在都颠倒过来了，Zed在顶部，字母A在底部。
+Team and we'll see that everything is now backwards with Zed at the top and the letter A at the bottom.
+
+81
+00:05:28,550 --> 00:05:32,450
+所以你可以看到我们是如何将所有这些东西很好地链接在一起的，如果你理解
+So you can see how we're using all this stuff really links together very well and if you're understanding
+
+82
+00:05:32,450 --> 00:05:38,390
+你是职业选手，好的，因为就像你知道，如果你是，你知道，这一切都不是很久以前的事了
+this you're a pro OK because like you know if you're you know it wasn't that long ago that all of this
+
+83
+00:05:38,390 --> 00:05:42,440
+对你来说是彻头彻尾的胡言乱语，但现在你明白了，嘿，我们只是在用
+would have been complete and utter jibberish to you but now you understand that hey we're just using
+
+84
+00:05:42,440 --> 00:05:43,320
+ls命令。
+the ls command.
+
+85
+00:05:43,370 --> 00:05:45,830
+我们正在对f选项的结果进行分类。
+We're classifying what's coming out with the f option.
+
+86
+00:05:45,830 --> 00:05:50,120
+因此，它为我们提供了关于目录的劈开，而不是关于文件的劈开。
+So it gives us a slash around around directories and nothing around files.
+
+87
+00:05:50,120 --> 00:05:55,550
+我正在查找我们正在搜索的ETSI文件夹，他们正在使用内部的所有数据
+I'm looking in the ETSI folder we're searching inside they're using the inside all that data using the
+
+88
+00:05:55,550 --> 00:05:58,160
+grep命令处理没有劈开的所有内容。
+grep command for everything that doesn't have a slash.
+
+89
+00:05:58,160 --> 00:05:59,380
+这就给了我们所有的文件。
+That gives us all the files.
+
+90
+00:05:59,510 --> 00:06:04,610
+然后假设我们反向对它们进行排序，然后将其保存在一个名为file的文件中
+And then let's say we're sorting them reverse reverse wise and then save it not in a file called file
+
+91
+00:06:04,610 --> 00:06:05,560
+启动XTi。
+start XTi.
+
+92
+00:06:05,570 --> 00:06:10,010
+好的，您可以看到我们如何使用多个不同的命令来更轻松地构建这些管道
+OK so you can see how we're using multiple different commands to build up these pipelines easier and
+
+93
+00:06:10,010 --> 00:06:11,670
+我们学完这门课就容易多了。
+easier as we go through the course.
+
+94
+00:06:11,840 --> 00:06:18,020
+现在，另一个非常常见的用法是，当你使用man dash K命令时。
+Now another really common uses of this is when you're using the man dash K command.
+
+95
+00:06:18,020 --> 00:06:23,060
+所以你知道什么时候你想在手册页上搜索东西，所以我想搜索
+So you know when when you wanted to search for things in the manual pages so I wanted to search for
+
+96
+00:06:23,060 --> 00:06:23,680
+打印出来。
+print.
+
+97
+00:06:23,800 --> 00:06:27,650
+好的，我们可以看到我们有很多不同的打印选项。
+OK we can see that we get loads of different options to print.
+
+98
+00:06:27,640 --> 00:06:31,670
+现在你可以自己把这些都读出来了，但是当你想要搜索的时候，这是一件有点痛苦的事情
+Now you could read all of these out yourself but it's kind of a bit of a pain when you want to search
+
+99
+00:06:31,670 --> 00:06:33,190
+找一些更具体的东西。
+for something a bit more specific.
+
+100
+00:06:33,350 --> 00:06:37,290
+嗯，你知道，你可以抓起手说，好的，我正在特别找文件。
+Well you know you could grap and say OK well I'm looking for files specifically.
+
+101
+00:06:37,340 --> 00:06:42,890
+好的，然后它会告诉我，你知道要找到所有提到过的文件，你知道这些文件是由
+OK so and then it will tell me you know to find all the ones that mentioned files which you know makes
+
+102
+00:06:42,890 --> 00:06:48,410
+这对我们来说更容易看到，然后我们可能会注意到打印文件的lpl命令。
+it a lot easier for us to see and we might then notice the LPL command which prints files.
+
+103
+00:06:48,500 --> 00:06:49,130
+好的。
+OK.
+
+104
+00:06:49,650 --> 00:06:55,520
+这里还有Camp命令，它可以连接文件，试着说三个
+There's also the camp command up here which can concat which can concatenate files try saying that three
+
+105
+00:06:55,520 --> 00:07:00,310
+Time FAST可以将文件连接到标准输出。
+times fast can concatenate files to standard output.
+
+106
+00:07:00,470 --> 00:07:06,860
+好的，这是grep命令的另一个常见用法，我们要浏览的结果较少
+OK so this is another common usage of the of the grep command and we have less results to page through
+
+107
+00:07:07,160 --> 00:07:12,240
+因为我们过滤掉了我们要找的东西。
+than we would have otherwise had because we filtered out what we were looking for.
+
+108
+00:07:12,290 --> 00:07:13,820
+所以他们有一个美丽的民族。
+So they have a beautiful people.
+
+109
+00:07:13,880 --> 00:07:19,220
+这就是如何使用grep命令在文件中进行搜索并对其他命令的输出进行过滤。
+That's how you can use the grep command to search within files and filter the output from other commands.
+
+110
+00:07:19,220 --> 00:07:23,720
+现在，grep命令必须是有史以来最常用的命令之一，您可能会
+Now the grep command has to be one of the most commonly used commands of all time and you'll probably
+
+111
+00:07:23,720 --> 00:07:27,140
+在使用Linux终端的工作中也要大量使用。
+use a whole lot in your work with the Linux terminal as well.
+
+112
+00:07:27,140 --> 00:07:30,980
+所以为了确保我们把重点都记下来了，让我们来回顾一下。
+So to make sure that we've got the important points down let's have a recap.
+
+113
+00:07:30,980 --> 00:07:36,620
+首先，您了解了如何使用grep命令搜索文件中的文本，并且组可以
+So first of all you saw how to use the grep command to search for text within files and the group can
+
+114
+00:07:36,620 --> 00:07:41,330
+搜索任何类型的数据，无论是文件中的静电还是通过管道传输到该文件的数据。
+search through any kind of data whether it's static within a file or it's piped to it.
+
+115
+00:07:41,450 --> 00:07:47,240
+您发现grep命令将返回与某段文本匹配的行，或者
+And what you found was that the grep command will return lines that match a certain piece of text or
+
+116
+00:07:47,270 --> 00:07:52,880
+由通配符组成的正则表达式，这样您就可以给予，而不是给组命令一段
+a regular expression made up of wild cards so you could give instead of giving the group command a piece
+
+117
+00:07:52,880 --> 00:07:54,050
+要搜索的文本。
+of text to search for.
+
+118
+00:07:54,050 --> 00:07:59,300
+您可以使用通配符给它一个正则表达式，它将查找所有包含以下内容的行
+You could give it a regular expression using wildcards and it will find all the lines that have something
+
+119
+00:07:59,300 --> 00:08:03,030
+这与通配符匹配，这也是一个非常有用的能力。
+that matches that wildcards that's a really useful ability as well.
+
+120
+00:08:03,260 --> 00:08:08,540
+您可以计算与该文本匹配的行数，而不是只返回行本身
+And you can count how many lines that match that text instead of returning the lines themselves just
+
+121
+00:08:08,540 --> 00:08:13,580
+通过为grep命令提供我们在上一次中多次使用的C选项来返回行数
+return the line count by giving the grep command the C option which we used multiple times in the last
+
+122
+00:08:13,580 --> 00:08:14,440
+几乎没有录像带。
+few videos.
+
+123
+00:08:14,650 --> 00:08:23,060
+现在默认情况下，因为Linux是区分大小写的操作系统，所以您可以使搜索不区分大小写
+Now by default because Linux is a case sensitive operating system the you can make the search case insensitive
+
+124
+00:08:23,090 --> 00:08:25,430
+所以大写和小写都无关紧要。
+so that uppercase and lowercase don't matter.
+
+125
+00:08:25,430 --> 00:08:30,890
+通过给grep命令提供真正有用的选项，如果您不知道它是否是大写的
+By giving the grep command the option which is really useful and if you don't know whether it's an uppercase
+
+126
+00:08:30,920 --> 00:08:35,180
+或者是你要搜索的小写字母，但是你知道这就是你要搜索的东西
+or a lower case letter that you're searching for but you know it's that thing that you're searching
+
+127
+00:08:35,180 --> 00:08:38,510
+对于阿尔卡来说，你不知道是不是和其他人竞争，但你知道至少是这个词，或者至少是
+for Arka you don't know whether it's up against other guys but you know it's at least that word or at
+
+128
+00:08:38,510 --> 00:08:41,500
+至少那封信或类似的东西。
+least that that letter or something like that.
+
+129
+00:08:41,570 --> 00:08:42,170
+好的。
+OK.
+
+130
+00:08:42,310 --> 00:08:48,140
+然后，我们还使用grep命令来分析1939年盖茨比的文学杰作的有效性
+Then we also use the grep command to analyze the validity of the 1939 literary masterpiece of Gadsby
+
+131
+00:08:48,380 --> 00:08:51,720
+这是一本从未用过这个字母的50000字的书。
+which is the 50000 word book that never used the letter.
+
+132
+00:08:51,860 --> 00:08:56,000
+我们现在已经确认使用我们的歌词或grep命令。
+And we have now confirmed that using using our lyrics or grep command.
+
+133
+00:08:56,000 --> 00:09:00,770
+你可以在参考资料部分的链接中找到那份手稿的副本
+And you can find a copy of that manuscript in a link to where I got it from in the resources section
+
+134
+00:09:00,770 --> 00:09:04,070
+这个视频的最后一个，如果你想看一看，自己玩的话。
+of this video and the last one if you if you want to take a look and play with it yourself.
+
+135
+00:09:04,130 --> 00:09:04,760
+好的。
+OK.
+
+136
+00:09:05,120 --> 00:09:09,470
+我们还看到了v选项，它将颠倒搜索，所以这意味着它会做相反的事情。
+We also saw the v option which will invert the search so that means it'll do the opposite.
+
+137
+00:09:09,470 --> 00:09:14,180
+因此，不是搜索与特定文本片段或特定正则表达式匹配的行，而是搜索与特定文本片段或特定正则表达式匹配的行
+So instead of searching for lines that match a certain piece of text or match a certain regular expression
+
+138
+00:09:14,450 --> 00:09:16,790
+它会找到所有不符合条件的行。
+it'll will find all the lines that don't.
+
+139
+00:09:16,790 --> 00:09:22,790
+最后，我们看到的一件事是，当你通过管道向一个组传输数据时，它是如何工作得非常好的，你可以看到
+And finally one thing that we saw was how a group works so well when you piped data to it and you saw
+
+140
+00:09:22,790 --> 00:09:27,980
+您如何使用它来过滤出大量数据，从而为您提供您要从
+how you can use it to filter out a lot of data to give you the lines that you're looking for from a
+
+141
+00:09:27,980 --> 00:09:29,490
+涌现出的大量数据。
+big bunch of data that comes out.
+
+142
+00:09:29,510 --> 00:09:34,940
+因此，它对于ls命令、man命令以及其他许多事情都很有用，您可以在任何时候
+So it's useful with the ls command the man command so many other things as well just any time that you
+
+143
+00:09:34,940 --> 00:09:39,460
+正在查找与特定格式匹配的特定文本或特定单词或内容。
+are looking for a specific piece of text or a specific word or something that matches a certain format.
+
+144
+00:09:39,680 --> 00:09:43,100
+使用grep命令，您将为自己节省一点朱利安小时的时间。
+Use the grep command and you'll save yourself a bit Juliann hours of time.
+
+145
+00:09:43,150 --> 00:09:43,530
+好的。
+OK.
+
+146
+00:09:43,640 --> 00:09:45,330
+所以我们走吧。
+So there we go.
+
+147
+00:09:45,380 --> 00:09:50,450
+grep命令的下一个伟大之处是它的灵活性和您知道的可以使用的多功能性
+The next great thing about the grep command is its flexibility and its versatility you know can be used
+
+148
+00:09:50,450 --> 00:09:55,690
+几乎在任何地方，它都是您可能会反复使用的工具。
+pretty much anywhere and it will be a tool that you'll likely use time and time again.
+
+149
+00:09:55,700 --> 00:10:00,720
+现在您知道如何对文件和目录做很多事情了，您可以创建它们，复制它们
+So now you know how to do many many things with files and directories you can create them copy them
+
+150
+00:10:00,720 --> 00:10:05,460
+删除它们、移动它们、重命名它们、编辑它们、搜索它们、在其中搜索它们、对它们进行排序等等
+delete them move them rename them edit them search for them search within them sort them and so much
+
+151
+00:10:05,460 --> 00:10:05,810
+更多。
+more.
+
+152
+00:10:05,840 --> 00:10:11,870
+好的，你在这一节已经走了很长一段路了，我为你的进步鼓掌。
+OK you've come a very very very long way in this section and I applaud you for your progress.
+
+153
+00:10:11,880 --> 00:10:14,720
+好的，但我们还有最后一件事要讲。
+OK but we have one last thing that I want to cover.
+
+154
+00:10:14,880 --> 00:10:16,940
+文件压缩和存档。
+File compression and archiving.
+
+155
+00:10:17,070 --> 00:10:21,730
+现在，您最不想做的事情就是丢失系统上的数据，并且知道如何压缩未压缩的
+Now the last thing that you want to do is lose data on your system and know how to compress an uncompressed
+
+156
+00:10:21,740 --> 00:10:27,030
+创建备份的文件将允许您确保自己不会丢失数据。
+files to create backups will allow you to insure yourself against loss of data.
+
+157
+00:10:27,030 --> 00:10:30,970
+这是一件非常重要的事情，你只需要知道怎么做就行了。
+And it's one of those things that's so important that you just kind of got to know how to do it.
+
+158
+00:10:30,990 --> 00:10:31,380
+好的。
+OK.
+
+159
+00:10:31,530 --> 00:10:36,330
+因此，在下一个视频中，我们将讨论如何压缩未压缩的文件以创建
+So in the next video we're going to be discussing how you can compress an uncompressed files to create
+
+160
+00:10:36,390 --> 00:10:37,630
+并恢复备份。
+and restore backups.
+
+161
+00:10:37,710 --> 00:10:38,730
+所以对于那些好东西。
+So for that good stuff.
+
+162
+00:10:38,760 --> 00:10:40,470
+我将在下一个视频中见到你。
+I'll see you in the next video.
+

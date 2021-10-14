@@ -1,0 +1,679 @@
+1
+00:00:00,450 --> 00:00:03,200
+Hello you beautiful people and welcome to Part 3.
+
+2
+00:00:03,190 --> 00:00:09,360
+Our final part of our discussion on piping now in part number one you learned about the basic concepts
+
+3
+00:00:09,360 --> 00:00:14,070
+of piping and you saw that piping is all about connecting the standard output of one command to the
+
+4
+00:00:14,070 --> 00:00:16,320
+standard input of another command.
+
+5
+00:00:16,440 --> 00:00:21,990
+And in part two you saw how you can actually pass data through your pipeline but also take snapshots
+
+6
+00:00:21,990 --> 00:00:28,050
+of the data as it flows through and save those snapshots into a file using something called the command
+
+7
+00:00:28,260 --> 00:00:33,210
+and the command is really useful because by doing normal redirection you break your pipeline but by
+
+8
+00:00:33,210 --> 00:00:37,920
+using the command you can save data but still keep your pipeline flowing.
+
+9
+00:00:37,920 --> 00:00:42,330
+Now we partnered with three we're going to take that understanding of piping to a whole new level using
+
+10
+00:00:42,330 --> 00:00:44,790
+something called the X Ogg's command.
+
+11
+00:00:44,790 --> 00:00:50,280
+Now remember piping is all about connecting the standard output of one command to the standard input
+
+12
+00:00:50,400 --> 00:00:51,810
+of another command.
+
+13
+00:00:51,810 --> 00:00:56,190
+Now not all commands actually even accept standard input.
+
+14
+00:00:56,190 --> 00:01:02,090
+Some only accept command line arguments and that's exactly where the X Ogg's command comes in.
+
+15
+00:01:02,310 --> 00:01:09,090
+The Exarchs command allows you to convert piped data into command line arguments for commands only except
+
+16
+00:01:09,300 --> 00:01:14,110
+command line arguments so that you can keep your pipe going without having to break it at any point.
+
+17
+00:01:14,130 --> 00:01:19,060
+So the Exarchs command is that missing piece it's going to make your pipelines basically indestructible.
+
+18
+00:01:19,200 --> 00:01:22,920
+So we're going to teach you how to use that and then we're also going to have a summary of piping start
+
+19
+00:01:22,920 --> 00:01:23,500
+to finish.
+
+20
+00:01:23,520 --> 00:01:26,030
+So make sure that these concepts really really sink in.
+
+21
+00:01:26,040 --> 00:01:30,390
+And by the end of this video you're going to be the master of piping concepts after you've probably
+
+22
+00:01:30,390 --> 00:01:35,950
+received the most comprehensive explanation of it that you'll be able to find anywhere on the Internet.
+
+23
+00:01:36,120 --> 00:01:43,370
+So there we are guys let's go ahead and jump right over now into a buntu and see this stuff in practice.
+
+24
+00:01:43,480 --> 00:01:47,140
+OK so let's take a look at the X Ogg's command works.
+
+25
+00:01:47,340 --> 00:01:52,100
+Let's say that we are again playing around with the date command for example and we're getting the data
+
+26
+00:01:52,110 --> 00:01:53,680
+that's coming out of our system.
+
+27
+00:01:53,810 --> 00:01:59,700
+Now what do you think will happen if we take the date command and we pipe it into Echo.
+
+28
+00:01:59,760 --> 00:02:05,850
+Now remember Echo is very simple if I just take Echo when I say give echo Hello it'll just say hello
+
+29
+00:02:05,850 --> 00:02:06,380
+back.
+
+30
+00:02:06,390 --> 00:02:11,230
+So what do you think will happen if I take the date command and pipe that into Echo.
+
+31
+00:02:12,010 --> 00:02:17,000
+Well you might think that when I press when when I press enter the date command will pass on the day
+
+32
+00:02:17,010 --> 00:02:20,870
+into Echo and it will spit out the date right and wrong.
+
+33
+00:02:21,180 --> 00:02:25,700
+Actually what happened is Echo doesn't accept standard input.
+
+34
+00:02:25,800 --> 00:02:29,760
+So what happened here this is a common mistake actually that people make when using pipelines for the
+
+35
+00:02:29,760 --> 00:02:32,570
+first time they try to pipe things into Echo.
+
+36
+00:02:32,580 --> 00:02:35,910
+Now Echo doesn't accept standard input.
+
+37
+00:02:35,910 --> 00:02:38,550
+In fact it only accepts command line arguments.
+
+38
+00:02:38,550 --> 00:02:44,540
+If I try to do this I type to echo Hello again even though I'm piping with the date command into it.
+
+39
+00:02:44,610 --> 00:02:49,330
+So I go ahead presenta you can see that it's only processed its command line arguments.
+
+40
+00:02:49,560 --> 00:02:56,370
+So the question becomes how could we pass the data from our pipeline into a command that doesn't accept
+
+41
+00:02:56,640 --> 00:02:58,190
+standard input.
+
+42
+00:02:58,620 --> 00:03:05,400
+Well the key is to convert the data from standard input into command line arguments so the command can
+
+43
+00:03:05,400 --> 00:03:07,500
+continue to work like normal.
+
+44
+00:03:07,620 --> 00:03:13,530
+So the way that you do that is that instead of pie instead of piping it into Echo directly you pipe
+
+45
+00:03:13,530 --> 00:03:16,770
+it into something called the X OGs command.
+
+46
+00:03:16,770 --> 00:03:25,260
+Now the X OGs command will convert the data from standard input and it will put it instead into a command
+
+47
+00:03:25,260 --> 00:03:26,280
+line arguments.
+
+48
+00:03:26,280 --> 00:03:28,350
+So now I do echo.
+
+49
+00:03:28,350 --> 00:03:33,240
+So I basically put it into exons and then give X args echo to work with.
+
+50
+00:03:33,330 --> 00:03:34,170
+When I press enter.
+
+51
+00:03:34,170 --> 00:03:37,840
+Now you can see that now it echoes out the date.
+
+52
+00:03:37,980 --> 00:03:38,240
+OK.
+
+53
+00:03:38,250 --> 00:03:39,070
+Isn't that cool.
+
+54
+00:03:39,270 --> 00:03:44,870
+Now I can also give echo its own its own command line argument so I could give it also Hello.
+
+55
+00:03:44,880 --> 00:03:49,830
+And what would happen is it will now process both except people process its own command line arguments
+
+56
+00:03:49,890 --> 00:03:50,520
+first.
+
+57
+00:03:50,520 --> 00:03:56,850
+So that's something to bear in mind but it did indeed Echo both of them out which is a lot better than
+
+58
+00:03:56,850 --> 00:03:58,250
+we have before now.
+
+59
+00:03:58,380 --> 00:04:03,680
+Now we can actually continue to pipe down because the data that comes out is still on standard output.
+
+60
+00:04:03,840 --> 00:04:11,490
+So basically X OGs is like a little plaster or a little fix for when for when a command does not accept
+
+61
+00:04:12,060 --> 00:04:16,770
+standard It does not accept standard input but only accept command line arguments you can use X args
+
+62
+00:04:16,770 --> 00:04:20,570
+to get around the problem ok and continue doing your piping.
+
+63
+00:04:20,760 --> 00:04:25,890
+So let's say that we wanted for it to echo out just the day of the week.
+
+64
+00:04:26,040 --> 00:04:30,660
+What we can do is we could say date POTA into the command just like we've been doing a million times
+
+65
+00:04:30,900 --> 00:04:36,930
+tell it that the delimiter is a space tell it that we want the first field and then you could pipe that
+
+66
+00:04:37,050 --> 00:04:37,990
+into Echo.
+
+67
+00:04:38,040 --> 00:04:42,070
+Remember this isn't going to work because Echo doesn't accept standard input.
+
+68
+00:04:42,180 --> 00:04:48,210
+So we convert the data from standard input into a command line argument using X args give tell X OGs
+
+69
+00:04:48,240 --> 00:04:49,920
+hey we want you to work with Echo.
+
+70
+00:04:50,070 --> 00:04:55,660
+And now we'll see that it pops out the day of the week which is Monday.
+
+71
+00:04:55,680 --> 00:05:00,690
+So let me give you a an example where this might take you this X Exarchs ability what it might be able
+
+72
+00:05:00,690 --> 00:05:01,560
+to do for you.
+
+73
+00:05:01,560 --> 00:05:06,510
+So for example if we take our full day got DXi far we've got some data in here.
+
+74
+00:05:06,630 --> 00:05:12,940
+Let me just create a new document here I'm going to call it Press Control and ask to save.
+
+75
+00:05:13,130 --> 00:05:14,140
+Yep that works.
+
+76
+00:05:14,190 --> 00:05:17,010
+I'm going to call it delete me.
+
+77
+00:05:17,190 --> 00:05:18,630
+Dr. XTi.
+
+78
+00:05:18,960 --> 00:05:19,540
+OK.
+
+79
+00:05:19,770 --> 00:05:24,870
+So I can make that call to delete me not to take them and we look we've got a new file in here called
+
+80
+00:05:24,870 --> 00:05:26,110
+Delete me not here.
+
+81
+00:05:26,460 --> 00:05:31,100
+Now there's a command that you'll be coming on to later on in the course in the in the section all about
+
+82
+00:05:31,410 --> 00:05:38,010
+and navigating the file system and things like that which is the section after this one.
+
+83
+00:05:38,010 --> 00:05:41,210
+But there's a comment in there called the r.m command.
+
+84
+00:05:41,220 --> 00:05:44,580
+Now they are in Cranston's for Remove it's the command that delete stuff.
+
+85
+00:05:44,640 --> 00:05:50,690
+And if I type delete me Datti XTi and I click end to watch on the left watch or just over here.
+
+86
+00:05:50,760 --> 00:05:51,560
+OK.
+
+87
+00:05:52,110 --> 00:05:53,500
+The file has been deleted.
+
+88
+00:05:53,700 --> 00:05:54,260
+OK.
+
+89
+00:05:54,420 --> 00:06:00,040
+So you'll notice here that we actually gave the r.m command a command line argument.
+
+90
+00:06:00,060 --> 00:06:01,780
+OK we talked on the command line.
+
+91
+00:06:01,890 --> 00:06:03,390
+We gave it a filename.
+
+92
+00:06:03,390 --> 00:06:07,630
+Now what we might want to do was you might want to have another file over here.
+
+93
+00:06:07,800 --> 00:06:08,460
+OK.
+
+94
+00:06:08,460 --> 00:06:20,100
+Called files to delete RTX these files to delete Datti XTi and in there I'm going to give it the names
+
+95
+00:06:20,100 --> 00:06:21,500
+of full date dot text.
+
+96
+00:06:21,540 --> 00:06:25,980
+And today that takes days if I put that in the full date RTX T.
+
+97
+00:06:26,070 --> 00:06:31,030
+And we're also going to have what was the other one today Dr. XTi OK.
+
+98
+00:06:31,170 --> 00:06:33,900
+So we've got a file that contains those two names.
+
+99
+00:06:34,590 --> 00:06:35,340
+OK.
+
+100
+00:06:35,340 --> 00:06:38,450
+Now we can read that file out using the cat command.
+
+101
+00:06:38,460 --> 00:06:39,420
+You've seen this before.
+
+102
+00:06:39,470 --> 00:06:46,190
+OK so if I do the cat command and I say files to delete you see how it gives me the output.
+
+103
+00:06:46,220 --> 00:06:50,330
+Now I can just pipe that information into the our income and nothing will happen.
+
+104
+00:06:50,390 --> 00:06:50,920
+OK.
+
+105
+00:06:50,930 --> 00:06:55,980
+Because the army command only accepts command line the command line arguments.
+
+106
+00:06:56,000 --> 00:07:00,160
+But what I can do is I can read the data and clear the screen.
+
+107
+00:07:00,170 --> 00:07:06,480
+What I can do is I can read the data from files to delete these filenames and Pessah into X args now
+
+108
+00:07:06,500 --> 00:07:12,380
+x args is going to convert that data into command line arguments for the current command of the r.m
+
+109
+00:07:12,380 --> 00:07:15,250
+command does except command line arguments.
+
+110
+00:07:15,260 --> 00:07:16,220
+So when we do that.
+
+111
+00:07:16,220 --> 00:07:21,860
+Notice if I just piped directly to the r in command it doesn't work it says it's missing an operand
+
+112
+00:07:21,860 --> 00:07:23,860
+it's missing a command line arguments.
+
+113
+00:07:23,890 --> 00:07:28,930
+OK but if I pipe it into the Exarchs command instead and then type r.m.
+
+114
+00:07:29,000 --> 00:07:31,520
+Watch what happens now over at the left.
+
+115
+00:07:31,520 --> 00:07:35,570
+When is it to come out the files got deleted because now the R M command could work.
+
+116
+00:07:35,570 --> 00:07:43,160
+What effectively happened is if we wrote our ram today Dr. XTi and full date dot cxi actually the other
+
+117
+00:07:43,160 --> 00:07:46,360
+way round because the file they were written in the other way round in the file.
+
+118
+00:07:46,400 --> 00:07:48,850
+It's as if we did this.
+
+119
+00:07:49,080 --> 00:07:52,530
+It's as if we wrote out this command.
+
+120
+00:07:52,820 --> 00:07:53,790
+This command here.
+
+121
+00:07:53,900 --> 00:07:57,260
+But instead we just read the file and piped the contents to another command.
+
+122
+00:07:57,260 --> 00:08:02,750
+So you can see that this is how you might potentially use the x command just as a bit of an example
+
+123
+00:08:02,750 --> 00:08:07,970
+rather than Rizzi you know just using the data command an echo all the time.
+
+124
+00:08:07,970 --> 00:08:13,130
+So over the past three videos we've covered a whole lot of stuff so let's just try and summarize it
+
+125
+00:08:13,160 --> 00:08:17,140
+all together in one place so that you can feel confident that you've got it all.
+
+126
+00:08:17,150 --> 00:08:22,640
+First of all you learn that piping is a process that connects the standard output of one command to
+
+127
+00:08:22,640 --> 00:08:28,950
+the standard input of another and by the way if you ever see these two words in orange SITD out in SDD
+
+128
+00:08:28,950 --> 00:08:33,180
+and from now on you know that means standard output and standard input respectively.
+
+129
+00:08:33,260 --> 00:08:33,640
+OK.
+
+130
+00:08:33,770 --> 00:08:37,480
+And it s t d e r r is standard error.
+
+131
+00:08:37,760 --> 00:08:39,180
+So if you ever see those things around.
+
+132
+00:08:39,260 --> 00:08:39,590
+OK.
+
+133
+00:08:39,710 --> 00:08:45,020
+So piping K'NEX the standard output of one command to the standard input of another redirection of standard
+
+134
+00:08:45,020 --> 00:08:47,030
+output breaks pipelines.
+
+135
+00:08:47,060 --> 00:08:52,380
+So if you're making a pipeline and you do some redirection you've broken your pipeline you could use
+
+136
+00:08:52,380 --> 00:08:55,350
+the pipeline from that point on will no longer work.
+
+137
+00:08:55,350 --> 00:09:00,620
+OK so some of that is just been redirected into a file by default it can't be continued to be passed
+
+138
+00:09:00,620 --> 00:09:01,730
+down the pipeline.
+
+139
+00:09:01,730 --> 00:09:09,250
+That is unless you use the T command so if you want to save a data snapshot without breaking a pipeline.
+
+140
+00:09:09,350 --> 00:09:14,840
+Use the T command instead and that will make basically an imaginary T-junction just like you might find
+
+141
+00:09:14,840 --> 00:09:20,810
+in pipes of water in your pipelines so that you can save your data and also having continue on through
+
+142
+00:09:20,810 --> 00:09:22,760
+the pipeline at the same time.
+
+143
+00:09:22,760 --> 00:09:28,070
+Now if a command doesn't accept standard input then as we know piping can connect standard output to
+
+144
+00:09:28,070 --> 00:09:31,140
+standard inputs so how can you still use that kind in your pipeline.
+
+145
+00:09:31,370 --> 00:09:36,260
+Well if you still want to pipe to it even if it doesn't accept standard input as long as the command
+
+146
+00:09:36,320 --> 00:09:42,830
+accepts command line arguments you can use the x OGs command instead and commands that you use with
+
+147
+00:09:42,830 --> 00:09:50,000
+the X Ogg's command can also still have their own command line arguments besides the ones that you piped
+
+148
+00:09:50,000 --> 00:09:50,340
+to it.
+
+149
+00:09:50,390 --> 00:09:52,750
+So you can still pipe data to it.
+
+150
+00:09:52,970 --> 00:09:57,500
+You can still pipe data as command line arguments and also give it its own arguments right there on
+
+151
+00:09:57,500 --> 00:10:01,430
+the command line but just understand that the ones that you type to be on the command line will be processed
+
+152
+00:10:01,700 --> 00:10:02,440
+first.
+
+153
+00:10:02,630 --> 00:10:05,280
+So that's a whole bunch of stuff guys.
+
+154
+00:10:05,750 --> 00:10:11,300
+This really is the most important part of getting good at the Linux command line.
+
+155
+00:10:11,450 --> 00:10:17,330
+If you can understand and you feel confident in what you've learned in the last three videos about piping
+
+156
+00:10:17,720 --> 00:10:23,510
+you have unlocked the crown jewel of using the Linux command line and you should be massively proud
+
+157
+00:10:23,510 --> 00:10:24,100
+of yourself.
+
+158
+00:10:24,230 --> 00:10:28,850
+And if you haven't then just go back watch these videos as many times as it takes for you to get it
+
+159
+00:10:28,850 --> 00:10:30,390
+down take some notes.
+
+160
+00:10:30,410 --> 00:10:35,540
+Practice try stuff out because I promise you the effort will be worth it and I'm really proud of you
+
+161
+00:10:35,540 --> 00:10:36,920
+for actually making it this far.
+
+162
+00:10:36,920 --> 00:10:38,820
+And so should you as well.
+
+163
+00:10:38,840 --> 00:10:43,340
+Now up next we're going to show you a little trick what's going to make your use of the command line
+
+164
+00:10:43,370 --> 00:10:44,350
+a whole lot easier.
+
+165
+00:10:44,510 --> 00:10:49,040
+And we're going to show you how you can use something called alias's to save your command pipelines
+
+166
+00:10:49,080 --> 00:10:53,420
+with easy to remember names so they can be just used much easier later on.
+
+167
+00:10:53,420 --> 00:10:58,010
+So once you've written a pipeline you don't have to write it again just use the name and it will come
+
+168
+00:10:58,010 --> 00:11:00,080
+up without any errors.
+
+169
+00:11:00,080 --> 00:11:03,470
+So for all the good stuff to learn about aliases and making shortcuts.
+
+170
+00:11:03,530 --> 00:11:05,240
+I'll see you in the next video.

@@ -1,0 +1,575 @@
+1
+00:00:00,330 --> 00:00:04,830
+大家好，漂亮的人们，欢迎收看这段视频，在这里你们将学习到所需的一切
+Hello you beautiful people and welcome to this video where you're going to learn everything you need
+
+2
+00:00:04,830 --> 00:00:10,380
+了解有关使用命令行移动和重命名文件和目录的所有信息。
+to know all about moving and renaming files and directories using the command line.
+
+3
+00:00:10,380 --> 00:00:15,570
+现在有趣的是，这两个功能都可以用一个命令来完成。
+Now the interesting thing is both of these functions can be completed with just one command.
+
+4
+00:00:15,570 --> 00:00:21,200
+因此，在本视频中，您将了解如何使用envie命令来移动和重命名文件和文件夹。
+So in this video you're going to learn how to use the envie command to move and rename files and folders.
+
+5
+00:00:21,360 --> 00:00:25,980
+通过学习我们将在视频中介绍的一个命令，您将获得两个非常重要的命令
+And by learning the one command we're going to cover in this video you're going to gain two very important
+
+6
+00:00:25,980 --> 00:00:28,270
+使用您的文件系统的能力。
+abilities for working with your file system.
+
+7
+00:00:28,290 --> 00:00:29,410
+谈到效率。
+Talk about efficiency.
+
+8
+00:00:29,610 --> 00:00:32,010
+所以，让我们继续直截了当地谈吧。
+So let's go ahead and get right into it.
+
+9
+00:00:33,930 --> 00:00:34,280
+好的。
+OK.
+
+10
+00:00:34,300 --> 00:00:38,350
+因此，让我们首先讨论一下现在桌面上的重命名文件。
+So let's first talk about renaming files now on the desktop.
+
+11
+00:00:38,350 --> 00:00:45,710
+我有一个文件，名为旧名称Dotti XTi，我想将其重命名为新名称Datti XTi。
+I have a file called old name Dotti XTi and I want to rename it to be called new name Datti XTi.
+
+12
+00:00:45,910 --> 00:00:46,840
+很有想象力。
+Very imaginative.
+
+13
+00:00:46,870 --> 00:00:47,560
+我知道呀。
+I know.
+
+14
+00:00:47,680 --> 00:00:49,930
+现在，要执行此操作，请重命名。
+Now to do this do this rename.
+
+15
+00:00:49,960 --> 00:00:52,790
+使用M.V.命令可以非常简单地做到这一点。
+It's really very simple to do using the M.V. command.
+
+16
+00:00:52,780 --> 00:00:54,240
+所以我们首先来看看桌面。
+So first we get to the desktop.
+
+17
+00:00:54,400 --> 00:00:57,770
+好的，现在我在桌面上，文件实际所在的位置。
+OK so now I'm on the desktop where the files actually are.
+
+18
+00:00:58,030 --> 00:01:01,320
+并将所有名称重命名为新名称。
+And to rename all name to the new name.
+
+19
+00:01:01,390 --> 00:01:09,460
+我所要做的就是羡慕当时的旧名字Datti Xti，这是文件的当前名称，然后
+All I have to do is just do envy then old name Datti XTi which is the current name of the file and then
+
+20
+00:01:09,460 --> 00:01:13,100
+给它起个正午的名字，新名字叫达蒂·西提(Datti Xti)。
+give it its nooning which is the new name Datti XTi.
+
+21
+00:01:13,120 --> 00:01:17,700
+当我按Enter键时，您将看到该文件已被重命名。
+And when I press Enter you'll see that the file has been renamed.
+
+22
+00:01:17,860 --> 00:01:18,180
+好的。
+OK.
+
+23
+00:01:18,190 --> 00:01:20,040
+我们可以使用LS命令看到这一点。
+And we can see that using the LS commands.
+
+24
+00:01:20,040 --> 00:01:26,380
+现在它是一个新名称Dottie XTi Simple，同样适用于目录，所以我有一个文件夹
+Well it's now a new name Dottie XTi simple and the same thing works for directories so I have a folder
+
+25
+00:01:26,380 --> 00:01:28,020
+这里叫旧文件夹。
+here called old folder.
+
+26
+00:01:28,210 --> 00:01:36,370
+正如我们看到的，旧文件夹实际上包含几个文件，所以里面有文件1到10。
+And as we can see old folder actually contains a few files so it's got file one to fall 10 inside there.
+
+27
+00:01:36,450 --> 00:01:36,930
+好的。
+OK.
+
+28
+00:01:37,060 --> 00:01:37,880
+现在重新命名。
+Now to rename.
+
+29
+00:01:37,890 --> 00:01:41,380
+旧文件夹称为新文件夹，并清除屏幕。
+Old folder to be called new folder and clear the screen.
+
+30
+00:01:41,470 --> 00:01:49,270
+您需要做的就是移动旧文件夹，当我按Enter键时，我们可以看到该文件夹已经
+All you need to do is move old folder folder and when I press Enter we can see that the folder has been
+
+31
+00:01:49,270 --> 00:01:52,570
+改名了，就这么简单。
+renamed and it's just that simple.
+
+32
+00:01:52,770 --> 00:01:58,960
+即使我们刚刚更改了文件夹的名称，如果我们打开它，所有文件仍在
+And even though we've just changed the name of the folder if we open it up all the files are still in
+
+33
+00:01:58,960 --> 00:02:01,540
+那里和以前一模一样。
+there exactly as they were before.
+
+34
+00:02:01,540 --> 00:02:05,670
+因此，重命名文件夹不会损坏其中的任何内容。
+So renaming folders doesn't damage any of the contents inside.
+
+35
+00:02:05,680 --> 00:02:11,850
+这样说来，我们如何才能将文件从一个文件夹移动到另一个文件夹。
+So with that said how can we move files from one folder into another folder.
+
+36
+00:02:11,860 --> 00:02:13,660
+这其实也很简单。
+This is also actually really simple.
+
+37
+00:02:13,660 --> 00:02:18,670
+我们所需要做的就是向MOVE命令提供我们想要移动的内容，然后是我们想要的目录
+All we need to do is give the move command what we wanted to move and then the directory that we wanted
+
+38
+00:02:18,670 --> 00:02:19,390
+把他们搬到。
+to move them to.
+
+39
+00:02:19,390 --> 00:02:24,220
+这与copy命令非常相似，您为其提供了一个包含所有内容的列表
+So this is very similar to the copy command with the copy command you gave it a list of all the things
+
+40
+00:02:24,220 --> 00:02:29,140
+您想要复制，然后您给它的最后一个命令行参数是您想要移动的位置
+you wanted to copy and then the final command line argument you gave it was where you wanted to move
+
+41
+00:02:29,140 --> 00:02:30,820
+它必须把它复制到对不起。
+it to copy it to sorry.
+
+42
+00:02:30,820 --> 00:02:32,710
+这与MOVE命令的想法相同。
+And it's the same idea with the move command.
+
+43
+00:02:32,710 --> 00:02:41,020
+好的，如果我们想要将所有内容从新文件夹移到桌面上，那么我们所要做的就是说
+OK so if we want to move everything from a new folder onto the desktop then all we have to do is say
+
+44
+00:02:41,320 --> 00:02:44,800
+从新文件夹移动确定移动新文件夹。
+move from new folder OK move new folder.
+
+45
+00:02:44,890 --> 00:02:48,380
+从这里到这里的所有东西都是桌面。
+Everything in there to here which is the desktop.
+
+46
+00:02:48,480 --> 00:02:48,720
+好的。
+OK.
+
+47
+00:02:48,730 --> 00:02:52,330
+所以医生记忆指的是当前的工作目录。
+So the doctor Remember means the current working directory.
+
+48
+00:02:52,330 --> 00:02:55,220
+这是您可以从shell提示符中看到的，这就是桌面。
+And this is you can see from the shell prompt that is the desktop.
+
+49
+00:02:55,220 --> 00:02:59,890
+我们的意思是将所有内容从新文件夹中移动到当前工作目录，该目录
+So what we're saying is move everything from within new folder to the current working directory which
+
+50
+00:02:59,890 --> 00:03:02,150
+是桌面选项(如果我按Enter键)。
+is the desktop option if I press enter.
+
+51
+00:03:02,290 --> 00:03:08,320
+您将看到所有文件都已移到桌面上，我们可以看到使用。
+You'll see that all of the files have been shifted onto onto the desktop which we can see using.
+
+52
+00:03:08,350 --> 00:03:10,550
+唉，我们得到的是1比10。
+Alas we've got a one to 10.
+
+53
+00:03:10,840 --> 00:03:14,590
+如果我们查看New Folder，我们会发现它们不是刚刚复制的。
+And if we look inside New Folder we can see that they haven't just been copied.
+
+54
+00:03:14,590 --> 00:03:19,320
+它们确实已经被移动了，因为文件夹是完全空的。
+They have indeed been moved because the folder is completely empty.
+
+55
+00:03:20,930 --> 00:03:24,690
+好的，让我们将所有这些文件移回一个新文件夹。
+OK so let's move all of these files back into a new folder.
+
+56
+00:03:24,690 --> 00:03:30,980
+因此，如果我将以文件开头的所有内容移回新文件夹，应该可以处理所有这些问题。
+So if I move everything that starts with file back into new folder that should take care of all that.
+
+57
+00:03:30,980 --> 00:03:35,190
+好了，我们已经将它们全部移回了这个新的文件夹中。
+So there we go we've moved them all back into this new folder folder.
+
+58
+00:03:35,330 --> 00:03:35,840
+好的。
+OK.
+
+59
+00:03:35,960 --> 00:03:40,380
+现在我们怎么才能像旺加一样移动整个新文件夹呢。
+Now how can we move the whole of new folder just as Wonga.
+
+60
+00:03:40,380 --> 00:03:44,640
+例如，我们如何将其移动到我们的Documents文件夹中。
+How can we move this into our documents folder for example.
+
+61
+00:03:44,720 --> 00:03:46,110
+嗯，这也很容易做到。
+Well that's really easy to do as well.
+
+62
+00:03:46,250 --> 00:03:48,560
+而且它的工作方式和你可能预期的一样。
+And it works just like you might expect.
+
+63
+00:03:48,560 --> 00:03:54,890
+我们只需移动新文件夹，当我们想要将其放入Documents文件夹时，我们的目的地在哪里
+We just do move new folder and where's our destination when we want it to go into the documents folder
+
+64
+00:03:55,160 --> 00:03:56,650
+它在我们的主目录中。
+which is in our home directory.
+
+65
+00:03:56,660 --> 00:04:02,870
+所以我们倾斜一下说，我们的主目录是劈开，然后是Documents，所以Documents文件夹在里面
+So we put the tilter to say our home directory slash and then documents so the documents folder inside
+
+66
+00:04:02,910 --> 00:04:09,590
+我们的主目录按Enter键，然后当我们查看主目录并进入文档时
+our home directory we press enter and then when we look inside our home directory and go into our documents
+
+67
+00:04:09,590 --> 00:04:15,990
+文件夹在那里，我们在那里，新的文件夹完好无损地放在那里。
+folder there we are there's new folder sitting there all intact.
+
+68
+00:04:16,010 --> 00:04:23,030
+那么，对于大奖，我如何才能在文档中移动新文件夹，或者将其移动到某个位置并重命名
+So now for the jackpot how can I move a new folder inside of documents or move it somewhere and rename
+
+69
+00:04:23,030 --> 00:04:24,290
+它在同一时间。
+it at the same time.
+
+70
+00:04:24,290 --> 00:04:30,800
+假设我想要将其从Documents文件夹移到桌面，并将其重命名为大奖
+So let's say I want to move it from our documents folder to the desktop and rename it to the jackpot
+
+71
+00:04:31,070 --> 00:04:32,090
+在同一时间。
+at the same time.
+
+72
+00:04:32,090 --> 00:04:33,070
+那我们该怎么做呢。
+So how would we do that.
+
+73
+00:04:33,290 --> 00:04:36,950
+嗯，首先我们需要卖了它，我们卖了它，然后继续我们想要移动的东西。
+Well first we need to sell it we sell and move on what we want to move.
+
+74
+00:04:36,950 --> 00:04:43,130
+因此，假设我们要将新文件夹移动到Documents文件夹中。
+So let's say we want to move the new folder folder inside our documents folder.
+
+75
+00:04:43,160 --> 00:04:47,540
+顺便说一句，这是你应该会觉得舒服的东西，用倾斜符号来代表你的家
+And this is something you should be comfortable with by the way using the tilter to represent your home
+
+76
+00:04:47,540 --> 00:04:51,680
+文件夹，然后是文档，然后是新文件夹。
+folder then documents then new folder.
+
+77
+00:04:51,760 --> 00:04:52,210
+好的。
+OK.
+
+78
+00:04:52,310 --> 00:04:56,660
+最后的劈开是可选的，但我想它是和桌子一起完成的，所以我们会好的，我们会
+The slash at the end is optional but I think it comes with the table to completion so we'll well we'll
+
+79
+00:04:56,660 --> 00:04:57,220
+把它放在那里吧。
+leave it there.
+
+80
+00:04:57,280 --> 00:04:57,890
+好的。
+OK.
+
+81
+00:04:58,010 --> 00:04:59,970
+现在我们要把它搬到哪里去。
+Now where do we want to move it to.
+
+82
+00:04:59,980 --> 00:05:06,170
+我们希望将其移动到桌面，这样就可以说是当前工作目录，因为如您所见
+We want to move it to our desktop so we could say the current working directory because as you can see
+
+83
+00:05:06,170 --> 00:05:07,190
+我们在桌面上。
+we're on the desktop.
+
+84
+00:05:07,340 --> 00:05:13,990
+因此，我们将获得当前的工作目录，但我们将其称为大奖。
+So we're going to get the current working directory but we're going to call it jackpot.
+
+85
+00:05:14,640 --> 00:05:19,470
+所以现在是大奖，因为大奖文件夹不存在。
+So jackpot now because the jackpot folder doesn't exist.
+
+86
+00:05:19,520 --> 00:05:22,280
+新文件夹将成为大奖。
+New Folder will become jackpot.
+
+87
+00:05:22,310 --> 00:05:26,250
+如果我按Enter键，我们将看到已经创建了大奖。
+If I press Enter we'll see that jackpot has been created.
+
+88
+00:05:26,360 --> 00:05:30,950
+里面有来自新文件夹的所有内容或每个单独的文件。
+Inside there are all the content or every single one of the files from new folder.
+
+89
+00:05:30,950 --> 00:05:35,630
+如果我们返回到我们的文档中，我们会看到那个新文件夹已经不在那里了。
+And if we go back into our documents we will see that new folder is no longer there.
+
+90
+00:05:35,630 --> 00:05:36,680
+那么发生了什么。
+So what happened.
+
+91
+00:05:36,890 --> 00:05:43,820
+我们说将新文件夹从Documents文件夹中移出，并将其放入此目录中，该目录
+We said move the new folder folder from within our documents folder and put it in this directory which
+
+92
+00:05:43,820 --> 00:05:44,660
+就是桌面。
+is the desktop.
+
+93
+00:05:44,810 --> 00:05:48,070
+而是一个叫做大奖的文件夹。
+But as as a folder called jackpot.
+
+94
+00:05:48,170 --> 00:05:52,340
+因此，这就是您可以在移动文件夹的同时对其重命名的方式。
+So that is how you can move a folder and rename it at the same time.
+
+95
+00:05:52,340 --> 00:05:53,560
+很棒的东西，对吧。
+Pretty awesome stuff right.
+
+96
+00:05:55,140 --> 00:05:56,310
+现在你就知道了。
+So there you have it.
+
+97
+00:05:56,310 --> 00:06:01,200
+对于您需要执行的任何操作，M.V.命令都是非常简单但非常有效的命令
+The M.V. command is a very simple but very effective command for anything that you'll ever need to do
+
+98
+00:06:01,410 --> 00:06:03,230
+移动或重命名文件。
+with moving or renaming files.
+
+99
+00:06:03,360 --> 00:06:08,110
+在本视频中，您了解了如何使用ENVI命令移动和重命名文件和目录。
+And in this video you've seen how to move and rename files and directories using the ENVI command.
+
+100
+00:06:08,190 --> 00:06:09,410
+这就是它的工作原理。
+And this is how it works.
+
+101
+00:06:09,420 --> 00:06:15,060
+因此，如果您想要移动文件和目录，请先键入M.V.命令，然后再给它命令
+So if you want to move files and directories first you type the M.V. command then you give it command
+
+102
+00:06:15,060 --> 00:06:15,990
+行参数。
+line arguments.
+
+103
+00:06:15,990 --> 00:06:20,130
+您想要移动的所有内容，您可以提供这些内容的倍数，然后是最后的命令行
+Everything that you want to move and you can give it multiple of those and then the final command line
+
+104
+00:06:20,130 --> 00:06:23,780
+参数是要将所有这些内容移动到的目标。
+argument is the destination of where you want to move all of those things to.
+
+105
+00:06:24,000 --> 00:06:28,950
+如果您想要重命名文件和目录，我们一次只能重命名一个文件和目录，但是您可以按照您的要求进行重命名
+And if you want to rename files and directories we can only do one at a time but you give it what you
+
+106
+00:06:28,950 --> 00:06:35,010
+如果要同时移动和重命名，请先重命名，然后再重命名新名称和位置
+want to rename and then the new name and location if you want to move and rename at the same time and
+
+107
+00:06:35,010 --> 00:06:37,120
+您已经在这段视频中看到了如何做到这一点。
+you've seen how to do that in this video.
+
+108
+00:06:37,140 --> 00:06:42,720
+因此，请记住，如果您想要移动或重命名文件，则需要使用NV命令。
+So just remember that if you have want to move or rename a file the NV command is what you need.
+
+109
+00:06:42,750 --> 00:06:46,560
+在上几个视频中，您已经了解了如何修改文件树。
+So in the last few videos you've learned how to modify the file tree quite a lot.
+
+110
+00:06:46,680 --> 00:06:50,850
+现在可以使用Touch和和KTAR命令创建文件和目录。
+You can now create files and directories using the touch and and KTAR commands.
+
+111
+00:06:51,090 --> 00:06:56,340
+您可以使用Ahriman或MDR命令删除文件和目录，也可以复制文件和目录
+You can delete files and directories using the Ahriman or MDR commands you can copy files and directories
+
+112
+00:06:56,340 --> 00:07:01,380
+使用C.P.命令，您甚至可以使用该命令移动和重命名文件和目录。
+using the C.P. command and you can even move and rename files and directories using the command.
+
+113
+00:07:01,590 --> 00:07:06,240
+在下一个视频中，您将学习如何使用命令行实际编辑这些文件。
+Well in the next video you're going to learn how to actually edit these files using the command line.
+
+114
+00:07:06,240 --> 00:07:10,570
+很明显，这将是你们一直在做的事情。
+Now obviously this is going to be something that you'll do all the time.
+
+115
+00:07:10,650 --> 00:07:13,770
+所以，对于所有这些好东西，我会在下一个视频中见到你。
+So for all that good stuff I'll see you in the next video.
+

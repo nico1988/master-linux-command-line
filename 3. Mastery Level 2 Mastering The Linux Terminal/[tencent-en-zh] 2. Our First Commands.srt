@@ -1,0 +1,905 @@
+1
+00:00:00,480 --> 00:00:05,490
+您好，美丽的人们知道终端是一个非常强大的工具，它被设计成允许您
+Hello you beautiful people know the terminal is a very powerful tool that is designed to allow you to
+
+2
+00:00:05,490 --> 00:00:08,610
+向您的计算机发出所谓的命令。
+issue what is known as commands to your computer.
+
+3
+00:00:08,720 --> 00:00:11,470
+现在的想法是，计算机将服从这些命令。
+Now the idea is that the computer will obey these commands.
+
+4
+00:00:11,520 --> 00:00:14,610
+我们希望并使事情因此而发生。
+We hope and make stuff happen as a result.
+
+5
+00:00:14,610 --> 00:00:20,160
+现在，在这段视频中，您将学习如何发出您的第一条命令，这非常令人兴奋，但是
+Now in this video you're going to learn how to issue your first commands which is very exciting but
+
+6
+00:00:20,220 --> 00:00:25,010
+顺便说一句，本课程的结构是这样的：课程的每个部分都有自己的小抄，
+as an aside this course is structured so that each section of the course has its own cheat sheet that
+
+7
+00:00:25,020 --> 00:00:26,680
+你可以在这一节的末尾抓取。
+you can grab at the end of the section.
+
+8
+00:00:26,850 --> 00:00:31,380
+所以不用担心记住所有的命令，也不用急着去做笔记来尝试这些命令
+So don't worry about memorizing all the commands or rushing down to take notes to try out the commands
+
+9
+00:00:31,380 --> 00:00:34,500
+我在你自己的电脑上的你自己的虚拟机里展示给你看。
+that I show you in your own virtual machine on your own computer.
+
+10
+00:00:34,530 --> 00:00:39,240
+睡觉向你保证，每一件事都会在最后你能拿到的小抄里为你草草记下。
+And rest assured everything is all jotted down for you in the cheat sheets that you can get at the end
+
+11
+00:00:39,240 --> 00:00:40,530
+每一节的内容。
+of each section.
+
+12
+00:00:40,550 --> 00:00:41,870
+太棒了，对吧。
+That's awesome right.
+
+13
+00:00:41,910 --> 00:00:47,190
+在这段视频结束时，您将已经运行了一系列Linux命令，并且您将开始看到一种模式
+So by the end of this video you will have run a bunch of Linux commands and you'll start to see a pattern
+
+14
+00:00:47,190 --> 00:00:49,920
+Linux命令是如何工作的。
+emerging in how Linux commands work.
+
+15
+00:00:49,920 --> 00:00:53,400
+这将是一堂非常重要的课，它将给你们提供一个基金会将会对你们有所帮助
+So this is going to be a very important lecture it's going to give you that foundation is going to help
+
+16
+00:00:53,400 --> 00:00:55,940
+你知道每件事都是怎么回事。
+you understand what everything is all about.
+
+17
+00:00:55,950 --> 00:00:58,260
+所以，让我们继续往前跳，一头扎进去。
+So let's go ahead and jump into it.
+
+18
+00:01:00,520 --> 00:01:00,920
+好的。
+OK.
+
+19
+00:01:00,940 --> 00:01:04,140
+所以我们要做的第一件事就是开放我们的航站楼。
+So the first thing we're going to want to do is to open up our terminal.
+
+20
+00:01:04,190 --> 00:01:07,350
+有一个快速挑战，让我们看看你是否还记得怎么做。
+There was a quick challenge let's see if you can remember how to do that.
+
+21
+00:01:07,360 --> 00:01:11,440
+请往前走，看看能不能在大约五秒钟内打开航站楼。
+Go ahead and see if within about five seconds or so you can open up the terminal.
+
+22
+00:01:11,440 --> 00:01:16,180
+你可以使用图形化的方法，或者如果你觉得自己特别专业，也可以使用键盘
+You can do it using either graphical methods or if you're feeling particularly pro already use the keyboard
+
+23
+00:01:16,180 --> 00:01:17,940
+您在上一个视频中学到的快捷方式。
+shortcut you learnt in the last video.
+
+24
+00:01:18,010 --> 00:01:19,260
+所以你有五秒钟的时间。
+So you've got five seconds.
+
+25
+00:01:19,390 --> 00:01:20,070
+试一试吧。
+Give it a go.
+
+26
+00:01:26,320 --> 00:01:27,060
+你明白吗。
+Do you get it.
+
+27
+00:01:27,310 --> 00:01:29,920
+嗯，如果做得这么好，你已经在学习了。
+Well if so well done you're learning already.
+
+28
+00:01:29,930 --> 00:01:36,350
+现在我要使用键盘快捷键打开终端，快捷键是Ctrl、Alt和T，还有
+Now I'm going to open up the terminal using the keyboard shortcut which is control alt and T and there's
+
+29
+00:01:36,350 --> 00:01:37,720
+实际上是脑海中弹出的画面。
+actually a mental pop up.
+
+30
+00:01:37,840 --> 00:01:40,350
+现在，从现在开始，我大部分时间都要这样做。
+Now I'm going to do it like that for most of the time from now on.
+
+31
+00:01:40,350 --> 00:01:44,200
+因此，如果您看到终端窗口在我们浏览时到处弹出，请不要感到困惑
+So don't be confused if you see terminal windows popping up all over the place as we go through the
+
+32
+00:01:44,200 --> 00:01:49,330
+当然，我只是使用键盘快捷键，但为了使录音中的文本更容易阅读，我
+course I'm just using the keyboard shortcut but to make the text easier to read on the recording I'm
+
+33
+00:01:49,390 --> 00:01:53,630
+查看并单击放大将使字体变得更大。
+going to view and click zoom in will make the font just that much larger.
+
+34
+00:01:53,740 --> 00:01:54,090
+好的。
+OK.
+
+35
+00:01:54,190 --> 00:01:57,250
+所以当我打字的时候，我应该让它更容易阅读。
+So I should make it a bit easier to read when I type stuff.
+
+36
+00:01:57,610 --> 00:02:01,930
+但是在终端窗口打开时，让我们运行一个名为Echo的有趣命令。
+But at our terminal windows open Let's run a fun command called Echo.
+
+37
+00:02:01,960 --> 00:02:05,550
+现在，echo命令只打印出您给它作为输入的内容。
+Now the echo command just prints out what you give it as an input.
+
+38
+00:02:05,690 --> 00:02:09,770
+所以和我一起键入下面的命令，我们将键入ECHO。
+So type with me the following command we're going to type echo.
+
+39
+00:02:10,240 --> 00:02:14,310
+好的，然后按空格键，我们将输入单词Hello。
+OK then press space and we're going to type the word Hello.
+
+40
+00:02:14,310 --> 00:02:16,940
+现在，当我按Enter键时，我就会说是计算机。
+Now when I press Enter I'm going to say it's the computer.
+
+41
+00:02:16,990 --> 00:02:17,350
+好的。
+OK.
+
+42
+00:02:17,380 --> 00:02:19,020
+实际运行此命令。
+Actually run this command.
+
+43
+00:02:19,040 --> 00:02:22,570
+当我按Enter键时，我们看到计算机的Hello命令。
+And when I press Enter we see Hello command to the computer.
+
+44
+00:02:22,720 --> 00:02:23,800
+所以这是相当酷的。
+So it's pretty cool.
+
+45
+00:02:23,800 --> 00:02:24,530
+我们再试一次吧。
+Let's try that again.
+
+46
+00:02:24,580 --> 00:02:24,850
+好的。
+OK.
+
+47
+00:02:24,850 --> 00:02:28,910
+我们将说ECHO，然后键入ECHO。
+We're going to say echo then type echo.
+
+48
+00:02:29,040 --> 00:02:30,120
+带着大量的臭氧。
+With a load of oze.
+
+49
+00:02:30,230 --> 00:02:34,140
+好的，然后我按Enter键，返回的是Echo。
+Ok then I get to press enter and what comes back is Echo.
+
+50
+00:02:34,190 --> 00:02:35,910
+哦，那真是太棒了。
+Oh how awesome is that.
+
+51
+00:02:35,910 --> 00:02:37,210
+它就像一个山洞。
+It's just like a cave.
+
+52
+00:02:37,230 --> 00:02:40,530
+现在让我们尝试使用另一个名为Cal的命令。
+So let's try now with another command called Cal.
+
+53
+00:02:40,590 --> 00:02:41,450
+那就是ECHO。
+So that's echo.
+
+54
+00:02:41,580 --> 00:02:46,550
+让我们尝试另一个名为Cal的命令，CaO将在屏幕上显示一个日历。
+Let's try another command called Cal and Cao is going to show up a calendar on the screen.
+
+55
+00:02:46,680 --> 00:02:53,190
+因此，如果我们像这样键入cow，然后按Enter键，您可以看到我们得到了当前的日历
+So if we type cow just like that and press ENTER you can see that we get a calendar for the current
+
+56
+00:02:53,190 --> 00:02:58,480
+当月的月份，带有今天日期的也突出显示。
+months for the current month with the with today's date also highlighted.
+
+57
+00:02:58,500 --> 00:03:03,210
+现在我在2017年10月做这件事，当你在看这个并亲自做这件事的时候，这可能是一个非常
+And now I'm doing this in October 2017 when you're watching this and doing it yourself it may be a very
+
+58
+00:03:03,210 --> 00:03:07,530
+不同的月份，但您会得到您键入的点数COW的默认行为是您会获得当前的
+different month but you get the point you type cow the default behavior is that you get the current
+
+59
+00:03:07,530 --> 00:03:14,340
+突出显示当前日期的月份，但这只是该命令的默认行为。
+month with the current day highlighted but that's just the default behavior of the command.
+
+60
+00:03:14,340 --> 00:03:19,020
+好的，现在让Linux命令变得有趣的是，您不必坚持默认行为。
+OK now that makes Linux commands interesting is how you don't have to stick with the default behavior.
+
+61
+00:03:19,020 --> 00:03:22,990
+实际上，您可以将命令的行为完全自定义为您希望它们执行的操作。
+You can actually customize the behavior of commands to exactly what you want them to do.
+
+62
+00:03:23,190 --> 00:03:28,020
+因此，例如，如果我不仅想要当前月份的日历，还想要本年度的日历，那该怎么办呢？
+So for example what if I wanted the calendar not just for the current month but for the current year.
+
+63
+00:03:28,210 --> 00:03:34,980
+但是我可以做的是，首先我可以输入COW，然后是2017，然后我可以按Enter，它将
+But what I could do first of all I could type cow then 2017 and I can press enter and it's going to
+
+64
+00:03:34,980 --> 00:03:38,360
+给我2017年的完整日历。
+give me the entire calendar for 2017.
+
+65
+00:03:38,430 --> 00:03:41,000
+它还会突出显示当前日期。
+And also it's going to highlight the current date.
+
+66
+00:03:41,070 --> 00:03:42,040
+那真是太酷了。
+That's pretty cool.
+
+67
+00:03:42,100 --> 00:03:45,250
+在输入很少的情况下，我们得到了更多的结果。
+And with very little typing We got a lot more result of that.
+
+68
+00:03:45,270 --> 00:03:45,660
+正确的。
+Right.
+
+69
+00:03:45,840 --> 00:03:51,200
+但是你也可以给它一些东西，给每个人一种叫做选项的东西。
+But you can also give it something give each come on something called an option.
+
+70
+00:03:51,460 --> 00:03:55,580
+现在，一种选择是允许您自定义命令的行为。
+Now one option is something that allows you to customize the behavior of the command.
+
+71
+00:03:55,650 --> 00:04:01,520
+好的，我可以输入cow，而不是输入2017，或者我可以只输入dash y。
+OK so I could type cow and instead of typing 2017 or I could just type dash y.
+
+72
+00:04:01,530 --> 00:04:04,560
+这将为COW命令提供y选项。
+Now this would give the cow command the y option.
+
+73
+00:04:04,560 --> 00:04:11,940
+现在，如果我按Enter键，我们还会得到2017年的日历，所以你们可以在这里看到，蒙面的阿什温给了我们
+Now if I press Enter we also get the calendar for 2017 so you can see here cowled Ashwin gave us the
+
+74
+00:04:11,940 --> 00:04:13,530
+2017年的日历。
+calendar for 2017.
+
+75
+00:04:13,590 --> 00:04:15,530
+再次突出显示当前日期。
+Again highlighted with current dates.
+
+76
+00:04:15,600 --> 00:04:20,820
+您刚才看到了两种方法，可以自定义图标行为并为其提供输入，然后您可以
+So you've just seen two ways that you can customize icons behavior and give it input and you can give
+
+77
+00:04:20,820 --> 00:04:25,230
+IT选项，我们将更详细地介绍这两者之间的区别
+it options and we're going to be going into a lot more detail about the difference between the two and
+
+78
+00:04:25,230 --> 00:04:25,990
+他们是如何工作的。
+how they work.
+
+79
+00:04:26,100 --> 00:04:31,110
+但是您现在可能很好奇还有什么其他方法可以自定义命令，但我要说的是
+But you may be curious at the moment as to what other ways you can customize commands but I'm going
+
+80
+00:04:31,110 --> 00:04:35,910
+为了把这种善意留到稍后的时刻，我只想给你们一点小小的
+to save that goodness until later at the minute I just want to give you a little bit of a bit of an
+
+81
+00:04:35,940 --> 00:04:40,920
+概述了可以在Linux上使用的一些不同命令，以便您可以轻松地键入
+overview of some different commands that you can use on Linux so you can get comfortable with the typing
+
+82
+00:04:40,920 --> 00:04:43,390
+然后按Enter键，结果就会重新出现在屏幕上。
+and pressing Enter and seeing result come back up on the screen.
+
+83
+00:04:43,460 --> 00:04:43,870
+好的。
+OK.
+
+84
+00:04:43,930 --> 00:04:48,000
+那么让我们继续看另一个例子。
+So let's move on and take a look at another one for example.
+
+85
+00:04:48,000 --> 00:04:50,710
+您可以使用DATE命令查看今天的日期。
+You can see today's date using the date command.
+
+86
+00:04:50,730 --> 00:04:58,520
+因此，如果我们键入Date并按Enter键，我们会看到今天的日期、时间、时区和年份Pop-Pop。
+So if we type date and press ENTER we see that we get today's date and time and time zone and year Pop-Pop.
+
+87
+00:04:58,620 --> 00:04:59,580
+好的，这很酷。
+OK so that's pretty cool.
+
+88
+00:04:59,580 --> 00:05:01,340
+这是一个非常有用的命令。
+It's quite useful command.
+
+89
+00:05:01,560 --> 00:05:04,650
+但目前您可以看到，我们收到了相当多的文本，而不是终端。
+But at the moment you can see that we've got quite a lot of text not terminal.
+
+90
+00:05:04,650 --> 00:05:06,430
+事情开始变得有点混乱了。
+Things are starting to get a bit messy.
+
+91
+00:05:06,630 --> 00:05:08,010
+我们也可以把它清理一下。
+We can clean that up a bit as well.
+
+92
+00:05:08,160 --> 00:05:13,090
+因此，要做到这一点，我们可以使用CLEAR命令，如果我们键入CLEAR并按ENTER键。
+So to do that we can use the clear command if we type clear and press enter.
+
+93
+00:05:13,290 --> 00:05:18,860
+就像我们刚刚清理了工作区，然后我们现在已经从屏幕上删除了所有文本
+It's like we just cleaned up workspace and then we are we've removed all the text from the screen now
+
+94
+00:05:18,870 --> 00:05:23,060
+因为CLEAR命令使用非常频繁，所以有一个键，因此有一个键盘快捷键。
+because the clear command is used so often there's a key there's a keyboard shortcut for it.
+
+95
+00:05:23,130 --> 00:05:23,490
+好的。
+OK.
+
+96
+00:05:23,640 --> 00:05:29,340
+因此，如果我只需键入echo，然后放入blah，您就可以看到我们有一些文本从
+So if I just type echo and then put blah blah blah and you can see we've got some text come out of the
+
+97
+00:05:29,340 --> 00:05:34,350
+电脑屏幕上有废话，但我们也可以用键盘快捷键来清除屏幕
+screen that the computer had blah blah blah but we can also use a keyboard shortcut to clear the screen
+
+98
+00:05:34,470 --> 00:05:36,910
+键盘快捷键是您最好的控制。
+and the keyboard shortcut is your best control.
+
+99
+00:05:37,080 --> 00:05:38,790
+字母L。
+And the letter L.
+
+100
+00:05:38,790 --> 00:05:41,520
+现在我们都会清空屏幕，这就是我要做的，因为要做的事情很多
+Now we all would clear the screen and that's the way that I'm going to be doing it because it's a lot
+
+101
+00:05:41,520 --> 00:05:44,420
+比每次输入CLEAR命令要快得多，也容易得多。
+faster and a lot easier than typing at the clear command every time.
+
+102
+00:05:44,550 --> 00:05:51,240
+但是你觉得你很自由，你只是明白，如果航站楼突然有了它所有的
+But you feel free you do you just understand that if the terminal is all of a sudden having all its
+
+103
+00:05:51,240 --> 00:05:53,460
+文字消失了，这就是我所做的，我刚刚清除了屏幕。
+text vanished that's what I've done I've just cleared the screen.
+
+104
+00:05:53,580 --> 00:05:54,140
+好的。
+OK.
+
+105
+00:05:54,570 --> 00:05:56,650
+现在我们已经没有很多命令了。
+Now we don't have quite a few commands already.
+
+106
+00:05:56,670 --> 00:06:02,300
+那么，如果您想要输入一个先前发生事件的命令，而不必再次键入它，那该怎么办呢
+So what if you wanted to enter a command that evented previously without having to type it out again
+
+107
+00:06:02,310 --> 00:06:07,080
+也许这是一个特别长的命令，我们不知道你能做什么，你可以按向上箭头键
+maybe it was a particularly long command we don't know what you can do is you can hit the up arrow key
+
+108
+00:06:07,320 --> 00:06:08,220
+在你的键盘上。
+on your keyboard.
+
+109
+00:06:08,220 --> 00:06:13,560
+所以如果我按下拼花地板，我们会看到Echo blah top‘s back up，如果我再按一次，它就会
+So if I press the paroquet we see Echo blah blah blah top's back up if I press up again it's going to
+
+110
+00:06:13,560 --> 00:06:14,280
+清场吧。
+go clear.
+
+111
+00:06:14,280 --> 00:06:16,890
+再一次，随着日期的再次，我们看到了一头牛，以此类推。
+And again with the date again we see a cow and so on.
+
+112
+00:06:16,920 --> 00:06:22,500
+我想您可以继续向上按，然后向后循环浏览您已经运行过的命令
+I guess you can keep pressing up and cycling backwards through the commands that you've already run
+
+113
+00:06:22,560 --> 00:06:24,800
+这是非常非常有用的。
+which is very very useful.
+
+114
+00:06:25,100 --> 00:06:29,620
+您还可以使用所谓的HISTORY命令查看整个命令历史记录。
+You can also look at your whole command history using what's called the history command.
+
+115
+00:06:29,820 --> 00:06:35,820
+因此，如果您键入History并按Enter键，我们可以看到前面的所有命令以及行号
+So if you type history and press ENTER we can see all of our previous commands with the line number
+
+116
+00:06:35,820 --> 00:06:37,140
+与它们相关联。
+associated with them.
+
+117
+00:06:37,140 --> 00:06:44,140
+例如，我们可以看到ECHO命令的行号，它是数字1，让我们这样说
+For example we can see the line number for our echo command which is the number one let's say that said
+
+118
+00:06:44,320 --> 00:06:47,570
+我们才是第一，而不是你能做什么。
+that we are the one who was number one and not what you could do.
+
+119
+00:06:47,760 --> 00:06:51,620
+而不是像那样一路骑着车回到第一名。
+Instead of having to cycle all the way back up to number one like that.
+
+120
+00:06:51,750 --> 00:06:56,200
+我能做的就是看一个潮汐，感叹号，然后是一个。
+What I could do is look a tide the exclamation mark and then one.
+
+121
+00:06:56,450 --> 00:06:56,900
+好的。
+OK.
+
+122
+00:06:56,970 --> 00:06:58,160
+所以一个上面有感叹号。
+So exclamation mark on one.
+
+123
+00:06:58,290 --> 00:07:00,630
+您可以看到我们已经运行了ECHO Hello。
+And you can see that we've run echo Hello.
+
+124
+00:07:00,840 --> 00:07:01,160
+好的。
+OK.
+
+125
+00:07:01,290 --> 00:07:04,110
+那么让我们再来看一看，再来看看我们的历史。
+So let's let's have a look again and have a look at our history again.
+
+126
+00:07:04,110 --> 00:07:07,200
+我们现在明白了，让我们假设我们想要运行回声之类的。
+We see now let's say we want to run echo blah blah blah.
+
+127
+00:07:07,350 --> 00:07:09,340
+伦敦的航班是8点对的。
+The London flight is eight right.
+
+128
+00:07:09,480 --> 00:07:15,800
+如果我按感叹号，再按8，然后按Enter，我们会看到Echo，等等，等等。
+So if I press the exclamation mark and press 8 and then press enter we see we get Echo blah blah blah.
+
+129
+00:07:15,840 --> 00:07:20,940
+所以您可以看到，这是一个有点快捷的方式，可以省去您在可能的数百个
+So you can see that that's a bit of a shortcut to save you going back through potentially hundreds of
+
+130
+00:07:20,940 --> 00:07:21,810
+您运行过的命令。
+commands that you've run.
+
+131
+00:07:21,810 --> 00:07:25,580
+你知道你可以的，你可以像那样更容易地操作它们。
+And you know you can you can run them a bit easier like that.
+
+132
+00:07:25,710 --> 00:07:26,980
+好的。
+OK.
+
+133
+00:07:27,550 --> 00:07:32,060
+如果您想运行您已完成的最近一次，您只需按感叹号感叹号即可
+If you want to run the most recent come on that you've done you can just press exclamation mark exclamation
+
+134
+00:07:32,060 --> 00:07:32,860
+马克。
+mark.
+
+135
+00:07:32,960 --> 00:07:35,980
+我们再一次看到Echo Bah又跑了。
+And again we see Echo blah blah blah has run again.
+
+136
+00:07:36,680 --> 00:07:38,830
+现在这个历史文件可能会变得相当长。
+Now this history file can get quite long.
+
+137
+00:07:38,930 --> 00:07:43,600
+因此，如果你想清除这方面的历史，这是一个分两步走的过程。
+So if you want to clear the history of this it's kind of a two step process.
+
+138
+00:07:43,730 --> 00:07:47,490
+您可以键入HISTORY，并将其设置为C选项。
+You can type history and give it the C option.
+
+139
+00:07:47,900 --> 00:07:48,330
+好的。
+OK.
+
+140
+00:07:48,410 --> 00:07:55,130
+然后添加分号，然后键入History并将其提供给w选项。
+Then add a semi-colon then type history and give it to the w option.
+
+141
+00:07:55,250 --> 00:07:59,090
+好的，那么它所做的就是清除历史记录，然后实际写入这些更改并进行更改
+OK so what that does is it clears the history and then actually writes those changes and makes them
+
+142
+00:07:59,090 --> 00:07:59,700
+永久的。
+permanent.
+
+143
+00:07:59,900 --> 00:08:05,290
+因此，当我们这样做并清除屏幕并查看历史时，我们可以看到我们所拥有的只是
+So when we do that and clear the screen and we look at history we can see that all we've got is just
+
+144
+00:08:05,290 --> 00:08:09,170
+从字面上看，这段历史对你来说不是什么可参考的东西，它不是特别重要
+a history quite literally and it's not something for reference for you it's not particularly important
+
+145
+00:08:09,370 --> 00:08:11,900
+但是如果你想要回溯到这段视频中，你必须要这么做。
+but you've got to in this video if you want to refer back to it.
+
+146
+00:08:12,080 --> 00:08:12,640
+好的。
+OK.
+
+147
+00:08:12,950 --> 00:08:16,420
+现在，最后让我们说我们想要关闭航站楼。
+Now finally let's say we want to close the terminal.
+
+148
+00:08:16,490 --> 00:08:16,810
+好的。
+OK.
+
+149
+00:08:16,820 --> 00:08:20,430
+要做到这一点，我们当然可以点击右上角的X按钮。
+Well to do that we could of course click the X button at the top right over here.
+
+150
+00:08:20,600 --> 00:08:26,440
+但是你也可以输入exit命令，让你自己看起来更专业，所以如果
+But you can also type the exit command and make yourself you know just look that much more pro So if
+
+151
+00:08:26,440 --> 00:08:27,820
+我们按下Exit键。
+we press exit.
+
+152
+00:08:27,830 --> 00:08:30,150
+我们可以看到航站楼现在已经关闭了。
+We can see that the terminal has now closed.
+
+153
+00:08:30,350 --> 00:08:37,190
+当然，如果我按下Ctrl键和D键，您也可以使用Control D键盘快捷键，我们可以看到
+And also you could of course use the Control D keyboard shortcuts if I press control and D we can see
+
+154
+00:08:37,290 --> 00:08:38,750
+航站楼也关闭了。
+the terminals also closed as well.
+
+155
+00:08:38,750 --> 00:08:43,250
+就像我在上一个视频中展示的那样，它允许您键入命令来操作终端，还可以
+Like I showed you in the last video and that allows you to type commands operate the terminal and also
+
+156
+00:08:43,250 --> 00:08:46,660
+关闭它，而不必将手从键盘上移开。
+close it without ever having to take your hands off the keyboard.
+
+157
+00:08:48,300 --> 00:08:52,980
+现在您有了它，您可以直接进入，现在我已经在终端中运行了一大堆Linux命令
+So there you have it you jump right in and I've now ran a whole bunch of Linux commands inside the terminal
+
+158
+00:08:53,040 --> 00:08:53,790
+做得太好了。
+so well done.
+
+159
+00:08:53,790 --> 00:08:58,260
+你的脚已经湿了，我们正在搬家，就像我跟你说过的那样，你可以拿到一张小抄，上面写着
+You've got your feet wet and we're moving as I mentioned to you you can get a cheat sheet which covers
+
+160
+00:08:58,290 --> 00:09:02,370
+我们在本视频中介绍的所有命令以及我们将要使用的所有其他命令
+all of the commands that we've covered in this video and all the other commands that we're going to
+
+161
+00:09:02,370 --> 00:09:04,000
+请在本课程的这一部分进行介绍。
+cover in this section of the course.
+
+162
+00:09:04,110 --> 00:09:09,780
+在本节的最后一课，但是我们在本部分中介绍的这些命令的用例
+At the conclusion lecture of this section but the use case of these commands that we've covered in this
+
+163
+00:09:09,780 --> 00:09:12,140
+演讲在这一点上可能不完全清楚。
+lecture may not be completely clear at this point.
+
+164
+00:09:12,180 --> 00:09:13,250
+这没什么大不了的。
+And that's OK.
+
+165
+00:09:13,350 --> 00:09:17,030
+我不是想在一个视频里教你们一大堆命令。
+I wasn't trying to teach you all like a whole bunch of commands in one video.
+
+166
+00:09:17,040 --> 00:09:21,540
+我在这段视频中想要了解的是，命令是通过在以下位置键入一些奇怪的文本来执行的
+What I wanted to get across in this video is that commands are executed by typing some weird text in
+
+167
+00:09:21,540 --> 00:09:23,930
+终端，然后按Enter键。
+the terminal and pressing the enter key.
+
+168
+00:09:23,940 --> 00:09:28,230
+您还可以看到，命令可以是，它们可以做很多不同的事情，也可以
+You've also seen that commands can be they can do a whole lot of different things and they can also
+
+169
+00:09:28,230 --> 00:09:34,520
+可以针对不同的行为进行定制，但它们似乎都遵循半相似的结构。
+be customized for different behavior but they all seem to follow a semi similar kind of structure.
+
+170
+00:09:34,670 --> 00:09:38,520
+你输入一些文本，也许你有一些选项，或者一些输入，然后你按Enter键。
+You type some text maybe you got some options maybe some input and you press enter.
+
+171
+00:09:38,520 --> 00:09:44,100
+现在能够理解该结构对于掌握Linux操作具有难以置信的重要性
+Now being able to understand that structure is of incredible importance to mastering the Linux operating
+
+172
+00:09:44,100 --> 00:09:46,610
+系统，并利用终端的能力。
+system and leveraging the power of the terminal.
+
+173
+00:09:46,620 --> 00:09:51,390
+在下一个视频中，我将向您展示Linux中的命令是如何构造的，以及我们将
+So the next video I'm going to show you how commands are structured in Linux and what we're going to
+
+174
+00:09:51,390 --> 00:09:56,190
+接下来的内容将成为我们将要学习的几乎所有内容的重要基础
+cover next will serve as a critical foundation for pretty much everything that we're going to learn
+
+175
+00:09:56,400 --> 00:10:01,290
+展望未来，如果您使用Linux，那么您在使用Linux时学到的几乎所有东西
+going forward and pretty much everything that you ever learn when you're using Linux if you use Linux
+
+176
+00:10:01,290 --> 00:10:07,230
+以前，但从来没有真正感觉到，好像你已经，你知道，你得到了，或者你觉得缺少了一些东西
+before but never really felt as though you've you know you got it or you felt that some stuff was missing
+
+177
+00:10:07,230 --> 00:10:11,520
+在你的理解中，这可能是因为你没有看到我接下来要给你看的东西。
+in your understanding it's probably because you weren't shown what I'm about to show you next.
+
+178
+00:10:11,570 --> 00:10:16,020
+如果您是Linux的新手，这将是开始确保一切
+And if you're new to Linux this is going to be the best place to start to make sure that everything
+
+179
+00:10:16,020 --> 00:10:19,920
+进展顺利，您将开始看到Linux操作系统和命令是如何
+goes smoothly and you start to see the pattern of how the Linux operating system and the commands are
+
+180
+00:10:19,920 --> 00:10:22,940
+精心设计，而不是只记住一大堆清单。
+designed rather than just memorizing a massive list.
+
+181
+00:10:23,070 --> 00:10:26,420
+所以，对于那些非常重要的东西，我会在下一个视频中见到你。
+So for that super important stuff I'll see you in the next video.
+

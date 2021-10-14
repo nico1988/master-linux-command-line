@@ -1,0 +1,283 @@
+1
+00:00:00,360 --> 00:00:05,370
+Hello you beautiful people know one of the biggest reasons for someone to switch to Linux is to use
+
+2
+00:00:05,370 --> 00:00:11,290
+what is arguably the most powerful feature of the Linux operating system and that is the terminal.
+
+3
+00:00:11,310 --> 00:00:16,020
+Now if you've ever seen a film where a hacker or a computer genius has sat behind their computer typing
+
+4
+00:00:16,020 --> 00:00:21,330
+commands into what looks like a big black box on their computer screen that black box is called the
+
+5
+00:00:21,330 --> 00:00:22,170
+terminal.
+
+6
+00:00:22,170 --> 00:00:26,490
+Now at one time the entire Linux operating system was purely terminal based.
+
+7
+00:00:26,550 --> 00:00:31,500
+But as time has gone on more graphical tools have been developed up until now where we have these beautiful
+
+8
+00:00:31,500 --> 00:00:34,190
+desktop environments like what we see on a buntu.
+
+9
+00:00:34,350 --> 00:00:39,120
+Now fundamentally the main difference between using the terminal and using normal graphical methods
+
+10
+00:00:39,120 --> 00:00:44,310
+that you're probably already familiar with from even using a Windows or a Mac is that instead of pointing
+
+11
+00:00:44,400 --> 00:00:49,480
+and clicking with the mouse to control your computer you'll be typing with the keyboard instead.
+
+12
+00:00:49,650 --> 00:00:53,820
+Now Linux is unique in that the development of Linux is inseparable from the terminal.
+
+13
+00:00:53,850 --> 00:00:59,370
+And this means that knowing how to use the terminal gives you pretty much absolute control over how
+
+14
+00:00:59,460 --> 00:01:01,880
+your computer works by using the terminal.
+
+15
+00:01:01,890 --> 00:01:05,700
+You can do pretty much anything that you want with your Linux computer.
+
+16
+00:01:05,730 --> 00:01:09,930
+Now you can't get this level of control over your computer in any other operating system.
+
+17
+00:01:09,930 --> 00:01:13,080
+And this makes the terminal an incredible skill to learn.
+
+18
+00:01:13,200 --> 00:01:17,530
+Now although it's absolutely awesome I understand that the terminal can be a bit intimidating at first
+
+19
+00:01:17,550 --> 00:01:21,570
+so in this video we're going to start off nice and easy and I'm going to show you how you can actually
+
+20
+00:01:21,600 --> 00:01:24,330
+open and close the terminal in a buntu.
+
+21
+00:01:24,390 --> 00:01:28,710
+And by the end of this video you'll have taken a very important first step in your mastery of the Linux
+
+22
+00:01:28,710 --> 00:01:32,280
+operating system and you'll also be able to open and close at will.
+
+23
+00:01:32,280 --> 00:01:35,220
+The most powerful tool that Linux has to offer.
+
+24
+00:01:35,310 --> 00:01:37,580
+So let's go ahead and get started.
+
+25
+00:01:40,730 --> 00:01:41,390
+All right.
+
+26
+00:01:41,390 --> 00:01:43,580
+So here we are in a beautiful buntu desktop.
+
+27
+00:01:43,580 --> 00:01:48,790
+Now I'm going to show you how you can go ahead and open the terminal using graphical methods.
+
+28
+00:01:48,950 --> 00:01:54,120
+Now down the bottom left here you'll notice a a set of nine dots.
+
+29
+00:01:54,200 --> 00:01:56,400
+And if you hover over it says show applications.
+
+30
+00:01:56,420 --> 00:02:00,500
+If you click on that it will open up in a rather awesome way.
+
+31
+00:02:00,500 --> 00:02:04,460
+A whole list of different programs that are installed in your computer and you can just look around
+
+32
+00:02:04,460 --> 00:02:09,550
+here you can see like you know there's a calendar a calculator some office software.
+
+33
+00:02:09,620 --> 00:02:11,750
+You can keep scrolling down and there's loads of things.
+
+34
+00:02:11,750 --> 00:02:15,540
+For example the Firefox web browser a music player and so on and so on.
+
+35
+00:02:15,540 --> 00:02:18,810
+And like you know I encourage you to have a look at these and see what they do.
+
+36
+00:02:18,900 --> 00:02:22,630
+And this is how you can explore the files that are on your computer and things like that.
+
+37
+00:02:22,790 --> 00:02:30,500
+But if you scroll down or you click this the second button over here you'll see a program here called
+
+38
+00:02:30,500 --> 00:02:31,070
+terminal.
+
+39
+00:02:31,070 --> 00:02:35,930
+Another way to do it is you could just go at the top here in search and just type terminal and it will
+
+40
+00:02:35,930 --> 00:02:36,810
+come straight up.
+
+41
+00:02:36,810 --> 00:02:39,120
+Now if you just go ahead and click on that.
+
+42
+00:02:39,590 --> 00:02:40,620
+Here we are.
+
+43
+00:02:40,670 --> 00:02:43,360
+Your terminal window has opened up.
+
+44
+00:02:43,430 --> 00:02:49,010
+So in here is where we're going to be typing the commands for the course we might maximize the terminal.
+
+45
+00:02:49,010 --> 00:02:50,960
+We might make it a bit smaller.
+
+46
+00:02:50,960 --> 00:02:55,820
+You can move it around the screen and so on and so on there's loads of different options at the top.
+
+47
+00:02:55,820 --> 00:03:01,990
+For example you can open terminals and things you can edit copy and paste.
+
+48
+00:03:02,000 --> 00:03:06,860
+Change the zoom and so many other things play around with it as you wish but it's rather easy to open
+
+49
+00:03:06,860 --> 00:03:10,610
+if you want to close it just like you would on any other graphical system.
+
+50
+00:03:10,610 --> 00:03:13,240
+You just click the X at the top there.
+
+51
+00:03:13,360 --> 00:03:13,830
+OK.
+
+52
+00:03:13,850 --> 00:03:18,830
+So that's how you go ahead and open and close the terminal which is rather easy to do and it's Once
+
+53
+00:03:18,830 --> 00:03:21,260
+you've done it once or twice you probably won't forget it.
+
+54
+00:03:21,260 --> 00:03:26,350
+But there's also some keyboard shortcuts that will make this process a whole lot faster.
+
+55
+00:03:26,360 --> 00:03:32,930
+For example if you want to open the terminal using just your keyboard you can press control alt and
+
+56
+00:03:32,930 --> 00:03:39,770
+the letter T and you will find that there were all the terminal pops up and if you want to close it
+
+57
+00:03:40,100 --> 00:03:42,330
+you just press control and D.
+
+58
+00:03:42,680 --> 00:03:43,360
+And it goes away.
+
+59
+00:03:43,370 --> 00:03:47,890
+So you can see how quickly this how quick this might happen you don't control T and Open's control D
+
+60
+00:03:48,210 --> 00:03:48,910
+and it shuts.
+
+61
+00:03:49,040 --> 00:03:49,470
+OK.
+
+62
+00:03:49,580 --> 00:03:50,530
+So there you are.
+
+63
+00:03:50,630 --> 00:03:55,650
+That's how you can open and close the terminal using both graphical methods and keyboard shortcuts.
+
+64
+00:03:55,730 --> 00:03:59,420
+You've an excellent first step already and should start feeling a bit more like a Linux pro because
+
+65
+00:03:59,420 --> 00:04:02,390
+now you know how to actually open and close the terminal.
+
+66
+00:04:02,390 --> 00:04:04,570
+It's just like any other program on your computer.
+
+67
+00:04:04,640 --> 00:04:10,050
+It's not scary and it's actually rather easy to use as we'll show you in the next few videos.
+
+68
+00:04:10,160 --> 00:04:14,120
+But here's where your training really begins in the next video you're going to be running your first
+
+69
+00:04:14,120 --> 00:04:15,260
+commands in the terminal.
+
+70
+00:04:15,260 --> 00:04:17,230
+And trust me they're pretty awesome.
+
+71
+00:04:17,360 --> 00:04:19,910
+So for not goodness I'll see you in the next video.

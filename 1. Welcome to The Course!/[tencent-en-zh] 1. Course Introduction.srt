@@ -1,0 +1,225 @@
+1
+00:00:00,300 --> 00:00:05,420
+您好，祝贺您做出签约参加这项事业的决定，并推动您自己迈向
+Hello and congratulations for making the decision to sign up to the cause and propel yourself towards
+
+2
+00:00:05,420 --> 00:00:06,390
+下一个主宰。
+the next mastery.
+
+3
+00:00:06,570 --> 00:00:11,250
+嗨，我是齐亚德，我想做一个简短的视频，祝贺你做出了这个明智的决定
+Hi I'm Ziyad and I wanted to do a quick video to congratulate you for making the excellent decision
+
+4
+00:00:11,250 --> 00:00:15,780
+我想给你们简要介绍一下我们将在课程中涵盖的内容。
+to sign up and I wanted to give you a quick introduction to what we'll be covering in the course.
+
+5
+00:00:15,780 --> 00:00:19,830
+因此，首先，我们将通过逐步向您介绍一个
+So first we're going to get you all set up with Linux by walking you through step by step through an
+
+6
+00:00:19,830 --> 00:00:22,770
+在您自己的虚拟机上安装Linux。
+installation of Linux on your own virtual machine.
+
+7
+00:00:22,770 --> 00:00:26,610
+现在这样做意味着你可以玩任何你喜欢的东西，而不会冒任何风险。
+Now doing it this way means that you can play around with whatever you like without risking anything
+
+8
+00:00:26,640 --> 00:00:29,320
+或者破坏任何东西，任何事情都可能真的出问题。
+or damaging anything and anything can really go wrong.
+
+9
+00:00:29,460 --> 00:00:34,080
+把它当作你在课程中学到的令人敬畏的技能的完美操场。
+Think of it as your perfect playground to the awesome skills that you'll learn in the course.
+
+10
+00:00:34,110 --> 00:00:37,260
+然后我们将继续学习有关Linux终端的所有内容。
+Then we're going to move on to learn all about the Linux terminal.
+
+11
+00:00:37,260 --> 00:00:42,030
+这是一个功能极其强大的程序，它是您在Linux机器上做任何想做的事情的门户。
+An incredibly powerful program that is your gateway to doing anything that you want on your Linux machine.
+
+12
+00:00:42,030 --> 00:00:46,800
+我们将讨论什么是终端，如何使用它，如何输入命令并澄清流行的误解
+We'll discuss what the terminal is how to use it how to enter commands and clear up popular misconceptions
+
+13
+00:00:46,890 --> 00:00:48,370
+可能会四处漂浮。
+that may be floating around.
+
+14
+00:00:48,380 --> 00:00:52,200
+现在，您将在本课程的该部分中学习的重要概念将为您奠定重要的基础
+Now the important concepts that you'll learn in that section of the Course will lay the critical foundations
+
+15
+00:00:52,200 --> 00:00:56,980
+您将在X命令行中执行的所有操作，这将使一切开始变得有意义。
+for everything that you'll do within an X command line and it will make it all start to make sense.
+
+16
+00:00:57,180 --> 00:01:01,340
+好了，然后继续讨论Linux文件系统，以及如何使用使用的文件
+Well then move on to discuss the Linux file system and how to work with files that work working with
+
+17
+00:01:01,330 --> 00:01:04,680
+文件可能是我们每天工作的99%。
+files is probably 99 percent of what we do on a on an everyday basis.
+
+18
+00:01:04,740 --> 00:01:08,430
+因此，当必须高效地处理文件时，使用命令行是一种
+And so when something had to work with files effectively and efficiently using the command line is an
+
+19
+00:01:08,430 --> 00:01:10,080
+令人难以置信的游戏能力。
+incredible ability to game.
+
+20
+00:01:10,220 --> 00:01:15,810
+现在，在本节中，您必须创建、删除、复制、粘贴、编辑、重命名、移动、查找打开的搜索归档
+Now in this section you'll have to create delete copy paste edit rename move find open search archive
+
+21
+00:01:15,840 --> 00:01:20,240
+压缩文件等等，它将使您能够对文件做任何您想做的事情。
+and compress files and so much more and it'll make you able to do anything you want with files.
+
+22
+00:01:20,310 --> 00:01:23,120
+但是，由于命令行的效率，它将变得非常棒。
+But with the efficiency of the command line it's going to be awesome.
+
+23
+00:01:23,280 --> 00:01:28,320
+然后，我们将继续讨论如何使用bash脚本自动执行任务，这样您就必须编写bash脚本和
+We'll then move on to how to automate tasks using bash scripts so you had to write bash scripts and
+
+24
+00:01:28,320 --> 00:01:30,900
+如何安排这些脚本在特定日期和时间运行。
+how to schedule these scripts to run at certain dates and times.
+
+25
+00:01:31,020 --> 00:01:36,390
+因此，您可以自动执行日常工作流程，最终您将了解所有有关安装第三方软件的信息
+So you can automate your daily workflow and finally you'll learn all about installing third party software
+
+26
+00:01:36,390 --> 00:01:37,520
+在您的Linux机器上。
+on your Linux machine.
+
+27
+00:01:37,560 --> 00:01:41,870
+您不必从软件存储库中搜索新软件以及如何管理软件
+You don't have to search for new software from the software repositories and how to manage your software
+
+28
+00:01:41,910 --> 00:01:43,550
+使用软件管理器。
+using software managers.
+
+29
+00:01:43,590 --> 00:01:47,700
+您还将了解开放源码软件以及成为开放源码社区的一部分意味着什么
+You'll also learn about open source software and what it means to be part of the open source community
+
+30
+00:01:47,970 --> 00:01:52,230
+以及学习如何获取源代码并将其编译成工作程序。
+as well as learning how to take source code and compile it into working programs.
+
+31
+00:01:52,410 --> 00:01:55,980
+现在，在本课程结束时，您将熟悉使用Linux操作系统，并且您会感到疑惑
+Now by the end of this course you'll be comfortable using the Linux operating system and you'll wonder
+
+32
+00:01:56,070 --> 00:01:58,360
+为什么你一直没有使用它。
+why you haven't been using it all along.
+
+33
+00:01:58,360 --> 00:02:03,150
+在我的课程中，有一件事一直是我的目标，那就是让课程内容变得容易忘记，所以我不得不帮助巩固
+And one thing I always aim for in my courses is to make the content on forgetable so I had to help cement
+
+34
+00:02:03,150 --> 00:02:03,810
+学习的过程。
+the learning.
+
+35
+00:02:03,840 --> 00:02:08,310
+你有测验来检查你对概念的掌握情况，你还有一些作业要完成。
+You have quizzes to check your grasping the concepts and you also have some assignments for you to complete
+
+36
+00:02:08,550 --> 00:02:13,050
+为了真正测试和提高您的技能，还有一些总结概念的小抄
+to really test and improve your skills and there are also some cheat sheets summarizing the concepts
+
+37
+00:02:13,050 --> 00:02:17,510
+所以你不需要做笔记就可以坐下来放松和练习技能。
+from the course so you don't need to take notes to sit back relax and practice the skills.
+
+38
+00:02:17,520 --> 00:02:22,560
+睡觉保证，重要信息会以专业设计的作弊方式为您草草记下
+And rest assured that the important information is jotted down for you in professionally designed cheat
+
+39
+00:02:22,560 --> 00:02:25,200
+任何时候你都可以免费查阅床单。
+sheets for free to refer to whenever you want.
+
+40
+00:02:25,200 --> 00:02:29,190
+现在，如果您需要任何帮助，请随时在问题区域提问，当您觉得
+Now if you ever need any help feel free to ask questions in the questions area and when you feel you've
+
+41
+00:02:29,190 --> 00:02:33,210
+我全神贯注于这门课程，请留下评论，鼓励其他学生选修这门课程，这样我们就可以
+got immersed in the course please leave a review to encourage other students take the course so we can
+
+42
+00:02:33,210 --> 00:02:36,770
+让每个人都能享受到Linux操作系统的乐趣。
+make the joys of the Linux operating system accessible to everyone.
+
+43
+00:02:36,780 --> 00:02:41,070
+除此之外，我希望您在课程中学习Linux的过程非常愉快，我打赌您一定等不及了
+Other than that I wish you a very pleasant time learning Linux in the course and I bet you can't wait
+
+44
+00:02:41,070 --> 00:02:41,880
+开始吧。
+to get started.
+
+45
+00:02:41,880 --> 00:02:46,030
+因此，让我们直接开始，让您使用您自己的Linux虚拟机进行设置。
+So let's jump right in and get you set up with your own Linux virtual machine.
+

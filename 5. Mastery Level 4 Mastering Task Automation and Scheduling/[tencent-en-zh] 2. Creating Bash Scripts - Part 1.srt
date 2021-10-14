@@ -1,0 +1,845 @@
+1
+00:00:00,180 --> 00:00:06,330
+大家好，美丽的人们，欢迎来到这节非常激动人心的课程，全部内容都是关于bash脚本的。
+Hello the beautiful people and welcome to this very exciting section of the Course all about bash scripts
+
+2
+00:00:06,360 --> 00:00:11,340
+在接下来的几个视频中，您将了解如何创建自己的糟糕脚本，这些脚本令人难以置信
+and in the next few videos you're going to learn how you can create your own bad scripts which are incredibly
+
+3
+00:00:11,340 --> 00:00:14,810
+可让您自动执行工作流程的有用工具。
+useful tools that will allow you to automate your workflows.
+
+4
+00:00:14,850 --> 00:00:20,370
+现在，学习糟糕的脚本本身就是一个巨大的领域，它需要自己的课程
+Now learning about bad scripts is a massive field in and of itself and it would require its own course
+
+5
+00:00:20,610 --> 00:00:21,880
+适当地遮盖。
+to cover properly.
+
+6
+00:00:21,990 --> 00:00:26,520
+但在接下来的几个视频结束时，您将对以下内容有基本的了解
+But by the end of the next few videos you're going to have the fundamental understanding required about
+
+7
+00:00:26,520 --> 00:00:32,850
+脚本的工作方式以及如何创建它们，以便您可以开始使用
+how bad scripts work and how to create them so that you can begin automating your workflows using the
+
+8
+00:00:32,850 --> 00:00:35,250
+到目前为止，您在本课程中学到的命令。
+commands that you've learned so far in the course.
+
+9
+00:00:35,250 --> 00:00:40,500
+所以对你们来说这将是一次难以置信的学习，让你们明白
+So it's going to be an incredible an incredible piece of learning for you and to let you understand
+
+10
+00:00:40,520 --> 00:00:47,250
+您如何知道什么bash脚本或如何使用它们，或者您知道它们基本上是如何工作的，所以它可能非常
+how you know what bash scripts or how to use them or you know how they basically work so it can be very
+
+11
+00:00:47,250 --> 00:00:48,320
+非常令人兴奋。
+very exciting.
+
+12
+00:00:48,360 --> 00:00:52,480
+希望你已经准备好获得一些真正的超能力了，所以我们不要再胡闹了。
+Hope you're ready to gain some serious superpowers so let's not let's not mess around anymore.
+
+13
+00:00:52,560 --> 00:00:57,000
+让我们马上开始制作我们的第一批脚本吧。
+Let's go jump right in and start making our very first batch script.
+
+14
+00:00:57,000 --> 00:01:00,290
+好的，让我们继续创建一个简单的bash脚本。
+All right so let's go ahead and make a simple bash script.
+
+15
+00:01:00,460 --> 00:01:01,070
+就这么办吧。
+Let's do that.
+
+16
+00:01:01,080 --> 00:01:03,280
+我们所需要做的就是做一个文本文件。
+All we need to do is just make a text file.
+
+17
+00:01:03,390 --> 00:01:10,160
+为此，让我们继续在桌面上打开Nonno，并创建一个名为Our script doc的文件。
+So to do that let's go ahead and open up Nonno on our desktop and make a file called our script doc.
+
+18
+00:01:10,230 --> 00:01:11,640
+嘘，好的。
+SH OK.
+
+19
+00:01:11,850 --> 00:01:17,910
+所以当我给文件SH FARTLEKS文件扩展名时，我在这里所做的一切只是为了让我们更容易
+So all I'm doing here when I give the file SH fartleks file extension is just making it easier for us
+
+20
+00:01:17,910 --> 00:01:23,120
+查看这是一个bash脚本，其中SH是bash shell的缩写。
+to see that this is a bash script and with SH being short for for the bash shell.
+
+21
+00:01:23,250 --> 00:01:23,690
+好的。
+OK.
+
+22
+00:01:23,850 --> 00:01:29,490
+因此，如果我打开并按Ctrl和O保存它，您会看到脚本已在左侧弹出
+So if I open and press control and O to save it you'll see that the script has popped up on the left
+
+23
+00:01:29,490 --> 00:01:33,470
+如果我关闭它并清除屏幕，我们现在就有了这个文件。
+and if I just close that and clear the screen we've now got this file.
+
+24
+00:01:33,480 --> 00:01:35,400
+让我们仔细看看这个文件。
+Let's take a closer look at this file.
+
+25
+00:01:35,400 --> 00:01:37,700
+让我们看看它对贝壳有没有什么特别之处。
+Let's see if it's anything special to the shell.
+
+26
+00:01:37,770 --> 00:01:39,540
+使用FILE命令。
+Using the file command.
+
+27
+00:01:39,690 --> 00:01:45,650
+如果我把脚本SH归档，我们看到它不是，就外壳而言，没什么特别的。
+If I do file script SH We see that it's not it's nothing special as far as the shell is concerned.
+
+28
+00:01:45,690 --> 00:01:48,060
+这只是一个空文件。
+It's just an empty file.
+
+29
+00:01:48,060 --> 00:01:51,800
+不管这是圣人做的，还是圣人做的，是崇高的做的，还是点做的，都无关紧要。
+It doesn't matter whether this was done sage or datcha sublime or dot whatever.
+
+30
+00:01:51,810 --> 00:01:53,700
+这只是一个空文件。
+It's just an empty file.
+
+31
+00:01:53,790 --> 00:01:54,220
+好的。
+OK.
+
+32
+00:01:54,390 --> 00:02:00,750
+有了这条信息，让我们继续打开我们的脚本，让我们来做最重要的
+So with that piece of information let's go ahead and open our script and let's do the most important
+
+33
+00:02:00,750 --> 00:02:01,940
+你需要做的事。
+thing that you need to do.
+
+34
+00:02:01,960 --> 00:02:04,550
+当你写新剧本的时候。
+When ever you write a new script.
+
+35
+00:02:04,750 --> 00:02:05,160
+好的。
+OK.
+
+36
+00:02:05,370 --> 00:02:10,380
+您需要告诉它，这实际上是一个特殊的文件，并且该文件不仅仅是一个文本文件。
+You need to tell it that this is actually a special file and that this file isn't just a text file.
+
+37
+00:02:10,380 --> 00:02:17,400
+它需要使用某个解释器来读取，解释器是可以读取文件的东西
+It needs to be read using a certain interpreter there interpreter is something that will read a file
+
+38
+00:02:17,610 --> 00:02:22,480
+并将该文件中的每一行解释为特定类型的代码。
+and interpret each of the lines in that file as a certain type of code.
+
+39
+00:02:22,610 --> 00:02:23,060
+好的。
+OK.
+
+40
+00:02:23,160 --> 00:02:29,160
+所以不是只读cat OK，如果我告诉它这是一个bash脚本，它会说这是
+So instead of just reading cat OK if I told this that this is a bash script it would read this is the
+
+41
+00:02:29,160 --> 00:02:31,950
+猫的指挥权，而不只是凯特的指挥权，而且你了解这种动物。
+cat command instead of just Katter's And you know the animal.
+
+42
+00:02:32,020 --> 00:02:36,990
+好的，如果我阅读，例如，如果我输入ECHO，它会将此文件解释为ECHO命令。
+OK if I read eg if I typed echo it would interpret this file as the echo command.
+
+43
+00:02:36,990 --> 00:02:42,030
+它不会仅仅解释为你在洞穴里听到的回声，当你在洞穴里的时候，当你展示的时候
+It wouldn't just interpret it as an echo that you hear in you know when you are in a cave when you show
+
+44
+00:02:42,030 --> 00:02:44,800
+钻进洞里或者像石头一样的地方。
+into into a hole or somewhere like made of stone.
+
+45
+00:02:44,850 --> 00:02:45,450
+好的。
+OK.
+
+46
+00:02:45,450 --> 00:02:49,620
+所以这是我们注意到的重要部分，这不是一个普通的文本文件。
+So this is the important part we attended that this isn't a normal text file.
+
+47
+00:02:49,620 --> 00:02:54,970
+它需要解释为代码，更具体地说，需要解释为bash脚本。
+It needs to be interpreted as code and more specifically as a bash script.
+
+48
+00:02:54,990 --> 00:02:58,370
+因此，要做到这一点，你需要首先输入所谓的沙班古(Shabangu)。
+So to do that you need to first type what's called the Shabangu.
+
+49
+00:02:58,380 --> 00:03:00,890
+现在沙班古成了一堆杂碎。
+Now the Shabangu is a hash.
+
+50
+00:03:00,900 --> 00:03:01,650
+所以。
+So.
+
+51
+00:03:01,800 --> 00:03:07,990
+然后是阿班根感叹号和散列符号，这个感叹号叫做沙班古。
+And then Abangan exclamation mark and a hash symbol the exclamation mark is called the Shabangu.
+
+52
+00:03:08,160 --> 00:03:10,880
+然后输入解释器的路径。
+And then you type the path to the interpreter.
+
+53
+00:03:11,070 --> 00:03:15,250
+现在翻译在劈开宾客劈开狂欢。
+Now the bash interpreter is at slash bin slash Bash.
+
+54
+00:03:15,450 --> 00:03:17,150
+这是我们的第一条线。
+So this is our first line.
+
+55
+00:03:17,160 --> 00:03:19,200
+我们输入沙班古hash bang。
+We type the Shabangu hash bang.
+
+56
+00:03:19,290 --> 00:03:19,870
+好的。
+OK.
+
+57
+00:03:20,040 --> 00:03:22,410
+然后劈开宾客劈开。
+Then slash bin slash.
+
+58
+00:03:22,500 --> 00:03:29,460
+既然劈开已经是劈开了，那么抨击劈开就是通往羞愧翻译器的道路，如果我关闭它，我们就会看到这一点
+BASH Now that that slash been slash Bash is the path to abash interpreter and we can see that if I close
+
+59
+00:03:29,460 --> 00:03:35,310
+通过使用命令并键入bash从Nano输出，我们可以看到我们得到的劈开是劈开bash作为
+out of nano by using the command and typing Bash and we see that we get slash been slash bash as the
+
+60
+00:03:35,310 --> 00:03:37,680
+bash shell的路径。
+path to the bash shell.
+
+61
+00:03:37,800 --> 00:03:38,270
+好的。
+OK.
+
+62
+00:03:38,400 --> 00:03:42,710
+所以我们在这里要说的是，嘿，这不是一个普通的文本文件。
+So what we're saying here is hey this isn't a normal text file.
+
+63
+00:03:42,780 --> 00:03:50,610
+您需要使用bash解释此文件，bash shell解释器运行这是一个bash shell脚本。
+You need to interpret this file using the bash the bash shell interpreter run this is a bash shell script.
+
+64
+00:03:50,760 --> 00:03:56,370
+关键是这条线需要是第一条线，不能是第二条线有绝对的第一条
+And the key is this line needs to be the first line it cannot be the second line has the absolute first
+
+65
+00:03:56,370 --> 00:04:00,020
+而坎皮奥尼空位就在这条线上，所以你要马上完成这条线。
+line and the Campione space is on the line so you finish the line right away.
+
+66
+00:04:00,090 --> 00:04:00,510
+好的。
+OK.
+
+67
+00:04:00,630 --> 00:04:01,580
+当我们保存它的时候。
+And when we save that.
+
+68
+00:04:01,620 --> 00:04:07,590
+现在，如果我们看一下带有分叉的脚本，我们会发现它现在是一个shell脚本。
+Now if we look at the script with the with the fork and we see that it is now a shell script.
+
+69
+00:04:07,590 --> 00:04:12,380
+事实上，我是一个重生的贝壳脚本，再也不会重生了，贝壳是狂热的。
+In fact I'm a born again shellscript never born again shell is bash.
+
+70
+00:04:12,390 --> 00:04:16,290
+所以你重生了，我也要重生吗。
+So you've got born again shall I born again.
+
+71
+00:04:16,290 --> 00:04:17,480
+贝壳是狂欢的。
+Shell is bash.
+
+72
+00:04:17,970 --> 00:04:24,570
+这就是说这是一个bash shell脚本，它知道这一点，因为它有这个沙班古行。
+So this is saying it's a bash shell script and it knows that because it's got this this Shabangu line.
+
+73
+00:04:24,600 --> 00:04:28,950
+现在，如果您对Python编程有所了解，就会知道Python编程语言还
+Now if you know anything at Python programming you'll know that the Python programming language is also
+
+74
+00:04:28,950 --> 00:04:33,470
+解释的编程语言和运行某些东西的命令是Python脚本。
+an interpreted programming language and the command to run something is a Python script.
+
+75
+00:04:33,490 --> 00:04:38,580
+在Linux上，Python3可以用于Python3。
+On on on Linux is Python 3 OK for Python 3.
+
+76
+00:04:38,610 --> 00:04:44,970
+因此，如果我们输入哪个Python 3，它会告诉我们到Python 3解释器的路径，就像它一样
+So if we type which Python 3 it'll tell us the path to the to the Python 3 interpreter just like it
+
+77
+00:04:44,970 --> 00:04:46,420
+为木星做的事。
+did for the of Jupiter.
+
+78
+00:04:46,470 --> 00:04:52,770
+如果我再复制一遍开放的剧本，我再写一遍社邦台词，再写一遍沙班古。
+And if I copy the Open up script again and I write the shebang line again and write Shabangu.
+
+79
+00:04:53,130 --> 00:04:56,940
+所以Shebang，然后我在那里粘贴到Python解释器的路径。
+So shebang and then I paste in there the path to the Python interpreter.
+
+80
+00:04:56,940 --> 00:05:00,540
+因此，懒散使用了拉宾、劈开、佩弗和三号，并拯救了被代表的球员。
+So sloshy uses rapin slash Peiffer and three and save the repped.
+
+81
+00:05:00,810 --> 00:05:06,420
+如果我现在查看脚本，您可以看到shell现在看到这是一个Python脚本，所以
+If I now look at scripts you can see that the shell sees that this is now a Python script so that's
+
+82
+00:05:06,420 --> 00:05:11,250
+如果您想要用Python编程语言编写脚本，您将如何执行这类操作
+how you would do this kind of stuff if you wanted to write a script in the Python programming language
+
+83
+00:05:11,520 --> 00:05:18,030
+因为我们想要编写一个bash脚本，该脚本将为它提供指向bash解释器的路径
+because we want to write a bash script which is going to give it the path to the to the bash interpreter
+
+84
+00:05:18,030 --> 00:05:21,260
+劈开就是劈开狂欢省省吧。
+which is a slash being slash bash save that.
+
+85
+00:05:21,330 --> 00:05:26,490
+然后，当我们查看时，我们发现它又是一个重生的shell脚本bash脚本。
+And then when we look we see that it's again a born again shell script bash script.
+
+86
+00:05:26,490 --> 00:05:31,800
+好的，理解了这个重要概念后，让我们继续编辑bash密码分析，清除屏幕
+OK so with that important concept understood Let's go back to editing bash cryptanalysis clear the screen
+
+87
+00:05:32,160 --> 00:05:33,190
+以纳米为单位。
+in nano.
+
+88
+00:05:33,270 --> 00:05:38,490
+现在，我们在这里使用此特殊行编写的任何内容添加到下面编写的任何内容现在都将
+Now anything that we write in here with this special line added anything that we write below will now
+
+89
+00:05:38,490 --> 00:05:41,940
+就像它们在正常外壳中所做的那样被解释。
+be interpreted as they do in the normal shell.
+
+90
+00:05:41,940 --> 00:05:45,260
+举个例子，如果我写EKO，然后写一些类似的东西。
+So for example if I write Ecko and then something like.
+
+91
+00:05:45,360 --> 00:05:47,020
+你好，世界。
+Hello world.
+
+92
+00:05:47,200 --> 00:05:48,000
+好的。
+OK.
+
+93
+00:05:48,330 --> 00:05:51,600
+此行将被解释为命令。
+This line will be interpreted as a command.
+
+94
+00:05:51,600 --> 00:05:54,660
+这就像我刚刚在shell中键入echo Hello world一样。
+It's as if I just typed echo Hello world in my shell.
+
+95
+00:05:54,660 --> 00:05:55,800
+那么，让我们来看看这一点的实际效果。
+So let's see this in action.
+
+96
+00:05:55,800 --> 00:05:58,620
+好的，让我们使用CONTROL保存文件。
+OK let's save the file using control.
+
+97
+00:05:58,650 --> 00:05:59,730
+哦，好的。
+Oh OK.
+
+98
+00:06:00,030 --> 00:06:06,180
+现在，如果我们输入bash script，我们会看到它正在运行。
+And now if we type bash script we see that it's run.
+
+99
+00:06:06,180 --> 00:06:06,960
+你好，世界。
+Hello world.
+
+100
+00:06:06,960 --> 00:06:07,650
+这真是太酷了。
+How cool is that.
+
+101
+00:06:07,650 --> 00:06:07,890
+正确的。
+Right.
+
+102
+00:06:07,890 --> 00:06:10,410
+所以它运行了里面的命令。
+So it ran the commands that are inside there.
+
+103
+00:06:10,620 --> 00:06:12,970
+现在我们可以在脚本中做任何我们想做的事情。
+Now we can do what ever we want in our script.
+
+104
+00:06:12,960 --> 00:06:14,580
+我们就试着多加点东西吧。
+Let's just try and add more stuff.
+
+105
+00:06:14,580 --> 00:06:17,500
+好的，让我们用另一个打开它。
+OK let's let's let's open it up with another.
+
+106
+00:06:18,150 --> 00:06:23,940
+现在，让我们清除这个回声，我们只需要使用CUT命令，即控件来删除它
+And now let's clear out this echo thing let's just get rid of this using the cut command the control
+
+107
+00:06:23,940 --> 00:06:25,350
+好的，或者直接走整条线。
+OK or just go to the whole line.
+
+108
+00:06:25,380 --> 00:06:27,350
+这是删除一行的一个不错的小快捷方式。
+That's a nice little shortcut for deleting a line.
+
+109
+00:06:27,570 --> 00:06:30,030
+现在让我们在这里实际使用。
+Now let's actually use in here.
+
+110
+00:06:30,030 --> 00:06:33,690
+让我们试着创建一个名为Magic的文件。
+Let's let's try and create a file a folder called Magic.
+
+111
+00:06:33,810 --> 00:06:42,450
+好的，现在在我们的桌面上，在魔术文件夹中，我们将创建100个文件，然后我们将使用
+OK on our desktop now inside the magic folder we're going to make one hundred files and then we'll use
+
+112
+00:06:42,450 --> 00:06:47,790
+ls命令获取有关每个文件的信息，并保存它以保存所有信息
+the ls command to get information about each of those files and save it to save all the information
+
+113
+00:06:47,790 --> 00:06:49,940
+保存到我们桌面上的日志文件中。
+to a log file on our desktop.
+
+114
+00:06:50,150 --> 00:06:50,570
+好的。
+OK.
+
+115
+00:06:50,760 --> 00:06:52,520
+那么是什么命令。
+So what command.
+
+116
+00:06:52,680 --> 00:06:58,400
+这是一个测试，你知道吗，我们需要在桌面上创建一个名为Magic的文件夹。
+Here's a test for you know what come on would we need to create a folder called Magic on our desktop.
+
+117
+00:07:00,120 --> 00:07:03,020
+好的，我来写一下Moktar命令。
+Well M K D I'll come and write the Moktar command.
+
+118
+00:07:03,150 --> 00:07:04,670
+那么让我们来做这样一位导演吧。
+So let's make a director this type.
+
+119
+00:07:04,680 --> 00:07:08,810
+我在我们的桌面上。
+M d I are on our desktop.
+
+120
+00:07:09,390 --> 00:07:11,280
+让我们创建一个名为Magic的文件。
+Let's make a file called Magic.
+
+121
+00:07:11,390 --> 00:07:14,550
+好的，这将是我们的魔术目录。
+OK so that's going to be our magic directory.
+
+122
+00:07:14,550 --> 00:07:16,840
+现在我们需要在里面制作100个文件。
+Now we need to make 100 files in it.
+
+123
+00:07:16,980 --> 00:07:18,720
+那么我们该怎么做呢。
+So what might we do that.
+
+124
+00:07:18,900 --> 00:07:25,950
+我们可以移动到目录中，这样我们就可以使用CD移动到魔术目录，然后我们可以
+Well we might move into the Directory so we might move into the magic directory using CD then we might
+
+125
+00:07:25,950 --> 00:07:32,180
+触摸我猜100个文件的文件1到100。
+touch I guess 100 files of file one to 100.
+
+126
+00:07:32,210 --> 00:07:32,640
+好的。
+OK.
+
+127
+00:07:32,700 --> 00:07:33,830
+这可能就是我们要做的。
+That might be what we do.
+
+128
+00:07:34,110 --> 00:07:34,920
+到目前一切尚好。
+So far so good.
+
+129
+00:07:34,920 --> 00:07:37,680
+我们已经创建了一个名为Magic的文件夹。
+We've created a file called a folder called Magic.
+
+130
+00:07:37,680 --> 00:07:41,510
+我们进入文件夹，然后创建了100个文件。
+We've gone into the folder and then we've created 100 files.
+
+131
+00:07:41,700 --> 00:07:46,610
+现在，让我们像您知道的那样，创建，让我们使用LS命令来获取关于每个文件的数据。
+Now let's let's like you know create Let's use the LS command to get data about each of those files.
+
+132
+00:07:46,800 --> 00:07:54,990
+所以，如果我们使用ls命令，假设我们给它，假设我们想要使用长格式信息
+So if we use the ls command and we let's say give it let's say we want to use long form information
+
+133
+00:07:55,080 --> 00:08:03,020
+和人类可读的信息，并将所有这些保存到我们桌面上的一个名为Magic dot log的文件中。
+and human readable information and save all that to a file on our desktop called magic dot log.
+
+134
+00:08:04,010 --> 00:08:06,230
+好的，我们就到此为止吧。
+OK let's leave it there.
+
+135
+00:08:06,300 --> 00:08:12,180
+好的，我们所做的是，我们使用了make，我们在桌面上创建了一个目录，我们将其更改为
+OK so what we've done we've used the make We've made a directory on our desktop we have changed into
+
+136
+00:08:12,180 --> 00:08:19,670
+我们已经创建了100个文件，然后在上使用最后一个破折号El-Hage命令。
+that directory we've created 100 files and then we use the last dash El-Hage command on our.
+
+137
+00:08:19,760 --> 00:08:20,750
+实际上我应该。
+I should actually.
+
+138
+00:08:20,800 --> 00:08:22,470
+好在我查过了。
+Good thing I checked.
+
+139
+00:08:22,650 --> 00:08:28,490
+我应该检查我们的魔术文件夹，然后将所有信息重定向到一个名为Magic Do的文件中
+I should check our magic folder and then redirect all the information into a file called Magic don't
+
+140
+00:08:28,490 --> 00:08:28,770
+日志。
+log.
+
+141
+00:08:28,770 --> 00:08:31,810
+所以如果我把它留下来，他们就关门了。
+So if I save that they're closed.
+
+142
+00:08:32,070 --> 00:08:37,270
+现在，我们可以像查看任何其他文件一样，使用cat命令查看该文件的内容
+And now we we can see the contents of this file using the cat command just like any other file we can
+
+143
+00:08:37,280 --> 00:08:40,330
+这样做，我们就可以看到里面的东西了。
+do and we can see the contents.
+
+144
+00:08:40,620 --> 00:08:43,790
+但现在让我们继续实际运行它。
+But now let's go ahead and actually run it.
+
+145
+00:08:43,920 --> 00:08:44,230
+好的。
+OK.
+
+146
+00:08:44,310 --> 00:08:52,580
+所以，如果我们试图猛烈抨击我们的脚本，那么您看到了吗，我们已经设法在桌面上创建了一个文件夹。
+So if we try to bash our script buah Did you see that we've managed to create a folder on the desktop.
+
+147
+00:08:52,760 --> 00:09:01,130
+其中现在有100个文件，如果我们查看这个幻点日志文件，我们会看到详细信息
+Inside there there are now 100 files and if we look in this magic dot log file we see detailed information
+
+148
+00:09:01,220 --> 00:09:07,610
+关于该文件夹中的每个文件，就像我们告诉脚本这样做的那样，不是吗
+about every single one of the files inside that folder just like we told the script to do so isn't that
+
+149
+00:09:07,730 --> 00:09:13,790
+太棒了，对吧，这就是糟糕的脚本工作方式，你只需键入你想要的命令
+absolutely awesome right so this is how bad scripts work you basically type in the commands that you
+
+150
+00:09:13,790 --> 00:09:18,100
+我希望它就像您在普通shell中键入它们一样。
+want it to do just as if you were typing them in in the in the normal shell.
+
+151
+00:09:18,170 --> 00:09:24,550
+但好处是我们现在有了这个文件，我们可以随时保存并使用它。
+But the benefit is we now have this file that we can keep and do stuff with whenever we want.
+
+152
+00:09:24,660 --> 00:09:27,630
+他说你可以把这个留到以后再说。
+Said you can actually you know save that for later.
+
+153
+00:09:28,010 --> 00:09:30,200
+现在对你来说这应该是一个令人惊叹的时刻。
+Now this should be a moment of amazement for you.
+
+154
+00:09:30,230 --> 00:09:31,550
+所以想一想这个问题。
+So think about this for a moment.
+
+155
+00:09:31,560 --> 00:09:32,070
+好的。
+OK.
+
+156
+00:09:32,120 --> 00:09:36,770
+在Linux中，无论何时想要更改，都可以使用命令行控制任何内容
+In Linux you can control anything using the command line whatever you want whenever you want to change
+
+157
+00:09:36,770 --> 00:09:41,120
+无论是您的桌面背景，还是字体颜色，无论是您知道的消息
+whether it be your desktop background whether it be the font color whether it be you know messages that
+
+158
+00:09:41,120 --> 00:09:44,360
+登录时弹出您可以使用命令行更改任何内容。
+pop up when you log in you can change anything using the command line.
+
+159
+00:09:44,420 --> 00:09:44,890
+好的。
+OK.
+
+160
+00:09:45,080 --> 00:09:49,400
+您还可以编写脚本来保存命令行命令。
+And you can write scripts to hold command line commands.
+
+161
+00:09:49,400 --> 00:09:55,010
+因此，您可以编写可以在计算机上执行任何操作的脚本，并将其保存以备以后使用。
+So therefore you can write scripts that can do anything on your computer and save them for later.
+
+162
+00:09:55,020 --> 00:09:59,840
+您可以随时运行它们，因此bash脚本就是完整功能的一部分
+And you can run them whenever you want and bash scripts are therefore part of what give you complete
+
+163
+00:09:59,930 --> 00:10:06,250
+Linux机器的定制能力，它们是令人难以置信的强大工具。
+customized ability of a Linux machine and they are incredibly incredibly powerful tools.
+
+164
+00:10:06,260 --> 00:10:10,610
+你已经在这段视频中看到了如何制作一个bash脚本，但是在下一段视频中，我们要做的是
+So you've seen in this video how to make a bash script but in the next video what we're going to do
+
+165
+00:10:10,610 --> 00:10:14,510
+我们将从头再来一遍，我们将向您展示如何编写批处理脚本
+is we're going to do it all over again and we're going to show you how you can write a batch script
+
+166
+00:10:14,750 --> 00:10:18,410
+要定期备份以供使用，这将是非常非常酷的。
+to make regular backups for use that's going to be very very cool.
+
+167
+00:10:18,410 --> 00:10:22,010
+我还将向您展示如何以更方便的方式运行它。
+I'm going to show you how to run it in a much more convenient way as well.
+
+168
+00:10:22,010 --> 00:10:26,120
+我们将在这里播放视频，在下一个视频中，我们将通过显示
+So we're going to break the video here and in the next video we're going to pick it up again by showing
+
+169
+00:10:26,120 --> 00:10:29,080
+您将了解如何创建一个bash脚本来进行备份。
+you how to make a bash script to do backups.
+

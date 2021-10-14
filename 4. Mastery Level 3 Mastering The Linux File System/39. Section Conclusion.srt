@@ -1,0 +1,315 @@
+1
+00:00:00,390 --> 00:00:05,490
+So congratulations you've made it to the end of this section of the Course all about the Linux file
+
+2
+00:00:05,490 --> 00:00:10,530
+system not being able to effectively navigate the Linux file system and work with files is likely going
+
+3
+00:00:10,530 --> 00:00:14,190
+to be skills that you will use over and over and over again.
+
+4
+00:00:14,190 --> 00:00:16,380
+So congratulations for making it this far.
+
+5
+00:00:16,520 --> 00:00:16,920
+So.
+
+6
+00:00:16,980 --> 00:00:21,030
+So to celebrate your success so far in the course in this video have a quick review of what we have
+
+7
+00:00:21,030 --> 00:00:25,070
+covered in this section so you can see just how far that you have come.
+
+8
+00:00:25,160 --> 00:00:25,560
+OK.
+
+9
+00:00:25,710 --> 00:00:31,530
+So we first started off with a discussion of the structure of the file structure of the US system sorry.
+
+10
+00:00:31,560 --> 00:00:36,450
+And you saw that the whole file system has a tree like structure starting with a root directory and
+
+11
+00:00:36,450 --> 00:00:37,830
+branching out from there.
+
+12
+00:00:37,830 --> 00:00:42,570
+And once you understood that the structure of the file system and had a map to work with you learned
+
+13
+00:00:42,570 --> 00:00:48,450
+how to tell where your shell is currently operating from using the P WD command that PWT sounds will
+
+14
+00:00:48,450 --> 00:00:53,670
+print working directory and it basically prints out on your screen the location that your shell is currently
+
+15
+00:00:53,730 --> 00:00:54,580
+operating in.
+
+16
+00:00:54,660 --> 00:00:59,670
+And you also learn that you can do the same thing by glancing at your shell prompt which the bit of
+
+17
+00:00:59,670 --> 00:01:03,130
+text in your terminal on the left where you enter your commands.
+
+18
+00:01:03,180 --> 00:01:03,640
+OK.
+
+19
+00:01:03,720 --> 00:01:08,160
+Now once you saw how to find out where you while you saw had to move around the file system and change
+
+20
+00:01:08,160 --> 00:01:13,410
+directories using the cd command I had to look around by listing the contents of directories using the
+
+21
+00:01:13,410 --> 00:01:14,560
+L s command.
+
+22
+00:01:14,710 --> 00:01:19,710
+Now after learning these critical navigation commands you had a discussion about the meaning of file
+
+23
+00:01:19,710 --> 00:01:24,120
+extensions in Linux and you saw that file extensions don't matter much in X but might matter to the
+
+24
+00:01:24,120 --> 00:01:25,550
+programs running on it.
+
+25
+00:01:25,570 --> 00:01:29,790
+This means that you have the flexibility to give files whatever names that you want but remember that
+
+26
+00:01:29,790 --> 00:01:32,600
+you might want to stick to standard file conventions.
+
+27
+00:01:32,610 --> 00:01:37,110
+If you're expecting those files to be used by other programs then you learned about a feature of the
+
+28
+00:01:37,110 --> 00:01:41,130
+shell that I'm sure you fell in love with by now which is wildcards.
+
+29
+00:01:41,130 --> 00:01:45,660
+Now wildcards allow you to operate on many different files at once and just operate on specifically
+
+30
+00:01:45,660 --> 00:01:50,880
+what you are looking for which is which saves you lots of time and typing and it basically makes your
+
+31
+00:01:50,880 --> 00:01:52,760
+commands a whole lot more powerful.
+
+32
+00:01:52,770 --> 00:01:57,140
+Now once you had got those very important basics down you learned a whole bunch of commands.
+
+33
+00:01:57,190 --> 00:02:01,890
+I had to create files and directories copy them paste them delete them rename them move them around.
+
+34
+00:02:01,890 --> 00:02:06,480
+And also I had to edit them with a command line based text file editor called Nano.
+
+35
+00:02:06,660 --> 00:02:11,400
+But with all of this creation moving and editing of files it's quite likely that at some point you won't
+
+36
+00:02:11,400 --> 00:02:16,370
+know exactly where a file is created or located and you might need to find it.
+
+37
+00:02:16,380 --> 00:02:21,300
+So you use the locate command to find files on your system and you'll have the locate command uses a
+
+38
+00:02:21,300 --> 00:02:27,150
+database to find files and you saw how to use the update DBI command to update its database for security
+
+39
+00:02:27,150 --> 00:02:31,870
+reasons updating the database requies elevated privileges that normal users don't have.
+
+40
+00:02:31,920 --> 00:02:36,660
+So how do you use the sudo command to temporarily become the root user and do what you need to do.
+
+41
+00:02:36,690 --> 00:02:39,340
+And you can use that for any command not just the locate command.
+
+42
+00:02:39,490 --> 00:02:42,900
+Now although the locate command is awesome you can get the job done quickly.
+
+43
+00:02:42,900 --> 00:02:46,140
+Sometimes you need something a bit more customizable and heavy duty.
+
+44
+00:02:46,290 --> 00:02:51,390
+So after learning about the locate command you learn how to find files using the find command that find
+
+45
+00:02:51,390 --> 00:02:56,070
+command is a super powerful command that has loads of options to make sure that you can find what ever
+
+46
+00:02:56,070 --> 00:02:57,900
+you want on your system.
+
+47
+00:02:57,900 --> 00:03:01,800
+There it also has the added bonus that once you have found a bunch of files of directors with the find
+
+48
+00:03:01,800 --> 00:03:07,020
+command you can actually tell the find command to run under the command or series of commands for each
+
+49
+00:03:07,020 --> 00:03:08,650
+result that it finds.
+
+50
+00:03:08,650 --> 00:03:12,420
+And this allows you to create incredibly powerful functionality with very little effort.
+
+51
+00:03:12,690 --> 00:03:17,760
+And then you moved on to learn about how to look inside files using the cat command so that you can
+
+52
+00:03:17,760 --> 00:03:22,350
+also stick files together or concatenate different files using the cat command and sometimes you need
+
+53
+00:03:22,350 --> 00:03:23,160
+to reverse data.
+
+54
+00:03:23,160 --> 00:03:28,350
+So you saw that you can reverse files vertically using the attack command or horizontally using the
+
+55
+00:03:28,590 --> 00:03:29,800
+command.
+
+56
+00:03:29,850 --> 00:03:34,920
+Now sometimes when you open files or run commands you get a whole lot of output on the screen and having
+
+57
+00:03:34,950 --> 00:03:36,900
+all on the screen at once is not very helpful.
+
+58
+00:03:36,900 --> 00:03:41,610
+So you learnt about the last page a program that allows you to page through large amounts of text to
+
+59
+00:03:41,610 --> 00:03:46,380
+make it more manageable and you also learned a whole host of useful tactics for getting just what you
+
+60
+00:03:46,380 --> 00:03:47,540
+want from a file.
+
+61
+00:03:47,610 --> 00:03:53,280
+So is the head command the tail command and grep command then you saw how you can sort of files content
+
+62
+00:03:53,280 --> 00:03:54,620
+in a variety of different ways.
+
+63
+00:03:54,630 --> 00:03:59,320
+And finally we topped off the discussion with a look at file archiving and compression.
+
+64
+00:03:59,370 --> 00:04:03,810
+So you've really learned a lot of stuff in this section and you should be incredibly proud of yourself
+
+65
+00:04:03,860 --> 00:04:04,640
+so well.
+
+66
+00:04:04,650 --> 00:04:05,700
+Well done.
+
+67
+00:04:05,700 --> 00:04:08,420
+Now you will use the skills that you've learned here all the time.
+
+68
+00:04:08,430 --> 00:04:09,810
+We all work with that and it's come on line.
+
+69
+00:04:09,810 --> 00:04:14,050
+So it's a really amazing moment right now in your Linux skills development.
+
+70
+00:04:14,070 --> 00:04:18,810
+So in the next section you're going to learn about how you can schedule and automate tasks on your system
+
+71
+00:04:19,080 --> 00:04:22,600
+using bash scripts and a super useful utility called Krumm.
+
+72
+00:04:22,800 --> 00:04:26,400
+But before we get to that I have a project for you to complete.
+
+73
+00:04:26,430 --> 00:04:31,500
+Now the project will challenge you to do various things with the Linux file system and use a whole bunch
+
+74
+00:04:31,500 --> 00:04:34,960
+of the commands and build a really advanced pipeline.
+
+75
+00:04:35,050 --> 00:04:40,110
+OK now it's going to be awesome and it will serve as a badge of honor that you have learned everything
+
+76
+00:04:40,140 --> 00:04:44,830
+that we've covered in this section of the course so you can feel confident moving on.
+
+77
+00:04:44,850 --> 00:04:47,940
+So in the next video I'm going to be giving you a project brief.
+
+78
+00:04:48,000 --> 00:04:52,290
+So congratulations once again for what you've done in the section you're doing amazingly.
+
+79
+00:04:52,290 --> 00:04:55,430
+I'm super proud of you and I'll see you in the next video.

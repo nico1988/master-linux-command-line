@@ -1,0 +1,539 @@
+1
+00:00:00,390 --> 00:00:01,810
+Hello you beautiful people.
+
+2
+00:00:01,800 --> 00:00:07,500
+And welcome back we're going to be continuing our discussion of the find command and how we can control
+
+3
+00:00:07,560 --> 00:00:08,740
+the search depth.
+
+4
+00:00:08,780 --> 00:00:10,640
+The find command searches too.
+
+5
+00:00:10,830 --> 00:00:15,930
+So if I open up our file Explora I've made a few few new folders.
+
+6
+00:00:16,020 --> 00:00:20,460
+So in our documents folder I have made a folder called Level 2.
+
+7
+00:00:20,520 --> 00:00:23,320
+And inside there I've got a file called to text.
+
+8
+00:00:23,520 --> 00:00:28,110
+And then a folder called Level 3 and it's either I've got a file called 3 that he actually then Level
+
+9
+00:00:28,110 --> 00:00:32,570
+4 for 4.6 state level 5 and 5.10 60 where it ends.
+
+10
+00:00:32,610 --> 00:00:37,770
+OK and we're going to be using this to take a look at how we can control the search depth that the find
+
+11
+00:00:37,770 --> 00:00:39,590
+command searches too.
+
+12
+00:00:39,780 --> 00:00:45,150
+So all of that stuff is in our documents folder and you can see here I'm going to change into our documents
+
+13
+00:00:45,150 --> 00:00:48,540
+folder and use an ls and you can see that level 2 is in there.
+
+14
+00:00:48,540 --> 00:00:50,210
+So this is what we're seeing at the minute.
+
+15
+00:00:50,220 --> 00:00:52,590
+This is what we are currently in.
+
+16
+00:00:52,590 --> 00:00:55,090
+Like I said Clay the screen and start a discussion.
+
+17
+00:00:55,380 --> 00:01:00,460
+If I just run the find command from here the find command will search to an infinite depth.
+
+18
+00:01:00,480 --> 00:01:02,860
+It will list every file and every folder.
+
+19
+00:01:02,940 --> 00:01:05,500
+From this point in the file system.
+
+20
+00:01:05,520 --> 00:01:13,380
+OK so from here and downwards so if I run that you'll see it shows us Level 2 and it will show us everything
+
+21
+00:01:13,410 --> 00:01:14,470
+inside there.
+
+22
+00:01:14,490 --> 00:01:22,230
+So you'll see we get to up to 60 and it shows a level 3 3.6 16 level for 4.6 level 5 and 5.20 everything
+
+23
+00:01:22,260 --> 00:01:23,530
+is shown in there.
+
+24
+00:01:23,700 --> 00:01:29,620
+But we can control the depth of the come on searches too by using the max depth option.
+
+25
+00:01:29,730 --> 00:01:31,080
+So let me show you how we do that.
+
+26
+00:01:31,080 --> 00:01:36,270
+So if we type find We're going to again start from our current working directory we can actually specify
+
+27
+00:01:36,270 --> 00:01:41,460
+that to make it a bit clearer by using the dot by the way remember dot means this directory.
+
+28
+00:01:41,580 --> 00:01:46,170
+So I'm actually going to use this from now on I'm just going to always start by saying OK start from
+
+29
+00:01:46,170 --> 00:01:48,250
+this directory by using the dot.
+
+30
+00:01:48,300 --> 00:01:48,710
+OK.
+
+31
+00:01:48,930 --> 00:01:55,620
+So the max depth option you type 1 dash and then max depth and you can specify the depth here so let's
+
+32
+00:01:55,620 --> 00:01:56,760
+say we put 1.
+
+33
+00:01:56,880 --> 00:02:01,020
+So the first thing you might notice is Ziyad Why is that just one dash of what you said for long form
+
+34
+00:02:01,020 --> 00:02:01,770
+options.
+
+35
+00:02:01,770 --> 00:02:02,920
+These have two dashes.
+
+36
+00:02:03,000 --> 00:02:03,800
+Well that's right.
+
+37
+00:02:03,840 --> 00:02:07,340
+But for the finite amount you only have one dash for these options.
+
+38
+00:02:07,360 --> 00:02:13,290
+OK because so many of them the so many long form options I guess they tried to save you typing by just
+
+39
+00:02:13,620 --> 00:02:15,270
+reducing it to one dash.
+
+40
+00:02:15,270 --> 00:02:15,690
+OK.
+
+41
+00:02:15,840 --> 00:02:22,500
+So here we are we have just one dash max depth and then one and this is say on research to a maximum
+
+42
+00:02:22,500 --> 00:02:23,090
+depth of 1.
+
+43
+00:02:23,130 --> 00:02:23,430
+Really.
+
+44
+00:02:23,460 --> 00:02:25,080
+So if we see that we'll see what happens.
+
+45
+00:02:25,230 --> 00:02:27,990
+You see here that we only see the level 2 folder.
+
+46
+00:02:27,990 --> 00:02:37,250
+So a max depth of 1 is just like seeing what you see here it only shows you what is in the current directory.
+
+47
+00:02:37,380 --> 00:02:44,210
+OK now if I do max depth of two that's like showing you what's here and what's one level down.
+
+48
+00:02:44,340 --> 00:02:50,160
+OK so if we if we take a look here what we should see is we should see Level 2 and then it will go inside
+
+49
+00:02:50,190 --> 00:02:51,860
+and it will show you 2.6 T.
+
+50
+00:02:51,890 --> 00:02:58,080
+I'm the level 3 folder because if we run that Muxtape have to level 2 which is here it's showing us
+
+51
+00:02:58,080 --> 00:02:58,940
+the level 2 folder.
+
+52
+00:02:58,940 --> 00:03:02,150
+This is where we start shoguns level 2 Walda going in there.
+
+53
+00:03:02,380 --> 00:03:04,530
+She goes to the up to 60 and level 3.
+
+54
+00:03:04,530 --> 00:03:07,940
+So we see the level 2 folder to 60 and level 3.
+
+55
+00:03:08,030 --> 00:03:08,480
+OK.
+
+56
+00:03:08,580 --> 00:03:14,010
+Now if we want to go to max depth of three that's going to go down another level into Level 3.
+
+57
+00:03:14,060 --> 00:03:21,540
+Ok so for Rama we'll see that we see three that takes T level the level 4 folder shown as well.
+
+58
+00:03:21,540 --> 00:03:24,720
+If we keep going deeper we do Max up the four.
+
+59
+00:03:24,870 --> 00:03:30,740
+We're now starting to take a look inside level 4 we're seeing 4.6 T and the level 5 folder.
+
+60
+00:03:30,750 --> 00:03:37,210
+And if we do Muxtape the 5 it's going to go down even further all the way until we see 5.6.
+
+61
+00:03:37,380 --> 00:03:42,810
+And you can give it like you know a max depth of 100 and it will still work because all you're defining
+
+62
+00:03:42,810 --> 00:03:44,310
+is a maximum depth.
+
+63
+00:03:44,400 --> 00:03:44,880
+OK.
+
+64
+00:03:45,000 --> 00:03:47,130
+It doesn't mean it will go all that way.
+
+65
+00:03:47,130 --> 00:03:50,310
+That's just as far as it could go if it was possible.
+
+66
+00:03:50,390 --> 00:03:51,830
+Get there by default.
+
+67
+00:03:51,850 --> 00:03:53,340
+And there is no maximum depth.
+
+68
+00:03:53,340 --> 00:03:55,260
+So it will list everything here.
+
+69
+00:03:55,260 --> 00:04:00,690
+We don't have to specify a maximum depth if you wanted to go all the way into the factory but if you
+
+70
+00:04:00,690 --> 00:04:05,520
+want to limit how far it goes that's when you use the max depth option and you say hey I only want you
+
+71
+00:04:05,520 --> 00:04:07,620
+to show me what's in this folder.
+
+72
+00:04:07,620 --> 00:04:13,260
+That's when you use max depth of one and it's incredibly useful for listing out what's in the current
+
+73
+00:04:13,380 --> 00:04:14,440
+folder.
+
+74
+00:04:14,460 --> 00:04:19,560
+Now if we just clear the screen there's another really great option that the find command has which
+
+75
+00:04:19,560 --> 00:04:20,910
+is the type option.
+
+76
+00:04:20,910 --> 00:04:26,730
+So if we just go all the way back up to our documents here the type option allows you to search for
+
+77
+00:04:26,730 --> 00:04:33,960
+just files or just directories notice by default the find command lists both lists both files and directories
+
+78
+00:04:33,990 --> 00:04:37,150
+but the type that you specify just one.
+
+79
+00:04:37,290 --> 00:04:42,840
+So if I start here and in our documents folder I list everything starting this fall you see that we
+
+80
+00:04:42,840 --> 00:04:46,310
+list out the folders and their files.
+
+81
+00:04:46,380 --> 00:04:53,430
+But if I said OK I just want to list out the files what I do is type the type option with again noticing
+
+82
+00:04:53,430 --> 00:04:54,460
+just one dash.
+
+83
+00:04:54,660 --> 00:04:58,160
+And if I just want files I would type f f file.
+
+84
+00:04:58,230 --> 00:04:58,620
+OK.
+
+85
+00:04:58,770 --> 00:05:06,720
+So if I press Enter now now you'll see that we just get 4.6 take 5.6 take 3.6 D and 2.6.
+
+86
+00:05:06,750 --> 00:05:08,750
+We just get the files.
+
+87
+00:05:08,760 --> 00:05:13,620
+Likewise I could just get the folders by pressing instead of having f have D.
+
+88
+00:05:13,620 --> 00:05:19,440
+Like I say if I type D you know when I just get the folders so level 2 folder level 3 folder level 4
+
+89
+00:05:19,440 --> 00:05:22,040
+folder and the level 5 folder.
+
+90
+00:05:22,140 --> 00:05:22,450
+OK.
+
+91
+00:05:22,470 --> 00:05:25,070
+Starting at this directory here.
+
+92
+00:05:25,140 --> 00:05:26,280
+OK.
+
+93
+00:05:26,460 --> 00:05:30,740
+And you can combine this of course with the max depth option.
+
+94
+00:05:30,820 --> 00:05:31,200
+OK.
+
+95
+00:05:31,320 --> 00:05:39,720
+So if I do max depth of one now all we're doing is we're going to a maximum depth of 1 and just showing
+
+96
+00:05:39,720 --> 00:05:40,200
+the folders.
+
+97
+00:05:40,200 --> 00:05:44,970
+Now I did this on purpose to show you that if you put them this way around you'll get a warning and
+
+98
+00:05:44,970 --> 00:05:52,140
+it says warning you have specified the max depth option after a non option argument type but options
+
+99
+00:05:52,230 --> 00:05:53,160
+are not positional.
+
+100
+00:05:53,160 --> 00:05:55,700
+OK I'll tell you what this means shortly.
+
+101
+00:05:55,830 --> 00:05:56,510
+Really quickly.
+
+102
+00:05:56,520 --> 00:06:00,950
+OK what this means is just put max depth first.
+
+103
+00:06:01,440 --> 00:06:02,340
+That's what you've got to do.
+
+104
+00:06:02,380 --> 00:06:03,330
+And that warning goes away.
+
+105
+00:06:03,330 --> 00:06:07,110
+So if you're going to specify multiple options you put the max depth first if I could if I clear the
+
+106
+00:06:07,110 --> 00:06:10,210
+screen you'll see that warning goes away.
+
+107
+00:06:10,470 --> 00:06:14,190
+So I was searching to a maximum depth of one and showing all the directories.
+
+108
+00:06:14,190 --> 00:06:16,050
+That's go to a maximum depth of two.
+
+109
+00:06:16,180 --> 00:06:24,350
+When I was seeing the level 3 folder for this maximum depth for let's say not 42 max depth of four I
+
+110
+00:06:24,390 --> 00:06:28,280
+see three types of the maximum of three we're going to level three.
+
+111
+00:06:28,320 --> 00:06:32,310
+And we're seeing the level four fold up and if we go into the level four folder we'll see a level 5
+
+112
+00:06:32,310 --> 00:06:38,240
+folder and if we go into the level 5 go to Level 5 it won't make any difference because all that's in
+
+113
+00:06:38,280 --> 00:06:45,060
+Level 5 is another file which isn't being shown because all we're looking for is directory's OK.
+
+114
+00:06:45,240 --> 00:06:47,190
+So if I go and change that to an F..
+
+115
+00:06:47,200 --> 00:06:51,570
+Now you'll see we list all the files and it works exactly the same.
+
+116
+00:06:51,570 --> 00:06:56,820
+So these are really good options to combine together and there's loads of things that you can do to
+
+117
+00:06:56,820 --> 00:07:00,600
+customize the way that the find command actually searches.
+
+118
+00:07:00,600 --> 00:07:09,270
+But just to quickly summarize that the type option has two possible inputs you could give a F for file
+
+119
+00:07:09,480 --> 00:07:11,400
+or D for directory.
+
+120
+00:07:11,400 --> 00:07:13,350
+And if you're going to use it with the find command.
+
+121
+00:07:13,500 --> 00:07:17,330
+Make sure that you give it the max depth option first.
+
+122
+00:07:17,410 --> 00:07:17,690
+OK.
+
+123
+00:07:17,700 --> 00:07:19,590
+And if you're going to specify where to start from.
+
+124
+00:07:19,590 --> 00:07:24,900
+Make sure that comes as well so if we're going to do in ETSI folder I'm going to list every single file
+
+125
+00:07:24,990 --> 00:07:25,920
+in the SC folder.
+
+126
+00:07:25,920 --> 00:07:29,660
+Let's say but only to a maximum depth of 1.
+
+127
+00:07:29,700 --> 00:07:30,510
+There you are.
+
+128
+00:07:30,540 --> 00:07:33,630
+This is every single file that is in the ETSI folder.
+
+129
+00:07:33,760 --> 00:07:34,950
+And you just clear the screen and do that.
+
+130
+00:07:34,950 --> 00:07:38,610
+This is every single file MENC folder without any directories.
+
+131
+00:07:38,670 --> 00:07:42,940
+And if we just want to see the directories then here they are.
+
+132
+00:07:43,080 --> 00:07:47,280
+So that's a very useful combination of commands to have there.
+
+133
+00:07:47,460 --> 00:07:50,100
+And it will come very useful in your assignment.
+
+134
+00:07:50,100 --> 00:07:53,880
+So I'm going to break this video here keep it nice and short and sweet and the next video we're going
+
+135
+00:07:53,880 --> 00:07:56,570
+to pick up with some more awesome stuff you can do with the find command.

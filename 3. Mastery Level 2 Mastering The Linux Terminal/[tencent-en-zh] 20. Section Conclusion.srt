@@ -1,0 +1,230 @@
+1
+00:00:00,390 --> 00:00:02,150
+你好，你这个漂亮的人。
+HELLO YOU BEAUTIFUL PERSON.
+
+2
+00:00:02,380 --> 00:00:02,850
+井。
+Well.
+
+3
+00:00:02,850 --> 00:00:06,470
+嗯，你现在一定为自己感到无比自豪。
+Well you must be feeling super proud of yourself right now right.
+
+4
+00:00:06,480 --> 00:00:11,160
+你在课程的这一部分已经走到了这一步，所以为了充分庆祝我想要制作一段视频
+You've come so far in this section of the course so to fully celebrate that I wanted to make a video
+
+5
+00:00:11,160 --> 00:00:16,410
+快速回顾一下，这样您就可以沉浸在您在
+and have a quick recap so that you can soak in all the awesome stuff you've learned in the section of
+
+6
+00:00:16,410 --> 00:00:17,110
+这门课。
+the course.
+
+7
+00:00:17,190 --> 00:00:21,660
+因此，您从非常基础的开始，学习了如何使用图形打开和关闭航站楼
+So you started off with the very basics and you learned how to open and close the terminal using graphical
+
+8
+00:00:21,660 --> 00:00:25,500
+方法，并使用现在广受欢迎的键盘快捷键。
+methods and by using And now beloved keyboard shortcuts.
+
+9
+00:00:25,500 --> 00:00:29,970
+一开始对你来说很陌生，但你还是直接跳了进来，开始打字
+And it was all very strange to you at first but you jumped right in anyway and you started typing and
+
+10
+00:00:29,970 --> 00:00:34,940
+使用第一个命令，您可以看到DATE命令、CAL命令和ECHO命令。
+using your first commands you saw the date command the Cal command and the echo command.
+
+11
+00:00:35,040 --> 00:00:37,490
+你看到了如何清除你的学期历史。
+And you saw how to clear your term history.
+
+12
+00:00:37,620 --> 00:00:40,820
+我们毕竟不想让任何间谍看历史，我们也不想。
+We don't want any spies looking at history after all do we.
+
+13
+00:00:40,970 --> 00:00:45,270
+他们，我们正在取得进展，但这一切都有些奇怪，你可能不太确定是什么
+They we're making progress but it was all kind of weird and you probably weren't too sure of what was
+
+14
+00:00:45,270 --> 00:00:47,410
+当您运行命令时，实际上正在运行。
+actually going on when you run a command.
+
+15
+00:00:47,460 --> 00:00:50,390
+然后，您了解了终端和外壳之间的区别。
+So then you learned the difference between the terminal and the shell.
+
+16
+00:00:50,420 --> 00:00:54,480
+您了解到shell解释您键入的命令，就像解释
+You learned that the shell is what interprets the commands that you type just like you interpret the
+
+17
+00:00:54,480 --> 00:00:56,730
+你所读单词的含义。
+meanings of words that you read.
+
+18
+00:00:56,730 --> 00:01:00,950
+当你理解了什么是实际的命令时，你就了解了命令的一般结构。
+And when you understood what commands actually were you learned the general structure of a command.
+
+19
+00:01:00,990 --> 00:01:05,070
+了解了命令遵循命令名选项参数结构。
+Learned the commands follow a command name options arguments structure.
+
+20
+00:01:05,140 --> 00:01:05,600
+好的。
+OK.
+
+21
+00:01:05,730 --> 00:01:11,760
+现在，因为很明显，尽管命令遵循相似的结构，但它们确实有很大的不同
+Now because it became clear that although commands follow a similar structure they do vary quite a bit
+
+22
+00:01:11,760 --> 00:01:12,680
+在他们的使用中。
+in their usage.
+
+23
+00:01:12,810 --> 00:01:16,980
+他们每个人都有自己特定的选项和用例，要记住它们是不可能的
+They each have their own specific options and use cases and it would be impossible to memorize them
+
+24
+00:01:16,980 --> 00:01:17,480
+全。
+all.
+
+25
+00:01:17,490 --> 00:01:22,020
+因此，您学习了如何查看Linux手册，了解了手册是如何分解的，您可以看到
+So you learned how to look in the Linux manual you learned how the manual was broken up and you saw
+
+26
+00:01:22,020 --> 00:01:26,910
+如何搜索术语和阅读手册页面，以及如何自己学习新事物和查找
+how to search for terms and read the manual pages and how to learn new things for yourself and find
+
+27
+00:01:26,910 --> 00:01:30,170
+事情在你需要的时候就去做，而不是必须记住所有的事情。
+things as and when you need them rather than having to memorize everything.
+
+28
+00:01:30,180 --> 00:01:33,810
+这就像在你的电脑上有你自己的个人搜索引擎，这是相当令人难以置信的
+So it's like having your own personal search engine for your computer which is pretty incredible in
+
+29
+00:01:33,810 --> 00:01:34,500
+这是我的意见。
+my opinion.
+
+30
+00:01:34,740 --> 00:01:39,420
+现在，我们更深入地讨论，您了解到命令可以将输入作为标准
+Now then we took our discussion even deeper and you learned that commands can take input a standard
+
+31
+00:01:39,420 --> 00:01:44,760
+输入和命令行参数，它们可以通过标准输出和标准错误数据获得输出
+input and command line arguments and they can get output via standard output and standard error data
+
+32
+00:01:44,760 --> 00:01:45,630
+溪流。
+streams.
+
+33
+00:01:45,630 --> 00:01:50,400
+因此，我必须将这些数据流重定向到您希望的任何位置，以及如何将不同的命令连接在一起
+So I had to redirect these data streams to wherever you wish and how to pipe together different commands
+
+34
+00:01:50,400 --> 00:01:52,290
+建造强大的管道。
+to build powerful pipelines.
+
+35
+00:01:52,290 --> 00:01:57,280
+我希望使用T命令和X Ogg命令来获得额外的管道灵活性。
+I hope to use the T command and the X Ogg's command for extra pipeline flexibility.
+
+36
+00:01:57,440 --> 00:02:01,580
+你在这么短的时间内走了这么远，这真的很令人惊讶。
+And this really is amazing how far you've come in such a short amount of time.
+
+37
+00:02:01,580 --> 00:02:05,880
+所以我想制作这个视频来祝贺你到目前为止取得的进步，你做得很好，你这台小电脑
+So I want to make this video to congratulate you on your progress so far so well done you little computer
+
+38
+00:02:05,880 --> 00:02:10,200
+天才您现在在下一节中，您将学习如何导航Linux文件系统和
+genius you now in the next section you're going to learn about navigating the Linux file system and
+
+39
+00:02:10,200 --> 00:02:13,470
+您还将学习一些在管道中使用的新构建块。
+you'll also learn some new building blocks to use in your pipelines.
+
+40
+00:02:13,470 --> 00:02:18,540
+但在此之前，我有一个项目要给你完成，这个项目将挑战你建造你的
+But before that I have a project for you to complete the project will challenge you to build your very
+
+41
+00:02:18,540 --> 00:02:20,210
+拥有Linux命令管道。
+own Linux command pipeline.
+
+42
+00:02:20,220 --> 00:02:24,060
+现在它将会很棒，它将作为荣誉的徽章，因为你已经学到了所有的东西
+Now it's going to be awesome and it will serve as a badge of honor that you have learned everything
+
+43
+00:02:24,060 --> 00:02:28,170
+我们已经在这一节讲到了这些，这样你们就可以有信心在下一个视频中继续下去了，我是
+that we've covered in this section so that you can feel confident moving on now in the next video I'm
+
+44
+00:02:28,170 --> 00:02:29,560
+我会给你你的项目摘要。
+going to be giving you your project brief.
+
+45
+00:02:29,580 --> 00:02:32,970
+再次祝贺你做得令人惊叹。
+So congratulations once again you're doing amazingly.
+
+46
+00:02:32,970 --> 00:02:33,640
+我们在那里见。
+And I'll see you there.
+

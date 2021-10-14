@@ -1,0 +1,575 @@
+1
+00:00:00,210 --> 00:00:04,700
+所以在过去的几个视频中，我们已经了解了很多关于我们的包管理器以及它是如何工作的。
+So in the last few videos we've been learning a whole lot about our package manager and how it works.
+
+2
+00:00:04,830 --> 00:00:09,120
+我们了解了现金和它的用途，我们已经了解了如何更新现金和如何
+And we learned about the cash and what it's for we've learned about how to update the cash and how to
+
+3
+00:00:09,120 --> 00:00:13,410
+使用包管理器将我们系统上的所有软件升级到最新版本
+upgrade all of the software on our system to the newest versions using the package manager which is
+
+4
+00:00:13,410 --> 00:00:15,370
+都是超级棒的东西。
+all super awesome stuff.
+
+5
+00:00:15,750 --> 00:00:18,080
+但是我们怎么才能安装新的软件包呢？
+But how can we install new packages.
+
+6
+00:00:18,090 --> 00:00:19,130
+这就是我们想知道的。
+That's what we want to know.
+
+7
+00:00:19,260 --> 00:00:23,640
+根据您从前面的视频中获得的背景知识，安装将会非常简单
+Well with the background that you've gained from the previous videos install it will be really easy
+
+8
+00:00:23,640 --> 00:00:26,360
+去理解，而不仅仅是一些你必须记住的东西。
+to understand and not just something that you have to memorize.
+
+9
+00:00:26,460 --> 00:00:31,270
+在本视频结束时，您将了解如何从命令行安装新软件。
+And by the end of this video you will know how to install new software from the command line.
+
+10
+00:00:31,290 --> 00:00:33,810
+因此，让我们继续并直接投入其中。
+So let's go ahead and jump right into it.
+
+11
+00:00:35,150 --> 00:00:35,550
+好的。
+OK.
+
+12
+00:00:35,580 --> 00:00:39,900
+因此，无论我们是否知道我们的现金和系统都是最新的，让我们继续安装一些新的
+So whether we know that our cash and system are fully up to date let's go ahead and install some new
+
+13
+00:00:39,900 --> 00:00:40,620
+软件。
+software.
+
+14
+00:00:40,740 --> 00:00:45,840
+比方说，我听说过一个叫“X眼”的程序，显然X总是用
+So let's say that I've heard of a program called X eyes and X always apparently makes a window with
+
+15
+00:00:45,840 --> 00:00:48,830
+一些有趣的眼睛会随着鼠标光标在屏幕上弹出来。
+some funny eyes pop up that follow your mouse cursor around the screen.
+
+16
+00:00:48,840 --> 00:00:51,230
+我认为这很有趣，我想安装它。
+And I think this is interesting and I want to install it.
+
+17
+00:00:51,270 --> 00:00:54,730
+要做到这一点，首先我们需要知道消费税程序包含在什么包中。
+So do that first we need to know what package the excise program comes in.
+
+18
+00:00:54,840 --> 00:01:00,390
+那么让我们在缓存中搜索它，我们这样做的方式是，我们执行apt缓存搜索，以查找Exex和它
+So let's search the cache for it the way that we do that is we do apt cache search for excise and it
+
+19
+00:01:00,390 --> 00:01:02,820
+会给我们所有和消费税有关的包裹。
+will give us every package that has something to do with excise.
+
+20
+00:01:02,820 --> 00:01:08,150
+我们听说过这个叫做x11应用程序的软件包，比方说，我们喜欢啊，这就是我听说过的
+And we've heard of this package called x 11 apps let's say and we like ah that's the one I've heard
+
+21
+00:01:08,150 --> 00:01:10,280
+让我去仔细看看吧。
+of let me go and have a closer look at it.
+
+22
+00:01:10,290 --> 00:01:15,010
+所以我们做apt Cash show x11个应用程序。
+So we do we do apt Cash show x 11 apps.
+
+23
+00:01:15,150 --> 00:01:15,490
+好的。
+OK.
+
+24
+00:01:15,510 --> 00:01:19,410
+所以你在这里给它提供包裹的名称，这会给我们一堆信息。
+So you give it the name of the package here and that will give us a bunch of information.
+
+25
+00:01:19,420 --> 00:01:23,520
+不过，让我们把屏幕清理干净，通过更少的管道，这样我们就能更仔细地看一看。
+But let's just clear the screen and pipe that through less so we get a bit of a closer look.
+
+26
+00:01:23,640 --> 00:01:24,200
+好的。
+OK.
+
+27
+00:01:24,330 --> 00:01:28,600
+当我们在这里打开这个的时候，我们可以看到，实际上我们得到了很多关于这个包的信息。
+And when we open this here we can see that actually that we get a lot of information about the package.
+
+28
+00:01:28,680 --> 00:01:33,630
+但是在下面的描述中，它说这个包裹提供了各种X
+But down here in the description it says that this package provides a miscellaneous assortment of X
+
+29
+00:01:33,630 --> 00:01:39,320
+X Window System附带的应用程序，包括，它会告诉我们，我们有一些东西
+applications that ship with the X Window System including And it will tell us that we've got something
+
+30
+00:01:39,330 --> 00:01:45,330
+用于操作位图图像的工具可以告诉您何时有新的电子邮件和
+tools for manipulating bitmap images something for a tool that tells you when you have new e-mail and
+
+31
+00:01:45,330 --> 00:01:45,690
+等等。
+so on.
+
+32
+00:01:45,690 --> 00:01:51,600
+这里有一个叫“X眼”的项目，附加活动是一个演示程序，在这个项目中，一双眼睛跟踪
+And then there's a one here called X eyes and an excise is a demo program in which a pair of eyes track
+
+33
+00:01:51,750 --> 00:01:52,590
+指针。
+the pointer.
+
+34
+00:01:52,620 --> 00:01:56,790
+这就是我们想要的，我们意识到实际上我们想看看这也是另一个
+So that's what we want and we realize that actually we want to have a look at this is also another one
+
+35
+00:01:56,790 --> 00:02:01,560
+名为X man，这是一个手册页面浏览器，您知道它可能也很有用。
+called X man which is a manual page browser which you know might be useful as well.
+
+36
+00:02:01,560 --> 00:02:05,390
+好的，现在我们非常确定要安装x11应用程序包。
+OK so now we're pretty convinced we want to install the x 11 apps package.
+
+37
+00:02:05,520 --> 00:02:06,380
+我们怎么能做到这一点。
+How can we do that.
+
+38
+00:02:06,510 --> 00:02:12,420
+实际上很容易做到，如果我们只在清空屏幕的时候离开，或者我们已经完成了这项工作，那么我们就可以很容易地做到这一点。
+Well it's actually really easy to do if we get out of less is just when we clear the screen or we've
+
+39
+00:02:12,420 --> 00:02:20,150
+必须输入sudo apt get install X11应用程序，所以我们只需输入软件包的名称即可。
+got to do type sudo apt get install X 11 apps so we just enter the name of the package.
+
+40
+00:02:20,160 --> 00:02:26,430
+现在请注意，我们正在使用apt get a Gap来安装软件包，因为我们需要我们的软件包管理器
+Now notice that we're using apt get a gap to install the package because we want our package manager
+
+41
+00:02:26,430 --> 00:02:30,400
+从互联网获取数据，而不仅仅是从本地缓存获取数据。
+to get data from the internet and not just from the local cache.
+
+42
+00:02:30,490 --> 00:02:36,060
+我们还传递了我们想要安装的软件包名称，嗯，因为我们想要安装X
+And we also passed the package name that we wanted to install which um because we want to install X
+
+43
+00:02:36,060 --> 00:02:39,660
+还有iPhone应用程序，当我们按Enter键时，我们在那里输入了x11个应用程序。
+and iPhone apps we typed x 11 apps in there when we press enter.
+
+44
+00:02:39,660 --> 00:02:45,120
+我们看到它会要求我们输入密码，然后包管理器就会继续
+We see that it would ask for a password which we enter and then the package manager is going to go ahead
+
+45
+00:02:45,150 --> 00:02:49,590
+并安装具有许多实际需要的依赖项的新程序包。
+and install the new packages with many dependencies that are actually required.
+
+46
+00:02:49,590 --> 00:02:53,580
+现在，如果需要大量安装，有时它可能会要求您的许可，但因为这只是安装
+Now sometimes it might ask for your permission if it needs to install a lot but because its only installing
+
+47
+00:02:53,580 --> 00:02:57,540
+大约600千字节，就像这里一样，让我先安装一下。
+about 600 kilobytes it was like Here let me just go ahead and install it.
+
+48
+00:02:57,660 --> 00:03:02,970
+它有一项规定，用于安装如此小的东西OK，但这与安装的软件包没有任何关系
+It has a provision for something that so small OK but that has nothing to do the package is installed
+
+49
+00:03:03,000 --> 00:03:05,080
+现在就这么简单了。
+and its as simple as that now.
+
+50
+00:03:05,100 --> 00:03:09,280
+X11应用程序是一个预编译包，也称为二进制包。
+X 11 apps is a precompiled package also known as a binary package.
+
+51
+00:03:09,390 --> 00:03:15,090
+现在大多数软件包都是二进制包，这意味着制作软件的代码已经预编译
+Now most packages are binary packages which means that the code that make the software has been precompiled
+
+52
+00:03:15,120 --> 00:03:19,500
+并预先做好准备，这样您就不必执行任何配置make和make install工作
+and ready to go beforehand so you don't have to do any of that configure make and make install stuff
+
+53
+00:03:19,500 --> 00:03:21,870
+我们之前自己做了几个视频。
+that we did a few videos ago yourself.
+
+54
+00:03:21,900 --> 00:03:24,870
+就像我刚从存储库安装了软件包，您就完成了。
+Like I just installed the package from the repositories and you're done.
+
+55
+00:03:24,900 --> 00:03:29,280
+更好的是，还将跟踪软件包的更新，以便您可以在更新时更新软件包
+And what's better the package will also be tracked for updates so you can update the package if new
+
+56
+00:03:29,280 --> 00:03:30,570
+更新可用。
+updates are made available.
+
+57
+00:03:30,570 --> 00:03:32,670
+这真是太棒了。
+How awesome is that.
+
+58
+00:03:32,670 --> 00:03:34,470
+现在让我们试用一下我们的新软件吧。
+Now let's try out our new software.
+
+59
+00:03:34,470 --> 00:03:36,860
+所以我们想用xis程序。
+So we wanted to use the x is program.
+
+60
+00:03:36,870 --> 00:03:42,300
+如果我们只播放屏幕，输入x，然后按Enter键。
+So if we just play the screen and type x is in there and press enter.
+
+61
+00:03:42,450 --> 00:03:46,800
+你会看到，我们会在屏幕上看到这些有趣的谷歌眼睛，它们跟随着我们最周围的环境，如果
+You'll see that we get these funny googly eyes pop up on the screen that follow our most surrounds if
+
+62
+00:03:46,800 --> 00:03:48,660
+我把最多的放在这里。
+I put the most down here.
+
+63
+00:03:48,690 --> 00:03:54,720
+是什么吓跑了我的眼睛如果我把他弹到这里，它就会正常地跟在后面，而不是像
+What was it got scared away the eyes if I pop him up here then it will follow around properly not as
+
+64
+00:03:54,720 --> 00:03:58,460
+虽然我想流畅地运行，但我会将其归结为我们在虚拟机中运行它。
+fluidly as I'd like but I'm going to put that down to us running this in a virtual machine.
+
+65
+00:03:58,470 --> 00:04:01,200
+但如果你像你所知道的那样，它确实会跟得上好得多的结果。
+But if like you know it does follow a whole lot nicer.
+
+66
+00:04:01,350 --> 00:04:02,850
+但现在这已经很酷了。
+But that's pretty cool right now.
+
+67
+00:04:02,850 --> 00:04:08,800
+最棒的是你不会安装它的手册页
+The awesome thing is the way that you wouldn't you install will come with its own man page self-disclose
+
+68
+00:04:08,970 --> 00:04:10,270
+这里是附加运动。
+excise here.
+
+69
+00:04:10,980 --> 00:04:17,970
+如果我做man X Eyes，你会看到他现在实际上也安装了一个手册页面，上面写着
+Then if I do man X eyes you'll see that he's actually now also got a manual page installed that says
+
+70
+00:04:18,030 --> 00:04:19,930
+按照鼠标X演示进行操作。
+follow the mouse X demo.
+
+71
+00:04:20,160 --> 00:04:22,030
+而且它也有一些选择。
+And it's also got some options.
+
+72
+00:04:22,040 --> 00:04:27,960
+您甚至可以从命令行控制消费税程序，我们在这里可以看到有一个
+You can even control the excise program from the command line and we can see here that there is a there
+
+73
+00:04:27,960 --> 00:04:32,700
+这里有一个名为“中心”的选项，允许您为眼睛中心选择不同的颜色。
+is an option here called Center which allows you to choose a different color for the center of the eyes.
+
+74
+00:04:32,700 --> 00:04:39,720
+例如，如果我们在中心进行附加思考，并告诉它，我认为它是两个破折号的中心
+So for example if we do excise thinking at the center option and tell it I think it's two dashes center
+
+75
+00:04:40,200 --> 00:04:44,300
+蓝色上坡可能只有一次，也许只有一次冲刺。
+blue upslope maybe just one maybe just one dash.
+
+76
+00:04:44,310 --> 00:04:44,840
+我们走吧。
+There we go.
+
+77
+00:04:44,970 --> 00:04:50,280
+现在中心的冰块是蓝色的，我想让你们知道，这是当你打开
+Now the center the ice is blue and I want you to know is here is the way that look when you open the
+
+78
+00:04:50,280 --> 00:04:52,120
+以图形化的方式制定锻炼计划。
+exercise program graphically.
+
+79
+00:04:52,620 --> 00:04:54,840
+你不能选择改变眼睛的颜色。
+You don't have the option to change the color of the eyes.
+
+80
+00:04:54,840 --> 00:04:55,250
+正确的。
+Right.
+
+81
+00:04:55,350 --> 00:04:58,560
+但是在命令行中，您可以更改这一点，并且可以进行更多更改。
+But from the command line you can change that and a whole lot more.
+
+82
+00:04:58,560 --> 00:05:03,060
+这向您强调了命令行的功能有多强大，以及它是如何为您提供更多功能的
+So this is highlighting for you just how powerful the command line is and how it does give you more
+
+83
+00:05:03,060 --> 00:05:06,450
+比图形编辑器更强大的功能。
+abilities than is possible with a graphical editor.
+
+84
+00:05:06,570 --> 00:05:12,420
+如果你能编辑谷歌眼睛的颜色，那么告诉我拥有一台电脑的真正意义是什么。
+And if you can edit the color of googly eyes then tell me what really is the point of having a computer.
+
+85
+00:05:12,450 --> 00:05:17,880
+现在，S11应用程序包附带了相当多的其他软件，其中一个叫做
+Now the S11 apps package came with quite a few other pieces of software inside one of which is called
+
+86
+00:05:17,910 --> 00:05:20,040
+你可能会觉得有用的X人。
+X man which you might find useful.
+
+87
+00:05:20,130 --> 00:05:23,600
+现在，X man是一个用于查看手册页的图形窗口。
+Now X man is a graphical window for looking at the manual pages.
+
+88
+00:05:23,600 --> 00:05:31,920
+如果我们在这里去掉附加作业，然后关闭它，然后输入X man，我们会在这里看到一个弹出的窗口。
+So if we get rid of excise here and close it and then we type X man we'll see a window pop up over here.
+
+89
+00:05:31,920 --> 00:05:37,780
+现在，如果我们单击那里的手册页并打开一个大图，您就可以使用此搜索手册页
+Now you can search the man pages using this if we click on manual page right there and open up a bigger
+
+90
+00:05:37,780 --> 00:05:45,430
+窗口，如果我们单击此处顶部的选项(如果我们按住鼠标按钮)，它将显示
+window and if we click on the on the options at the top here if we hold down the mouse button it shows
+
+91
+00:05:45,430 --> 00:05:48,910
+按住鼠标按钮的菜单，您将看到此下拉菜单。
+the menu to hold down the mouse button and you'll see this dropdown menu.
+
+92
+00:05:48,910 --> 00:05:54,170
+如果你继续搜索，松开鼠标，也就是说，如果我们点击搜索的东西。
+Then if you go on search and let go of the mouse that is if we click the search thing.
+
+93
+00:05:54,280 --> 00:05:56,170
+现在我们可以在这里搜索一些东西。
+And now we can search for something in here.
+
+94
+00:05:56,170 --> 00:06:01,520
+举个例子，如果我们看一看LS，我们试着把它看作是一个手册页，那么它就会
+So this is for example if we take a look at LS and we try to look at it as a manual page then it'll
+
+95
+00:06:01,540 --> 00:06:04,810
+打开LS手册页面，您可以在此处浏览。
+open up the LS manual page and you can browse through it here.
+
+96
+00:06:04,810 --> 00:06:11,980
+所以我想这是一种比你用图形化的方式看手册页更多的方式
+So this is a great more I guess graphical way of taking a look at the manual pages than you do with
+
+97
+00:06:11,980 --> 00:06:12,690
+命令行。
+the command line.
+
+98
+00:06:12,740 --> 00:06:16,870
+但你知道吗，我猜这只会让它看起来很漂亮，而且你还可以看看这些部分，这样你就可以
+But you know which I guess it just makes it look pretty and you can also look at the sections so you
+
+99
+00:06:16,870 --> 00:06:20,350
+可以查看用户命令，您可以在此处看到所有用户命令。
+can look in user commands and you can see all of the user commands here.
+
+100
+00:06:20,350 --> 00:06:25,600
+如果我想看一下，假设是地址转到行命令，或者只需单击它，它就会
+And if I wanted to look at let's say the the address to line command or just click on that and it would
+
+101
+00:06:25,600 --> 00:06:29,530
+打开，这样就是浏览手册的一种很好的图形化方式，这样你就可以玩这个游戏了
+open up so it's a nice graphical way of browsing through the manual so that's something you can play
+
+102
+00:06:29,530 --> 00:06:31,600
+如果你喜欢的话。
+around with if you like.
+
+103
+00:06:31,720 --> 00:06:38,020
+我还想强调的一件事是，通过安装一个软件包，x11应用程序包实际上将
+And one thing I also want to highlight is how by installing one package the x 11 apps package will actually
+
+104
+00:06:38,020 --> 00:06:41,290
+安装了多个不同的软件，这是非常酷的。
+installed multiple different pieces of software which is super cool.
+
+105
+00:06:41,290 --> 00:06:45,010
+我们不需要做任何编译，我们不需要做任何配置，或者必须做的是确保
+And we didn't have to do any compiling we didn't have to do any configuring or had to do was make sure
+
+106
+00:06:45,010 --> 00:06:53,110
+我们的软件包列表是最新的，使用sudo apt get update，然后或等待进行更新。
+that our package list was up to date using sudo apt get updates and then or wait to do them whooshes
+
+107
+00:06:53,140 --> 00:06:56,250
+sudo apt get install，然后是程序包名，仅此而已。
+sudo apt get install and then a package name and that's it.
+
+108
+00:06:56,250 --> 00:07:01,480
+我们可以我们可以睡觉保证我们有那个套餐的最新版本
+We can we can rest assured that we've got the most up to date version of that package and it's also
+
+109
+00:07:01,540 --> 00:07:05,350
+此外，我们甚至不必确定软件包是否适合我们的计算机体系结构
+it's also we didn't even have to find out if the package was suitable for our computers architecture
+
+110
+00:07:05,620 --> 00:07:13,220
+然后在你知道的386和Am 64之间做出选择，这一切都是自动迎合的，这真是太棒了。
+and decide between you know 386 or am 64 that was all catered for automatically which is awesome.
+
+111
+00:07:13,540 --> 00:07:16,080
+但是软件包中的所有软件都是预编译的。
+But all of the software in that package was pre-compiled.
+
+112
+00:07:16,090 --> 00:07:20,690
+那么，如果我们想要利用自由软件给予我们的自由并访问源代码呢
+So what if we wanted to utilize the freedoms that free software gives us and access the source code
+
+113
+00:07:20,690 --> 00:07:25,400
+对于一个包，在访问存储库中的源代码时对其进行修改也是非常容易的。
+for a package and modify it while accessing the source code from the repositories it's also very easy.
+
+114
+00:07:25,450 --> 00:07:27,700
+但是您需要做一些编辑。
+But there are a few edits that you need to make.
+
+115
+00:07:27,940 --> 00:07:31,260
+所以对于所有的自由，天哪，我会在下一个视频中见到你。
+So for all that freedom goodness I'll see you in the next video.
+

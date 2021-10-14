@@ -1,0 +1,1005 @@
+1
+00:00:00,390 --> 00:00:05,940
+好的，Scrum知道如何使用Touch和M.K.DL命令创建文件和目录。
+All right scenary know how to make files and directories using the touch and M.K. DL commands.
+
+2
+00:00:05,940 --> 00:00:08,580
+让我们把它提高一个档次，把它搞得乱七八糟。
+Let's take it up a notch and mess around a bit.
+
+3
+00:00:08,760 --> 00:00:14,190
+假设您正在进行一个为期五年的大型项目，而且每个月都会有管理人员
+So let's say that you're working on a big five year project and every month because the admin staff
+
+4
+00:00:14,190 --> 00:00:14,840
+恨死你了。
+hate you.
+
+5
+00:00:15,000 --> 00:00:20,670
+您需要编写100个备忘录文件来跟踪项目，并且该文件夹应该命名为某个名称
+You need to write a 100 memo files to keep track of the project and the folder should be named something
+
+6
+00:00:20,670 --> 00:00:29,160
+如2017年1月，2017年2月，2017年3月20日，以此类推，为期五年，每年
+like Jan. 2017 FEBE 2017 March 20th of March 2017 and so on and so on for five years and in each of
+
+7
+00:00:29,160 --> 00:00:37,720
+这些文件夹应该有100个文件，代表1、4、2、3，一直到秋季100。
+these folders there should be 100 files for 1 4 2 4 3 all the way until fall 100.
+
+8
+00:00:37,830 --> 00:00:42,250
+您如何预先创建这些文件和文件夹。
+How can you create those files and folders up front.
+
+9
+00:00:42,910 --> 00:00:45,960
+好的，用图形化的方式来做会很可怕。
+Well doing it graphically would be horrific.
+
+10
+00:00:45,960 --> 00:00:47,960
+实际上就是没有办法绕过它。
+There's actually just no way around it.
+
+11
+00:00:48,050 --> 00:00:51,830
+将会有大量的复制和粘贴，以及大量的重命名。
+There will be a whole lot of copying and pasting and a whole lot of renaming.
+
+12
+00:00:51,840 --> 00:00:56,760
+你说的对，右击手指在整个磨难结束时会基本上处于痛苦之中。
+And you're right click finger would be basically in agony by the end of the whole ordeal.
+
+13
+00:00:56,900 --> 00:01:01,570
+但让我向你们展示一下，在网上做这件事是多么容易，所以才有可能做到这一点。
+But let me show you how easy it is to do on the come on line so to make this possible.
+
+14
+00:01:01,590 --> 00:01:06,290
+我们将使用外壳的一个强大功能，称为支撑扩展。
+We're going to use a powerful feature of the shell known as Brace expansion.
+
+15
+00:01:06,410 --> 00:01:08,100
+这真是太棒了。
+And this is totally awesome.
+
+16
+00:01:08,100 --> 00:01:08,930
+看看这个。
+Check this out.
+
+17
+00:01:09,180 --> 00:01:13,740
+那么让我们继续使用我们的控制或反键盘快捷键打开我们的终端。
+So let's go ahead and open our terminal using our control or anti keyboard shortcut.
+
+18
+00:01:13,920 --> 00:01:18,330
+然后我们要做的是使用cd命令转到桌面。
+And then what we're going to do is we're going to head over to the desktop using our cd command.
+
+19
+00:01:18,330 --> 00:01:21,910
+我将创建一个名为Project的大文件夹。
+I'm going to make a big folder called Project.
+
+20
+00:01:21,970 --> 00:01:22,580
+我们就到这了。
+And there we are.
+
+21
+00:01:22,590 --> 00:01:25,600
+它现在已经出现在这里了。
+It has appeared now in here.
+
+22
+00:01:25,820 --> 00:01:29,730
+这是一个很好的更改，更改为产品文件夹，如果我们现在可以看到我们在
+This is this good change into it change into that product folder if we can see that now we're in the
+
+23
+00:01:29,940 --> 00:01:31,220
+桌面上的项目。
+Project for the on the desktop.
+
+24
+00:01:31,320 --> 00:01:33,550
+这就是魔术发生的地方。
+And this is where the magic happens.
+
+25
+00:01:33,600 --> 00:01:34,050
+好的。
+OK.
+
+26
+00:01:34,170 --> 00:01:36,070
+我们需要做60个文件夹。
+We need to make 60 folders.
+
+27
+00:01:36,210 --> 00:01:36,490
+正确的。
+Right.
+
+28
+00:01:36,540 --> 00:01:37,900
+而且它们都应该是格式的。
+And they should all be in the format.
+
+29
+00:01:38,030 --> 00:01:48,270
+Jan 20：17 2017.Febe 2017 m2017 20：17好的，那么三个三个字母，然后2017，一直到12月
+Jan 20:17 FEBE 2017 ma 2017 20:17 OK so three three letters then 2017 all the way up until December
+
+30
+00:01:48,450 --> 00:01:49,220
+2022年。
+2022.
+
+31
+00:01:49,230 --> 00:01:50,600
+因此，DEC 2022。
+So DEC 2022.
+
+32
+00:01:50,690 --> 00:01:52,430
+好的，这是项目证明的时候。
+OK which is when the project evidence.
+
+33
+00:01:52,680 --> 00:01:57,570
+如果我告诉你，我们可以把所有这些文件夹放在一行里，那又怎么样？
+So what if I told you we could make all of those folders in one line.
+
+34
+00:01:57,600 --> 00:02:01,570
+使用支撑扩展的力量，这一切都是可能的。
+This is all possible using the power of brace expansion.
+
+35
+00:02:01,710 --> 00:02:02,820
+所以命令来了。
+So here comes the command.
+
+36
+00:02:02,850 --> 00:02:06,420
+我要做的实际上是最大化屏幕，因为它是一种很大的屏幕。
+And what I'm going to do is I'm actually going to maximize the screen because it's kind of a big one.
+
+37
+00:02:06,540 --> 00:02:08,800
+我们要做的是赢得M.K.DVR。
+What we're going to do is win type M.K. DVR.
+
+38
+00:02:08,920 --> 00:02:09,310
+好的。
+OK.
+
+39
+00:02:09,390 --> 00:02:14,250
+我要打开一对托架，托架是这些弯曲的托架，然后我们
+I'm going to open up a pair of braces and the braces are these squiggly brackets here and then we're
+
+40
+00:02:14,250 --> 00:02:16,190
+打字时不留任何空格。
+going to type without any spaces.
+
+41
+00:02:16,210 --> 00:02:20,250
+1月逗号Febe逗号三月逗号。
+Jan comma FEBE comma March comma.
+
+42
+00:02:20,250 --> 00:02:30,430
+四月、五月、六月、七月、八月、九月、十月、十一月、十二月，没有任何空位。
+April May June July August September October November December without any spaces at all.
+
+43
+00:02:30,540 --> 00:02:33,690
+好的，我要在开场时刻再加两条下划线。
+OK I'm going to double underscore the moment Open.
+
+44
+00:02:33,750 --> 00:02:35,740
+打开另一对牙套。
+Open up another pair of braces.
+
+45
+00:02:35,800 --> 00:02:48,110
+好的，那么2017年2018年20192020年2,021 2022年。
+OK then 2017 2018 2019 2020 two thousand twenty one and 2022.
+
+46
+00:02:48,160 --> 00:02:49,770
+所以这是相当长的一段时间，来吧。
+So that's quite a long come on right.
+
+47
+00:02:49,980 --> 00:02:54,120
+但是这里正在发生的是一种叫做支架扩张的东西。
+But what's happening here is something called brace expansion.
+
+48
+00:02:54,150 --> 00:03:01,080
+我们这里有一些支架，所以我们在这里有一种说法，在这里有另一种说法，这些年来
+And here we have some braces so we've got one say here and another set here for the for the years and
+
+49
+00:03:01,080 --> 00:03:06,360
+Shell将展开这些括号的方式类似于您在中展开括号的方式
+the way that the shell is going to expand these braces is similar to how you would expand brackets in
+
+50
+00:03:06,360 --> 00:03:07,390
+代数课。
+algebra class.
+
+51
+00:03:07,440 --> 00:03:07,930
+好的。
+OK.
+
+52
+00:03:08,040 --> 00:03:17,970
+首先发生的是2017年1月，然后是2017年2月，然后是2017年3月，以此类推
+So what happened first is you get January 2017 then February 2017 then March 2017 and so on and so on
+
+53
+00:03:17,970 --> 00:03:20,280
+直到2017年12月。
+until you get December 2017.
+
+54
+00:03:20,460 --> 00:03:29,310
+好的，那就重新开始，2018年2月是1月28日，然后是3月、4月、5月、6月。
+OK then it'll just start all over again you get January 28 in February 2018 then March April May June
+
+55
+00:03:29,310 --> 00:03:32,620
+一直到2018年12月。
+July all the way until you get December 2018.
+
+56
+00:03:33,000 --> 00:03:33,510
+好吧。
+Okay.
+
+57
+00:03:33,720 --> 00:03:39,140
+以此类推，直到你一路走到2022年12月。
+And so on and so on until you get all the way until December 2022.
+
+58
+00:03:39,360 --> 00:03:39,760
+好吧。
+Okay.
+
+59
+00:03:39,840 --> 00:03:43,260
+好了，悬念够了，让我们继续按Enter键。
+So enough in suspense Let's go ahead and press enter.
+
+60
+00:03:43,680 --> 00:03:47,050
+让我们继续运行它，现在让我们看看它是否有效。
+Let's go ahead and run that now let's see if it works.
+
+61
+00:03:47,050 --> 00:03:49,410
+我们将进入项目文件夹。
+We're going to go into our project folder.
+
+62
+00:03:49,940 --> 00:03:52,440
+哦，我的天哪。
+Oh oh my goodness.
+
+63
+00:03:52,500 --> 00:03:53,820
+看看这是多么令人惊讶。
+Look how amazing that is right.
+
+64
+00:03:53,820 --> 00:04:00,840
+所以我们已经设法在那里为每一年创建了这种奇妙格式的文件夹
+So we've managed to create folders in that wonderful format there for every single one of the years
+
+65
+00:04:01,080 --> 00:04:06,510
+如果我们突出显示它们，它会告诉我们实际创建的72个文件夹。
+and if we highlight them it tells us that the 72 folders actually created.
+
+66
+00:04:06,510 --> 00:04:16,080
+所以从2017年1月一直到12月20日，22号，就在那里，所有的一切
+So from January 2017 right here all the way until December 20 22 which is right there and everything
+
+67
+00:04:16,110 --> 00:04:16,680
+介于两者之间。
+in between.
+
+68
+00:04:16,680 --> 00:04:18,840
+这不是很棒吗。
+Isn't that awesome.
+
+69
+00:04:19,020 --> 00:04:24,330
+顺便说一句，如果我在这里最大限度地说，这只是一点打字，我们实际上可以
+Just as an aside as well if I just maximize this here to say it was a bit of typing we could have actually
+
+70
+00:04:24,330 --> 00:04:30,300
+而不是因为只是数字而键入每个日期，它们只是正确的数字
+instead of typing out each of the dates because it's just numbers they're just numbers right that are
+
+71
+00:04:30,300 --> 00:04:32,020
+在一个恒定的模式中。
+in a in a constant pattern.
+
+72
+00:04:32,070 --> 00:04:33,600
+我们本可以做点点的。
+We could have just done dot dot.
+
+73
+00:04:33,750 --> 00:04:38,340
+因此，2017年到2022年，这是另一个侧重点。
+So 2017 to 2022 that's another aside right there.
+
+74
+00:04:38,490 --> 00:04:44,070
+现在想象一下，使用点击式方法要花多长时间才能做到这一点，您可以想象一下
+Now imagine how long it would have taken to do that stuff using point and click method you imagine how
+
+75
+00:04:44,070 --> 00:04:45,530
+那会很烦人的。
+annoying that would have been.
+
+76
+00:04:45,750 --> 00:04:52,700
+嗯，我们只是在一个命令行一个案例中完成了，所以我们坐在这里感到非常自鸣得意，因为我们的
+Well we just did it in one command line a case so that we're sitting here feeling very smug that our
+
+77
+00:04:52,720 --> 00:04:57,420
+命令行一口气创建了无数个文件夹，我们还有一些工作要做。
+command line has just created like a jillion folders all in one go we've still got a little bit to do.
+
+78
+00:04:57,610 --> 00:05:03,300
+也就是说，我们必须在每个文件夹中创建100个文件。
+And that is we've got to create 100 files in each of these folders.
+
+79
+00:05:03,340 --> 00:05:04,840
+现在我们要怎么做呢。
+Now how are we going to do that.
+
+80
+00:05:04,840 --> 00:05:08,200
+实际上这很简单，我们只需要再次使用括号扩展即可。
+Well actually it's quite easy we'll just use brace expansion again.
+
+81
+00:05:08,260 --> 00:05:12,970
+所以我们要做的是再次打开我们的终端，进入桌面，进入产品
+So we're going to do is we're going to open up our terminals again go onto the desktop go into the product
+
+82
+00:05:12,970 --> 00:05:13,460
+文件夹。
+folder.
+
+83
+00:05:13,530 --> 00:05:14,000
+好的。
+OK.
+
+84
+00:05:14,110 --> 00:05:15,390
+现在我来了。
+Now I'm here.
+
+85
+00:05:15,730 --> 00:05:18,010
+我实际上要把屏幕看得最大。
+I'm actually gonna maximize the screen watch what.
+
+86
+00:05:18,010 --> 00:05:20,830
+看看我怎么做，然后我们再看看它是怎么工作的。
+Just watch what I do and then we'll see how it works.
+
+87
+00:05:20,830 --> 00:05:21,520
+好的。
+OK.
+
+88
+00:05:22,030 --> 00:05:24,920
+所以别碰，那我就打开布雷斯家的。
+So don't touch then I'm going to open up the Brace's.
+
+89
+00:05:25,120 --> 00:05:35,490
+约翰·费贝，三月，四月，五月，六月，七月，八月，九月，十月，十一月，十二月。
+John FEBE March April May June July August September October November December.
+
+90
+00:05:35,740 --> 00:05:42,110
+下划线和我们的年份2017和2022年。
+Underscore and our years 2017 2022.
+
+91
+00:05:42,220 --> 00:05:44,250
+哦，顺便说一句，它不一定只是数字。
+Oh by the way it doesn't just have to be numbers.
+
+92
+00:05:44,260 --> 00:05:51,970
+它可以是a到Zed或a到Zed或类似于B到F或类似的东西。
+It could be a to Zed or a to Zed or something like B to F or something like that.
+
+93
+00:05:51,980 --> 00:05:57,430
+好的，那么有没有像你知道的字母或数字这样的图案，你可以用圆点
+OK so anything is it that has a pattern like you know the alphabet or numbers you can use the dot dot
+
+94
+00:05:57,520 --> 00:05:58,510
+才能实现这一点。
+thing to make that happen.
+
+95
+00:05:58,540 --> 00:06:02,790
+好的，但我们会在2017年后到2022年。
+OK but we're after 2017 till 2022.
+
+96
+00:06:02,970 --> 00:06:03,450
+好的。
+OK.
+
+97
+00:06:03,760 --> 00:06:11,040
+现在，在每个文件夹中，我们不会创建一个名为源文件的文件，然后
+Now inside each of those folders we're not going to make a file called the source file and then has
+
+98
+00:06:11,080 --> 00:06:12,150
+值得怀疑的是。
+one to wonder.
+
+99
+00:06:12,160 --> 00:06:15,960
+好了，这里到底是怎么回事。
+Ok so what is going on here.
+
+100
+00:06:15,970 --> 00:06:20,040
+我是马特·齐亚德，这个命令是从哪里来的。
+This is Matt Ziyad Where where has this command come from.
+
+101
+00:06:20,140 --> 00:06:26,500
+基本上，我说的是从2017年1月到12月的每个文件夹
+Well basically what I'm saying is for each of these folders from January 2017 all the way until December
+
+102
+00:06:26,500 --> 00:06:27,400
+2022年。
+2022.
+
+103
+00:06:27,400 --> 00:06:29,890
+在其中每一个中，生成文件1到100。
+In each of those make file 1 to 100.
+
+104
+00:06:29,990 --> 00:06:32,020
+好了，现在这只是一个小小的乐趣。
+OK now this is just a bit of fun.
+
+105
+00:06:32,020 --> 00:06:34,930
+好的，所以如果它看起来有点像什么，不用担心。
+Ok so don't worry if it seems a bit like what.
+
+106
+00:06:35,540 --> 00:06:38,330
+这只是为了向你展示贝壳的威力有多大。
+It's just to show you how powerful the shell can be.
+
+107
+00:06:38,360 --> 00:06:39,530
+我们再来看一看。
+Let's take a look at it again.
+
+108
+00:06:39,590 --> 00:06:41,660
+查一下。
+Run that.
+
+109
+00:06:41,800 --> 00:06:43,090
+让我们再次关闭航站楼。
+Let's close the terminal again.
+
+110
+00:06:43,180 --> 00:06:44,140
+我们继续往前看吧。
+Let's go ahead and take a look.
+
+111
+00:06:44,140 --> 00:06:44,800
+让我们敞开心扉吧。
+Let's open up.
+
+112
+00:06:44,800 --> 00:06:46,880
+2022年6月。
+June 2022.
+
+113
+00:06:46,970 --> 00:06:47,480
+好的。
+OK.
+
+114
+00:06:47,620 --> 00:06:49,420
+因为那是个不错的约会。
+Because that's a good date.
+
+115
+00:06:49,420 --> 00:06:55,330
+所以，如果我们打开2022年6月，我们点击，哦，天哪，我们有文件1到100。
+So if we open up June 2022 we click that oh my goodness we've got file one to 100.
+
+116
+00:06:55,480 --> 00:07:00,670
+好的，也许这只是个侥幸，如果我们在2020年12月开放，并希望今年秋天在那里有1到100个
+OK maybe that was just a fluke What if we open up December 2020 and hope this fall one to 100 in there
+
+117
+00:07:00,670 --> 00:07:01,360
+也是。
+as well.
+
+118
+00:07:01,390 --> 00:07:06,400
+如果我们在2020年1月开放，我说是4月。
+What if we open up January I say April 2020.
+
+119
+00:07:06,490 --> 00:07:09,830
+我们又来了，我们还有1到100的时间。
+There we go again we've got fall 1 to 100.
+
+120
+00:07:09,880 --> 00:07:10,250
+好的。
+OK.
+
+121
+00:07:10,330 --> 00:07:17,390
+所以，像你这样很棒的人不是可以看到我们刚刚使用支架扩展的方式来制作我们的
+So isn't that awesome guys like you can see the way that we've just used brace expansion to make our
+
+122
+00:07:17,710 --> 00:07:20,660
+终端指挥部的威力令人难以置信。
+terminal command unbelievably powerful.
+
+123
+00:07:20,770 --> 00:07:25,540
+如果我们有72个文件夹，我说，我们只会做五年，最后我们会做
+And if we've got 72 folders and I say well we're only going to do it for five years we ended up doing
+
+124
+00:07:25,540 --> 00:07:26,320
+六个人的。
+it for six.
+
+125
+00:07:26,440 --> 00:07:33,940
+但是，如果我们现在有72个文件夹，每个文件夹中有100个文件，我们只需使用一个命令行就可以创建大约
+But if we have now got 72 folders with 100 files in each we just use one command line to create about
+
+126
+00:07:33,940 --> 00:07:38,060
+一口气7,200个文件。
+seven thousand two hundred files in one go.
+
+127
+00:07:38,170 --> 00:07:43,820
+我希望你能从那个小例子中看到外壳的威力有多大。
+I hope you can see just how powerful the shell is from from that little example right there.
+
+128
+00:07:43,960 --> 00:07:44,590
+好的。
+OK.
+
+129
+00:07:44,620 --> 00:07:49,870
+顺便说一句，支撑扩展并不只是为了触摸，而Cadia是命令。
+And by the way brace expansion isn't only possible for the touch and Cadia are commands.
+
+130
+00:07:49,870 --> 00:07:53,310
+顺便说一句，它实际上可以在整个架子上使用。
+By the way it's actually usable across the whole shelf.
+
+131
+00:07:53,320 --> 00:07:56,750
+例如，让我们以ls命令为例，ls命令。
+So for example let's take the ls command the ls command.
+
+132
+00:07:57,160 --> 00:08:00,560
+我们可以查看每个文件夹，并获得其中内容的列表。
+We can look in every single folder and get a list of what's in there.
+
+133
+00:08:00,660 --> 00:08:01,180
+所以如果我这么做了。
+So if I do.
+
+134
+00:08:01,180 --> 00:08:14,160
+约翰·费贝，3月，4月，5月，6月，7月，8月，9月，10月，11月，12月，然后是2017年，直到2022年。
+John FEBE March April May June July August September October November December and then 2017 till 2022.
+
+135
+00:08:14,740 --> 00:08:20,130
+好的，我的意思是列出所有这些文件夹的内容，然后我按Enter键。
+OK so I'm saying list out the contents of every single one of these folders basically and I press enter.
+
+136
+00:08:20,420 --> 00:08:20,640
+哎呀。
+Oops.
+
+137
+00:08:20,650 --> 00:08:21,920
+我来错地方了。
+I'm in the wrong place.
+
+138
+00:08:22,090 --> 00:08:29,380
+所以很好的桌面劈开项目现在按两下UP键就可以回到那里再去了。
+So good desk top slash projects now press up key twice to get back there go again.
+
+139
+00:08:29,540 --> 00:08:36,910
+我们可以看到每个文件夹的内容，您可以看到它们都有100个文件
+Well we can see the contents of every single one of the folders and you can see they all have 100 files
+
+140
+00:08:37,000 --> 00:08:38,190
+在里面。
+in it.
+
+141
+00:08:38,650 --> 00:08:44,260
+我们可以看到，我们在每个文件夹中都得到了从1到100的值，看起来文件的结尾可能是
+And we can see that we get the for 1 to 100 in every folder and it might look like the file ends in
+
+142
+00:08:44,260 --> 00:08:45,540
+秋天99。
+fall 99.
+
+143
+00:08:45,640 --> 00:08:50,710
+但实际发生的情况是，如果你看这里，看到一个文件，它所做的就是排序
+But what's actually happening is if you look over here and see a file what it's doing is it's sorting
+
+144
+00:08:50,710 --> 00:08:56,920
+它们按字母顺序排列，或者在这里按数字排序，因此您看到的是1/10/100，因为它们
+them alphabetically or sorting them numerically here so you see for one for 10 for 100 because they
+
+145
+00:08:56,920 --> 00:08:59,650
+所有的都从一个右边开始，然后九个在那里结束。
+all start with one right and then the nines end up over there.
+
+146
+00:08:59,650 --> 00:09:03,310
+但现在我们每个人都得到了1到100分。
+But now we are getting as 1 to 100 in each.
+
+147
+00:09:03,550 --> 00:09:08,560
+比方说，我们想要把所有这些输出都放在正确的位置，这是一个巨大的输出，我们只是
+And let's let's say that we wanted to take all of this output right this massive output and we just
+
+148
+00:09:08,560 --> 00:09:13,470
+获取并重定向它将所有输出重定向到一个名为out Dottie XTi的文件中。
+got and redirect it redirect all the output into a file called out Dottie XTi.
+
+149
+00:09:13,810 --> 00:09:18,670
+现在，当我们看一下的时候，我们现在有一个文件，叫做Dr.XTi。
+And now when we when we take a look we've now got a file called out Dr. XTi.
+
+150
+00:09:19,240 --> 00:09:25,600
+如果我们看一下里面的内容，我们会发现所有的内容都在里面。
+And if when we take a look in there we can see that we've got all of that content in there.
+
+151
+00:09:25,690 --> 00:09:31,450
+2017年4月，它告诉我们它有哪些文件，然后它告诉我们2018年4月有什么，它告诉我们
+April 2017 it tells us the files that that has and then it tells us what's in April 2018 and it tells
+
+152
+00:09:31,450 --> 00:09:34,760
+下面这些都是按字母顺序排序的。
+the following that this is all alphabetically sorted in there.
+
+153
+00:09:34,810 --> 00:09:36,320
+这不是很棒吗。
+Isn't that awesome.
+
+154
+00:09:36,370 --> 00:09:43,030
+我只是在这里向您展示我们有一个EPIC文件，包含72个文件夹和大约7200个文件的内容
+I'm just showing you here we have an epic file with the contents of 72 folders and in about 7200 files
+
+155
+00:09:43,510 --> 00:09:49,210
+只用一个命令行就可以告诉我这是一部史诗，使用point会花费您一辈子的时间才能做到这一点
+in just one command line tell me that is an epic and would have took you for ever to do using point
+
+156
+00:09:49,470 --> 00:09:55,200
+现在我明白了，这真的，这真的会有点像哇，这没什么。
+methods now I appreciate this is really is this is really going to be a bit like whoa and that's OK.
+
+157
+00:09:55,200 --> 00:09:55,470
+好的。
+All right.
+
+158
+00:09:55,470 --> 00:09:57,510
+我只是向你展示这些基本技能。
+I'm just showing you these basic skills.
+
+159
+00:09:57,660 --> 00:10:02,970
+拥有这些基本技能，或者只需创建一个文件或创建一个文件夹即可轻松实现
+Have these basic skills or just creating one file or creating one folder can easily be turbo charged
+
+160
+00:10:03,000 --> 00:10:04,140
+不费吹灰之力。
+with very little effort.
+
+161
+00:10:04,230 --> 00:10:09,750
+只要您对通配符的花括号扩展有一点了解，我就不再发挥想象力了
+As long as you understand a little bit about brace expansion of wildcards cards but I'll leave the imagination
+
+162
+00:10:09,750 --> 00:10:13,640
+关于你为什么要这么做的原因。
+as to why why you would do so up to you.
+
+163
+00:10:13,680 --> 00:10:18,000
+因为这些技能可以应用到许多不同的事情上，你知道，仅仅是为了展示更多
+Because these skills can be applied to many different things and you know just just just to show a much
+
+164
+00:10:18,000 --> 00:10:19,900
+较简单的支撑扩展情况。
+simpler case of brace expansion.
+
+165
+00:10:20,040 --> 00:10:28,380
+如果我们在这里转到桌面，说我们只是想要一个文本文件，而不是Tourch file，
+If we go to the desktop right here and say we just want instead of saying tourch file a text file be
+
+166
+00:10:28,460 --> 00:10:31,910
+Dottie xti和file查看tickty，这将工作得很好。
+Dottie XTi and file see tickety which will work fine.
+
+167
+00:10:31,920 --> 00:10:38,910
+我们将创建三个文件，大括号扩展，这样做会更容易一些，比如文件，你给它一些
+We'll create three files brace expansion it makes that a bit easier by saying file you give it some
+
+168
+00:10:38,910 --> 00:10:39,460
+括号。
+brackets.
+
+169
+00:10:39,510 --> 00:10:45,260
+A，B，C，D，C，C，因为我们在这里用的是折断括号。
+A B C D C C because we're using the break the braces here.
+
+170
+00:10:45,270 --> 00:10:48,020
+谁将提交一个文本文件就是那个文本。
+Who's going to file a text file be that text.
+
+171
+00:10:48,070 --> 00:10:50,410
+原力-伊拉克美味的主持人。
+Force-Iraq tasty presenter.
+
+172
+00:10:50,490 --> 00:10:52,880
+现在我们是，我们已经使用支撑扩展将其扩展。
+Now we are we've used brace expansion to expand that out.
+
+173
+00:10:52,950 --> 00:10:53,320
+好的。
+OK.
+
+174
+00:10:53,430 --> 00:10:56,570
+所以布雷西的扩张在各地都起到了作用。
+So Bracey expansion comes into play all over the place.
+
+175
+00:10:56,580 --> 00:11:01,980
+因为我们在这里，所以我们有一些文本，它遵循一个非常简单的模式，我们可以使用
+And because here we are we've got some text which is a follows a very simple pattern we can use the
+
+176
+00:11:01,980 --> 00:11:08,020
+点在这里，我们会再次得到相同的结果，我们可能会说，好的，我想要文件
+dot dot here and we're going to get the same result again we could we could maybe say OK I want file
+
+177
+00:11:08,580 --> 00:11:11,380
+F一直到。
+F all the way to the.
+
+178
+00:11:11,490 --> 00:11:17,610
+我们也会在桌面上得到4v，一直到F。
+We are going to get 4 v all the way to F on the desktop as well.
+
+179
+00:11:17,610 --> 00:11:19,710
+所以我们现在在这里，就像V一样。
+So here we are here f as V.
+
+180
+00:11:19,710 --> 00:11:23,400
+所以为了向你们展示这个支撑扩展，它不是特别复杂的事情。
+So to show you this brace expansion it's not particularly complicated thing.
+
+181
+00:11:23,490 --> 00:11:28,740
+相信我，我在这里向你们展示的东西是有用的，但我只是想向你们展示如何
+Trust me there are useful things for what I'm showing you here but I just wanted to show you just how
+
+182
+00:11:28,740 --> 00:11:32,640
+强大的外壳只需稍加调整即可。
+powerful the shell can be with just a little bit of tweaking.
+
+183
+00:11:32,640 --> 00:11:37,590
+这就是命令行的疯狂之处，现在让我们快速回顾一下
+So that's sort of command line craziness for now let's just have a quick recap of what was actually
+
+184
+00:11:37,590 --> 00:11:39,790
+最后两个视频中的重要信息。
+important from the last two videos.
+
+185
+00:11:39,810 --> 00:11:44,280
+首先，您了解了如何使用touch命令创建新文件，以及如何使用
+So first of all you saw how to use the touch command to create new files and the use also so how to
+
+186
+00:11:44,280 --> 00:11:50,070
+使用mkdir命令创建新目录，这是我最喜欢的命令表达方式。
+use the mkdir command to create new directories which is my favorite way of saying the command.
+
+187
+00:11:50,070 --> 00:11:50,760
+顺便说一下。
+By the way.
+
+188
+00:11:50,850 --> 00:11:56,670
+您还可以看到，mkdir命令还有一个强大的p选项，可用于创建完整的
+And you also saw that the mkdir command also has a powerful p option that can be used to create entire
+
+189
+00:11:56,670 --> 00:11:57,620
+文件夹路径。
+folder paths.
+
+190
+00:11:57,630 --> 00:12:01,680
+这就是在文件夹内的另一个文件夹中创建一个文件夹。
+So this is creating one folder inside of another folder inside of the folder.
+
+191
+00:12:01,710 --> 00:12:04,820
+这一切都是从头开始的，这是非常非常强大的东西。
+All from scratch which is very very powerful stuff.
+
+192
+00:12:04,900 --> 00:12:11,130
+在Linux中使用学习为文件和文件夹创建是区分大小写的，并且您会了解到它在某种程度上
+Use learn creating for files and folders in Linux is case sensitive and you learn that it's kind of
+
+193
+00:12:11,130 --> 00:12:15,920
+在字体中留空格不是一个好主意，所以请使用下划线。
+a bad idea to have spaces in your font aims so use underscores instead.
+
+194
+00:12:15,930 --> 00:12:21,260
+最后，我们通过使用支撑扩展和拥抱将文件和文件夹创建提升到了一个新的水平
+And finally we took file and folder creation to the next level by using brace expansion and embrace
+
+195
+00:12:21,270 --> 00:12:24,970
+扩展是一种高级技术，所以如果您不理解它，请不要担心。
+expansion is kind of an advanced technique so don't worry if you didn't understand it.
+
+196
+00:12:25,050 --> 00:12:28,520
+严格来说，这不是课程的一部分，但不管怎样，你都可以在这里看一看。
+It's not technically part of the course but you got to see it here anyway.
+
+197
+00:12:28,590 --> 00:12:29,660
+你真幸运。
+So lucky you.
+
+198
+00:12:29,790 --> 00:12:34,740
+但是现在我们在下一个视频中已经有了一大堆文件和文件夹，把我们的计算机弄得乱七八糟
+But now that we've got a whole bunch of files and folders cluttering up our computer in the next video
+
+199
+00:12:34,890 --> 00:12:36,800
+你将学习如何移除它们。
+you're going to learn how to remove them.
+
+200
+00:12:36,810 --> 00:12:39,260
+了解如何删除文件和文件夹。
+So to learn how to delete files and folders.
+
+201
+00:12:39,300 --> 00:12:41,260
+我将在下一个视频中见到你。
+I'll see you in the next video.
+

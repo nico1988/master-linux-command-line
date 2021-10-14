@@ -1,0 +1,755 @@
+1
+00:00:00,360 --> 00:00:06,210
+Hello these beautiful people and walk into this video all about file extensions in Linux now an operating
+
+2
+00:00:06,210 --> 00:00:10,530
+system such as Windows file extensions allow you to tell what type of file that you're dealing with
+
+3
+00:00:10,710 --> 00:00:11,780
+at a glance.
+
+4
+00:00:11,790 --> 00:00:17,190
+For example we know that files with names ending in Dr XTi are text files and files with names ending
+
+5
+00:00:17,190 --> 00:00:23,940
+in Dot J-P or PNB are likely to be images in Linux font extensions usually don't matter and the system
+
+6
+00:00:23,940 --> 00:00:29,970
+tends to look at the contents of the file rather than just its name but sometimes file extensions really
+
+7
+00:00:29,970 --> 00:00:30,810
+do matter.
+
+8
+00:00:30,810 --> 00:00:36,090
+So in this video we're going to take a bit of a deep dive into understanding file extensions in Linux
+
+9
+00:00:36,390 --> 00:00:39,340
+and shine some light onto their strange behavior.
+
+10
+00:00:39,360 --> 00:00:43,110
+And by the end of the video you'll know what freedoms the Linux operating system gives you when naming
+
+11
+00:00:43,110 --> 00:00:43,780
+your files.
+
+12
+00:00:43,830 --> 00:00:46,880
+What interesting things can happen and what you need to be aware of.
+
+13
+00:00:47,040 --> 00:00:51,600
+And you'll also have a new command in your tool kit that will help you when dealing with files on your
+
+14
+00:00:51,600 --> 00:00:52,410
+file system.
+
+15
+00:00:52,560 --> 00:00:54,660
+So this is all very useful stuff very exciting stuff.
+
+16
+00:00:54,670 --> 00:00:56,980
+Let's go ahead and jump right into it.
+
+17
+00:00:57,660 --> 00:01:01,120
+All right so I've gone ahead and put some files on my desktop.
+
+18
+00:01:01,120 --> 00:01:06,900
+First of all I've got an image of tuks the traditional penguin logo for Linux here in P and G format.
+
+19
+00:01:06,910 --> 00:01:12,040
+Now talks in case you're interested is short for the word tuxedo which is a fancy type of black and
+
+20
+00:01:12,040 --> 00:01:16,880
+white suit usually worn by waiters and possibly just people at high class parties.
+
+21
+00:01:16,900 --> 00:01:21,130
+The penguins are said to look like they're wearing little tuxedos because of their black and white coloring.
+
+22
+00:01:21,250 --> 00:01:23,990
+And that's where tuks gets his name from a tuxedo.
+
+23
+00:01:24,040 --> 00:01:28,990
+In case you were interested but besides a picture of the lovely talks here on random trivia I've also
+
+24
+00:01:28,990 --> 00:01:35,170
+got a text file here with some Shakespeare in it called Shakespeare doc text and I also have a spreadsheet
+
+25
+00:01:35,170 --> 00:01:37,170
+file with some random numbers in it.
+
+26
+00:01:37,300 --> 00:01:45,140
+OK so let's go ahead and take a look at the file command to see how Linux handles file types.
+
+27
+00:01:45,140 --> 00:01:50,230
+So if I go ahead and open a terminal using the control alt anti keyboard shortcut and just drag it out
+
+28
+00:01:50,230 --> 00:01:52,340
+the way so we can still see the files.
+
+29
+00:01:52,420 --> 00:01:55,770
+I'm going to introduce you to a new command called the file command.
+
+30
+00:01:55,810 --> 00:02:00,700
+Now the file command will tell us basically what type of file we are dealing with.
+
+31
+00:02:00,700 --> 00:02:04,690
+So for example if we tried to have a look at tuks here.
+
+32
+00:02:04,690 --> 00:02:11,680
+If we do file took it stop here and we actually took it to our desktop first shift over to a desktop.
+
+33
+00:02:11,680 --> 00:02:14,650
+Clear the screen and do file tuks.
+
+34
+00:02:14,840 --> 00:02:17,910
+Actually just just so you see I can actually just with you.
+
+35
+00:02:17,910 --> 00:02:22,930
+Go ahead and press tab and it will auto filled as well just showing you the table to completion works
+
+36
+00:02:22,930 --> 00:02:27,780
+perfectly fine for filenames just like it does for folders so it's a great great thing that we learnt
+
+37
+00:02:27,780 --> 00:02:28,540
+in the last video.
+
+38
+00:02:28,640 --> 00:02:35,940
+OK so let's have a look file of talks stop DNJ and it will tell us that this is P N.G. image data.
+
+39
+00:02:35,940 --> 00:02:38,740
+It will tell us the size of the file and loads of other stuff as well.
+
+40
+00:02:38,760 --> 00:02:41,410
+OK but it tells us the file type.
+
+41
+00:02:41,550 --> 00:02:45,340
+OK now if I rename tok stop DNJ.
+
+42
+00:02:45,550 --> 00:02:51,640
+OK if I rename this to took start JP G.
+
+43
+00:02:51,910 --> 00:02:54,150
+OK which is another type of image file.
+
+44
+00:02:54,280 --> 00:02:57,480
+You can see there's been renamed there but I to do that again.
+
+45
+00:02:57,580 --> 00:03:02,830
+OK try file of took stock JP and let's see what happens.
+
+46
+00:03:02,830 --> 00:03:07,990
+Now you can see here that it still says that it is a P and g file.
+
+47
+00:03:07,990 --> 00:03:09,070
+Now this is important.
+
+48
+00:03:09,070 --> 00:03:13,550
+Point number 1 in linux file extensions don't matter.
+
+49
+00:03:13,670 --> 00:03:17,020
+Ok unlike Windows Linux doesn't determine file type.
+
+50
+00:03:17,020 --> 00:03:18,690
+Using the file extension.
+
+51
+00:03:18,820 --> 00:03:24,730
+But instead it reads a piece of code inserted at the top of every file and that piece of code is known
+
+52
+00:03:24,730 --> 00:03:30,580
+as a header and it serves as a kind of label for Linux to read and when Linux reads that label it knows
+
+53
+00:03:30,760 --> 00:03:31,550
+the file type.
+
+54
+00:03:31,570 --> 00:03:37,570
+So changing just the name of the file won't make a difference because that file header won't have changed.
+
+55
+00:03:37,570 --> 00:03:41,490
+OK so here we have some Shakespeare script in text format.
+
+56
+00:03:41,500 --> 00:03:47,560
+If I open the up you can see that there is plenty of text in there which I just copied and pasted from
+
+57
+00:03:47,560 --> 00:03:48,740
+Romeo and Juliet.
+
+58
+00:03:48,850 --> 00:03:56,330
+OK so this kind of stuff that I do so when we check the file type we have here if we do file Shakespeare
+
+59
+00:03:56,360 --> 00:04:01,650
+to text it will tell us that it is an ASCII text file.
+
+60
+00:04:01,820 --> 00:04:08,870
+Ok but now if I try to turn this into a PTF So if I rename it and try to say OK this is now Shakespear.
+
+61
+00:04:08,880 --> 00:04:12,850
+Doc PTF OK and rename it.
+
+62
+00:04:12,940 --> 00:04:15,600
+Now the system appears to have changed the icon right.
+
+63
+00:04:15,610 --> 00:04:18,290
+It looks like that's a PDA file.
+
+64
+00:04:18,610 --> 00:04:26,290
+But if I try to run the file from command again for Shakespeare or PTF it still tells us that it's ASCII
+
+65
+00:04:26,740 --> 00:04:35,590
+text so Linux read the Linux read the header of the file and saw that it was still a text file.
+
+66
+00:04:35,710 --> 00:04:41,200
+But what happens when we try to open it because it looks like the system thinks it's a PTF because you
+
+67
+00:04:41,200 --> 00:04:44,890
+can see the logos changed but it's still telling us it is a text file.
+
+68
+00:04:44,890 --> 00:04:45,660
+What's going on there.
+
+69
+00:04:45,660 --> 00:04:49,310
+Why is it think it's different if we try to open it what happens.
+
+70
+00:04:50,370 --> 00:04:51,700
+Well now we get an.
+
+71
+00:04:51,780 --> 00:04:58,750
+OK which is the default program to open files with names ending in Dot PTF is a PDA reader.
+
+72
+00:04:58,790 --> 00:05:04,110
+When we try to open this file in the PDA reader we get an error from the program as it's trying to open
+
+73
+00:05:04,110 --> 00:05:11,820
+our file is a PDA file and what the system basically did is say ah that's a file that ends in Dot PTF.
+
+74
+00:05:11,820 --> 00:05:13,650
+It's probably a PDA file.
+
+75
+00:05:13,710 --> 00:05:18,190
+So let me be helpful and allow the user to open it in a PDA viewer.
+
+76
+00:05:18,210 --> 00:05:24,140
+Now obviously a PDA reading program isn't designed to read text files is designed to read PTF.
+
+77
+00:05:24,330 --> 00:05:26,130
+And that's what's causing the issue here.
+
+78
+00:05:26,130 --> 00:05:28,670
+Now this is import this is an important distinction to make.
+
+79
+00:05:28,740 --> 00:05:34,650
+Important point number two although the operating system will know what file format the actual file
+
+80
+00:05:34,650 --> 00:05:36,290
+is by reading the header.
+
+81
+00:05:36,360 --> 00:05:42,270
+The extra programs that are installed on top of the operating system such as this PDA viewer are trying
+
+82
+00:05:42,270 --> 00:05:47,660
+to open the files that might require a certain formats or the file extensions in order to work.
+
+83
+00:05:47,850 --> 00:05:53,130
+So what's happening is it all this to make this automatic you want to open as a PDA it just saw the
+
+84
+00:05:53,130 --> 00:05:58,840
+file name it just looked at the file name but the content is still text.
+
+85
+00:05:59,070 --> 00:06:05,720
+And it says here are a file type plain text is not supported but it got the program got tricked it saw
+
+86
+00:06:05,730 --> 00:06:09,090
+the file name and that's why it wanted to open it as a PDA.
+
+87
+00:06:09,090 --> 00:06:14,910
+If I rename it back to text just change the text change back.
+
+88
+00:06:15,060 --> 00:06:17,900
+You'll see now that it will open fine as a text file.
+
+89
+00:06:18,090 --> 00:06:22,740
+OK so that's the important distinction to make there the programs that are installed on top of the operating
+
+90
+00:06:22,740 --> 00:06:28,410
+system such as PDA views and the fact that they might need the file to have a specific file extension
+
+91
+00:06:28,740 --> 00:06:30,130
+in order to open them.
+
+92
+00:06:30,240 --> 00:06:33,310
+But the operating system itself does not care.
+
+93
+00:06:33,330 --> 00:06:36,870
+So this is a bit more detail if I take a look at the spreadsheet here.
+
+94
+00:06:36,930 --> 00:06:40,930
+It's called data O.D. as if I do file of data that odious.
+
+95
+00:06:41,070 --> 00:06:41,670
+OK.
+
+96
+00:06:41,970 --> 00:06:46,250
+It says that it's an odious forward transfer open document spreadsheet.
+
+97
+00:06:46,480 --> 00:06:46,970
+OK.
+
+98
+00:06:47,100 --> 00:06:52,800
+Now this means we can open it up in Libris office calc which is basically the Linux version of Microsoft
+
+99
+00:06:52,800 --> 00:06:53,370
+Excel.
+
+100
+00:06:53,490 --> 00:06:56,260
+OK all the Apple equivalent is like the spreadsheet program.
+
+101
+00:06:56,310 --> 00:06:56,820
+OK.
+
+102
+00:06:57,060 --> 00:06:58,900
+And it's got it's got a few numbers in there.
+
+103
+00:06:59,010 --> 00:07:00,250
+OK.
+
+104
+00:07:00,900 --> 00:07:06,370
+But if I close the spreadsheet and rename that for example to adopt Ex-Sea file.
+
+105
+00:07:06,620 --> 00:07:07,130
+OK.
+
+106
+00:07:07,470 --> 00:07:11,980
+So if I rename it to data RTX to rename that.
+
+107
+00:07:12,090 --> 00:07:15,820
+OK you can see that now it wants to be opened up in adult text format.
+
+108
+00:07:16,250 --> 00:07:16,730
+OK.
+
+109
+00:07:16,830 --> 00:07:24,120
+And now I tried to open that up in Libris office calc so if I click here I type calc and it comes up
+
+110
+00:07:24,280 --> 00:07:26,480
+Libra is calc.
+
+111
+00:07:26,620 --> 00:07:28,700
+Wait for that to boot up.
+
+112
+00:07:28,740 --> 00:07:38,650
+File Open go to my desktop so home and then desktop and then try to open up data RTX day and you can
+
+113
+00:07:38,650 --> 00:07:41,130
+see now that we've got all kinds of problems happening here.
+
+114
+00:07:41,130 --> 00:07:44,620
+OK so if I try to just open it like that a strong click OK.
+
+115
+00:07:44,840 --> 00:07:45,790
+We're going to get an error.
+
+116
+00:07:45,910 --> 00:07:46,690
+OK.
+
+117
+00:07:46,780 --> 00:07:53,560
+And this is because the DOT TXI file extension is fooling Libris office calque libral office calque
+
+118
+00:07:53,560 --> 00:07:58,400
+made the mistake of reading the file extension and trying to open the file as a dot.
+
+119
+00:07:58,400 --> 00:08:00,080
+T x t file.
+
+120
+00:08:00,210 --> 00:08:00,670
+OK.
+
+121
+00:08:00,790 --> 00:08:07,210
+Where is the actual content as we can see here is a spreadsheet file it's not a text file.
+
+122
+00:08:07,300 --> 00:08:12,400
+Ok but if we rename that back and we rename it so that it's dated.
+
+123
+00:08:12,580 --> 00:08:13,350
+Yes.
+
+124
+00:08:13,510 --> 00:08:15,310
+Now it will open fine.
+
+125
+00:08:15,460 --> 00:08:19,630
+So this is the important distinction that we need to make and to hammer this home the file extension
+
+126
+00:08:19,720 --> 00:08:25,390
+isn't important to the Linux operating system but it might be important to the software packages that
+
+127
+00:08:25,390 --> 00:08:28,010
+we install on top of Linux.
+
+128
+00:08:28,030 --> 00:08:33,520
+So do bear in mind that don't basically don't give your file names really weird file extensions that
+
+129
+00:08:33,520 --> 00:08:39,550
+don't match their content because it might confuse third party software that is installed OK even though
+
+130
+00:08:39,550 --> 00:08:41,560
+you don't necessarily have to.
+
+131
+00:08:41,740 --> 00:08:45,300
+OK so let's give the spreadsheet a completely unknown try something else.
+
+132
+00:08:45,300 --> 00:08:46,880
+This is something quite interesting.
+
+133
+00:08:47,050 --> 00:08:50,640
+Let's give the spreadsheet a completely made up file extensions.
+
+134
+00:08:50,650 --> 00:08:57,910
+If I call it spreadsheet dot Shambhala OK I'll call it spreadsheet datcha blah.
+
+135
+00:08:58,460 --> 00:08:59,830
+That was interesting.
+
+136
+00:08:59,830 --> 00:09:05,560
+Notice how it automatically still wants to open it up in the spreadsheet software.
+
+137
+00:09:05,620 --> 00:09:13,150
+Now we notice here that we didn't fool the the the software and it still knows it's an odious file and
+
+138
+00:09:13,150 --> 00:09:19,050
+we can actually open it up if I just go ahead and double click the it's going to open up perfectly fine.
+
+139
+00:09:19,050 --> 00:09:20,750
+You see we've got our data in here.
+
+140
+00:09:20,760 --> 00:09:22,830
+No funny business this time.
+
+141
+00:09:22,830 --> 00:09:31,160
+So why can this system why can it open up a weird file name but not a simple one like Dotti XTi.
+
+142
+00:09:31,260 --> 00:09:37,660
+Well the reason is the software just simply didn't recognize the Dutch pablum file extension so it might
+
+143
+00:09:37,660 --> 00:09:41,550
+have looked to the operating system to help determine the file type instead.
+
+144
+00:09:41,610 --> 00:09:45,430
+But when we called it a Datti XTi file huh.
+
+145
+00:09:45,540 --> 00:09:52,170
+When we actually named it directly to be Datti XTi the software thought it would be a bit clever and
+
+146
+00:09:52,170 --> 00:09:55,950
+it thought aha I know how to deal with this and it made a little bit of a shortcut to itself and was
+
+147
+00:09:55,950 --> 00:09:59,220
+like I'm just going to open this automatically as a text file.
+
+148
+00:09:59,430 --> 00:10:03,510
+But that assumption was wrong in this case because the content is a spreadsheet.
+
+149
+00:10:03,510 --> 00:10:08,340
+We just named it Dotty XTi and that caused the program to throw an error when it found out it wasn't
+
+150
+00:10:08,340 --> 00:10:11,490
+a text file after all but actually was a spreadsheet.
+
+151
+00:10:11,780 --> 00:10:17,640
+The bottom line is have a lot of freedom to name files what ever you want in Linux you can even call
+
+152
+00:10:17,640 --> 00:10:18,350
+them.
+
+153
+00:10:18,450 --> 00:10:21,990
+You can even give them file extensions like Dot shoeblack.
+
+154
+00:10:22,020 --> 00:10:25,980
+Which of course you couldn't do in any other operating system.
+
+155
+00:10:26,070 --> 00:10:28,440
+This is common for having files.
+
+156
+00:10:28,530 --> 00:10:34,800
+For example if I just try and copy and paste this if I copy and paste this file you know you might have
+
+157
+00:10:34,800 --> 00:10:36,520
+a backup.
+
+158
+00:10:36,660 --> 00:10:42,270
+You might for example call 1 file an original So you'd say OK I'm going to call this one dot a ridge
+
+159
+00:10:42,870 --> 00:10:45,500
+and then I'd call this one.
+
+160
+00:10:45,600 --> 00:10:54,570
+Maybe I'll call in the one dot back or you know a copy and call it dot dot dot copy or something like
+
+161
+00:10:54,570 --> 00:10:54,860
+that.
+
+162
+00:10:54,900 --> 00:10:58,180
+OK and this is how you might name your files.
+
+163
+00:10:58,180 --> 00:11:03,030
+I believe this is the original this is the copy I can see just by looking at the file name without actually
+
+164
+00:11:03,030 --> 00:11:05,540
+affecting the way the system works.
+
+165
+00:11:05,560 --> 00:11:11,520
+So this is sometimes used to allow people to read file extensions that are a lot more human readable
+
+166
+00:11:11,750 --> 00:11:15,200
+than you know things like dot odious or dot whatever.
+
+167
+00:11:15,310 --> 00:11:21,150
+Ok but just make sure that if you name your files in such a way don't give them file names that might
+
+168
+00:11:21,150 --> 00:11:27,320
+confuse the software that you expect to open them because not all softwares like to play ball with strange
+
+169
+00:11:27,320 --> 00:11:28,890
+file names.
+
+170
+00:11:29,560 --> 00:11:33,380
+OK so that will bring a discussion of Linux file extensions to a close.
+
+171
+00:11:33,480 --> 00:11:35,060
+So it's a summary of what you learn in this video.
+
+172
+00:11:35,080 --> 00:11:39,700
+You learn that you can use the file command to know for sure what type of file that you're dealing with.
+
+173
+00:11:39,700 --> 00:11:44,040
+Or you know that file extensions aren't important to the Linux operating system which means you can
+
+174
+00:11:44,040 --> 00:11:45,890
+name files whatever you want.
+
+175
+00:11:45,900 --> 00:11:47,750
+Yes even DOT shoeblack.
+
+176
+00:11:47,940 --> 00:11:53,040
+But while you're doing that make sure you try not to confuse third party software that might need to
+
+177
+00:11:53,040 --> 00:11:57,760
+open the file because it might be expecting specific file extensions.
+
+178
+00:11:57,780 --> 00:12:01,860
+And if you try to confuse it then you know you'll just get errors in a very very bad time.
+
+179
+00:12:02,130 --> 00:12:08,340
+So coming up next in the next video we're going to take your command line skills to a whole new level
+
+180
+00:12:08,490 --> 00:12:11,370
+by looking at the concept of wild cards.
+
+181
+00:12:11,520 --> 00:12:15,510
+So let's say you had a really messy desktop and you wanted to move all of your images to one folder
+
+182
+00:12:15,510 --> 00:12:19,050
+and all of your PDA to one or the folder and all of your spreadsheets and office falls under the folder
+
+183
+00:12:19,470 --> 00:12:20,690
+using the command line.
+
+184
+00:12:20,850 --> 00:12:24,280
+How can you use a command that's actually so specific.
+
+185
+00:12:24,630 --> 00:12:27,480
+Well you can do that using wildcards.
+
+186
+00:12:27,570 --> 00:12:32,940
+Wildcards allow you to make your commands really really specific and also really general thereby allowing
+
+187
+00:12:32,940 --> 00:12:36,870
+you to level up your control over what commands actually operate on.
+
+188
+00:12:36,870 --> 00:12:42,210
+Now this is an incredibly useful ability when dealing with files so for another dose of epic superpower's
+
+189
+00:12:42,360 --> 00:12:44,340
+I'll see you in the next video.

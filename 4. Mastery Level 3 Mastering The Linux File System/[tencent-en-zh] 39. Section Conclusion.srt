@@ -1,0 +1,395 @@
+1
+00:00:00,390 --> 00:00:05,490
+恭喜您，您已经完成了本课程关于Linux文件的这一部分
+So congratulations you've made it to the end of this section of the Course all about the Linux file
+
+2
+00:00:05,490 --> 00:00:10,530
+系统不能有效地导航Linux文件系统和处理文件很可能会导致
+system not being able to effectively navigate the Linux file system and work with files is likely going
+
+3
+00:00:10,530 --> 00:00:14,190
+成为你会反复使用的技能。
+to be skills that you will use over and over and over again.
+
+4
+00:00:14,190 --> 00:00:16,380
+所以祝贺你走到这一步。
+So congratulations for making it this far.
+
+5
+00:00:16,520 --> 00:00:16,920
+所以。
+So.
+
+6
+00:00:16,980 --> 00:00:21,030
+因此，为了庆祝您到目前为止在本视频课程中取得的成功，请快速回顾一下我们所拥有的内容
+So to celebrate your success so far in the course in this video have a quick review of what we have
+
+7
+00:00:21,030 --> 00:00:25,070
+在这一节中介绍，这样您就可以看到您已经走了多远。
+covered in this section so you can see just how far that you have come.
+
+8
+00:00:25,160 --> 00:00:25,560
+好的。
+OK.
+
+9
+00:00:25,710 --> 00:00:31,530
+所以我们首先讨论一下美国系统的文件结构，对不起。
+So we first started off with a discussion of the structure of the file structure of the US system sorry.
+
+10
+00:00:31,560 --> 00:00:36,450
+您可以看到，整个文件系统都有一个树状结构，从根目录开始
+And you saw that the whole file system has a tree like structure starting with a root directory and
+
+11
+00:00:36,450 --> 00:00:37,830
+从那里向外延伸。
+branching out from there.
+
+12
+00:00:37,830 --> 00:00:42,570
+一旦您了解了文件系统的结构，并且有了可以使用的映射，您就会了解
+And once you understood that the structure of the file system and had a map to work with you learned
+
+13
+00:00:42,570 --> 00:00:48,450
+如何使用pwd命令告诉您的shell当前在哪里运行，PWT将发出声音
+how to tell where your shell is currently operating from using the P WD command that PWT sounds will
+
+14
+00:00:48,450 --> 00:00:53,670
+打印工作目录，它基本上会在屏幕上打印出您的shell当前所在的位置
+print working directory and it basically prints out on your screen the location that your shell is currently
+
+15
+00:00:53,730 --> 00:00:54,580
+在这里操作。
+operating in.
+
+16
+00:00:54,660 --> 00:00:59,670
+您还会了解到，您可以通过浏览shell提示符来做同样的事情，该提示符的
+And you also learn that you can do the same thing by glancing at your shell prompt which the bit of
+
+17
+00:00:59,670 --> 00:01:03,130
+在您输入命令的左侧终端中输入文本。
+text in your terminal on the left where you enter your commands.
+
+18
+00:01:03,180 --> 00:01:03,640
+好的。
+OK.
+
+19
+00:01:03,720 --> 00:01:08,160
+现在，一旦您了解了如何找出您所看到的位置，您就必须在文件系统中移动并更改
+Now once you saw how to find out where you while you saw had to move around the file system and change
+
+20
+00:01:08,160 --> 00:01:13,410
+目录使用cd命令我必须通过使用cd命令列出目录的内容来查看
+directories using the cd command I had to look around by listing the contents of directories using the
+
+21
+00:01:13,410 --> 00:01:14,560
+L%s命令。
+L s command.
+
+22
+00:01:14,710 --> 00:01:19,710
+现在，在学习了这些关键导航命令之后，您对文件的含义进行了讨论
+Now after learning these critical navigation commands you had a discussion about the meaning of file
+
+23
+00:01:19,710 --> 00:01:24,120
+Linux中的扩展名，您可以看到文件扩展名在X中并不重要，但对于
+extensions in Linux and you saw that file extensions don't matter much in X but might matter to the
+
+24
+00:01:24,120 --> 00:01:25,550
+在上面运行的程序。
+programs running on it.
+
+25
+00:01:25,570 --> 00:01:29,790
+这意味着您可以灵活地为文件指定您想要的任何名称，但请记住
+This means that you have the flexibility to give files whatever names that you want but remember that
+
+26
+00:01:29,790 --> 00:01:32,600
+您可能希望坚持标准的文件约定。
+you might want to stick to standard file conventions.
+
+27
+00:01:32,610 --> 00:01:37,110
+如果您希望其他程序使用这些文件，那么您了解了
+If you're expecting those files to be used by other programs then you learned about a feature of the
+
+28
+00:01:37,110 --> 00:01:41,130
+我相信你现在已经爱上的外壳是通配符。
+shell that I'm sure you fell in love with by now which is wildcards.
+
+29
+00:01:41,130 --> 00:01:45,660
+现在，通配符允许您一次操作许多不同的文件，并且只需专门操作
+Now wildcards allow you to operate on many different files at once and just operate on specifically
+
+30
+00:01:45,660 --> 00:01:50,880
+您要寻找的是什么，它可以为您节省大量时间和打字时间，而且它基本上会使您的
+what you are looking for which is which saves you lots of time and typing and it basically makes your
+
+31
+00:01:50,880 --> 00:01:52,760
+指挥的力量要强大得多。
+commands a whole lot more powerful.
+
+32
+00:01:52,770 --> 00:01:57,140
+现在，一旦你记下了这些非常重要的基础知识，你就学会了一大堆命令。
+Now once you had got those very important basics down you learned a whole bunch of commands.
+
+33
+00:01:57,190 --> 00:02:01,890
+我必须创建文件和目录，复制它们，粘贴它们，删除它们，重命名它们，移动它们。
+I had to create files and directories copy them paste them delete them rename them move them around.
+
+34
+00:02:01,890 --> 00:02:06,480
+此外，我还必须使用基于命令行的文本文件编辑器Nano对它们进行编辑。
+And also I had to edit them with a command line based text file editor called Nano.
+
+35
+00:02:06,660 --> 00:02:11,400
+但是，随着所有这些文件的创建、移动和编辑，很可能在某些时候您不会
+But with all of this creation moving and editing of files it's quite likely that at some point you won't
+
+36
+00:02:11,400 --> 00:02:16,370
+确切地知道文件的创建位置或位置，您可能需要找到它。
+know exactly where a file is created or located and you might need to find it.
+
+37
+00:02:16,380 --> 00:02:21,300
+因此，您可以使用LOCATE命令查找系统上的文件，并且可以让LOCATE命令使用
+So you use the locate command to find files on your system and you'll have the locate command uses a
+
+38
+00:02:21,300 --> 00:02:27,150
+数据库来查找文件，并且您了解了如何使用update dbi命令来更新其数据库以确保安全性。
+database to find files and you saw how to use the update DBI command to update its database for security
+
+39
+00:02:27,150 --> 00:02:31,870
+更新数据库需要普通用户没有的提升权限的原因。
+reasons updating the database requies elevated privileges that normal users don't have.
+
+40
+00:02:31,920 --> 00:02:36,660
+那么，如何使用sudo命令临时成为root用户并执行您需要执行的操作呢？
+So how do you use the sudo command to temporarily become the root user and do what you need to do.
+
+41
+00:02:36,690 --> 00:02:39,340
+您可以将其用于任何命令，而不仅仅是LOCATE命令。
+And you can use that for any command not just the locate command.
+
+42
+00:02:39,490 --> 00:02:42,900
+现在，虽然定位命令非常棒，但您可以快速完成工作。
+Now although the locate command is awesome you can get the job done quickly.
+
+43
+00:02:42,900 --> 00:02:46,140
+有时你需要一些更具定制化和重用性的东西。
+Sometimes you need something a bit more customizable and heavy duty.
+
+44
+00:02:46,290 --> 00:02:51,390
+因此，在了解了LOCATE命令之后，您将了解如何使用find命令查找文件
+So after learning about the locate command you learn how to find files using the find command that find
+
+45
+00:02:51,390 --> 00:02:56,070
+命令是一个功能非常强大的命令，它有很多选项可以确保您可以找到
+command is a super powerful command that has loads of options to make sure that you can find what ever
+
+46
+00:02:56,070 --> 00:02:57,900
+你想在你的系统上。
+you want on your system.
+
+47
+00:02:57,900 --> 00:03:01,800
+它还有一个额外的好处，那就是一旦你发现了一堆董事的文件
+There it also has the added bonus that once you have found a bunch of files of directors with the find
+
+48
+00:03:01,800 --> 00:03:07,020
+命令您实际上可以告诉find命令在该命令或每个命令的一系列命令下运行
+command you can actually tell the find command to run under the command or series of commands for each
+
+49
+00:03:07,020 --> 00:03:08,650
+它找到的结果。
+result that it finds.
+
+50
+00:03:08,650 --> 00:03:12,420
+这使您可以很轻松地创建令人难以置信的强大功能。
+And this allows you to create incredibly powerful functionality with very little effort.
+
+51
+00:03:12,690 --> 00:03:17,760
+然后，您将继续学习如何使用cat命令查看文件内部，这样您就可以
+And then you moved on to learn about how to look inside files using the cat command so that you can
+
+52
+00:03:17,760 --> 00:03:22,350
+还可以使用cat命令将文件粘合在一起或连接不同的文件，有时您需要
+also stick files together or concatenate different files using the cat command and sometimes you need
+
+53
+00:03:22,350 --> 00:03:23,160
+要反转数据，请执行以下操作。
+to reverse data.
+
+54
+00:03:23,160 --> 00:03:28,350
+因此，您看到可以使用Attack命令垂直反转文件，也可以使用
+So you saw that you can reverse files vertically using the attack command or horizontally using the
+
+55
+00:03:28,590 --> 00:03:29,800
+指挥部。
+command.
+
+56
+00:03:29,850 --> 00:03:34,920
+现在，有时当您打开文件或运行命令时，您会在屏幕上看到大量输出，并且
+Now sometimes when you open files or run commands you get a whole lot of output on the screen and having
+
+57
+00:03:34,950 --> 00:03:36,900
+一下子出现在屏幕上是没有多大帮助的。
+all on the screen at once is not very helpful.
+
+58
+00:03:36,900 --> 00:03:41,610
+因此，您了解了最后一页，该程序允许您浏览大量文本以
+So you learnt about the last page a program that allows you to page through large amounts of text to
+
+59
+00:03:41,610 --> 00:03:46,380
+让它更易于管理，你还学到了一大堆有用的策略，让你得到你想要的
+make it more manageable and you also learned a whole host of useful tactics for getting just what you
+
+60
+00:03:46,380 --> 00:03:47,540
+想要从一个文件中。
+want from a file.
+
+61
+00:03:47,610 --> 00:03:53,280
+head命令、ail命令和grep命令也是如此，然后您了解了如何对文件内容进行排序
+So is the head command the tail command and grep command then you saw how you can sort of files content
+
+62
+00:03:53,280 --> 00:03:54,620
+以各种不同的方式。
+in a variety of different ways.
+
+63
+00:03:54,630 --> 00:03:59,320
+最后，我们在讨论的最后介绍了文件归档和压缩。
+And finally we topped off the discussion with a look at file archiving and compression.
+
+64
+00:03:59,370 --> 00:04:03,810
+你在这一节真的学到了很多东西，你应该为自己感到无比自豪
+So you've really learned a lot of stuff in this section and you should be incredibly proud of yourself
+
+65
+00:04:03,860 --> 00:04:04,640
+太好了。
+so well.
+
+66
+00:04:04,650 --> 00:04:05,700
+9~10成熟。
+Well done.
+
+67
+00:04:05,700 --> 00:04:08,420
+现在你将使用你在这里一直学到的技能。
+Now you will use the skills that you've learned here all the time.
+
+68
+00:04:08,430 --> 00:04:09,810
+我们都在做这方面的工作，现在它已经上线了。
+We all work with that and it's come on line.
+
+69
+00:04:09,810 --> 00:04:14,050
+所以现在在您的Linux技能发展过程中，这真的是一个令人惊叹的时刻。
+So it's a really amazing moment right now in your Linux skills development.
+
+70
+00:04:14,070 --> 00:04:18,810
+因此，在下一节中，您将了解如何在系统上计划和自动执行任务
+So in the next section you're going to learn about how you can schedule and automate tasks on your system
+
+71
+00:04:19,080 --> 00:04:22,600
+使用bash脚本和一个名为Kramm的非常有用的实用程序。
+using bash scripts and a super useful utility called Krumm.
+
+72
+00:04:22,800 --> 00:04:26,400
+但在我们谈到那之前我有个项目要你完成。
+But before we get to that I have a project for you to complete.
+
+73
+00:04:26,430 --> 00:04:31,500
+现在，该项目将挑战您如何使用Linux文件系统做各种事情，并使用一大堆
+Now the project will challenge you to do various things with the Linux file system and use a whole bunch
+
+74
+00:04:31,500 --> 00:04:34,960
+并建立一条真正先进的管道。
+of the commands and build a really advanced pipeline.
+
+75
+00:04:35,050 --> 00:04:40,110
+好的，现在它将会很棒，它将作为一种荣誉的徽章，因为你已经学到了所有的东西
+OK now it's going to be awesome and it will serve as a badge of honor that you have learned everything
+
+76
+00:04:40,140 --> 00:04:44,830
+我们已经在课程的这一节中介绍了这些内容，这样您就可以放心地继续学习了。
+that we've covered in this section of the course so you can feel confident moving on.
+
+77
+00:04:44,850 --> 00:04:47,940
+在下一个视频中，我将给你们一个项目简介。
+So in the next video I'm going to be giving you a project brief.
+
+78
+00:04:48,000 --> 00:04:52,290
+再次祝贺你们在这一节中所做的令人惊叹的工作。
+So congratulations once again for what you've done in the section you're doing amazingly.
+
+79
+00:04:52,290 --> 00:04:55,430
+我为你感到非常骄傲，我会在下一个视频中见到你。
+I'm super proud of you and I'll see you in the next video.
+

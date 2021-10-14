@@ -1,0 +1,1075 @@
+1
+00:00:00,120 --> 00:00:01,760
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,770 --> 00:00:07,170
+欢迎回到我们关于创建您自己的bash脚本的讨论的第二部分
+Welcome back to the second part of our discussion about making your very own bash scripts and in this
+
+3
+00:00:07,170 --> 00:00:11,880
+视频我们将剥离另一辆公交车，这将允许我们备份所有文件夹
+video we're going to make another bus stripped and that's going to allow us to back up all the folders
+
+4
+00:00:11,940 --> 00:00:16,830
+在我们的主目录中，我们还将向您展示如何设置脚本，以便它们可以
+in our home directory and we're also going to show you how you can set up your script so they can be
+
+5
+00:00:16,830 --> 00:00:19,130
+以更方便的方式跑步。
+run in a more convenient way.
+
+6
+00:00:19,200 --> 00:00:21,090
+那么让我们来制作另一个bash脚本。
+So let's make another bash script.
+
+7
+00:00:21,090 --> 00:00:22,520
+我们要把它叫回来。
+We're going to call it back up.
+
+8
+00:00:22,590 --> 00:00:28,110
+在我们的桌面上，我们将键入nano，然后备份我们的dot。
+Sh on our desktops we're going to type nano then back up our DOT sh.
+
+9
+00:00:28,320 --> 00:00:33,750
+我的意思是，我们将在那里添加第一行，作为沙班古线，我们的Shebang线告诉
+I mean there we're going to add as the very first line as Shabangu line and our shebang line tells the
+
+10
+00:00:33,750 --> 00:00:40,580
+Shell不读取此代码，不将其作为文本文件读取，而是将其解释为bash脚本。
+shell to not read this code not read this far as a text file but instead to interpret it as a bash script.
+
+11
+00:00:40,590 --> 00:00:45,130
+所以我们这样做的方法是，我们输入一个散列，然后是银行或散列，然后是一个感叹号。
+So the way we do that is we type a hash then a banks or hash and then an exclamation mark.
+
+12
+00:00:45,360 --> 00:00:50,790
+然后是我们希望用来解释此文件的解释器的路径
+And then the path to the interpreter that we want this file to be interpreted with and that is going
+
+13
+00:00:50,790 --> 00:00:57,240
+位于劈开本劈开狂欢节的狂欢节外壳，如果我关闭的话我们可以检查一下
+to be a bash shell which is located at slash Ben slash Bash and we can check that if I close out of
+
+14
+00:00:57,240 --> 00:00:58,090
+那。
+that.
+
+15
+00:00:58,650 --> 00:01:04,830
+您可以通过键入Which然后bash返回到我们的命令行，我们可以看到Slush是劈开bash
+And you go back to our command line by typing which and then bash We can see slushed been slash Bash
+
+16
+00:01:04,980 --> 00:01:07,950
+是bash解释器所在的位置。
+is where the bash interpreter is located.
+
+17
+00:01:07,950 --> 00:01:14,910
+因此，如果我们打开备份脚本，我们现在可以在这里下面开始编写命令
+So with that if we open back up our backup script we can now underneath here start writing commands
+
+18
+00:01:14,910 --> 00:01:16,910
+这将构成我们的剧本。
+that will make up our script.
+
+19
+00:01:16,920 --> 00:01:25,930
+现在，我们想让他使用脚本来压缩并存档主目录中的所有文件夹，或者
+Now we want the script to him to compress and archive all of the folders inside our home directory or
+
+20
+00:01:25,930 --> 00:01:31,290
+至少在Downloads、Documents、Desktop、Pictures和Videos文件夹中是这样，因为它们是最好的。
+at least the downloads documents desktop pictures and videos folders because they're the best.
+
+21
+00:01:31,290 --> 00:01:33,570
+所以，让我们看看我们如何才能做到这一点。
+So let's just let's see how we might do that.
+
+22
+00:01:33,650 --> 00:01:37,770
+我的意思是，如果你记得我们在上一节末尾学到的东西，为了实现这一点，我们将
+I mean if you remember from what we learnt at the end of the last section to make this happen we'll
+
+23
+00:01:37,770 --> 00:01:41,710
+需要使用tar命令，我们需要为其提供一些选项。
+need to use the tar command and we need to give it a few options.
+
+24
+00:01:41,880 --> 00:01:45,280
+例如，我们将给它C选项来创建一个新的GONE存档。
+So for example we'll give it the C option to create a new god archive.
+
+25
+00:01:45,370 --> 00:01:51,870
+让它与我们对话的选项，以及告诉它下一个参数将是
+The the option to make it speak to us and the option to tell it that the next argument is going to be
+
+26
+00:01:52,290 --> 00:01:59,160
+这将是我们所有的kuffar，我们将把它命名为back up dot tar dot Zed。
+our it's going to be our all kuffar and we're going to call it back up dot tar dot Zed.
+
+27
+00:01:59,530 --> 00:02:00,020
+好的。
+OK.
+
+28
+00:02:00,150 --> 00:02:03,080
+而是用耶稣来压缩它。
+But to make it compressed using Jesus.
+
+29
+00:02:03,280 --> 00:02:05,460
+实际上也给它提供了ZED选项。
+Actually to give it the Zed option as well.
+
+30
+00:02:05,460 --> 00:02:10,520
+所以我们要通过耶稣把它压缩成一个叫做“备份文件”或“耶稣文件”的文件。
+So we're going to compress it through Jesus up into a file called backup Doc tor doc Jesus.
+
+31
+00:02:10,830 --> 00:02:14,280
+但然后我们需要告诉它我们实际想要存储的是什么。
+But then we need to tell it what we want to actually store.
+
+32
+00:02:14,460 --> 00:02:15,970
+这就是我们要告诉它的。
+And this is what we're going to tell it.
+
+33
+00:02:16,080 --> 00:02:22,290
+我们会说，嘿，我要你放进去，我们要把家里的所有东西都放进去
+We're going to say hey I want you to put in there we to want to put in there everything in our home
+
+34
+00:02:22,290 --> 00:02:30,210
+我们要放入Documents文件夹Downloads文件夹爱荷华州桌面文件夹Pictures文件夹的目录
+directory we're going to put in our documents folder downloads folder Iowa desktop folder pictures folder
+
+35
+00:02:30,480 --> 00:02:32,710
+还有我们的视频文件夹。
+and our videos folder.
+
+36
+00:02:32,790 --> 00:02:33,210
+好的。
+OK.
+
+37
+00:02:33,330 --> 00:02:36,930
+所以我们在这里说的是，嘿，用托克汉姆并压缩它。
+So what we're saying here is hey use the Torkham and compress it.
+
+38
+00:02:36,930 --> 00:02:43,210
+详细地告诉我们发生了什么事，把耶稣压缩起来，把文件命名为备份文件托德。
+Be verbose tell us what's going on zip zip through Jesus up and make the file called backup doc Todd.
+
+39
+00:02:43,230 --> 00:02:43,850
+天啊。
+Geez.
+
+40
+00:02:44,010 --> 00:02:50,310
+在里面，将文档放在主目录中的桌面图片和视频文件夹下
+And inside there put the documents down those desktop pictures and videos folders from our home directory
+
+41
+00:02:50,310 --> 00:02:53,570
+使用一点花括号扩展来节省一些打字时间。
+using a bit of brace expansion to save some typing.
+
+42
+00:02:53,670 --> 00:02:54,130
+好的。
+OK.
+
+43
+00:02:54,210 --> 00:02:55,320
+就这样了。
+So that's it.
+
+44
+00:02:55,410 --> 00:02:55,680
+好的。
+OK.
+
+45
+00:02:55,680 --> 00:03:01,440
+然后，当我们运行我们的老板脚本时，如果我们执行bash备份骰子页，您会看到它为我们提供了一些
+And then when we run our boss script if we do bash backup dice page you'll see that it's giving us some
+
+46
+00:03:01,440 --> 00:03:07,710
+输出，现在我们在桌面上有一个备份的顶级目标文件，所以这不是很酷，对吗？
+output and now we've got a backup top target file on our desktop so it's not very cool right and you
+
+47
+00:03:07,710 --> 00:03:14,920
+现在可以在此处看到已添加到内部的所有文件到备份文件夹中
+can see here all the files that have been added into the into the interior into the backup folder now
+
+48
+00:03:15,000 --> 00:03:22,250
+在那里，我们给它提供了v选项，这里是Verbose，这就是我们要在屏幕上密封输出的内容
+in there we gave it the v option here for verbose and that's what we got to seal the output on the screen
+
+49
+00:03:22,260 --> 00:03:29,490
+也许我们不想这样，所以如果我们去掉V，比方说我们去掉了一个备用的点重言式。
+maybe we don't want that so if we just get rid of the V and let's say we remove a backup dot tautologies.
+
+50
+00:03:29,680 --> 00:03:31,710
+现在我们又跑起来了。
+And now we run again.
+
+51
+00:03:32,370 --> 00:03:37,930
+您可以看到，现在我们没有那么多的输出，但是我们仍然有备份文件。
+You can see that now we don't really have as much output from it but we've still got the backup file.
+
+52
+00:03:37,950 --> 00:03:38,820
+所以你可以看到这里。
+So you can see here.
+
+53
+00:03:38,850 --> 00:03:44,550
+在脚本中编写这些内容的一个好处是可以保存和编辑这些脚本的行为
+One benefit of writing these things in scripts you can save and edit the behavior of those scripts over
+
+54
+00:03:44,550 --> 00:03:48,360
+时间随着你需求的发展而变化，它总能让你奔跑。
+time as your needs evolve and that always can be there for you to run.
+
+55
+00:03:48,360 --> 00:03:53,070
+例如，我们可能不喜欢此消息出现在标准错误上，因此我们可以
+For example we might not like the fact that this message comes out on standard error so we can just
+
+56
+00:03:53,070 --> 00:04:02,550
+返回到我们的备份Dyess页面，并将此命令标准错误重定向到名为劈开的位置
+go back into our backup Dyess page and redirect this this command standard error to place called slash
+
+57
+00:04:02,550 --> 00:04:06,020
+Dev劈开注意到，基本上把它去掉了。
+dev slash note which basically gets rid of it.
+
+58
+00:04:06,080 --> 00:04:10,770
+好的，我们已经将其中一些重定向到劈开开发人员劈开no，这是文件系统中名为
+OK so we've redirected some of them to slash dev slash no which is the place on a file system called
+
+59
+00:04:10,770 --> 00:04:14,830
+基本上只是删除发送给它的所有内容的比特桶。
+the bit bucket that basically just deletes whatever is sent to it.
+
+60
+00:04:14,920 --> 00:04:21,690
+现在，如果我们尝试运行bash backup up，应该清除我们现在正在运行的屏幕，这样我们就可以
+And now if we try to run bash backup up sh clear the screen we're running now so that we can get no
+
+61
+00:04:21,690 --> 00:04:22,290
+输出。
+output.
+
+62
+00:04:22,380 --> 00:04:27,780
+但是，如果我删除此备份归档并运行它，您可以看到备份仍在创建，但现在
+But if I delete this backup archive and run it you can see that the backup is still created but now
+
+63
+00:04:27,780 --> 00:04:28,620
+我们没有收到任何错误。
+we don't get any error.
+
+64
+00:04:28,620 --> 00:04:34,020
+因此您可以看到，随着时间的推移，您可以自定义这些脚本。
+So you can see that you can customize these these scripts as time goes on.
+
+65
+00:04:34,080 --> 00:04:38,580
+所以我们现在不想引起注意的是，我们可以如何使运行bash脚本成为
+So we don't want to draw attention to a bit right now is how we can make running the bash scripts a
+
+66
+00:04:38,580 --> 00:04:40,620
+效率更高，用户更友好。
+bit more efficient and user friendly.
+
+67
+00:04:40,770 --> 00:04:48,390
+现在我们正在做的是，我们在桌面上，bash脚本位于后台
+So at the minute what we're doing is we are on our desktop where the bash script is located in the background
+
+68
+00:04:48,420 --> 00:04:52,440
+然后给它提供到bash脚本的路径，因为此时我们已经在桌面上
+and then giving it the path to the bash script which at the minute because we're already on the desktop
+
+69
+00:04:52,470 --> 00:04:53,840
+它又回到了我们的舞台上。
+it's just back up to our stage.
+
+70
+00:04:53,880 --> 00:04:57,850
+当我运行它时，我们会得到所需的输出。
+When I run that we get the the the required output.
+
+71
+00:04:58,080 --> 00:05:03,490
+但这有点麻烦，因为如果我们不在桌面上，那么我们就不得不
+But that's kind of a bit of hassle because if we weren't on the desktop then we would have to give it
+
+72
+00:05:03,490 --> 00:05:07,000
+一条不同的路，我们必须在后台有一条更好的方法，只用一条就可以做到这一点
+a different path and we have to in the background there's a there's a better way to do it in just one
+
+73
+00:05:07,000 --> 00:05:07,500
+走一步。
+step.
+
+74
+00:05:07,600 --> 00:05:08,100
+好的。
+OK.
+
+75
+00:05:08,320 --> 00:05:13,280
+这是如何设置的，所以您要做的是返回到您的主目录，您可以看到
+And this is how you set that up so what you do is you go back to your home directory and you can see
+
+76
+00:05:13,280 --> 00:05:15,450
+在这里，我们只有我们的普通文件夹。
+in here that we've just got our normal folders.
+
+77
+00:05:15,460 --> 00:05:21,000
+您要做的就是像我一样创建一个名为All的小写目录。
+What you do is you make a directory called been all in lower case like I've been.
+
+78
+00:05:21,220 --> 00:05:22,880
+你可以看到它已经被创造出来了。
+And you can see that's been created.
+
+79
+00:05:22,900 --> 00:05:28,660
+您要做的就是将所有shell脚本移到该文件夹中，该文件夹已从我们的桌面移出
+And you what you do is you move all of your shell scripts into that folder it's moved from our desktop
+
+80
+00:05:29,060 --> 00:05:30,960
+备份。
+the backup.
+
+81
+00:05:31,180 --> 00:05:32,500
+文件是备份Dyess。
+Files are backup Dyess.
+
+82
+00:05:32,530 --> 00:05:35,440
+我们要把它移到垃圾箱文件夹里。
+We're going to move it into bin folder.
+
+83
+00:05:35,560 --> 00:05:41,830
+好的，我们将备份的S.H.文件夹文件从桌面移到bin文件夹，因为您可以看到
+OK so we're moving from our desktop the backup S.H. folder file into our bin folder because you see
+
+84
+00:05:41,830 --> 00:05:43,420
+它已经从那里移走了。
+it's been moved from there.
+
+85
+00:05:43,420 --> 00:05:45,480
+我的意思是我们现在进了我们的垃圾箱。
+I mean we now go into our bin.
+
+86
+00:05:45,520 --> 00:05:47,500
+我们在里面看到了备份的Dyas页面。
+We see the backup Dyas pages in that.
+
+87
+00:05:47,500 --> 00:05:52,560
+实际上，我只是将其从备份重命名为仅备份。
+And actually I'm just going to rename it from backup to stage into just backup.
+
+88
+00:05:52,720 --> 00:05:53,150
+好的。
+OK.
+
+89
+00:05:53,290 --> 00:05:57,730
+现在我们得到了相同的文件，名为backup，如果我运行它，它仍然可以工作。
+So now we've just got the same file called backup and if I run it it'll still work.
+
+90
+00:05:57,730 --> 00:05:58,940
+所以没什么不对劲的。
+So there's nothing wrong.
+
+91
+00:05:59,100 --> 00:06:00,590
+它只是稍微重新命名了一下。
+It's just renamed it a little bit.
+
+92
+00:06:00,690 --> 00:06:01,240
+好的。
+OK.
+
+93
+00:06:01,570 --> 00:06:06,890
+现在我需要这样做，以便可以从命令行运行它。
+Now I need to make this so that it can be run from the command line.
+
+94
+00:06:06,940 --> 00:06:09,790
+好的，我们要做的是两种方法。
+OK so what we're going to do is two ways to do this.
+
+95
+00:06:09,790 --> 00:06:16,630
+首先，我们可以在文件浏览器中打开，我们可以进入bin，然后右键单击
+First of all we can open up in our file browser we can go into bin and then we can right click click
+
+96
+00:06:16,630 --> 00:06:23,730
+属性进入权限，然后单击“允许将文件作为程序执行”。
+properties go in permissions and then click allowing executing file as program.
+
+97
+00:06:23,760 --> 00:06:24,220
+好的。
+OK.
+
+98
+00:06:24,370 --> 00:06:28,540
+这是一种方法，但我现在不打算那样做，因为我想让你们学习
+That's one way to do it but I'm not going to do it like that for now because I want you to learn the
+
+99
+00:06:28,540 --> 00:06:29,640
+终点站。
+terminal way.
+
+100
+00:06:29,710 --> 00:06:35,510
+因此，您要做的就是键入C Hage mode命令Never See Hach mode命令SENSE for CHANGE MODE
+So what you do is you type the C Hage mode command never see Hach mode command sense for change mode
+
+101
+00:06:35,860 --> 00:06:40,080
+它的作用是允许您更改某个文件拥有的权限。
+and what it does is it allows you to change the permissions that a certain file has.
+
+102
+00:06:40,300 --> 00:06:46,390
+然后作为第二个参数类型加X，这意味着赋予它可执行权限，因此添加可执行文件
+And then as the second argument type plus X which means give it executable permission so add executable
+
+103
+00:06:46,390 --> 00:06:48,260
+权限，然后告诉它文件。
+permissions and then you tell it the file.
+
+104
+00:06:48,280 --> 00:06:52,900
+所以，在我运行时进行备份，这就是我们所做的，我们已经将可执行任务添加到备份中。
+So just backup when I run that's what we've done is we've added executable missions to the backup.
+
+105
+00:06:52,910 --> 00:06:56,130
+现在，当我用LS观察它时，你可以看到它变成了绿色。
+Now when I look at it with LS You can see that it's gone green.
+
+106
+00:06:56,370 --> 00:06:56,910
+好的。
+OK.
+
+107
+00:06:56,980 --> 00:07:00,340
+这意味着它可以作为脚本运行。
+So that means that it can be run as a script.
+
+108
+00:07:00,340 --> 00:07:04,810
+现在最酷的事情是，如果我们接近，实际上，我们也会做得很好，仅仅是为了
+Now the cool thing about this is that if we close to actually we're going to do as well just to make
+
+109
+00:07:04,810 --> 00:07:10,420
+更清楚的是，如果我们回到备份模式，我们要做的是保存，确保
+it a bit clearer if we go back into backup what we're going to do is I'm going to save make sure that
+
+110
+00:07:10,420 --> 00:07:13,690
+备份始终保存在桌面上。
+the backup is always saved on the desktop.
+
+111
+00:07:13,780 --> 00:07:16,250
+这只会让我们更清楚地展示正在发生的事情。
+That's just going to make it a bit clearer to demonstrate what's happening.
+
+112
+00:07:16,510 --> 00:07:20,900
+所以我们要做的是关闭终端并删除她的备份。
+So what we're going to we're going to close the terminal and delete her backup here.
+
+113
+00:07:21,060 --> 00:07:21,880
+好的。
+OK.
+
+114
+00:07:22,120 --> 00:07:29,770
+现在我注意到我在我们的主目录中，好的，但是如果我键入back，我们可以在这里看到我们正在获得
+And now I notice I'm in our home directory OK but if I type back up we can see here that we're getting
+
+115
+00:07:29,770 --> 00:07:33,690
+当前未安装备份程序的错误。
+an error saying that the backup program is not currently installed.
+
+116
+00:07:33,690 --> 00:07:36,300
+如果你还记得我很久以前告诉你的话。
+And if you remember what I told you a long time ago.
+
+117
+00:07:36,320 --> 00:07:41,330
+好的，开始这门课的时候，外壳说它找不到一些东西，这意味着它不在货架上
+Right the start this course when the shell says it can't find something that means it's not on the shelves
+
+118
+00:07:41,410 --> 00:07:42,550
+搜索路径。
+search path.
+
+119
+00:07:42,550 --> 00:07:48,040
+因此，我们需要编辑shell搜索路径以包括最近创建的bin文件夹。
+So we need to edit the shell search path to include recently created bin folder.
+
+120
+00:07:48,040 --> 00:07:51,530
+现在我们这样做的方式是，我们在自己的主目录中。
+Now the way that we do this is we're in our home directory.
+
+121
+00:07:52,300 --> 00:08:01,090
+如果我们继续使用Nano命令，我希望您编辑dot Bash RC文件，这样doc Bash RC空间
+If we go ahead and use the Nano command I want you to edit the dot Bash RC file so the doc Bash RC space
+
+122
+00:08:01,110 --> 00:08:05,560
+全是小写将打开这个非常重要的文件。
+is all lowercase will open up this very important file.
+
+123
+00:08:05,580 --> 00:08:11,260
+现在，如果我们一直向下滚动到底部，然后向下滚动到Odelein，这就是我要你们写的内容。
+Now if we scroll all the way down to the bottom and Odelein down there this is what I want you to write.
+
+124
+00:08:11,260 --> 00:08:11,500
+好的。
+OK.
+
+125
+00:08:11,500 --> 00:08:18,190
+什么是大写的正确路径，然后是等号，然后是一些双引号或两个双引号
+And what is the right path in upper case then an equal sign then some double quotes or two double quotes
+
+126
+00:08:18,240 --> 00:08:29,000
+在那些双引号内，美元符号Paff a冒号，然后美元符号Home，大写劈开be
+and inside those double quotes dollar sign paff a colon then Dollar Sign home in uppercase slash been
+
+127
+00:08:29,470 --> 00:08:30,000
+好的。
+OK.
+
+128
+00:08:30,030 --> 00:08:31,410
+所以让我稍微解释一下。
+So let me explain this a little bit.
+
+129
+00:08:31,610 --> 00:08:34,750
+我们在这里说的是一个叫做PATH的变量。
+So what we're saying here is a variable called Path.
+
+130
+00:08:34,760 --> 00:08:42,230
+我们将有一个与当前路径相等的路径，然后是冒号，然后是我们的主文件夹劈开
+We're going to have a path equal to what the path currently is then a colon then our home folder slash
+
+131
+00:08:42,230 --> 00:08:46,090
+因此，我们主文件夹中的bin文件夹将添加到路径中。
+been so the bin folder in our home folder is going to be added to the path.
+
+132
+00:08:46,090 --> 00:08:52,100
+当我关闭的时候，我们写信给老板澳元，关闭它，如果我们关闭我们的航站楼，再开一个新的航站楼
+And when I close that we write to the boss Aussie close it and if we close our terminal and open another
+
+133
+00:08:52,100 --> 00:08:52,850
+一。
+one.
+
+134
+00:08:52,850 --> 00:08:59,880
+如果我们呼应帕特的做法，就会发现它增加了劈开的主页冰沙齐亚德
+What that has done if we echo the path what Pat has done is it has added Slash's home slushes Ziyad
+
+135
+00:08:59,930 --> 00:09:03,560
+劈开走上了我们的路。
+slash been to our path.
+
+136
+00:09:03,610 --> 00:09:10,280
+现在，这意味着它将能够搜索路径中的备份脚本，就像搜索任何
+Now that means it'll be able to search for our backup script in the path just like it would any of the
+
+137
+00:09:10,280 --> 00:09:13,060
+当我重新运行时，在指挥中心。
+command center when I run back up.
+
+138
+00:09:13,070 --> 00:09:19,430
+您可以看到ascript刚刚运行过，现在它已经创建了备份，所以如果我现在就去
+You can see the ascript has just been run and it has now created the backup so if I if I right now go
+
+139
+00:09:19,430 --> 00:09:27,170
+放到bin文件夹中，我创建了另一个名为Hello的文件，例如，在那里我告诉它
+into our bin folder and I create another file called Hello for example and in there I tell it that it's
+
+140
+00:09:27,170 --> 00:09:28,850
+一场狂欢的剧本和谢尔邦。
+a bash script with the shebang.
+
+141
+00:09:29,360 --> 00:09:32,020
+我说Echo你好，世界。
+And I say echo Hello world.
+
+142
+00:09:32,350 --> 00:09:32,710
+好的。
+OK.
+
+143
+00:09:32,720 --> 00:09:33,600
+然后把它保存起来。
+And save it.
+
+144
+00:09:33,920 --> 00:09:39,430
+然后我给文件可执行的权限，让S.H.Maade加上X Hello。
+And then I give the file executable permission so S.H. maade plus X Hello.
+
+145
+00:09:39,650 --> 00:09:41,060
+看看它是不是变绿了。
+See that it's gone green.
+
+146
+00:09:41,100 --> 00:09:43,600
+现在我可以在我的文件系统中的任何位置。
+Now I can be anywhere in my file system.
+
+147
+00:09:43,640 --> 00:09:45,820
+我可能在我的文档文件夹里。
+I could be in my documents folder.
+
+148
+00:09:45,950 --> 00:09:46,980
+好的，但是如果我跑了。
+OK but if I've run.
+
+149
+00:09:47,000 --> 00:09:47,800
+你好。
+Hello.
+
+150
+00:09:48,050 --> 00:09:52,730
+您可以看到hello world网络，我可以通过管道将它们重定向到任何想要重定向的地方，所以如果
+You can see that hello world networks and I can pipe these to wherever I want to redirect them so if
+
+151
+00:09:52,730 --> 00:09:57,230
+我将其重定向到我桌面上的一个名为Haloed Text的文件，这就是我们要做的。
+I redirects it to a file called haloed text here on my desktop there we are.
+
+152
+00:09:57,350 --> 00:10:04,580
+我们现在在桌面上有了I Farkle晕圈活动，基本上不知道如何创建我们自己的命令
+We've now got I Farkle haloed activity on the desktop and wouldn't know basically creating our own commands
+
+153
+00:10:04,580 --> 00:10:06,280
+所以这不是很棒的对吗。
+so isn't that awesome right.
+
+154
+00:10:06,470 --> 00:10:12,230
+如果我们有可执行文件，我们对放入此bin文件夹中的任何内容都有自己的命令
+We've got our own our own commands on anything that we put in this bin folder if we have executable
+
+155
+00:10:12,230 --> 00:10:15,560
+权限，我们可以像运行任何其他命令一样运行它。
+permissions we can run it just like any other command.
+
+156
+00:10:15,560 --> 00:10:17,010
+所以这是令人难以置信的。
+So that is incredible.
+
+157
+00:10:17,120 --> 00:10:22,250
+但是现在你可能会想，好吧，齐亚德，这很酷，一切都很好，但是到底有什么不同呢？
+But now you might be thinking OK Ziyad this is cool and everything but what's really the difference
+
+158
+00:10:22,250 --> 00:10:24,110
+在别名和脚本之间。
+between an alias and a script.
+
+159
+00:10:24,140 --> 00:10:30,360
+所以请记住，别名是您放在后端别名文件中的内容。
+So remember aliases are things that you put in your in your in your back aliases file.
+
+160
+00:10:30,380 --> 00:10:32,930
+这是dhaba Batia别名文件。
+This one is dhaba Batia aliases file.
+
+161
+00:10:33,050 --> 00:10:39,140
+如果我们，如果我们看一看，我们正在做的是，你知道，设置命令名称，我们
+And if we if we take a look in there what we're doing is we are you know setting command names and we're
+
+162
+00:10:39,170 --> 00:10:41,210
+给他们这些命令意味着。
+giving them those commands mean.
+
+163
+00:10:41,210 --> 00:10:51,200
+为什么我们不做个别名，我们说备份等于掷破折号C-v Zed f，你知道的
+Why didn't we just make a make an alias and we say backup equals toss dash C-v Zed f of you know to
+
+164
+00:10:51,200 --> 00:11:02,060
+我们的桌面上，然后拉回到点头狗ZED，并说我们想要在那里，我们想要我们的桌面
+our to our desktop and then pull back up dot top dog Zed and say we want in there we want our desktop
+
+165
+00:11:02,580 --> 00:11:12,520
+和我们的文档，我们和我下载图片和视频，然后关闭它。
+and our documents and we're and I download pictures and videos and then close it.
+
+166
+00:11:12,650 --> 00:11:16,100
+为什么我们不这样做，然后说，我想，我们，你知道，我们知道怎么做化名。
+Why don't we just do that and say I'd like we you know we know how to make aliases.
+
+167
+00:11:16,130 --> 00:11:17,660
+那不是同样的工作方式吗。
+Wouldn't that work the same way.
+
+168
+00:11:17,720 --> 00:11:22,850
+是的，它在本例中的工作方式是一样的，因为我们有一个类似于我要结束的一行脚本
+Yes it would work the same in this instance because we have a one line script like I'm going to close
+
+169
+00:11:22,850 --> 00:11:23,660
+看看我要做什么。
+out what I'm going to do.
+
+170
+00:11:23,790 --> 00:11:28,760
+这是因为我们有一个一行脚本，所以别名可以变成，你知道的，就像一行一样
+And that's because we have a one line script so aliases can become you know of the same as one line
+
+171
+00:11:28,760 --> 00:11:30,170
+真的是剧本。
+scripts really.
+
+172
+00:11:30,230 --> 00:11:34,760
+但是脚本的好处是，脚本被设计为包含多个命令行
+But the good thing about scripts is that scripts are designed to contain more than one command line
+
+173
+00:11:35,060 --> 00:11:35,270
+曾经是。
+was.
+
+174
+00:11:35,270 --> 00:11:39,530
+别名通常只是为了给一个命令行提供更方便的名称。
+Aliases are usually just to give more convenient names to just one command line.
+
+175
+00:11:39,530 --> 00:11:45,320
+其次，脚本可以具有更复杂的编程结构，如循环、if语句和
+Now secondly scripts can have more complicated programming constructs such as loops if statements and
+
+176
+00:11:45,320 --> 00:11:46,070
+功能。
+functions.
+
+177
+00:11:46,070 --> 00:11:48,020
+如果你以前从来没有做过编程的话。
+Now if you've never done any programming before.
+
+178
+00:11:48,110 --> 00:11:52,620
+可以说，脚本比别名更繁重。
+Suffice it to say that scripts are more heavy duty than alias's can be OK.
+
+179
+00:11:52,670 --> 00:11:56,560
+第三，可以安排脚本在任何时间运行。
+And thirdly scripts can be scheduled to run at any time.
+
+180
+00:11:56,690 --> 00:12:04,480
+使用cron而不是调度部分是我们将在下一个视频中重点介绍的，所以在上一个视频中
+Using cron and not scheduling part is what we're going to focus on in the next video so over the last
+
+181
+00:12:04,480 --> 00:12:07,510
+下面是几个视频，您已经看到了如何创建非常适合您的Ambala脚本。
+couple of videos you've seen how to create your very Ambala scripts.
+
+182
+00:12:07,540 --> 00:12:12,580
+关于bash脚本的关键在于，它们允许您将有用的命令序列存储在
+And the key about bash scripts is that they allow you to store useful command sequences in files that
+
+183
+00:12:12,580 --> 00:12:14,060
+你可以稍后再用。
+you can use later on.
+
+184
+00:12:14,230 --> 00:12:18,070
+现在，因为您的计算机上的任何内容都可以通过命令行进行更改和编辑，而且因为
+Now because anything on your computer is changeable and editable through the command line and because
+
+185
+00:12:18,070 --> 00:12:23,470
+您可以保存可以执行特定功能的一系列命令，您可以创建非常强大的功能
+you can save the series of commands that can do specific functions you can create you incredibly powerful
+
+186
+00:12:23,620 --> 00:12:28,960
+可以执行任何操作的BASH脚本，并使用基本的BASH脚本保存这些备份脚本以备以后使用
+bash scripts that can do whatever you want and save those backups scripts for later by using the fundamental
+
+187
+00:12:28,960 --> 00:12:31,370
+您在上两个视频中学到的技能。
+skills that you've learned in the last two videos.
+
+188
+00:12:31,420 --> 00:12:36,190
+现在有一条关键信息是bash脚本必须有Shabangu行告诉它们
+Now a key piece of information is that bash scripts must have the Shabangu line telling them that the
+
+189
+00:12:36,190 --> 00:12:42,130
+需要使用位于劈开的bash shell解释器将文件解释为bash命令
+file needs to be interpreted as Bash commands using the bash shell interpreter which is located at slash
+
+190
+00:12:42,130 --> 00:12:43,790
+我是劈开狂欢。
+been slash Bash.
+
+191
+00:12:43,810 --> 00:12:48,820
+这一行是每个剧本的第一行，上面不会有任何东西，
+Now this shebang line is the first line of every script and there wouldn't be anything above it and
+
+192
+00:12:48,820 --> 00:12:53,560
+在Orange中突出显示的文本的Shebang行中不能有任何空格。
+there mustn't be any spaces in the shebang line the text that's highlighted here in Orange.
+
+193
+00:12:53,560 --> 00:12:58,330
+所以它必须和您在那里看到的一样，并且是Shabangu行将您的常规文本文件
+So it must come just as you see it there and it's the Shabangu line that turns your regular text file
+
+194
+00:12:58,360 --> 00:13:03,460
+转换为bash脚本，并告诉shell将该文件中的所有内容解释为Bash命令。
+into a bash script and tells the shell to interpret everything in that file as Bash commands.
+
+195
+00:13:03,460 --> 00:13:08,680
+现在，如果您想要创建一个Python脚本，可以将Shebang行设置为类似于Flashbang劈开
+Now if you wanted to make a Python script you could put the shebang line something like flashbang slash
+
+196
+00:13:08,910 --> 00:13:14,380
+劈开使用的劈开是劈开Python3，这将允许将脚本解释为Python
+slash use a slash been slash Python 3 and that would allow the script to be interpreted as a Python
+
+197
+00:13:14,380 --> 00:13:14,880
+程序。
+program.
+
+198
+00:13:14,950 --> 00:13:19,870
+但这就是您在这里使用橙色表示bash脚本的方式，他们还了解了您将如何编写脚本
+But this is how you do it in orange here for bash scripts they've also seen how you would make scripts
+
+199
+00:13:19,870 --> 00:13:21,640
+可运行，就像常规命令一样。
+runnable just like regular commands.
+
+200
+00:13:21,670 --> 00:13:27,250
+您了解了如何在主目录中创建一个BIN文件夹，并将每个脚本添加到该bin文件夹中。
+And you saw how you would make a BIN folder in your home directory and add each script to that bin folder.
+
+201
+00:13:27,250 --> 00:13:31,690
+然后，您可以使用S.H.maade命令为每个脚本赋予可执行权限，并添加
+You would then give each of the scripts executable permissions using the S.H. maade command and add
+
+202
+00:13:31,690 --> 00:13:35,600
+通过编辑bash rc文件将bin文件夹添加到Shell的路径。
+that bin folder to your Shell's path by editing your bash RC file.
+
+203
+00:13:35,650 --> 00:13:39,820
+这使您可以像运行常规命令一样运行脚本，因此我们键入BACKUP和我们的备份脚本
+And this allows you to run scripts just like regular commands so we type back up and our backup script
+
+204
+00:13:39,820 --> 00:13:45,310
+我们认为hello脚本运行，这也适用于Python程序。
+run we thought hello hello script run and this will also work for Python programs as well.
+
+205
+00:13:45,340 --> 00:13:49,480
+现在顺便说一句，如果您有兴趣学习更多关于Python编程语言的知识，那么请转到
+Now as an aside if you're interested in learning more about the Python programming language then go
+
+206
+00:13:49,480 --> 00:13:53,890
+到最后一段视频，你有一些我所有课程的折扣券，包括我最好的
+to the last video of course where you have some discount coupons for all my courses including my best
+
+207
+00:13:53,890 --> 00:13:59,110
+出售Python课程Python圣经，它将把你带到一个基于项目的方式，从绝对没有
+selling Python course the python Bible which will take you in a project based way from absolutely no
+
+208
+00:13:59,110 --> 00:14:02,960
+以前的Python经验一直到编写11个Python程序。
+previous Python experience all the way to writing 11 Python programs.
+
+209
+00:14:02,970 --> 00:14:04,770
+所以，如果我感兴趣，那就去看看吧。
+So for me interested go ahead and check that out.
+
+210
+00:14:04,810 --> 00:14:10,420
+但底线是，脚本比别名和可在任何位置运行的脚本更强大
+But the bottom line is that scripts are more powerful than aliases and scripts that can be run at any
+
+211
+00:14:10,420 --> 00:14:14,570
+您喜欢的日期或时间，允许您自动执行工作流程。
+date or time that you like which allows you to automate your workflows.
+
+212
+00:14:14,830 --> 00:14:18,550
+而这正是下一段视频中将要讨论的日程安排。
+And it's precisely that scheduling that will be coming on to in the next video.
+
+213
+00:14:18,580 --> 00:14:23,200
+在下一个视频中，您将通过学习如何自动化来了解shell脚本的真正威力
+So in the next video you're going to learn the true power of shell scripts by learning how to automate
+
+214
+00:14:23,200 --> 00:14:26,820
+他们使用一种非常有用的实用程序，称为克鲁姆。
+them using an incredibly useful utility known as Krumm.
+
+215
+00:14:26,890 --> 00:14:31,380
+因此，为了了解如何安排自动任务，我将在下一个视频中与您见面。
+So to learn how to schedule automated tasks I'll see you in the next video.
+

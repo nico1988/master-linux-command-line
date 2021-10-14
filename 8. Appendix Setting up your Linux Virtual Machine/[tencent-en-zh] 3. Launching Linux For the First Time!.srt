@@ -1,0 +1,780 @@
+1
+00:00:00,950 --> 00:00:03,380
+大家好，美女们，欢迎收看这个视频。
+Hello beautiful people and welcome to this video.
+
+2
+00:00:03,410 --> 00:00:09,690
+我们将执行最后一步，在虚拟机中设置您的a Buntu安装。
+We're going to be doing the final step of setting up your a buntu installation inside the virtual machine.
+
+3
+00:00:09,770 --> 00:00:13,490
+虽然我们应该说，如果您确实在此过程中遇到任何错误，如您所知，它会显示虚拟的
+Though we should say that if you do get any errors in this process like you know it says the virtual
+
+4
+00:00:13,490 --> 00:00:20,630
+机器崩溃只需在虚拟框中转到此处，单击设置系统，然后将此栏拖低一点
+machine crashes just go over here in virtual box click on settings system and drag this bar a bit lower
+
+5
+00:00:20,630 --> 00:00:21,810
+向下进入果岭。
+down into the green.
+
+6
+00:00:21,830 --> 00:00:26,300
+好的，只是为了给你的主机增加一点内存，以防万一。
+Ok just that just to give your host computer or just a bit more memory in case it needs.
+
+7
+00:00:26,310 --> 00:00:26,730
+好的。
+OK.
+
+8
+00:00:26,870 --> 00:00:29,030
+所以以防万一，但如果真的发生了，也不用担心。
+So just in case that happens but don't worry if it does.
+
+9
+00:00:29,020 --> 00:00:30,780
+没什么不对劲的，把它合上就行了。
+Nothing's gone wrong just close it.
+
+10
+00:00:30,860 --> 00:00:33,420
+把横杆缩小到果岭，然后再试一次。
+Reduce that bar down to the green and then try again.
+
+11
+00:00:33,470 --> 00:00:33,830
+好的。
+OK.
+
+12
+00:00:33,950 --> 00:00:37,040
+但是我们现在要做的是，我们将在虚拟框中打开，我们将单击
+But we're going to do now is we're going to we're going to open in virtual box we're going to click
+
+13
+00:00:37,070 --> 00:00:39,690
+从我们的功能虚拟机开始。
+start on our ability virtual machine.
+
+14
+00:00:39,750 --> 00:00:45,170
+这样做的目的是在我们的计算机中打开一台假想的计算机。
+And while this is going to do is it's going to open up an imaginary computer inside our computer.
+
+15
+00:00:45,170 --> 00:00:46,450
+所以这真是太棒了。
+So this is super awesome.
+
+16
+00:00:46,610 --> 00:00:51,860
+如果您想要安装一个Buntu，这就是您必须经历的实际过程
+And this is the actual process that you would have to go through if you wanted to install a buntu for
+
+17
+00:00:51,860 --> 00:00:55,010
+REAL作为实际计算机上唯一的操作系统。
+real as the only operating system on an actual computer.
+
+18
+00:00:55,030 --> 00:00:58,190
+所以现在开放的东西叫做虚拟机。
+So what's opening up now is called a virtual machine.
+
+19
+00:00:58,190 --> 00:01:03,080
+它是计算机内部的一台虚构的计算机，它认为您正在上面安装操作系统
+It's an imaginary computer inside a computer that thinks you're installing an operating system on it
+
+20
+00:01:03,260 --> 00:01:05,160
+因为我们是从那张直播CD启动的。
+because we're booting from that live CD.
+
+21
+00:01:05,210 --> 00:01:05,770
+好的。
+OK.
+
+22
+00:01:05,780 --> 00:01:10,500
+所以我们在上一段视频中下载所有假想的磁盘文件。
+So all that imaginary disk file that we downloaded in the last video.
+
+23
+00:01:10,610 --> 00:01:14,750
+所以我们现在要做的就是在这个假想的
+So what we're going to have to do now is we're just going to have to install a buntu on this imaginary
+
+24
+00:01:14,750 --> 00:01:18,240
+这是一个非常简单的过程，正如你所看到的。
+computer and it's really easy process as you can see.
+
+25
+00:01:18,320 --> 00:01:24,660
+它现在已经打开了，它会给我们两个选项，它会说，试着安装两个。
+It's opened up now and it's going to give us two options it's going to say try to install two.
+
+26
+00:01:24,830 --> 00:01:25,580
+我要先走一步。
+I'm going to go ahead.
+
+27
+00:01:25,690 --> 00:01:31,070
+您要做的是单击安装，但请确保从侧面选择您想要的任何语言
+What you do is click install to but make sure you pick whatever language you would like from the side
+
+28
+00:01:31,070 --> 00:01:31,340
+这里。
+here.
+
+29
+00:01:31,370 --> 00:01:35,580
+我将它保留为英文，然后单击Install a Buntu。
+I'm going to keep it in English and then click install a buntu.
+
+30
+00:01:36,050 --> 00:01:36,530
+好的。
+OK.
+
+31
+00:01:36,680 --> 00:01:40,000
+因此，它将在这里为您提供一些额外的选择。
+So with that it's going to give you some extra options here.
+
+32
+00:01:40,070 --> 00:01:41,210
+这两个箱子都拿去吧。
+Take both of these boxes.
+
+33
+00:01:41,210 --> 00:01:46,360
+这将允许它在安装Kubuntu时更新、下载和一些更新。
+This one is going to allow it to update download and some updates when installing Kubuntu.
+
+34
+00:01:46,550 --> 00:01:52,970
+这将安装第三方软件，如Wi-Fi硬件、MP3播放器和其他东西
+And this is going to install third party software such as Wi-Fi hardware MP3 players and other stuff
+
+35
+00:01:52,970 --> 00:01:57,020
+只是为了让您了解您的体验更加完整，并让您的虚拟机变得您了解
+just to make you know your your experience a bit more complete and make your virtual machine you know
+
+36
+00:01:57,020 --> 00:01:59,540
+只是比其他情况下多了几个功能。
+just have a few more features than it would otherwise.
+
+37
+00:01:59,540 --> 00:02:02,130
+因此，请继续并选择这两个框，然后单击继续。
+So go ahead and take both those boxes and then click continue.
+
+38
+00:02:03,650 --> 00:02:07,630
+然后它会给我们一些其他的选择，让我们在下一个屏幕上玩。
+And then it's going to give us some other options to play with on the next screen.
+
+39
+00:02:07,640 --> 00:02:10,970
+这一点需要一点时间。
+This bit's taking a little bit of time.
+
+40
+00:02:10,970 --> 00:02:11,600
+我们走吧。
+There we go.
+
+41
+00:02:11,640 --> 00:02:15,950
+据说这台电脑目前没有检测到任何操作系统。
+It's saying the computer currently has detected no operating systems.
+
+42
+00:02:15,950 --> 00:02:17,180
+你想做什么？你想做什么？
+Would you what would you like to do.
+
+43
+00:02:17,180 --> 00:02:17,990
+嗯，只要点击一下就行了。
+Well just click.
+
+44
+00:02:17,990 --> 00:02:22,600
+只需擦除磁盘并安装Buntu即可继续，然后单击Install Now。
+Just have erase disk and install buntu to go ahead and click Install now.
+
+45
+00:02:23,090 --> 00:02:26,150
+系统会问您是否要写入更改，只需单击“继续”即可。
+It's going to say do you want to write the changes just click continue.
+
+46
+00:02:26,150 --> 00:02:27,670
+那太好了。
+That's perfectly fine.
+
+47
+00:02:28,010 --> 00:02:30,430
+现在它会问你，你现在在世界的什么地方。
+And now it's going to ask you where in the world are you now.
+
+48
+00:02:30,430 --> 00:02:36,680
+这仅用于时区目的，您可以根据需要单击不同的区域
+This is just for timezone purposes and you can click on different areas depending on what you might
+
+49
+00:02:36,680 --> 00:02:41,840
+如果你知道你在英国有美国，就穿你想穿的衣服，所以我要点击那里
+wear where you might be if you know you've got the US over here in the UK so I'm going to click there
+
+50
+00:02:41,840 --> 00:02:45,760
+事实上，我想把伦敦作为我的时区。
+and it's going to and actually I want to have London as my time zone.
+
+51
+00:02:46,010 --> 00:02:53,760
+这就是了，伦敦说，我们将单击继续，现在我们将要求您提供
+So there we are it says London and we're going to click continue and now we're going to ask you for
+
+52
+00:02:53,760 --> 00:02:55,020
+您的键盘布局。
+your keyboard layout.
+
+53
+00:02:55,030 --> 00:03:00,000
+我的是英语英国，所以我要，我要点击英语OK，这对我来说很好，但是
+Mine's English UK so I'm going to I'm going to click English OK and that's going to be fine for me but
+
+54
+00:03:00,000 --> 00:03:05,910
+您可以，如果我只是返回，对不起，您可以通过单击检测键盘来测试您的键盘Leo
+you can actually if I just go back sorry you can test your keyboard Leo by clicking detect keyboard
+
+55
+00:03:05,910 --> 00:03:12,390
+布局并键入这些键中的一个，如果我在那里按y，然后按另一个键，然后当前
+layout and typing one of these keys if I press y in there and then another one and then is at present
+
+56
+00:03:12,400 --> 00:03:13,440
+不，不是。
+no it's not.
+
+57
+00:03:13,440 --> 00:03:15,120
+它会帮我想出办法的。
+It'll figure it out for me.
+
+58
+00:03:15,120 --> 00:03:17,690
+我应该使用哪个键盘。
+Which keyboard I should be using.
+
+59
+00:03:17,850 --> 00:03:22,900
+然后它会帮我挑出来，挑出来还是不挑出来，但我也可以从列表中选择。
+And then it will help me out pick it pick it out or not but I can just also select it from the list.
+
+60
+00:03:23,040 --> 00:03:23,970
+由你决定。
+It's up to you.
+
+61
+00:03:23,970 --> 00:03:25,140
+英语对我来说很好。
+English is fine for me.
+
+62
+00:03:25,140 --> 00:03:26,890
+你只要去选对你有利的就行了。
+You just go ahead and pick whatever is good for you.
+
+63
+00:03:26,890 --> 00:03:28,390
+然后单击继续。
+Then click continue.
+
+64
+00:03:28,800 --> 00:03:32,900
+然后它会询问您的用户名，所以我会把Ziyad作为我的用户名。
+And then it's asking you for your username so I'm going to put Ziyad as my username.
+
+65
+00:03:33,090 --> 00:03:37,790
+它会要求我输入计算机名称，它可以自动生成，但我将调用我的
+It's going to ask me for a computer name it can automatically generate that but I'm going to call my
+
+66
+00:03:37,810 --> 00:03:44,220
+虚拟盒子的VB选择一个用户名Ziyad，然后它会问我密码，我要
+VB for virtual box picking a user name Ziyad and then it's going to ask me for passwords I'm going to
+
+67
+00:03:44,220 --> 00:03:49,530
+输入的密码是弱密码，不要对我评头论足。
+enter a password is weak password don't judge me.
+
+68
+00:03:49,630 --> 00:03:51,020
+为一个很棒的密码干杯。
+To a fantastic password.
+
+69
+00:03:51,030 --> 00:03:56,640
+现在我们已经输入了密码，它说需要密码才能登录并保持选中状态
+So there we are we've entered that and it says require a password to log in and keep that checked and
+
+70
+00:03:56,640 --> 00:03:57,920
+这就是你真正需要做的一切。
+that's all you really need to do.
+
+71
+00:03:57,990 --> 00:04:02,670
+但是一定要记住这个密码，因为它会在整个课程中非常有用。
+But make sure you do remember this password because it will come very useful throughout the course.
+
+72
+00:04:02,680 --> 00:04:07,310
+如果您想使用您的虚拟机而不想被锁定，那么请记住这一点。
+And if you want to use your virtual machine and not be locked out so do remember that one.
+
+73
+00:04:07,470 --> 00:04:09,660
+然后单击继续。
+Then click continue.
+
+74
+00:04:10,710 --> 00:04:17,340
+现在它要做的就是将所有的Buntu安装到这个虚拟的
+And now what it's going to do is it's going to go about installing all of a buntu onto this virtual
+
+75
+00:04:17,340 --> 00:04:17,880
+机器。
+machine.
+
+76
+00:04:18,000 --> 00:04:22,140
+它很能说明问题，你是否知道你已经得到了一些信息，这些信息将以同样快的速度和充满新功能的方式点击。
+And it's telling can you know you've got some information about to hit as fast and full of new features.
+
+77
+00:04:22,200 --> 00:04:25,190
+最新版本的Buntu使计算变得比以往任何时候都更容易。
+The latest version of a buntu makes computing easier than ever.
+
+78
+00:04:25,200 --> 00:04:27,550
+这里只有几个很酷的新东西需要注意。
+Here are just a few cool new things to look out for.
+
+79
+00:04:27,570 --> 00:04:32,520
+你可以点击这个箭头，它说找到更多的软件，告别了不得不搜索
+And you can click on this arrow and it says find even more software say goodbye to having to search
+
+80
+00:04:32,520 --> 00:04:35,540
+可以访问软件商店的新软件的Web。
+the web for new software with access to software store.
+
+81
+00:04:35,700 --> 00:04:37,670
+您可以轻松安装新应用程序。
+You can install new apps with ease.
+
+82
+00:04:37,680 --> 00:04:42,610
+只需输入您要查找的内容，或在旁边浏览科学教育和游戏等类别
+Just type in what you're looking for or explore categories such as science education and games all alongside
+
+83
+00:04:42,630 --> 00:04:44,870
+来自其他用户的有用评论。
+helpful reviews from other users.
+
+84
+00:04:44,880 --> 00:04:45,520
+太棒了。
+Awesome.
+
+85
+00:04:45,600 --> 00:04:46,940
+你可以把你的音乐带走。
+You can take your music with you.
+
+86
+00:04:46,950 --> 00:04:50,730
+Buntu配备了令人惊叹的Rhythmbox音乐播放器，具有高级播放选项。
+Buntu comes with the amazing Rhythmbox music player with advanced playback options.
+
+87
+00:04:50,730 --> 00:04:55,320
+制作完美的歌曲很简单，而且它与CD和便携式音乐播放器配合使用效果很好，所以您
+It's simple to cue up the perfect songs and it works great with CDs and portable music player so you
+
+88
+00:04:55,320 --> 00:04:58,050
+无论你走到哪里，都能欣赏到你所有的音乐。
+can enjoy all your music wherever you go.
+
+89
+00:04:58,050 --> 00:05:00,180
+太棒了，你可以不停地点击这些东西。
+Wonderful and you can keep clicking through these things.
+
+90
+00:05:00,180 --> 00:05:02,100
+关于照片的东西。
+The stuff about photos.
+
+91
+00:05:02,490 --> 00:05:10,440
+网页浏览，例如，它已经附带了Firefox，它还附带了自己的办公套件
+Web browsing so it already comes with Firefox for example and it also comes with its own suite of office
+
+92
+00:05:10,440 --> 00:05:17,780
+软件所以基本上类似于Microsoft Word、Microsoft Excel、Powerpoint等软件。
+software so basically similar software to Microsoft Word Microsoft Excel Powerpoint and so on.
+
+93
+00:05:17,790 --> 00:05:19,940
+com免费下载。
+Com for free.
+
+94
+00:05:20,220 --> 00:05:23,130
+它们还可以处理有用的Microsoft Office文件。
+They could also work with Microsoft Office files that's useful.
+
+95
+00:05:23,160 --> 00:05:29,070
+如果您需要任何特定的辅助功能选项，您还可以选择他们所说的辅助功能选项。
+You've got other things they said accessibility options if you need any particular accessibility options.
+
+96
+00:05:29,070 --> 00:05:31,940
+当您使用您的计算机时，它们也包括在内。
+When you use your computer they also are included as well.
+
+97
+00:05:31,950 --> 00:05:32,760
+你可以拥有它们。
+You can have them.
+
+98
+00:05:32,790 --> 00:05:35,550
+它告诉您一些来自Ubuntu团队的帮助和支持。
+It tells you about some help and support from the Ubuntu team.
+
+99
+00:05:35,550 --> 00:05:40,020
+所以它所做的基本上就是在你的计算机上安装大量的软件
+So what this is doing is it's basically just going to install loads of software on your computer it's
+
+100
+00:05:40,020 --> 00:05:45,690
+我也要做一个完整的捆绑安装，这可能需要一些时间，这取决于您知道，
+going to do a full install of a bunch too and it might take a bit of time depending upon you know just
+
+101
+00:05:45,690 --> 00:05:48,430
+你的电脑安装东西真的有多快。
+how quick your computer is installing stuff really.
+
+102
+00:05:48,570 --> 00:05:52,650
+所以我要做的是我要把视频放在这里然后我会回来的时候
+So what I'm going to do is I'm going to keep the video here and then I'm going to come back when this
+
+103
+00:05:52,650 --> 00:05:56,810
+安装已经完成，并继续睡觉的方式。
+installation has finished and to continue the rest of the way.
+
+104
+00:05:57,570 --> 00:06:01,170
+好的，我回来了，您可以看到安装现在已经完成。
+OK and I'm back and you can see that the installation is now complete.
+
+105
+00:06:01,170 --> 00:06:05,330
+它显示您需要重新启动计算机才能使用新安装，因此我将单击
+It says you need to restart the computer in order to use the new installation so I'm going to click
+
+106
+00:06:05,340 --> 00:06:12,570
+现在重新启动，应该会像这样关闭虚拟机，并显示要删除安装
+restart now and that should shut down the virtual machine just like that and it says to remove the installation
+
+107
+00:06:12,570 --> 00:06:13,500
+5~6成熟。
+medium.
+
+108
+00:06:13,500 --> 00:06:16,930
+请取出安装介质，然后按并执行此操作，我将按Enter键。
+Please remove the installation medium then press and do so I'm going to press enter.
+
+109
+00:06:18,260 --> 00:06:26,810
+现在应该会再次启动Buntu虚拟机，但这一次不必
+And that should now start booting up the buntu virtual machine again but this time without having to
+
+110
+00:06:26,810 --> 00:06:31,130
+请继续安装，我们等待它打开。
+install it anymore us wait for this to open.
+
+111
+00:06:31,620 --> 00:06:33,810
+非常令人兴奋，我们开始吧。
+Very exciting and there we go.
+
+112
+00:06:33,810 --> 00:06:37,150
+现在弹出来说，嘿，这是我的用户名，叫Ziyad。
+It's now popped up and said hey here's my username which is Ziyad.
+
+113
+00:06:37,320 --> 00:06:43,410
+我可以单击我可以输入密码，然后单击Enter或Sign In，它将显示
+I can click on that I can enter my password and click enter or click sign in and it's going to show
+
+114
+00:06:43,410 --> 00:06:44,020
+给我这个。
+me this.
+
+115
+00:06:44,190 --> 00:06:47,990
+这个看起来相当棒的黑客玩意儿。
+This rather awesome looking hacker stuff.
+
+116
+00:06:48,060 --> 00:06:48,690
+我们就到这了。
+And there we are.
+
+117
+00:06:48,690 --> 00:06:53,940
+现在，我们已经在虚拟机上成功安装了Buntu。
+We've now gone ahead and successfully installed a buntu on our virtual machines.
+
+118
+00:06:53,940 --> 00:06:55,110
+这不是很棒吗。
+Isn't that awesome.
+
+119
+00:06:55,170 --> 00:06:59,220
+我们这里有什么，你可以知道，你可以看到，你已经安装了Firefox浏览器
+What we've got here we can you know you can see you've got the Firefox browser installed you've got
+
+120
+00:06:59,220 --> 00:07:01,280
+Rhythmbox，就像一个音乐播放器。
+Rhythmbox which is like a music player.
+
+121
+00:07:01,410 --> 00:07:06,450
+你有一些文件，就像你的文件导航器会在课程中经常用到的。
+You've got files which is like your file Navigator will be using this quite a bit in the course.
+
+122
+00:07:06,450 --> 00:07:13,830
+您在这里安装了文件夹，您有软件中心，这将是您下载的一种方式
+You've got folders installed here you've got software center which is going to be a way for you to download
+
+123
+00:07:13,830 --> 00:07:18,450
+Xserve软件我们不会在课程中直接使用它，但如果您想浏览，它就在那里
+Xserve software we won't use this directly in the course but it's there in case you wanted to browse
+
+124
+00:07:18,450 --> 00:07:19,690
+一起来看看。
+and have a look at.
+
+125
+00:07:20,250 --> 00:07:24,870
+你知道，你可以浏览一下旧的附加软件，你可以在这里看看，那里有这么多可供选择的东西
+You know you can browse through the old Add-Ons you can have a look out here and there's so much to
+
+126
+00:07:24,870 --> 00:07:25,020
+做。
+do.
+
+127
+00:07:25,020 --> 00:07:30,270
+你在这上面有不同的设置和东西，你可以看看你的设置
+You've got up here you've got different settings and stuff you can take a look at your settings and
+
+128
+00:07:30,270 --> 00:07:33,540
+我真的想让你做的是，我想让你试一试这种东西，它很管用。
+really what I want you to do is I want you to have a play around with this stuff it works.
+
+129
+00:07:33,570 --> 00:07:35,320
+这只是电脑族的事情。
+It's just a computer guys kind of thing.
+
+130
+00:07:35,320 --> 00:07:40,890
+事情只是以一种不同的方式布局，但与什么相比，它不会太奇怪
+Things are just laid out in a different way but it's it's not going to be too strange compared to what
+
+131
+00:07:40,890 --> 00:07:41,940
+你已经习惯了。
+you're already used to.
+
+132
+00:07:41,940 --> 00:07:43,750
+事物可能有几个不同的名称。
+Things might have a few different names.
+
+133
+00:07:43,840 --> 00:07:46,410
+有一件事是好的，那就是展示应用程序。
+And one thing that's good is to show applications.
+
+134
+00:07:46,590 --> 00:07:52,320
+按下这里的按钮，当你点击它时，它会以一种相当棒的方式打开，向你展示一些
+Button Down here which when you click that it will open up in a rather awesome way showing you some
+
+135
+00:07:52,320 --> 00:07:55,740
+安装的应用程序，您可以单击这些应用程序进行锁定，这样您就可以获得Thunderbird
+applications that are installed that you can click on to have a lockout so you've got Thunderbird which
+
+136
+00:07:55,740 --> 00:08:01,370
+就像一个电子邮件客户端的视频，它向你显示视频，游戏，在这里，比如Margene。
+is like an email client videos which shows you videos games and here such as Margene.
+
+137
+00:08:01,370 --> 00:08:08,940
+你有Liebreich Office，它就像Microsoft Office计算器，因为数学和你还有
+You've got Liebreich office which is like Microsoft Office calculator because math and you've also got
+
+138
+00:08:09,330 --> 00:08:12,560
+文本编辑器和大量非常棒的东西都在这里。
+text editors and loads of loads of really awesome things on here.
+
+139
+00:08:12,630 --> 00:08:17,640
+好的，我们将大量使用的一件事当然是航站楼，这就是
+OK so one thing that we're going to be making a lot of use of of course is the terminal which is what
+
+140
+00:08:17,640 --> 00:08:19,290
+你们是来这里学习的。
+you guys came here to learn.
+
+141
+00:08:19,290 --> 00:08:24,360
+所有这些都准备好了，一旦你对此感到满意，它应该会把你带到
+So with that all set up and once you've got yourself comfortable with this it should take you about
+
+142
+00:08:24,360 --> 00:08:28,210
+五分钟左右的时间真的很容易习惯。
+five minutes or so it's really easy to get used to.
+
+143
+00:08:28,710 --> 00:08:33,840
+我们在下一个视频中要做的是让您开始学习如何使用命令
+What are we going to do in the next video is get you started learning how to use commands and when it
+
+144
+00:08:33,840 --> 00:08:37,440
+这里说已经发布了更新的软件，您想现在安装吗？
+says here updated software has been issued Do you want to install it now.
+
+145
+00:08:37,440 --> 00:08:41,240
+当然可以，只需继续并单击立即安装，然后等待安装过程完成
+Sure go ahead just go ahead and click Install now and wait for that installation process to complete
+
+146
+00:08:41,250 --> 00:08:43,460
+它应该自己解决问题。
+it should sort itself out on its own.
+
+147
+00:08:43,590 --> 00:08:44,800
+要求您提供密码。
+Ask you for your password.
+
+148
+00:08:44,880 --> 00:08:50,100
+您必须输入该权限才能继续进行安装，并且您应该
+You had to enter that to give it some permission to go ahead and do the installation and you should
+
+149
+00:08:50,100 --> 00:08:56,010
+有一个完全更新的、随时可以开始学习Linux的系统。
+have a fully updated and ready to go system for learning linux on.
+
+150
+00:08:56,010 --> 00:09:01,830
+当你准备好了，每次你想要启动它的时候，你所要做的就是直接进入
+And when you are ready all you've got to do every time you want to launch this is just head over into
+
+151
+00:09:01,830 --> 00:09:06,710
+虚拟框，然后只需单击“开始”，它就会启动。
+virtual box and then just click start and it will boot up.
+
+152
+00:09:06,760 --> 00:09:08,220
+这是这台现代电脑。
+This this this modern computer.
+
+153
+00:09:08,220 --> 00:09:10,930
+所以你已经完全准备好了，可以出发了。
+So there you are you are completely ready to go.
+
+154
+00:09:10,980 --> 00:09:14,260
+所以我期待着在课程的下一节见到你。
+So I look forward to seeing you in the next section of the course.
+
+155
+00:09:14,330 --> 00:09:20,070
+我们将从学习如何使用终端通信的方式开始，向您展示渐进式设置，我将
+We're going to start you off by learning how to use the terminal comm way to show you gradual set I'll
+
+156
+00:09:20,070 --> 00:09:21,730
+下一个视频再见。
+see you in the next video.
+

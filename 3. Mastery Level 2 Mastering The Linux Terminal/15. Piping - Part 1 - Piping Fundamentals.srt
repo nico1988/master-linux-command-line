@@ -1,0 +1,763 @@
+1
+00:00:00,420 --> 00:00:05,580
+So here we are you beautiful people you're about to learn the crown jewel of the Linux operating system
+
+2
+00:00:05,940 --> 00:00:06,820
+piping.
+
+3
+00:00:06,870 --> 00:00:11,340
+So in the last few videos you've learned that you can use redirection to change the location of where
+
+4
+00:00:11,340 --> 00:00:15,200
+you send command output and where you get command input.
+
+5
+00:00:15,390 --> 00:00:20,490
+But what if you wanted to connect the standard output of one command so that it flowed into the standard
+
+6
+00:00:20,550 --> 00:00:22,160
+input of another command.
+
+7
+00:00:22,380 --> 00:00:26,220
+Well that's where piping comes in and it's ridiculously powerful.
+
+8
+00:00:26,250 --> 00:00:30,030
+Each Linux command is designed to do one task extremely well.
+
+9
+00:00:30,030 --> 00:00:35,070
+So if you can continually pipe these highly specialized commands together and pass data between them
+
+10
+00:00:35,310 --> 00:00:39,990
+you can build advanced pipelines to do pretty much any task that you can think of and once you know
+
+11
+00:00:39,990 --> 00:00:42,830
+how to do it it will really feel like a super power.
+
+12
+00:00:43,020 --> 00:00:47,030
+So in this video you're going to learn how to build your very own command pipelines.
+
+13
+00:00:47,160 --> 00:00:51,570
+And then in the next video in part two you're going to learn how to make your pipelines more flexible
+
+14
+00:00:51,600 --> 00:00:54,300
+by using the T and the Exarchs commands.
+
+15
+00:00:54,330 --> 00:00:58,830
+This is going to be a great section of the course and you will not recognize yourself after you learn
+
+16
+00:00:58,830 --> 00:00:59,690
+what I'm about to teach you.
+
+17
+00:00:59,700 --> 00:01:00,780
+So I hope you're excited.
+
+18
+00:01:00,900 --> 00:01:02,210
+Let's go ahead and get into it.
+
+19
+00:01:03,400 --> 00:01:03,780
+OK.
+
+20
+00:01:03,790 --> 00:01:08,860
+So piping is all about taking the standard output of one command and connecting it to the standard input
+
+21
+00:01:09,070 --> 00:01:10,270
+of another command.
+
+22
+00:01:10,270 --> 00:01:14,980
+So let's take for example the DATA command the date command as we know will show us the date.
+
+23
+00:01:14,980 --> 00:01:20,380
+Now we can write the standard output of the date command to a text file called Date directx DXi using
+
+24
+00:01:20,380 --> 00:01:21,430
+redirection.
+
+25
+00:01:21,460 --> 00:01:22,830
+So it a mini challenge.
+
+26
+00:01:22,890 --> 00:01:24,890
+See if you can remember how to do that.
+
+27
+00:01:25,030 --> 00:01:29,950
+How would you take the data command and redirect it into a file called Date.
+
+28
+00:01:29,950 --> 00:01:33,420
+Dr. XTi give it a go and then come back to see how you did.
+
+29
+00:01:39,130 --> 00:01:39,920
+Did you manage it.
+
+30
+00:01:40,150 --> 00:01:44,470
+Well this is one way you could do it you could type the date command and then say I want to redirect
+
+31
+00:01:44,710 --> 00:01:47,920
+the standard output into data Darty XTi.
+
+32
+00:01:47,950 --> 00:01:51,460
+Now you could have just had the symbol like this where you could have put the number one to indicate
+
+33
+00:01:51,460 --> 00:01:57,170
+that you wanted the first data stream which is standard output to be written to date dot 60.
+
+34
+00:01:57,310 --> 00:02:00,940
+And if you did that massive Congratulations you're learning already.
+
+35
+00:02:01,090 --> 00:02:06,250
+But now that we've done it we are going to take a look at our file explorer here and we see a file called
+
+36
+00:02:06,250 --> 00:02:11,720
+Dottie XTi and we see that the date information has indeed been written into that file.
+
+37
+00:02:11,850 --> 00:02:12,240
+OK.
+
+38
+00:02:12,520 --> 00:02:17,310
+But now what if we wanted to just cut out the day of the week which in this case is Monday.
+
+39
+00:02:17,400 --> 00:02:17,770
+OK.
+
+40
+00:02:17,890 --> 00:02:19,960
+How would we cut out just the day of the week.
+
+41
+00:02:20,140 --> 00:02:23,530
+Well one way to do it would be to use the cut command.
+
+42
+00:02:23,620 --> 00:02:27,970
+Now you haven't seen the cook come on before but it works very simply and it's probably easier to show
+
+43
+00:02:27,970 --> 00:02:29,160
+you by doing.
+
+44
+00:02:29,200 --> 00:02:35,390
+First we want to read the date that takes the file into the standard input for the command.
+
+45
+00:02:35,470 --> 00:02:41,080
+So to do that we would type cut and then read into the standard input date.
+
+46
+00:02:41,110 --> 00:02:42,110
+Dottie XTi.
+
+47
+00:02:42,530 --> 00:02:42,970
+OK.
+
+48
+00:02:43,060 --> 00:02:47,470
+And you don't have to have the zero so you could just get with zero and just you know just do that have
+
+49
+00:02:48,010 --> 00:02:49,940
+the less than sign and then date takes.
+
+50
+00:02:49,950 --> 00:02:51,200
+And remember the space here.
+
+51
+00:02:51,220 --> 00:02:52,000
+This is optional.
+
+52
+00:02:52,010 --> 00:02:54,610
+Ok I'll probably just keep it because it looks a bit nicer.
+
+53
+00:02:54,610 --> 00:03:00,050
+Now what Cook will do what the cook does is it will cut up a file and give you specific columns.
+
+54
+00:03:00,160 --> 00:03:07,030
+So if we look at Dottie XTi you can imagine that the file is broken up into columns with a space between
+
+55
+00:03:07,030 --> 00:03:07,700
+each column.
+
+56
+00:03:07,870 --> 00:03:13,360
+The day of the week in this case Monday is the first column or the first field as it's known in the
+
+57
+00:03:13,420 --> 00:03:14,030
+command.
+
+58
+00:03:14,050 --> 00:03:15,250
+This would be the second field.
+
+59
+00:03:15,250 --> 00:03:17,420
+This would be the third field and so on and so on.
+
+60
+00:03:17,440 --> 00:03:22,300
+But we want the first field to make the cut come on and work correctly for us.
+
+61
+00:03:22,300 --> 00:03:25,390
+We think that two pieces of information using options.
+
+62
+00:03:25,630 --> 00:03:30,680
+First we need to give it the delimiter long form option so delimiter.
+
+63
+00:03:30,900 --> 00:03:31,370
+Okay.
+
+64
+00:03:31,540 --> 00:03:36,740
+And what that was a delimiter is is it tells you what divides the columns.
+
+65
+00:03:36,800 --> 00:03:43,990
+OK so we need to tell it that space is divide or delimit the columns because spaces are what divided
+
+66
+00:03:43,990 --> 00:03:46,040
+up these specific columns in The File.
+
+67
+00:03:46,120 --> 00:03:46,490
+OK.
+
+68
+00:03:46,630 --> 00:03:54,120
+So to do that we just type delimiter as along for a space and then in quotes put into the space.
+
+69
+00:03:54,120 --> 00:03:58,540
+OK so we're saying a space is what delimits this file or this input.
+
+70
+00:03:58,540 --> 00:03:58,970
+OK.
+
+71
+00:03:59,440 --> 00:04:03,910
+Then we need to say which field we want and now that we've told it how the file is cut up so we give
+
+72
+00:04:03,910 --> 00:04:08,800
+it again the long form option which is fields and then a space and then one.
+
+73
+00:04:09,170 --> 00:04:09,840
+OK.
+
+74
+00:04:09,860 --> 00:04:12,930
+And now what we've got there when we run that.
+
+75
+00:04:13,060 --> 00:04:13,400
+OK.
+
+76
+00:04:13,420 --> 00:04:15,920
+What we're going to see is we're saying to the Koch command.
+
+77
+00:04:16,170 --> 00:04:17,870
+OK read Date directx take.
+
+78
+00:04:18,070 --> 00:04:22,530
+It's broken up into columns with us each with a space separating each column.
+
+79
+00:04:22,600 --> 00:04:23,850
+And we want the first field.
+
+80
+00:04:23,850 --> 00:04:27,480
+Now when I press enter you can see that we get Monday as an output.
+
+81
+00:04:27,610 --> 00:04:28,390
+Isn't that awesome right.
+
+82
+00:04:28,390 --> 00:04:28,960
+That's pretty cool.
+
+83
+00:04:28,960 --> 00:04:30,450
+You've not seen the come on before.
+
+84
+00:04:30,520 --> 00:04:35,820
+It's very cool command but this this works but it's kind of clunky.
+
+85
+00:04:35,900 --> 00:04:41,320
+OK first we're writing the standard output of the date command to a file which takes up space on our
+
+86
+00:04:41,320 --> 00:04:42,030
+computer.
+
+87
+00:04:42,080 --> 00:04:45,470
+Right then we have to read that file into the command.
+
+88
+00:04:45,670 --> 00:04:46,170
+OK.
+
+89
+00:04:46,300 --> 00:04:51,400
+And maybe we would also after getting this data right we then have to delete this original file because
+
+90
+00:04:51,400 --> 00:04:54,590
+we don't need anymore which is another process that we have to undertake.
+
+91
+00:04:54,640 --> 00:04:59,560
+So doing it this way by saving the data into a file and then reading that file in two steps takes a
+
+92
+00:04:59,560 --> 00:05:00,860
+lot more typing.
+
+93
+00:05:00,910 --> 00:05:04,700
+It makes unnecessary files which you've got to remove or they just take up space.
+
+94
+00:05:04,750 --> 00:05:07,370
+It's just inefficient and awkward way of doing things.
+
+95
+00:05:07,660 --> 00:05:14,260
+So instead we can pipe the standard output of the data command directly into the standard input of the
+
+96
+00:05:14,260 --> 00:05:14,930
+cut command.
+
+97
+00:05:15,010 --> 00:05:15,460
+OK.
+
+98
+00:05:15,550 --> 00:05:18,550
+So if I just use the arrow key to keep what we have before.
+
+99
+00:05:18,610 --> 00:05:19,060
+OK.
+
+100
+00:05:19,210 --> 00:05:26,710
+Now instead of saying read into the read into the standard input command date XTi what I'm going to
+
+101
+00:05:26,710 --> 00:05:30,420
+do is I'm going to type date and then use this pipe symbol.
+
+102
+00:05:30,610 --> 00:05:37,540
+Now this pipe symbol you can find by holding Shift and then backslash on your on your most keyboards
+
+103
+00:05:37,540 --> 00:05:38,050
+anyway.
+
+104
+00:05:38,180 --> 00:05:41,160
+So yep that's the way it is on most keyboards.
+
+105
+00:05:41,170 --> 00:05:46,810
+But if it's not there on your keyboard if it's not possible by holding Shift and backslash just hop
+
+106
+00:05:46,810 --> 00:05:50,100
+onto a search engine and look for how to do the pipe symbol on your keyboard layout.
+
+107
+00:05:50,140 --> 00:05:52,690
+If you have trouble finding it you should should come up straight away.
+
+108
+00:05:52,750 --> 00:05:59,230
+But now what's happening is we're saying pipe the data from the date come on standard output into the
+
+109
+00:05:59,240 --> 00:06:01,280
+Kirkman's standard input.
+
+110
+00:06:01,360 --> 00:06:05,950
+Now because data up to 60 was effectively the standard output from the date command this is going to
+
+111
+00:06:05,950 --> 00:06:10,240
+have the same effect so will we press enter that we get Monday out.
+
+112
+00:06:10,420 --> 00:06:14,110
+And this happened all in one step.
+
+113
+00:06:14,140 --> 00:06:18,820
+So that's really cool we managed to take the data straight from the date command and pipe it into the
+
+114
+00:06:18,820 --> 00:06:21,810
+standard input of the command so that it can be operated on.
+
+115
+00:06:21,820 --> 00:06:27,700
+We gave the cook command some options that allowed us to cut out directly the name of the day of the
+
+116
+00:06:27,700 --> 00:06:28,190
+week.
+
+117
+00:06:28,360 --> 00:06:33,020
+Now I'm just going to press the up are OK and now I'm going to show you something really cool.
+
+118
+00:06:33,040 --> 00:06:38,900
+What we can do is we can actually put that data into file.
+
+119
+00:06:39,020 --> 00:06:39,500
+OK.
+
+120
+00:06:39,510 --> 00:06:43,650
+So we could actually save that using redirection into a file called today.
+
+121
+00:06:43,790 --> 00:06:44,390
+Xscape.
+
+122
+00:06:44,490 --> 00:06:45,230
+So check this out.
+
+123
+00:06:45,280 --> 00:06:48,690
+Using the date command to get all this information here.
+
+124
+00:06:48,720 --> 00:06:54,510
+We're cutting it out to get just Monday and then we're writing that data into a file called today that
+
+125
+00:06:54,660 --> 00:06:56,770
+tickety pretty awesome right.
+
+126
+00:06:56,880 --> 00:06:57,540
+So let's try.
+
+127
+00:06:57,660 --> 00:07:01,460
+Let's go ahead and press enter and know that that's gone out.
+
+128
+00:07:01,470 --> 00:07:03,290
+It doesn't come up on the screen this time.
+
+129
+00:07:03,360 --> 00:07:05,810
+And if we look in here we've got a file called today that takes t.
+
+130
+00:07:05,820 --> 00:07:08,740
+And if we click it we've now got Monday.
+
+131
+00:07:08,790 --> 00:07:10,240
+Isn't that awesome.
+
+132
+00:07:10,410 --> 00:07:12,570
+I think that's fantastic.
+
+133
+00:07:12,590 --> 00:07:16,740
+Now as a side note it doesn't actually matter where I put the redirection.
+
+134
+00:07:16,810 --> 00:07:17,190
+OK.
+
+135
+00:07:17,310 --> 00:07:19,760
+So I could have the redirection at the end here.
+
+136
+00:07:19,860 --> 00:07:25,930
+I could have the redirection over here and it would still work exactly the same.
+
+137
+00:07:26,140 --> 00:07:27,040
+OK.
+
+138
+00:07:27,280 --> 00:07:30,240
+That that works absolutely fine.
+
+139
+00:07:30,240 --> 00:07:37,540
+I could even actually put it in between the different options so I could put it here.
+
+140
+00:07:39,780 --> 00:07:41,490
+And I will also work exactly the same.
+
+141
+00:07:41,520 --> 00:07:41,810
+OK.
+
+142
+00:07:41,810 --> 00:07:45,460
+We're still getting today Dr. XTi with Monday inside.
+
+143
+00:07:45,510 --> 00:07:47,350
+So that's just something to bear in mind.
+
+144
+00:07:47,350 --> 00:07:49,860
+OK don't be scared about typing stuff wrong.
+
+145
+00:07:49,890 --> 00:07:53,490
+All of these are valid ways to do it but some are just a lot more readable than others.
+
+146
+00:07:53,530 --> 00:07:58,410
+OK but let's say that instead of redirecting we wanted to send the standard output of the cut command
+
+147
+00:07:58,800 --> 00:08:04,200
+to yet another command how would we do that how would instead of saving it into a file how would we
+
+148
+00:08:04,200 --> 00:08:07,610
+send the data from the command into yet another command.
+
+149
+00:08:07,860 --> 00:08:08,580
+Well it's simple.
+
+150
+00:08:08,580 --> 00:08:09,660
+You just add into the pipe.
+
+151
+00:08:09,720 --> 00:08:11,850
+OK so you just say OK let me cut that.
+
+152
+00:08:12,130 --> 00:08:15,810
+But no sorry let me just put under the pipe and then let's separate command.
+
+153
+00:08:15,810 --> 00:08:19,830
+I've got some options and then I've got some command line arguments and that's how that would work.
+
+154
+00:08:19,830 --> 00:08:20,400
+OK.
+
+155
+00:08:20,630 --> 00:08:26,850
+That this new command could take its own options its own command line arguments and it could also read
+
+156
+00:08:26,850 --> 00:08:30,390
+standard input from the command line so you can see how this works.
+
+157
+00:08:30,410 --> 00:08:35,340
+We take taken the day come and piping the output into standard input the cut command given the cut command
+
+158
+00:08:35,340 --> 00:08:36,350
+its own options.
+
+159
+00:08:36,540 --> 00:08:41,610
+Then we're piping the output into another command given that command its own options and its own command
+
+160
+00:08:41,730 --> 00:08:44,820
+arguments and so on and so on and so on.
+
+161
+00:08:44,850 --> 00:08:49,980
+OK you can just keep on going piping these things together doing what you want and giving them options
+
+162
+00:08:50,070 --> 00:08:51,000
+as you wish.
+
+163
+00:08:51,000 --> 00:08:55,210
+So this is what gives the the whole Linux terminal its power.
+
+164
+00:08:55,260 --> 00:08:55,640
+OK.
+
+165
+00:08:55,770 --> 00:09:01,140
+Up until now we've been doing things that are cool but not really necessarily useful but when you can
+
+166
+00:09:01,140 --> 00:09:07,440
+combine together really powerful commands and have them operating exactly exactly the way that you want
+
+167
+00:09:07,440 --> 00:09:11,960
+to impart the data between them and all over your computer it really gets amazing.
+
+168
+00:09:11,970 --> 00:09:16,380
+So you can see that this pipings can go on and on and you can see how to build a powerful pipeline this
+
+169
+00:09:16,380 --> 00:09:17,510
+way.
+
+170
+00:09:17,610 --> 00:09:20,630
+It's actually really straightforward you just pipe together different commands.
+
+171
+00:09:20,640 --> 00:09:22,050
+Isn't that awesome.
+
+172
+00:09:22,910 --> 00:09:24,270
+So let me ask you a question.
+
+173
+00:09:24,380 --> 00:09:29,880
+What if we wanted to actually keep the whole date in a file and then pass it into a pipe.
+
+174
+00:09:30,290 --> 00:09:36,410
+Well we can't simply use a redirection at the end here because we're already passing the the sum of
+
+175
+00:09:36,410 --> 00:09:38,540
+their part of the date command into the command.
+
+176
+00:09:38,630 --> 00:09:39,280
+Right.
+
+177
+00:09:39,380 --> 00:09:44,820
+So we can't really save it in a file because we're already passing it on down the pipeline.
+
+178
+00:09:45,140 --> 00:09:52,220
+And if we tried to do it if we tried to you know get rid of the end if we tried to just pipe the output
+
+179
+00:09:52,310 --> 00:09:57,420
+into day Dotti XTi if we do that then we just delete everything we've got in here.
+
+180
+00:09:57,710 --> 00:09:59,110
+So we can see the effect.
+
+181
+00:09:59,390 --> 00:10:03,850
+If I try this we'll see the all we get is just date dot t s t.
+
+182
+00:10:03,950 --> 00:10:07,480
+OK the whole data is saved in today duct tape.
+
+183
+00:10:07,490 --> 00:10:10,090
+But then there's nothing to pass on into the command.
+
+184
+00:10:10,190 --> 00:10:10,760
+OK.
+
+185
+00:10:10,970 --> 00:10:14,690
+This is because redirections a processed before pipes where in the shower.
+
+186
+00:10:14,700 --> 00:10:17,990
+So you find the redirection and do that before it ever sees the pipe.
+
+187
+00:10:18,080 --> 00:10:18,520
+OK.
+
+188
+00:10:18,680 --> 00:10:21,000
+And this basically breaks our pipeline.
+
+189
+00:10:21,290 --> 00:10:23,830
+So the data can't really go two places at once.
+
+190
+00:10:25,340 --> 00:10:31,020
+It well to make this work we're going to use a command called the T command and it's these kind of advanced
+
+191
+00:10:31,020 --> 00:10:33,690
+stuff that we're going to be showing you in the next video.

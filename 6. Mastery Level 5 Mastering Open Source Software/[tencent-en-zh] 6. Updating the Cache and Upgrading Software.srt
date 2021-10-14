@@ -1,0 +1,650 @@
+1
+00:00:00,180 --> 00:00:01,530
+你好，你们这些漂亮的人。
+Hellova you beautiful people.
+
+2
+00:00:01,530 --> 00:00:05,610
+所以在上一段视频中，我给你们留下了一个扣人心弦的问题，我们有一些亟待解决的问题
+So in the last video I left you with kind of a cliffhanger with some burning questions that we have
+
+3
+00:00:05,610 --> 00:00:08,090
+关于APT包管理器是如何工作的。
+about how apt package manager works.
+
+4
+00:00:08,190 --> 00:00:10,100
+首先，缓存是如何到达那里的。
+How does the cache get there in the first place.
+
+5
+00:00:10,200 --> 00:00:12,430
+我们怎样才能确保现金是最新的。
+How can we make sure that the cash is kept up to date.
+
+6
+00:00:12,690 --> 00:00:17,100
+好的，这些是我们将在这段视频中回答的问题，在这段视频结束时，您将会知道
+Well these are the questions that we'll be answering in this video by the end of this video you'll know
+
+7
+00:00:17,100 --> 00:00:18,290
+如何更新您的现金。
+how to update your cash.
+
+8
+00:00:18,390 --> 00:00:23,360
+您还知道如何使用这笔钱将系统上的所有软件升级到最新版本
+And you also know how to use that cash to upgrade all of the software on your system to the most uptodate
+
+9
+00:00:23,400 --> 00:00:25,750
+只需一个简单的命令即可升级。
+level with one simple command.
+
+10
+00:00:25,810 --> 00:00:30,660
+这将是非常棒的，我相信你是的，你会开始明白为什么包裹经理
+And this is going to be so awesome and I'm sure that you are you'll begin to see why package managers
+
+11
+00:00:30,660 --> 00:00:34,680
+远远优于您可能习惯使用的简单向导。
+are far superior to the simple wizards that you may be used to using.
+
+12
+00:00:34,680 --> 00:00:36,030
+现在我等不及要给你看这些东西了。
+Now I can't wait to show you this stuff.
+
+13
+00:00:36,030 --> 00:00:38,400
+所以，让我们继续直截了当地谈吧。
+So let's just go ahead and get right into it.
+
+14
+00:00:38,840 --> 00:00:39,260
+好的。
+OK.
+
+15
+00:00:39,270 --> 00:00:42,870
+那么，缓存中的列表最初是如何真正到达那里的呢？
+So how do the lists in the cache actually get there in the first place.
+
+16
+00:00:43,080 --> 00:00:47,700
+这些列表实际上是从互联网上某处的服务器下载的，这些服务器
+Well these lists are actually downloaded from servers somewhere on the Internet and these servers are
+
+17
+00:00:47,700 --> 00:00:52,850
+由可信来源维护，并包含所有现有软件包的最新列表。
+maintained by credible sources and contain up to date lists of all existing packages.
+
+18
+00:00:52,890 --> 00:00:57,240
+正如我们在上一段视频中提到的，为了让我们的现金正常工作，缓存中的文件
+And as we mentioned in the last video in order for our cash to be functional the files in the cache
+
+19
+00:00:57,300 --> 00:00:59,630
+必须与服务器上的文件相同。
+must be the same as the files on the server.
+
+20
+00:00:59,750 --> 00:01:02,710
+这对于软件存储库尤其重要。
+This is especially important for the software repositories.
+
+21
+00:01:02,820 --> 00:01:07,530
+所以我和我一起思考Linux社区的另一个问题，那就是全世界有数以百万计的人
+So I think with me about the Linux community for another there are millions of people around the world
+
+22
+00:01:07,590 --> 00:01:12,160
+所有人都在为这个庞大的软件主体做出贡献，并一直在创造东西。
+all contributing to this massive body of software and creating things all the time.
+
+23
+00:01:12,360 --> 00:01:17,080
+这一庞大的群体同时为软件存储库和产品做出贡献，这些软件存储库和产品
+This massive body of people contributing simultaneously to the software repositories and products that
+
+24
+00:01:17,100 --> 00:01:19,850
+软件变化很大，而且经常变化。
+software changes a lot and it changes often.
+
+25
+00:01:19,890 --> 00:01:22,060
+错误得到修复，安全漏洞得到修补。
+Bugs get fix security holes get patched.
+
+26
+00:01:22,050 --> 00:01:23,010
+将添加新功能。
+New features get added.
+
+27
+00:01:23,010 --> 00:01:25,720
+文档已编成代码，依此类推。
+Documentation is codified and so on and so forth.
+
+28
+00:01:25,940 --> 00:01:30,770
+现在，有时程序开发得太多，以至于它们需要新的依赖项才能工作。
+Now sometimes programs get developed so much that they require new dependencies in order to work.
+
+29
+00:01:31,050 --> 00:01:35,130
+尽管进行了所有这些更改，但现在您的系统上的所有软件都会保留下来，并且可以管理所有东西
+And in spite all of these changes keep in all the software on your system today and managing everything
+
+30
+00:01:35,130 --> 00:01:39,060
+手动操作只会是一场彻头彻尾的噩梦。
+yourself manually would just be a complete nightmare.
+
+31
+00:01:39,360 --> 00:01:40,260
+它就是行不通。
+It just wouldn't work.
+
+32
+00:01:40,270 --> 00:01:44,460
+有太多的空间让一个人犯错误，有太多的事情需要跟踪。
+There's too much room for a person to make a mistake and too much stuff to keep track of.
+
+33
+00:01:44,670 --> 00:01:46,740
+但幸运的是，你不必这么做。
+But fortunately you don't have to.
+
+34
+00:01:46,740 --> 00:01:51,390
+APT包管理器有一种使用缓存的方法来确保系统上的所有软件
+The apt package manager has a way of using the cache to make sure that all the software on your system
+
+35
+00:01:51,660 --> 00:01:52,800
+完全是最新的。
+is completely up to date.
+
+36
+00:01:53,040 --> 00:01:54,700
+这就是它的工作原理。
+And here's how it works.
+
+37
+00:01:54,720 --> 00:02:01,910
+因此，您需要做的第一件事是更新您的现金，并为此运行sudo apt get update。
+So the first thing you need to do is to update your cash and to do that you'd run sudo apt get update.
+
+38
+00:02:02,040 --> 00:02:03,680
+好的，这就是你要运行的命令。
+OK and that's the command you'd run.
+
+39
+00:02:03,770 --> 00:02:07,920
+现在请注意，我们需要如何使用这里开头的sudo命令。
+Now notice how we need to use the sudo command at the beginning here.
+
+40
+00:02:07,940 --> 00:02:12,480
+这是因为我们要对文件系统上的重要文件进行更改，并且需要管理员
+Now that's because we're going to make changes to important files on our file system and we need administrator
+
+41
+00:02:12,480 --> 00:02:14,060
+特权才能做到这一点。
+privileges in order to do so.
+
+42
+00:02:14,270 --> 00:02:20,460
+我们使用的是apt get，而不是apt缓存，因为我们将从存储库获取数据，因此
+And instead of apt cache we're using apt get because we're going to get data from the repositories so
+
+43
+00:02:20,460 --> 00:02:27,090
+我们会得到最新的名单并更新，我们会更新名单和我们的现金，以确保
+we'll be getting the updated lists and update we'll update the lists and our cash to make sure that
+
+44
+00:02:27,090 --> 00:02:31,640
+其中的包版本与存储库中的包版本相同。
+the package versions in there are the same as the package versions in the repositories.
+
+45
+00:02:31,800 --> 00:02:34,470
+但当然，为了让这项技术发挥作用，我们需要连接到互联网。
+But of course in order for this to work we need to be connected to the Internet.
+
+46
+00:02:34,650 --> 00:02:38,430
+所以我在录制这段视频之前重新标记了我们的互联网连接。
+So I relabeled our internet connection before recording this video.
+
+47
+00:02:38,460 --> 00:02:41,050
+因此，如果您正在追随，请确保您也重新启用了您的。
+So if you are following along make sure you re-enable yours too.
+
+48
+00:02:41,220 --> 00:02:46,350
+如果我们现在运行so sudo apt get update，它将要求我们输入密码，因为我们使用的是
+And if we run now so sudo apt get update it will ask us to enter our password because we are using the
+
+49
+00:02:46,350 --> 00:02:52,110
+SUDO命令，或者我们输入该命令，然后按Enter键，您可以看到它获得了大量不同的
+sudo commands or we enter that and we press enter and you can see that it's getting loads of different
+
+50
+00:02:52,110 --> 00:02:56,890
+来自Buntu存储库的列表，它已经下载并安装了它们。
+lists from the buntu repositories and it's downloaded them and installing them.
+
+51
+00:02:56,970 --> 00:03:01,500
+现在它将更新我们的现金，这可能需要不同的时间，这取决于需要多长时间
+Now it's going to be updating our cash which might take various amount of time depending on how long
+
+52
+00:03:01,500 --> 00:03:02,880
+自从你更新信息以来就是这样了。
+it's been since you've updated.
+
+53
+00:03:02,880 --> 00:03:04,770
+但是我们的已经走了，现在已经完工了。
+But ours is gone and completed now.
+
+54
+00:03:04,830 --> 00:03:10,260
+现在我们已经更新了缓存，它将拥有最新的包号和依赖关系
+So now that we've updated the cache will have the most up to date package numbers and dependencies for
+
+55
+00:03:10,350 --> 00:03:14,670
+所有的包裹都是现金，这样我们就有了最新的缓存。
+all the packages in cash so that we have an up to date cache.
+
+56
+00:03:14,730 --> 00:03:17,410
+如果我们电脑上的一些软件过时了怎么办？
+What if some of the software on our computer is out of date.
+
+57
+00:03:17,580 --> 00:03:23,020
+我们如何将我们的软件升级到新版本的软件包列表中的最新版本。
+How can we upgrade our software to the newest versions that are in the new versions of the package lists.
+
+58
+00:03:23,020 --> 00:03:26,440
+老实说，这真的很容易，而且相当神奇。
+Well that's actually really easy and quite magical to be honest.
+
+59
+00:03:26,460 --> 00:03:30,760
+因此，要升级从存储库安装的系统上的每一个软件，
+So to upgrade every single piece of software on your system that you install from the repository is
+
+60
+00:03:31,110 --> 00:03:32,840
+你所需要做的就是打字。
+all you need to do is type.
+
+61
+00:03:32,910 --> 00:03:37,800
+我玩了屏幕速成游戏，很容易升级。
+I play the screen sudo apt get upgrade.
+
+62
+00:03:37,800 --> 00:03:41,370
+好的，现在我们来看一下“代表”。
+OK now this will run through so Representer.
+
+63
+00:03:41,520 --> 00:03:47,670
+这将运行所有软件包列表，并查看我们系统上的所有软件
+This will run through all the package lists and see all the software that we've got on our system and
+
+64
+00:03:47,670 --> 00:03:52,530
+它会告诉我们哪些是过时的，哪些需要更新，还会告诉您需要多少
+it will tell us what's out of date and what needs to be updated and it also tell you how much needs
+
+65
+00:03:52,530 --> 00:03:56,280
+将被安装等等，并且它要求批准才能继续。
+to be installed and so on and it asks for approbation to continue.
+
+66
+00:03:56,280 --> 00:03:58,050
+如果我按“是”的话。
+If I press yes.
+
+67
+00:03:58,050 --> 00:04:03,060
+因此，这将通过更新的缓存运行，并查看系统上的哪些包在后面
+So this is going to run on through the updated cache and see what packages on your system are behind
+
+68
+00:04:03,090 --> 00:04:07,630
+并找出需要安装哪些新依赖项，以及不再需要哪些依赖项。
+it and figure out what new dependencies need to be installed and which ones are no longer required.
+
+69
+00:04:07,620 --> 00:04:11,930
+他们会告诉您需要多少空间，诸如此类，然后再请求您的许可才能继续。
+They'll tell you how much space is required and so and so before asking your permission to continue.
+
+70
+00:04:11,940 --> 00:04:17,310
+但现在我们已经给了它许可，它将继续并开始更新上的每一个软件
+But now that we've given it permission it will go ahead and start updating every piece of software on
+
+71
+00:04:17,310 --> 00:04:23,520
+系统或下载所需的软件包，将其解包、安装并自动删除旧版本
+the system or download the required packages unpack them install them and remove the old versions automatically
+
+72
+00:04:23,520 --> 00:04:30,170
+整个系统上使用存储库安装的每个单独的软件。
+for every single piece of software on the entire system that was installed using the repositories.
+
+73
+00:04:30,180 --> 00:04:36,070
+这是一个功能非常强大的自动化系统，这就是使用包管理器的美妙之处。
+This is an incredibly powerful automated system and this is really the beauty of using a package manager.
+
+74
+00:04:36,180 --> 00:04:41,310
+您不必像以前那样访问网站并手动下载每个新包
+You don't have to go to the Web site and download manually each piece each new package like you might
+
+75
+00:04:41,310 --> 00:04:42,960
+必须在Windows或Mac上运行。
+have to do on Windows or Mac.
+
+76
+00:04:43,020 --> 00:04:46,980
+我们必须下载新的安装程序，或者单击以获取每个不同软件的更新。
+We've got to download the new installer or click for updates on each different piece of software.
+
+77
+00:04:46,980 --> 00:04:50,970
+现在，您需要做的就是升级通过存储库安装的所有内容
+Now all you have to do is want to upgrade upgrade everything that was installed through the repositories
+
+78
+00:04:51,270 --> 00:04:55,360
+将升级到可帮助您提高安全性的最新版本级别。
+will be upgraded to the newest version levels which helps you with security.
+
+79
+00:04:55,530 --> 00:04:59,800
+它帮助你拥有最现代的特征，而且绝对是。
+It helps you with having the most modern features and it's just absolutely.
+
+80
+00:04:59,910 --> 00:05:05,220
+另外，如果你使用Kramm，你也可以安排这些事情定期发生，所以这就是
+And also if you use Krumm you can schedule this stuff to happen on a regular basis as well so that's
+
+81
+00:05:05,220 --> 00:05:07,340
+这是一件需要牢记的有用的事情。
+a useful thing to bear in mind.
+
+82
+00:05:07,530 --> 00:05:12,390
+现在，这可能需要不同的时间，这取决于我们升级后有多长时间
+Now this might take a varying amount of time depending upon how long it's been since since we've upgraded
+
+83
+00:05:12,690 --> 00:05:16,950
+我们的软件，因为我还没有在这个虚拟机上做过，这将需要相当长的一段时间。
+our software and because I haven't actually done it on this virtual machines it will take quite a while.
+
+84
+00:05:16,950 --> 00:05:21,610
+所以我要做的就是把这里的视频剪下来，完成后再回来。
+So I'm going to do is I'm going to cut the video here and come back when it is done.
+
+85
+00:05:21,630 --> 00:05:23,540
+就像这样变成命令。
+And just like that into commands.
+
+86
+00:05:23,540 --> 00:05:28,590
+我们系统上的所有软件都已升级，我们实际上可以看到Firefox徽标已经
+All the software on our system has been upgraded and we can actually see that the Firefox logo has been
+
+87
+00:05:28,590 --> 00:05:31,170
+更新后看起来更具史诗色彩。
+updated to look a whole lot more epic.
+
+88
+00:05:31,170 --> 00:05:36,180
+请注意，系统也不需要重新启动我们安装的所有软件，即存储库
+So notice how the system also didn't need to reboot all the software that we've installed that the repositories
+
+89
+00:05:36,390 --> 00:05:38,310
+已经升级过了，可以开始使用了。
+has been upgraded and it's ready to go.
+
+90
+00:05:38,310 --> 00:05:45,240
+所以我们所要做的就是使用sudo apt get update更新软件包列表，然后一旦我们更新了它
+So all we had to do was update the package list using sudo apt get update and then once we updated it
+
+91
+00:05:45,290 --> 00:05:50,460
+或者等待升级，然后我们将所有的软件升级到新版本。
+or waited it was sudo apt get upgrade and then we upgraded all the software to the new versions.
+
+92
+00:05:50,470 --> 00:05:55,020
+所以要知道，当您执行这些更新时，有时需要重新启动系统，但这是
+So do know that sometimes you will need to reboot your system when you do these updates but this is
+
+93
+00:05:55,020 --> 00:05:57,390
+这有点不寻常，但有时需要发生。
+kind of unusual but sometimes it will need to happen.
+
+94
+00:05:57,570 --> 00:06:02,170
+但需要注意的是，在执行升级和
+But it's important to note that you should always update your cache before you perform an upgrade and
+
+95
+00:06:02,280 --> 00:06:09,640
+确保使用正确的软件版本进行升级，并且所有内容都统一更新。
+make sure that the upgrade occurs using the correct software versions and everything is updated uniformly.
+
+96
+00:06:09,880 --> 00:06:14,730
+因此，要更新缓存，您已经运行了sudo apt get update，这将会下载
+So to update your cache you've run sudo apt get update and what this will do is it will download the
+
+97
+00:06:14,730 --> 00:06:20,940
+将软件包列表的最新版本从两台服务器保存到您的缓存中，该缓存存储在您的
+most updated versions of the package lists from the two servers into your cache that is stored on your
+
+98
+00:06:20,940 --> 00:06:21,610
+电脑。
+computer.
+
+99
+00:06:21,720 --> 00:06:24,080
+因此，为了做到这一点，你需要有一个互联网连接。
+So in order to do that you need to have an internet connection.
+
+100
+00:06:24,240 --> 00:06:29,400
+但是，一旦您通过下载最新的软件包列表更新了缓存，您就可以升级所有
+But once you've updated your cache by downloading the most updated package lists you can upgrade all
+
+101
+00:06:29,400 --> 00:06:33,030
+使用sudo apt Get Upgrade升级您系统上的软件。
+of the software on your system using sudo apt get upgrade.
+
+102
+00:06:33,030 --> 00:06:36,480
+这样做的目的是让包管理器查看当前使用的所有软件
+And what this will do is it will make the package manager look at all the software that is currently
+
+103
+00:06:36,480 --> 00:06:41,460
+并将其与软件包列表中的可用内容进行比较，然后与软件包管理器中的可用内容进行比较
+on your system and compare it to what is available in the package lists and then the package manager
+
+104
+00:06:41,460 --> 00:06:48,180
+将自动下载和升级所有可下载的不同软件包，以便
+will automatically download and upgrade all the different packages that can be downloaded in order to
+
+105
+00:06:48,240 --> 00:06:53,520
+将您的系统更新到最新级别，以便下载任何新版本的软件包
+update your system to the most up to date level so this will download any new versions of packages that
+
+106
+00:06:53,540 --> 00:06:57,090
+删除旧版本它将下载所有新的所需依赖项。
+remove old versions it'll download any new required dependencies.
+
+107
+00:06:57,180 --> 00:06:59,560
+这只会帮助您了解如何提高您的系统安全性。
+And this just helps you know increase your system security.
+
+108
+00:06:59,610 --> 00:07:04,980
+它帮助您提供最大的功能，它的四周都很棒，但这是您需要的东西
+It helps give you maximum functionality and it's all round just fantastic but something that you need
+
+109
+00:07:04,980 --> 00:07:09,300
+请记住，您需要在升级之前更新缓存，否则您将
+to bear in mind is that you need to update the cache before you upgrade because otherwise you'll be
+
+110
+00:07:09,420 --> 00:07:14,250
+升级所有软件以锁定最新版本，并且您希望能够更新
+upgrading all your software to lock the most up to date versions and you want to be able to update your
+
+111
+00:07:14,250 --> 00:07:19,500
+更新版本的软件要做到这一点，您需要最新的软件包列表，以便更新这些let
+software to update versions in order to do that you need uptodate package lists so to update those lets
+
+112
+00:07:19,620 --> 00:07:23,110
+你更新你的现金，然后当你更新了你的缓存，你就可以操作你的软件了。
+you update your cash and then when you've updated your cache you can operate your software.
+
+113
+00:07:23,130 --> 00:07:23,910
+所以请记住这一点。
+So bear that in mind.
+
+114
+00:07:23,910 --> 00:07:27,030
+在升级软件之前，请始终更新缓存。
+Always update your cache before you upgrade your software.
+
+115
+00:07:27,090 --> 00:07:31,500
+这里要记住的另一件重要事情是，您只能升级已安装的软件
+Another important thing to bear in mind here is that you can only upgrade software that was installed
+
+116
+00:07:31,620 --> 00:07:32,870
+通过储存库。
+through the repositories.
+
+117
+00:07:32,880 --> 00:07:37,050
+好的，这在Gonu Linux系统上是可能的，就像我们在前面的视频中所做的那样，我们在视频中修改了
+OK that is possible on a Gonu Linux system like we did in the previous videos where we modified the
+
+118
+00:07:37,050 --> 00:07:38,030
+ls命令。
+ls command.
+
+119
+00:07:38,050 --> 00:07:42,580
+您可以手动下载包，将其解压并编译，然后自己安装。
+You can download packages manually extract them and compile them and install them yourself.
+
+120
+00:07:42,690 --> 00:07:47,280
+但是因为该过程不是通过存储库和包管理器发生的，所以您失去了
+But because that process doesn't happen through the repositories and package manager you lose the ability
+
+121
+00:07:47,340 --> 00:07:49,540
+让他们保持最新，就像我们在这里做的那样。
+to keep them up to date like we are doing here.
+
+122
+00:07:49,740 --> 00:07:53,900
+因此，如果您可以从网站下载一个包，也可以从缺席者那里获得它
+So therefore if you can download a package from a web site and you can also get it from the absentee
+
+123
+00:07:53,910 --> 00:07:58,320
+存储库确保从存储库获取它，因为这样您就可以确保它符合
+repositories make sure to get it from the repositories because then you can make sure that it's up to
+
+124
+00:07:58,320 --> 00:07:58,590
+日期。
+date.
+
+125
+00:07:58,590 --> 00:08:00,820
+确保您始终拥有可用的最佳功能。
+Make sure you always have the best features available.
+
+126
+00:08:00,840 --> 00:08:06,810
+使用此自动化过程，因此到目前为止，我们已经讨论了如何搜索必须更新缓存的软件
+Using this automated process so as of now we've discussed how to search for software had to update caches
+
+127
+00:08:06,810 --> 00:08:08,080
+以及如何升级软件。
+and how to upgrade software.
+
+128
+00:08:08,190 --> 00:08:11,760
+但我们还没有讨论过必须实际安装新软件。
+But we haven't discussed had to actually install new software.
+
+129
+00:08:11,760 --> 00:08:15,660
+嗯，考虑到你现在的理解，这对你来说真的很容易，所以
+Well with all the understanding that you have now that's actually going to be really easy for you so
+
+130
+00:08:15,660 --> 00:08:17,760
+我会把那颗小宝石留到下一个视频里。
+I'll save that little gem for the next video.
+

@@ -1,0 +1,683 @@
+1
+00:00:00,550 --> 00:00:02,010
+Hello you beautiful people.
+
+2
+00:00:02,010 --> 00:00:03,130
+And welcome back.
+
+3
+00:00:03,130 --> 00:00:08,950
+I left you with a bit of a cliffhanger in the last video where you learned all about the basics of piping.
+
+4
+00:00:08,950 --> 00:00:13,420
+Now in this video we're going to take what you learned about the basics in the previous video and in
+
+5
+00:00:13,420 --> 00:00:18,120
+this video we're going to level it up and teach you some advanced piping techniques.
+
+6
+00:00:18,130 --> 00:00:22,420
+So with the basic stuff you learnt last night's video about just taking the output of one command and
+
+7
+00:00:22,420 --> 00:00:26,530
+piping it directly into the input into the standard input of another.
+
+8
+00:00:26,530 --> 00:00:30,730
+That doesn't leave much room for flexibility whereas there's loads of really cool things that you can
+
+9
+00:00:30,730 --> 00:00:33,790
+do with your pipelines if you learn just a few more techniques.
+
+10
+00:00:33,790 --> 00:00:36,480
+So in this video we're going to go over those advanced piping techniques.
+
+11
+00:00:36,520 --> 00:00:42,440
+And by the end you have to make advanced pipelines using the t and x Ogg's commands.
+
+12
+00:00:42,550 --> 00:00:44,630
+So let's go ahead and jump into it.
+
+13
+00:00:45,970 --> 00:00:49,470
+All right so let's just have a quick recap of what we did in the last video.
+
+14
+00:00:49,600 --> 00:00:54,220
+So in the last video we use the date command to get loads of system information about our computers
+
+15
+00:00:54,220 --> 00:01:00,430
+clock and what we did was we passed that data into the cut command because we just wanted to cut out
+
+16
+00:01:00,430 --> 00:01:02,790
+the day of the week which is a Monday.
+
+17
+00:01:02,980 --> 00:01:08,680
+Now to the day of the week we have to say that this data is actually broken up into several columns
+
+18
+00:01:08,920 --> 00:01:11,410
+and each column is separated by a space.
+
+19
+00:01:11,410 --> 00:01:17,080
+Now another way of saying that is that each column is delimited by space that's a fancy word in computer
+
+20
+00:01:17,170 --> 00:01:18,240
+lingo.
+
+21
+00:01:18,430 --> 00:01:24,870
+And so what we did is we gave the the command a delimiter and we said the delimiter is a space.
+
+22
+00:01:25,070 --> 00:01:25,590
+OK.
+
+23
+00:01:25,870 --> 00:01:29,770
+And now once we've said OK Each column is split up by by spaces.
+
+24
+00:01:29,770 --> 00:01:31,580
+Which field do we want which column do we want.
+
+25
+00:01:31,580 --> 00:01:33,510
+What is the first column.
+
+26
+00:01:33,630 --> 00:01:38,590
+Now fields in the cut command are called effable columns in the cook commander called fields.
+
+27
+00:01:38,650 --> 00:01:44,890
+So we said Fields equals 1 and when we pressed enter that cuts out Monday.
+
+28
+00:01:44,970 --> 00:01:45,370
+OK.
+
+29
+00:01:45,430 --> 00:01:47,330
+So that's what we did in the last video.
+
+30
+00:01:47,350 --> 00:01:49,240
+Then I gave you a little bit of a challenge.
+
+31
+00:01:49,270 --> 00:01:56,270
+I said hey how can we go about actually saving this information into a file.
+
+32
+00:01:56,350 --> 00:02:00,380
+But at the same time also pass it down into the pipeline.
+
+33
+00:02:00,490 --> 00:02:05,740
+So how can we save it into a file but also pass it down into the cook come on so that it can be operated
+
+34
+00:02:05,740 --> 00:02:07,530
+on so we can get Monday out.
+
+35
+00:02:07,540 --> 00:02:12,940
+So we're trying to do two things at once so to do that we actually need to have another command called
+
+36
+00:02:12,940 --> 00:02:14,260
+the command.
+
+37
+00:02:14,260 --> 00:02:16,970
+So let's take a look at how the two command works.
+
+38
+00:02:18,230 --> 00:02:20,490
+So here's an image of how the tee command works.
+
+39
+00:02:20,490 --> 00:02:23,870
+Now put a link to the original picture in the video resources.
+
+40
+00:02:23,890 --> 00:02:28,240
+You can see here that we have a pipe between two commands so here's a command over on the left.
+
+41
+00:02:28,470 --> 00:02:32,900
+And we have another command over here on the right and in the middle we're using the command.
+
+42
+00:02:33,000 --> 00:02:33,540
+OK.
+
+43
+00:02:33,540 --> 00:02:35,970
+Now we haven't covered what the specific commands do.
+
+44
+00:02:35,970 --> 00:02:40,780
+It doesn't actually matter so much what I want to focus on is the T command in the middle and just on
+
+45
+00:02:40,840 --> 00:02:43,350
+that we're trying to pipe two commands together.
+
+46
+00:02:43,440 --> 00:02:44,070
+OK.
+
+47
+00:02:44,100 --> 00:02:49,690
+Now just like a T-junction in a pipe of water we can use the tee command to cause our data to flow in
+
+48
+00:02:49,720 --> 00:02:50,610
+two directions.
+
+49
+00:02:50,610 --> 00:02:58,110
+We can cause it to flow horizontally as well as flow vertically downwards into the files you can imagine
+
+50
+00:02:58,110 --> 00:02:58,960
+it working like that.
+
+51
+00:02:59,010 --> 00:02:59,430
+OK.
+
+52
+00:02:59,580 --> 00:03:03,720
+So this the team commander allows us to pass the data on to the rest of the pipe.
+
+53
+00:03:03,810 --> 00:03:06,530
+But it also allows us to keep it in a file.
+
+54
+00:03:06,680 --> 00:03:07,080
+OK.
+
+55
+00:03:07,170 --> 00:03:11,580
+So you can see here that we've got a commander on the left that is trying to pipe its data across into
+
+56
+00:03:11,580 --> 00:03:16,560
+another commander on the right in the middle there we pipe it through the tee command and the command
+
+57
+00:03:16,620 --> 00:03:21,750
+we give it a command line argument a file that DXi that could be any file name that you want.
+
+58
+00:03:21,930 --> 00:03:25,950
+And what happens is the data does pass all the way through from the standard output of one command to
+
+59
+00:03:25,950 --> 00:03:27,210
+the standard input the other.
+
+60
+00:03:27,210 --> 00:03:29,040
+But it also falls down.
+
+61
+00:03:29,040 --> 00:03:34,980
+You can imagine it falling down from your command line it like into a file called filed or ATX or whatever
+
+62
+00:03:34,980 --> 00:03:37,230
+file name you gave the command.
+
+63
+00:03:37,500 --> 00:03:39,390
+So that's how the command works.
+
+64
+00:03:39,390 --> 00:03:45,370
+In theory this is how this graphic works and let's go ahead and see it work in practice.
+
+65
+00:03:45,670 --> 00:03:50,680
+OK so never you understand how the t command works I just have a quick refresher of our command pipeline.
+
+66
+00:03:50,830 --> 00:03:55,570
+We have the date command which gives us a whole bunch of information about our systems clock and we
+
+67
+00:03:55,570 --> 00:04:00,220
+wanted to cut out the Monday or whatever day of the week it actually is OK.
+
+68
+00:04:00,250 --> 00:04:03,490
+So we take the date command and we piped it into the cut command.
+
+69
+00:04:03,490 --> 00:04:08,010
+Now we notice that the data is broken up into columns that are separated by spaces.
+
+70
+00:04:08,080 --> 00:04:13,210
+So we say hey come on we have a delimiter that's a space the data is delimited by spaces and we want
+
+71
+00:04:13,210 --> 00:04:18,400
+the first column or as the command calls it the first field and that gives us the day of the week which
+
+72
+00:04:18,400 --> 00:04:19,930
+in this case is Monday.
+
+73
+00:04:19,930 --> 00:04:26,980
+Now the challenge was we want to not only have that come out we also want to save the entire date AK
+
+74
+00:04:27,310 --> 00:04:32,080
+into a file called called full date Dotti XTi.
+
+75
+00:04:32,130 --> 00:04:32,690
+OK.
+
+76
+00:04:32,710 --> 00:04:34,100
+So here's how we would do that.
+
+77
+00:04:34,130 --> 00:04:37,660
+And then press the paroquet to get where we got before.
+
+78
+00:04:37,660 --> 00:04:41,160
+Now what I'm going to do is I'm just going to squeeze in here the command.
+
+79
+00:04:41,320 --> 00:04:41,820
+OK.
+
+80
+00:04:41,890 --> 00:04:46,660
+Now the command is going to put one of those like T-junction in our pipeline.
+
+81
+00:04:46,660 --> 00:04:47,970
+You need to imagine it in your head.
+
+82
+00:04:48,040 --> 00:04:48,440
+OK.
+
+83
+00:04:48,610 --> 00:04:53,330
+So what's going to happen is the data is going to pass all the way through the pipeline horizontally.
+
+84
+00:04:53,350 --> 00:04:58,260
+So it's going to pass from the date come on standard output and go into the standard input of the cup
+
+85
+00:04:58,260 --> 00:04:58,570
+come on.
+
+86
+00:04:58,580 --> 00:05:00,560
+So it's going to flow straight the way through.
+
+87
+00:05:00,820 --> 00:05:06,280
+But what the tee command is going to do is it's going to allow us to save the data vertically downwards
+
+88
+00:05:06,460 --> 00:05:10,620
+so you can watch it being like a big letter T A K like a big T-junction.
+
+89
+00:05:10,720 --> 00:05:15,970
+The date is going to go downwards into the file called full date.
+
+90
+00:05:16,370 --> 00:05:18,140
+Dr. XTi Okay.
+
+91
+00:05:18,490 --> 00:05:22,750
+So here we are today is going to go horizontal down ops either no internal about that is going to go
+
+92
+00:05:22,750 --> 00:05:23,890
+horizontally across.
+
+93
+00:05:23,970 --> 00:05:24,730
+OK.
+
+94
+00:05:24,760 --> 00:05:29,660
+And it's also going to go vertically downwards into a file called full day.
+
+95
+00:05:29,710 --> 00:05:35,860
+Dr. XTi because when we do that we see that the output of the day of the week is still happened because
+
+96
+00:05:35,860 --> 00:05:37,320
+that was passed through the cut Come on.
+
+97
+00:05:37,320 --> 00:05:41,180
+Come on spit it out to its standard output which is still connected to our terminal.
+
+98
+00:05:41,320 --> 00:05:44,710
+Boom we open up our file explorer we can see that.
+
+99
+00:05:44,710 --> 00:05:46,970
+Now we have a file called full date.
+
+100
+00:05:47,050 --> 00:05:47,790
+Dr..
+
+101
+00:05:47,840 --> 00:05:49,700
+I deleted all of the other ones we have before.
+
+102
+00:05:49,780 --> 00:05:53,670
+So we were starting afresh and now we have full date directx tape.
+
+103
+00:05:53,740 --> 00:05:59,290
+And when I open that well hey we can actually see that all of the data data has been indeed saved in
+
+104
+00:05:59,290 --> 00:06:00,940
+a file called full date.
+
+105
+00:06:01,010 --> 00:06:02,700
+Dottie XTi Isn't that awesome.
+
+106
+00:06:02,710 --> 00:06:03,240
+That's proper.
+
+107
+00:06:03,240 --> 00:06:08,020
+All right so what happened was the date command spatio all of its information all the way across the
+
+108
+00:06:08,020 --> 00:06:12,700
+pipeline and when it got to the teacup on the TQM I just took a snapshot of the data in the pipeline
+
+109
+00:06:12,970 --> 00:06:16,050
+and passed it down into a file called full date.
+
+110
+00:06:16,060 --> 00:06:20,700
+Dr. XTi so that file contains all of the data that's coming out the date command.
+
+111
+00:06:20,820 --> 00:06:26,590
+OK but then the data was passed on into the cut command which did some processing and that spatio the
+
+112
+00:06:26,590 --> 00:06:28,980
+day of the week which in this case was Monday.
+
+113
+00:06:28,990 --> 00:06:30,830
+No I've got a quick challenge for you OK.
+
+114
+00:06:30,940 --> 00:06:32,210
+And I think you can do it.
+
+115
+00:06:32,290 --> 00:06:33,180
+What are we to do.
+
+116
+00:06:33,250 --> 00:06:39,430
+I want you to instead of having the day the week spit out to the terminal I want you to see if you can
+
+117
+00:06:39,430 --> 00:06:46,990
+figure out how you can use redirection to actually cause that data to be saved in a file called today
+
+118
+00:06:47,230 --> 00:06:48,540
+Dr. XTi.
+
+119
+00:06:48,970 --> 00:06:49,380
+OK.
+
+120
+00:06:49,450 --> 00:06:54,070
+So instead of having the day of the week SpinSpotter to the shop bespattered to the terminal.
+
+121
+00:06:54,070 --> 00:07:00,290
+I want you to have it saved in a file called today Dr. XTi But also you still need to have the command
+
+122
+00:07:00,290 --> 00:07:05,690
+in he has to press the OK to get what you've got before and now do the redirection.
+
+123
+00:07:05,800 --> 00:07:06,280
+OK.
+
+124
+00:07:06,290 --> 00:07:10,870
+So I'm going to pull the video now and then come back and see how you did
+
+125
+00:07:16,270 --> 00:07:16,920
+How'd you manage it.
+
+126
+00:07:16,940 --> 00:07:17,660
+Did you do it.
+
+127
+00:07:17,930 --> 00:07:19,870
+Well this is how you this is how I'd go about it.
+
+128
+00:07:19,880 --> 00:07:20,160
+Right.
+
+129
+00:07:20,240 --> 00:07:26,310
+So I would just write at the end here because here's where the data is actually coming out from.
+
+130
+00:07:26,380 --> 00:07:31,510
+I would just have a redirection from standard output into a file called today.
+
+131
+00:07:31,810 --> 00:07:35,180
+XTi and it's literally just that simple.
+
+132
+00:07:35,240 --> 00:07:35,570
+OK.
+
+133
+00:07:35,720 --> 00:07:42,480
+So once we've done that if I go ahead and press ENTER we can see that when we open up our file commander
+
+134
+00:07:42,500 --> 00:07:45,670
+here we've also got a file called today Dr. XTi.
+
+135
+00:07:45,830 --> 00:07:50,570
+And inside there it has saved the data that day of the week which in this case was Monday.
+
+136
+00:07:50,570 --> 00:07:53,340
+Let me delete both files so we can see this in all its glory.
+
+137
+00:07:53,340 --> 00:07:56,790
+I've got no files and press the Parakey press enter.
+
+138
+00:07:57,070 --> 00:08:04,220
+And when we take a look we've actually managed to save all the data into full date doctor 60 and we've
+
+139
+00:08:04,220 --> 00:08:09,280
+also managed to save just what we wanted using redirection into today directx.
+
+140
+00:08:09,320 --> 00:08:10,500
+Isn't that awesome.
+
+141
+00:08:10,500 --> 00:08:11,660
+Right that's kind of.
+
+142
+00:08:11,780 --> 00:08:13,360
+That's really awesome.
+
+143
+00:08:13,420 --> 00:08:19,490
+So anyway so what we've got here is the T command basically takes a snapshot of the data that's flowing
+
+144
+00:08:19,490 --> 00:08:24,410
+through the pipe at that point and saves it in a file that you give it.
+
+145
+00:08:24,490 --> 00:08:25,060
+OK.
+
+146
+00:08:25,130 --> 00:08:27,380
+And then redirection will also do the same.
+
+147
+00:08:27,390 --> 00:08:31,690
+But once you've redirected standard output you can no longer pass it down the pipe.
+
+148
+00:08:31,760 --> 00:08:36,560
+OK so that's why we use the T command the command allows standard output to continue flowing down the
+
+149
+00:08:36,560 --> 00:08:42,540
+pipe but also allows you to effectively redirect it to a file and take a snapshot so that it's saved
+
+150
+00:08:42,550 --> 00:08:43,430
+there.
+
+151
+00:08:43,550 --> 00:08:49,570
+So another way of saying that is that once you've done redirection you can't do any more piping.
+
+152
+00:08:49,640 --> 00:08:54,430
+OK so once you've redirected standard output like we have here in the today text.
+
+153
+00:08:54,590 --> 00:09:01,860
+Ok we can no longer do any more piping down than a pipe I'm going to maximize the terminal we can.
+
+154
+00:09:01,860 --> 00:09:06,850
+Once we've done this redirection to 0.60 that's the end of our piping days.
+
+155
+00:09:07,190 --> 00:09:12,740
+But what we could do if we wanted to save all the data in today that takes to continue the pipeline.
+
+156
+00:09:12,980 --> 00:09:13,540
+Then what.
+
+157
+00:09:13,550 --> 00:09:15,680
+Then that's when the T command would come in.
+
+158
+00:09:15,680 --> 00:09:20,300
+OK so we do for example today docked here in the Teac amount and now we can continue to pipe.
+
+159
+00:09:20,380 --> 00:09:20,910
+Okay.
+
+160
+00:09:20,930 --> 00:09:27,920
+So just again if you do redirection of jackalope that means no more piping if you want to take a snapshot
+
+161
+00:09:28,070 --> 00:09:34,710
+but continue piping that's when you use the Teac amount and now I could continue piping on down.
+
+162
+00:09:34,790 --> 00:09:35,320
+Okay.
+
+163
+00:09:35,360 --> 00:09:40,960
+So I wanted to also cover the X Ogg's commands in this video but I think we're pushing it for time here.
+
+164
+00:09:40,970 --> 00:09:46,170
+I hope that that has made it clear what the tee command is in final summary here for the team and the
+
+165
+00:09:46,180 --> 00:09:53,120
+team command allows you to save a snapshot of the data and continue doing your piping whereas just using
+
+166
+00:09:53,120 --> 00:09:55,840
+redirection will save a snapshot of the data.
+
+167
+00:09:55,850 --> 00:09:57,740
+But you can no longer do any piping.
+
+168
+00:09:57,740 --> 00:10:02,530
+So if you want to keep building your pipeline but keep a snapshot of the data use the T command instead.
+
+169
+00:10:02,540 --> 00:10:06,530
+So in the next video what we're going to do is we're going to have a look at the X Ogg's command which
+
+170
+00:10:06,530 --> 00:10:13,020
+is a really powerful command that allows you to turn your pipes data into command line arguments.
+
+171
+00:10:13,100 --> 00:10:16,140
+OK so let's go ahead and I'll see the there in the next video.

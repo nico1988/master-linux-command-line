@@ -1,0 +1,575 @@
+1
+00:00:00,210 --> 00:00:02,550
+美丽的人们大家好，欢迎收看这个视频。
+Hello the beautiful people and welcome to this video.
+
+2
+00:00:02,610 --> 00:00:07,830
+我们将使用您自己的运行特定风格的Linux虚拟机进行设置
+We're going to be getting you set up with your very own Linux virtual machine running a specific flavor
+
+3
+00:00:07,860 --> 00:00:10,030
+被称为Buntu的Linux的。
+of Linux called a buntu.
+
+4
+00:00:10,030 --> 00:00:16,470
+所以Linux的风格在Linux行话中被称为发行版，我们将为您设置
+So flavors of Linux are called distributions in the Linux lingo and we're going to be getting you set
+
+5
+00:00:16,470 --> 00:00:21,980
+为您的虚拟机器虚拟机提供Linux的Ubuntu发行版。
+up with Ubuntu distribution of Linux for your virtual box virtual machines.
+
+6
+00:00:22,020 --> 00:00:28,050
+所以我们要做的就是总是带着一个项目符号走到窗口，从.com下载它的
+So we're going to do is always a head over to the window with a bullet to dot com for download for its
+
+7
+00:00:28,060 --> 00:00:28,880
+最后一个桌面。
+last desktop.
+
+8
+00:00:28,890 --> 00:00:33,210
+我将在资源部分放置一个链接，用于此视频，或者您可以直接转到
+I will be putting a link in the resources section and for this video or you could just head over to
+
+9
+00:00:33,210 --> 00:00:37,470
+你最喜欢的搜索引擎和搜索按钮下载，它将是第一件事
+your favorite search engine and search for a button to download and it'll be the first thing that comes
+
+10
+00:00:37,470 --> 00:00:41,440
+当你点击它的时候，你会发现一个像这样的页面。
+up and when you click on it you'll find a page that looks like this.
+
+11
+00:00:41,470 --> 00:00:45,540
+现在，我们不希望您这样做，我们将为您提供多个选项，您可以选择使用哪种版本的Buntu
+Now we don't want you to do and is going to give you multiple options of what version of a buntu you
+
+12
+00:00:45,540 --> 00:00:46,480
+想要下载。
+want to download.
+
+13
+00:00:46,710 --> 00:00:49,640
+但我希望您点击最新的选项。
+But I want you to click on the most up to date option.
+
+14
+00:00:49,650 --> 00:00:52,990
+举个例子，我这里有，我去过17.10。
+So for example here I've got I've been to seventeen point ten.
+
+15
+00:00:53,010 --> 00:00:58,320
+现在有一件有趣的事情，你实际上可以告诉我们Buntu发行版是什么时候发布的，只需看一下
+Now one interesting thing you can actually tell when the buntu releases were released by just looking
+
+16
+00:00:58,320 --> 00:01:03,030
+从版本号上，Sahira可以看出它是在2000年发布的，在第10个月发布了17个月，这将
+at the version number Sahira can tell that it was released in 2000 and 17 in the tenth month which would
+
+17
+00:01:03,030 --> 00:01:05,080
+就是这里的十月。
+be October of here.
+
+18
+00:01:05,310 --> 00:01:09,930
+例如，我可以看到这是在2000年发布的，16年是在第四个月发布的，这将是
+For example I can see that this was released in 2000 and 16 in the fourth month which is going to be
+
+19
+00:01:10,020 --> 00:01:10,590
+四月。
+April.
+
+20
+00:01:10,590 --> 00:01:15,640
+因此，更新的版本号越多，就意味着它们发布的时间越晚。
+So the more up to date version numbers mean they were released later on.
+
+21
+00:01:15,690 --> 00:01:16,070
+好的。
+OK.
+
+22
+00:01:16,170 --> 00:01:18,510
+所以我们要做的就是点击它。
+So what we're going to do is we're going to click in it will.
+
+23
+00:01:18,630 --> 00:01:23,040
+任何人都会点击17：10，但你只需点击对你来说最新的内容，它就会
+Anyone going to click on to 17:10 but you just click on whatever is most up to date for you it will
+
+24
+00:01:23,040 --> 00:01:27,120
+不会影响您的课程体验，无论如何，整个费用对您来说都是一样的
+not affect your experience of the course the entire cost will be the same for you regardless whatever
+
+25
+00:01:27,120 --> 00:01:29,740
+您可以选择最新的版本，但您也可以选择最新的版本。
+version you pick but you might as well have the most up to date version.
+
+26
+00:01:29,740 --> 00:01:35,040
+所以当你点击下载时，它会打开另一个页面，在那里它会要求我提供几笔捐款
+So when you click download and it can open up another page where it's going to ask me for a few donations
+
+27
+00:01:35,850 --> 00:01:40,440
+但我要说的是，很遗憾，我今天不会在这里捐钱，我会
+but I'm going to say unfortunately that I'm not going to donate any money here today and I'm going to
+
+28
+00:01:40,440 --> 00:01:41,590
+将被带到下载位置。
+be taken to the download.
+
+29
+00:01:41,640 --> 00:01:43,490
+但是你可以随心所欲地做任何你想做的事。
+And but you feel free to do whatever you want to do.
+
+30
+00:01:43,630 --> 00:01:44,020
+好的。
+OK.
+
+31
+00:01:44,160 --> 00:01:49,710
+然后它会开始将所谓的磁盘镜像文件下载到我的计算机上，然后我会
+And then it's going to start to download what's called a disk image file to my computer and I'm going
+
+32
+00:01:49,710 --> 00:01:52,170
+为我自己单击并保存在Downloads文件夹中。
+to click and save it in the Downloads folder for myself.
+
+33
+00:01:52,170 --> 00:01:53,760
+你可以随心所欲地下载。
+You can download it wherever you want.
+
+34
+00:01:53,760 --> 00:01:56,060
+您会注意到下载开始了。
+And you'll notice that a download starts to begin.
+
+35
+00:01:56,100 --> 00:02:01,560
+现在这些ISO文件过去是10个，通常是相当大的，通常在千兆字节的数量级上，所以
+Now these ISO files used to be 10 usually tend to be quite large usually on the order of gigabytes so
+
+36
+00:02:01,550 --> 00:02:04,810
+您可以在这里看到这是1.4 GB大小。
+you can see here that this is 1.4 gigabytes in size.
+
+37
+00:02:04,860 --> 00:02:08,040
+因此，这可能需要相当长的一段时间，这取决于您的互联网有多快。
+So this might take quite a while depending on how quick your Internet is.
+
+38
+00:02:08,100 --> 00:02:11,460
+现在你必须等待它继续下载，我要做的是我要把
+Now you have to wait for that to go ahead and downloads what I'm going to do is I'm going to cut the
+
+39
+00:02:11,460 --> 00:02:12,720
+视频在这里。
+video here.
+
+40
+00:02:13,140 --> 00:02:17,160
+我下载后会回来的，所以只要耐心点，她就不会真的
+I'm going to come back when it is downloaded so just be patient with it she won't ever have to really
+
+41
+00:02:17,160 --> 00:02:18,280
+再来一次。
+do it again.
+
+42
+00:02:18,280 --> 00:02:19,830
+所以，一旦它完成了，它就完成了。
+And so once it's done it's done.
+
+43
+00:02:19,830 --> 00:02:24,120
+因此，只需等待该内容下载，然后取消暂停视频，即可继续使用睡觉
+So just wait for that thing to download and then unpause the video to follow through with the rest of
+
+44
+00:02:24,120 --> 00:02:25,160
+设置好了。
+the set up.
+
+45
+00:02:25,650 --> 00:02:32,430
+好的，下载尚未完成，现在我可以继续安装虚拟机，这样您
+OK so the download has gone incompleted and now I can go ahead and install the virtual machine so you
+
+46
+00:02:32,430 --> 00:02:36,870
+我可以看到，我们已经将此磁盘映像文件保存在我的下载文件夹中。
+can see that we've got this disk image file saved in my downloads folder.
+
+47
+00:02:36,870 --> 00:02:40,910
+有了这一点，我们将有一个开放的虚拟盒子，虚拟盒子。
+And with that there we're going to go had an open up virtual box virtual box.
+
+48
+00:02:40,950 --> 00:02:45,990
+在这里您可以设置虚拟机并尝试运行，并且您可以拥有多个交换机
+This is where you can set up virtual machines and try to run and you can have more than one switch is
+
+49
+00:02:46,020 --> 00:02:47,820
+正在创建新的虚拟机。
+going to create a new virtual machine.
+
+50
+00:02:48,000 --> 00:02:54,120
+我要称它为Buntu，因为我很有想象力，你可以看到它找到了
+I'm going to call it a buntu because I am imaginative and call it and you can see it's it's found the
+
+51
+00:02:54,120 --> 00:03:00,080
+类型是Linux和Buntu 64位，这就是我的那个。
+type which is Linux and a buntu 64 bit which is which is what my one was.
+
+52
+00:03:00,120 --> 00:03:04,450
+如果你的下载是32位的，那么继续点击到32位。
+And if yours was a 32 bit download then go ahead and click to 32 bit.
+
+53
+00:03:04,500 --> 00:03:08,190
+但我认为默认情况下应该是64位，所以我就不说了。
+But I think by default it should be a 64 bit so I'll leave it at that.
+
+54
+00:03:08,190 --> 00:03:13,560
+现在我下一个被击中，它将询问我要分配的内存或RAM的大小(以MB为单位
+Now I get hit next and it's going to ask me for the amount of memory or RAM in megabytes to be allocated
+
+55
+00:03:13,560 --> 00:03:14,800
+到虚拟机。
+to the virtual machine.
+
+56
+00:03:14,860 --> 00:03:20,190
+这里需要注意的重要一点是，这仅在虚拟机运行时分配
+Now an important thing to note here that this is only allocated when the virtual machine is running
+
+57
+00:03:20,460 --> 00:03:23,220
+当您关闭虚拟机时启用虚拟。
+when you turn the virtue when you close a virtual machine.
+
+58
+00:03:23,250 --> 00:03:23,680
+它会的。
+It will.
+
+59
+00:03:23,720 --> 00:03:27,550
+它将被归还给主机。
+It will be given back to the host computer.
+
+60
+00:03:27,660 --> 00:03:32,370
+所以不要太担心这个，只要给它一个慷慨的数额，让我们说，大约，我们说
+So don't worry about this too much just give it a generous amount so let's say up to about let's say
+
+61
+00:03:32,370 --> 00:03:37,950
+大约四分之三或80%的果岭距离你不想一直走到这里
+about three quarters or 80 percent of the green distance you don't want to go all the way up to here
+
+62
+00:03:37,950 --> 00:03:41,580
+因为这可能会使您的系统出现一点卡顿和抖动。
+because this might make your system stutter a bit and jittery a bit.
+
+63
+00:03:41,580 --> 00:03:47,130
+所以只要走到果岭的大部分路，直到果岭的尽头，但不能一直走到果岭的尽头。
+So just take it most of the way up to the green to the end of the green but not all the way.
+
+64
+00:03:47,130 --> 00:03:48,590
+所以在那里留出一些缓冲空间。
+So leave some buffer room there.
+
+65
+00:03:48,630 --> 00:03:50,840
+好的，那我就到此为止了。
+OK so I'm going to leave it at that.
+
+66
+00:03:50,910 --> 00:03:51,470
+照我说的做。
+Do it by.
+
+67
+00:03:51,480 --> 00:03:52,800
+这不是一门完美的科学。
+This isn't a perfect science.
+
+68
+00:03:52,800 --> 00:03:59,220
+你可以想象，到那时，你会问你关于硬盘的问题，那就是
+Just go ahead and do it by then is going to ask you about a hard disk now that you can imagine is that
+
+69
+00:03:59,220 --> 00:04:04,890
+这个虚拟机认为它是一台计算机，而计算机需要一个硬盘空间。
+this virtual machine is thinks that it's a computer and a computer needs a hard drive space.
+
+70
+00:04:04,890 --> 00:04:05,270
+好的。
+OK.
+
+71
+00:04:05,430 --> 00:04:10,290
+所以我们要做的是创建一个虚拟的硬盘，这个虚拟的盒子就是这台机器
+So what we're doing is we're creating an imaginary hard drive that this virtual box is this which machine
+
+72
+00:04:10,290 --> 00:04:12,290
+会认为这是一个真正的硬盘。
+is going to think is a real hard drive.
+
+73
+00:04:12,420 --> 00:04:16,390
+但它实际上只是我们实际电脑上保存的一个文件。
+But it's actually just a file saved on our actual computer.
+
+74
+00:04:16,410 --> 00:04:16,740
+好的。
+OK.
+
+75
+00:04:16,860 --> 00:04:19,610
+所以我们现在能做的就是创建一个虚拟硬盘。
+So what we can do is we get to create a virtual hard disk now.
+
+76
+00:04:19,620 --> 00:04:24,660
+这会创建它，它会告诉您希望它是什么类型，只需将其作为第一个选项保留为虚拟的
+So this creates it and it says what type do you want it to be just leave it as the first option a virtual
+
+77
+00:04:24,660 --> 00:04:26,450
+将磁盘映像装箱，或者就这样放在那里。
+box disk image or leave it just like that.
+
+78
+00:04:26,820 --> 00:04:29,170
+然后它会说你想让它成为。
+And then it's going to say do you want it to be.
+
+79
+00:04:29,170 --> 00:04:35,160
+您希望文件日期是动态分配还是固定大小和动态分配方式
+Do you want the file dates to be dynamically allocated or fixed size and dynamically allocated means
+
+80
+00:04:35,430 --> 00:04:43,170
+当数据填满我想象中的硬盘时，火将变得更大且大小固定
+that when when the data fills up on my imaginary harddrive the fire will get bigger and fix size means
+
+81
+00:04:43,170 --> 00:04:44,970
+不管是什么大小，文件都会是这个大小。
+that the file will be that size no matter what.
+
+82
+00:04:45,000 --> 00:04:49,780
+即使出于效率的考虑，它基本上是空的，我们也只需要动态分配它即可。
+Even if it's basically empty for efficiency sake let's just have it dynamically allocated.
+
+83
+00:04:50,100 --> 00:04:56,490
+然后，您可以随心所欲地将其命名，并通过单击此箭头将其存储在您想要的任何位置
+And then you can call it whatever you want and store it wherever you want by clicking this this arrow
+
+84
+00:04:56,490 --> 00:05:00,810
+此处更改您想要保存它的位置，但如果您不特别需要，请将其保留为默认位置
+here to change where you want to save it but just leave it as the default if you don't particularly
+
+85
+00:05:00,810 --> 00:05:07,050
+速度快，这不是很重要，你给它多大的尺寸，我倾向于给我的20
+fast and it doesn't really matter massively and how much size you give it I tend to just give my 20
+
+86
+00:05:07,050 --> 00:05:09,260
+千兆字节通常是绰绰有余的。
+gigabytes that's usually more than enough.
+
+87
+00:05:09,510 --> 00:05:11,630
+但是你可以，你可以选择适合你的。
+But you can you can just choose what's all right for you.
+
+88
+00:05:11,670 --> 00:05:18,470
+你知道，只要你有超过一两千兆字节的东西，你就应该完全没问题。
+It's you know as long as you've got something above one or two gigabytes you should be absolutely fine.
+
+89
+00:05:18,480 --> 00:05:24,210
+因此，我将有20 GB的空间用作虚拟硬盘，然后我将单击
+So so I'm just going to have 20 gigabytes there for it as an imaginary hard disk and I'm going to click
+
+90
+00:05:24,470 --> 00:05:25,060
+创建。
+Create.
+
+91
+00:05:25,170 --> 00:05:25,560
+好的。
+OK.
+
+92
+00:05:25,680 --> 00:05:28,670
+所以我们就快到了，我们非常非常接近。
+So we're almost there and we're very very close.
+
+93
+00:05:28,680 --> 00:05:34,590
+我们要做的就是单击设置以设置更多内容，以确保
+We've got to do is click on settings to set up a few more things so to make sure that are to make sure
+
+94
+00:05:34,590 --> 00:05:37,920
+我们的虚拟机的功率只是稍微高一点。
+that our virtual machine has just a bit more power.
+
+95
+00:05:37,920 --> 00:05:43,140
+我们要做的是单击设置，进入系统，然后单击处理器处理
+What we're going to do is we're going to click on settings go to System and click Proceso the processor
+
+96
+00:05:43,140 --> 00:05:48,590
+制表符，如果您有两个原因，则将其增加到两个原因。
+tab and increase this to two cause if you have them.
+
+97
+00:05:48,600 --> 00:05:52,350
+所以这里有两个处理器，或者一直到绿灯的尽头。
+So two processors or up to the end of the green here.
+
+98
+00:05:52,350 --> 00:05:57,760
+因此，我要做的基本上就是让虚拟机具有更高的性能。
+So what I'm going to do that just basically allows the virtual machine to just have that bit more performance.
+
+99
+00:05:57,890 --> 00:05:58,430
+好的。
+OK.
+
+100
+00:05:58,510 --> 00:06:04,020
+除了您单击存储时，还有最后一件事要做之外，其他一切都应该是一样的。
+And everything else should be the same except when you click on storage there's one final thing to do.
+
+101
+00:06:04,200 --> 00:06:12,090
+在存储上，这就是我们要插入磁盘映像的地方，因此您可以想象
+So on storage This is where we're going to basically insert that disk image so you can imagine that
+
+102
+00:06:12,120 --> 00:06:17,490
+虚构的计算机从豆瓣Buntu映像引导到一台真实的计算机。
+the imaginary computer booting from that Douban buntu image into a real computer.
+
+103
+00:06:17,710 --> 00:06:22,230
+这有点让人困惑，不过请跟我来，点击存储，然后你会在这里看到这一点
+It's a bit confusing but just follow with me it's click on storage then you'll see this bit here where
+
+104
+00:06:22,230 --> 00:06:25,960
+它显示控制器ID，并且它将有一个显示为空的磁盘。
+it says controller ID and it will have a disk that says empty.
+
+105
+00:06:26,010 --> 00:06:26,380
+好的。
+OK.
+
+106
+00:06:26,520 --> 00:06:33,210
+单击，然后单击顶部的这张桌子右击，它将显示选择虚拟光学
+So click then click on this desk at the top right click that and it will say choose virtual optical
+
+107
+00:06:33,210 --> 00:06:38,850
+磁盘文件显示单击锁定，然后我们将转到我的下载文件夹，并单击Ribband至17点
+disk file says Click lock then we'll go to my downloads folder and click on ribband to seventeen point
+
+108
+00:06:38,880 --> 00:06:43,590
+我们下载的10个磁盘映像或您下载的任何磁盘映像版本
+ten disk image that we downloaded or whatever disk image version that you downloaded you're able to
+
+109
+00:06:43,590 --> 00:06:45,390
+版本单击打开。
+version click open.
+
+110
+00:06:45,390 --> 00:06:47,660
+现在一切都准备好了。
+And now that's that's all set up.
+
+111
+00:06:47,700 --> 00:06:48,600
+单击确定。
+Click OK.
+
+112
+00:06:48,840 --> 00:06:51,720
+我们基本上都可以出发了。
+And we're basically all good to go.
+
+113
+00:06:51,930 --> 00:06:56,290
+所有这些都准备好了，在下一个视频中，我们将带您一览无余。
+So that's all set up ready to go and in the next video we're going to run you through.
+
+114
+00:06:56,370 --> 00:07:03,610
+安装的最后一步是在实际的Buntu机器启动时对其进行设置。
+And the final bit of the installation which is setting up the actual buntu machine when it boots up.
+
+115
+00:07:03,690 --> 00:07:06,620
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

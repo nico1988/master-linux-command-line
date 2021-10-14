@@ -1,0 +1,815 @@
+1
+00:00:00,080 --> 00:00:06,530
+Love you beautiful people know in the last few lectures you've been doing so much stuff with files.
+
+2
+00:00:06,600 --> 00:00:11,940
+You've been you've had how to create them move them around copy them delete them paste them rename them
+
+3
+00:00:12,530 --> 00:00:13,650
+and search for them.
+
+4
+00:00:13,650 --> 00:00:14,580
+And so much more.
+
+5
+00:00:14,580 --> 00:00:14,880
+OK.
+
+6
+00:00:14,890 --> 00:00:16,430
+All from the command line.
+
+7
+00:00:16,680 --> 00:00:23,070
+But even though we can now manipulate files on a grand level we haven't really seen how to take a quick
+
+8
+00:00:23,070 --> 00:00:27,340
+peek at what's inside them and manipulate their contents yet.
+
+9
+00:00:27,570 --> 00:00:32,040
+Well that's what these next few videos are for over the next few videos are going to be learning five
+
+10
+00:00:32,040 --> 00:00:36,600
+new commands that will allow you to manipulate file contents.
+
+11
+00:00:36,630 --> 00:00:42,330
+So this is stuff such as reading files reversing files and even sticking files together as well as reading
+
+12
+00:00:42,330 --> 00:00:44,340
+them in some paging programs.
+
+13
+00:00:44,340 --> 00:00:50,010
+So what this is can allow you to do is to get most of your work done from the command line without ever
+
+14
+00:00:50,010 --> 00:00:55,230
+having to need to open up external editors which is going to be a massive productivity boost and it's
+
+15
+00:00:55,230 --> 00:01:01,310
+going to help you keep you inside the whole command line work process ecosystem.
+
+16
+00:01:01,320 --> 00:01:02,510
+So this is going to be very very you.
+
+17
+00:01:02,510 --> 00:01:07,350
+So it's kind of like a missing piece at the minute and after it or after the end of the next video you're
+
+18
+00:01:07,350 --> 00:01:12,660
+going to have to perform a whole bunch of useful functions on the contents of files which when combined
+
+19
+00:01:12,660 --> 00:01:17,490
+with what you know about manipulating files in their entirety is going to make you you know the farm
+
+20
+00:01:17,490 --> 00:01:18,540
+manipulation master.
+
+21
+00:01:18,570 --> 00:01:21,120
+So let's just go ahead and jump right into it.
+
+22
+00:01:22,380 --> 00:01:22,780
+OK.
+
+23
+00:01:22,810 --> 00:01:26,410
+So the first command that we're going to take a look at is the cat command.
+
+24
+00:01:26,430 --> 00:01:29,580
+Now do you remember those kitchen jokes that I was talking to you about earlier.
+
+25
+00:01:29,830 --> 00:01:35,070
+Well mirro So now you've actually seen the cap come on before.
+
+26
+00:01:35,350 --> 00:01:37,700
+So this will be a rather nice refresher.
+
+27
+00:01:37,780 --> 00:01:41,380
+OK so you can see here on our desktop we've got a few files.
+
+28
+00:01:41,380 --> 00:01:46,480
+We got 4 1 4 2 5 3 4 4 and 4 5 directx T.
+
+29
+00:01:46,570 --> 00:01:49,140
+So let's take a look at what's inside the first file.
+
+30
+00:01:49,150 --> 00:01:53,110
+But instead of opening it we're going to look in our terminal to see what's inside the file.
+
+31
+00:01:53,170 --> 00:01:53,650
+OK.
+
+32
+00:01:53,770 --> 00:01:57,890
+So if we type cat and then follow on it to be on the desktop don't I.
+
+33
+00:01:57,970 --> 00:02:04,930
+So I'll change the desktop I the screen and then type cat and file one text me.
+
+34
+00:02:05,080 --> 00:02:06,760
+OK I want to press enter.
+
+35
+00:02:06,760 --> 00:02:10,740
+We'll see that the contents of the file have been written to standard output.
+
+36
+00:02:10,810 --> 00:02:14,290
+And we can see that the file contains the word Hello.
+
+37
+00:02:14,290 --> 00:02:19,180
+Now if I press if I you know double click that and open that graphically we can see that yes all that
+
+38
+00:02:19,180 --> 00:02:21,280
+file contains is the word Hello.
+
+39
+00:02:21,360 --> 00:02:21,590
+OK.
+
+40
+00:02:21,610 --> 00:02:29,610
+So using the command we managed to get the contents of the file printed to standard output OK.
+
+41
+00:02:29,630 --> 00:02:31,870
+So let's try and see what's in for number two.
+
+42
+00:02:31,970 --> 00:02:32,370
+OK.
+
+43
+00:02:32,480 --> 00:02:39,850
+So if we do cat file to that takes t we can see the word there is inside.
+
+44
+00:02:40,050 --> 00:02:42,370
+I guess you can imagine where this is going right.
+
+45
+00:02:42,530 --> 00:02:48,260
+So if I go for three it says you see 4 4.
+
+46
+00:02:48,500 --> 00:02:53,030
+It says beautiful and I bet we can all guess what's in for number five.
+
+47
+00:02:53,390 --> 00:02:56,120
+So if I press 5 It says people are OK.
+
+48
+00:02:56,150 --> 00:03:00,900
+So if you put all the follow files together it says hello there you beautiful people.
+
+49
+00:03:01,010 --> 00:03:02,050
+Well what a coincidence.
+
+50
+00:03:02,060 --> 00:03:03,560
+I wonder how that happened.
+
+51
+00:03:03,710 --> 00:03:07,620
+So in fact you can actually use the Capcom and to stick files together.
+
+52
+00:03:07,670 --> 00:03:07,910
+OK.
+
+53
+00:03:07,910 --> 00:03:13,790
+And that's actually usually what it's for cat is short for the word concatenates which is a fancy word
+
+54
+00:03:13,790 --> 00:03:15,190
+for sticking together.
+
+55
+00:03:15,200 --> 00:03:15,700
+OK.
+
+56
+00:03:15,800 --> 00:03:21,710
+So what cat does is stick together all of the input files and then pass that stick together stuff to
+
+57
+00:03:21,710 --> 00:03:22,760
+standard output.
+
+58
+00:03:22,760 --> 00:03:30,790
+OK so if we do OK the screen if we do cat fall 1.60 Faltu that takes the fall 3.50 fall for that 60
+
+59
+00:03:30,800 --> 00:03:34,230
+and file 5.6 tape and press enter.
+
+60
+00:03:34,340 --> 00:03:40,260
+You can see that hello there you beautiful people has been made by sticking together the five thousand
+
+61
+00:03:40,330 --> 00:03:43,050
+that has been printed to our standard output.
+
+62
+00:03:43,190 --> 00:03:49,880
+But we can of course redirect this to a new file called Beautiful Dotty XTi on our desktop which we
+
+63
+00:03:49,880 --> 00:03:51,180
+see has been created here.
+
+64
+00:03:51,200 --> 00:03:57,860
+And when we open we now see that we've got a new file that says hello there beautiful people that has
+
+65
+00:03:57,860 --> 00:04:01,120
+been created by sticking together five other files.
+
+66
+00:04:01,370 --> 00:04:04,700
+Now we can actually see the holes in this command line here is quite long right.
+
+67
+00:04:04,700 --> 00:04:07,840
+What we can actually simplify that using our knowledge of wildcards.
+
+68
+00:04:08,030 --> 00:04:15,080
+So instead of having CAS for 1.60 fell 2.6 fall 3.6 for 4.6 and 5 5.6.
+
+69
+00:04:15,320 --> 00:04:23,750
+You can just use a wildcard like this cat together for one to five text into a beautiful server ideally
+
+70
+00:04:23,860 --> 00:04:27,010
+beautiful that tasty and not wild card.
+
+71
+00:04:27,260 --> 00:04:31,530
+And it's been created again and we can see here but yet we get exactly the same result.
+
+72
+00:04:31,550 --> 00:04:32,770
+Hello there you beautiful people.
+
+73
+00:04:32,840 --> 00:04:34,960
+But a lot less typing.
+
+74
+00:04:35,120 --> 00:04:36,780
+So that's pretty cool right now.
+
+75
+00:04:36,860 --> 00:04:40,880
+Come on when you want to stick files together like this it's useful for sticking to the text files obviously
+
+76
+00:04:41,180 --> 00:04:45,600
+but it can be very useful when working with Odeo or MP 3 files for example.
+
+77
+00:04:45,680 --> 00:04:51,380
+So if you can have multiple different single MP three files you know different songs for example but
+
+78
+00:04:51,440 --> 00:04:56,390
+you can actually concatenate them together stick these different files together to create one long file
+
+79
+00:04:56,450 --> 00:04:58,060
+that has all the music in it.
+
+80
+00:04:58,070 --> 00:04:59,200
+So that's pretty epic.
+
+81
+00:04:59,450 --> 00:05:02,440
+So the cat command is used to stick files together.
+
+82
+00:05:02,600 --> 00:05:07,060
+Actually if you want just read the contents of a file so we can just do cat.
+
+83
+00:05:07,270 --> 00:05:08,590
+Beautiful dot text.
+
+84
+00:05:08,620 --> 00:05:14,110
+So Cat beautiful that text and we can see the contents of any of any file which is really really useful.
+
+85
+00:05:14,180 --> 00:05:17,090
+But another command that I want to take a look at is the TAC command.
+
+86
+00:05:17,090 --> 00:05:19,700
+So let me just clear the screen here.
+
+87
+00:05:19,790 --> 00:05:26,270
+So the TAC command is just cat spelled backwards and it's used to reverse whatever it receives as an
+
+88
+00:05:26,270 --> 00:05:26,830
+input.
+
+89
+00:05:26,990 --> 00:05:35,420
+So if we make a file called Alpha TXI by echoing let's say ABC to our fidelity x t and we're going to
+
+90
+00:05:35,480 --> 00:05:41,870
+also echo DPF to Alpha and notice the way that we've got to Aros here because we're going to append
+
+91
+00:05:42,050 --> 00:05:44,070
+to the same file rather than overwrite it.
+
+92
+00:05:44,220 --> 00:05:50,310
+OK so now if I look in alphabetically we've got ABC on one line and DPF on another.
+
+93
+00:05:50,370 --> 00:05:58,210
+OK so if we read the file we read the file using cat with Sue cat alphabetically we get ABC then D E
+
+94
+00:05:58,440 --> 00:05:58,940
+F.
+
+95
+00:05:58,990 --> 00:05:59,290
+OK.
+
+96
+00:05:59,420 --> 00:06:01,920
+But I'll see what happens if we read it using tack.
+
+97
+00:06:01,930 --> 00:06:07,820
+So instead of cat we read it using Ptak which is the pet cat spelled backwards and we see now that we
+
+98
+00:06:07,820 --> 00:06:10,940
+get d f then ABC.
+
+99
+00:06:11,120 --> 00:06:16,920
+So you can see that the TAC command actually reads the whole file in reverse but leaves the file.
+
+100
+00:06:16,960 --> 00:06:23,110
+The lines the same so it just wrote the last line first and then the first line last.
+
+101
+00:06:23,120 --> 00:06:27,290
+Right but it didn't affect any text on each line.
+
+102
+00:06:27,290 --> 00:06:35,150
+So if we stick together and the various different files here the file to 4:59 using cats if we do file
+
+103
+00:06:35,200 --> 00:06:40,190
+wan to $5.60 you see that we get the output there.
+
+104
+00:06:40,340 --> 00:06:44,440
+But now I want you to think what might happen if we pipe that into attack.
+
+105
+00:06:44,600 --> 00:06:45,110
+OK.
+
+106
+00:06:45,290 --> 00:06:53,960
+Now TAC will reverse the file line wise so the last line will be printed first and the first line will
+
+107
+00:06:53,960 --> 00:06:55,480
+be printed last.
+
+108
+00:06:55,580 --> 00:06:58,030
+So what do you think might come out of this.
+
+109
+00:06:58,070 --> 00:07:02,590
+Take a couple of seconds I mean think about it.
+
+110
+00:07:02,640 --> 00:07:08,520
+So what might happen is the last line which is people would come first and the first line would come
+
+111
+00:07:08,520 --> 00:07:13,050
+last so what might come out is people beautiful you there.
+
+112
+00:07:13,110 --> 00:07:13,680
+Hello.
+
+113
+00:07:13,830 --> 00:07:15,360
+Like I said Have a look.
+
+114
+00:07:15,360 --> 00:07:18,230
+There you go yeah people beautiful you there.
+
+115
+00:07:18,240 --> 00:07:18,760
+Hello.
+
+116
+00:07:18,870 --> 00:07:23,450
+So think of the TAC command as reversing a file vertically.
+
+117
+00:07:23,510 --> 00:07:23,910
+OK.
+
+118
+00:07:24,000 --> 00:07:26,060
+So it just flips it upside down.
+
+119
+00:07:26,070 --> 00:07:27,690
+It doesn't affect any of the lines.
+
+120
+00:07:27,690 --> 00:07:29,520
+It just flips it upside down.
+
+121
+00:07:29,610 --> 00:07:34,410
+And of course because this is all being printed to standard output you can of course redirect it into
+
+122
+00:07:34,520 --> 00:07:36,000
+the file called reversed.
+
+123
+00:07:36,100 --> 00:07:38,230
+XTi And here we are his reverse text.
+
+124
+00:07:38,460 --> 00:07:43,560
+When we open up we see that we've saved the output in that file.
+
+125
+00:07:43,590 --> 00:07:48,690
+So the good thing about the tuck command where it can be used is again if we take the example of an
+
+126
+00:07:48,690 --> 00:07:53,820
+MP3 files I don't know if you've ever seen those videos online where people say aw look what the song
+
+127
+00:07:53,820 --> 00:07:57,870
+says when it's played backwards and like you know they try to say it's got some hidden messages in the
+
+128
+00:07:57,870 --> 00:07:58,210
+file.
+
+129
+00:07:58,210 --> 00:07:59,650
+Maybe you've seen those videos.
+
+130
+00:07:59,820 --> 00:08:06,000
+Well maybe they were made using the tax command because if you run an MP 3 fall through through the
+
+131
+00:08:06,000 --> 00:08:13,830
+tax months if I did something like tack my father in P3 and save that into another my reversed file
+
+132
+00:08:14,310 --> 00:08:17,130
+time p 3 then this file.
+
+133
+00:08:17,130 --> 00:08:21,240
+This one here will be the same song but played backwards.
+
+134
+00:08:21,240 --> 00:08:24,970
+Like I said something to potentially give a go if if if you would like.
+
+135
+00:08:25,170 --> 00:08:26,390
+OK so that's the tack.
+
+136
+00:08:26,400 --> 00:08:29,800
+Come on the Takamine will reverse files vertically.
+
+137
+00:08:29,940 --> 00:08:33,810
+There's one other that I want to look at which is called the Rev command.
+
+138
+00:08:33,870 --> 00:08:38,220
+So the command allows you to reverse the content on each line.
+
+139
+00:08:38,220 --> 00:08:43,970
+So if I clear the screen OK and we cut together the various different files again we get hello you beautiful
+
+140
+00:08:44,000 --> 00:08:44,580
+people.
+
+141
+00:08:44,730 --> 00:08:48,570
+But if I pipe that into the Rev command OK.
+
+142
+00:08:48,720 --> 00:08:50,830
+Look what happens here.
+
+143
+00:08:51,210 --> 00:08:57,270
+It's still saying if you can read it it still says hello there beautiful people so the lines are vertically
+
+144
+00:08:57,270 --> 00:09:03,650
+the same but horizontally they've been reverse so the last letter of each line so here is the O.
+
+145
+00:09:03,810 --> 00:09:05,670
+Has now become the first letter.
+
+146
+00:09:05,760 --> 00:09:11,970
+And you know it's reverse them along the lines but the order of each line is the same.
+
+147
+00:09:12,000 --> 00:09:17,820
+If that makes sense if we if we put the the attack command you can see that people is the first line
+
+148
+00:09:17,880 --> 00:09:21,870
+whereas here people is the last line but the letters have been reversed.
+
+149
+00:09:21,930 --> 00:09:22,320
+OK.
+
+150
+00:09:22,500 --> 00:09:29,400
+So this is the way you can think of ref and tac tac reverse as a file vertically and rev reverses a
+
+151
+00:09:29,400 --> 00:09:31,410
+file horizontally.
+
+152
+00:09:31,700 --> 00:09:32,210
+OK.
+
+153
+00:09:32,280 --> 00:09:35,520
+Now you can really jumble up files by piping it through both of them.
+
+154
+00:09:35,530 --> 00:09:39,230
+So if I pipe it through Takk it's going to reverse vertically.
+
+155
+00:09:39,540 --> 00:09:47,730
+But then if I pipe that also through Rev you've now got a vertically reversed and horizontally reversed
+
+156
+00:09:48,390 --> 00:09:52,380
+fire which is a good way of jumbling up stuff if you ever find that particularly useful.
+
+157
+00:09:52,380 --> 00:09:58,890
+But yet just to make it easier just think of tack as reversing phials vertically in columns and you
+
+158
+00:09:58,890 --> 00:10:03,900
+can think of Rev as reversing falls horizontally across the rows.
+
+159
+00:10:03,990 --> 00:10:10,530
+So all of these commands whether it be cats or it be Takk or a be you know Rev all they're doing is
+
+160
+00:10:10,530 --> 00:10:18,180
+they are taking a file reading it into standard input doing some processing and then you know just spitting
+
+161
+00:10:18,180 --> 00:10:20,810
+that the output to standard output.
+
+162
+00:10:20,820 --> 00:10:25,180
+Like I said they're a good way walk that is a good way of reading files and you know the others are
+
+163
+00:10:25,180 --> 00:10:26,780
+a good way of jumbling up stuff.
+
+164
+00:10:26,940 --> 00:10:33,030
+But the problem is when you read files to the terminal like this if a file is particularly long it can
+
+165
+00:10:33,030 --> 00:10:37,840
+readers clog up your screen and it's not very useful and you find yourself scrolling a long long way.
+
+166
+00:10:37,840 --> 00:10:45,380
+So if we try to find a file that's quite large so if we say for example let's use the find command search
+
+167
+00:10:45,430 --> 00:10:48,130
+our system up to let's say a maximum depth of four.
+
+168
+00:10:48,150 --> 00:10:55,400
+We're going to go too far for any configuration files or a name that ends in dot com.
+
+169
+00:10:56,370 --> 00:10:59,680
+And the size that lets say over 20 kilobytes.
+
+170
+00:10:59,720 --> 00:11:02,560
+OK so we are we only get we only get two really.
+
+171
+00:11:02,760 --> 00:11:06,390
+But there's one here called cops browes dot com.
+
+172
+00:11:06,600 --> 00:11:08,780
+And this is to do with like printing services.
+
+173
+00:11:08,820 --> 00:11:11,730
+And it's apparently a lot rather large file.
+
+174
+00:11:11,760 --> 00:11:13,260
+So if I copy it.
+
+175
+00:11:13,280 --> 00:11:16,600
+Copy that and try to catch it.
+
+176
+00:11:16,740 --> 00:11:17,520
+OK.
+
+177
+00:11:17,680 --> 00:11:19,210
+So if I try to cut that it up.
+
+178
+00:11:19,440 --> 00:11:22,880
+So you see it just happened right there if I try to cap that and press enter.
+
+179
+00:11:23,010 --> 00:11:25,370
+You see that we've just shot down.
+
+180
+00:11:25,680 --> 00:11:27,180
+She put him out of lines.
+
+181
+00:11:27,180 --> 00:11:27,990
+Can you see now.
+
+182
+00:11:28,050 --> 00:11:32,510
+If I wanted to have a look at it and I ended up scrolling all the way through here it's not very good
+
+183
+00:11:32,520 --> 00:11:33,550
+right.
+
+184
+00:11:34,440 --> 00:11:39,180
+So that's a problem when you're dealing with stuff on the command line and we want a more elegant solution
+
+185
+00:11:39,180 --> 00:11:41,700
+to dealing with relatively large files.
+
+186
+00:11:41,910 --> 00:11:46,290
+And sometimes you know if I if I just wanted to read out of how maybe I don't want all of the farm maybe
+
+187
+00:11:46,300 --> 00:11:51,630
+only want a certain snippet of it maybe I only want the top 10 lines or the bottom 10 lines or something
+
+188
+00:11:51,630 --> 00:11:52,260
+like that.
+
+189
+00:11:52,500 --> 00:11:57,760
+And we need to have a better way of being able to deal with file contents on the command line.
+
+190
+00:11:57,900 --> 00:12:02,220
+So in summary So what we're going to be covering in the next video but in summary of this video we've
+
+191
+00:12:02,210 --> 00:12:05,230
+seen that they can't come and can be used to actually read out files.
+
+192
+00:12:05,230 --> 00:12:12,280
+If I look beautiful on our desktop if I read how beautiful that he actually can read that out if we
+
+193
+00:12:12,370 --> 00:12:19,030
+want to reverse files vertically we can use Takk if we want to reverse files horizontally we can use
+
+194
+00:12:19,250 --> 00:12:25,300
+Rev and but all either way all of these are what they're doing is they are just reading the files content
+
+195
+00:12:25,570 --> 00:12:29,710
+and spitting out the standard output where you can then of course pipe it into other commands to do
+
+196
+00:12:29,800 --> 00:12:30,610
+the processing.
+
+197
+00:12:30,630 --> 00:12:30,990
+OK.
+
+198
+00:12:31,010 --> 00:12:34,750
+Or you know while you're working on the command line if you just want to see quickly what's in a file
+
+199
+00:12:35,140 --> 00:12:41,410
+you can just you can just use cats come at the cat command and then see that really quickly and get
+
+200
+00:12:41,410 --> 00:12:42,350
+on with what you were doing.
+
+201
+00:12:42,430 --> 00:12:42,810
+OK.
+
+202
+00:12:42,910 --> 00:12:46,480
+So there we are though does the cat tack and ref commands but in the next video we're going to take
+
+203
+00:12:46,480 --> 00:12:51,400
+a look at how you can level up this ability to do more sophisticated things so I'll break the video
+
+204
+00:12:51,400 --> 00:12:53,210
+here and see you in the next video.

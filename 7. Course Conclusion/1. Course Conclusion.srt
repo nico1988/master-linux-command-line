@@ -1,0 +1,103 @@
+1
+00:00:00,240 --> 00:00:04,340
+Hello you beautiful people and congratulations for making it through the course.
+
+2
+00:00:04,380 --> 00:00:09,000
+So our journey together has taken you right from learning how to open the terminal and run commands
+
+3
+00:00:09,330 --> 00:00:14,850
+all the way to creating file archives writing automated scripts and managing thousands of pieces of
+
+4
+00:00:14,850 --> 00:00:16,760
+software using the package manager.
+
+5
+00:00:16,770 --> 00:00:20,510
+So you truly have come an incredibly long way and I'm incredibly proud of you.
+
+6
+00:00:20,670 --> 00:00:21,590
+Well done.
+
+7
+00:00:21,690 --> 00:00:25,950
+And I just wanted to shoot this video to say thank you very much for coming along with me on this journey
+
+8
+00:00:26,160 --> 00:00:30,390
+through that Linux command line and I hope that you've received some benefit from our journey together
+
+9
+00:00:30,660 --> 00:00:32,800
+and I wish you the very best in the future.
+
+10
+00:00:32,910 --> 00:00:36,780
+And if you do want to learn more do take a look at some of my other courses and keep an eye out for
+
+11
+00:00:36,780 --> 00:00:41,120
+information about more advanced courses to take your learning to the next level.
+
+12
+00:00:41,220 --> 00:00:45,840
+And in fact I'll be putting special discount coupon links for you in the resources section for this
+
+13
+00:00:45,840 --> 00:00:47,400
+video or somewhere around here.
+
+14
+00:00:47,520 --> 00:00:51,770
+For all my courses just to say thank you for being a student so go ahead and enroll in whatever you'd
+
+15
+00:00:51,770 --> 00:00:52,240
+like.
+
+16
+00:00:52,340 --> 00:00:55,380
+And if there's something in particular that you would like to learn or another course that you would
+
+17
+00:00:55,380 --> 00:00:56,280
+like me to create.
+
+18
+00:00:56,430 --> 00:01:01,500
+I always listen to suggestions so send me a message and I'll do what ever I can to make that happen.
+
+19
+00:01:01,560 --> 00:01:03,460
+And if you finish the course 100 percent.
+
+20
+00:01:03,570 --> 00:01:08,040
+You should soon receive a certificate of completion from you to me by email for you to print off and
+
+21
+00:01:08,040 --> 00:01:13,710
+put on your linked in profile or to show proudly to the world that you are now and Linux master.
+
+22
+00:01:13,710 --> 00:01:17,580
+And if you do have any troubles getting the certificate through do contact you to me support team on
+
+23
+00:01:17,580 --> 00:01:20,850
+support at you to me dot com and they'll sort it all out for you.
+
+24
+00:01:21,030 --> 00:01:25,530
+And other than that I wish you the absolute best and hope you have my utmost respect and gratitude for
+
+25
+00:01:25,560 --> 00:01:27,050
+trying to invest in your learning.
+
+26
+00:01:27,090 --> 00:01:30,890
+So good luck with everything and I hope to have the pleasure of meeting you again soon.

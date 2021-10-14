@@ -1,0 +1,639 @@
+1
+00:00:00,240 --> 00:00:01,620
+Hello you beautiful people.
+
+2
+00:00:01,620 --> 00:00:06,690
+And in this video we're going to be wrapping up our discussion of how to navigate the Linux file system
+
+3
+00:00:06,990 --> 00:00:08,190
+using the command line.
+
+4
+00:00:08,310 --> 00:00:13,860
+And in this video you're going to learn how to use tab auto completion to speed up your navigation of
+
+5
+00:00:13,870 --> 00:00:14,710
+the file system.
+
+6
+00:00:14,760 --> 00:00:19,470
+And we're also going to have a recap of what everything that we've learned about navigating falses and
+
+7
+00:00:19,470 --> 00:00:21,520
+in the past few videos.
+
+8
+00:00:21,620 --> 00:00:26,460
+And by the end of this video you can have all the knowledge that you need to navigate the false system
+
+9
+00:00:26,460 --> 00:00:27,290
+like a pro.
+
+10
+00:00:27,450 --> 00:00:31,670
+Just add practice and you're going to get plenty of that as we go through the course.
+
+11
+00:00:31,740 --> 00:00:35,230
+So to get the final few pieces of information about tab auto completion.
+
+12
+00:00:35,340 --> 00:00:37,940
+Let's go ahead and jump right into it.
+
+13
+00:00:39,510 --> 00:00:39,870
+OK.
+
+14
+00:00:39,890 --> 00:00:44,680
+So let's go ahead and learn about a really awesome feature known as tab completion.
+
+15
+00:00:44,690 --> 00:00:48,680
+Now at the minute we're currently in our home directory as you can see by looking at the shell prompt
+
+16
+00:00:48,740 --> 00:00:53,020
+and also by using the P.W. DICOM and we see that we're in our home directory.
+
+17
+00:00:53,090 --> 00:00:59,450
+Now we could actually jump all the way to the base directory of the system by just typing CD and then
+
+18
+00:00:59,450 --> 00:01:00,160
+a slash.
+
+19
+00:01:00,170 --> 00:01:04,700
+And if I do that you'll see that if we use the print working directory command we can see that we are
+
+20
+00:01:04,790 --> 00:01:06,390
+in the base direct of our system.
+
+21
+00:01:06,400 --> 00:01:10,730
+I don't want to do this just to highlight that you don't have to go folder by folder when you using
+
+22
+00:01:10,730 --> 00:01:13,840
+the Siddiq and you can actually just jump all the way around your system.
+
+23
+00:01:13,850 --> 00:01:20,490
+So for example if I wanted to jump all the way to my desktop I don't have to go CD then slash.
+
+24
+00:01:20,490 --> 00:01:22,670
+You know I don't have to go step by step all the way through.
+
+25
+00:01:22,670 --> 00:01:28,130
+I can just say CD give it the tilda and then say because that's my home folder and then say desktop.
+
+26
+00:01:28,250 --> 00:01:28,960
+OK.
+
+27
+00:01:29,030 --> 00:01:33,440
+Now we are we end up in the desktop so you can you see come into jump around.
+
+28
+00:01:33,440 --> 00:01:34,990
+You don't have to go step by step.
+
+29
+00:01:35,090 --> 00:01:35,410
+OK.
+
+30
+00:01:35,450 --> 00:01:39,050
+So clearly the scream Let's go ahead and now learn about tab completion.
+
+31
+00:01:39,260 --> 00:01:44,460
+So let's say that we wanted to get all the way to my home directory using an absolute path.
+
+32
+00:01:44,480 --> 00:01:45,530
+OK.
+
+33
+00:01:45,710 --> 00:01:51,970
+We can do that simply by just typing it all right we can type CDs slash home slash Zyad And you know
+
+34
+00:01:51,970 --> 00:01:54,250
+if we're to go to documents we can type slash documents.
+
+35
+00:01:54,260 --> 00:01:56,290
+You know we would be there.
+
+36
+00:01:56,330 --> 00:01:58,560
+OK we would get all the way to the documents folder.
+
+37
+00:01:58,820 --> 00:02:01,160
+But typing it takes a bit of time.
+
+38
+00:02:01,160 --> 00:02:04,190
+It's error prone and you know we're kind of lazy as programmers.
+
+39
+00:02:04,190 --> 00:02:09,500
+OK so we want speed and we want things to be without errors and we want things to work right the first
+
+40
+00:02:09,500 --> 00:02:09,900
+time.
+
+41
+00:02:10,040 --> 00:02:12,470
+So that's where tab completion comes in.
+
+42
+00:02:12,920 --> 00:02:16,900
+Let's head back to our home or back to the very base directory and clear the screen.
+
+43
+00:02:16,940 --> 00:02:19,360
+Peter Beattie we're in the base directory.
+
+44
+00:02:19,490 --> 00:02:23,160
+This is how you can use tab completion to get that room.
+
+45
+00:02:23,180 --> 00:02:25,090
+We want to get to the documents folder.
+
+46
+00:02:25,130 --> 00:02:25,620
+OK.
+
+47
+00:02:25,760 --> 00:02:27,690
+So that's going to be like this.
+
+48
+00:02:28,070 --> 00:02:30,310
+OK that's where we're trying to get to.
+
+49
+00:02:30,620 --> 00:02:35,890
+So let's see how we would get there which I've CD can slash now is that it's happening at home.
+
+50
+00:02:35,900 --> 00:02:42,710
+We could just type that page and press the tab and you'll see that the shell automatically completed
+
+51
+00:02:43,100 --> 00:02:44,870
+that piece of text for us.
+
+52
+00:02:44,870 --> 00:02:45,910
+Now that's pretty cool.
+
+53
+00:02:45,920 --> 00:02:51,520
+They're trying to type out Ziyad So we just type Zed and then we press tab and it's filled out my name.
+
+54
+00:02:51,530 --> 00:02:52,510
+Awesome right.
+
+55
+00:02:52,700 --> 00:02:55,960
+Now let's say we want to go into documents.
+
+56
+00:02:56,100 --> 00:02:58,440
+OK let's let's try it.
+
+57
+00:02:58,460 --> 00:03:02,000
+Capital D and press tab.
+
+58
+00:03:02,270 --> 00:03:04,040
+Now why is it not working.
+
+59
+00:03:04,240 --> 00:03:05,370
+Let's try again.
+
+60
+00:03:05,930 --> 00:03:06,880
+Cable is not working.
+
+61
+00:03:06,880 --> 00:03:12,950
+Well the reason is this capital D could refer to lots of things in our home folder.
+
+62
+00:03:13,010 --> 00:03:14,100
+So let's take a look at it.
+
+63
+00:03:14,180 --> 00:03:16,840
+If we go to our home folder here.
+
+64
+00:03:16,850 --> 00:03:22,040
+Click the screen and take a look you can see that the capital D could refer to the desktop it could
+
+65
+00:03:22,040 --> 00:03:26,400
+refer to the downloads or it could refer to the documents and the documents that we want.
+
+66
+00:03:26,510 --> 00:03:27,080
+OK.
+
+67
+00:03:27,200 --> 00:03:29,860
+So if a file if you.
+
+68
+00:03:29,960 --> 00:03:36,280
+Now if I say OK I want to go to the capital D here and press tap twice with each passing ones it won't
+
+69
+00:03:36,280 --> 00:03:36,520
+work.
+
+70
+00:03:36,530 --> 00:03:38,420
+Suppress it twice really quickly.
+
+71
+00:03:38,660 --> 00:03:39,720
+Just like that.
+
+72
+00:03:40,050 --> 00:03:40,960
+It will actually.
+
+73
+00:03:41,020 --> 00:03:41,650
+It's a lot.
+
+74
+00:03:41,750 --> 00:03:43,770
+It will actually clear the screen.
+
+75
+00:03:44,030 --> 00:03:48,960
+It will press it twice it will actually tell us which ones it matches.
+
+76
+00:03:49,160 --> 00:03:49,760
+OK.
+
+77
+00:03:49,760 --> 00:03:52,480
+So we want to go into documents if I type doc.
+
+78
+00:03:52,670 --> 00:03:53,090
+OK.
+
+79
+00:03:53,180 --> 00:03:57,680
+Because what audio and double tap that's still no good because it could go for documents or downloads
+
+80
+00:03:57,680 --> 00:04:00,320
+of a type doc and then press tab.
+
+81
+00:04:00,320 --> 00:04:02,770
+Now it's going to go to documents.
+
+82
+00:04:02,780 --> 00:04:03,240
+OK.
+
+83
+00:04:03,410 --> 00:04:05,290
+And there we all were in the Documents folder.
+
+84
+00:04:05,360 --> 00:04:06,160
+So that's awesome.
+
+85
+00:04:06,320 --> 00:04:10,370
+And it cut down our level of typing and error proneness massively So if we go all the way back to the
+
+86
+00:04:10,370 --> 00:04:10,990
+root directory.
+
+87
+00:04:11,110 --> 00:04:17,610
+Now we can just type CD slash page tab Zad tab DOHC tab.
+
+88
+00:04:17,860 --> 00:04:19,620
+There we are in the documents folder.
+
+89
+00:04:19,800 --> 00:04:20,940
+It's really really cool.
+
+90
+00:04:20,960 --> 00:04:27,510
+This will work for filenames just like it will for folders and it's amazing and I use it all the time.
+
+91
+00:04:27,590 --> 00:04:27,960
+OK.
+
+92
+00:04:28,090 --> 00:04:29,920
+Nas one final awesome trick.
+
+93
+00:04:30,020 --> 00:04:31,830
+Let's not forget to the desktop the graphical way.
+
+94
+00:04:31,960 --> 00:04:32,390
+OK.
+
+95
+00:04:32,510 --> 00:04:33,270
+So we're going to open.
+
+96
+00:04:33,290 --> 00:04:34,870
+We're going to go into the gooey.
+
+97
+00:04:34,880 --> 00:04:38,310
+We're going to get to the desk top and it's actually open a terminal.
+
+98
+00:04:38,480 --> 00:04:41,610
+So the shell is operating from in this directory.
+
+99
+00:04:41,930 --> 00:04:48,020
+You can right click and you'll notice that you'll see an option here that says Open in terminal.
+
+100
+00:04:48,170 --> 00:04:48,680
+OK.
+
+101
+00:04:48,680 --> 00:04:55,850
+So if we click that you can see that we've got a terminal that's automatically opened in the desktop.
+
+102
+00:04:55,850 --> 00:05:01,940
+So say for example you're doing stuff in your navigating files in your data in your or your documents
+
+103
+00:05:01,940 --> 00:05:02,310
+folder.
+
+104
+00:05:02,360 --> 00:05:04,620
+OK we've got some files in here let's say.
+
+105
+00:05:04,640 --> 00:05:10,820
+Then you could actually just right click and click Open in terminal and you directly now operating in
+
+106
+00:05:10,820 --> 00:05:11,500
+your terminal.
+
+107
+00:05:11,570 --> 00:05:13,520
+From within that documents folder.
+
+108
+00:05:13,520 --> 00:05:16,850
+So you know if you're doing stuff graphically and then you want to switch the terminal and then switch
+
+109
+00:05:16,850 --> 00:05:24,240
+back and this is a nice shortcut to be able to use OK so you've learned a whole bunch of stuff in the
+
+110
+00:05:24,240 --> 00:05:30,240
+last three videos or so about navigating the Linux file system so I just wanted to take a bit of time
+
+111
+00:05:30,240 --> 00:05:35,610
+to have a quick recap of what we have learned to make sure that it's all sunk in.
+
+112
+00:05:35,610 --> 00:05:42,030
+So you know that you use the PWT command to print the current working directory that the shell is operating
+
+113
+00:05:42,030 --> 00:05:49,530
+in and it will print an absolute path to where on the file system your shell is currently operating.
+
+114
+00:05:49,620 --> 00:05:55,170
+You can use the ls command to see what's around you when you are in that directory it is a list so the
+
+115
+00:05:55,170 --> 00:06:01,080
+contents of the directory folders are in blue and files are in white but you can make that easier to
+
+116
+00:06:01,080 --> 00:06:04,350
+see using the the capital f option.
+
+117
+00:06:04,350 --> 00:06:09,210
+And we went through several other options that the ls command can have to make you know viewing things
+
+118
+00:06:09,210 --> 00:06:11,460
+and viewing files in the in the command line.
+
+119
+00:06:11,460 --> 00:06:12,390
+A lot easier.
+
+120
+00:06:12,660 --> 00:06:19,420
+You saw that the cd command can be used to change directory or move to a new location on the file system.
+
+121
+00:06:19,660 --> 00:06:26,160
+And you saw the absolute paths are paths that start at the very base directory of the file system so
+
+122
+00:06:26,160 --> 00:06:31,800
+the slash and relative paths are the paths that start from the directory that your shell is currently
+
+123
+00:06:32,040 --> 00:06:32,640
+in.
+
+124
+00:06:32,640 --> 00:06:38,220
+So relative paths are usually easier to type but absolute paths are very clear as to where they end
+
+125
+00:06:38,220 --> 00:06:38,510
+up.
+
+126
+00:06:38,610 --> 00:06:39,130
+OK.
+
+127
+00:06:39,450 --> 00:06:42,700
+Now every directory has the dot and dot dot.
+
+128
+00:06:42,750 --> 00:06:50,220
+Hidden folders that you can see using the ls command with the option and the dot the one dot is four
+
+129
+00:06:50,250 --> 00:06:56,940
+means the current folder and the two dots Riffe refer to the parent folder of where you currently are.
+
+130
+00:06:56,940 --> 00:07:03,570
+So if you did CD and then did dot dot that would move you up a folder OK because it's saying Go up go
+
+131
+00:07:03,570 --> 00:07:08,130
+to the parent folder where I currently am and if you did see the data then that would just basically
+
+132
+00:07:08,130 --> 00:07:10,170
+keep you where you wouldn't make any difference.
+
+133
+00:07:10,230 --> 00:07:10,700
+OK.
+
+134
+00:07:10,950 --> 00:07:15,660
+Now tab auto completion we saw in this video and we saw that tabbouleh commission is a really useful
+
+135
+00:07:15,660 --> 00:07:18,700
+technique to speed up typing and avoiding errors.
+
+136
+00:07:18,750 --> 00:07:24,900
+And if you press tab and nothing happens just hit tab twice really quickly and it will show you several
+
+137
+00:07:24,900 --> 00:07:29,100
+options that are conflicting and you can just then type out a bit more to make sure that it selects
+
+138
+00:07:29,100 --> 00:07:29,940
+the one you want.
+
+139
+00:07:29,940 --> 00:07:34,560
+So like we saw when we print when we type the capital D it wasn't working but if it's press tab twice
+
+140
+00:07:34,560 --> 00:07:37,880
+we could see that it was clashing with documents downloads and desktop.
+
+141
+00:07:37,890 --> 00:07:41,580
+And then we could modify their own to make sure tabel to completion worked.
+
+142
+00:07:41,580 --> 00:07:47,040
+But you use tab order completion all the time it saves you so much time and so much hassle.
+
+143
+00:07:47,040 --> 00:07:52,830
+It's a great great feature that the show has and it can also be used anywhere not just when navigating.
+
+144
+00:07:52,830 --> 00:07:59,790
+So if you're if you are you know trying to enter an argument to a command and it's a file path you can
+
+145
+00:07:59,790 --> 00:08:01,580
+use tab auto completion.
+
+146
+00:08:01,680 --> 00:08:06,450
+There is why it's not just when using CD or ls or whatever it might be you can use it for pretty much
+
+147
+00:08:06,510 --> 00:08:07,330
+any command.
+
+148
+00:08:07,650 --> 00:08:12,900
+And if you want to open up a terminal where you currently are when you're navigating graphically using
+
+149
+00:08:12,900 --> 00:08:18,690
+the graphical user interface just right click and click Open in terminal and a terminal will open up
+
+150
+00:08:19,050 --> 00:08:24,460
+with the current directory being exactly where you were when you opened that terminal.
+
+151
+00:08:24,480 --> 00:08:28,200
+So that's a really useful features why if you just need to make some quick edits on the terminal and
+
+152
+00:08:28,200 --> 00:08:30,630
+then shut it again and get back to doing what you are graphically.
+
+153
+00:08:30,780 --> 00:08:31,880
+It's a great great feature.
+
+154
+00:08:31,890 --> 00:08:33,900
+So make sure you keep hold of that.
+
+155
+00:08:34,020 --> 00:08:38,280
+So we've got a whole bunch of stuff in the last few videos and now you should start feeling comfortable
+
+156
+00:08:38,280 --> 00:08:41,660
+with how to navigate you just use Peter Beattie to see where you are.
+
+157
+00:08:41,670 --> 00:08:47,340
+LS to look around and see to move and in the next video we're going to start discussing file extensions
+
+158
+00:08:47,340 --> 00:08:52,110
+in Linux because they don't work like they might do on other operating systems and there's quite a few
+
+159
+00:08:52,110 --> 00:08:55,920
+core freedoms that fall extensions that you have when working in Linux.
+
+160
+00:08:56,010 --> 00:08:59,160
+So for that goodness I'll see you in the next video.

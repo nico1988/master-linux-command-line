@@ -1,0 +1,519 @@
+1
+00:00:00,180 --> 00:00:01,530
+Hellova you beautiful people.
+
+2
+00:00:01,530 --> 00:00:05,610
+So in the last video I left you with kind of a cliffhanger with some burning questions that we have
+
+3
+00:00:05,610 --> 00:00:08,090
+about how apt package manager works.
+
+4
+00:00:08,190 --> 00:00:10,100
+How does the cache get there in the first place.
+
+5
+00:00:10,200 --> 00:00:12,430
+How can we make sure that the cash is kept up to date.
+
+6
+00:00:12,690 --> 00:00:17,100
+Well these are the questions that we'll be answering in this video by the end of this video you'll know
+
+7
+00:00:17,100 --> 00:00:18,290
+how to update your cash.
+
+8
+00:00:18,390 --> 00:00:23,360
+And you also know how to use that cash to upgrade all of the software on your system to the most uptodate
+
+9
+00:00:23,400 --> 00:00:25,750
+level with one simple command.
+
+10
+00:00:25,810 --> 00:00:30,660
+And this is going to be so awesome and I'm sure that you are you'll begin to see why package managers
+
+11
+00:00:30,660 --> 00:00:34,680
+are far superior to the simple wizards that you may be used to using.
+
+12
+00:00:34,680 --> 00:00:36,030
+Now I can't wait to show you this stuff.
+
+13
+00:00:36,030 --> 00:00:38,400
+So let's just go ahead and get right into it.
+
+14
+00:00:38,840 --> 00:00:39,260
+OK.
+
+15
+00:00:39,270 --> 00:00:42,870
+So how do the lists in the cache actually get there in the first place.
+
+16
+00:00:43,080 --> 00:00:47,700
+Well these lists are actually downloaded from servers somewhere on the Internet and these servers are
+
+17
+00:00:47,700 --> 00:00:52,850
+maintained by credible sources and contain up to date lists of all existing packages.
+
+18
+00:00:52,890 --> 00:00:57,240
+And as we mentioned in the last video in order for our cash to be functional the files in the cache
+
+19
+00:00:57,300 --> 00:00:59,630
+must be the same as the files on the server.
+
+20
+00:00:59,750 --> 00:01:02,710
+This is especially important for the software repositories.
+
+21
+00:01:02,820 --> 00:01:07,530
+So I think with me about the Linux community for another there are millions of people around the world
+
+22
+00:01:07,590 --> 00:01:12,160
+all contributing to this massive body of software and creating things all the time.
+
+23
+00:01:12,360 --> 00:01:17,080
+This massive body of people contributing simultaneously to the software repositories and products that
+
+24
+00:01:17,100 --> 00:01:19,850
+software changes a lot and it changes often.
+
+25
+00:01:19,890 --> 00:01:22,060
+Bugs get fix security holes get patched.
+
+26
+00:01:22,050 --> 00:01:23,010
+New features get added.
+
+27
+00:01:23,010 --> 00:01:25,720
+Documentation is codified and so on and so forth.
+
+28
+00:01:25,940 --> 00:01:30,770
+Now sometimes programs get developed so much that they require new dependencies in order to work.
+
+29
+00:01:31,050 --> 00:01:35,130
+And in spite all of these changes keep in all the software on your system today and managing everything
+
+30
+00:01:35,130 --> 00:01:39,060
+yourself manually would just be a complete nightmare.
+
+31
+00:01:39,360 --> 00:01:40,260
+It just wouldn't work.
+
+32
+00:01:40,270 --> 00:01:44,460
+There's too much room for a person to make a mistake and too much stuff to keep track of.
+
+33
+00:01:44,670 --> 00:01:46,740
+But fortunately you don't have to.
+
+34
+00:01:46,740 --> 00:01:51,390
+The apt package manager has a way of using the cache to make sure that all the software on your system
+
+35
+00:01:51,660 --> 00:01:52,800
+is completely up to date.
+
+36
+00:01:53,040 --> 00:01:54,700
+And here's how it works.
+
+37
+00:01:54,720 --> 00:02:01,910
+So the first thing you need to do is to update your cash and to do that you'd run sudo apt get update.
+
+38
+00:02:02,040 --> 00:02:03,680
+OK and that's the command you'd run.
+
+39
+00:02:03,770 --> 00:02:07,920
+Now notice how we need to use the sudo command at the beginning here.
+
+40
+00:02:07,940 --> 00:02:12,480
+Now that's because we're going to make changes to important files on our file system and we need administrator
+
+41
+00:02:12,480 --> 00:02:14,060
+privileges in order to do so.
+
+42
+00:02:14,270 --> 00:02:20,460
+And instead of apt cache we're using apt get because we're going to get data from the repositories so
+
+43
+00:02:20,460 --> 00:02:27,090
+we'll be getting the updated lists and update we'll update the lists and our cash to make sure that
+
+44
+00:02:27,090 --> 00:02:31,640
+the package versions in there are the same as the package versions in the repositories.
+
+45
+00:02:31,800 --> 00:02:34,470
+But of course in order for this to work we need to be connected to the Internet.
+
+46
+00:02:34,650 --> 00:02:38,430
+So I relabeled our internet connection before recording this video.
+
+47
+00:02:38,460 --> 00:02:41,050
+So if you are following along make sure you re-enable yours too.
+
+48
+00:02:41,220 --> 00:02:46,350
+And if we run now so sudo apt get update it will ask us to enter our password because we are using the
+
+49
+00:02:46,350 --> 00:02:52,110
+sudo commands or we enter that and we press enter and you can see that it's getting loads of different
+
+50
+00:02:52,110 --> 00:02:56,890
+lists from the buntu repositories and it's downloaded them and installing them.
+
+51
+00:02:56,970 --> 00:03:01,500
+Now it's going to be updating our cash which might take various amount of time depending on how long
+
+52
+00:03:01,500 --> 00:03:02,880
+it's been since you've updated.
+
+53
+00:03:02,880 --> 00:03:04,770
+But ours is gone and completed now.
+
+54
+00:03:04,830 --> 00:03:10,260
+So now that we've updated the cache will have the most up to date package numbers and dependencies for
+
+55
+00:03:10,350 --> 00:03:14,670
+all the packages in cash so that we have an up to date cache.
+
+56
+00:03:14,730 --> 00:03:17,410
+What if some of the software on our computer is out of date.
+
+57
+00:03:17,580 --> 00:03:23,020
+How can we upgrade our software to the newest versions that are in the new versions of the package lists.
+
+58
+00:03:23,020 --> 00:03:26,440
+Well that's actually really easy and quite magical to be honest.
+
+59
+00:03:26,460 --> 00:03:30,760
+So to upgrade every single piece of software on your system that you install from the repository is
+
+60
+00:03:31,110 --> 00:03:32,840
+all you need to do is type.
+
+61
+00:03:32,910 --> 00:03:37,800
+I play the screen sudo apt get upgrade.
+
+62
+00:03:37,800 --> 00:03:41,370
+OK now this will run through so Representer.
+
+63
+00:03:41,520 --> 00:03:47,670
+This will run through all the package lists and see all the software that we've got on our system and
+
+64
+00:03:47,670 --> 00:03:52,530
+it will tell us what's out of date and what needs to be updated and it also tell you how much needs
+
+65
+00:03:52,530 --> 00:03:56,280
+to be installed and so on and it asks for approbation to continue.
+
+66
+00:03:56,280 --> 00:03:58,050
+If I press yes.
+
+67
+00:03:58,050 --> 00:04:03,060
+So this is going to run on through the updated cache and see what packages on your system are behind
+
+68
+00:04:03,090 --> 00:04:07,630
+it and figure out what new dependencies need to be installed and which ones are no longer required.
+
+69
+00:04:07,620 --> 00:04:11,930
+They'll tell you how much space is required and so and so before asking your permission to continue.
+
+70
+00:04:11,940 --> 00:04:17,310
+But now that we've given it permission it will go ahead and start updating every piece of software on
+
+71
+00:04:17,310 --> 00:04:23,520
+the system or download the required packages unpack them install them and remove the old versions automatically
+
+72
+00:04:23,520 --> 00:04:30,170
+for every single piece of software on the entire system that was installed using the repositories.
+
+73
+00:04:30,180 --> 00:04:36,070
+This is an incredibly powerful automated system and this is really the beauty of using a package manager.
+
+74
+00:04:36,180 --> 00:04:41,310
+You don't have to go to the Web site and download manually each piece each new package like you might
+
+75
+00:04:41,310 --> 00:04:42,960
+have to do on Windows or Mac.
+
+76
+00:04:43,020 --> 00:04:46,980
+We've got to download the new installer or click for updates on each different piece of software.
+
+77
+00:04:46,980 --> 00:04:50,970
+Now all you have to do is want to upgrade upgrade everything that was installed through the repositories
+
+78
+00:04:51,270 --> 00:04:55,360
+will be upgraded to the newest version levels which helps you with security.
+
+79
+00:04:55,530 --> 00:04:59,800
+It helps you with having the most modern features and it's just absolutely.
+
+80
+00:04:59,910 --> 00:05:05,220
+And also if you use Krumm you can schedule this stuff to happen on a regular basis as well so that's
+
+81
+00:05:05,220 --> 00:05:07,340
+a useful thing to bear in mind.
+
+82
+00:05:07,530 --> 00:05:12,390
+Now this might take a varying amount of time depending upon how long it's been since since we've upgraded
+
+83
+00:05:12,690 --> 00:05:16,950
+our software and because I haven't actually done it on this virtual machines it will take quite a while.
+
+84
+00:05:16,950 --> 00:05:21,610
+So I'm going to do is I'm going to cut the video here and come back when it is done.
+
+85
+00:05:21,630 --> 00:05:23,540
+And just like that into commands.
+
+86
+00:05:23,540 --> 00:05:28,590
+All the software on our system has been upgraded and we can actually see that the Firefox logo has been
+
+87
+00:05:28,590 --> 00:05:31,170
+updated to look a whole lot more epic.
+
+88
+00:05:31,170 --> 00:05:36,180
+So notice how the system also didn't need to reboot all the software that we've installed that the repositories
+
+89
+00:05:36,390 --> 00:05:38,310
+has been upgraded and it's ready to go.
+
+90
+00:05:38,310 --> 00:05:45,240
+So all we had to do was update the package list using sudo apt get update and then once we updated it
+
+91
+00:05:45,290 --> 00:05:50,460
+or waited it was sudo apt get upgrade and then we upgraded all the software to the new versions.
+
+92
+00:05:50,470 --> 00:05:55,020
+So do know that sometimes you will need to reboot your system when you do these updates but this is
+
+93
+00:05:55,020 --> 00:05:57,390
+kind of unusual but sometimes it will need to happen.
+
+94
+00:05:57,570 --> 00:06:02,170
+But it's important to note that you should always update your cache before you perform an upgrade and
+
+95
+00:06:02,280 --> 00:06:09,640
+make sure that the upgrade occurs using the correct software versions and everything is updated uniformly.
+
+96
+00:06:09,880 --> 00:06:14,730
+So to update your cache you've run sudo apt get update and what this will do is it will download the
+
+97
+00:06:14,730 --> 00:06:20,940
+most updated versions of the package lists from the two servers into your cache that is stored on your
+
+98
+00:06:20,940 --> 00:06:21,610
+computer.
+
+99
+00:06:21,720 --> 00:06:24,080
+So in order to do that you need to have an internet connection.
+
+100
+00:06:24,240 --> 00:06:29,400
+But once you've updated your cache by downloading the most updated package lists you can upgrade all
+
+101
+00:06:29,400 --> 00:06:33,030
+of the software on your system using sudo apt get upgrade.
+
+102
+00:06:33,030 --> 00:06:36,480
+And what this will do is it will make the package manager look at all the software that is currently
+
+103
+00:06:36,480 --> 00:06:41,460
+on your system and compare it to what is available in the package lists and then the package manager
+
+104
+00:06:41,460 --> 00:06:48,180
+will automatically download and upgrade all the different packages that can be downloaded in order to
+
+105
+00:06:48,240 --> 00:06:53,520
+update your system to the most up to date level so this will download any new versions of packages that
+
+106
+00:06:53,540 --> 00:06:57,090
+remove old versions it'll download any new required dependencies.
+
+107
+00:06:57,180 --> 00:06:59,560
+And this just helps you know increase your system security.
+
+108
+00:06:59,610 --> 00:07:04,980
+It helps give you maximum functionality and it's all round just fantastic but something that you need
+
+109
+00:07:04,980 --> 00:07:09,300
+to bear in mind is that you need to update the cache before you upgrade because otherwise you'll be
+
+110
+00:07:09,420 --> 00:07:14,250
+upgrading all your software to lock the most up to date versions and you want to be able to update your
+
+111
+00:07:14,250 --> 00:07:19,500
+software to update versions in order to do that you need uptodate package lists so to update those lets
+
+112
+00:07:19,620 --> 00:07:23,110
+you update your cash and then when you've updated your cache you can operate your software.
+
+113
+00:07:23,130 --> 00:07:23,910
+So bear that in mind.
+
+114
+00:07:23,910 --> 00:07:27,030
+Always update your cache before you upgrade your software.
+
+115
+00:07:27,090 --> 00:07:31,500
+Another important thing to bear in mind here is that you can only upgrade software that was installed
+
+116
+00:07:31,620 --> 00:07:32,870
+through the repositories.
+
+117
+00:07:32,880 --> 00:07:37,050
+OK that is possible on a Gonu Linux system like we did in the previous videos where we modified the
+
+118
+00:07:37,050 --> 00:07:38,030
+ls command.
+
+119
+00:07:38,050 --> 00:07:42,580
+You can download packages manually extract them and compile them and install them yourself.
+
+120
+00:07:42,690 --> 00:07:47,280
+But because that process doesn't happen through the repositories and package manager you lose the ability
+
+121
+00:07:47,340 --> 00:07:49,540
+to keep them up to date like we are doing here.
+
+122
+00:07:49,740 --> 00:07:53,900
+So therefore if you can download a package from a web site and you can also get it from the absentee
+
+123
+00:07:53,910 --> 00:07:58,320
+repositories make sure to get it from the repositories because then you can make sure that it's up to
+
+124
+00:07:58,320 --> 00:07:58,590
+date.
+
+125
+00:07:58,590 --> 00:08:00,820
+Make sure you always have the best features available.
+
+126
+00:08:00,840 --> 00:08:06,810
+Using this automated process so as of now we've discussed how to search for software had to update caches
+
+127
+00:08:06,810 --> 00:08:08,080
+and how to upgrade software.
+
+128
+00:08:08,190 --> 00:08:11,760
+But we haven't discussed had to actually install new software.
+
+129
+00:08:11,760 --> 00:08:15,660
+Well with all the understanding that you have now that's actually going to be really easy for you so
+
+130
+00:08:15,660 --> 00:08:17,760
+I'll save that little gem for the next video.

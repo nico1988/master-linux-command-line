@@ -1,0 +1,1020 @@
+1
+00:00:00,080 --> 00:00:06,530
+我爱你们，漂亮的人们知道，在过去的几节课里，你们做了这么多关于文件的事情。
+Love you beautiful people know in the last few lectures you've been doing so much stuff with files.
+
+2
+00:00:06,600 --> 00:00:11,940
+您已经掌握了如何创建它们、移动它们、复制它们、删除它们、粘贴它们、重命名它们
+You've been you've had how to create them move them around copy them delete them paste them rename them
+
+3
+00:00:12,530 --> 00:00:13,650
+去寻找他们。
+and search for them.
+
+4
+00:00:13,650 --> 00:00:14,580
+还有更多。
+And so much more.
+
+5
+00:00:14,580 --> 00:00:14,880
+好的。
+OK.
+
+6
+00:00:14,890 --> 00:00:16,430
+所有操作都是从命令行进行的。
+All from the command line.
+
+7
+00:00:16,680 --> 00:00:23,070
+但是，尽管我们现在可以在很大程度上处理文件，但我们还没有真正了解如何快速
+But even though we can now manipulate files on a grand level we haven't really seen how to take a quick
+
+8
+00:00:23,070 --> 00:00:27,340
+看一看里面有什么，还可以操纵它们的内容。
+peek at what's inside them and manipulate their contents yet.
+
+9
+00:00:27,570 --> 00:00:32,040
+好了，这就是接下来的几个视频的目的，接下来的几个视频将学习五个
+Well that's what these next few videos are for over the next few videos are going to be learning five
+
+10
+00:00:32,040 --> 00:00:36,600
+允许您操作文件内容的新命令。
+new commands that will allow you to manipulate file contents.
+
+11
+00:00:36,630 --> 00:00:42,330
+这就是读取文件、反转文件甚至将文件粘合在一起的内容
+So this is stuff such as reading files reversing files and even sticking files together as well as reading
+
+12
+00:00:42,330 --> 00:00:44,340
+它们在一些寻呼程序中。
+them in some paging programs.
+
+13
+00:00:44,340 --> 00:00:50,010
+因此，这样做可以让您从命令行完成大部分工作，而不需要
+So what this is can allow you to do is to get most of your work done from the command line without ever
+
+14
+00:00:50,010 --> 00:00:55,230
+必须开放外部编辑器，这将是一个巨大的生产力提升，而且
+having to need to open up external editors which is going to be a massive productivity boost and it's
+
+15
+00:00:55,230 --> 00:01:01,310
+将帮助您保持在整个命令行工作过程生态系统中。
+going to help you keep you inside the whole command line work process ecosystem.
+
+16
+00:01:01,320 --> 00:01:02,510
+所以这将会是非常非常棒的你。
+So this is going to be very very you.
+
+17
+00:01:02,510 --> 00:01:07,350
+所以这就像是在那一分钟丢失了一块，在它之后或者在下一个视频结束之后，你就是
+So it's kind of like a missing piece at the minute and after it or after the end of the next video you're
+
+18
+00:01:07,350 --> 00:01:12,660
+我将不得不对合并后的文件内容执行一大堆有用的功能
+going to have to perform a whole bunch of useful functions on the contents of files which when combined
+
+19
+00:01:12,660 --> 00:01:17,490
+根据您对文件整体操作的了解，您将了解服务器场
+with what you know about manipulating files in their entirety is going to make you you know the farm
+
+20
+00:01:17,490 --> 00:01:18,540
+操纵大师。
+manipulation master.
+
+21
+00:01:18,570 --> 00:01:21,120
+所以我们就直接跳进去吧。
+So let's just go ahead and jump right into it.
+
+22
+00:01:22,380 --> 00:01:22,780
+好的。
+OK.
+
+23
+00:01:22,810 --> 00:01:26,410
+我们要看的第一个命令是cat命令。
+So the first command that we're going to take a look at is the cat command.
+
+24
+00:01:26,430 --> 00:01:29,580
+现在你还记得我之前跟你说的那些厨房笑话吗？
+Now do you remember those kitchen jokes that I was talking to you about earlier.
+
+25
+00:01:29,830 --> 00:01:35,070
+好了，米罗，现在你实际上已经看到盖子以前戴上了。
+Well mirro So now you've actually seen the cap come on before.
+
+26
+00:01:35,350 --> 00:01:37,700
+所以这将是一次相当不错的复习。
+So this will be a rather nice refresher.
+
+27
+00:01:37,780 --> 00:01:41,380
+好的，你可以在我们的桌面上看到，我们有几个文件。
+OK so you can see here on our desktop we've got a few files.
+
+28
+00:01:41,380 --> 00:01:46,480
+我们得到了4 1 4 2 5 3 4 4和4 5DirectXT。
+We got 4 1 4 2 5 3 4 4 and 4 5 directx T.
+
+29
+00:01:46,570 --> 00:01:49,140
+那么让我们来看看第一个文件里面有什么。
+So let's take a look at what's inside the first file.
+
+30
+00:01:49,150 --> 00:01:53,110
+但是，我们不会打开它，而是要查看我们的终端，看看文件中有什么。
+But instead of opening it we're going to look in our terminal to see what's inside the file.
+
+31
+00:01:53,170 --> 00:01:53,650
+好的。
+OK.
+
+32
+00:01:53,770 --> 00:01:57,890
+所以，如果我们输入cat，然后将其放到桌面上，不是吗？
+So if we type cat and then follow on it to be on the desktop don't I.
+
+33
+00:01:57,970 --> 00:02:04,930
+所以我将在屏幕上更改桌面，然后键入cat并将一条文本发送给我。
+So I'll change the desktop I the screen and then type cat and file one text me.
+
+34
+00:02:05,080 --> 00:02:06,760
+好的，我想按回车键。
+OK I want to press enter.
+
+35
+00:02:06,760 --> 00:02:10,740
+我们将看到该文件的内容已写入标准输出。
+We'll see that the contents of the file have been written to standard output.
+
+36
+00:02:10,810 --> 00:02:14,290
+我们可以看到该文件包含单词Hello。
+And we can see that the file contains the word Hello.
+
+37
+00:02:14,290 --> 00:02:19,180
+现在，如果我按下，如果我，你知道，双击它，然后以图形方式打开它，我们可以看到，是的，所有这些
+Now if I press if I you know double click that and open that graphically we can see that yes all that
+
+38
+00:02:19,180 --> 00:02:21,280
+文件包含的是单词Hello。
+file contains is the word Hello.
+
+39
+00:02:21,360 --> 00:02:21,590
+好的。
+OK.
+
+40
+00:02:21,610 --> 00:02:29,610
+因此，使用该命令，我们成功地将文件内容打印到标准输出OK。
+So using the command we managed to get the contents of the file printed to standard output OK.
+
+41
+00:02:29,630 --> 00:02:31,870
+所以让我们试着看看第二个会有什么结果。
+So let's try and see what's in for number two.
+
+42
+00:02:31,970 --> 00:02:32,370
+好的。
+OK.
+
+43
+00:02:32,480 --> 00:02:39,850
+所以如果我们对它做cat文件，我们可以看到单词在里面。
+So if we do cat file to that takes t we can see the word there is inside.
+
+44
+00:02:40,050 --> 00:02:42,370
+我想你可以想象这件事会发展到什么地步。
+I guess you can imagine where this is going right.
+
+45
+00:02:42,530 --> 00:02:48,260
+所以如果我赌3，你就会看到4，4。
+So if I go for three it says you see 4 4.
+
+46
+00:02:48,500 --> 00:02:53,030
+上面写着很漂亮，我打赌我们都能猜到第五名会是什么。
+It says beautiful and I bet we can all guess what's in for number five.
+
+47
+00:02:53,390 --> 00:02:56,120
+所以如果我按5，它会说人们没事。
+So if I press 5 It says people are OK.
+
+48
+00:02:56,150 --> 00:03:00,900
+所以如果你把下面所有的文件放在一起，它会说你好，你们这些漂亮的人。
+So if you put all the follow files together it says hello there you beautiful people.
+
+49
+00:03:01,010 --> 00:03:02,050
+真是太巧了。
+Well what a coincidence.
+
+50
+00:03:02,060 --> 00:03:03,560
+我想知道这是怎么回事。
+I wonder how that happened.
+
+51
+00:03:03,710 --> 00:03:07,620
+因此，实际上您可以使用Capcom将文件粘合在一起。
+So in fact you can actually use the Capcom and to stick files together.
+
+52
+00:03:07,670 --> 00:03:07,910
+好的。
+OK.
+
+53
+00:03:07,910 --> 00:03:13,790
+实际上通常是这样的，cat是单词conatenates的缩写，这是一个花哨的词
+And that's actually usually what it's for cat is short for the word concatenates which is a fancy word
+
+54
+00:03:13,790 --> 00:03:15,190
+因为他们团结在一起。
+for sticking together.
+
+55
+00:03:15,200 --> 00:03:15,700
+好的。
+OK.
+
+56
+00:03:15,800 --> 00:03:21,710
+所以cat所做的就是将所有输入文件粘合在一起，然后将粘合在一起的内容传递给
+So what cat does is stick together all of the input files and then pass that stick together stuff to
+
+57
+00:03:21,710 --> 00:03:22,760
+标准输出。
+standard output.
+
+58
+00:03:22,760 --> 00:03:30,790
+好的，如果我们这样做，屏幕上，如果我们做猫下降1.60，Faltu，那就是下降3.50，下降60
+OK so if we do OK the screen if we do cat fall 1.60 Faltu that takes the fall 3.50 fall for that 60
+
+59
+00:03:30,800 --> 00:03:34,230
+并将5.6磁带归档，然后按Enter键。
+and file 5.6 tape and press enter.
+
+60
+00:03:34,340 --> 00:03:40,260
+你可以看到，你们这些漂亮的人，你们好，是通过把五千人粘在一起而形成的。
+You can see that hello there you beautiful people has been made by sticking together the five thousand
+
+61
+00:03:40,330 --> 00:03:43,050
+已打印到我们的标准输出中。
+that has been printed to our standard output.
+
+62
+00:03:43,190 --> 00:03:49,880
+但我们当然可以将其重定向到桌面上名为Beautiful Dotty XTi的新文件，我们可以
+But we can of course redirect this to a new file called Beautiful Dotty XTi on our desktop which we
+
+63
+00:03:49,880 --> 00:03:51,180
+请参见已在此处创建。
+see has been created here.
+
+64
+00:03:51,200 --> 00:03:57,860
+当我们打开的时候，我们现在看到我们有一个新的文件，它说你好，美丽的人们
+And when we open we now see that we've got a new file that says hello there beautiful people that has
+
+65
+00:03:57,860 --> 00:04:01,120
+是通过将其他五个文件粘合在一起而创建的。
+been created by sticking together five other files.
+
+66
+00:04:01,370 --> 00:04:04,700
+现在我们可以看到，这个命令行上的洞很长，对吧。
+Now we can actually see the holes in this command line here is quite long right.
+
+67
+00:04:04,700 --> 00:04:07,840
+实际上，我们可以使用通配符知识来简化这一过程。
+What we can actually simplify that using our knowledge of wildcards.
+
+68
+00:04:08,030 --> 00:04:15,080
+因此，CAS不再是1.60，而是下跌了2.6，下跌了3.6，下跌了4.6，下跌了5，5.6。
+So instead of having CAS for 1.60 fell 2.6 fall 3.6 for 4.6 and 5 5.6.
+
+69
+00:04:15,320 --> 00:04:23,750
+理想情况下，您只需将像这只猫这样的通配符组合在一起，将一到五个文本组合成一个漂亮的服务器
+You can just use a wildcard like this cat together for one to five text into a beautiful server ideally
+
+70
+00:04:23,860 --> 00:04:27,010
+很漂亮，很好吃，而且不是外卡。
+beautiful that tasty and not wild card.
+
+71
+00:04:27,260 --> 00:04:31,530
+它又被创建了，我们可以在这里看到，但是我们得到了完全相同的结果。
+And it's been created again and we can see here but yet we get exactly the same result.
+
+72
+00:04:31,550 --> 00:04:32,770
+你好，你们这些漂亮的人。
+Hello there you beautiful people.
+
+73
+00:04:32,840 --> 00:04:34,960
+但打字要少得多。
+But a lot less typing.
+
+74
+00:04:35,120 --> 00:04:36,780
+所以现在这已经很酷了。
+So that's pretty cool right now.
+
+75
+00:04:36,860 --> 00:04:40,880
+来吧，当您想像这样将文件粘合在一起时，它显然对粘合文本文件很有用
+Come on when you want to stick files together like this it's useful for sticking to the text files obviously
+
+76
+00:04:41,180 --> 00:04:45,600
+但它在处理Odeo或MP3文件时可能非常有用。
+but it can be very useful when working with Odeo or MP 3 files for example.
+
+77
+00:04:45,680 --> 00:04:51,380
+所以如果你可以有多个不同的单MP，三个文件，你知道不同的歌曲，例如
+So if you can have multiple different single MP three files you know different songs for example but
+
+78
+00:04:51,440 --> 00:04:56,390
+您实际上可以将它们连接在一起，将这些不同的文件粘贴在一起以创建一个长文件
+you can actually concatenate them together stick these different files together to create one long file
+
+79
+00:04:56,450 --> 00:04:58,060
+里面有所有的音乐。
+that has all the music in it.
+
+80
+00:04:58,070 --> 00:04:59,200
+所以这是相当史诗般的。
+So that's pretty epic.
+
+81
+00:04:59,450 --> 00:05:02,440
+因此，cat命令用于将文件粘合在一起。
+So the cat command is used to stick files together.
+
+82
+00:05:02,600 --> 00:05:07,060
+实际上，如果你想要的话，只要读一下文件的内容，我们就可以做CAT了。
+Actually if you want just read the contents of a file so we can just do cat.
+
+83
+00:05:07,270 --> 00:05:08,590
+漂亮的圆点文字。
+Beautiful dot text.
+
+84
+00:05:08,620 --> 00:05:14,110
+所以Cat美化了文本，我们可以看到任何文件的内容，这真的很有用。
+So Cat beautiful that text and we can see the contents of any of any file which is really really useful.
+
+85
+00:05:14,180 --> 00:05:17,090
+但是我想了解的另一个命令是TAC命令。
+But another command that I want to take a look at is the TAC command.
+
+86
+00:05:17,090 --> 00:05:19,700
+所以让我把这里的屏幕清理一下。
+So let me just clear the screen here.
+
+87
+00:05:19,790 --> 00:05:26,270
+因此，TAC命令只是向后拼写为cat，它用于反转作为
+So the TAC command is just cat spelled backwards and it's used to reverse whatever it receives as an
+
+88
+00:05:26,270 --> 00:05:26,830
+输入。
+input.
+
+89
+00:05:26,990 --> 00:05:35,420
+因此，如果我们通过回显创建一个名为Alpha TXI的文件，让我们假设abc为我们的保真度xt，我们将
+So if we make a file called Alpha TXI by echoing let's say ABC to our fidelity x t and we're going to
+
+90
+00:05:35,480 --> 00:05:41,870
+另外，将DPF回显到Alpha，并注意我们在这里获得aros的方式，因为我们要将
+also echo DPF to Alpha and notice the way that we've got to Aros here because we're going to append
+
+91
+00:05:42,050 --> 00:05:44,070
+复制到同一个文件，而不是覆盖它。
+to the same file rather than overwrite it.
+
+92
+00:05:44,220 --> 00:05:50,310
+好的，现在如果我按字母顺序看，我们一行有abc，另一行有dpf。
+OK so now if I look in alphabetically we've got ABC on one line and DPF on another.
+
+93
+00:05:50,370 --> 00:05:58,210
+好的，如果我们读取文件，我们使用cat和Sue cat来读取文件，按照字母顺序，我们得到ABC，然后是D
+OK so if we read the file we read the file using cat with Sue cat alphabetically we get ABC then D E
+
+94
+00:05:58,440 --> 00:05:58,940
+F.
+F.
+
+95
+00:05:58,990 --> 00:05:59,290
+好的。
+OK.
+
+96
+00:05:59,420 --> 00:06:01,920
+但我会看看如果我们用Tack来读会发生什么。
+But I'll see what happens if we read it using tack.
+
+97
+00:06:01,930 --> 00:06:07,820
+所以我们用ptak代替cat来读它，ptak是宠物猫，拼写倒过来，我们现在看到我们
+So instead of cat we read it using Ptak which is the pet cat spelled backwards and we see now that we
+
+98
+00:06:07,820 --> 00:06:10,940
+先取d f，然后取abc。
+get d f then ABC.
+
+99
+00:06:11,120 --> 00:06:16,920
+因此您可以看到，TAC命令实际上反向读取了整个文件，但是离开了该文件。
+So you can see that the TAC command actually reads the whole file in reverse but leaves the file.
+
+100
+00:06:16,960 --> 00:06:23,110
+这些行是一样的，所以它只是先写最后一行，然后最后写第一行。
+The lines the same so it just wrote the last line first and then the first line last.
+
+101
+00:06:23,120 --> 00:06:27,290
+是的，但是它不影响每行的任何文本。
+Right but it didn't affect any text on each line.
+
+102
+00:06:27,290 --> 00:06:35,150
+因此，如果我们将各种不同的文件放在一起，使用CATS将文件设置为4：59，如果我们这样做的话
+So if we stick together and the various different files here the file to 4:59 using cats if we do file
+
+103
+00:06:35,200 --> 00:06:40,190
+万美元到5.60美元，你看，我们在那里得到了产量。
+wan to $5.60 you see that we get the output there.
+
+104
+00:06:40,340 --> 00:06:44,440
+但现在我想让你们想一想如果我们发动攻击会发生什么。
+But now I want you to think what might happen if we pipe that into attack.
+
+105
+00:06:44,600 --> 00:06:45,110
+好的。
+OK.
+
+106
+00:06:45,290 --> 00:06:53,960
+现在，TAC将按行反转文件，以便首先打印最后一行，然后打印第一行
+Now TAC will reverse the file line wise so the last line will be printed first and the first line will
+
+107
+00:06:53,960 --> 00:06:55,480
+最后打印。
+be printed last.
+
+108
+00:06:55,580 --> 00:06:58,030
+你觉得这会有什么结果。
+So what do you think might come out of this.
+
+109
+00:06:58,070 --> 00:07:02,590
+花几秒钟，我的意思是想一想。
+Take a couple of seconds I mean think about it.
+
+110
+00:07:02,640 --> 00:07:08,520
+所以可能会发生的是最后一句话，那就是以人为本，第一句话就会出现
+So what might happen is the last line which is people would come first and the first line would come
+
+111
+00:07:08,520 --> 00:07:13,050
+最后，可能会出现的是那里的人都很漂亮。
+last so what might come out is people beautiful you there.
+
+112
+00:07:13,110 --> 00:07:13,680
+你好。
+Hello.
+
+113
+00:07:13,830 --> 00:07:15,360
+就像我说的，看一下。
+Like I said Have a look.
+
+114
+00:07:15,360 --> 00:07:18,230
+给你，是的，那里的人都很漂亮。
+There you go yeah people beautiful you there.
+
+115
+00:07:18,240 --> 00:07:18,760
+你好。
+Hello.
+
+116
+00:07:18,870 --> 00:07:23,450
+因此，可以将TAC命令视为垂直反转文件。
+So think of the TAC command as reversing a file vertically.
+
+117
+00:07:23,510 --> 00:07:23,910
+好的。
+OK.
+
+118
+00:07:24,000 --> 00:07:26,060
+所以它只是把它颠倒过来。
+So it just flips it upside down.
+
+119
+00:07:26,070 --> 00:07:27,690
+它不会影响任何一条线路。
+It doesn't affect any of the lines.
+
+120
+00:07:27,690 --> 00:07:29,520
+它只是把它颠倒过来。
+It just flips it upside down.
+
+121
+00:07:29,610 --> 00:07:34,410
+当然，因为所有这些都打印到标准输出，所以您当然可以将其重定向到
+And of course because this is all being printed to standard output you can of course redirect it into
+
+122
+00:07:34,520 --> 00:07:36,000
+文件名为Reverted。
+the file called reversed.
+
+123
+00:07:36,100 --> 00:07:38,230
+xti，这里是他的反向文本。
+XTi And here we are his reverse text.
+
+124
+00:07:38,460 --> 00:07:43,560
+当我们打开时，我们看到我们已经将输出保存在该文件中。
+When we open up we see that we've saved the output in that file.
+
+125
+00:07:43,590 --> 00:07:48,690
+因此，可以使用tuck命令的好处是，如果我们再举一个
+So the good thing about the tuck command where it can be used is again if we take the example of an
+
+126
+00:07:48,690 --> 00:07:53,820
+MP3文件我不知道你有没有在网上看过那些视频，人们会说，哎呀，看这首歌是怎么回事
+MP3 files I don't know if you've ever seen those videos online where people say aw look what the song
+
+127
+00:07:53,820 --> 00:07:57,870
+说当它向后播放时，就像你知道的那样，他们试图说它有一些隐藏的信息在
+says when it's played backwards and like you know they try to say it's got some hidden messages in the
+
+128
+00:07:57,870 --> 00:07:58,210
+文件。
+file.
+
+129
+00:07:58,210 --> 00:07:59,650
+也许你看过那些视频。
+Maybe you've seen those videos.
+
+130
+00:07:59,820 --> 00:08:06,000
+嗯，也许它们是使用TAX命令创建的，因为如果您运行一个MP3，通过
+Well maybe they were made using the tax command because if you run an MP 3 fall through through the
+
+131
+00:08:06,000 --> 00:08:13,830
+如果我做了一些事情，比如把我父亲钉在P3里，然后把它保存到另一个我反向的文件中，那么我就会纳税几个月
+tax months if I did something like tack my father in P3 and save that into another my reversed file
+
+132
+00:08:14,310 --> 00:08:17,130
+计时p 3，然后是这个文件。
+time p 3 then this file.
+
+133
+00:08:17,130 --> 00:08:21,240
+这里的这首歌是同一首歌，只是倒放了一下。
+This one here will be the same song but played backwards.
+
+134
+00:08:21,240 --> 00:08:24,970
+就像我说的，如果你愿意，可能会试一试。
+Like I said something to potentially give a go if if if you would like.
+
+135
+00:08:25,170 --> 00:08:26,390
+好的，这就是大头针。
+OK so that's the tack.
+
+136
+00:08:26,400 --> 00:08:29,800
+来吧，高明会垂直翻转文件。
+Come on the Takamine will reverse files vertically.
+
+137
+00:08:29,940 --> 00:08:33,810
+还有一个我想看的，叫做REV命令。
+There's one other that I want to look at which is called the Rev command.
+
+138
+00:08:33,870 --> 00:08:38,220
+因此，该命令允许您反转每行上的内容。
+So the command allows you to reverse the content on each line.
+
+139
+00:08:38,220 --> 00:08:43,970
+所以，如果我清空屏幕，好的，我们再把各种不同的文件剪切在一起，我们会得到你好，美丽的你
+So if I clear the screen OK and we cut together the various different files again we get hello you beautiful
+
+140
+00:08:44,000 --> 00:08:44,580
+人民。
+people.
+
+141
+00:08:44,730 --> 00:08:48,570
+但是如果我把它输入REV命令，好的。
+But if I pipe that into the Rev command OK.
+
+142
+00:08:48,720 --> 00:08:50,830
+看看这里发生了什么。
+Look what happens here.
+
+143
+00:08:51,210 --> 00:08:57,270
+它仍然在说，如果你能读懂它，它仍然会说，你好，漂亮的人，所以线条是垂直的
+It's still saying if you can read it it still says hello there beautiful people so the lines are vertically
+
+144
+00:08:57,270 --> 00:09:03,650
+它们是一样的，但是水平方向是相反的，所以每一行的最后一个字母，这里是O。
+the same but horizontally they've been reverse so the last letter of each line so here is the O.
+
+145
+00:09:03,810 --> 00:09:05,670
+现在已经成为第一个字母。
+Has now become the first letter.
+
+146
+00:09:05,760 --> 00:09:11,970
+你知道它是沿着线颠倒的，但是每条线的顺序是一样的。
+And you know it's reverse them along the lines but the order of each line is the same.
+
+147
+00:09:12,000 --> 00:09:17,820
+如果这是有意义的，如果我们放上攻击命令，你可以看到人是第一行
+If that makes sense if we if we put the the attack command you can see that people is the first line
+
+148
+00:09:17,880 --> 00:09:21,870
+而这里的人是最后一行，但是字母已经颠倒了。
+whereas here people is the last line but the letters have been reversed.
+
+149
+00:09:21,930 --> 00:09:22,320
+好的。
+OK.
+
+150
+00:09:22,500 --> 00:09:29,400
+因此，这就是您可以将ref和tac tac反转看作垂直的文件，而rev反转
+So this is the way you can think of ref and tac tac reverse as a file vertically and rev reverses a
+
+151
+00:09:29,400 --> 00:09:31,410
+横向归档。
+file horizontally.
+
+152
+00:09:31,700 --> 00:09:32,210
+好的。
+OK.
+
+153
+00:09:32,280 --> 00:09:35,520
+现在，您可以通过管道将文件同时传送到这两个文件，从而真正地将它们混杂在一起。
+Now you can really jumble up files by piping it through both of them.
+
+154
+00:09:35,530 --> 00:09:39,230
+所以如果我把它穿过塔克，它会垂直反转。
+So if I pipe it through Takk it's going to reverse vertically.
+
+155
+00:09:39,540 --> 00:09:47,730
+但是如果我也通过Rev管道，你现在会得到一个垂直反转和水平反转的
+But then if I pipe that also through Rev you've now got a vertically reversed and horizontally reversed
+
+156
+00:09:48,390 --> 00:09:52,380
+着火，如果你觉得这特别有用的话，这是一个把东西弄乱的好方法。
+fire which is a good way of jumbling up stuff if you ever find that particularly useful.
+
+157
+00:09:52,380 --> 00:09:58,890
+不过，为了方便起见，只需将大头针想象为在列中垂直反转PHIP，而您
+But yet just to make it easier just think of tack as reversing phials vertically in columns and you
+
+158
+00:09:58,890 --> 00:10:03,900
+可以将Rev看作是横跨各行的反向下落。
+can think of Rev as reversing falls horizontally across the rows.
+
+159
+00:10:03,990 --> 00:10:10,530
+所以所有这些命令，不管是猫，还是Takk，还是Be，你知道，它们所做的一切
+So all of these commands whether it be cats or it be Takk or a be you know Rev all they're doing is
+
+160
+00:10:10,530 --> 00:10:18,180
+他们获取一个文件，将其读入标准输入，进行一些处理，然后您知道，只是随地吐痰
+they are taking a file reading it into standard input doing some processing and then you know just spitting
+
+161
+00:10:18,180 --> 00:10:20,810
+将输出转换为标准输出。
+that the output to standard output.
+
+162
+00:10:20,820 --> 00:10:25,180
+就像我说的，它们是一种很好的步行方式，这是阅读文件的一种很好的方式，你知道其他的都是
+Like I said they're a good way walk that is a good way of reading files and you know the others are
+
+163
+00:10:25,180 --> 00:10:26,780
+把东西弄得乱七八糟的好方法。
+a good way of jumbling up stuff.
+
+164
+00:10:26,940 --> 00:10:33,030
+但问题是，当您像这样将文件读取到终端时，如果文件特别长，它可能会
+But the problem is when you read files to the terminal like this if a file is particularly long it can
+
+165
+00:10:33,030 --> 00:10:37,840
+阅读器阻塞了你的屏幕，它不是很有用，你会发现自己滚动了很长很长的一段路。
+readers clog up your screen and it's not very useful and you find yourself scrolling a long long way.
+
+166
+00:10:37,840 --> 00:10:45,380
+因此，如果我们尝试查找一个相当大的文件，例如，如果我们说，让我们使用find命令search
+So if we try to find a file that's quite large so if we say for example let's use the find command search
+
+167
+00:10:45,430 --> 00:10:48,130
+我们的系统最大深度是4米。
+our system up to let's say a maximum depth of four.
+
+168
+00:10:48,150 --> 00:10:55,400
+对于任何配置文件或以.com结尾的名称，我们都会做得太过火。
+We're going to go too far for any configuration files or a name that ends in dot com.
+
+169
+00:10:56,370 --> 00:10:59,680
+以及比方说超过20千字节的大小。
+And the size that lets say over 20 kilobytes.
+
+170
+00:10:59,720 --> 00:11:02,560
+好的，所以我们是，我们只有两个，真的只有两个。
+OK so we are we only get we only get two really.
+
+171
+00:11:02,760 --> 00:11:06,390
+但这里有一家叫警察浏览网站。
+But there's one here called cops browes dot com.
+
+172
+00:11:06,600 --> 00:11:08,780
+这与类似的打印服务有关。
+And this is to do with like printing services.
+
+173
+00:11:08,820 --> 00:11:11,730
+显然这是一个相当大的文件。
+And it's apparently a lot rather large file.
+
+174
+00:11:11,760 --> 00:11:13,260
+所以如果我复制它。
+So if I copy it.
+
+175
+00:11:13,280 --> 00:11:16,600
+收到，试着接住它。
+Copy that and try to catch it.
+
+176
+00:11:16,740 --> 00:11:17,520
+好的。
+OK.
+
+177
+00:11:17,680 --> 00:11:19,210
+所以如果我试着把它切开。
+So if I try to cut that it up.
+
+178
+00:11:19,440 --> 00:11:22,880
+所以如果我试着盖上盖子然后按Enter，你就会看到它就在那里发生了。
+So you see it just happened right there if I try to cap that and press enter.
+
+179
+00:11:23,010 --> 00:11:25,370
+你看，我们刚刚被击落了。
+You see that we've just shot down.
+
+180
+00:11:25,680 --> 00:11:27,180
+她让他出轨了。
+She put him out of lines.
+
+181
+00:11:27,180 --> 00:11:27,990
+你现在能看到了吗。
+Can you see now.
+
+182
+00:11:28,050 --> 00:11:32,510
+如果我想看一看，结果一直滚动到这里，那就不太好了
+If I wanted to have a look at it and I ended up scrolling all the way through here it's not very good
+
+183
+00:11:32,520 --> 00:11:33,550
+正确的。
+right.
+
+184
+00:11:34,440 --> 00:11:39,180
+因此，当您在命令行上处理内容时，这是一个问题，而我们需要一个更优雅的解决方案
+So that's a problem when you're dealing with stuff on the command line and we want a more elegant solution
+
+185
+00:11:39,180 --> 00:11:41,700
+涉及处理相对较大的文件。
+to dealing with relatively large files.
+
+186
+00:11:41,910 --> 00:11:46,290
+有时候你知道，如果我，如果我只是想读出，也许我不想要整个农场，也许
+And sometimes you know if I if I just wanted to read out of how maybe I don't want all of the farm maybe
+
+187
+00:11:46,300 --> 00:11:51,630
+只想要它的某个片段，也许我只想要前10行或后10行之类的
+only want a certain snippet of it maybe I only want the top 10 lines or the bottom 10 lines or something
+
+188
+00:11:51,630 --> 00:11:52,260
+就像这样。
+like that.
+
+189
+00:11:52,500 --> 00:11:57,760
+我们需要有一种更好的方式来处理命令行上的文件内容。
+And we need to have a better way of being able to deal with file contents on the command line.
+
+190
+00:11:57,900 --> 00:12:02,220
+综上所述，我们将在下一个视频中介绍的内容，但在总结这个视频时，我们
+So in summary So what we're going to be covering in the next video but in summary of this video we've
+
+191
+00:12:02,210 --> 00:12:05,230
+看到它们不能来，可以用来实际读出文件。
+seen that they can't come and can be used to actually read out files.
+
+192
+00:12:05,230 --> 00:12:12,280
+如果我在我们的桌面上看起来很美，如果我读到他实际上可以读出有多美，如果我们
+If I look beautiful on our desktop if I read how beautiful that he actually can read that out if we
+
+193
+00:12:12,370 --> 00:12:19,030
+想要垂直反转文件，我们可以使用Takk如果我们想要水平反转文件，我们可以使用
+want to reverse files vertically we can use Takk if we want to reverse files horizontally we can use
+
+194
+00:12:19,250 --> 00:12:25,300
+Rev，但不管是哪种方式，所有这些都是他们正在做的，他们只是在读取文件内容
+Rev and but all either way all of these are what they're doing is they are just reading the files content
+
+195
+00:12:25,570 --> 00:12:29,710
+并输出标准输出，然后当然可以通过管道将其传递到其他命令中
+and spitting out the standard output where you can then of course pipe it into other commands to do
+
+196
+00:12:29,800 --> 00:12:30,610
+处理过程。
+the processing.
+
+197
+00:12:30,630 --> 00:12:30,990
+好的。
+OK.
+
+198
+00:12:31,010 --> 00:12:34,750
+或者您知道，当您在命令行上工作时，如果您只是想快速查看文件中的内容
+Or you know while you're working on the command line if you just want to see quickly what's in a file
+
+199
+00:12:35,140 --> 00:12:41,410
+您可以只使用CAT命令，然后快速查看并获取
+you can just you can just use cats come at the cat command and then see that really quickly and get
+
+200
+00:12:41,410 --> 00:12:42,350
+继续你在做的事。
+on with what you were doing.
+
+201
+00:12:42,430 --> 00:12:42,810
+好的。
+OK.
+
+202
+00:12:42,910 --> 00:12:46,480
+现在我们来看一下cat tack和ref命令，但在下一个视频中，我们将使用
+So there we are though does the cat tack and ref commands but in the next video we're going to take
+
+203
+00:12:46,480 --> 00:12:51,400
+A看看你如何提升这种能力来做更复杂的事情，所以我要把这段视频
+a look at how you can level up this ability to do more sophisticated things so I'll break the video
+
+204
+00:12:51,400 --> 00:12:53,210
+在这里，我们将在下一个视频中看到你。
+here and see you in the next video.
+

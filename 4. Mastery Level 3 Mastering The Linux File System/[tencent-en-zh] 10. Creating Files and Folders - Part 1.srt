@@ -1,0 +1,585 @@
+1
+00:00:00,350 --> 00:00:05,080
+大家好，美丽的人们，在这段视频中，时间到了。
+Hello you beautiful people and in this video the time has come.
+
+2
+00:00:05,160 --> 00:00:09,500
+在过去的几个视频中，您已经了解了Linux文件系统的结构学习
+Over the last few videos you've been learning about the structure of the Linux file system learning
+
+3
+00:00:09,510 --> 00:00:14,730
+中学习的命令行如何导航文件系统
+how to navigate the file system using the command line you've been learning about file extensions in
+
+4
+00:00:14,730 --> 00:00:17,940
+Linux，以及它们与您可能在其他操作系统上发现的不同之处。
+Linux and how they differ from what you might find on other operating systems.
+
+5
+00:00:18,000 --> 00:00:22,860
+您最近了解的有关通配符以及如何使用通配符来提高工作效率的视频
+And the last video you've learned about wildcards and how you can use them to turbocharge your workings
+
+6
+00:00:22,860 --> 00:00:23,710
+使用命令行。
+with the command line.
+
+7
+00:00:23,880 --> 00:00:29,400
+但是在这段视频中，您将迈出第一步，从只看Linux文件系统到
+But in this video you're going to take your first step from just looking at the Linux file system to
+
+8
+00:00:29,460 --> 00:00:34,960
+通过学习如何使用命令行创建文件和目录来实际修改它。
+actually modifying it by learning how to create files and directories using the command line.
+
+9
+00:00:34,980 --> 00:00:41,160
+在这段视频中，您将学习如何使用触摸和M-K命令来创建文件
+And in this video you're going to learn how to use the touch and the M-K are commands to create files
+
+10
+00:00:41,250 --> 00:00:42,370
+和目录。
+and directories.
+
+11
+00:00:42,410 --> 00:00:45,960
+在本视频结束时，您将能够使用
+And by the end of this video you're going to be able to create your own files and folders using the
+
+12
+00:00:45,960 --> 00:00:46,700
+命令行。
+command line.
+
+13
+00:00:46,830 --> 00:00:51,780
+然后在视频中，我们将向你展示如何利用你在这里学到的知识和涡轮增压
+And then in the video after We're going to show you how to take what you learn here and turbocharge
+
+14
+00:00:51,780 --> 00:00:58,170
+通过将其与通配符相结合，您可以在一个命令中创建无数的文件和文件夹。
+it by combining it with wild cards you can create like a jillion files and folders in just one command.
+
+15
+00:00:58,200 --> 00:01:00,240
+这一点都不夸张。
+And that's not even an exaggeration.
+
+16
+00:01:00,240 --> 00:01:02,700
+让我们直接跳进去吧。
+Let's go ahead and jump right into it.
+
+17
+00:01:03,160 --> 00:01:03,600
+好的。
+OK.
+
+18
+00:01:03,630 --> 00:01:08,640
+因此，我们要查看的第一个命令称为触摸命令或触摸命令
+So the first command we want to take a look at is something called the touch command or the touch command
+
+19
+00:01:08,880 --> 00:01:11,650
+可以创建新的空文件。
+can create new empty files.
+
+20
+00:01:11,670 --> 00:01:16,860
+假设我要在桌面上创建一个名为file one的新文件。
+So let's say that I'm going to create a new file called file one on our desktop.
+
+21
+00:01:16,860 --> 00:01:21,730
+因此，如果我只是前往桌面，并尝试创建一个文件，称为一个。
+So if I just head over to the desktop and I try to create a file called for one.
+
+22
+00:01:21,870 --> 00:01:29,190
+我们所要做的就是键入touch file one，我们可以在这里看到已经创建了一个文件，它是
+All we have to do is type touch file one and we can see here that file one has been created and it's
+
+23
+00:01:29,220 --> 00:01:29,700
+出现了。
+appeared.
+
+24
+00:01:29,780 --> 00:01:30,210
+好的。
+OK.
+
+25
+00:01:30,330 --> 00:01:31,160
+这真是太棒了。
+That's pretty awesome.
+
+26
+00:01:31,320 --> 00:01:33,870
+现在您不必在您所在的目录中执行此操作。
+Now you don't have to do this in the directory that you're in.
+
+27
+00:01:33,870 --> 00:01:34,430
+顺便说一下。
+By the way.
+
+28
+00:01:34,500 --> 00:01:39,570
+举个例子，如果我做了一些事情，比如触摸，然后说我想把它放到Documents文件夹中
+So for example if I did something like touch and then said I want to put that in the Documents folder
+
+29
+00:01:40,320 --> 00:01:45,110
+并在Documents文件夹中的名为远程文件的文件中创建。
+and make in the file called Distant file in the Documents folder.
+
+30
+00:01:45,480 --> 00:01:51,030
+现在，当我继续查看Documents文件夹内部时，我们可以看到Disston文件
+Now when I go ahead and take a look inside the inside the Documents folder we can see that Disston file
+
+31
+00:01:51,180 --> 00:01:52,310
+已经被创建了。
+has been created.
+
+32
+00:01:52,320 --> 00:01:58,080
+请记住，这里的这些文件都是完全空的，当您使用它们时，它们只是空白文件
+And remember that these files here all completely empty they just blank files when you use them when
+
+33
+00:01:58,080 --> 00:02:00,370
+您可以使用TOUCH命令创建它们。
+you create them using the touch command.
+
+34
+00:02:00,600 --> 00:02:01,530
+所以这很酷。
+So that's pretty cool.
+
+35
+00:02:01,530 --> 00:02:06,060
+现在，我们使用touch命令创建的文件是完全空的，正如我所说的，但是如果您
+Right now the files that we create with the touch command are completely empty as I said but if you
+
+36
+00:02:06,060 --> 00:02:11,160
+我想创建实际包含一些内容的文件，这就是我们可以使用echo命令的地方
+want to create files that actually have some content in them that's where we can use the echo command
+
+37
+00:02:11,430 --> 00:02:13,280
+将内容重定向到其中。
+to redirect content into it.
+
+38
+00:02:13,290 --> 00:02:18,770
+因此，如果我想使用ECHO命令创建一个名为Hello DirectX T的文件，我就在桌面上。
+So I'm on the desktop if I want to use the echo command to make a file called Hello directx T.
+
+39
+00:02:18,870 --> 00:02:22,280
+我将把内容仅放到文本Hello中。
+I'm going to put the content to just the text Hello in there.
+
+40
+00:02:22,350 --> 00:02:26,440
+然后我只需输入hello并将其重定向到。
+Then I'll just type hello and redirect that into.
+
+41
+00:02:26,440 --> 00:02:32,300
+您好，现在当您重定向到尚未创建的文件时，请不要重定向。
+Hello Don t XTi now redirection when you redirect to a file that isn't made yet.
+
+42
+00:02:32,340 --> 00:02:37,370
+外壳将自动创建该文件，并将要放入的内容放入其中。
+The shell will automatically create that file and put put what was going to go inside there.
+
+43
+00:02:37,500 --> 00:02:38,840
+如果我去的话里面就是。
+Inside is if I go.
+
+44
+00:02:38,860 --> 00:02:39,590
+Echo你好。
+Echo Hello.
+
+45
+00:02:39,600 --> 00:02:41,980
+然后将该Helder重定向到XTi。
+And then redirect that Helder to XTi.
+
+46
+00:02:41,980 --> 00:02:46,880
+外壳将创建文件，当我们打开它时，我们会看到光晕就在里面那么远。
+The shell will create the file and when we open it we'll see that halo is inside that far.
+
+47
+00:02:46,880 --> 00:02:50,130
+这是另一种创建文件的方式。
+So that's another way of creating files.
+
+48
+00:02:50,220 --> 00:02:50,600
+好的。
+OK.
+
+49
+00:02:50,610 --> 00:02:57,240
+这就是如何使用touch命令创建文件，查看如何创建文件夹
+So that's how you use the touch command to create files that see how you might go around creating folders
+
+50
+00:02:57,270 --> 00:02:58,360
+制作目录。
+making directories.
+
+51
+00:02:58,440 --> 00:02:58,870
+好的。
+OK.
+
+52
+00:02:58,980 --> 00:03:05,070
+如果我只是清空屏幕，那么在shell中创建目录的方法是使用M-K，即Arc命令
+So the way you make directories in the shell if I just clear the screen is with the M-K the arc command
+
+53
+00:03:05,070 --> 00:03:07,550
+它代表make directory。
+which stands for make directory.
+
+54
+00:03:07,650 --> 00:03:11,490
+好的，创建Foldit，它的工作原理与触摸命令基本相同。
+OK so make Foldit and it works basically the same as the touch command.
+
+55
+00:03:11,490 --> 00:03:19,050
+因此，如果我们尝试在桌面上创建一个名为Folder的文件夹，那么它将不得不输入M-K Diyar
+So if we try to make a folder on our desktop called Folder then it will have to do is type M-K Diyar
+
+56
+00:03:19,140 --> 00:03:24,470
+并将其命名为Folder，然后按Enter键，我们会看到一个名为Folder的新文件夹已经出现。
+and call it folder press enter and we see that a new folder called folder has appeared.
+
+57
+00:03:24,620 --> 00:03:25,410
+好的。
+All right.
+
+58
+00:03:25,410 --> 00:03:29,070
+同样，这可能会在一定距离内发生，它不一定要在当前工作目录中。
+Again this could happen at a distance it doesn't have to be in your current working directory.
+
+59
+00:03:29,100 --> 00:03:37,140
+因此，如果我想在我们的图片目录中创建一个名为Holiday OK的文件夹，并按Enter键，然后您
+So if I wanted to make a folder in our pictures directory called Holiday OK and I press Enter then you
+
+60
+00:03:37,140 --> 00:03:42,420
+我知道我可以通过两种方式检查，我可以继续返回到我们的主目录，转到图片
+know I can check that in two ways I could proceed to go back to our home directory going to pictures
+
+61
+00:03:42,600 --> 00:03:43,630
+使用CD。
+using CD.
+
+62
+00:03:44,010 --> 00:03:47,820
+当我们看一看的时候，我们会看到假日文件夹，我们可以看一下我们的图形化的
+And when we take a look we'll see that the holiday folders that we can have a look at our graphical
+
+63
+00:03:47,820 --> 00:03:49,080
+用户界面也是如此。
+user interface as well.
+
+64
+00:03:49,110 --> 00:03:53,900
+我们有照片，还有一个名为Holiday的文件夹，就在那里。
+We've got pictures and we've got a folder called holiday that exists right there as well.
+
+65
+00:03:53,900 --> 00:03:54,660
+很酷，对吧。
+Pretty cool right.
+
+66
+00:03:56,030 --> 00:04:01,520
+现在，您可以创建整个文件夹路径，而不是一次创建一个文件夹
+Now you can instead of creating folders one at a time you can actually create entire folder paths all
+
+67
+00:04:01,520 --> 00:04:02,440
+一气呵成。
+in one go.
+
+68
+00:04:02,570 --> 00:04:07,290
+所以我回到桌面上，假设我想要创建这条路径。
+So I'm back on the desktop and let's say I wanted to create this path.
+
+69
+00:04:07,310 --> 00:04:12,460
+我想制造爆劈开的东西劈开问题。
+I wanted to create blaw slash thing slash problem.
+
+70
+00:04:12,610 --> 00:04:18,890
+好的，但我不能一口气把它做完，因为米歇尔会给我们一个错误，这是
+OK but I can't go ahead and make that in one go because Micheles going to give us an error and it's
+
+71
+00:04:18,890 --> 00:04:22,440
+我会说这个文件夹不存在。
+going to say that the folder doesn't exist.
+
+72
+00:04:22,580 --> 00:04:27,990
+这是因为外壳程序试图把整件事都转到挡路上，然后创建Shambler。
+This is because the shell tried to go to block the entire thing and then create Shambler them.
+
+73
+00:04:27,990 --> 00:04:31,670
+到目前为止，这是这门课上最可笑的句子，你不觉得吗？
+Now that's just the most ridiculous sentence in the course so far don't you think.
+
+74
+00:04:31,670 --> 00:04:35,990
+不管怎样，如果我们试图给M-K Diyar命令p选项，我们就这么做了。
+Anyway if we tried to give the M-K Diyar command the p option so we do.
+
+75
+00:04:35,990 --> 00:04:38,670
+给它p选项。
+M K D R P give it the p option.
+
+76
+00:04:38,750 --> 00:04:40,820
+然后，它将创建整个路径。
+It would then create the entire path.
+
+77
+00:04:40,910 --> 00:04:43,170
+即使不存在任何文件夹。
+Even though non of the folders exists.
+
+78
+00:04:43,310 --> 00:04:50,000
+所以如果我们做挡路，劈开，劈开，就是这样，然后按Enter键，我们现在就会看到
+So if we do block slash things slash blam it'd be like that and press ENTER we'll see that now we've
+
+79
+00:04:50,000 --> 00:04:51,030
+拿到了废话。
+got blah.
+
+80
+00:04:51,830 --> 00:04:53,300
+在那里面我们有东西。
+And inside there we've got thing.
+
+81
+00:04:53,680 --> 00:04:55,300
+在这里面我们有一个问题。
+And inside that we've got a problem.
+
+82
+00:04:55,340 --> 00:04:55,940
+所以这真的很酷。
+So that's really cool.
+
+83
+00:04:55,940 --> 00:04:58,970
+我们一口气走完了整条路。
+We made the entire path all in one go.
+
+84
+00:04:58,970 --> 00:05:04,100
+非常棒的是，现在创建新文件或目录时需要记住一些事情。
+How awesome is that right now there's something to bear in mind when creating new files or directories.
+
+85
+00:05:04,220 --> 00:05:08,270
+那就是尽量避免在名称中加空格。
+And that is to try and avoid putting spaces in the name.
+
+86
+00:05:08,300 --> 00:05:15,610
+例如，如果我创建了一个名为“生日快乐”的文件夹，如果我是KTAR，生日快乐。
+So for example if I create a folder called Happy Birthday file tape if I am KTAR happy birthday.
+
+87
+00:05:16,370 --> 00:05:20,250
+您看，实际发生的情况是，我们在文件夹中创建了两个文件，对不起。
+You see the what actually happened is we created two files to folders sorry.
+
+88
+00:05:20,360 --> 00:05:26,750
+生日快乐，那是因为文本之间有空格，基本上就是这样
+Happy Birthday and that's because there was this space in between the text and that basically made it
+
+89
+00:05:26,900 --> 00:05:28,900
+设置为命令行参数。
+to command line arguments.
+
+90
+00:05:28,970 --> 00:05:34,970
+好的，我们给了它一个快乐的输入和一个生日的输入，但我们只想成为你
+OK we gave it one input which was happy and one input which was birthday but we wanted to be you just
+
+91
+00:05:34,970 --> 00:05:36,110
+一个输入。
+one input.
+
+92
+00:05:36,170 --> 00:05:37,150
+生日快乐。
+Happy birthday.
+
+93
+00:05:37,170 --> 00:05:39,050
+好的，只有一次输入，那么我们怎么做呢？
+Ok just one input so how do we do that.
+
+94
+00:05:39,230 --> 00:05:44,660
+实际上，你这样做的方法是，你做mkr，然后用引号括起来。
+Well actually the way you do that is you do MKR then surround it in quotes.
+
+95
+00:05:44,690 --> 00:05:46,520
+生日快乐。
+Happy birthday.
+
+96
+00:05:46,640 --> 00:05:53,510
+当您这样做时，您会看到我们有一个名为Happy Birth的文件夹，但通常只有几个文件夹
+And when you do that you see we get one folder called Happy birthday but just in general having folders
+
+97
+00:05:53,510 --> 00:05:57,630
+文件中包含空格在Linux中只是一场噩梦。
+with files with spaces in them is just a bit of a nightmare in Linux.
+
+98
+00:05:57,650 --> 00:05:58,310
+好的。
+OK.
+
+99
+00:05:58,350 --> 00:06:02,420
+而且由于命令行参数中的整个空间问题以及诸如此类的东西。
+And because of this whole space issue in the command line arguments and all that stuff.
+
+100
+00:06:02,420 --> 00:06:02,950
+好的。
+OK.
+
+101
+00:06:03,020 --> 00:06:10,160
+通常情况下，您要做的不是使用空格，而是使用下划线，而不是使用
+So usually what you want to do is instead of having spaces have underscores instead so instead of having
+
+102
+00:06:10,430 --> 00:06:17,570
+空间生日快乐通常你想做的是加下划线而不是下划线
+happy space birthday usually what you want to do is have underscores instead of underscores being this
+
+103
+00:06:17,570 --> 00:06:19,200
+这里有个小小的符号。
+little this little symbol here.
+
+104
+00:06:19,370 --> 00:06:26,000
+在这里，您可以看到我们有另一个文件夹，但带有下划线而不是空格
+So here you can see that we have another folder but with an underscore instead of a space and that just
+
+105
+00:06:26,000 --> 00:06:28,810
+使它的工作更好，从桌子到完工。
+makes it work a lot nicer with table to completion.
+
+106
+00:06:28,980 --> 00:06:33,930
+好的，只要有很多其他的操作，就会阻止你搞乱你的命令行参数，诸如此类的事情。
+OK and just lots of other flybys stops you messing up your command line arguments and things like that.
+
+107
+00:06:34,040 --> 00:06:34,960
+好的。
+OK.
+
+108
+00:06:35,090 --> 00:06:40,940
+当然还有一件事，我想我已经提到过很多次了，但是文件夹和文件名都是大小写的
+Another thing of course I think I've mentioned this multiple times but folders and file names are case
+
+109
+00:06:40,940 --> 00:06:42,610
+如果我这么做的话会对Linux很敏感。
+sensitive in Linux if I do.
+
+110
+00:06:42,710 --> 00:06:47,210
+卡迪亚和卡迪亚生日快乐。
+And Cadia are happy underscore birthday.
+
+111
+00:06:47,810 --> 00:06:52,820
+这是一个与小写的Happy Birthday完全不同的文件夹，而Windows之类的文件夹则完全不同
+That's a completely different folder to Happy Birthday in lowercase whereas on something like Windows
+
+112
+00:06:52,820 --> 00:06:54,760
+实际上不会是OK。
+it actually wouldn't be the OK.
+
+113
+00:06:54,890 --> 00:07:02,640
+以上是如何使用Touch和Cadia命令创建文件和文件夹的快速概述
+So that's a quick overview of how to create files and folders using the touch and Cadia are commands
+
+114
+00:07:03,290 --> 00:07:07,610
+在下一个视频中，我们将在下一个视频中突破，我们将更上一层楼，开始组合
+in the next video is going to break in the next video we're going to take it up a notch and start combining
+
+115
+00:07:07,640 --> 00:07:13,340
+所有这些好处都是通过通配符和一个非常强大的Beti来实现的，该测试名为BLACE Expansion，它将
+all this goodness with wild cards and a really powerful beti called brace expansion which is going to
+
+116
+00:07:13,340 --> 00:07:18,560
+允许我们在一个命令中创建数百个文件和文件夹。
+allow us to create hundreds of files and folders all in one command.
+
+117
+00:07:18,560 --> 00:07:21,650
+所以让我们继续把它放在这里，我会在下一个视频中看到你。
+So let's go ahead and put it right here and I'll see you in the next video.
+

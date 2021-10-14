@@ -1,0 +1,785 @@
+1
+00:00:00,120 --> 00:00:01,560
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,560 --> 00:00:07,070
+在本视频中，您将开始使用命令行在Linux文件系统中移动。
+And in this video you're going to begin to use the command line to move around your linux file system.
+
+3
+00:00:07,080 --> 00:00:08,790
+非常非常激动人心的东西。
+Very very exciting stuff.
+
+4
+00:00:08,790 --> 00:00:13,200
+现在，一旦您学习了在接下来的几个视频中学到的技术，并开始将它们用于
+Now once you learn the techniques that you'll learn over the next few videos and begin to use them for
+
+5
+00:00:13,200 --> 00:00:18,260
+您会开始发现，它们比图形化的任务更快、更有效
+your everyday tasks you'll begin to find that they are faster and more effective than the graphical
+
+6
+00:00:18,270 --> 00:00:21,440
+指向并单击您当前最可能使用的方法。
+point and click methods that you are most likely using right now.
+
+7
+00:00:21,600 --> 00:00:26,880
+在这段视频中，您将学习如何使用PWT和LS命令来了解您所处的位置
+So in this video you're going to learn how to use the PWT and the LS commands to know where you are
+
+8
+00:00:26,880 --> 00:00:28,950
+你的文件系统和你周围的东西。
+and your file system and what is around you.
+
+9
+00:00:28,980 --> 00:00:32,730
+在视频结束时，您将知道您在文件系统上的位置以及您周围正在使用的内容
+And by the end of the video you'll know where you are on your file system and what's around you using
+
+10
+00:00:32,730 --> 00:00:37,020
+命令行，您就可以开始使用我将展示的其他一些命令进行移动了
+the command line and you'll be ready to start moving around using some other commands that I'll show
+
+11
+00:00:37,020 --> 00:00:38,350
+下一个视频里的你。
+you in the next video.
+
+12
+00:00:38,700 --> 00:00:42,620
+所以我希望你们会非常非常兴奋，让我们直接开始吧。
+So I hope you're very very excited let's go ahead and jump right into it.
+
+13
+00:00:43,400 --> 00:00:45,530
+好的，我们到航站楼了。
+OK so here we are in the terminal.
+
+14
+00:00:45,530 --> 00:00:49,630
+现在，在导航系统时，我们首先想知道的是我们目前所处的位置。
+Now the first thing we'd like to know when navigating the system is where we currently are.
+
+15
+00:00:49,760 --> 00:00:55,550
+外壳已经告诉我们这一点了，在左边，你会看到一串文本，它们被称为
+And the shell already tells us this over here on the left you'll see a bunch of text that is known as
+
+16
+00:00:55,550 --> 00:01:00,190
+您的shell提示符和show提示符就是这个美元符号之前的所有内容。
+your shell prompt and the show prompt is everything up to this dollar sign.
+
+17
+00:01:00,320 --> 00:01:00,840
+好的。
+OK.
+
+18
+00:01:00,980 --> 00:01:02,870
+现在让我们将其分解，向您展示每个比特的含义。
+Now let's break it down to show you what each bit means.
+
+19
+00:01:02,870 --> 00:01:07,230
+首先，它告诉您登录的用户是这台计算机上的Ziyad。
+First of all it tells you the user who is logged in which is Ziyad on this computer.
+
+20
+00:01:07,430 --> 00:01:08,870
+那么你可以再加一些。
+Then you can add some more.
+
+21
+00:01:09,120 --> 00:01:13,060
+好的，那么你已经知道了计算机的名称，也就是VB。
+Ok then you've got the name of the computer which is VB.
+
+22
+00:01:13,070 --> 00:01:18,170
+我们在设置和安装虚拟机时调用它，VB是Virtual Box的缩写。
+We called it when we set up and installed a virtual machine and VB is short for Virtual Box.
+
+23
+00:01:18,200 --> 00:01:20,930
+然后你就有了一个代码，就是这两个点叠加在一起。
+Then you've got a code which is these two dots on top of one another.
+
+24
+00:01:21,080 --> 00:01:25,230
+然后你会看到一种叫做蒂尔达的曲折。
+And then you have this squiggle that's called Tilda.
+
+25
+00:01:25,340 --> 00:01:25,900
+好的。
+OK.
+
+26
+00:01:25,910 --> 00:01:31,250
+现在，在bash shell中，也就是我们当前使用的shell中，Tildy是一个简短的
+Now in the bash shell which is the shell that we're currently using that Tildy that squiggle is a short
+
+27
+00:01:31,250 --> 00:01:34,700
+表示当前用户主目录的方式。
+way of representing the current user's home directory.
+
+28
+00:01:34,700 --> 00:01:40,340
+因此，无论何时你看到波浪符号，或者当你看到那个曲折的曲线时，它只是意味着通往当前用户的路径
+So whenever you see that tilde or when you see that squiggle It just means the path to the current user's
+
+29
+00:01:40,550 --> 00:01:41,510
+主目录。
+home directory.
+
+30
+00:01:41,510 --> 00:01:47,540
+我显示的提示符基本上是告诉我们，我们位于当前用户的主目录中，
+So I show prompt is basically telling us that we are in the home directory for the current user which
+
+31
+00:01:47,540 --> 00:01:49,320
+我们可以看出是齐亚德。
+we can tell is Ziyad.
+
+32
+00:01:49,450 --> 00:01:56,630
+好的，我们可以随时确认shell当前运行的目录或位置
+OK so we can actually confirm at any time what directory or what location our shell is currently operating
+
+33
+00:01:56,630 --> 00:02:03,170
+在中，但是使用pwt命令和pwt命令，我们将打印工作目录。
+in but using the PWT command and the PWT command stands we'll print working directory.
+
+34
+00:02:03,300 --> 00:02:07,110
+Peter Beattie命令只会告诉我们shell当前运行的文件夹。
+The PETER BEATTIE command will just tell us the folder that our shell is currently operating in.
+
+35
+00:02:07,270 --> 00:02:14,000
+因此，如果我键入pwt并按Enter键，我们将看到我的主目录的完整路径显示，即劈开
+So if I type PWT and I hit Enter we'll see the full path to my home directory appear which is slash
+
+36
+00:02:14,000 --> 00:02:16,060
+主场劈开齐亚德。
+home slash Ziyad.
+
+37
+00:02:16,440 --> 00:02:21,950
+现在，该路径从根目录开始，也就是最基本的目录，即劈开和
+Now the path starts all the way from the root directory the very base directory which is the slash and
+
+38
+00:02:21,950 --> 00:02:26,970
+一直向下，直到我们到达用户Ziyad的主目录，也就是我。
+works its way down until we get to the home directory for the user Ziyad which is me.
+
+39
+00:02:27,020 --> 00:02:31,100
+现在，如果我们点击打开的文件，我们实际上可以看到这一点。
+Now we can actually see this if we click on our files and that opens up.
+
+40
+00:02:31,100 --> 00:02:35,360
+如果您单击其他位置，则单击计算机。
+If you click on other locations then click on computer.
+
+41
+00:02:35,540 --> 00:02:38,600
+这将在最基本的目录中打开我们。
+This will open us up in the very base directory.
+
+42
+00:02:38,600 --> 00:02:41,500
+好的，这是这是系统的基本目录。
+OK this is the this is the base directory for the system.
+
+43
+00:02:41,600 --> 00:02:49,190
+如果我点击这里的主页，然后点击Ziyad，这就是我们目前在节目中的位置
+And if I click on home up here then click on Ziyad that is where we currently are in the show at the
+
+44
+00:02:49,190 --> 00:02:49,620
+稍等片刻。
+moment.
+
+45
+00:02:49,700 --> 00:02:50,220
+好的。
+OK.
+
+46
+00:02:50,300 --> 00:02:54,960
+现在因为这条小路是从基地一路开始的，直接从劈开开始。
+Now because the path starts all the way from the base directly from the slash.
+
+47
+00:02:55,100 --> 00:02:57,890
+它被称为绝对路径。
+It's known as an absolute path.
+
+48
+00:02:58,150 --> 00:03:02,810
+现在我们知道了我们所在的位置，并且知道了shell在主文件夹中的运行方式
+So now that we know where we are and we know that our shell is operating inside of our home folder how
+
+49
+00:03:02,810 --> 00:03:05,430
+我们可以四处看看，看看主文件夹里有什么吗？
+can we take a look around and see what's in the home folder.
+
+50
+00:03:05,630 --> 00:03:09,960
+首先，我们可以使用图形用户界面，我们可以在这里单击我们的文件，然后
+Well first of all we can do it using a graphical user interface we could click on our files here and
+
+51
+00:03:09,980 --> 00:03:14,780
+这将自动在我们的主文件夹中打开我们，我们可以看到桌面等文件夹
+that's automatically going to open us up in our home folder and we can see the folders such as a desktop
+
+52
+00:03:15,080 --> 00:03:19,490
+文档、下载、图片等等。
+documents downloads pictures and so on and so on.
+
+53
+00:03:19,510 --> 00:03:23,220
+好的，现在让我们在命令行上看到类似的内容。
+OK now to see something similar on the command line.
+
+54
+00:03:23,360 --> 00:03:30,140
+现在我们需要使用ls命令，LS是列表的缩写，ls命令将列出文件
+We need to use the l s command now the LS is short for the list and the ls command will list of files
+
+55
+00:03:30,530 --> 00:03:31,390
+在一个目录中。
+in a directory.
+
+56
+00:03:31,550 --> 00:03:38,480
+好的，如果我们看一下LS的手册页，ls的手册页将看到LS可以采用一条路径
+OK so if we take a look at the man page for LS The manual page for ls will see the LS can take a path
+
+57
+00:03:38,930 --> 00:03:40,200
+这里写着的一些文件夹。
+to some folders it says here.
+
+58
+00:03:40,210 --> 00:03:44,820
+FILE表示列出有关当前目录的文件信息。
+File says list information about the files which is the current directory.
+
+59
+00:03:44,960 --> 00:03:47,990
+默认情况下，它是一个附注。
+By default it was a side note.
+
+60
+00:03:48,020 --> 00:03:53,090
+LS不接受标准输入，所以您不能通过管道连接到它，相反，您需要为它提供一切
+Ls does not accept standard input so you can't pipe to it and instead you need to give it everything
+
+61
+00:03:53,120 --> 00:03:55,520
+作为命令行参数。
+as command line arguments.
+
+62
+00:03:55,520 --> 00:03:56,690
+那只是个小插曲。
+That's just an aside.
+
+63
+00:03:56,840 --> 00:04:02,340
+就像我说的，让我们尝试使用我们的睡觉，继续看看我们的主目录中发生了什么。
+Like I said let's try and use the rest of us go on to see what's going on in our home directory.
+
+64
+00:04:02,390 --> 00:04:03,690
+有多种方法可以做到这一点。
+There are multiple ways to do this.
+
+65
+00:04:03,950 --> 00:04:08,160
+我可以做很长的一段时间，并且我可以给它提供完整的绝对文件路径。
+I could do it the long way and I could give it the full absolute file path.
+
+66
+00:04:08,170 --> 00:04:15,560
+我可以输入LS劈开家劈开齐亚德马克拉斯这么长的路去做这一切因为我知道蒂尔达
+I could type LS slash home slash Ziyad Mackerras the long way to do it all because I know that the tilda
+
+67
+00:04:15,770 --> 00:04:17,450
+表示我的主文件夹。
+represents my home folder.
+
+68
+00:04:17,450 --> 00:04:22,410
+我可以给它一条捷径，我可以做l，然后给它提尔达，这完全是一样的。
+I could give it a shortcut I could do ls and give it the tilda and that's exactly the same thing.
+
+69
+00:04:22,410 --> 00:04:25,850
+Matilda只是当前用户的主目录。
+Matilda is just the home directory for the current user.
+
+70
+00:04:26,060 --> 00:04:32,810
+这简直令人震惊，甚至更好，因为我知道ls在默认情况下会列出文件夹的内容
+It's just a shocker or even better because I know ls will by default list out the contents of the folder
+
+71
+00:04:32,810 --> 00:04:34,130
+我现在所在的地方。
+that I'm currently in.
+
+72
+00:04:34,130 --> 00:04:39,550
+因为我在我的主文件夹中，所以我可以只键入LS OK。
+And because I'm in my home folder I can just type LS Ok.
+
+73
+00:04:39,740 --> 00:04:44,220
+默认情况下，ls将列出您的单元格当前所在目录的内容。
+Ls will by default listo the contents of the directory that your cell is currently in.
+
+74
+00:04:44,240 --> 00:04:48,980
+因为我们在主文件夹中，所以我可以在没有任何命令和参数的情况下执行ls。
+And because we're in our home folder I can just do ls without any command and arguments.
+
+75
+00:04:49,100 --> 00:04:51,020
+那么让我们继续这样做吧。
+So let's go ahead and do that.
+
+76
+00:04:51,020 --> 00:04:51,710
+我们走吧。
+There we go.
+
+77
+00:04:51,860 --> 00:04:52,740
+所以在那里。
+So in there.
+
+78
+00:04:52,760 --> 00:04:59,150
+现在出来的是，我们可以看到几个不是默认情况下的蓝色单词，来自美国指挥部的蓝色文本表示
+Now what's come out we can see several blue words not by default blue text from the US command indicates
+
+79
+00:04:59,200 --> 00:05:00,200
+文件夹。
+folders.
+
+80
+00:05:00,380 --> 00:05:03,590
+但是为了更清楚地说明这一点，我们可以发出ls命令。
+But to make that clearer we can we can give the ls command.
+
+81
+00:05:03,600 --> 00:05:05,460
+大写的f选项。
+The uppercase f option.
+
+82
+00:05:05,570 --> 00:05:12,440
+所以我们把破折号放在大写的f上，f的意思是把一个人分类，重点放在f上。
+So we put a dash in uppercase f and f is meant to mean classify a guy with emphasis on f..
+
+83
+00:05:12,500 --> 00:05:15,780
+好的，现在当我在f处为LS做这件事时。
+OK so now when I do that for the LS at f.
+
+84
+00:05:15,950 --> 00:05:21,020
+现在我们可以看到文件夹末尾有劈开的项目。
+Now we can see that the items that have a slash at the end of folders.
+
+85
+00:05:21,040 --> 00:05:26,550
+现在，如果我只在主目录中创建一个文件，将单词hello回显到其中。
+Now if I just make a file in our home directory by echoing the word hello into it.
+
+86
+00:05:26,550 --> 00:05:29,770
+我要称它为FILE RTX州。
+I'm going to call it file RTX state.
+
+87
+00:05:29,800 --> 00:05:34,130
+所以我们在这里使用重定向来创建文件，它和您一样，因为它已经创建了。
+So here we're using redirection to create the file there it is like you because it has been made.
+
+88
+00:05:34,130 --> 00:05:40,610
+如果我知道不知道，如果我现在做ls破折号，我们可以看到文件夹后面都有劈开，并且
+If I knew don't if I now do ls dash f we can see that the folders all have Slash's after them and are
+
+89
+00:05:40,610 --> 00:05:41,300
+蓝色的。
+in blue.
+
+90
+00:05:41,480 --> 00:05:45,400
+但是文件本身后面没有劈开，文本也是白色的。
+But the file itself doesn't have a slash after it and its text is in white.
+
+91
+00:05:45,490 --> 00:05:51,190
+因此您可以看到ls命令允许我们查看文件和文件夹文件之间的区别
+So you can see that the ls command allows us to see the difference between files and folders files and
+
+92
+00:05:51,190 --> 00:05:51,860
+目录。
+directories.
+
+93
+00:05:51,940 --> 00:05:53,120
+好的。
+OK.
+
+94
+00:05:53,650 --> 00:05:59,560
+但当然要记住的是，如果我将ls破折号f输出放入另一个名为
+But certainly to bear in mind is if I take that ls dash f output and put that into another file called
+
+95
+00:05:59,560 --> 00:06:01,130
+列出Dotti x。
+List Dotti x.
+
+96
+00:06:01,540 --> 00:06:05,300
+好的，那我打开一张清单，腾讯日。
+Ok then I open up a list RTX day.
+
+97
+00:06:05,830 --> 00:06:14,170
+您可以看到没有颜色，但可以看到文件夹和文件夹之间的区别
+You can see that there is no coloring but you can see the difference between folders and folders and
+
+98
+00:06:14,170 --> 00:06:19,060
+只需查找结尾的内容并对其进行斜杠，然后对所有文件夹和
+files just by looking for the things that end and slashes things and then slashes all the folders and
+
+99
+00:06:19,060 --> 00:06:21,490
+不是所有文件都有的东西。
+the things that don't all of the files.
+
+100
+00:06:21,610 --> 00:06:26,500
+所以您知道，如果您想要将信息保存到文件中，并且能够一目了然，那么这是非常好的
+So you know this is really good if you want to save information to a file and be able to tell at a glance
+
+101
+00:06:26,500 --> 00:06:32,050
+或者让程序一目了然地知道什么是文件夹，什么不是，这样您就可以有选择地对其进行操作
+or make a program tell at a glance what's a folder and what's not so you can selectively operate on
+
+102
+00:06:32,050 --> 00:06:33,140
+有没有特定的文件。
+specific files or not.
+
+103
+00:06:33,150 --> 00:06:34,460
+所以就这么走捷径吧。
+So just to it little shortcut.
+
+104
+00:06:34,610 --> 00:06:35,090
+好的。
+OK.
+
+105
+00:06:35,320 --> 00:06:40,960
+现在有一个比f选项更有用的选项，ls命令的选项是l选项。
+Now a much more useful option than the f option the option for the ls command is the l option.
+
+106
+00:06:40,960 --> 00:06:44,710
+现在，如果我做了l，破折号，让我先清除屏幕。
+Now if I do ls dash l let me clear the screen first.
+
+107
+00:06:44,710 --> 00:06:50,620
+如果我使用ls-破折号l，这会将所有内容都放在长表单格式中，您可以告诉我我们得到了很多
+If I do ls dash l this puts everything in the long form format and you can tell me that we get a lot
+
+108
+00:06:50,620 --> 00:06:55,450
+有关我们的文件和目录的更多信息，包括左侧的文件权限。
+more information about our files and directories including the file permissions over here on the left.
+
+109
+00:06:55,530 --> 00:06:55,980
+好的。
+OK.
+
+110
+00:06:56,080 --> 00:06:58,560
+任何以D开头的都是目录。
+Anything that starts with a D is a directory.
+
+111
+00:06:58,770 --> 00:06:59,350
+好的。
+OK.
+
+112
+00:06:59,470 --> 00:07:06,550
+然后这个文件权限，因此对于用户来说，读写执行的是用户所在的组。
+And then this file permissions so for the user read write execute for the group the user is in the group.
+
+113
+00:07:06,580 --> 00:07:08,670
+这里是这一栏，用户就是这一栏。
+Being here is this column the user is this column.
+
+114
+00:07:08,710 --> 00:07:14,500
+因此，用户对组的读写执行只读，不执行写，对其他所有人都不读写
+So the user read write execute for the group just read and execute no writing and for everyone else
+
+115
+00:07:14,500 --> 00:07:16,840
+只是阅读和执行。
+just reading and executing.
+
+116
+00:07:16,840 --> 00:07:23,350
+然后您就有了该文件所属的组所属的用户以及该文件所属的组的大小
+Then you've got the user the the that the file belongs to the group the file belongs to how large the
+
+117
+00:07:23,350 --> 00:07:28,120
+文件是上次编辑的时间，以及文件的实际名称。
+file is when it was last edited and what the file is actually called.
+
+118
+00:07:28,330 --> 00:07:34,750
+好的，这是一个破折号元素，这是一个您可能非常经常使用的命令，因为
+OK so this is a this is the dash element is a command that you use probably very very often because
+
+119
+00:07:34,750 --> 00:07:40,510
+您可以获得很多关于文件的信息，而不仅仅是使用普通的ls命令。
+you can get a lot of information about your files much more than just using the normal ls command.
+
+120
+00:07:40,510 --> 00:07:44,950
+我应该提到的另一件事是，这里的这一列和文件中的所有数字都会调整如下大小
+The other thing I should mention is that this column here with all the numbers in the file sizes this
+
+121
+00:07:44,950 --> 00:07:50,800
+显示文件大小(以字节为单位)，为了使其更清楚，您不仅可以给出ls命令
+shows the file size in bytes and to make that a bit clearer and you can give the ls command not only
+
+122
+00:07:50,800 --> 00:07:56,320
+l选项以及HATE选项和HATE选项代表人类可读，它使文件变得可读
+the l option but also the hate option and the hate option stands for human readable it makes the file
+
+123
+00:07:56,320 --> 00:07:58,230
+大小更容易阅读。
+size a bit easier to read.
+
+124
+00:07:58,360 --> 00:08:04,270
+所以如果我们做ls Dasch El-Hage，我们现在可以看到它告诉我们桌面的东西大约是4
+So if we do ls Dasch El-Hage we can now see that it's telling us that the desktop thing is about four
+
+125
+00:08:04,270 --> 00:08:05,260
+千字节。
+kilobytes.
+
+126
+00:08:05,260 --> 00:08:07,420
+这大约是4千字节。
+This is about four kilobytes.
+
+127
+00:08:07,420 --> 00:08:08,890
+这个只有6个字节。
+This one is just six bytes.
+
+128
+00:08:08,890 --> 00:08:12,940
+这是93个字节，如果你有兆字节大小的东西，这些是4千字节
+This is ninety three bytes and these are four kilobytes if you have things that are megabytes in size
+
+129
+00:08:12,940 --> 00:08:13,320
+会的。
+it would.
+
+130
+00:08:13,350 --> 00:08:14,610
+它会说是EM。
+It would say an EM.
+
+131
+00:08:14,740 --> 00:08:18,270
+如果你有的东西是你知道的千兆字节大小，它会是一个G。
+If you had things that were you know gigabytes in size it would say a G.
+
+132
+00:08:18,310 --> 00:08:21,010
+一般说来，这只会让这些东西更容易阅读。
+And in general it just makes the stuff a bit easier to read.
+
+133
+00:08:21,040 --> 00:08:26,070
+在LS破折号的情况下，选项为您已获得该文件的权限。
+The case of the LS dash with the option you've got the permissions on the file.
+
+134
+00:08:26,110 --> 00:08:27,270
+所以它以D开头。
+So it begins with a D.
+
+135
+00:08:27,280 --> 00:08:28,960
+这是一个以破折号开头的目录。
+It's a directory it begins with a dash.
+
+136
+00:08:28,960 --> 00:08:30,080
+这只是一个文件。
+It's just a file.
+
+137
+00:08:30,160 --> 00:08:37,210
+前三项是用户的读、写、执行权限，下一项是组的权限
+The first three things are the permissions for the user read write execute the next one is for the group
+
+138
+00:08:37,610 --> 00:08:38,810
+文件在里面。
+that the file is in.
+
+139
+00:08:38,810 --> 00:08:41,460
+在这种情况下，它只具有读取和执行权限，但没有权限。
+In this case it just has read and execute but no right.
+
+140
+00:08:41,470 --> 00:08:43,800
+然后这第三栏是给其他所有人的。
+And then this third column is for everyone else.
+
+141
+00:08:43,870 --> 00:08:44,630
+这是1号。
+This is the No.
+
+142
+00:08:44,650 --> 00:08:46,210
+所以，从这个意义上讲，只需阅读和执行即可。
+So just read and execute in that sense.
+
+143
+00:08:46,210 --> 00:08:49,500
+这是指向文件的硬链接的数量，但不要担心这些。
+This is the amount of hard links to the file but don't worry about those.
+
+144
+00:08:49,510 --> 00:08:51,630
+这是使用该文件所属的。
+This is the use of the file belongs to.
+
+145
+00:08:51,670 --> 00:08:53,930
+这是该文件所属的组。
+This is the group the file belongs to.
+
+146
+00:08:54,100 --> 00:08:56,620
+这是以字节为单位的文件大小。
+This is the file size in bytes.
+
+147
+00:08:56,650 --> 00:09:02,230
+这是上次编辑文件的日期，然后是文件本身。
+This is the date the file was last edited and then this is the file itself.
+
+148
+00:09:02,240 --> 00:09:06,200
+好的，我会确保在这一节的末尾有关于CHICHI的信息。
+OK so I'll make sure that the information is available on the Chichi at the end of the section.
+
+149
+00:09:06,310 --> 00:09:08,550
+但现在你可以开始看我是否清除了屏幕。
+But now you can start to see if I clear the screen.
+
+150
+00:09:08,660 --> 00:09:13,770
+现在，我们可以使用PWT命令来查看LS命令所处的位置，以查看我们周围的情况。
+We can now use the PWT command to see where we are on the LS command to see what's around us.
+
+151
+00:09:13,840 --> 00:09:19,960
+剩下要理解的就是如何使用cd命令来实际更改我们所处的位置
+All that's left to be able to understand is how to use the CD command to actually change where we are
+
+152
+00:09:19,960 --> 00:09:22,520
+这样我们就可以四处走动了。
+on the file system so that we can move about.
+
+153
+00:09:22,720 --> 00:09:26,710
+但我认为，从时间上看，我们还是把它留到下一个视频中去吧。
+But I think in the interests of time we're going to save that until the next video.
+
+154
+00:09:27,010 --> 00:09:31,370
+接下来，我们将介绍如何使用cd命令实际更改您所在的位置
+So in the next we're going to be covering how to use the CD command to actually change where you are
+
+155
+00:09:31,370 --> 00:09:36,940
+，我还将通过几个示例来了解这三个命令是如何协同工作的
+on the file system and also be going through a few examples to see how these three commands work together
+
+156
+00:09:37,150 --> 00:09:41,780
+以帮助您在文件系统中导航，速度远远快于仅使用指向和单击就可以实现的速度。
+to help you navigate the file system much faster than would be possible using just pointing and clicking.
+
+157
+00:09:41,920 --> 00:09:44,680
+好了，我会在下一个视频中见到你。
+So for all that goodness I'll see you in the next video.
+

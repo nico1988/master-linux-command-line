@@ -1,0 +1,1235 @@
+1
+00:00:00,240 --> 00:00:01,720
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,790 --> 00:00:06,610
+在上一个视频中，您看到了如何从头开始编译源代码并将其安装到您的机器上。
+In the last video you saw how you can compile source code from scratch and install it on your machine.
+
+3
+00:00:06,810 --> 00:00:11,190
+这是了解和定制您的计算机上运行的软件的一个很好的过程。
+And this is a great process for understanding and customizing the software running on your computer.
+
+4
+00:00:11,250 --> 00:00:14,590
+但对于大多数日常事务来说，这通常只是工作量有点太大了。
+But for most everyday things it's usually just a bit too much work.
+
+5
+00:00:14,730 --> 00:00:18,990
+那么，如果您有一个可以浏览的软件库，并且所有的软件都已预编译并准备就绪，那又会怎么样呢
+So what if you have a library of software that you can browse and have all pre-compiled and ready to
+
+6
+00:00:18,990 --> 00:00:22,570
+按一下按钮或一个命令就可以了。
+go with a push of a button or one of a command.
+
+7
+00:00:22,950 --> 00:00:26,400
+这正是软件存储库和包管理器的作用所在。
+Well that's exactly what the software repositories and package managers are for.
+
+8
+00:00:26,460 --> 00:00:29,060
+在这段视频中，我们将介绍它们的全部内容。
+And in this video we'll be covering what they're all about.
+
+9
+00:00:29,060 --> 00:00:32,610
+在本视频中，您将了解可用的不同软件存储库
+So in this video you're going to learn about the different software repositories that are available
+
+10
+00:00:32,610 --> 00:00:36,350
+以及如何使用在线网站搜索它们。
+on the buntu and how to search them using the online Web sites.
+
+11
+00:00:36,540 --> 00:00:39,860
+在视频结束时，您将知道不同的存储库是什么。
+And by the end of the video you'll know what the different repositories are.
+
+12
+00:00:40,020 --> 00:00:42,630
+您也知道什么是包管理器。
+And you also know what a package manager is.
+
+13
+00:00:42,630 --> 00:00:45,230
+所以这堂课将会塞满有用的信息。
+So this lecture is going to be jam packed with useful information.
+
+14
+00:00:45,240 --> 00:00:47,170
+让我们继续直截了当地谈吧。
+Let's go ahead and get right into it.
+
+15
+00:00:48,470 --> 00:00:52,000
+好的，我们需要知道的第一件事是什么是软件存储库。
+OK so the first thing we need to know is what a software repository is.
+
+16
+00:00:52,190 --> 00:00:56,280
+因此，可以将软件存储库看作一个装满软件的大库。
+So think of a software repository as a big library filled with software.
+
+17
+00:00:56,360 --> 00:01:00,530
+然后，当你去图书馆的时候，你可以搜索你能读到的关于你可以看的书的书
+Then when you go to a library you can search for books you can read about the books you can look at
+
+18
+00:01:00,530 --> 00:01:04,910
+不同版本的书，你可以比较哪些书你可能想借，然后
+different versions of the books and you can compare which books that you might want to borrow and then
+
+19
+00:01:04,910 --> 00:01:06,110
+去图书馆借书吧。
+check them out at the library.
+
+20
+00:01:06,200 --> 00:01:10,770
+软件存储库就像一个库，只不过您不必归还软件。
+And a software repository is like a library except you don't have to give the software back.
+
+21
+00:01:10,850 --> 00:01:15,230
+更好的是，当出现新版本的软件时，您可以自动更新该版本
+And even better when a new version of the software comes along you can automatically update that piece
+
+22
+00:01:15,230 --> 00:01:20,690
+的软件和整个系统上的所有软件升级到新版本，这些新版本可通过
+of software and all the software on your entire system to the new versions that are available with a
+
+23
+00:01:20,690 --> 00:01:21,410
+简单的命令。
+simple command.
+
+24
+00:01:21,410 --> 00:01:26,480
+这有助于保持您的系统的安全和可靠，也是完全史诗般的。
+And this helps keep your system secure and reliable and is also totally epic.
+
+25
+00:01:26,540 --> 00:01:31,160
+现在，在BUNTU中有四个不同的存储库，每个存储库存储不同类型的
+Now in a buntu there are four different repositories and each repository stores a different type of
+
+26
+00:01:31,160 --> 00:01:36,920
+软件，并在Buntu的主网站(Buntu.com)上对它们进行了描述。
+software and they are described on the main web site for buntu which is a buntu dot com.
+
+27
+00:01:36,920 --> 00:01:42,830
+现在，如果我们去帮助Buntu.com，为劈开存储库创建一个大写的劈开社区
+Now if we head over to help the buntu dot com for a slash community for Slash repositories with a capital
+
+28
+00:01:42,830 --> 00:01:47,880
+都是以其应收差饷入本而闻名的，顺便提一下，你在资源上放了个环节。
+are known for its rateable into the capital you put a link in the resources by the way.
+
+29
+00:01:48,020 --> 00:01:52,280
+如果我们转到那里，我们将看到关于不同存储库的信息。
+If we head over to that we'll see information about the different repositories.
+
+30
+00:01:52,280 --> 00:01:56,690
+好的，你可以在这里看到一个部分，上面写着什么是存储库，你可以在那里看到一个Buntu的存储库
+OK so you see a section here that says what are the repositories and you can see that for a buntu there
+
+31
+00:01:56,690 --> 00:01:58,750
+有四个主要的存储库。
+are four main repositories.
+
+32
+00:01:58,940 --> 00:02:05,660
+现在，主存储库是保存所有活动维护的软件的存储库，并且
+Now the main repository is the repository that holds all the software that is actively maintained and
+
+33
+00:02:05,690 --> 00:02:10,810
+由Canonical和Canonical更新的是创造了Buntu的公司。
+updated by Canonical and Canonical is the company that created a buntu.
+
+34
+00:02:10,820 --> 00:02:15,420
+现在，那里的所有软件都是免费的，就像自由一样，而且也是开放源码的。
+Now all the software in there is free as in freedom and is also open source.
+
+35
+00:02:15,500 --> 00:02:16,050
+好的。
+OK.
+
+36
+00:02:16,130 --> 00:02:21,980
+现在主存储库是最可靠的存储库，您应该尝试从合适的存储库中进行选择
+Now the main repository is the most reliable repository and you should try and select from suitable
+
+37
+00:02:21,980 --> 00:02:26,480
+在可能的情况下，第一时间将软件放入主存储库中。
+software in the main repository at the first instance where possible.
+
+38
+00:02:26,480 --> 00:02:29,710
+现在，第二个开放的存储库是语义库。
+Now the second open to repository is the universe repository.
+
+39
+00:02:29,720 --> 00:02:34,490
+现在，这个存储库中的软件也是免费的，它也是开放源码的。
+Now software in this repository is also free as in freedom and it's also open source.
+
+40
+00:02:34,520 --> 00:02:39,380
+然而，它不是由Canonical维护的，而是由Buntu社区维护的，因此
+However instead of being maintained by Canonical it is maintained by the buntu community and as a result
+
+41
+00:02:39,410 --> 00:02:45,400
+因此，从理论上讲，它可能没有主存储库那么严格，也更容易出现错误。
+it is therefore theoretically maybe less rigorous and more prone to bugs than the main repository.
+
+42
+00:02:45,410 --> 00:02:46,970
+但大多数情况下，这是非常棒的。
+But most of the time it's fantastic.
+
+43
+00:02:46,970 --> 00:02:54,020
+根据我现在的经验，开放系统中的第三个存储库是受限存储库和限制性存储库
+In my experience now the third repository in the open system is the restricted repository and the restrictive
+
+44
+00:02:54,020 --> 00:03:00,260
+存储库包括公司特定设备(如无线网卡)的专有软件和驱动程序
+repository includes proprietary software and drivers for company specific devices such as wireless cards
+
+45
+00:03:00,260 --> 00:03:01,070
+诸若此类。
+and so on.
+
+46
+00:03:01,460 --> 00:03:06,260
+现在，此存储库有助于确保计算机上的设备更有可能在
+Now this repository helps ensure that the device on your computer are more likely to work out of the
+
+47
+00:03:06,260 --> 00:03:06,680
+盒。
+box.
+
+48
+00:03:06,680 --> 00:03:07,350
+我们可以说。
+Shall we say.
+
+49
+00:03:07,450 --> 00:03:11,900
+但软件通常是专有的，因此通常不会给你另一个软件的自由
+But the software is usually proprietary and therefore doesn't usually give you the freedoms of the other
+
+50
+00:03:11,900 --> 00:03:13,370
+它给你提供的软件。
+software it gives you.
+
+51
+00:03:13,370 --> 00:03:18,320
+此外，您可能能够也可能无法在受限的
+Also you might or might not be able to directly examine the source code of the software in the restricted
+
+52
+00:03:18,320 --> 00:03:19,760
+存储库和这取决于。
+repository and this depend.
+
+53
+00:03:19,760 --> 00:03:22,440
+这取决于特定的用例。
+This depends on the specific use case.
+
+54
+00:03:22,700 --> 00:03:29,480
+第四个也是最后一个存储库是包含软件的MultiVerse存储库非驾车者存储库
+And the fourth and final repository is the multiverse repository non-motorists repository contains software
+
+55
+00:03:29,480 --> 00:03:32,890
+这要么受到版权问题的限制，要么受到法律问题的限制。
+that is restricted either by copyright or legal issues.
+
+56
+00:03:32,900 --> 00:03:37,420
+Multiverse存储库中的软件可能有也可能没有可访问的源代码。
+The software in the multiverse repository might or might not have accessible source code.
+
+57
+00:03:37,520 --> 00:03:42,620
+您可以在这里看到，Buntu的理念通常是让用户选择使用什么软件
+You can see here that the buntu philosophy is generally about giving the user choice about what software
+
+58
+00:03:42,620 --> 00:03:44,000
+他们想要利用。
+they want to use.
+
+59
+00:03:44,000 --> 00:03:48,380
+有两个免费的开源存储库，一个是主存储库，另一个是通用存储库
+There are two repositories that are free and open source which are the main and the universe repositories
+
+60
+00:03:48,710 --> 00:03:53,920
+还有另外两个资源库，它们在开源或软件所在的位置都不是免费的
+and there are two other repositories which which aren't free at open source or where the software is
+
+61
+00:03:53,930 --> 00:03:55,480
+不太可能是这样的。
+unlikely to be so.
+
+62
+00:03:55,490 --> 00:04:00,380
+因此，对一些人来说，使用非自由软件是可恶的，是完全不能接受的，而对另一些人来说
+So to some people using non-free software is abhorrent and completely unacceptable whereas to others
+
+63
+00:04:00,380 --> 00:04:02,480
+如果它能完成这项工作就好了。
+it will be fine if it gets the job done.
+
+64
+00:04:02,630 --> 00:04:05,040
+没有本图把这个选择留给你。
+No buntu leaves that choice up to you.
+
+65
+00:04:05,300 --> 00:04:10,790
+但是如果像Fedora这样的发行版只在存储库中包含自由软件，而不包括
+But if the distributions such as Fedora only include free software in the repositories and do not include
+
+66
+00:04:10,790 --> 00:04:12,460
+非免费的软件。
+software that is non-free.
+
+67
+00:04:12,530 --> 00:04:16,850
+现在，这可能会造成减少不便，但它还有其他好处。
+Now this could cause reductions inconvenience but it has other benefits.
+
+68
+00:04:16,940 --> 00:04:20,070
+现在，邦图让你自己选择你喜欢什么。
+Now buntu leaves the choice up to you as to what you prefer.
+
+69
+00:04:20,270 --> 00:04:24,320
+现在，您已经了解了有关自由软件的辩论，您可以更好地进行选择
+And now that you've been informed about the free software debate you are in a better position to choose
+
+70
+00:04:24,320 --> 00:04:25,250
+为了你自己。
+for yourself.
+
+71
+00:04:25,310 --> 00:04:29,630
+现在我们了解了什么是BUNTU存储库，以及它们之间的区别
+So now that we understand what the for buntu repositories are and the differences between them let me
+
+72
+00:04:29,630 --> 00:04:31,060
+带你去他们在网上闲逛的地方。
+show you where they hang out online.
+
+73
+00:04:31,080 --> 00:04:36,640
+不，我不是指社交媒体，但是有一个叫做“包之门打开到.com”的链接。
+No I don't mean social media but there's a link called packages door open to dot com.
+
+74
+00:04:36,690 --> 00:04:42,350
+因此，如果我们转到这里，我们可以浏览软件包列表，我们可以看到不同的
+So if we head over to that here we can browse through the list of packages and we can see different
+
+75
+00:04:42,350 --> 00:04:46,890
+链接取决于我们运行的Buntu版本。
+links depending upon what version of a buntu that we're running.
+
+76
+00:04:46,910 --> 00:04:51,720
+现在，每个新发布的Buntu的代号都会按字母顺序更改。
+Now the code name will change for every new release of a buntu in alphabetical order.
+
+77
+00:04:51,920 --> 00:04:59,080
+举个例子，现在的这个叫作艺术性的土豚或简称为艺术性的。
+So for example the current one is called artful aardvark or artful for short.
+
+78
+00:04:59,180 --> 00:05:01,940
+您可以看到您的发行版的代码名是什么。
+And you can see what the code name for your distribution is.
+
+79
+00:05:01,940 --> 00:05:03,870
+通过在命令行中使用此命令。
+By using this command in the command line.
+
+80
+00:05:03,890 --> 00:05:05,940
+打开您的终端，然后输入它。
+Open up your terminal and you type it.
+
+81
+00:05:05,940 --> 00:05:07,410
+LS B下划线。
+LS B underscore.
+
+82
+00:05:07,460 --> 00:05:11,590
+释放一个K，你给它一个选项，它就会。
+Release a K and you give it the option and it will.
+
+83
+00:05:11,600 --> 00:05:16,250
+它将打印出有关您的Buntu发行版的所有信息，您可以看到我的信息名为
+It will print out all the information about your buntu distribution and you can see that mine is called
+
+84
+00:05:16,310 --> 00:05:20,820
+可怕的食蚁兽，它在底部告诉我，这个代号很巧妙。
+awful Aardvark and it tells me at the bottom here the code name is artful.
+
+85
+00:05:20,870 --> 00:05:28,670
+因此，我会单击您可以在此处看到的巧妙链接，打开查看适用的软件包
+So I would click on the artful link which you can see here to open at see what packages are applicable
+
+86
+00:05:28,670 --> 00:05:28,940
+对我来说。
+to me.
+
+87
+00:05:28,960 --> 00:05:32,960
+但是当你看这个视频的时候，你可以点击任何适合你的代号。
+But you can click on whatever code name is appropriate for you when you watch this video.
+
+88
+00:05:32,990 --> 00:05:34,700
+好的，它的工作原理基本上是一样的。
+OK it all works basically the same.
+
+89
+00:05:34,850 --> 00:05:39,980
+现在这里是所有包类别的包好的，所以你可以看到一大堆类别
+Now in here are all the packages of package categories OK so you can see a whole bunch of categories
+
+90
+00:05:40,370 --> 00:05:41,650
+在这里。
+in here.
+
+91
+00:05:41,870 --> 00:05:44,700
+您可以看到，例如，我们有用于Web服务器的东西。
+You can see for example we've got things for web servers.
+
+92
+00:05:44,700 --> 00:05:52,240
+你可以看到我们有字体的东西，我们有编辑器，我们有文档数据库管理
+You can see things that we've got for fonts we've got editors we've got documentation databases administration
+
+93
+00:05:52,240 --> 00:05:58,700
+实用程序和一大堆编程语言Peifer和文本处理视频。
+utilities and a whole lot of programming languages Peifer and text processing video.
+
+94
+00:05:58,720 --> 00:05:59,670
+它就这样没完没了地继续下去。
+It just goes on and on.
+
+95
+00:05:59,670 --> 00:06:01,140
+好的，这么多不同的东西。
+Ok so many different things.
+
+96
+00:06:01,210 --> 00:06:02,250
+这些只是分类。
+And these are just categories.
+
+97
+00:06:02,250 --> 00:06:05,370
+好的，这会破坏每个类别中不同的包。
+OK so this blows the different packages inside each of these categories.
+
+98
+00:06:05,410 --> 00:06:09,130
+但是如果我们向下滚动，我们会注意到下面有几个重要的链接。
+But if we scroll down we'll notice that there's a couple of important links down here.
+
+99
+00:06:09,130 --> 00:06:11,050
+我们有“所有套餐”链接。
+We've got the all packages link.
+
+100
+00:06:11,200 --> 00:06:14,850
+我们得到了压缩后的文本列表，所以这里的这个只是一个。
+We've got the compact compressed text list so this one here is just a.
+
+101
+00:06:15,120 --> 00:06:22,990
+如果我在新的选项卡中打开它，我们可以看到它只是一种文本文件，其中包含每个
+If I open it in a new tab we can see that it's just a kind of text file here with a list of every single
+
+102
+00:06:22,990 --> 00:06:24,410
+其中一个包裹。
+one of the packages.
+
+103
+00:06:24,520 --> 00:06:30,160
+我在准备课程的时候下载了这个文本文件，并通过字数统计命令运行了它
+And I downloaded this text file when I was preparing the course and ran it through the word count command
+
+104
+00:06:30,160 --> 00:06:35,740
+并统计了剪切任何表头信息后的行数，发现有74000行
+and counted the amount of lines after cutting any header information and found that there was 74000
+
+105
+00:06:35,800 --> 00:06:39,150
+还有六十个包裹，这太疯狂了。
+and sixty packages which is crazy.
+
+106
+00:06:39,340 --> 00:06:40,980
+但你知道它就在那里等着你玩。
+But you know it's there for you to play with.
+
+107
+00:06:41,020 --> 00:06:43,690
+我要关门了，但我们对这段视频不感兴趣。
+I'm just going to close up but we're not interested in that for this video.
+
+108
+00:06:43,690 --> 00:06:48,460
+我们感兴趣的是这里的链接，它显示所有包，如果我单击它，它将打开
+What we're interested in is this link here that says all packages and if I click that it'll open up
+
+109
+00:06:48,520 --> 00:06:56,260
+一个显示所有包的网页，所以让我们等待一下加载。
+a web page that shows you all the packages so let's just wait for that to load up a second.
+
+110
+00:06:56,290 --> 00:06:57,430
+所以我们就到这里了。
+So there we are.
+
+111
+00:06:57,430 --> 00:07:01,770
+现在我们得到一个网页，它给我们提供了到Buntu中每个可用包的链接。
+So now we get a web page that gives us a link to each available package in a buntu.
+
+112
+00:07:01,870 --> 00:07:07,660
+您可能会注意到，它在方括号中显示了这些内容来自哪个存储库，所以我们
+And you may notice that it shows you in square brackets which repository the things came from so we
+
+113
+00:07:07,660 --> 00:07:13,570
+在这里可以看到这个零高清软件包来自宇宙存储库。
+can see here that this zero HD package came from the universe repository.
+
+114
+00:07:13,570 --> 00:07:17,800
+如果我们向下滚动，我们也可以看到一些来自其他存储库的内容
+And if we scroll down we'll be able to see some that come from other repositories as well we see and
+
+115
+00:07:17,800 --> 00:07:20,440
+我们从宇宙储存库B.S.这里得到了很多东西。
+we're getting a lot from the universe repository B.S. here.
+
+116
+00:07:20,440 --> 00:07:22,870
+我们有一个来自多重诗篇。
+We've got one coming from multi-verse.
+
+117
+00:07:23,160 --> 00:07:28,270
+如果你发现一个包裹旁边没有方括号里的任何东西，那就意味着它是
+And if you find a package that doesn't have anything in a square brackets next to it that means it's
+
+118
+00:07:28,270 --> 00:07:30,270
+从主储存库。
+from the main repository.
+
+119
+00:07:30,430 --> 00:07:35,200
+举个例子，这里有一张自由党的长椅，你可以看到它旁边没有任何东西。
+So for example there's a lib bench and you can see it doesn't have anything next to it.
+
+120
+00:07:35,470 --> 00:07:37,750
+这意味着它来自主存储库。
+That means it comes from the main repository.
+
+121
+00:07:37,860 --> 00:07:40,630
+我想这也是需要注意的事情。
+Guess that's just something to be aware of as well.
+
+122
+00:07:40,690 --> 00:07:45,520
+但是现在，出于本视频的目的，让我们继续点击顶部链接This This Package
+But for now for the purposes of this video let's just go ahead and click on the top link this this package
+
+123
+00:07:45,760 --> 00:07:47,410
+一天打电话给零。
+called Zero a day.
+
+124
+00:07:47,420 --> 00:07:53,170
+当我们单击它时，它会注意到一个新的网页打开，我们看到该包被称为
+And when we click on it will notice that a new web page opens and we see that the package is called
+
+125
+00:07:53,170 --> 00:07:53,960
+身份证为零。
+Zero ID.
+
+126
+00:07:54,010 --> 00:07:55,610
+我们可以看到包名或顶部。
+We can see the package name or the top.
+
+127
+00:07:55,810 --> 00:08:00,580
+然后在这些括号中，我们可以看到软件包的版本号。
+And then in these parentheses we can see the version number of the package.
+
+128
+00:08:00,760 --> 00:08:05,380
+然后我们可以在方括号中看到软件包来自的存储库。
+And then we can see in the square brackets the repository that the package has come from.
+
+129
+00:08:05,380 --> 00:08:09,790
+正如我所说的，如果没有这样的信息，那么它来自主存储库。
+And as I said if there isn't any such information then it's from the main repository.
+
+130
+00:08:10,030 --> 00:08:11,230
+好的。
+OK.
+
+131
+00:08:11,560 --> 00:08:17,230
+正如我们所知，宇宙存储库包含大多数内容免费和开放源码软件，但它
+And as we know the universe repository contains most content free and open source software but it's
+
+132
+00:08:17,230 --> 00:08:21,910
+由社区维护，不会收到来自Buntu开发人员的任何正式更新或维护
+maintained by the community and doesn't receive any formal updates or maintenance from the buntu developers
+
+133
+00:08:22,240 --> 00:08:23,440
+在Canonical。
+at canonical.
+
+134
+00:08:23,440 --> 00:08:31,840
+然后在下面我们可以看到一个名为Other Packages OK的列表，该列表与此软件包相关
+Then underneath that we can see a list called other packages OK that are related to this package and
+
+135
+00:08:31,840 --> 00:08:36,220
+我们可以看到，在这里的括号中可能有所需的版本号。
+we can see that we may have required version numbers in these parentheses here.
+
+136
+00:08:36,220 --> 00:08:42,560
+因此，例如，此DP K.G.包必须大于或等于版本1.1和5.6。
+So for example this DP K.G. package must be greater than or equal to version 1.1 5.6.
+
+137
+00:08:42,660 --> 00:08:43,050
+好吧。
+Okay.
+
+138
+00:08:43,180 --> 00:08:47,410
+您可以看到，有相当多不同的包与此相关。
+And you can see that there's quite a few different packages that are related to this one.
+
+139
+00:08:47,470 --> 00:08:47,770
+好的。
+OK.
+
+140
+00:08:47,800 --> 00:08:51,640
+你可以看到它们的前面也有一个特殊的标志。
+And you can see that they have a special symbol at the front as well.
+
+141
+00:08:51,660 --> 00:08:55,610
+我们可以看到红色意味着它取决于这个包裹。
+And we can see that red means that it depends on this package.
+
+142
+00:08:55,730 --> 00:09:01,500
+好的，红点表示零Adey包依赖于这些包。
+OK so the red dot means that the zero Adey package depends on these packages.
+
+143
+00:09:01,780 --> 00:09:08,800
+这意味着要安装0 A.D.，我们需要安装前面有红点的所有这些软件包
+So that means in order to install 0 A.D. We need to install all of these packages with red dots in front
+
+144
+00:09:08,800 --> 00:09:09,910
+他们也是如此。
+of them as well.
+
+145
+00:09:09,910 --> 00:09:15,880
+如果我们希望零80正常工作，但是红点不是唯一可以出现在包裹旁边的符号
+If we want zero 80 to work OK but the red dot isn't the only symbol that can appear next to a package
+
+146
+00:09:15,940 --> 00:09:19,420
+在包装较少的情况下，我们可以看到还有其他的符号。
+in the package is less we can see that there are other symbols as well.
+
+147
+00:09:19,510 --> 00:09:20,050
+好的。
+OK.
+
+148
+00:09:20,050 --> 00:09:24,700
+所以你可以在上面的钥匙上看到包裹旁边的绿色菱形表示AD为零
+So you can see on the key up here that the green diamond next to a package means that zero A.D. would
+
+149
+00:09:24,700 --> 00:09:27,290
+建议您安装另一个软件包。
+recommend you to install another package.
+
+150
+00:09:27,340 --> 00:09:28,840
+所以让我们把这个问题说得更笼统一点。
+So let's make this a bit more general.
+
+151
+00:09:28,880 --> 00:09:32,450
+这就是你想要安装的软件包，这就是我们的案例0 8。
+That's called a package that you want to install which is our case 0 8.
+
+152
+00:09:32,590 --> 00:09:33,640
+让我们称其为包裹。
+Let's call that package.
+
+153
+00:09:33,790 --> 00:09:38,120
+好的，那么让我们将其他包列表中的随机包称为包B，即CAPE。
+Ok then let's call a random package in the other packages list package B the Cape.
+
+154
+00:09:38,140 --> 00:09:44,740
+因此，如果A包推荐B包，这意味着为了使A包正常工作，我们
+So if package a recommends package B that means that in order for package a to function normally we
+
+155
+00:09:44,740 --> 00:09:48,210
+应该得到包B，但是包A在没有它的情况下也会起作用。
+should get package B but package a will function without it.
+
+156
+00:09:48,280 --> 00:09:52,700
+好的，那么蓝色方块会说a套餐建议给我们，还有其他套餐。
+OK then the blue square would say that package a suggested to us and other package.
+
+157
+00:09:52,750 --> 00:09:53,150
+好的。
+OK.
+
+158
+00:09:53,260 --> 00:09:59,480
+所以推荐意味着它不需要它也可以工作，但我们建议您正常使用。
+So recommends means that it will function without it but we recommend it for normal use.
+
+159
+00:09:59,500 --> 00:09:59,820
+好的。
+OK.
+
+160
+00:09:59,830 --> 00:10:01,340
+依赖意味着它不会起作用。
+Dependence means it won't work.
+
+161
+00:10:01,390 --> 00:10:06,370
+如果您没有获得这些推荐的软件包，则意味着它将会工作，但不会像您预想的那样工作
+If you don't get these packages recommended means it will work but not not like how you know it should
+
+162
+00:10:07,780 --> 00:10:13,330
+建议包只是一些完全可选的东西，你可能会想要检查的东西。
+suggest package is just some entirely optional stuff that things you might like to check out.
+
+163
+00:10:13,390 --> 00:10:13,970
+好的。
+OK.
+
+164
+00:10:13,970 --> 00:10:21,240
+最后一个是用黑点增强任何东西，这意味着它增强了
+And the final one is the enhances anything with a black dot means it enhances the current package in
+
+165
+00:10:21,250 --> 00:10:23,410
+以这样或那样的方式，可能是新功能带来的新功能。
+some way or another maybe new through New features.
+
+166
+00:10:23,410 --> 00:10:25,080
+但这也不是必需的。
+But again it's not required.
+
+167
+00:10:25,150 --> 00:10:25,570
+好的。
+OK.
+
+168
+00:10:25,720 --> 00:10:32,230
+如果我们向下滚动到这一页的底部，我们可以看到大小，我们可以看到包裹的大小
+And if we scroll down to the bottom of this page we can see the sizes we can see what size the package
+
+169
+00:10:32,260 --> 00:10:38,020
+是下载，我们可以看到它的大小，当它被压缩并安装时，我们还可以
+is to download and we can see what size it is when it's on compressed and installed and we can also
+
+170
+00:10:38,020 --> 00:10:44,370
+查看每个包包含哪些有用的文件，以便您可以单击。
+see what what the files each package contains which is useful so you can click on that.
+
+171
+00:10:44,380 --> 00:10:48,960
+您可以看到每个软件包包含的每个文件的列表，并且可以看到不同的
+You can see a list of each of the files that each package contains and you can see that there's different
+
+172
+00:10:48,960 --> 00:10:51,420
+适用于不同计算机体系结构的软件包。
+packages for different computer architecture.
+
+173
+00:10:51,430 --> 00:10:57,120
+例如，如果您有一个计算机体系结构，作为EMT64体系结构，您可以下载
+So for example if you've got a computer architecture that as an EMT 64 architecture you can download
+
+174
+00:10:57,120 --> 00:11:03,870
+这是一个软件包，如果你有一个适用于386计算机体系结构的软件包，你可以下载这个软件包
+this one package and if you've got one for the 386 computer architecture you would download this package
+
+175
+00:11:04,170 --> 00:11:10,080
+您可以通过打开终端并键入您的名字DASH来查看计算机的体系结构。
+and you can see the computer's architecture by opening up the terminal and typing you name dash.
+
+176
+00:11:10,360 --> 00:11:13,100
+好的，我们可以看到，在我们的虚拟机中，我们有。
+OK we can see that in our virtual machine we have the.
+
+177
+00:11:13,140 --> 00:11:16,340
+我们在x8664架构上运行。
+We're running on an x 86 64 architecture.
+
+178
+00:11:16,410 --> 00:11:20,820
+现在我64岁了，和X86 64岁一样。
+Now I am 64 and X 86 64 are the same.
+
+179
+00:11:20,820 --> 00:11:26,340
+因此，我们会得到最适合我们这里的HMD64软件包。
+So we would get the HMD 64 package is most appropriate for us here.
+
+180
+00:11:26,380 --> 00:11:33,630
+现在，如果您只安装了X86，那么您可以下载IDE 386软件包，因为它可能就是
+Now if you just get X 86 then then you download the IDE 386 package because that's probably the one
+
+181
+00:11:33,630 --> 00:11:36,190
+最适合您的计算机。
+most and most appropriate for your computer.
+
+182
+00:11:36,300 --> 00:11:38,180
+所以他们可能在想，等一下，齐亚德。
+So they might be thinking wait a minute Ziyad.
+
+183
+00:11:38,190 --> 00:11:39,240
+等一下等一下。
+Hold on hold on hold on.
+
+184
+00:11:39,240 --> 00:11:44,580
+你是说为了安装软件，我必须先搜索数千个软件包
+Are you saying that in order to install software I first have to search through thousands of packages
+
+185
+00:11:44,920 --> 00:11:50,640
+然后找出它有哪些依赖项，之后我必须确保下载所有这些不同的内容
+then find out what dependencies it has and after that I must ensure that I download all of those different
+
+186
+00:11:50,640 --> 00:11:54,860
+包并满足它们的依赖关系等等。
+packages and satisfy their dependencies and so on and so on.
+
+187
+00:11:54,870 --> 00:11:58,740
+但在我下载所有这些之前，我需要确保它们都是正确的版本号
+But before I download all of those I need to make sure that they're all the right version number and
+
+188
+00:11:58,740 --> 00:12:01,560
+这些软件包是否适合我的计算机架构。
+that the packages are appropriate for my computer's architecture.
+
+189
+00:12:01,590 --> 00:12:03,770
+你一定是在开玩笑。
+You have got to be kidding.
+
+190
+00:12:04,350 --> 00:12:06,450
+反正我也是这么想的。
+Well that's what I'd be thinking anyway.
+
+191
+00:12:06,570 --> 00:12:11,430
+但不，好消息是您的计算机上安装了一个命令行工具，用于处理
+But no the good news is that there's a command line tool installed on your computer that deals with
+
+192
+00:12:11,430 --> 00:12:17,310
+所有这些东西都被称为包管理器，而实际的程序与发行版不同
+all of this stuff and it's called your package manager and the actual program differs from distribution
+
+193
+00:12:17,310 --> 00:12:17,960
+到分销。
+to distribution.
+
+194
+00:12:17,970 --> 00:12:25,400
+但是在Buntu上，包管理器被称为apt，拼写为P，T，代表Advanced package top。
+But on a buntu the package manager is called apt spelt a P T which stands for Advanced packaging top.
+
+195
+00:12:25,410 --> 00:12:29,640
+这就是我们要用来为我们做所有这些艰苦工作的东西。
+And this is what we're going to do use to do all this hard work for us.
+
+196
+00:12:29,750 --> 00:12:33,460
+在下一个视频中，您将看到如何使用它。
+And in the next video you're going to see how to use it.
+
+197
+00:12:34,230 --> 00:12:37,360
+但首先让我们回顾一下我们在这段视频中学到了什么。
+But first let's have a review of what we've learned in this video.
+
+198
+00:12:37,470 --> 00:12:42,240
+在这段视频中，您已经了解到软件存储库有点像一个库，只不过是用来存储软件的
+So in this video you've learned that a software repository is kind of like a library but for software
+
+199
+00:12:42,710 --> 00:12:45,190
+只是你不需要把软件还回去。
+except you don't need to give the software back.
+
+200
+00:12:45,300 --> 00:12:50,780
+现在，对于其他发行版，它确实有所不同，但是在Buntu中，有四个主要的软件库。
+Now it does differ for other distributions but in a buntu there are four main software repositories.
+
+201
+00:12:50,970 --> 00:12:55,980
+因此，这是一个主存储库，其中包含正在积极维护的免费和开放源码软件
+So this is the main repository that contains free and open source software that is actively maintained
+
+202
+00:12:56,220 --> 00:12:58,130
+由Ubuntu开发人员提供。
+by the Ubuntu developers.
+
+203
+00:12:58,140 --> 00:13:03,210
+也包含免费和开放源码软件的语义库，但它是由
+Does the universe repository that also contains free and open source software but it's maintained by
+
+204
+00:13:03,210 --> 00:13:05,790
+社区而不是Ubuntu开发者。
+the community instead of the Ubuntu developers.
+
+205
+00:13:05,940 --> 00:13:10,780
+有一个限制性存储库，其中包含用于设备驱动程序的专有软件。
+There's the restrictive repository that contains proprietary software for device drivers.
+
+206
+00:13:10,800 --> 00:13:15,810
+现在，这个存储库中的软件不太可能是开源的，尽管它可能是开源的，但它并不活跃
+Now software in this repository isn't likely to be open source although it might be but it's not actively
+
+207
+00:13:15,810 --> 00:13:18,740
+由开发商维护。
+maintained by the developers.
+
+208
+00:13:18,840 --> 00:13:23,400
+最后是MultiVerse存储库，它的软件受到版权或法律的限制
+And finally there is the multiverse repository that has software that is limited by copyright or legal
+
+209
+00:13:23,400 --> 00:13:24,240
+问题。
+issues.
+
+210
+00:13:24,240 --> 00:13:28,350
+同样，该软件不太可能在MultiVerse存储库中是开源的，但它可能会
+Again it's unlikely that the software will be open source in the multiverse repository but it might
+
+211
+00:13:28,350 --> 00:13:28,970
+就是这样。
+be.
+
+212
+00:13:29,100 --> 00:13:32,270
+现在，有了关于自由软件、独木舟项目等的知识。
+Now with your knowledge about free software the canoe project and so on.
+
+213
+00:13:32,370 --> 00:13:36,480
+您可以自己决定是只使用主存储库中的自由软件，还是使用通用存储库中的自由软件
+You can decide for yourself whether you will only use free software from the main or universe repositories
+
+214
+00:13:36,730 --> 00:13:41,070
+您是否乐于使用来自受限的多词汇库的软件，但是
+whether you are happy to use the software from the restricted on multi-verse repositories aswell but
+
+215
+00:13:41,130 --> 00:13:43,380
+把这个选择完全留给你。
+to leave that choice completely up to you.
+
+216
+00:13:43,620 --> 00:13:49,110
+现在，当我们想要查看可用的软件包列表时，我们点对点地查看了两个软件包
+Now when we wanted to see a list of packages available to us we headed over two packages dot to dot
+
+217
+00:13:49,110 --> 00:13:51,690
+com和位于参考资料部分的链接器。
+com and a linker that is in the resources section.
+
+218
+00:13:51,690 --> 00:13:57,120
+如果您感兴趣，我们看到所有的包装都被我们的分发包拆开了
+In case you're interested and we saw all the packages were opened were broken up by our distribution's
+
+219
+00:13:57,120 --> 00:13:58,040
+代号名称。
+code name.
+
+220
+00:13:58,170 --> 00:14:03,270
+您可以通过使用以下命令输入lsp下划线Release命令来查看您的发行版的代码名
+And you can see the code name for your distribution by entering the LSP underscore release command with
+
+221
+00:14:03,270 --> 00:14:09,330
+选项和我们看到的命令名称很巧妙，但您的名称可能会有所不同，这取决于您
+the option and we saw the command name was artful but yours might be different depending upon when you
+
+222
+00:14:09,330 --> 00:14:11,810
+当你看这个视频的时候，把它下载给他看。
+download it open to him when you watch this video.
+
+223
+00:14:11,820 --> 00:14:17,460
+现在，所有包都按主题或部分进行组织，您可以按以下方式查看包的完整列表
+Now all the packages are organized by a theme or sections and you can see a full list of packages by
+
+224
+00:14:17,460 --> 00:14:22,200
+向下滚动到该页面的底部，然后单击相应的链接，他的包就会告诉您
+scrolling down to the bottom of that page and clicking on the appropriate link and his package tells
+
+225
+00:14:22,200 --> 00:14:25,450
+在他名字旁边的方括号中告诉你它来自哪个存储库。
+you what repository it comes from in square brackets next to his name.
+
+226
+00:14:25,620 --> 00:14:27,540
+但是它的名字旁边没有方括号。
+But it has no square brackets next to name.
+
+227
+00:14:27,540 --> 00:14:29,340
+然后它来自主存储库。
+Then it comes from the main repository.
+
+228
+00:14:29,670 --> 00:14:34,140
+当你点击一个包裹时，你会发现你会得到更多关于它的信息和信息
+And when you click on a package you'll find that you get more information about it as well as information
+
+229
+00:14:34,140 --> 00:14:36,500
+有关与其相关的其他包的信息。
+about other packages that are related to it.
+
+230
+00:14:36,500 --> 00:14:39,600
+现在需要其中的一些软件包才能运行该软件包。
+Now some of these packages will be required for that package to run.
+
+231
+00:14:39,600 --> 00:14:42,470
+这些都标有红点和冰点。
+And these are marked with a red dot and cold.
+
+232
+00:14:42,710 --> 00:14:46,550
+它们是您设置为依赖于这些包的一个包。
+They are the one package you set to depend upon these packages.
+
+233
+00:14:46,650 --> 00:14:51,420
+其中一些是推荐的软件包，是正常运行所必需的，这些软件包将由
+Some will be recommended packages and required for normal functioning and these will be indicated by
+
+234
+00:14:51,420 --> 00:14:52,770
+绿色钻石。
+green diamonds.
+
+235
+00:14:52,770 --> 00:14:58,230
+有些是建议的套餐，仅供参考，并由蓝色方块和
+Some will be suggested packages which are there just for interest and is indicated by blue squares and
+
+236
+00:14:58,230 --> 00:15:04,020
+其中一些将被称为增强，它将以某种方式增强包的功能，这些将
+some will be called enhance that will enhance the packages functionality in some way and these will
+
+237
+00:15:04,200 --> 00:15:06,290
+用黑点表示。
+be indicated by black dots.
+
+238
+00:15:06,470 --> 00:15:10,800
+最后，我们讨论了由于管理依赖关系和确保软件具有
+And finally we discussed that due to the complexity of managing dependencies and ensuring software has
+
+239
+00:15:10,800 --> 00:15:16,590
+正确的版本号等软件管理通常使用称为软件包的程序来完成
+the correct version number and so on software management is usually done using a program called a package
+
+240
+00:15:16,590 --> 00:15:17,230
+经理。
+manager.
+
+241
+00:15:17,390 --> 00:15:22,020
+现在包管理器随发行版的不同而不同，但是在a上，包管理器被称为
+Now package managers differ from distribution to distribution but on a to the package manager is called
+
+242
+00:15:22,150 --> 00:15:22,800
+阿普特。
+apt.
+
+243
+00:15:22,830 --> 00:15:26,020
+也就是先进包装的意思。
+Which stands for Advanced packaging too.
+
+244
+00:15:26,550 --> 00:15:30,840
+在下一个视频中，您将学习如何使用高级打包工具升级您的系统
+So in the next video you're going to learn how to use the advanced packaging tool to upgrade your system
+
+245
+00:15:30,990 --> 00:15:37,240
+现在使用包管理器搜索新软件是使用新Linux系统的关键
+and search for new software now using a package manager is a critical piece of using a new Linux system
+
+246
+00:15:37,560 --> 00:15:39,400
+幸运的是，这也是超级简单的。
+and luckily it's also super easy.
+
+247
+00:15:39,450 --> 00:15:44,280
+所以，对于超乎你想象的不可思议的超能力，我将在下一个视频中见到你。
+So for incredible superpowers beyond your wildest dreams I'll see you in the next video.
+

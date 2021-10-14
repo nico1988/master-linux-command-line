@@ -1,0 +1,120 @@
+1
+00:00:00,180 --> 00:00:05,250
+您好，您好，美丽的人，欢迎来到这个非常激动人心的关于自动化课程的章节
+Hello you beautiful person and welcome to this very exciting section of the Course all about automating
+
+2
+00:00:05,250 --> 00:00:08,210
+使用bash脚本和Crohn的任务。
+tasks using bash scripts and Crohn.
+
+3
+00:00:08,250 --> 00:00:12,860
+到目前为止，您一直在学习如何在命令行上一个接一个地执行命令。
+Now up until now you've been learning how to do commands one after the other on the command line.
+
+4
+00:00:13,020 --> 00:00:17,470
+但是，有时您需要完成需要多个步骤的任务。
+But sometimes however you want to complete tasks that require multiple steps.
+
+5
+00:00:17,480 --> 00:00:22,500
+因此，与其每次只记住这些步骤并输入这些步骤，还不如记住这些命令步骤
+So instead of just memorizing the steps and entering those steps those command steps every single time
+
+6
+00:00:22,500 --> 00:00:23,900
+你需要完成那项任务。
+you need to complete that task.
+
+7
+00:00:23,940 --> 00:00:28,980
+相反，您可以将这些命令写入称为bash脚本的文本文件中，然后只需运行该脚本
+You can instead write those commands into a text file known as a bash script and then just run the script
+
+8
+00:00:29,180 --> 00:00:29,530
+再来一次。
+again.
+
+9
+00:00:29,670 --> 00:00:35,430
+当您运行脚本时，脚本中的每个命令都将从
+And when you run the script each of the commands in the script will be run one after the other from
+
+10
+00:00:35,430 --> 00:00:39,720
+从上到下，这样节目将从脚本的顶部开始，然后一直向下
+top to the bottom so the show will start at the top of the script and work its way down through the
+
+11
+00:00:39,720 --> 00:00:42,800
+在途中执行所有命令的脚本。
+script executing all of the commands on the way.
+
+12
+00:00:42,960 --> 00:00:43,380
+好的。
+All right.
+
+13
+00:00:43,470 --> 00:00:48,540
+因此，在本课程的这一节中，您将学习如何创建和运行您自己的bash脚本
+So in this section of the course you're going to learn how to create and run your very own bash scripts
+
+14
+00:00:48,810 --> 00:00:53,700
+但您还将了解如何安排这些命令和后空翻在某些情况下运行
+but you're also going to see how you can schedule those commands and backflips to be run at certain
+
+15
+00:00:53,700 --> 00:00:58,050
+使用一个非常方便的叫做Kramm的日程安排程序。
+times using a really handy scheduling program called Krumm.
+
+16
+00:00:58,080 --> 00:01:01,050
+现在，bash脚本本身就是一个庞大的领域。
+Now bash scripting is a whole massive field in and of itself.
+
+17
+00:01:01,050 --> 00:01:05,160
+因此，这不会是课程的一个过于详细的部分，但我希望在这一部分结束时
+So this won't be an overly detailed section of the course but I hope that by the end of the section
+
+18
+00:01:05,160 --> 00:01:09,720
+您将对糟糕的脚本编程有基本的概念和理解，这样您就可以
+you'll have the fundamental concepts and understanding of what bad scripting is all about so that you
+
+19
+00:01:09,720 --> 00:01:12,010
+可以开始编写您自己的简单脚本了。
+can start writing your own simple script.
+
+20
+00:01:12,030 --> 00:01:15,860
+您还知道如何调度和自动化命令和脚本。
+You also know how to schedule and automate commands and scripts.
+
+21
+00:01:15,910 --> 00:01:21,840
+任何时候你都可以通过使用Kramm书来选择，将这两种技能结合起来将会让你真正设置你的
+Any time you choose by using Krumm book and combining these two skills will allow you to truly set your
+
+22
+00:01:21,840 --> 00:01:23,670
+自动驾驶的工作流程。
+workflow on autopilot.
+
+23
+00:01:23,790 --> 00:01:27,720
+现在，您已经对本节将要介绍的内容有了一个快速的了解，让我们跳到
+So now that you've got a quick heads up about what's going to be covered in this section let's jump
+
+24
+00:01:27,720 --> 00:01:32,060
+我们将在下一个视频中学习如何编写您自己的脚本。
+right in in the next video by learning how to write your very own scripts.
+

@@ -1,0 +1,95 @@
+1
+00:00:00,150 --> 00:00:05,410
+Hello you beautiful people are welcome to this section of the course on the Linux file system.
+
+2
+00:00:05,640 --> 00:00:05,980
+OK.
+
+3
+00:00:06,060 --> 00:00:11,700
+So with this section you're going to be learning a whole load of commands that will show you how to
+
+4
+00:00:11,910 --> 00:00:14,600
+manipulate files using the Linux command line.
+
+5
+00:00:14,670 --> 00:00:19,920
+And then we're going to start off by talking about the Linux file system and what files actually are
+
+6
+00:00:20,100 --> 00:00:21,680
+from the file systems perspective.
+
+7
+00:00:21,750 --> 00:00:25,800
+And when you understand that you're going to move on to discussing how you can move around the file
+
+8
+00:00:25,800 --> 00:00:28,690
+system and create files using the command line.
+
+9
+00:00:28,860 --> 00:00:35,250
+Then you'll learn a whole host of new commands such as copying renaming deleting moving pasting searching
+
+10
+00:00:35,250 --> 00:00:41,010
+for files across a whole file system viewing files searching for text within files sorting data and
+
+11
+00:00:41,010 --> 00:00:46,380
+also creating file backups and archives for storage and the commands that you're going to learn in this
+
+12
+00:00:46,380 --> 00:00:52,000
+section are super powerful and come with a lot of options and ways for you to customize their behavior.
+
+13
+00:00:52,140 --> 00:00:57,390
+Which is great but is a super useful tip Don't worry about memorizing all the different command options
+
+14
+00:00:57,390 --> 00:01:02,010
+in this section but instead just learn about the possibilities that exist for each command and know
+
+15
+00:01:02,010 --> 00:01:07,500
+that these videos the cheat sheets that are provided and the commands manual pages will always be available
+
+16
+00:01:07,500 --> 00:01:09,210
+for you to use as reference.
+
+17
+00:01:09,210 --> 00:01:14,660
+So I hope hope you are as excited as I am because after the section you're going to have a whole lot
+
+18
+00:01:14,660 --> 00:01:16,880
+of new commands to use in your pipelines.
+
+19
+00:01:17,040 --> 00:01:22,590
+Also be able to interact with your whole computer and do 99 percent of your daily work in a whole new
+
+20
+00:01:22,590 --> 00:01:26,880
+way and you'll find that with the techniques that you learn in this section you'll find them much faster
+
+21
+00:01:27,120 --> 00:01:31,590
+more powerful and more effective than the graphical methods that you'll most likely using right now.
+
+22
+00:01:31,590 --> 00:01:33,890
+And if you're like me you'll likely never go back.
+
+23
+00:01:33,920 --> 00:01:38,190
+OK so it's good to be a really revolutionary section of the Course feel inexorability is abilities.
+
+24
+00:01:38,250 --> 00:01:40,800
+All that goodness I'll see you in the next video.

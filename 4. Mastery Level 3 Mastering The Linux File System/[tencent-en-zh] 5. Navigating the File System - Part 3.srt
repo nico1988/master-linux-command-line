@@ -1,0 +1,800 @@
+1
+00:00:00,240 --> 00:00:01,620
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,620 --> 00:00:06,690
+在这段视频中，我们将结束有关如何导航Linux文件系统的讨论
+And in this video we're going to be wrapping up our discussion of how to navigate the Linux file system
+
+3
+00:00:06,990 --> 00:00:08,190
+使用命令行。
+using the command line.
+
+4
+00:00:08,310 --> 00:00:13,860
+在本视频中，您将了解如何使用制表符自动完成来加快导航速度
+And in this video you're going to learn how to use tab auto completion to speed up your navigation of
+
+5
+00:00:13,870 --> 00:00:14,710
+文件系统。
+the file system.
+
+6
+00:00:14,760 --> 00:00:19,470
+我们还将回顾一下我们所学到的所有关于导航错误和
+And we're also going to have a recap of what everything that we've learned about navigating falses and
+
+7
+00:00:19,470 --> 00:00:21,520
+在过去的几个视频中。
+in the past few videos.
+
+8
+00:00:21,620 --> 00:00:26,460
+在本视频结束时，您可以掌握在错误系统中导航所需的所有知识
+And by the end of this video you can have all the knowledge that you need to navigate the false system
+
+9
+00:00:26,460 --> 00:00:27,290
+像个专业人士一样。
+like a pro.
+
+10
+00:00:27,450 --> 00:00:31,670
+只要增加练习，你就会在我们的课程中学到很多东西。
+Just add practice and you're going to get plenty of that as we go through the course.
+
+11
+00:00:31,740 --> 00:00:35,230
+因此，要获取有关制表符自动完成的最后几条信息。
+So to get the final few pieces of information about tab auto completion.
+
+12
+00:00:35,340 --> 00:00:37,940
+让我们直接跳进去吧。
+Let's go ahead and jump right into it.
+
+13
+00:00:39,510 --> 00:00:39,870
+好的。
+OK.
+
+14
+00:00:39,890 --> 00:00:44,680
+因此，让我们继续学习一个非常棒的功能，称为制表符补全。
+So let's go ahead and learn about a really awesome feature known as tab completion.
+
+15
+00:00:44,690 --> 00:00:48,680
+现在，我们当前位于主目录中，您可以通过查看shell提示符看到
+Now at the minute we're currently in our home directory as you can see by looking at the shell prompt
+
+16
+00:00:48,740 --> 00:00:53,020
+另外，通过使用P.W.DICOM，我们可以看到我们在自己的主目录中。
+and also by using the P.W. DICOM and we see that we're in our home directory.
+
+17
+00:00:53,090 --> 00:00:59,450
+现在，我们只需输入cd，然后输入cd，实际上可以跳转到系统的基本目录
+Now we could actually jump all the way to the base directory of the system by just typing CD and then
+
+18
+00:00:59,450 --> 00:01:00,160
+一杯劈开。
+a slash.
+
+19
+00:01:00,170 --> 00:01:04,700
+如果我这样做，您会看到，如果我们使用打印工作目录命令，我们可以看到
+And if I do that you'll see that if we use the print working directory command we can see that we are
+
+20
+00:01:04,790 --> 00:01:06,390
+在我们系统的直接基础上。
+in the base direct of our system.
+
+21
+00:01:06,400 --> 00:01:10,730
+我不想这样做只是为了强调您在使用时不必逐个文件夹地查看
+I don't want to do this just to highlight that you don't have to go folder by folder when you using
+
+22
+00:01:10,730 --> 00:01:13,840
+Siddiq，你实际上可以在你的系统中跳过所有的路。
+the Siddiq and you can actually just jump all the way around your system.
+
+23
+00:01:13,850 --> 00:01:20,490
+所以，举个例子，如果我想一直跳到我的桌面，我不需要先去CD，然后去劈开。
+So for example if I wanted to jump all the way to my desktop I don't have to go CD then slash.
+
+24
+00:01:20,490 --> 00:01:22,670
+你知道我不需要一步一步走完。
+You know I don't have to go step by step all the way through.
+
+25
+00:01:22,670 --> 00:01:28,130
+我可以说CD，把Tilda给它，然后说因为那是我的主文件夹，然后说桌面。
+I can just say CD give it the tilda and then say because that's my home folder and then say desktop.
+
+26
+00:01:28,250 --> 00:01:28,960
+好的。
+OK.
+
+27
+00:01:29,030 --> 00:01:33,440
+现在我们在桌面上，所以你可以看到我们跳来跳去。
+Now we are we end up in the desktop so you can you see come into jump around.
+
+28
+00:01:33,440 --> 00:01:34,990
+你不必一步一步地走。
+You don't have to go step by step.
+
+29
+00:01:35,090 --> 00:01:35,410
+好的。
+OK.
+
+30
+00:01:35,450 --> 00:01:39,050
+很明显，尖叫声是让我们继续，现在了解制表符补全。
+So clearly the scream Let's go ahead and now learn about tab completion.
+
+31
+00:01:39,260 --> 00:01:44,460
+因此，假设我们希望使用绝对路径一直到达我的主目录。
+So let's say that we wanted to get all the way to my home directory using an absolute path.
+
+32
+00:01:44,480 --> 00:01:45,530
+好的。
+OK.
+
+33
+00:01:45,710 --> 00:01:51,970
+我们只需键入就可以做到这一点好的，我们可以键入CD劈开主页劈开Zyad，你知道的
+We can do that simply by just typing it all right we can type CDs slash home slash Zyad And you know
+
+34
+00:01:51,970 --> 00:01:54,250
+如果我们要转到文档，我们可以键入劈开文档。
+if we're to go to documents we can type slash documents.
+
+35
+00:01:54,260 --> 00:01:56,290
+你知道我们会去的。
+You know we would be there.
+
+36
+00:01:56,330 --> 00:01:58,560
+好的，我们会一直到Documents文件夹。
+OK we would get all the way to the documents folder.
+
+37
+00:01:58,820 --> 00:02:01,160
+但是打字需要一点时间。
+But typing it takes a bit of time.
+
+38
+00:02:01,160 --> 00:02:04,190
+它很容易出错，而且您知道我们作为程序员有点懒惰。
+It's error prone and you know we're kind of lazy as programmers.
+
+39
+00:02:04,190 --> 00:02:09,500
+好的，我们想要速度，我们想让事情没有错误，我们希望事情一开始就能正常工作
+OK so we want speed and we want things to be without errors and we want things to work right the first
+
+40
+00:02:09,500 --> 00:02:09,900
+时间到了。
+time.
+
+41
+00:02:10,040 --> 00:02:12,470
+这就是制表符补全的用武之地。
+So that's where tab completion comes in.
+
+42
+00:02:12,920 --> 00:02:16,900
+让我们回到我们的家或回到最基本的目录并清除屏幕。
+Let's head back to our home or back to the very base directory and clear the screen.
+
+43
+00:02:16,940 --> 00:02:19,360
+彼得·比蒂我们在基本目录里。
+Peter Beattie we're in the base directory.
+
+44
+00:02:19,490 --> 00:02:23,160
+这就是您可以使用制表符补全来获得该房间的方法。
+This is how you can use tab completion to get that room.
+
+45
+00:02:23,180 --> 00:02:25,090
+我们想转到Documents文件夹。
+We want to get to the documents folder.
+
+46
+00:02:25,130 --> 00:02:25,620
+好的。
+OK.
+
+47
+00:02:25,760 --> 00:02:27,690
+所以它会是这样的。
+So that's going to be like this.
+
+48
+00:02:28,070 --> 00:02:30,310
+好的，这就是我们要去的地方。
+OK that's where we're trying to get to.
+
+49
+00:02:30,620 --> 00:02:35,890
+让我们看看怎样才能做到这一点，我有CD，可以劈开，这是在家里发生的。
+So let's see how we would get there which I've CD can slash now is that it's happening at home.
+
+50
+00:02:35,900 --> 00:02:42,710
+我们只需键入该页面并按下制表符，您就会看到shell自动完成
+We could just type that page and press the tab and you'll see that the shell automatically completed
+
+51
+00:02:43,100 --> 00:02:44,870
+给我们看那段文字。
+that piece of text for us.
+
+52
+00:02:44,870 --> 00:02:45,910
+这真是太酷了。
+Now that's pretty cool.
+
+53
+00:02:45,920 --> 00:02:51,520
+他们试图输入Ziyad，所以我们只需输入Zed，然后按Tab键，它就会填满我的名字。
+They're trying to type out Ziyad So we just type Zed and then we press tab and it's filled out my name.
+
+54
+00:02:51,530 --> 00:02:52,510
+太棒了，对。
+Awesome right.
+
+55
+00:02:52,700 --> 00:02:55,960
+现在让我们假设我们想要进入文档。
+Now let's say we want to go into documents.
+
+56
+00:02:56,100 --> 00:02:58,440
+好的，我们试试吧。
+OK let's let's try it.
+
+57
+00:02:58,460 --> 00:03:02,000
+大写D，然后按Tab键。
+Capital D and press tab.
+
+58
+00:03:02,270 --> 00:03:04,040
+现在为什么它不起作用了。
+Now why is it not working.
+
+59
+00:03:04,240 --> 00:03:05,370
+我们再试一次。
+Let's try again.
+
+60
+00:03:05,930 --> 00:03:06,880
+电缆不工作。
+Cable is not working.
+
+61
+00:03:06,880 --> 00:03:12,950
+原因是这个大写的D可以指我们主文件夹中的很多东西。
+Well the reason is this capital D could refer to lots of things in our home folder.
+
+62
+00:03:13,010 --> 00:03:14,100
+那么我们来看一看。
+So let's take a look at it.
+
+63
+00:03:14,180 --> 00:03:16,840
+如果我们转到这里的主文件夹。
+If we go to our home folder here.
+
+64
+00:03:16,850 --> 00:03:22,040
+单击屏幕并查看，您可以看到大写D可以指桌面
+Click the screen and take a look you can see that the capital D could refer to the desktop it could
+
+65
+00:03:22,040 --> 00:03:26,400
+请参考下载，也可以参考文档和我们需要的文档。
+refer to the downloads or it could refer to the documents and the documents that we want.
+
+66
+00:03:26,510 --> 00:03:27,080
+好的。
+OK.
+
+67
+00:03:27,200 --> 00:03:29,860
+所以如果一个文件如果你。
+So if a file if you.
+
+68
+00:03:29,960 --> 00:03:36,280
+现在，如果我说好的，我想去大写的D这里，每个经过的人都按两次TAP，它不会
+Now if I say OK I want to go to the capital D here and press tap twice with each passing ones it won't
+
+69
+00:03:36,280 --> 00:03:36,520
+工作。
+work.
+
+70
+00:03:36,530 --> 00:03:38,420
+非常迅速地压制它两次。
+Suppress it twice really quickly.
+
+71
+00:03:38,660 --> 00:03:39,720
+简单得不得了。
+Just like that.
+
+72
+00:03:40,050 --> 00:03:40,960
+实际上它会的。
+It will actually.
+
+73
+00:03:41,020 --> 00:03:41,650
+太多了。
+It's a lot.
+
+74
+00:03:41,750 --> 00:03:43,770
+它实际上会清除屏幕。
+It will actually clear the screen.
+
+75
+00:03:44,030 --> 00:03:48,960
+它会按两次，实际上会告诉我们哪一个匹配。
+It will press it twice it will actually tell us which ones it matches.
+
+76
+00:03:49,160 --> 00:03:49,760
+好的。
+OK.
+
+77
+00:03:49,760 --> 00:03:52,480
+因此，如果我键入doc，我们要进入Documents。
+So we want to go into documents if I type doc.
+
+78
+00:03:52,670 --> 00:03:53,090
+好的。
+OK.
+
+79
+00:03:53,180 --> 00:03:57,680
+因为什么音频和双击还是不好，因为它可以用于文档或下载
+Because what audio and double tap that's still no good because it could go for documents or downloads
+
+80
+00:03:57,680 --> 00:04:00,320
+类型为doc，然后按Tab键。
+of a type doc and then press tab.
+
+81
+00:04:00,320 --> 00:04:02,770
+现在，它将进入文件。
+Now it's going to go to documents.
+
+82
+00:04:02,780 --> 00:04:03,240
+好的。
+OK.
+
+83
+00:04:03,410 --> 00:04:05,290
+我们都在文档文件夹里。
+And there we all were in the Documents folder.
+
+84
+00:04:05,360 --> 00:04:06,160
+所以这太棒了。
+So that's awesome.
+
+85
+00:04:06,320 --> 00:04:10,370
+它极大地降低了我们的打字水平和错误倾向，所以如果我们一直回到
+And it cut down our level of typing and error proneness massively So if we go all the way back to the
+
+86
+00:04:10,370 --> 00:04:10,990
+根目录。
+root directory.
+
+87
+00:04:11,110 --> 00:04:17,610
+现在我们只需输入cd劈开页面标签ZAD标签DOHC标签。
+Now we can just type CD slash page tab Zad tab DOHC tab.
+
+88
+00:04:17,860 --> 00:04:19,620
+我们现在在Documents文件夹中。
+There we are in the documents folder.
+
+89
+00:04:19,800 --> 00:04:20,940
+这真的真的很酷。
+It's really really cool.
+
+90
+00:04:20,960 --> 00:04:27,510
+这将适用于文件名，就像它适用于文件夹一样，非常棒，我一直都在使用它。
+This will work for filenames just like it will for folders and it's amazing and I use it all the time.
+
+91
+00:04:27,590 --> 00:04:27,960
+好的。
+OK.
+
+92
+00:04:28,090 --> 00:04:29,920
+最后一个绝妙的把戏。
+Nas one final awesome trick.
+
+93
+00:04:30,020 --> 00:04:31,830
+让我们不要忘了用图形化的方式去桌面。
+Let's not forget to the desktop the graphical way.
+
+94
+00:04:31,960 --> 00:04:32,390
+好的。
+OK.
+
+95
+00:04:32,510 --> 00:04:33,270
+所以我们要开张了。
+So we're going to open.
+
+96
+00:04:33,290 --> 00:04:34,870
+我们要去黏糊糊的地方。
+We're going to go into the gooey.
+
+97
+00:04:34,880 --> 00:04:38,310
+我们要到桌面，它实际上打开了一个航站楼。
+We're going to get to the desk top and it's actually open a terminal.
+
+98
+00:04:38,480 --> 00:04:41,610
+所以外壳程序是从这个目录中运行的。
+So the shell is operating from in this directory.
+
+99
+00:04:41,930 --> 00:04:48,020
+您可以右键单击，您会注意到这里有一个选项，上面写着“在终端中打开”。
+You can right click and you'll notice that you'll see an option here that says Open in terminal.
+
+100
+00:04:48,170 --> 00:04:48,680
+好的。
+OK.
+
+101
+00:04:48,680 --> 00:04:55,850
+因此，如果我们单击它，您可以看到我们有一个在桌面中自动打开的终端。
+So if we click that you can see that we've got a terminal that's automatically opened in the desktop.
+
+102
+00:04:55,850 --> 00:05:01,940
+例如，假设您正在导航文件、数据、或文档中执行操作
+So say for example you're doing stuff in your navigating files in your data in your or your documents
+
+103
+00:05:01,940 --> 00:05:02,310
+文件夹。
+folder.
+
+104
+00:05:02,360 --> 00:05:04,620
+好的，我们这里有一些文件，比方说。
+OK we've got some files in here let's say.
+
+105
+00:05:04,640 --> 00:05:10,820
+然后，您实际上只需右键单击，然后单击在终端中打开，您现在就可以直接在中操作
+Then you could actually just right click and click Open in terminal and you directly now operating in
+
+106
+00:05:10,820 --> 00:05:11,500
+你的终点站。
+your terminal.
+
+107
+00:05:11,570 --> 00:05:13,520
+从该Documents文件夹中。
+From within that documents folder.
+
+108
+00:05:13,520 --> 00:05:16,850
+因此您知道，如果您正在以图形方式进行操作，然后您想要切换终端，然后切换
+So you know if you're doing stuff graphically and then you want to switch the terminal and then switch
+
+109
+00:05:16,850 --> 00:05:24,240
+这是一个可以使用OK的很好的快捷方式，所以您已经在
+back and this is a nice shortcut to be able to use OK so you've learned a whole bunch of stuff in the
+
+110
+00:05:24,240 --> 00:05:30,240
+最后三个左右关于导航Linux文件系统的视频，所以我只想花点时间
+last three videos or so about navigating the Linux file system so I just wanted to take a bit of time
+
+111
+00:05:30,240 --> 00:05:35,610
+快速回顾一下我们所学的知识，以确保它们都被牢牢记住。
+to have a quick recap of what we have learned to make sure that it's all sunk in.
+
+112
+00:05:35,610 --> 00:05:42,030
+因此，您知道您使用pwt命令来打印shell正在操作的当前工作目录
+So you know that you use the PWT command to print the current working directory that the shell is operating
+
+113
+00:05:42,030 --> 00:05:49,530
+中，它将打印一个绝对路径，指向您的shell当前在文件系统上运行的位置。
+in and it will print an absolute path to where on the file system your shell is currently operating.
+
+114
+00:05:49,620 --> 00:05:55,170
+当您在该目录中时，您可以使用ls命令来查看您周围的内容它是一个列表，因此
+You can use the ls command to see what's around you when you are in that directory it is a list so the
+
+115
+00:05:55,170 --> 00:06:01,080
+目录文件夹的内容是蓝色的，文件是白色的，但是您可以更容易地
+contents of the directory folders are in blue and files are in white but you can make that easier to
+
+116
+00:06:01,080 --> 00:06:04,350
+请参阅使用大写f选项。
+see using the the capital f option.
+
+117
+00:06:04,350 --> 00:06:09,210
+我们还介绍了ls命令可以让您了解查看内容的其他几个选项
+And we went through several other options that the ls command can have to make you know viewing things
+
+118
+00:06:09,210 --> 00:06:11,460
+以及在命令行中查看中的文件。
+and viewing files in the in the command line.
+
+119
+00:06:11,460 --> 00:06:12,390
+容易多了。
+A lot easier.
+
+120
+00:06:12,660 --> 00:06:19,420
+您看到了cd命令可用于更改目录或移动到文件系统上的新位置。
+You saw that the cd command can be used to change directory or move to a new location on the file system.
+
+121
+00:06:19,660 --> 00:06:26,160
+您可以看到，绝对路径是从文件系统的最基本目录开始的路径，因此
+And you saw the absolute paths are paths that start at the very base directory of the file system so
+
+122
+00:06:26,160 --> 00:06:31,800
+劈开和相对路径是从外壳程序当前所在目录开始的路径
+the slash and relative paths are the paths that start from the directory that your shell is currently
+
+123
+00:06:32,040 --> 00:06:32,640
+在……里面。
+in.
+
+124
+00:06:32,640 --> 00:06:38,220
+因此，相对路径通常更容易键入，但绝对路径的结束位置非常清楚
+So relative paths are usually easier to type but absolute paths are very clear as to where they end
+
+125
+00:06:38,220 --> 00:06:38,510
+向上。
+up.
+
+126
+00:06:38,610 --> 00:06:39,130
+好的。
+OK.
+
+127
+00:06:39,450 --> 00:06:42,700
+现在每个目录都有点和点。
+Now every directory has the dot and dot dot.
+
+128
+00:06:42,750 --> 00:06:50,220
+您可以使用ls命令和选项以及圆点1等于4看到的隐藏文件夹
+Hidden folders that you can see using the ls command with the option and the dot the one dot is four
+
+129
+00:06:50,250 --> 00:06:56,940
+表示当前文件夹和两个点Riffe指的是您当前所在的父文件夹。
+means the current folder and the two dots Riffe refer to the parent folder of where you currently are.
+
+130
+00:06:56,940 --> 00:07:03,570
+所以如果你做了CD，然后做了点，这会把你向上移动一个文件夹，好的，因为它是说向上，向上，开始
+So if you did CD and then did dot dot that would move you up a folder OK because it's saying Go up go
+
+131
+00:07:03,570 --> 00:07:08,130
+到我当前所在的父文件夹，如果您确实看到了数据，那么基本上
+to the parent folder where I currently am and if you did see the data then that would just basically
+
+132
+00:07:08,130 --> 00:07:10,170
+把你留在你不会有什么不同的地方。
+keep you where you wouldn't make any difference.
+
+133
+00:07:10,230 --> 00:07:10,700
+好的。
+OK.
+
+134
+00:07:10,950 --> 00:07:15,660
+现在，我们在这段视频中看到了制表符自动完成功能，并且我们看到了tabbouleh委托是非常有用的
+Now tab auto completion we saw in this video and we saw that tabbouleh commission is a really useful
+
+135
+00:07:15,660 --> 00:07:18,700
+加快打字速度并避免错误的技术。
+technique to speed up typing and avoiding errors.
+
+136
+00:07:18,750 --> 00:07:24,900
+如果您按Tab键，什么也没有发生，只需非常迅速地按Tab键两次，它就会向您显示几个
+And if you press tab and nothing happens just hit tab twice really quickly and it will show you several
+
+137
+00:07:24,900 --> 00:07:29,100
+冲突的选项，然后您可以多键入一点以确保它选择
+options that are conflicting and you can just then type out a bit more to make sure that it selects
+
+138
+00:07:29,100 --> 00:07:29,940
+你想要的那个。
+the one you want.
+
+139
+00:07:29,940 --> 00:07:34,560
+就像我们在打印时看到的那样，当我们键入大写D时，它不起作用，但如果按Tab键两次
+So like we saw when we print when we type the capital D it wasn't working but if it's press tab twice
+
+140
+00:07:34,560 --> 00:07:37,880
+我们可以看到，它与文档下载和桌面发生了冲突。
+we could see that it was clashing with documents downloads and desktop.
+
+141
+00:07:37,890 --> 00:07:41,580
+然后我们可以修改它们自己的，以确保Tabbel to Complete有效。
+And then we could modify their own to make sure tabel to completion worked.
+
+142
+00:07:41,580 --> 00:07:47,040
+但是您总是使用Tab键顺序完成，它为您节省了大量时间和麻烦。
+But you use tab order completion all the time it saves you so much time and so much hassle.
+
+143
+00:07:47,040 --> 00:07:52,830
+这是这个节目的一个很好的功能，而且它也可以在任何地方使用，而不仅仅是在导航时使用。
+It's a great great feature that the show has and it can also be used anywhere not just when navigating.
+
+144
+00:07:52,830 --> 00:07:59,790
+因此，如果您正在尝试为命令输入参数，并且它是一个文件路径，那么您可以
+So if you're if you are you know trying to enter an argument to a command and it's a file path you can
+
+145
+00:07:59,790 --> 00:08:01,580
+使用制表符自动完成。
+use tab auto completion.
+
+146
+00:08:01,680 --> 00:08:06,450
+这就是为什么它不只是在使用cd或ls或其他任何东西时才能用得上的原因。
+There is why it's not just when using CD or ls or whatever it might be you can use it for pretty much
+
+147
+00:08:06,510 --> 00:08:07,330
+任何命令。
+any command.
+
+148
+00:08:07,650 --> 00:08:12,900
+如果您想在图形导航时打开当前所在的终端，请使用
+And if you want to open up a terminal where you currently are when you're navigating graphically using
+
+149
+00:08:12,900 --> 00:08:18,690
+图形用户界面只需在终端中点击鼠标右键点击[打开]，就会打开一个终端
+the graphical user interface just right click and click Open in terminal and a terminal will open up
+
+150
+00:08:19,050 --> 00:08:24,460
+当前目录与您打开该终端时所在的位置完全相同。
+with the current directory being exactly where you were when you opened that terminal.
+
+151
+00:08:24,480 --> 00:08:28,200
+这是一个非常有用的功能，如果您只需要在终端上进行一些快速编辑，
+So that's a really useful features why if you just need to make some quick edits on the terminal and
+
+152
+00:08:28,200 --> 00:08:30,630
+然后再把它关起来，然后继续做你正在做的事情。
+then shut it again and get back to doing what you are graphically.
+
+153
+00:08:30,780 --> 00:08:31,880
+这是一个非常棒的功能。
+It's a great great feature.
+
+154
+00:08:31,890 --> 00:08:33,900
+所以一定要记住这一点。
+So make sure you keep hold of that.
+
+155
+00:08:34,020 --> 00:08:38,280
+我们在最后几个视频里有一大堆东西，现在你应该开始感到舒服了
+So we've got a whole bunch of stuff in the last few videos and now you should start feeling comfortable
+
+156
+00:08:38,280 --> 00:08:41,660
+如何导航，只需使用Peter Beattie来查看您所在的位置。
+with how to navigate you just use Peter Beattie to see where you are.
+
+157
+00:08:41,670 --> 00:08:47,340
+LS环顾四周，看看如何移动，在下一个视频中，我们将开始讨论文件扩展名
+LS to look around and see to move and in the next video we're going to start discussing file extensions
+
+158
+00:08:47,340 --> 00:08:52,110
+因为它们不能像在其他操作系统上那样工作，而且有相当多
+in Linux because they don't work like they might do on other operating systems and there's quite a few
+
+159
+00:08:52,110 --> 00:08:55,920
+核心自由属于您在Linux中工作时拥有的扩展。
+core freedoms that fall extensions that you have when working in Linux.
+
+160
+00:08:56,010 --> 00:08:59,160
+所以出于好意，我会在下一个视频中见到你。
+So for that goodness I'll see you in the next video.
+

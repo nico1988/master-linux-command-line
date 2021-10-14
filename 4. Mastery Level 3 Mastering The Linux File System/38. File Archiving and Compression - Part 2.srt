@@ -1,0 +1,831 @@
+1
+00:00:00,570 --> 00:00:01,950
+Hello you beautiful people.
+
+2
+00:00:01,950 --> 00:00:03,180
+And welcome back.
+
+3
+00:00:03,180 --> 00:00:08,370
+Now in the last video we put our files into a tarball and now we want to learn about how to compress
+
+4
+00:00:08,370 --> 00:00:12,040
+that tabel to save space on our hard drive.
+
+5
+00:00:12,090 --> 00:00:15,060
+Compression happens using compression algorithms.
+
+6
+00:00:15,090 --> 00:00:19,280
+And there are two main compression algorithms in use in the Linux world.
+
+7
+00:00:19,410 --> 00:00:26,550
+And the first is the JE's it algorithm and the second is B zip zip to OK and the main difference between
+
+8
+00:00:26,550 --> 00:00:31,010
+them is usually is faster but has less compression power.
+
+9
+00:00:31,170 --> 00:00:36,900
+And because it too on the other hand can generally compress files to a smaller size than Jesus but does
+
+10
+00:00:36,900 --> 00:00:39,050
+require more computational time.
+
+11
+00:00:39,120 --> 00:00:44,270
+So both these compression algorithms are really easy to use Let's just start by talking about Giza.
+
+12
+00:00:44,370 --> 00:00:44,790
+OK.
+
+13
+00:00:44,940 --> 00:00:49,870
+So to compress a table using Jees up all you need to do is type G.
+
+14
+00:00:50,220 --> 00:00:57,390
+And then the archive names are archived on TA and press enter and we'll see that that file has been
+
+15
+00:00:57,810 --> 00:01:05,880
+compressed ins in place using the Jesus algorithm and we can see that it has if we use the ls command
+
+16
+00:01:06,300 --> 00:01:13,380
+here we can see that the DOT G Zed file extension has automatically been added and we can use the file
+
+17
+00:01:13,380 --> 00:01:18,400
+command to confirm that yep this is indeed Zipp compressed data.
+
+18
+00:01:18,570 --> 00:01:20,610
+And it was archived.
+
+19
+00:01:20,640 --> 00:01:24,580
+Ta ok and it tells you when it was last modified as well.
+
+20
+00:01:24,610 --> 00:01:25,060
+OK.
+
+21
+00:01:25,140 --> 00:01:25,910
+So that's really cool.
+
+22
+00:01:25,910 --> 00:01:27,660
+We can see quite a lot of information about that.
+
+23
+00:01:27,660 --> 00:01:29,860
+Now let's take a look at the file size.
+
+24
+00:01:29,980 --> 00:01:37,080
+So if I do the ls command with the l h option like actionless just the option will see the fall one
+
+25
+00:01:37,080 --> 00:01:40,510
+for two and four three or ten thousand bytes in size.
+
+26
+00:01:40,650 --> 00:01:49,740
+But I archive the compressed archive is only 23000 bytes so it's about 7000 bytes or seven kilobytes
+
+27
+00:01:49,740 --> 00:01:53,010
+less than what the files would have been originally.
+
+28
+00:01:53,010 --> 00:01:57,640
+So we actually have managed to do a compression of about 23 percent.
+
+29
+00:01:57,660 --> 00:01:58,590
+So that's not bad.
+
+30
+00:01:58,600 --> 00:02:02,040
+This will vary from file type to file type and what you're actually compressing.
+
+31
+00:02:02,040 --> 00:02:05,990
+But in this case we've got a compression of 23 percent with Jesus.
+
+32
+00:02:06,120 --> 00:02:09,240
+So not just how compression is a two stage thing.
+
+33
+00:02:09,240 --> 00:02:16,110
+First we make a tarball and then we compress that tarball with a compression algorithm OK which in this
+
+34
+00:02:16,110 --> 00:02:17,410
+case was it.
+
+35
+00:02:17,790 --> 00:02:20,370
+Ok cause How about reversing the GS.
+
+36
+00:02:20,490 --> 00:02:22,320
+How can we get the Tabo back.
+
+37
+00:02:22,590 --> 00:02:23,850
+Well this is very easy.
+
+38
+00:02:23,850 --> 00:02:31,330
+All we need to do is just click the screen G and zip archive dot dot dot.
+
+39
+00:02:31,430 --> 00:02:38,050
+OK so you just use g unzip on whatever it was and when you do that you see it's now back to a tar file.
+
+40
+00:02:38,070 --> 00:02:43,150
+And if we look we can see that it's a top file using the file commands are archived on TAR.
+
+41
+00:02:43,200 --> 00:02:46,500
+And it tells you it's a puzzle to our archive.
+
+42
+00:02:46,500 --> 00:02:47,080
+Hooray.
+
+43
+00:02:47,100 --> 00:02:50,830
+OK so we've managed to undo the GS app operation.
+
+44
+00:02:51,150 --> 00:02:53,230
+OK so what about being zipped too.
+
+45
+00:02:53,430 --> 00:02:58,230
+Well because it too is a more heavy duty compression algorithm and it takes more computational time
+
+46
+00:02:58,230 --> 00:03:05,470
+than JE's up but usually not always but usually returns more compressed files than you get with it.
+
+47
+00:03:05,500 --> 00:03:07,100
+Because it's a bit of a tradeoff.
+
+48
+00:03:07,100 --> 00:03:10,240
+Now let's compress at Tabo with BS too and see what we get like.
+
+49
+00:03:10,260 --> 00:03:11,200
+So it's very easy.
+
+50
+00:03:11,300 --> 00:03:14,770
+All we have to do is BS it to archive.
+
+51
+00:03:14,820 --> 00:03:15,590
+DR.
+
+52
+00:03:15,790 --> 00:03:21,930
+And when we say that we now see that it's gone and got the BS had to file extension and if we use the
+
+53
+00:03:21,930 --> 00:03:26,430
+file command on it we can see that it says it because it to compress data.
+
+54
+00:03:26,430 --> 00:03:31,620
+It doesn't tell you what it was before it was compressed so we lose a bit of that information but it
+
+55
+00:03:31,620 --> 00:03:34,770
+has indeed been compressed and the file command knows that it has.
+
+56
+00:03:34,980 --> 00:03:35,700
+So how big is it.
+
+57
+00:03:35,760 --> 00:03:41,250
+Well if we take a look with the l option we can just have a look right there and we can see that this
+
+58
+00:03:41,250 --> 00:03:44,430
+is 23000 137 bytes.
+
+59
+00:03:44,490 --> 00:03:51,930
+So it's slightly larger than the GS version of 23000 and 23 bytes Nabby's it to is usually best saved
+
+60
+00:03:51,930 --> 00:03:54,140
+until you have really large files.
+
+61
+00:03:54,160 --> 00:03:59,820
+Now for these relatively small text files it didn't do as much good to use it to but rather large file
+
+62
+00:03:59,820 --> 00:04:00,900
+such as a video.
+
+63
+00:04:00,900 --> 00:04:05,690
+You'll definitely see a large difference between the compression results achieved by b.s up to and GZA.
+
+64
+00:04:05,840 --> 00:04:07,910
+Let's undo a BS app to compression.
+
+65
+00:04:07,920 --> 00:04:08,740
+It's actually very easy.
+
+66
+00:04:08,730 --> 00:04:13,550
+All we've got to do is be unzip to and then whatever the bees have to archive it.
+
+67
+00:04:13,560 --> 00:04:17,350
+So in our case this archived UNCTAD are easy to we press enter.
+
+68
+00:04:17,520 --> 00:04:22,710
+We see that we've come back to the tar file and again we can use the file command to check and we've
+
+69
+00:04:22,710 --> 00:04:25,450
+got our tar archive back.
+
+70
+00:04:25,460 --> 00:04:29,990
+Now there are other compression algorithms that Messers the ex-head compression algorithm.
+
+71
+00:04:30,090 --> 00:04:34,920
+And if you want to see a more in-depth comparison between the performance of Gs of bees it to and the
+
+72
+00:04:34,920 --> 00:04:39,900
+exit algorithm I put a link in the resources section for you to find out.
+
+73
+00:04:39,900 --> 00:04:44,710
+Now there is something that you should bear in mind however which is how do you create zip files.
+
+74
+00:04:44,750 --> 00:04:50,060
+Now zip files are files that you know are commonly used on Windows or Mac.
+
+75
+00:04:50,160 --> 00:04:52,410
+And do you know as compressed archives.
+
+76
+00:04:52,470 --> 00:04:54,360
+Now they're not.
+
+77
+00:04:54,700 --> 00:05:01,580
+I don't think they are as compressed as what you'll get with be too but they are commonly used on other
+
+78
+00:05:01,810 --> 00:05:03,280
+on other operating systems.
+
+79
+00:05:03,350 --> 00:05:07,600
+So if you want to create a zip file it's actually a one step process.
+
+80
+00:05:07,730 --> 00:05:08,880
+You'll just type zip.
+
+81
+00:05:09,050 --> 00:05:13,060
+OK then you put the files let's kill let's call it thing.
+
+82
+00:05:13,100 --> 00:05:13,980
+Dot zip.
+
+83
+00:05:14,090 --> 00:05:18,370
+And then we'll put file 1.60 for 2.6 for 3.6.
+
+84
+00:05:18,550 --> 00:05:19,690
+I want to be president.
+
+85
+00:05:19,850 --> 00:05:28,450
+We'll see that we now have a zip file in there so if I press files file are things sorry zip it does
+
+86
+00:05:28,460 --> 00:05:34,510
+that it's a zip archive data and this is what you can use on other operating systems such as Windows
+
+87
+00:05:34,520 --> 00:05:42,710
+and you usually can with zipped files or zip to compressed files because they don't tend to work too
+
+88
+00:05:42,710 --> 00:05:48,170
+well on other operating systems by default you don't have to install other software like 7 zip or when
+
+89
+00:05:48,170 --> 00:05:50,400
+raw or whatever it might be to extract them.
+
+90
+00:05:50,480 --> 00:05:56,890
+And of course you can just unzip that zip file and it'll ask you do you want to extract them all and
+
+91
+00:05:56,930 --> 00:05:58,340
+then you can extract them all.
+
+92
+00:05:58,340 --> 00:06:02,500
+This is just asking us because it was like oh I have to overwrite some stuff.
+
+93
+00:06:02,570 --> 00:06:04,530
+That's no problem we just said yes and that worked.
+
+94
+00:06:04,640 --> 00:06:08,570
+So if you want to make zip files zip and unzip is the way to go.
+
+95
+00:06:08,870 --> 00:06:14,150
+So if we clear the screen no so far we've been looking at compression as a two step process.
+
+96
+00:06:14,160 --> 00:06:19,600
+OK first we've been creating a tarball using the command and then compressing that tabbouleh using either
+
+97
+00:06:19,780 --> 00:06:23,730
+zip or it to or you know any other compression algorithm.
+
+98
+00:06:23,750 --> 00:06:24,140
+OK.
+
+99
+00:06:24,290 --> 00:06:26,970
+But is there any way to do it in one step.
+
+100
+00:06:27,200 --> 00:06:29,780
+Well because creating backups is such a common thing to do.
+
+101
+00:06:29,780 --> 00:06:34,880
+The answer is yes you can actually create a table and compress it using a compression algorithm straight
+
+102
+00:06:34,880 --> 00:06:36,490
+from within the Tor command.
+
+103
+00:06:36,600 --> 00:06:42,080
+So let's just delete our top or phenomenas it followed us or tar archive dot tar we're going to remove
+
+104
+00:06:42,080 --> 00:06:44,120
+that thing dot zip.
+
+105
+00:06:44,180 --> 00:06:48,890
+So we're going to get rid of all every archive that we've got and then we're going to take it right
+
+106
+00:06:48,890 --> 00:06:54,080
+from just the raw data here these raw files straight to a compressed archive in one go.
+
+107
+00:06:54,170 --> 00:06:54,730
+OK.
+
+108
+00:06:54,980 --> 00:07:00,130
+So to create the tab to create the tar ball itself how would we do that.
+
+109
+00:07:00,140 --> 00:07:06,860
+Well what we do is we'd create what we do TAR CVF so create verbose and allow it to accept files.
+
+110
+00:07:06,860 --> 00:07:10,140
+We're going to create our archive dot.
+
+111
+00:07:11,000 --> 00:07:14,390
+There we go and file one to three.
+
+112
+00:07:14,390 --> 00:07:16,000
+So this is the way that we normally do it.
+
+113
+00:07:16,090 --> 00:07:16,740
+OK.
+
+114
+00:07:16,940 --> 00:07:21,660
+But now to compress the files we just need to give it one more option.
+
+115
+00:07:21,710 --> 00:07:22,230
+OK.
+
+116
+00:07:22,340 --> 00:07:27,070
+So to do it with GZA you just give it the Zed option.
+
+117
+00:07:27,310 --> 00:07:27,940
+OK.
+
+118
+00:07:28,040 --> 00:07:32,250
+And if if we do that that will compress using geezer.
+
+119
+00:07:32,570 --> 00:07:37,460
+And we should remember that instead of naming it as archived on TAR because this is going to be a zip
+
+120
+00:07:37,460 --> 00:07:43,460
+file we should add dot G Zed at the end as well just for convention because it won't be added automatically
+
+121
+00:07:43,460 --> 00:07:44,630
+when using this method.
+
+122
+00:07:44,720 --> 00:07:45,230
+OK.
+
+123
+00:07:45,500 --> 00:07:50,430
+When you run Jees upon it before it was added automatically the doc desired file extension.
+
+124
+00:07:50,510 --> 00:07:54,400
+But now because we're doing it all in one step we have to provide the file name.
+
+125
+00:07:54,410 --> 00:07:58,220
+So we need to add on that just so you know it's a bit easier to see what's going on.
+
+126
+00:07:58,370 --> 00:08:04,700
+And when we have when we press Enter we'll see the archived Algy's that has been has been created and
+
+127
+00:08:04,700 --> 00:08:08,110
+we can check that it is in fact GS It file using the file command.
+
+128
+00:08:08,130 --> 00:08:12,250
+And it says that it is just a compressed data so it's super cool.
+
+129
+00:08:12,290 --> 00:08:12,700
+OK.
+
+130
+00:08:12,800 --> 00:08:15,350
+Now how would you do it using it too.
+
+131
+00:08:15,380 --> 00:08:20,120
+Well if we clear the screen BS It too is exactly the same except instead of zed.
+
+132
+00:08:20,270 --> 00:08:21,790
+You just have J.
+
+133
+00:08:22,070 --> 00:08:24,100
+OK so if you press if you have J.
+
+134
+00:08:24,110 --> 00:08:31,300
+And now remember we're going to change our extension to be 0 2 percent or we'll see that archive Dombey's
+
+135
+00:08:31,390 --> 00:08:37,190
+2 has been created and we can check that that is indeed valid by using the file command telling it to
+
+136
+00:08:37,190 --> 00:08:41,780
+look at the bes to archive and it tells us that it's BS to compressed data.
+
+137
+00:08:41,810 --> 00:08:44,910
+So that's how you can compress in one go.
+
+138
+00:08:44,930 --> 00:08:49,630
+How would we go about extracting from those compressed archives in one go.
+
+139
+00:08:49,730 --> 00:08:52,070
+Well it's really easy as well Caylus delete them again.
+
+140
+00:08:52,110 --> 00:08:53,890
+Actually I was not doing them because we'll need them right.
+
+141
+00:08:54,020 --> 00:08:57,120
+So how would we normally extract from a file.
+
+142
+00:08:57,170 --> 00:08:58,420
+Well I would normally do it.
+
+143
+00:08:58,550 --> 00:09:02,520
+If you remember is TA then X V.F..
+
+144
+00:09:02,640 --> 00:09:08,190
+So X-Fi extract VIF of Abodh and I have to accept a file and you'd give it the file.
+
+145
+00:09:08,210 --> 00:09:14,690
+OK but let's try and extract the Jesus option versus delete these original files and then trying to
+
+146
+00:09:14,690 --> 00:09:17,340
+extract the the GS option first.
+
+147
+00:09:17,360 --> 00:09:22,730
+So to extract the Jesus option we will do is that again because that is Fuji's.
+
+148
+00:09:22,790 --> 00:09:23,200
+OK.
+
+149
+00:09:23,300 --> 00:09:27,830
+So you had the Zed when compressing you have the Zed when extracting all you've got to do is change
+
+150
+00:09:27,830 --> 00:09:30,210
+the C to an X and you get to go.
+
+151
+00:09:30,290 --> 00:09:36,140
+So when we press that we'll see that now we've extracted them all out again and we've got the data back.
+
+152
+00:09:36,350 --> 00:09:39,080
+So if we delete these files here if we just delete them there.
+
+153
+00:09:39,080 --> 00:09:41,850
+Now how about extracting using it.
+
+154
+00:09:41,990 --> 00:09:44,260
+Well you remember that J is for.
+
+155
+00:09:44,300 --> 00:09:46,600
+So instead of having XEDIT let's just put the J.
+
+156
+00:09:46,670 --> 00:09:50,890
+And then we just need to tell it what the archive is and remember that it's a BS app to archives which
+
+157
+00:09:50,900 --> 00:09:52,480
+actually change the name.
+
+158
+00:09:52,580 --> 00:09:59,270
+So we are Taar extracting verbose through Baeza up to and then giving it the file and that we are we've
+
+159
+00:09:59,300 --> 00:10:02,610
+extracted it too so it's very very easy as long as you can remember.
+
+160
+00:10:02,690 --> 00:10:05,910
+Is Fuji's EP J is for it too.
+
+161
+00:10:06,010 --> 00:10:10,370
+You saw it and you can extract and compress all in one go Hooray.
+
+162
+00:10:10,390 --> 00:10:15,190
+So we've seen so much in the last two videos it's quite hilarious that a section on compression would
+
+163
+00:10:15,190 --> 00:10:16,400
+take so long right.
+
+164
+00:10:16,750 --> 00:10:22,510
+Anyway let's have a quick recap so you first learned about the concept of a tarball now tar files or
+
+165
+00:10:22,510 --> 00:10:26,920
+tar balls or just containers for you to store the files that you want to compress.
+
+166
+00:10:26,980 --> 00:10:27,520
+OK.
+
+167
+00:10:27,590 --> 00:10:33,400
+They can create tarballs using the tar command and tables do not really do any compression on their
+
+168
+00:10:33,400 --> 00:10:34,090
+own.
+
+169
+00:10:34,150 --> 00:10:40,150
+That's the job of a compression algorithm the tarball just contains the files and you saw how to add
+
+170
+00:10:40,150 --> 00:10:44,630
+files into tarballs and how to extract files from tarballs using the command.
+
+171
+00:10:44,650 --> 00:10:48,760
+And remember that there's a cheat sheet in the resources section for this video that will list out the
+
+172
+00:10:48,760 --> 00:10:51,680
+different options different ways of using the talk command.
+
+173
+00:10:51,700 --> 00:10:56,530
+Now once you have the table in order to compress it you need to use a compression algorithm.
+
+174
+00:10:56,620 --> 00:10:57,010
+OK.
+
+175
+00:10:57,130 --> 00:11:00,790
+So tarballs can be compressed using a variety of different compression algorithms.
+
+176
+00:11:00,970 --> 00:11:02,750
+And we took a look at GS.
+
+177
+00:11:02,830 --> 00:11:05,920
+And these two which are common options on Linux.
+
+178
+00:11:05,980 --> 00:11:09,940
+But the exect option is another option we didn't discuss it here but if you want to read more about
+
+179
+00:11:09,940 --> 00:11:14,110
+the comparison between the different algorithms I've also put a link to a intrusting blog post in the
+
+180
+00:11:14,110 --> 00:11:16,680
+resources section for this videotape for you to have a look at as well.
+
+181
+00:11:16,760 --> 00:11:17,510
+OK.
+
+182
+00:11:17,770 --> 00:11:25,090
+But with regards to JE's up NBC to GS It tends to be faster but give less compression Busby's it tends
+
+183
+00:11:25,090 --> 00:11:25,950
+to give more compression.
+
+184
+00:11:25,960 --> 00:11:27,770
+But take a bit more computation time.
+
+185
+00:11:27,780 --> 00:11:32,170
+OK so that's just something to bear in mind but by all means check out the link in the resources section
+
+186
+00:11:32,170 --> 00:11:34,400
+for a more in-depth discussion.
+
+187
+00:11:34,510 --> 00:11:41,530
+You saw also how you can create zip files for compatibility with things like Windows or Mac using the
+
+188
+00:11:41,530 --> 00:11:46,100
+zip and unzip commands so that's something as well that you've got on record as well.
+
+189
+00:11:46,180 --> 00:11:46,750
+OK.
+
+190
+00:11:46,810 --> 00:11:53,050
+And you saw as well how to not just do making the tarball and then compressing into steps.
+
+191
+00:11:53,050 --> 00:11:58,810
+So I had to do archiving and compression in just one step using variety of shortcuts and all that stuff
+
+192
+00:11:58,930 --> 00:12:00,080
+is in the cheat sheet.
+
+193
+00:12:00,130 --> 00:12:04,340
+You can find in the resources section for this video if you ever need a refresher.
+
+194
+00:12:04,360 --> 00:12:07,960
+OK it's all very simple and once you look at the cheat sheet probably you'll be able to see the pattern
+
+195
+00:12:09,040 --> 00:12:10,650
+but it's really quite simple stuff.
+
+196
+00:12:10,650 --> 00:12:12,010
+Once you've done it once or twice.
+
+197
+00:12:12,060 --> 00:12:12,430
+OK.
+
+198
+00:12:12,520 --> 00:12:19,010
+So all in all you can now create your own archives and backups using Linux using the Linux command line
+
+199
+00:12:19,030 --> 00:12:23,860
+which is super awesome because on this section all about learning how to use files.
+
+200
+00:12:23,860 --> 00:12:27,190
+Now when you've created Defarge you've edited them they've copy paste them you've moved them you've
+
+201
+00:12:27,190 --> 00:12:28,540
+done whatever you want with them.
+
+202
+00:12:28,540 --> 00:12:32,920
+You can also create your own backups and save for later in a say in a space efficient way.
+
+203
+00:12:32,950 --> 00:12:39,730
+So Welden you now in the next video what we're going to be doing is we're going to be closing our discussion
+
+204
+00:12:39,760 --> 00:12:45,670
+for the section on files and the file system and I want to say that you've really come so very far in
+
+205
+00:12:45,670 --> 00:12:49,600
+this section and the next video I want to take the time to have a recap of what we've learned in this
+
+206
+00:12:49,600 --> 00:12:52,250
+section and also to celebrate your progress.
+
+207
+00:12:52,270 --> 00:12:57,860
+So Welden you now for a summary of the section of the Course as well as some a deserved set of praises.
+
+208
+00:12:57,880 --> 00:12:59,630
+I'll see you in the next video.

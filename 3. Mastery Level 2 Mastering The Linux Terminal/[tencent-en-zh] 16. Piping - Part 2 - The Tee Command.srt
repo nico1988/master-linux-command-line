@@ -1,0 +1,855 @@
+1
+00:00:00,550 --> 00:00:02,010
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:02,010 --> 00:00:03,130
+欢迎回来。
+And welcome back.
+
+3
+00:00:03,130 --> 00:00:08,950
+我在上一个视频中给你留下了一些扣人心弦的东西，在那里你学习了所有关于管道的基础知识。
+I left you with a bit of a cliffhanger in the last video where you learned all about the basics of piping.
+
+4
+00:00:08,950 --> 00:00:13,420
+现在，在这段视频中，我们将介绍您在上一段视频和
+Now in this video we're going to take what you learned about the basics in the previous video and in
+
+5
+00:00:13,420 --> 00:00:18,120
+这个视频我们将把它升级，并教你一些先进的管道技术。
+this video we're going to level it up and teach you some advanced piping techniques.
+
+6
+00:00:18,130 --> 00:00:22,420
+从昨晚的视频中学到的基本知识中，只需获取一条命令的输出即可
+So with the basic stuff you learnt last night's video about just taking the output of one command and
+
+7
+00:00:22,420 --> 00:00:26,530
+通过管道将其直接输入到另一个的标准输入。
+piping it directly into the input into the standard input of another.
+
+8
+00:00:26,530 --> 00:00:30,730
+这不会给灵活性留下太大的空间，而有很多非常酷的东西，你可以
+That doesn't leave much room for flexibility whereas there's loads of really cool things that you can
+
+9
+00:00:30,730 --> 00:00:33,790
+如果你再多学几种技术，你的管道就不用了。
+do with your pipelines if you learn just a few more techniques.
+
+10
+00:00:33,790 --> 00:00:36,480
+因此，在这段视频中，我们将回顾一下这些先进的管道技术。
+So in this video we're going to go over those advanced piping techniques.
+
+11
+00:00:36,520 --> 00:00:42,440
+最后，您必须使用t和x ogg命令创建高级管道。
+And by the end you have to make advanced pipelines using the t and x Ogg's commands.
+
+12
+00:00:42,550 --> 00:00:44,630
+所以，让我们继续往前跳，一头扎进去。
+So let's go ahead and jump into it.
+
+13
+00:00:45,970 --> 00:00:49,470
+好的，让我们快速回顾一下我们在上一段视频中所做的。
+All right so let's just have a quick recap of what we did in the last video.
+
+14
+00:00:49,600 --> 00:00:54,220
+因此，在上一个视频中，我们使用date命令来获取有关我们的计算机的大量系统信息
+So in the last video we use the date command to get loads of system information about our computers
+
+15
+00:00:54,220 --> 00:01:00,430
+时钟，我们所做的是将数据传递给Cut命令，因为我们只想
+clock and what we did was we passed that data into the cut command because we just wanted to cut out
+
+16
+00:01:00,430 --> 00:01:02,790
+一周中的某一天，也就是星期一。
+the day of the week which is a Monday.
+
+17
+00:01:02,980 --> 00:01:08,680
+现在到了星期几，我们不得不说这个数据实际上被分成了几列
+Now to the day of the week we have to say that this data is actually broken up into several columns
+
+18
+00:01:08,920 --> 00:01:11,410
+并且每列由空格隔开。
+and each column is separated by a space.
+
+19
+00:01:11,410 --> 00:01:17,080
+现在，另一种说法是，每一列都由空格分隔，这在计算机中是一个花哨的词
+Now another way of saying that is that each column is delimited by space that's a fancy word in computer
+
+20
+00:01:17,170 --> 00:01:18,240
+行话。
+lingo.
+
+21
+00:01:18,430 --> 00:01:24,870
+所以我们做的就是给命令一个分隔符，我们说分隔符是一个空格。
+And so what we did is we gave the the command a delimiter and we said the delimiter is a space.
+
+22
+00:01:25,070 --> 00:01:25,590
+好的。
+OK.
+
+23
+00:01:25,870 --> 00:01:29,770
+现在，一旦我们说好了，每一列都被空格分开了。
+And now once we've said OK Each column is split up by by spaces.
+
+24
+00:01:29,770 --> 00:01:31,580
+我们想要哪一栏？我们想要哪一栏？
+Which field do we want which column do we want.
+
+25
+00:01:31,580 --> 00:01:33,510
+第一栏是什么？
+What is the first column.
+
+26
+00:01:33,630 --> 00:01:38,590
+现在，CUT命令中的字段在COOK命令中称为可消除列，称为字段。
+Now fields in the cut command are called effable columns in the cook commander called fields.
+
+27
+00:01:38,650 --> 00:01:44,890
+所以我们说Fields等于1，当我们按Enter键时，它将在周一中断。
+So we said Fields equals 1 and when we pressed enter that cuts out Monday.
+
+28
+00:01:44,970 --> 00:01:45,370
+好的。
+OK.
+
+29
+00:01:45,430 --> 00:01:47,330
+这就是我们在上一个视频中做的。
+So that's what we did in the last video.
+
+30
+00:01:47,350 --> 00:01:49,240
+然后我给了你一个小小的挑战。
+Then I gave you a little bit of a challenge.
+
+31
+00:01:49,270 --> 00:01:56,270
+我说，嘿，我们如何才能真正将这些信息保存到一个文件中。
+I said hey how can we go about actually saving this information into a file.
+
+32
+00:01:56,350 --> 00:02:00,380
+但同时也将其向下传递到管道中。
+But at the same time also pass it down into the pipeline.
+
+33
+00:02:00,490 --> 00:02:05,740
+那么，我们如何将其保存到文件中，同时又将其传递给厨师来吧，这样它就可以操作了
+So how can we save it into a file but also pass it down into the cook come on so that it can be operated
+
+34
+00:02:05,740 --> 00:02:07,530
+这样我们周一就可以出去了。
+on so we can get Monday out.
+
+35
+00:02:07,540 --> 00:02:12,940
+所以我们试图同时做两件事，所以要做到这一点，我们实际上需要另一个命令，名为
+So we're trying to do two things at once so to do that we actually need to have another command called
+
+36
+00:02:12,940 --> 00:02:14,260
+命令。
+the command.
+
+37
+00:02:14,260 --> 00:02:16,970
+那么让我们来看看这两个命令是如何工作的。
+So let's take a look at how the two command works.
+
+38
+00:02:18,230 --> 00:02:20,490
+下面是TEE命令如何工作的图像。
+So here's an image of how the tee command works.
+
+39
+00:02:20,490 --> 00:02:23,870
+现在在视频资源中放一个指向原始图片的链接。
+Now put a link to the original picture in the video resources.
+
+40
+00:02:23,890 --> 00:02:28,240
+您可以在这里看到，我们在两个命令之间有一条管道，所以左边是一个命令。
+You can see here that we have a pipe between two commands so here's a command over on the left.
+
+41
+00:02:28,470 --> 00:02:32,900
+我们在右边有另一个命令，在中间我们使用的是这个命令。
+And we have another command over here on the right and in the middle we're using the command.
+
+42
+00:02:33,000 --> 00:02:33,540
+好的。
+OK.
+
+43
+00:02:33,540 --> 00:02:35,970
+现在我们还没有讨论特定命令的作用。
+Now we haven't covered what the specific commands do.
+
+44
+00:02:35,970 --> 00:02:40,780
+实际上这并不重要，我想要关注的是中间的T命令
+It doesn't actually matter so much what I want to focus on is the T command in the middle and just on
+
+45
+00:02:40,840 --> 00:02:43,350
+我们正试图把两个命令连在一起。
+that we're trying to pipe two commands together.
+
+46
+00:02:43,440 --> 00:02:44,070
+好的。
+OK.
+
+47
+00:02:44,100 --> 00:02:49,690
+现在，就像水管中的T形接头一样，我们可以使用TEE命令使数据流入
+Now just like a T-junction in a pipe of water we can use the tee command to cause our data to flow in
+
+48
+00:02:49,720 --> 00:02:50,610
+两个方向。
+two directions.
+
+49
+00:02:50,610 --> 00:02:58,110
+我们可以让它水平流动，也可以垂直向下流动到你能想象到的文件中
+We can cause it to flow horizontally as well as flow vertically downwards into the files you can imagine
+
+50
+00:02:58,110 --> 00:02:58,960
+它是这样工作的。
+it working like that.
+
+51
+00:02:59,010 --> 00:02:59,430
+好的。
+OK.
+
+52
+00:02:59,580 --> 00:03:03,720
+因此，团队指挥官允许我们将数据传递到管道的睡觉上。
+So this the team commander allows us to pass the data on to the rest of the pipe.
+
+53
+00:03:03,810 --> 00:03:06,530
+但它也可以让我们把它保存在一个文件里。
+But it also allows us to keep it in a file.
+
+54
+00:03:06,680 --> 00:03:07,080
+好的。
+OK.
+
+55
+00:03:07,170 --> 00:03:11,580
+所以你可以在这里看到，我们在左边有一位指挥官，他正试图通过管道将其数据传送到
+So you can see here that we've got a commander on the left that is trying to pipe its data across into
+
+56
+00:03:11,580 --> 00:03:16,560
+右边的另一个指挥员在中间，我们用管道通过TEE命令和命令
+another commander on the right in the middle there we pipe it through the tee command and the command
+
+57
+00:03:16,620 --> 00:03:21,750
+我们给它一个命令行参数，一个DXi文件，可以是您想要的任何文件名。
+we give it a command line argument a file that DXi that could be any file name that you want.
+
+58
+00:03:21,930 --> 00:03:25,950
+发生的情况是，数据确实会从一个命令的标准输出一直传递到
+And what happens is the data does pass all the way through from the standard output of one command to
+
+59
+00:03:25,950 --> 00:03:27,210
+另一种是标准输入。
+the standard input the other.
+
+60
+00:03:27,210 --> 00:03:29,040
+但它也会掉下来。
+But it also falls down.
+
+61
+00:03:29,040 --> 00:03:34,980
+您可以想象它从您的命令行中掉落到一个名为FIELD或ATX的文件中
+You can imagine it falling down from your command line it like into a file called filed or ATX or whatever
+
+62
+00:03:34,980 --> 00:03:37,230
+您为命令指定的文件名。
+file name you gave the command.
+
+63
+00:03:37,500 --> 00:03:39,390
+这就是命令的工作方式。
+So that's how the command works.
+
+64
+00:03:39,390 --> 00:03:45,370
+从理论上讲，这就是这个图形的工作方式，让我们继续下去，看看它在实践中是如何工作的。
+In theory this is how this graphic works and let's go ahead and see it work in practice.
+
+65
+00:03:45,670 --> 00:03:50,680
+好的，你永远不会明白t命令是如何工作的，我只是快速刷新了一下我们的命令流水线。
+OK so never you understand how the t command works I just have a quick refresher of our command pipeline.
+
+66
+00:03:50,830 --> 00:03:55,570
+我们有DATE命令，它为我们提供关于系统时钟的一大堆信息，我们
+We have the date command which gives us a whole bunch of information about our systems clock and we
+
+67
+00:03:55,570 --> 00:04:00,220
+我想把周一或者一周中的任何一天都删掉，其实还可以。
+wanted to cut out the Monday or whatever day of the week it actually is OK.
+
+68
+00:04:00,250 --> 00:04:03,490
+因此，我们采用DATE命令，并将其转换为CUT命令。
+So we take the date command and we piped it into the cut command.
+
+69
+00:04:03,490 --> 00:04:08,010
+现在我们注意到，数据被分成用空格分隔的列。
+Now we notice that the data is broken up into columns that are separated by spaces.
+
+70
+00:04:08,080 --> 00:04:13,210
+所以我们说，嘿，拜托，我们有一个分隔符，那是一个空格，数据是由空格分隔的，我们想要
+So we say hey come on we have a delimiter that's a space the data is delimited by spaces and we want
+
+71
+00:04:13,210 --> 00:04:18,400
+第一列或如命令所称的第一个字段，它为我们提供了一周中的第几天，
+the first column or as the command calls it the first field and that gives us the day of the week which
+
+72
+00:04:18,400 --> 00:04:19,930
+在这种情况下是星期一。
+in this case is Monday.
+
+73
+00:04:19,930 --> 00:04:26,980
+现在的挑战是，我们不仅要让它出来，我们还想保存整个日期AK
+Now the challenge was we want to not only have that come out we also want to save the entire date AK
+
+74
+00:04:27,310 --> 00:04:32,080
+到一个名为Full Dotti XTi的文件中。
+into a file called called full date Dotti XTi.
+
+75
+00:04:32,130 --> 00:04:32,690
+好的。
+OK.
+
+76
+00:04:32,710 --> 00:04:34,100
+这就是我们将如何做到这一点。
+So here's how we would do that.
+
+77
+00:04:34,130 --> 00:04:37,660
+然后按下镶木地板就可以到达我们之前的位置。
+And then press the paroquet to get where we got before.
+
+78
+00:04:37,660 --> 00:04:41,160
+现在我要做的就是把命令塞进去。
+Now what I'm going to do is I'm just going to squeeze in here the command.
+
+79
+00:04:41,320 --> 00:04:41,820
+好的。
+OK.
+
+80
+00:04:41,890 --> 00:04:46,660
+现在，该命令将把像T-JOINT这样的一个放入我们的管道中。
+Now the command is going to put one of those like T-junction in our pipeline.
+
+81
+00:04:46,660 --> 00:04:47,970
+你需要在你的脑海中想象它。
+You need to imagine it in your head.
+
+82
+00:04:48,040 --> 00:04:48,440
+好的。
+OK.
+
+83
+00:04:48,610 --> 00:04:53,330
+所以接下来会发生的是，数据将会一直水平地通过管道。
+So what's going to happen is the data is going to pass all the way through the pipeline horizontally.
+
+84
+00:04:53,350 --> 00:04:58,260
+所以它将从日期开始传递到标准输出，然后进入杯子的标准输入
+So it's going to pass from the date come on standard output and go into the standard input of the cup
+
+85
+00:04:58,260 --> 00:04:58,570
+赶快。
+come on.
+
+86
+00:04:58,580 --> 00:05:00,560
+所以它会径直流过。
+So it's going to flow straight the way through.
+
+87
+00:05:00,820 --> 00:05:06,280
+但是tee命令要做的是，它将允许我们垂直向下保存数据
+But what the tee command is going to do is it's going to allow us to save the data vertically downwards
+
+88
+00:05:06,460 --> 00:05:10,620
+所以你可以看到它像一个大字母T，A，K，像一个大的T形交叉口。
+so you can watch it being like a big letter T A K like a big T-junction.
+
+89
+00:05:10,720 --> 00:05:15,970
+日期将向下放入名为Full Date的文件中。
+The date is going to go downwards into the file called full date.
+
+90
+00:05:16,370 --> 00:05:18,140
+XTi医生好的。
+Dr. XTi Okay.
+
+91
+00:05:18,490 --> 00:05:22,750
+所以我们今天在这里，我们将横向向下操作，内部也不会有任何关于这一点的讨论
+So here we are today is going to go horizontal down ops either no internal about that is going to go
+
+92
+00:05:22,750 --> 00:05:23,890
+横向横跨。
+horizontally across.
+
+93
+00:05:23,970 --> 00:05:24,730
+好的。
+OK.
+
+94
+00:05:24,760 --> 00:05:29,660
+它还将垂直向下放入一个名为全天的文件中。
+And it's also going to go vertically downwards into a file called full day.
+
+95
+00:05:29,710 --> 00:05:35,860
+XTi博士，因为当我们这样做时，我们看到一周中某一天的输出仍然发生，因为
+Dr. XTi because when we do that we see that the output of the day of the week is still happened because
+
+96
+00:05:35,860 --> 00:05:37,320
+那是穿过伤口的，来吧。
+that was passed through the cut Come on.
+
+97
+00:05:37,320 --> 00:05:41,180
+快点，把它吐到它的标准输出端，这个输出端还连接着我们的终端。
+Come on spit it out to its standard output which is still connected to our terminal.
+
+98
+00:05:41,320 --> 00:05:44,710
+当我们打开我们的文件资源管理器时，我们可以看到这一点。
+Boom we open up our file explorer we can see that.
+
+99
+00:05:44,710 --> 00:05:46,970
+现在我们有一个名为Full Date的文件。
+Now we have a file called full date.
+
+100
+00:05:47,050 --> 00:05:47,790
+博士。
+Dr..
+
+101
+00:05:47,840 --> 00:05:49,700
+我删除了我们之前拥有的所有其他信息。
+I deleted all of the other ones we have before.
+
+102
+00:05:49,780 --> 00:05:53,670
+所以我们重新开始，现在我们有了完整日期的DirectX磁带。
+So we were starting afresh and now we have full date directx tape.
+
+103
+00:05:53,740 --> 00:05:59,290
+当我打开那个井的时候，嘿，我们实际上可以看到所有的数据数据确实已经保存在
+And when I open that well hey we can actually see that all of the data data has been indeed saved in
+
+104
+00:05:59,290 --> 00:06:00,940
+一个名为Full Date的文件。
+a file called full date.
+
+105
+00:06:01,010 --> 00:06:02,700
+多蒂·西蒂没那么厉害。
+Dottie XTi Isn't that awesome.
+
+106
+00:06:02,710 --> 00:06:03,240
+这很合适。
+That's proper.
+
+107
+00:06:03,240 --> 00:06:08,020
+好的，所发生的是DATE命令SPACE所有的信息
+All right so what happened was the date command spatio all of its information all the way across the
+
+108
+00:06:08,020 --> 00:06:12,700
+管道，当它到达TQM上的茶杯时，我只是对管道中的数据进行了快照
+pipeline and when it got to the teacup on the TQM I just took a snapshot of the data in the pipeline
+
+109
+00:06:12,970 --> 00:06:16,050
+并将其传递到一个名为Full Date的文件中。
+and passed it down into a file called full date.
+
+110
+00:06:16,060 --> 00:06:20,700
+XTi博士，因此该文件包含DATE命令输出的所有数据。
+Dr. XTi so that file contains all of the data that's coming out the date command.
+
+111
+00:06:20,820 --> 00:06:26,590
+好的，但是随后数据被传递到Cut命令中，该命令进行一些处理，并将空间
+OK but then the data was passed on into the cut command which did some processing and that spatio the
+
+112
+00:06:26,590 --> 00:06:28,980
+一周中的哪一天，在这种情况下是星期一。
+day of the week which in this case was Monday.
+
+113
+00:06:28,990 --> 00:06:30,830
+不，我有个快速挑战要给你，好吗？
+No I've got a quick challenge for you OK.
+
+114
+00:06:30,940 --> 00:06:32,210
+我想你可以做到的。
+And I think you can do it.
+
+115
+00:06:32,290 --> 00:06:33,180
+我们该怎么办。
+What are we to do.
+
+116
+00:06:33,250 --> 00:06:39,430
+我想让你看看你能不能做到，而不是把一周中的某一天都吐到航站楼
+I want you to instead of having the day the week spit out to the terminal I want you to see if you can
+
+117
+00:06:39,430 --> 00:06:46,990
+了解如何使用重定向将数据实际保存到名为Today的文件中
+figure out how you can use redirection to actually cause that data to be saved in a file called today
+
+118
+00:06:47,230 --> 00:06:48,540
+西蒂医生。
+Dr. XTi.
+
+119
+00:06:48,970 --> 00:06:49,380
+好的。
+OK.
+
+120
+00:06:49,450 --> 00:06:54,070
+因此，与其让SpinSpotter去商店，不如去航站楼。
+So instead of having the day of the week SpinSpotter to the shop bespattered to the terminal.
+
+121
+00:06:54,070 --> 00:07:00,290
+我想让你把它保存在一个叫今天XTi博士的文件里，但是你还需要有命令
+I want you to have it saved in a file called today Dr. XTi But also you still need to have the command
+
+122
+00:07:00,290 --> 00:07:05,690
+他必须按下OK才能获得您以前拥有的内容，然后现在进行重定向。
+in he has to press the OK to get what you've got before and now do the redirection.
+
+123
+00:07:05,800 --> 00:07:06,280
+好的。
+OK.
+
+124
+00:07:06,290 --> 00:07:10,870
+所以我现在要把视频拉出来，然后回来看看你做得怎么样
+So I'm going to pull the video now and then come back and see how you did
+
+125
+00:07:16,270 --> 00:07:16,920
+你是怎么做到的。
+How'd you manage it.
+
+126
+00:07:16,940 --> 00:07:17,660
+是你做的吗。
+Did you do it.
+
+127
+00:07:17,930 --> 00:07:19,870
+嗯，这就是你，这就是我要做的。
+Well this is how you this is how I'd go about it.
+
+128
+00:07:19,880 --> 00:07:20,160
+正确的。
+Right.
+
+129
+00:07:20,240 --> 00:07:26,310
+所以我就写在这里的末尾，因为这是数据的实际来源。
+So I would just write at the end here because here's where the data is actually coming out from.
+
+130
+00:07:26,380 --> 00:07:31,510
+我只需要将标准输出重定向到一个名为TODAY的文件。
+I would just have a redirection from standard output into a file called today.
+
+131
+00:07:31,810 --> 00:07:35,180
+XTI，从字面上看就是这么简单。
+XTi and it's literally just that simple.
+
+132
+00:07:35,240 --> 00:07:35,570
+好的。
+OK.
+
+133
+00:07:35,720 --> 00:07:42,480
+一旦我们这样做了，如果我继续按Enter，我们可以看到，当我们打开我们的文件指挥官
+So once we've done that if I go ahead and press ENTER we can see that when we open up our file commander
+
+134
+00:07:42,500 --> 00:07:45,670
+这里我们还有一个文件，叫做今天的XTi博士。
+here we've also got a file called today Dr. XTi.
+
+135
+00:07:45,830 --> 00:07:50,570
+在那里，它保存了一周中的那一天的数据，在本例中是星期一。
+And inside there it has saved the data that day of the week which in this case was Monday.
+
+136
+00:07:50,570 --> 00:07:53,340
+让我删除这两个文件，这样我们就可以看到这一切的辉煌。
+Let me delete both files so we can see this in all its glory.
+
+137
+00:07:53,340 --> 00:07:56,790
+我没有文件，按Parakey，然后按Enter。
+I've got no files and press the Parakey press enter.
+
+138
+00:07:57,070 --> 00:08:04,220
+当我们看一看时，我们实际上已经设法将所有数据保存到全职医生60中，我们已经
+And when we take a look we've actually managed to save all the data into full date doctor 60 and we've
+
+139
+00:08:04,220 --> 00:08:09,280
+还设法将我们想要的内容通过重定向保存到今天的DirectX。
+also managed to save just what we wanted using redirection into today directx.
+
+140
+00:08:09,320 --> 00:08:10,500
+这不是很棒吗。
+Isn't that awesome.
+
+141
+00:08:10,500 --> 00:08:11,660
+对，那是一种。
+Right that's kind of.
+
+142
+00:08:11,780 --> 00:08:13,360
+那真是太棒了。
+That's really awesome.
+
+143
+00:08:13,420 --> 00:08:19,490
+不管怎样，我们在这里看到的是T命令基本上是对流动的数据进行快照
+So anyway so what we've got here is the T command basically takes a snapshot of the data that's flowing
+
+144
+00:08:19,490 --> 00:08:24,410
+在该点上通过管道，并将其保存在您提供的文件中。
+through the pipe at that point and saves it in a file that you give it.
+
+145
+00:08:24,490 --> 00:08:25,060
+好的。
+OK.
+
+146
+00:08:25,130 --> 00:08:27,380
+然后重定向也会做同样的事情。
+And then redirection will also do the same.
+
+147
+00:08:27,390 --> 00:08:31,690
+但是，一旦您重定向了标准输出，您就不能再将其传递到管道中。
+But once you've redirected standard output you can no longer pass it down the pipe.
+
+148
+00:08:31,760 --> 00:08:36,560
+好的，这就是我们使用T命令的原因，该命令允许标准输出继续向下流动
+OK so that's why we use the T command the command allows standard output to continue flowing down the
+
+149
+00:08:36,560 --> 00:08:42,540
+管道，而且还允许您有效地将其重定向到文件并拍摄快照，以便将其保存
+pipe but also allows you to effectively redirect it to a file and take a snapshot so that it's saved
+
+150
+00:08:42,550 --> 00:08:43,430
+那里。
+there.
+
+151
+00:08:43,550 --> 00:08:49,570
+换句话说，一旦你做了重定向，你就不能再做管道了。
+So another way of saying that is that once you've done redirection you can't do any more piping.
+
+152
+00:08:49,640 --> 00:08:54,430
+好的，一旦您重定向了标准输出，就像我们在今天文本中所做的那样。
+OK so once you've redirected standard output like we have here in the today text.
+
+153
+00:08:54,590 --> 00:09:01,860
+好的，我们不能再做比管道更多的管道了，我要把码头最大化。
+Ok we can no longer do any more piping down than a pipe I'm going to maximize the terminal we can.
+
+154
+00:09:01,860 --> 00:09:06,850
+一旦我们完成了到0.60的重定向，我们的管道时代就结束了。
+Once we've done this redirection to 0.60 that's the end of our piping days.
+
+155
+00:09:07,190 --> 00:09:12,740
+但是，如果我们想要保存今天的所有数据，那么我们可以做些什么呢？这需要继续这条管道。
+But what we could do if we wanted to save all the data in today that takes to continue the pipeline.
+
+156
+00:09:12,980 --> 00:09:13,540
+然后呢。
+Then what.
+
+157
+00:09:13,550 --> 00:09:15,680
+那就是T命令进来的时候。
+Then that's when the T command would come in.
+
+158
+00:09:15,680 --> 00:09:20,300
+好的，举个例子，我们今天停靠在这里的茶量，现在我们可以继续管道。
+OK so we do for example today docked here in the Teac amount and now we can continue to pipe.
+
+159
+00:09:20,380 --> 00:09:20,910
+好吧。
+Okay.
+
+160
+00:09:20,930 --> 00:09:27,920
+所以再说一遍，如果您重定向jackalope，这意味着如果您想要拍摄快照，就不会再有管道
+So just again if you do redirection of jackalope that means no more piping if you want to take a snapshot
+
+161
+00:09:28,070 --> 00:09:34,710
+但是继续管子，那是你用茶量的时候，现在我可以继续往下管子了。
+but continue piping that's when you use the Teac amount and now I could continue piping on down.
+
+162
+00:09:34,790 --> 00:09:35,320
+好吧。
+Okay.
+
+163
+00:09:35,360 --> 00:09:40,960
+所以我想在这段视频中也介绍X Ogg的命令，但我认为我们在这里是在拖延时间。
+So I wanted to also cover the X Ogg's commands in this video but I think we're pushing it for time here.
+
+164
+00:09:40,970 --> 00:09:46,170
+我希望这已经清楚地说明了发球台的命令是什么，在这里对球队和
+I hope that that has made it clear what the tee command is in final summary here for the team and the
+
+165
+00:09:46,180 --> 00:09:53,120
+Team命令允许您保存数据的快照并继续执行管道操作，而仅使用
+team command allows you to save a snapshot of the data and continue doing your piping whereas just using
+
+166
+00:09:53,120 --> 00:09:55,840
+重定向将保存数据的快照。
+redirection will save a snapshot of the data.
+
+167
+00:09:55,850 --> 00:09:57,740
+但是你不能再做任何管道了。
+But you can no longer do any piping.
+
+168
+00:09:57,740 --> 00:10:02,530
+因此，如果您希望继续构建管道，但要保留数据的快照，请使用T命令。
+So if you want to keep building your pipeline but keep a snapshot of the data use the T command instead.
+
+169
+00:10:02,540 --> 00:10:06,530
+所以在下一个视频中我们要做的是看看X Ogg的命令
+So in the next video what we're going to do is we're going to have a look at the X Ogg's command which
+
+170
+00:10:06,530 --> 00:10:13,020
+是一个非常强大的命令，它允许您将管道数据转换为命令行参数。
+is a really powerful command that allows you to turn your pipes data into command line arguments.
+
+171
+00:10:13,100 --> 00:10:16,140
+好的，那么让我们继续，我将在下一个视频中看到那里。
+OK so let's go ahead and I'll see the there in the next video.
+

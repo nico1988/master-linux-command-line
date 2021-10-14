@@ -1,0 +1,611 @@
+1
+00:00:00,180 --> 00:00:02,750
+Hello The Beautiful People are welcome to this video.
+
+2
+00:00:02,790 --> 00:00:08,490
+We're going to be learning about the super useful sort command and now the sort command is one of those
+
+3
+00:00:08,490 --> 00:00:14,270
+commands that you can kind of use anywhere to sort data and make it more ordered and easier to manage.
+
+4
+00:00:14,310 --> 00:00:19,020
+And over the next few videos I'm going to be showing you how you can use the sort command to sort data
+
+5
+00:00:19,020 --> 00:00:24,500
+in a variety of different ways and also be showing you some use cases of when this can be really useful.
+
+6
+00:00:24,630 --> 00:00:30,440
+And we'll be building a superpowerful pipeline that will allow us to sort data in tabular format.
+
+7
+00:00:30,570 --> 00:00:34,800
+So by the end you're going to be amazing at sourcing data and really going into something of how to
+
+8
+00:00:34,800 --> 00:00:40,950
+use the sort command to sort data in Linux no matter where no matter whether it's text numbers modified
+
+9
+00:00:40,950 --> 00:00:43,170
+numbers or even in tables.
+
+10
+00:00:43,260 --> 00:00:43,710
+Ooh.
+
+11
+00:00:43,740 --> 00:00:46,020
+So this is going to be a very useful section of the course.
+
+12
+00:00:46,020 --> 00:00:48,490
+Let's go ahead and jump right into it.
+
+13
+00:00:50,240 --> 00:00:51,080
+OK.
+
+14
+00:00:51,090 --> 00:00:56,000
+So the first thing I should probably say is that I've put three files on my desktop I've got words not
+
+15
+00:00:56,000 --> 00:01:03,360
+text me which contains 100 random words sorted in no particular order they're just 100 random words
+
+16
+00:01:03,360 --> 00:01:04,920
+that are just in that file.
+
+17
+00:01:05,120 --> 00:01:12,690
+We've got the numbers 0 to 9.6 T which is a file that has loads of numbers and nothing 100 numbers each
+
+18
+00:01:13,050 --> 00:01:14,940
+between 0 and 9.
+
+19
+00:01:15,180 --> 00:01:21,630
+And we've also got this other file here called Numbers top tier XTi which is I think another 100 random
+
+20
+00:01:21,630 --> 00:01:27,090
+numbers but they do they're in no particular range and they're just 100 random numbers with no specific
+
+21
+00:01:27,210 --> 00:01:28,030
+limits on them.
+
+22
+00:01:28,200 --> 00:01:34,650
+And I've made these files available in the resources section as well as some information about how I
+
+23
+00:01:34,650 --> 00:01:39,600
+created them so you know if you want to grab those you know try this stuff out for yourself then you
+
+24
+00:01:39,600 --> 00:01:41,650
+know you can go ahead and download them and give it a go.
+
+25
+00:01:41,730 --> 00:01:42,150
+OK.
+
+26
+00:01:42,300 --> 00:01:48,630
+So let's start off by taking a look at these words Datti XTi which is the file that contains 100 randomly
+
+27
+00:01:48,630 --> 00:01:50,620
+generated words.
+
+28
+00:01:50,740 --> 00:01:56,040
+And as I said like if we just open them up again it's just got 100 random words in there in no particular
+
+29
+00:01:56,040 --> 00:02:00,630
+order no particular just 100 randomly generated words.
+
+30
+00:02:01,180 --> 00:02:01,720
+OK.
+
+31
+00:02:01,800 --> 00:02:08,340
+So first of all how can we sort that file so that it's sorted alphabetically so everything that starts
+
+32
+00:02:08,340 --> 00:02:12,640
+with an A is at the top and if that starts with Zed is at the bottom.
+
+33
+00:02:12,870 --> 00:02:18,420
+Well that's actually the default behavior of the sort command which is the perfectly named command for
+
+34
+00:02:18,420 --> 00:02:19,320
+this kind of thing.
+
+35
+00:02:19,470 --> 00:02:23,790
+So it's really simple to use as well if we just type sort words not here.
+
+36
+00:02:24,110 --> 00:02:31,470
+But we've now got a list of sorted of sorted words from eight years and so you can see that all the
+
+37
+00:02:31,470 --> 00:02:38,550
+words start with a or at the top and all the words that start with why are at the bottom and it doesn't
+
+38
+00:02:38,550 --> 00:02:42,570
+look like we've got anything that starts with Zed So they've all been sorted alphabetically so that's
+
+39
+00:02:42,570 --> 00:02:43,310
+pretty cool.
+
+40
+00:02:43,440 --> 00:02:50,280
+And of course we can write the standard output to a file or you know to a T command and we can use that
+
+41
+00:02:50,340 --> 00:02:50,800
+as well.
+
+42
+00:02:50,800 --> 00:02:55,920
+Ok so like you know we could say say another the here called sort of dotty XTi and that's going to be
+
+43
+00:02:56,210 --> 00:03:01,290
+put there and we can pipe it down the pipeline that you know it's just written on standard all the same
+
+44
+00:03:01,290 --> 00:03:03,180
+rules apply.
+
+45
+00:03:03,180 --> 00:03:06,100
+So what if we wanted instead of sorting it out.
+
+46
+00:03:06,140 --> 00:03:08,460
+What if we wanted to sort it in reverse.
+
+47
+00:03:08,460 --> 00:03:09,020
+How would we sort.
+
+48
+00:03:09,030 --> 00:03:10,910
+So Zed was at the top.
+
+49
+00:03:11,040 --> 00:03:13,100
+Well two options come to mind.
+
+50
+00:03:13,350 --> 00:03:18,450
+First of all what you could do is you could just sort the words like just like normal.
+
+51
+00:03:18,540 --> 00:03:20,990
+But then Python into the TAC command.
+
+52
+00:03:21,240 --> 00:03:25,920
+And as you can see here what's happened is the letters that there was a start with a are now at the
+
+53
+00:03:25,920 --> 00:03:30,650
+bottom and the words that start with close to Zed are now at the top.
+
+54
+00:03:30,660 --> 00:03:37,220
+And the reason for that is that as we know the TAC command will sort of flip outputs vertically.
+
+55
+00:03:37,220 --> 00:03:41,910
+So what would be at the bottom is now at the top and what was at the top is now at the bottom.
+
+56
+00:03:41,930 --> 00:03:47,310
+So that's effectively as though we've just reversed the sorting right but a better way to do it up I
+
+57
+00:03:47,310 --> 00:03:52,670
+suppose a more built in and efficient way to do it would be to just give the sort command the option
+
+58
+00:03:52,880 --> 00:03:55,880
+and the option stands for reverse.
+
+59
+00:03:55,890 --> 00:04:01,410
+So if I do that we can see again we've got the letter saw him with a toss of the word starting with
+
+60
+00:04:01,430 --> 00:04:07,230
+a towards the bottom sorry and the words starting with close to Zed are now at the top.
+
+61
+00:04:07,260 --> 00:04:11,790
+Now you may notice that when I'm showing you this output that I'm scrolling up and down the shelves
+
+62
+00:04:11,820 --> 00:04:12,660
+quite a bit.
+
+63
+00:04:12,660 --> 00:04:16,590
+So this is where the last command would come in I could just pop into a less command to make the output
+
+64
+00:04:16,890 --> 00:04:21,630
+a bit easier to view because now I'm using the arrow keys instead of scrolling with my mouse pad.
+
+65
+00:04:21,630 --> 00:04:25,500
+So that's you know a bit of a nicer way to deal with things in a press Q to come out of that.
+
+66
+00:04:25,500 --> 00:04:27,500
+So it's building upon what we did before.
+
+67
+00:04:27,540 --> 00:04:33,930
+So awesome know is how you have you now have enough building blocks that you can solve the same problem
+
+68
+00:04:33,930 --> 00:04:34,890
+in multiple ways.
+
+69
+00:04:34,890 --> 00:04:40,260
+You know that you could now use the option to reverse it or if you didn't want to do that.
+
+70
+00:04:40,470 --> 00:04:42,660
+You could also pipe it into the top.
+
+71
+00:04:42,660 --> 00:04:43,310
+Come on.
+
+72
+00:04:43,320 --> 00:04:46,270
+This is one great thing about Linux.
+
+73
+00:04:46,290 --> 00:04:51,840
+It gives you multiple different ways to solve the same problem because you've got so many different
+
+74
+00:04:51,840 --> 00:04:55,740
+building blocks so there's plenty of room for creativity in the way that you approach these problems
+
+75
+00:04:55,740 --> 00:04:58,770
+as no necessarily one right way to do it.
+
+76
+00:04:59,250 --> 00:05:02,780
+So there we are now how about sorting numbers.
+
+77
+00:05:02,970 --> 00:05:07,520
+Well I have a list here of 100 numbers called Numbers Datti Eckstine.
+
+78
+00:05:07,530 --> 00:05:13,070
+If we take a look there's a 100 numbers in there that don't have any particular size limit.
+
+79
+00:05:13,080 --> 00:05:15,830
+They can be any number but there's 100 of them.
+
+80
+00:05:15,930 --> 00:05:16,350
+OK.
+
+81
+00:05:16,440 --> 00:05:19,370
+So how would we sort those.
+
+82
+00:05:19,530 --> 00:05:25,530
+Well sorting with letters so sorting out is Ed sorting alphabetically is different from sorting numbers
+
+83
+00:05:25,530 --> 00:05:27,510
+which is sorting numerically.
+
+84
+00:05:27,540 --> 00:05:36,360
+So if we try to do sort numbers start s t like that you say it didn't really work that well what kind
+
+85
+00:05:36,360 --> 00:05:40,740
+of happened here is if you if you notice that we put this into the last command so we can make it a
+
+86
+00:05:40,740 --> 00:05:42,830
+bit easier to see all the numbers.
+
+87
+00:05:42,830 --> 00:05:44,270
+It started with one.
+
+88
+00:05:44,640 --> 00:05:49,870
+I've come to the top and then it kind of you see now we get in all the numbers that start with two we'll
+
+89
+00:05:49,950 --> 00:05:53,120
+get in on numbers that start with three and so on.
+
+90
+00:05:53,130 --> 00:05:53,580
+OK.
+
+91
+00:05:53,700 --> 00:05:59,100
+But we're not four five six seven eight nine OK you can see it's sorting by the first digit but it's
+
+92
+00:05:59,100 --> 00:06:01,720
+not sorting by the value of that number.
+
+93
+00:06:01,740 --> 00:06:09,870
+For example 160 sixteen thousand twenty nine is much bigger than 1641.
+
+94
+00:06:09,900 --> 00:06:11,490
+So why is it above it right.
+
+95
+00:06:11,490 --> 00:06:14,530
+There's no real sense of the size of the number.
+
+96
+00:06:14,530 --> 00:06:19,700
+It's just the fact that it starts with a number 1 and it's sorting numerically as it goes sorting and
+
+97
+00:06:19,890 --> 00:06:24,030
+as it goes along by just looking at the numbers it's not looking at the value of the numbers just looking
+
+98
+00:06:24,030 --> 00:06:24,800
+at the digits.
+
+99
+00:06:24,960 --> 00:06:31,230
+But if you want to sort using the value of the number you need to give the sort command the an option.
+
+100
+00:06:31,230 --> 00:06:34,890
+So the option allows it to sort numerically maybe take a look at that.
+
+101
+00:06:34,890 --> 00:06:39,390
+Now you can see that we're getting the smallest numbers at the top so we're starting with 123.
+
+102
+00:06:39,540 --> 00:06:43,700
+And then what the numbers are getting bigger as they go down.
+
+103
+00:06:43,710 --> 00:06:49,950
+So that's something important to bear in mind sorting just by the digits is different than sorting by
+
+104
+00:06:49,950 --> 00:06:51,360
+the value of the whole number.
+
+105
+00:06:51,360 --> 00:06:55,230
+And if you want to search the value of the whole number you need to give it an option.
+
+106
+00:06:55,230 --> 00:07:00,390
+And of course you can reverse this so that the biggest are at the top by using the giving the option
+
+107
+00:07:00,390 --> 00:07:01,420
+as well for reverse.
+
+108
+00:07:01,530 --> 00:07:06,840
+So now we see that the biggest numbers are at the top and as we scroll down the numbers get smaller.
+
+109
+00:07:06,840 --> 00:07:08,490
+So it's very very nice.
+
+110
+00:07:08,490 --> 00:07:14,490
+So you've seen how to sort and text alphabetically and you've seen how to sort numbers numerically but
+
+111
+00:07:14,490 --> 00:07:20,280
+one thing that's very useful is to only show unique results rather than the same result over and over
+
+112
+00:07:20,280 --> 00:07:21,110
+and over again.
+
+113
+00:07:21,120 --> 00:07:24,730
+So we've got a file here called numbers 0 to 1960.
+
+114
+00:07:24,870 --> 00:07:31,860
+I mean that is 100 rows of data but only the rows only contain one of the numbers from 0 to 9 so you'll
+
+115
+00:07:31,860 --> 00:07:33,900
+necessarily have some duplicates.
+
+116
+00:07:33,990 --> 00:07:36,360
+For example here we've got 0 0 0.
+
+117
+00:07:36,420 --> 00:07:36,870
+OK.
+
+118
+00:07:36,990 --> 00:07:41,630
+It's not just unique results there are results that are repeated.
+
+119
+00:07:41,700 --> 00:07:42,100
+OK.
+
+120
+00:07:42,240 --> 00:07:48,450
+So if we take a look in here and we try to sort the which are the sort saw numbers 0 to 9.6 it is piped
+
+121
+00:07:48,450 --> 00:07:49,310
+into last.
+
+122
+00:07:49,410 --> 00:07:53,550
+You'll see that all the zeros come first then all the ones and all the twos and threes and fours the
+
+123
+00:07:53,550 --> 00:07:55,890
+fives the six the seven eighths and the nines.
+
+124
+00:07:55,890 --> 00:07:57,610
+OK and that's that's a bit annoying.
+
+125
+00:07:57,630 --> 00:08:00,790
+Ok maybe we just want to just have the results once.
+
+126
+00:08:00,790 --> 00:08:07,740
+Well to do the what you do is you give the sort option sort Kamandi you option and the option stands
+
+127
+00:08:07,740 --> 00:08:08,860
+for unique.
+
+128
+00:08:09,000 --> 00:08:13,370
+And when you do not know you'll see that we only get the results once.
+
+129
+00:08:13,440 --> 00:08:13,740
+OK.
+
+130
+00:08:13,770 --> 00:08:16,410
+So let me just set up nine to less.
+
+131
+00:08:16,410 --> 00:08:17,080
+There you go.
+
+132
+00:08:17,130 --> 00:08:20,940
+You can say you only get the results once 0 to 9.
+
+133
+00:08:20,970 --> 00:08:25,410
+This is useful sometimes you don't want to have the same result repeated over and over over again.
+
+134
+00:08:25,500 --> 00:08:30,510
+You only want the results to appear once and that's when you would use the you option which allows you
+
+135
+00:08:30,510 --> 00:08:31,910
+to sort of uniquely.
+
+136
+00:08:31,920 --> 00:08:36,360
+And of course this still works with other options such as the reverse which you know now we're sorting
+
+137
+00:08:36,360 --> 00:08:40,060
+backwards and you can still sort numerically and whatever else you might need to do.
+
+138
+00:08:40,200 --> 00:08:44,410
+But that's just how you can make sure that you only get each of the results once.
+
+139
+00:08:45,520 --> 00:08:49,390
+So in this video you've had a bit of an introduction to the sort command and you've seen that you can
+
+140
+00:08:49,390 --> 00:08:52,490
+sort data using the sort command.
+
+141
+00:08:52,570 --> 00:09:02,630
+Now the command tends to sort smallest first so it'll tend to sort from a to Zed or from 0 to 9 by default.
+
+142
+00:09:02,650 --> 00:09:07,660
+Ok but you can reverse this by using the options so there are options for reverse.
+
+143
+00:09:07,660 --> 00:09:12,760
+And if you're ever sorting numerical data and you want the sort going to take into account the actual
+
+144
+00:09:12,760 --> 00:09:19,000
+value of the number rather than just the digits that it contains then make sure that you give the sort
+
+145
+00:09:19,000 --> 00:09:22,140
+on the an option to allow it to sort numerically.
+
+146
+00:09:22,360 --> 00:09:27,280
+And if you only want to get unique results out of the sort command provide it with the you option which
+
+147
+00:09:27,280 --> 00:09:30,180
+will filter out just the results that appear once.
+
+148
+00:09:30,190 --> 00:09:31,560
+So that's what we covered in this video.
+
+149
+00:09:31,570 --> 00:09:36,070
+But in the next video we're going to take it to a next level and show you some advanced sorting techniques
+
+150
+00:09:36,070 --> 00:09:39,800
+that will allow you to sort data that comes in table format.
+
+151
+00:09:39,820 --> 00:09:43,990
+So I'm also going to be building a really cool pipeline that will do some of this as well.
+
+152
+00:09:43,990 --> 00:09:48,430
+So let's just go ahead and get right into it in the next video and take your sorting skills to the next
+
+153
+00:09:48,430 --> 00:09:48,960
+level.

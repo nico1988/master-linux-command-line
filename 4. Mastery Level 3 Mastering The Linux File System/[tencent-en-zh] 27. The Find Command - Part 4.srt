@@ -1,0 +1,835 @@
+1
+00:00:00,180 --> 00:00:01,460
+你好，你们这些漂亮的人。
+Hello you beautiful people.
+
+2
+00:00:01,460 --> 00:00:02,380
+欢迎回来。
+And welcome back.
+
+3
+00:00:02,380 --> 00:00:07,620
+现在，在本视频中，我们将讨论find命令最强大的功能之一
+Now in this video we're going to be discussing one of the most powerful features of the find command
+
+4
+00:00:07,650 --> 00:00:14,100
+老实说，一般说来，命令行是一种很好的方式，一旦你得到了你的大清单，你就可以
+and to be honest of the command line in general a nice how you can once you've gotten your big list
+
+5
+00:00:14,100 --> 00:00:20,010
+如何获取这些结果并对每个结果执行另一个命令
+of results from the find command how you can take those results and perform another command on each
+
+6
+00:00:20,010 --> 00:00:20,520
+那些人中的一员。
+of those.
+
+7
+00:00:20,520 --> 00:00:22,200
+这是一种令人难以置信的强大能力。
+This is an incredibly powerful ability.
+
+8
+00:00:22,200 --> 00:00:25,080
+所以我希望你会非常兴奋。
+So I hope you're very very very excited.
+
+9
+00:00:25,080 --> 00:00:28,890
+所以您可以在这里看到我正在使用pwt命令在桌面上。
+So you can see here that I'm on the desktop using the PWT command.
+
+10
+00:00:29,010 --> 00:00:32,900
+我们将在这里创建一个名为copy copy的目录。
+And we're going to make a directory called copy copy here.
+
+11
+00:00:33,080 --> 00:00:33,740
+好的。
+OK.
+
+12
+00:00:33,840 --> 00:00:38,670
+注意到我用下划线来表示空格，这是我前面提到的很好的练习
+Noticing that I'm having an underscore to represent the space that's good practice as I've mentioned
+
+13
+00:00:38,670 --> 00:00:41,120
+来阻止命令行出错。
+to you before to stop a command line messing up.
+
+14
+00:00:41,190 --> 00:00:41,580
+好的。
+OK.
+
+15
+00:00:41,760 --> 00:00:43,220
+所以我们要做的是。
+So what we're going to do.
+
+16
+00:00:43,350 --> 00:00:53,190
+好的，假设我们要在整个文件系统中搜索每个大于100KB的文件
+OK let's say that we want to search the entire file system for every file that is bigger than 100 kilobytes
+
+17
+00:00:53,760 --> 00:00:57,750
+并且小于5兆字节。
+and less than 5 megabytes.
+
+18
+00:00:57,750 --> 00:01:02,950
+所以我想让你做的是，你只要试着写下那个命令。
+So what I want you to do is I want is you just have a go at writing that command.
+
+19
+00:01:03,090 --> 00:01:11,040
+那么，您将如何从最基本的目录开始查找系统上的每个文件，
+So how would you starting from the very base directory find every single file on the system and that
+
+20
+00:01:11,040 --> 00:01:16,930
+大于100兆字节且小于5兆字节。
+is greater than 100 megabytes and less than 5 megabytes.
+
+21
+00:01:17,050 --> 00:01:17,500
+好的。
+OK.
+
+22
+00:01:17,550 --> 00:01:27,320
+所以现在把视频放进去，试一试，然后回来看看你做得怎么样。
+So put that video now go have a go at it and then come back to see how you did.
+
+23
+00:01:27,370 --> 00:01:27,820
+你过得怎么样。
+How did you get on.
+
+24
+00:01:27,820 --> 00:01:28,720
+你成功了吗。
+Did you manage it.
+
+25
+00:01:28,840 --> 00:01:30,820
+如果你这么做了，我真为你骄傲。
+If you did I'm so proud of you.
+
+26
+00:01:30,820 --> 00:01:35,090
+这就像是您在使用命令行时要经常使用的一种技术。
+That's like a technique that you're going to use so often when you work with the command line.
+
+27
+00:01:35,110 --> 00:01:37,410
+如果你没有，我真的为你有这项技能而感到骄傲。
+I'm really really proud that you've got that skill if you haven't.
+
+28
+00:01:37,450 --> 00:01:40,320
+熟能生巧，不要去练习得多的地方。
+Practice makes perfect don't where you get plenty of practice.
+
+29
+00:01:40,600 --> 00:01:43,170
+当你稍后完成你的任务时。
+As we as you go with your assignment later on.
+
+30
+00:01:43,290 --> 00:01:44,520
+但我就是这么做的。
+But this is how I go about it.
+
+31
+00:01:44,590 --> 00:01:45,310
+好的。
+OK.
+
+32
+00:01:45,350 --> 00:01:48,650
+我会从基本目录开始使用find命令。
+I'd use the find command starting at the base directory.
+
+33
+00:01:48,670 --> 00:01:51,270
+所以我们要按Can键输入一个劈开。
+So we're going to press can type a slash.
+
+34
+00:01:51,430 --> 00:01:56,140
+我们将使用type选项指定只需要文件。
+We're going to specify that we want only files by using the type option.
+
+35
+00:01:56,150 --> 00:02:02,200
+我们会说大小必须大于100千字节，大小必须小于5
+We're going to say the size has to be greater than 100 kilobytes and the size has to be less than 5
+
+36
+00:02:02,200 --> 00:02:03,040
+兆字节。
+megabytes.
+
+37
+00:02:03,120 --> 00:02:07,810
+现在，因为我们从这里的基目录开始，以确保我们的外部命令具有
+Now because we're starting at the base directory here to make sure that our foreign command has the
+
+38
+00:02:07,810 --> 00:02:14,770
+能够进入我们要在整个命令前加上伪前缀的每个文件夹，因为否则
+ability to go into every folder we're going to prefix this entire command with a pseudo because otherwise
+
+39
+00:02:14,770 --> 00:02:18,190
+我们会收到权限访问错误，而我们不想要这些错误。
+we get permission access errors and we don't want those.
+
+40
+00:02:18,190 --> 00:02:21,910
+因此，让我们以管理员身份运行整个命令。
+So let's just run the whole command as the administrator.
+
+41
+00:02:22,180 --> 00:02:22,680
+好的。
+OK.
+
+42
+00:02:22,930 --> 00:02:27,080
+所以如果我们运行它的话。
+So if we if we run that.
+
+43
+00:02:27,270 --> 00:02:27,890
+好的。
+OK.
+
+44
+00:02:28,230 --> 00:02:32,180
+我们会找到一大串结果，但我会交出我的密码。
+We're going to find a big list of results but I give in my password.
+
+45
+00:02:32,440 --> 00:02:36,260
+我们会发现一大堆结果都出来了。
+We'll find a massive list of results comes out OK.
+
+46
+00:02:36,400 --> 00:02:38,560
+顺便说一句，这些东西中的一个正在运行。
+And by the way one of these things are running.
+
+47
+00:02:38,650 --> 00:02:44,080
+实际上，您可以通过按住Ctrl键并在命令行上取消它的运行
+You can actually cancel it from running any come on the command line by holding the control key and
+
+48
+00:02:44,080 --> 00:02:45,760
+按C键确定。
+pressing C OK.
+
+49
+00:02:45,770 --> 00:02:48,890
+我不会让命令停止运行的。
+I'm not will that will stop the the command running.
+
+50
+00:02:48,940 --> 00:02:49,520
+好的。
+OK.
+
+51
+00:02:49,650 --> 00:02:53,780
+如果你知道它花了太长时间，你会不会输入错误的东西，然后你意识到了，但你并没有意识到这一点
+And if you know it it's taking too long will you type something wrong and you realize it and you don't
+
+52
+00:02:53,810 --> 00:02:55,520
+我得等事情做完了才行。
+have to wait until the thing finishes.
+
+53
+00:02:55,570 --> 00:02:57,460
+好的，但是我们得到了一大堆结果。
+OK but we're getting a whole bunch of results.
+
+54
+00:02:57,530 --> 00:03:00,470
+实际上我们可以告诉你有多少个。
+Actually we can tell you how many there are.
+
+55
+00:03:00,780 --> 00:03:06,370
+当你看到通过输入单词COUNT来看的时候，你可以看到我们得到了3000和31个结果。
+When you see see by piping into the word count Come on you can see we got 3000 and 31 results.
+
+56
+00:03:06,370 --> 00:03:07,650
+这是相当多的结果。
+That's quite a lot results.
+
+57
+00:03:07,660 --> 00:03:08,140
+好的。
+OK.
+
+58
+00:03:08,350 --> 00:03:15,970
+现在假设我们想要复制这些文件中的每一个3000个文件中的每一个文件
+Now let's say that we want to copy every single one of those files every single one of those 3000 and
+
+59
+00:03:16,030 --> 00:03:21,160
+它的结果与此Copy Here文件夹的I find Command标准相匹配。
+it one results that matched I find Command's criteria to this copy here folder.
+
+60
+00:03:21,270 --> 00:03:21,520
+好的。
+OK.
+
+61
+00:03:21,520 --> 00:03:23,360
+我们怎么才能做到这一点。
+How would we do that.
+
+62
+00:03:23,560 --> 00:03:28,750
+如果我使用另一个选项清除屏幕，我们可以使用另一个选项
+Well the way that we would do that is using another option if I clear the screen using another option
+
+63
+00:03:28,990 --> 00:03:36,340
+对于名为exec选项或精确选项的find命令，它代表EXECUTE。
+for the find command called the exec option or the exact option stands for execute.
+
+64
+00:03:36,340 --> 00:03:40,340
+我，我要这么做，我要把屏幕最大化，这样就更容易看到了。
+And I am I'm going to do it I actually going maximize the screen and so it has a bit easier to see.
+
+65
+00:03:40,570 --> 00:03:47,220
+所以我们说，好的，一旦你在这里完成了每个结果的搜索，执行一些操作。
+So we're saying OK once you've done the search here on each result execute something.
+
+66
+00:03:48,150 --> 00:03:51,820
+现在，您只需像往常一样在此处键入命令即可。
+Now here you just type the command as you normally would.
+
+67
+00:03:51,960 --> 00:03:58,410
+所以我们会说Copy，因为我们将使用cpe命令进行复制，您知道，这与我们通常的做法一样
+So we'd we'd say copy because we're going to use the CPE command to copy which is you know like we normally
+
+68
+00:03:58,410 --> 00:03:58,960
+会的。
+would.
+
+69
+00:03:58,970 --> 00:04:05,010
+现在，如果您还记得copy命令是如何工作的，那么您要做的就是说出您想要复制的内容，然后
+Now if you remember how the copy command works first what you do is you say what you want to copy and
+
+70
+00:04:05,010 --> 00:04:06,240
+然后你说在哪里。
+then you say where.
+
+71
+00:04:06,420 --> 00:04:06,920
+好的。
+OK.
+
+72
+00:04:07,020 --> 00:04:09,890
+所以你说你想复制什么，然后说在哪里。
+So you say what you want to copy and then you say where.
+
+73
+00:04:10,110 --> 00:04:15,170
+我们知道要将其复制到桌面上的什么位置。
+Well we know where we want to copy it which is going to be on a desktop.
+
+74
+00:04:15,380 --> 00:04:16,030
+好的。
+OK.
+
+75
+00:04:16,050 --> 00:04:18,810
+它将在Copy Here文件夹中。
+And it's going to be in the copy here folder.
+
+76
+00:04:18,820 --> 00:04:24,480
+这就是我们要复制的路径，这里是我们匆忙回家的时候，劈开桌面上的斜杠，劈开复制到这里。
+So that's our path to the copy here for us rush home slashes the slash desktop slash copy here.
+
+77
+00:04:24,660 --> 00:04:28,520
+我们只要把波浪号也放在那里，就可以把另一个更短，这样就可以了。
+We can rather the other shorter by just putting the tilde there as well that would be fine.
+
+78
+00:04:28,680 --> 00:04:31,380
+好的，但是我们要复制什么呢？
+OK but what do we want to copy.
+
+79
+00:04:31,560 --> 00:04:34,320
+嗯，我们想要复制这些文件中的每一个。
+Well we want to copy every single one of those files.
+
+80
+00:04:34,500 --> 00:04:39,800
+表示这一点的方法是使用一对方形弯曲括号。
+The way to represent that is by using a pair of square squiggly brackets.
+
+81
+00:04:39,870 --> 00:04:43,170
+好的，那么你输入一些波浪形的括号。
+OK so you type some squiggly brackets.
+
+82
+00:04:43,290 --> 00:04:50,010
+填满这个空间的是那些文件中的每一个。
+And that what fills that space is every single one of those files.
+
+83
+00:04:50,010 --> 00:04:58,230
+好的，反过来，它会说将某个文件复制到此目录，然后将Faltu复制到此目录
+Ok so in turn it will say copy whatever file one was to this directory then copy Faltu to this directory
+
+84
+00:04:58,230 --> 00:04:59,940
+并将4：03复制到此目录。
+and copy 4:03 to this directory.
+
+85
+00:04:59,960 --> 00:05:03,130
+所以我们现在已经得到了全部3000个结果。
+So we've got all 3000 results now.
+
+86
+00:05:03,210 --> 00:05:06,830
+当您构建这些表达式时，您可以拥有多个这样的表达式。
+When you build out these these expressions you can have multiple of these.
+
+87
+00:05:06,840 --> 00:05:12,270
+您知道，如果您出于任何原因需要执行您的命令，但是一旦您像我们一样创建了它
+You know if you needed to in your command for whatever reason but once you have created it like we have
+
+88
+00:05:12,270 --> 00:05:18,250
+所以我们说，好的，找到每个大于100千字节，小于5兆字节的文件。
+so we're saying OK find every file that's greater than a hundred kilobytes and less than 5 megabytes.
+
+89
+00:05:18,330 --> 00:05:24,420
+找到所有这些文件后，对其执行Copy命令，并将其复制到我们的Copy Here目录
+And once you find all those execute the copy command on it and copy it to our copy here directory on
+
+90
+00:05:24,490 --> 00:05:25,700
+我们的桌面。
+our desktop.
+
+91
+00:05:25,890 --> 00:05:30,460
+然后，当她完成所有这些操作以结束命令时，您不能只按Enter键。
+And then when she finished all of that to end the command you don't just press enter.
+
+92
+00:05:30,510 --> 00:05:36,390
+您必须在完成EXECUTE选项时告诉它，完成此操作的方法是按
+You've got to tell it when you've finished your execute option and the way you do that is by pressing
+
+93
+00:05:36,450 --> 00:05:38,960
+反斜杠，然后是分号。
+a backslash and then a semi-colon.
+
+94
+00:05:39,060 --> 00:05:39,480
+好的。
+OK.
+
+95
+00:05:39,630 --> 00:05:44,990
+所以你看到分号里的反斜杠，那就是命令完全结束了。
+So you see the backslash in the semi-colon and that is the command completely finished.
+
+96
+00:05:45,000 --> 00:05:45,490
+好的。
+OK.
+
+97
+00:05:45,630 --> 00:05:50,620
+所以，如果你继续跑，那就没问题了。
+So if you go ahead and run that's OK.
+
+98
+00:05:51,300 --> 00:05:58,890
+我们只等一会儿，直到我们的节目回来，它所做的就是复制和粘贴
+And we wait just a little while until our show comes back what it is doing is it is copying and pasting
+
+99
+00:05:59,610 --> 00:06:03,150
+将这些选项中的每一个都复制到我们的Copy Here文件夹中。
+every single one of those options into our copy here folder.
+
+100
+00:06:03,260 --> 00:06:03,710
+好的。
+OK.
+
+101
+00:06:03,930 --> 00:06:13,940
+所以我想如果我现在停下来，然后把这个关闭，然后去找版权所有者，我们走吧，你会
+So I guess if I stop that for now and then close this and go to the copyright holder there we go you'll
+
+102
+00:06:13,940 --> 00:06:22,100
+请注意，我们实际上已将这些文件中的每一个文件复制并粘贴到我们的Copy Here目录中
+see that we actually have every single one of those files copied and pasted into our copy here directory
+
+103
+00:06:22,100 --> 00:06:24,850
+或者至少和我停止运行命令之前一样多。
+or at least as many as it did before I stopped running the commands.
+
+104
+00:06:24,950 --> 00:06:29,410
+这很棒，但是我们已经设法只使用find命令，而不仅仅是找到我们想要的东西。
+It's awesome but we've managed to just use the find command and not only find what we want.
+
+105
+00:06:29,410 --> 00:06:34,940
+而且还对每个结果执行命令。
+On the whole system but also execute a command on each of the results.
+
+106
+00:06:35,000 --> 00:06:40,190
+因此，根据您正在运行的硬件类型，顺便提一下，引入以下命令
+So just as an aside depending upon what type of hardware that you're running bringing this command in
+
+107
+00:06:40,190 --> 00:06:43,780
+这可能会给您的计算机带来一些麻烦。
+it's entirety might give your computer a bit of trouble.
+
+108
+00:06:43,800 --> 00:06:48,740
+因此，如果您发现虚拟机崩溃，只需尝试将整个命令运行到
+So if you're finding that your virtual machine crashes just try and run the whole command to just a
+
+109
+00:06:48,740 --> 00:06:52,950
+最大深度为4以保存它，您知道，可以找到文件中的每个文件。
+maximum depth of four to save it you know finding every file on your files.
+
+110
+00:06:52,970 --> 00:06:57,860
+这应该会大大降低您计算机上的负载，或者尝试最大深度
+This should reduce it quite significantly the load on your computer anyway or try and maximum depth
+
+111
+00:06:57,860 --> 00:06:59,120
+三个人中的一个。
+of three.
+
+112
+00:06:59,180 --> 00:07:03,810
+如果您发现您的虚拟机崩溃，我不确定这是否能阻止任何问题。
+I'm not sure that that should stop any problems if you find your virtual machine is crashing.
+
+113
+00:07:04,190 --> 00:07:09,590
+但首先我们不想做的就是看一下这个命令。
+But first we don't want to do at the minute is just take a look at this command.
+
+114
+00:07:09,590 --> 00:07:10,930
+这不是很棒吗。
+Isn't that awesome.
+
+115
+00:07:10,940 --> 00:07:15,680
+我的意思是，考虑到您没有，您可能对Linux命令行一无所知，只是
+I mean considering that you haven't you maybe didn't know anything about the Linux command line just
+
+116
+00:07:15,680 --> 00:07:17,270
+几个视频之前。
+a few videos ago.
+
+117
+00:07:17,270 --> 00:07:22,340
+现在你看到这个命令，你可能会想，哇，如果我真的走了那么远
+Now you're looking at this command and you're probably thinking wow if I actually come that far and
+
+118
+00:07:22,340 --> 00:07:26,630
+这就是链接上线的原因，不是吗，复杂得令人难以置信。
+this is the thing the links come on line isn't it at unbelievably complicated.
+
+119
+00:07:26,630 --> 00:07:28,780
+这只是几个概念。
+It's just a few concepts.
+
+120
+00:07:28,850 --> 00:07:33,500
+如果他们向你解释得很糟糕，或者你不太明白他们的意思，那可能是绝对的
+If they're explained to you badly or you don't quite understand what they mean it can be an absolute
+
+121
+00:07:33,530 --> 00:07:34,380
+噩梦。
+nightmare.
+
+122
+00:07:34,480 --> 00:07:39,530
+但是一旦你理解了它们，就很容易把你知道的这里的几块积木
+But once you understand them it's very easy to take you know just a few building blocks here and build
+
+123
+00:07:39,530 --> 00:07:41,670
+一种令人难以置信的强大力量。
+something incredibly powerful.
+
+124
+00:07:41,690 --> 00:07:46,820
+现在，您找到了一种搜索100KB到5KB之间的每个文件系统的方法
+So here you are you found a way to search for every filing system in between 100 kilobytes and five
+
+125
+00:07:46,820 --> 00:07:51,640
+MB大小，只需一个命令即可将它们全部复制到特定文件夹。
+megabytes in size and copy them all to a specific folder in just a command.
+
+126
+00:07:51,650 --> 00:07:55,700
+但是现在你知道怎么做了，所以我认为这很令人惊讶，我真的想在这个视频中暂停一下
+And yet now you know how to do that so I think that's amazing and I really wanted to pause in this video
+
+127
+00:07:55,700 --> 00:08:00,180
+我只想说我为你能走到这一步感到非常非常自豪。
+just to say I'm very very proud of you for making it this far.
+
+128
+00:08:00,240 --> 00:08:05,520
+在这一节的结论第4节中，你会得到更多的祝贺
+And you're going to get many more congratulations on this in the conclusion section 4 for this section
+
+129
+00:08:05,520 --> 00:08:06,370
+当然可以。
+of the course.
+
+130
+00:08:06,440 --> 00:08:11,270
+现在我想要做的是，我想在这里稍微继续讨论一下这个选项。
+Now what I want to do is I want to move on just a little bit to talk about this exact option here.
+
+131
+00:08:11,660 --> 00:08:17,530
+这个确切的选项与执行命令一样令人敬畏，但它并不是所有事情中最安全的。
+This exact option is awesome as is to execute a command but it's not the safest of all things.
+
+132
+00:08:17,540 --> 00:08:27,910
+好的，所以如果可以的话，可以不使用确切的选项，而实际上可以输入OK选项。
+OK so if you can do if is instead of using the exact option you can actually type the OK option.
+
+133
+00:08:28,040 --> 00:08:28,570
+好的。
+OK.
+
+134
+00:08:28,610 --> 00:08:31,180
+这将做的是，它将做完全相同的事情。
+And what this will do is it'll do exactly the same.
+
+135
+00:08:31,180 --> 00:08:33,630
+它的工作原理完全一样，你不需要改变任何东西。
+It works exactly the same you don't have to change anything.
+
+136
+00:08:33,710 --> 00:08:37,040
+而不是直接做动作。
+But instead of just doing the action directly.
+
+137
+00:08:37,070 --> 00:08:44,990
+如果我尝试这样做，它不会在每次试图复制什么东西时都会问我它是好的还是
+If I if I try this it will noce ask me every time that it tries to copy something whether it's OK or
+
+138
+00:08:44,990 --> 00:08:45,260
+不。
+not.
+
+139
+00:08:45,300 --> 00:08:49,160
+如果我键入y，它将继续，我键入Y，它将继续一段时间。
+If I type y it will continue and I type Y it'll continue for time.
+
+140
+00:08:49,160 --> 00:08:50,460
+不不会的。
+No it won't.
+
+141
+00:08:50,510 --> 00:08:51,020
+诸若此类。
+And so on.
+
+142
+00:08:51,020 --> 00:08:54,410
+因此，我可以在这里选择它对每个文件执行的操作。
+So I have a choice here about what it does for each file.
+
+143
+00:08:54,410 --> 00:09:00,440
+现在，如果您有数千个文件，这显然是一个巨大的痛苦，但这是一件可以承受的好事
+Now this would clearly be a massive pain if you have thousands of files but it's a good thing to bear
+
+144
+00:09:00,440 --> 00:09:06,350
+请注意，如果您正在为几个文件执行某些操作，并且您正在执行破坏性操作，如删除
+in mind if you are doing something for a few files and you're doing something destructive like deleting
+
+145
+00:09:06,350 --> 00:09:11,180
+或者移动文件，而不是像本例中那样只复制文件，并且您想要加倍确保
+or moving files instead of just copying like in this case and you want to make sure doubly sure that
+
+146
+00:09:11,180 --> 00:09:14,860
+没有任何问题，您可以使用OK选项。
+nothing goes wrong you can use the OK option.
+
+147
+00:09:14,980 --> 00:09:18,110
+然后是EXEC选项，以实现完全相同的功能。
+So then the exec option in order to do exactly the same stuff.
+
+148
+00:09:18,110 --> 00:09:22,480
+因此，OK选项与EXECUTE选项完全相同，您无需更改其他选项
+So the OK option is exactly the same as the execute option you don't have to change anything else from
+
+149
+00:09:22,470 --> 00:09:29,360
+从现在开始只需记住，你知道它比使用完全相同的
+it from here on just just bear in mind that you know it's it's it's a bit safer than using the exact
+
+150
+00:09:29,360 --> 00:09:33,780
+但是你知道，如果你有成千上万的文件要做，这是一个巨大的痛苦。
+option but it's you know it's a massive pain if you've got thousands of files to do.
+
+151
+00:09:34,070 --> 00:09:39,200
+正如我所说的，我真的真的为你在这一部分中所取得的进展感到自豪
+So as I was saying I'm really really proud of you for getting as far as you have in this section in
+
+152
+00:09:39,200 --> 00:09:40,050
+这个视频。
+this video.
+
+153
+00:09:40,110 --> 00:09:45,680
+顺便说一句，您可以通过按下Ctrl来取消退出OK选项，然后如您所见
+And by the way you can cancel your way out of the O.K. option by pressing control and see like you see
+
+154
+00:09:45,680 --> 00:09:46,810
+我刚做完这里的事。
+I've just done here.
+
+155
+00:09:46,970 --> 00:09:50,110
+当然，您可以通过按Ctrl和Al来清除屏幕。
+And of course you can clear the screen by pressing control and Al.
+
+156
+00:09:50,180 --> 00:09:54,750
+但我想在下一个视频中做的是，我们将把这一点发挥到极致。
+But what I want to do in the next video is we're going to take this to the extreme.
+
+157
+00:09:54,800 --> 00:10:00,830
+好的，我们将真正向您展示find命令可以通过执行一些查找来实现多么强大的功能
+OK we're going to really really show you how powerful the find command can be by doing a little finding
+
+158
+00:10:00,830 --> 00:10:05,870
+在下一个视频中，我们将创建一个名为“大海捞针”的文件夹，这是一种类似于大海捞针的活动
+the needle in the haystack kind of activity in the next video we're going to create a folder called
+
+159
+00:10:05,880 --> 00:10:13,110
+包含500个其他文件夹的干草堆，在每个文件夹中，我们将再创建100个文件。
+haystack that contains 500 other folders and in each of those folders we're gonna make another 100 files.
+
+160
+00:10:13,130 --> 00:10:14,060
+这将是非常容易的。
+This will be very easy.
+
+161
+00:10:14,060 --> 00:10:18,020
+利用我们在支架扩展方面的知识。
+Using our knowledge of our knowledge of brace expansion.
+
+162
+00:10:18,560 --> 00:10:25,610
+但是在其中一个文件夹中，我们将随机创建一个名为针t xti的文件，然后
+But inside one of those folders at random we're going to create a file called needle t XTi and then
+
+163
+00:10:25,610 --> 00:10:30,940
+我们将使用find命令在大海捞针，并将其移到主目录中。
+we're going to use the find command to find the needle in the haystack and move it into our home directory.
+
+164
+00:10:30,980 --> 00:10:37,550
+好的，在大约50000个可能的文件中，我们将找到那个文件，并将其精确复制到需要的位置
+OK so out of about 50000 possible files we're going to find that one and copy it exactly where we need
+
+165
+00:10:37,580 --> 00:10:40,110
+这将是如此容易做到，你不会相信的。
+and it's going to be so easy to do you won't believe it.
+
+166
+00:10:40,200 --> 00:10:40,720
+好的。
+OK.
+
+167
+00:10:40,970 --> 00:10:46,010
+我们能做的就是转到下一个视频，我们在那里见，大海捞针。
+We can do is we'll shift over into next video and I'll see you there to find the needle in the haystack.
+

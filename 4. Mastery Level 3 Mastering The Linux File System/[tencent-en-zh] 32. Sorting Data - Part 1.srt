@@ -1,0 +1,765 @@
+1
+00:00:00,180 --> 00:00:02,750
+你好，美丽的人们欢迎收看这个视频。
+Hello The Beautiful People are welcome to this video.
+
+2
+00:00:02,790 --> 00:00:08,490
+我们将学习超级有用的排序命令，现在排序命令就是其中之一
+We're going to be learning about the super useful sort command and now the sort command is one of those
+
+3
+00:00:08,490 --> 00:00:14,270
+命令，您可以在任何地方使用这些命令对数据进行排序，使其更有序、更易于管理。
+commands that you can kind of use anywhere to sort data and make it more ordered and easier to manage.
+
+4
+00:00:14,310 --> 00:00:19,020
+在接下来的几个视频中，我将向您展示如何使用SORT命令对数据进行排序
+And over the next few videos I'm going to be showing you how you can use the sort command to sort data
+
+5
+00:00:19,020 --> 00:00:24,500
+以各种不同的方式，还将向您展示一些用例，说明何时可以真正有用。
+in a variety of different ways and also be showing you some use cases of when this can be really useful.
+
+6
+00:00:24,630 --> 00:00:30,440
+我们将建造一条超级强大的管道，允许我们以表格格式对数据进行排序。
+And we'll be building a superpowerful pipeline that will allow us to sort data in tabular format.
+
+7
+00:00:30,570 --> 00:00:34,800
+所以到了最后，你将会非常擅长寻找数据，并真正了解如何
+So by the end you're going to be amazing at sourcing data and really going into something of how to
+
+8
+00:00:34,800 --> 00:00:40,950
+使用SORT命令对Linux中的数据进行排序，无论数据位于何处，无论文本数字是否修改
+use the sort command to sort data in Linux no matter where no matter whether it's text numbers modified
+
+9
+00:00:40,950 --> 00:00:43,170
+数字，甚至是表格中的数字。
+numbers or even in tables.
+
+10
+00:00:43,260 --> 00:00:43,710
+哦哦。
+Ooh.
+
+11
+00:00:43,740 --> 00:00:46,020
+所以这将是课程的一个非常有用的部分。
+So this is going to be a very useful section of the course.
+
+12
+00:00:46,020 --> 00:00:48,490
+让我们直接跳进去吧。
+Let's go ahead and jump right into it.
+
+13
+00:00:50,240 --> 00:00:51,080
+好的。
+OK.
+
+14
+00:00:51,090 --> 00:00:56,000
+所以我应该说的第一件事是，我在我的桌面上放了三个文件，我有几个字没有
+So the first thing I should probably say is that I've put three files on my desktop I've got words not
+
+15
+00:00:56,000 --> 00:01:03,360
+给我发短信，其中包含100个随机单词，没有特定的顺序排序，它们只是100个随机单词
+text me which contains 100 random words sorted in no particular order they're just 100 random words
+
+16
+00:01:03,360 --> 00:01:04,920
+就在那个文件里。
+that are just in that file.
+
+17
+00:01:05,120 --> 00:01:12,690
+我们有数字0到9.6T，这是一个文件，它有很多数字，但是没有数字，每个数字有100个数字
+We've got the numbers 0 to 9.6 T which is a file that has loads of numbers and nothing 100 numbers each
+
+18
+00:01:13,050 --> 00:01:14,940
+在0到9之间。
+between 0 and 9.
+
+19
+00:01:15,180 --> 00:01:21,630
+我们还有另外一个文件，叫做Numbers Top Tier XTi，我想这是另外100个随机的文件
+And we've also got this other file here called Numbers top tier XTi which is I think another 100 random
+
+20
+00:01:21,630 --> 00:01:27,090
+数字，但它们不在特定的范围内，它们只是100个随机数，没有特定的
+numbers but they do they're in no particular range and they're just 100 random numbers with no specific
+
+21
+00:01:27,210 --> 00:01:28,030
+对他们的限制。
+limits on them.
+
+22
+00:01:28,200 --> 00:01:34,650
+我已经在参考资料部分提供了这些文件，以及有关如何
+And I've made these files available in the resources section as well as some information about how I
+
+23
+00:01:34,650 --> 00:01:39,600
+创造了它们，所以你知道，如果你想抓住那些，你知道，尝试一下这些东西，然后你
+created them so you know if you want to grab those you know try this stuff out for yourself then you
+
+24
+00:01:39,600 --> 00:01:41,650
+我知道你可以继续下载它们，然后试一试。
+know you can go ahead and download them and give it a go.
+
+25
+00:01:41,730 --> 00:01:42,150
+好的。
+OK.
+
+26
+00:01:42,300 --> 00:01:48,630
+那么让我们先来看看这些单词Datti Xti，它是一个随机包含100个单词的文件
+So let's start off by taking a look at these words Datti XTi which is the file that contains 100 randomly
+
+27
+00:01:48,630 --> 00:01:50,620
+生成的单词。
+generated words.
+
+28
+00:01:50,740 --> 00:01:56,040
+就像我说的，如果我们再打开一次，里面只有100个随机单词，没有什么特别的
+And as I said like if we just open them up again it's just got 100 random words in there in no particular
+
+29
+00:01:56,040 --> 00:02:00,630
+不要特别订购100个随机生成的单词。
+order no particular just 100 randomly generated words.
+
+30
+00:02:01,180 --> 00:02:01,720
+好的。
+OK.
+
+31
+00:02:01,800 --> 00:02:08,340
+首先，我们如何对该文件进行排序，使其按字母顺序排序，以便开始的所有内容
+So first of all how can we sort that file so that it's sorted alphabetically so everything that starts
+
+32
+00:02:08,340 --> 00:02:12,640
+带A的在顶部，如果以A开头，则Zed在底部。
+with an A is at the top and if that starts with Zed is at the bottom.
+
+33
+00:02:12,870 --> 00:02:18,420
+这实际上是排序命令的默认行为，它是完全命名的命令，用于
+Well that's actually the default behavior of the sort command which is the perfectly named command for
+
+34
+00:02:18,420 --> 00:02:19,320
+这类事情。
+this kind of thing.
+
+35
+00:02:19,470 --> 00:02:23,790
+所以，如果我们只键入排序单词，而不是在这里，使用起来也非常简单。
+So it's really simple to use as well if we just type sort words not here.
+
+36
+00:02:24,110 --> 00:02:31,470
+但是我们现在已经有了一个八年来排序的单词列表，所以您可以看到所有
+But we've now got a list of sorted of sorted words from eight years and so you can see that all the
+
+37
+00:02:31,470 --> 00:02:38,550
+单词在顶部以或开头，所有以为什么开头的单词都在底部，而不是
+words start with a or at the top and all the words that start with why are at the bottom and it doesn't
+
+38
+00:02:38,550 --> 00:02:42,570
+看起来我们有任何以Zed开头的东西，所以它们都是按字母顺序排序的，所以这是
+look like we've got anything that starts with Zed So they've all been sorted alphabetically so that's
+
+39
+00:02:42,570 --> 00:02:43,310
+相当酷。
+pretty cool.
+
+40
+00:02:43,440 --> 00:02:50,280
+当然，我们可以将标准输出写到文件中，或者您知道的，写到T命令中，我们可以使用它
+And of course we can write the standard output to a file or you know to a T command and we can use that
+
+41
+00:02:50,340 --> 00:02:50,800
+也是。
+as well.
+
+42
+00:02:50,800 --> 00:02:55,920
+好的，就像你知道的，我们可以说另一种说法，这里叫做有点傻乎乎的XTi，那就是
+Ok so like you know we could say say another the here called sort of dotty XTi and that's going to be
+
+43
+00:02:56,210 --> 00:03:01,290
+把它放在那里，我们可以把它放到管道里，你知道，它只是写在标准上的
+put there and we can pipe it down the pipeline that you know it's just written on standard all the same
+
+44
+00:03:01,290 --> 00:03:03,180
+规则适用。
+rules apply.
+
+45
+00:03:03,180 --> 00:03:06,100
+所以，如果我们想要而不是解决问题又怎么样呢？
+So what if we wanted instead of sorting it out.
+
+46
+00:03:06,140 --> 00:03:08,460
+如果我们想要反向排序呢？
+What if we wanted to sort it in reverse.
+
+47
+00:03:08,460 --> 00:03:09,020
+我们该如何排序。
+How would we sort.
+
+48
+00:03:09,030 --> 00:03:10,910
+所以泽德在顶端。
+So Zed was at the top.
+
+49
+00:03:11,040 --> 00:03:13,100
+嗯，我想到两个选择。
+Well two options come to mind.
+
+50
+00:03:13,350 --> 00:03:18,450
+首先，你可以做的就是像平常一样对单词进行分类。
+First of all what you could do is you could just sort the words like just like normal.
+
+51
+00:03:18,540 --> 00:03:20,990
+然后将Python添加到TAC命令中。
+But then Python into the TAC command.
+
+52
+00:03:21,240 --> 00:03:25,920
+就像你在这里看到的，发生了什么，这些字母以a开头，现在在
+And as you can see here what's happened is the letters that there was a start with a are now at the
+
+53
+00:03:25,920 --> 00:03:30,650
+底部，以Close to Zed开头的单词现在位于顶部。
+bottom and the words that start with close to Zed are now at the top.
+
+54
+00:03:30,660 --> 00:03:37,220
+原因是，我们知道，TAC命令会垂直翻转输出。
+And the reason for that is that as we know the TAC command will sort of flip outputs vertically.
+
+55
+00:03:37,220 --> 00:03:41,910
+所以原本在底部的东西现在在顶部，在顶部的东西现在在底部。
+So what would be at the bottom is now at the top and what was at the top is now at the bottom.
+
+56
+00:03:41,930 --> 00:03:47,310
+因此，这实际上就好像我们刚刚颠倒了正确的排序方式，但是更好的方法是
+So that's effectively as though we've just reversed the sorting right but a better way to do it up I
+
+57
+00:03:47,310 --> 00:03:52,670
+假设一种更内置、更有效的方法是只给排序命令提供选项
+suppose a more built in and efficient way to do it would be to just give the sort command the option
+
+58
+00:03:52,880 --> 00:03:55,880
+而这个选项代表的是反向。
+and the option stands for reverse.
+
+59
+00:03:55,890 --> 00:04:01,410
+所以如果我这样做，我们可以再次看到，我们已经得到了这封信，看到了他，并抛出了这个词的开头
+So if I do that we can see again we've got the letter saw him with a toss of the word starting with
+
+60
+00:04:01,430 --> 00:04:07,230
+A接近底部时，对不起，以Close to Zed开头的单词现在位于顶部。
+a towards the bottom sorry and the words starting with close to Zed are now at the top.
+
+61
+00:04:07,260 --> 00:04:11,790
+现在你们可能注意到了，当我向你们展示这个输出时，我在货架上上下滚动
+Now you may notice that when I'm showing you this output that I'm scrolling up and down the shelves
+
+62
+00:04:11,820 --> 00:04:12,660
+相当多。
+quite a bit.
+
+63
+00:04:12,660 --> 00:04:16,590
+这就是最后一个命令的用武之地，我只需跳转到一个较少的命令来生成输出
+So this is where the last command would come in I could just pop into a less command to make the output
+
+64
+00:04:16,890 --> 00:04:21,630
+更容易查看，因为现在我使用的是箭头键，而不是用鼠标垫滚动。
+a bit easier to view because now I'm using the arrow keys instead of scrolling with my mouse pad.
+
+65
+00:04:21,630 --> 00:04:25,500
+所以你知道，这是一种更好的方式来处理媒体问答中的事情。
+So that's you know a bit of a nicer way to deal with things in a press Q to come out of that.
+
+66
+00:04:25,500 --> 00:04:27,500
+所以它是建立在我们之前所做的基础上的。
+So it's building upon what we did before.
+
+67
+00:04:27,540 --> 00:04:33,930
+非常棒的是，你知道你现在有了足够的积木，你可以解决同样的问题
+So awesome know is how you have you now have enough building blocks that you can solve the same problem
+
+68
+00:04:33,930 --> 00:04:34,890
+以多种方式。
+in multiple ways.
+
+69
+00:04:34,890 --> 00:04:40,260
+您知道，您现在可以使用该选项来反转它，或者如果您不想这样做的话。
+You know that you could now use the option to reverse it or if you didn't want to do that.
+
+70
+00:04:40,470 --> 00:04:42,660
+你也可以用管道把它插到顶部。
+You could also pipe it into the top.
+
+71
+00:04:42,660 --> 00:04:43,310
+赶快。
+Come on.
+
+72
+00:04:43,320 --> 00:04:46,270
+这是Linux的一个伟大之处。
+This is one great thing about Linux.
+
+73
+00:04:46,290 --> 00:04:51,840
+它给你提供了多种不同的方法来解决同一个问题，因为你有这么多不同的方法
+It gives you multiple different ways to solve the same problem because you've got so many different
+
+74
+00:04:51,840 --> 00:04:55,740
+积木，所以在处理这些问题的方式上有很大的创造性空间
+building blocks so there's plenty of room for creativity in the way that you approach these problems
+
+75
+00:04:55,740 --> 00:04:58,770
+因为没有一种正确的方法可以做到这一点。
+as no necessarily one right way to do it.
+
+76
+00:04:59,250 --> 00:05:02,780
+现在我们来看看如何对数字进行排序。
+So there we are now how about sorting numbers.
+
+77
+00:05:02,970 --> 00:05:07,520
+嗯，我这里有一个100个号码的清单，叫做Datti Eckstine号码。
+Well I have a list here of 100 numbers called Numbers Datti Eckstine.
+
+78
+00:05:07,530 --> 00:05:13,070
+如果我们看一下，里面有100个数字，没有任何特定的大小限制。
+If we take a look there's a 100 numbers in there that don't have any particular size limit.
+
+79
+00:05:13,080 --> 00:05:15,830
+它们可以是任何数字，但有100个。
+They can be any number but there's 100 of them.
+
+80
+00:05:15,930 --> 00:05:16,350
+好的。
+OK.
+
+81
+00:05:16,440 --> 00:05:19,370
+那么我们该如何对这些。
+So how would we sort those.
+
+82
+00:05:19,530 --> 00:05:25,530
+用字母排序所以按字母顺序排序与按数字排序不同，按字母顺序排序与按数字排序是不同的
+Well sorting with letters so sorting out is Ed sorting alphabetically is different from sorting numbers
+
+83
+00:05:25,530 --> 00:05:27,510
+它是按数字排序的。
+which is sorting numerically.
+
+84
+00:05:27,540 --> 00:05:36,360
+所以，如果我们试着对数字进行排序，开始是这样的，你说它工作得不是很好，是哪一种？
+So if we try to do sort numbers start s t like that you say it didn't really work that well what kind
+
+85
+00:05:36,360 --> 00:05:40,740
+这里发生的情况是，如果您注意到我们将此放入最后一个命令中，因此我们可以将其设置为
+of happened here is if you if you notice that we put this into the last command so we can make it a
+
+86
+00:05:40,740 --> 00:05:42,830
+更容易看到所有的数字。
+bit easier to see all the numbers.
+
+87
+00:05:42,830 --> 00:05:44,270
+从一开始就是这样。
+It started with one.
+
+88
+00:05:44,640 --> 00:05:49,870
+我已经到了顶端，然后你看，现在我们得到了所有从2开始的数字，我们将
+I've come to the top and then it kind of you see now we get in all the numbers that start with two we'll
+
+89
+00:05:49,950 --> 00:05:53,120
+选择以3开头的数字，以此类推。
+get in on numbers that start with three and so on.
+
+90
+00:05:53,130 --> 00:05:53,580
+好的。
+OK.
+
+91
+00:05:53,700 --> 00:05:59,100
+但是我们不是4，5，6，7，8，9，好的，你可以看到它是按第一个数字排序的，但是它是
+But we're not four five six seven eight nine OK you can see it's sorting by the first digit but it's
+
+92
+00:05:59,100 --> 00:06:01,720
+而不是按该数字的值排序。
+not sorting by the value of that number.
+
+93
+00:06:01,740 --> 00:06:09,870
+例如，160 16,029比1641大得多。
+For example 160 sixteen thousand twenty nine is much bigger than 1641.
+
+94
+00:06:09,900 --> 00:06:11,490
+那么为什么它在它的正上方。
+So why is it above it right.
+
+95
+00:06:11,490 --> 00:06:14,530
+没有真正意义上的数字大小。
+There's no real sense of the size of the number.
+
+96
+00:06:14,530 --> 00:06:19,700
+事实是，它以数字1开头，并且在排序的过程中按数字排序，并且
+It's just the fact that it starts with a number 1 and it's sorting numerically as it goes sorting and
+
+97
+00:06:19,890 --> 00:06:24,030
+当它只看数字的时候，它不是看数字的价值，而是只看数字的价值
+as it goes along by just looking at the numbers it's not looking at the value of the numbers just looking
+
+98
+00:06:24,030 --> 00:06:24,800
+在数字上。
+at the digits.
+
+99
+00:06:24,960 --> 00:06:31,230
+但是，如果您希望使用数字的值进行排序，则需要为排序命令提供an选项。
+But if you want to sort using the value of the number you need to give the sort command the an option.
+
+100
+00:06:31,230 --> 00:06:34,890
+因此，该选项允许它按数字排序，或许可以看看这个。
+So the option allows it to sort numerically maybe take a look at that.
+
+101
+00:06:34,890 --> 00:06:39,390
+现在你可以看到我们在顶部得到了最小的数字，所以我们从123开始。
+Now you can see that we're getting the smallest numbers at the top so we're starting with 123.
+
+102
+00:06:39,540 --> 00:06:43,700
+然后，当他们下降的时候，数字会变得更大。
+And then what the numbers are getting bigger as they go down.
+
+103
+00:06:43,710 --> 00:06:49,950
+所以要记住这一点很重要，只按数字排序与按数字排序是不同的
+So that's something important to bear in mind sorting just by the digits is different than sorting by
+
+104
+00:06:49,950 --> 00:06:51,360
+整数的值。
+the value of the whole number.
+
+105
+00:06:51,360 --> 00:06:55,230
+如果你想搜索整数的值，你需要给它一个选项。
+And if you want to search the value of the whole number you need to give it an option.
+
+106
+00:06:55,230 --> 00:07:00,390
+当然，您可以反转这一点，这样最大的就会出现在顶部，方法是使用“给出选项”
+And of course you can reverse this so that the biggest are at the top by using the giving the option
+
+107
+00:07:00,390 --> 00:07:01,420
+也可以倒车。
+as well for reverse.
+
+108
+00:07:01,530 --> 00:07:06,840
+现在我们看到最大的数字在顶部，当我们向下滚动时，数字变得更小。
+So now we see that the biggest numbers are at the top and as we scroll down the numbers get smaller.
+
+109
+00:07:06,840 --> 00:07:08,490
+所以这是非常非常好的。
+So it's very very nice.
+
+110
+00:07:08,490 --> 00:07:14,490
+您已经看到了如何按字母顺序排序和文本，以及如何按数字排序，但是
+So you've seen how to sort and text alphabetically and you've seen how to sort numbers numerically but
+
+111
+00:07:14,490 --> 00:07:20,280
+有一件事非常有用，那就是只显示独特的结果，而不是一遍又一遍地显示相同的结果
+one thing that's very useful is to only show unique results rather than the same result over and over
+
+112
+00:07:20,280 --> 00:07:21,110
+一遍又一遍。
+and over again.
+
+113
+00:07:21,120 --> 00:07:24,730
+我们这里有一个编号为0到1960的文件。
+So we've got a file here called numbers 0 to 1960.
+
+114
+00:07:24,870 --> 00:07:31,860
+我的意思是，这是100行数据，但是只有行只包含从0到9的一个数字，所以您将
+I mean that is 100 rows of data but only the rows only contain one of the numbers from 0 to 9 so you'll
+
+115
+00:07:31,860 --> 00:07:33,900
+一定要有一些复制品。
+necessarily have some duplicates.
+
+116
+00:07:33,990 --> 00:07:36,360
+例如，我们这里有0，0，0。
+For example here we've got 0 0 0.
+
+117
+00:07:36,420 --> 00:07:36,870
+好的。
+OK.
+
+118
+00:07:36,990 --> 00:07:41,630
+这不仅仅是独一无二的结果，还有重复出现的结果。
+It's not just unique results there are results that are repeated.
+
+119
+00:07:41,700 --> 00:07:42,100
+好的。
+OK.
+
+120
+00:07:42,240 --> 00:07:48,450
+所以，如果我们看一下这里，我们试着对哪个是从0到9.6的锯号排序，它是用管道传输的
+So if we take a look in here and we try to sort the which are the sort saw numbers 0 to 9.6 it is piped
+
+121
+00:07:48,450 --> 00:07:49,310
+最后一名。
+into last.
+
+122
+00:07:49,410 --> 00:07:53,550
+你会看到所有的0都在前面，然后是所有的1，所有的2，3和4
+You'll see that all the zeros come first then all the ones and all the twos and threes and fours the
+
+123
+00:07:53,550 --> 00:07:55,890
+五个六，七个八分之一和九个。
+fives the six the seven eighths and the nines.
+
+124
+00:07:55,890 --> 00:07:57,610
+好的，那就有点烦人了。
+OK and that's that's a bit annoying.
+
+125
+00:07:57,630 --> 00:08:00,790
+好的，也许我们只想要一次结果。
+Ok maybe we just want to just have the results once.
+
+126
+00:08:00,790 --> 00:08:07,740
+好的，你要做的就是给排序选项排序卡曼迪你的选项，选项保持不变
+Well to do the what you do is you give the sort option sort Kamandi you option and the option stands
+
+127
+00:08:07,740 --> 00:08:08,860
+代表独一无二的。
+for unique.
+
+128
+00:08:09,000 --> 00:08:13,370
+当你不知道的时候，你会发现我们只有一次结果。
+And when you do not know you'll see that we only get the results once.
+
+129
+00:08:13,440 --> 00:08:13,740
+好的。
+OK.
+
+130
+00:08:13,770 --> 00:08:16,410
+所以让我来设置九到更少的。
+So let me just set up nine to less.
+
+131
+00:08:16,410 --> 00:08:17,080
+这就对了。
+There you go.
+
+132
+00:08:17,130 --> 00:08:20,940
+你可以说你只得到一次0到9的结果。
+You can say you only get the results once 0 to 9.
+
+133
+00:08:20,970 --> 00:08:25,410
+这很有用，有时您不想让相同的结果一遍又一遍地重复。
+This is useful sometimes you don't want to have the same result repeated over and over over again.
+
+134
+00:08:25,500 --> 00:08:30,510
+您只希望结果显示一次，此时您可以使用允许您
+You only want the results to appear once and that's when you would use the you option which allows you
+
+135
+00:08:30,510 --> 00:08:31,910
+可以说是独一无二的。
+to sort of uniquely.
+
+136
+00:08:31,920 --> 00:08:36,360
+当然，这仍然适用于其他选项，例如您知道我们现在正在排序的反转选项
+And of course this still works with other options such as the reverse which you know now we're sorting
+
+137
+00:08:36,360 --> 00:08:40,060
+向后，您仍然可以按数字和您可能需要做的任何其他操作进行排序。
+backwards and you can still sort numerically and whatever else you might need to do.
+
+138
+00:08:40,200 --> 00:08:44,410
+但这只是您可以确保每个结果只得到一次的方法。
+But that's just how you can make sure that you only get each of the results once.
+
+139
+00:08:45,520 --> 00:08:49,390
+在这段视频中，您已经对SORT命令做了一些介绍，并且您已经看到您可以
+So in this video you've had a bit of an introduction to the sort command and you've seen that you can
+
+140
+00:08:49,390 --> 00:08:52,490
+使用SORT命令对数据进行排序。
+sort data using the sort command.
+
+141
+00:08:52,570 --> 00:09:02,630
+现在，该命令倾向于首先对最小的进行排序，因此在默认情况下，它倾向于从a到Zed或从0到9进行排序。
+Now the command tends to sort smallest first so it'll tend to sort from a to Zed or from 0 to 9 by default.
+
+142
+00:09:02,650 --> 00:09:07,660
+好的，但是您可以使用选项来反转，这样就有了反转的选项。
+Ok but you can reverse this by using the options so there are options for reverse.
+
+143
+00:09:07,660 --> 00:09:12,760
+如果您曾经对数字数据进行排序，并且希望排序考虑到实际的
+And if you're ever sorting numerical data and you want the sort going to take into account the actual
+
+144
+00:09:12,760 --> 00:09:19,000
+值，而不仅仅是它包含的数字，然后确保给出排序
+value of the number rather than just the digits that it contains then make sure that you give the sort
+
+145
+00:09:19,000 --> 00:09:22,140
+选项上，以允许它按数字排序。
+on the an option to allow it to sort numerically.
+
+146
+00:09:22,360 --> 00:09:27,280
+如果您只想从排序命令中获得唯一的结果，请为它提供You选项，该选项
+And if you only want to get unique results out of the sort command provide it with the you option which
+
+147
+00:09:27,280 --> 00:09:30,180
+过滤会不会只给出出现一次的结果。
+will filter out just the results that appear once.
+
+148
+00:09:30,190 --> 00:09:31,560
+这就是我们在这段视频中介绍的内容。
+So that's what we covered in this video.
+
+149
+00:09:31,570 --> 00:09:36,070
+但在下一个视频中，我们将更上一层楼，向您展示一些高级排序技术
+But in the next video we're going to take it to a next level and show you some advanced sorting techniques
+
+150
+00:09:36,070 --> 00:09:39,800
+这将允许您对表格格式的数据进行排序。
+that will allow you to sort data that comes in table format.
+
+151
+00:09:39,820 --> 00:09:43,990
+因此，我还将建造一条非常酷的管道，它也会做一些这样的事情。
+So I'm also going to be building a really cool pipeline that will do some of this as well.
+
+152
+00:09:43,990 --> 00:09:48,430
+那么让我们继续，在下一个视频中直接开始，并将您的排序技巧带到下一个视频中
+So let's just go ahead and get right into it in the next video and take your sorting skills to the next
+
+153
+00:09:48,430 --> 00:09:48,960
+标高。
+level.
+

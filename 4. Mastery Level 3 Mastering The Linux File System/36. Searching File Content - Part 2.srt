@@ -1,0 +1,647 @@
+1
+00:00:00,210 --> 00:00:04,760
+Welcome back ladies and gents I'm sure the anticipation has been killing you.
+
+2
+00:00:04,770 --> 00:00:09,830
+So here we are we're trying to find out whether Gadsby does in fact use the letter e.
+
+3
+00:00:09,850 --> 00:00:13,410
+Now Gatsby is 1914 lines long.
+
+4
+00:00:13,560 --> 00:00:18,480
+So if by using this command here we get the answer 1914.
+
+5
+00:00:18,480 --> 00:00:22,540
+Then we know that every line doesn't contain the letter.
+
+6
+00:00:22,710 --> 00:00:24,990
+OK so let's go ahead and press enter.
+
+7
+00:00:24,990 --> 00:00:30,870
+Let's see if we get 1914 lines just like we expected.
+
+8
+00:00:30,880 --> 00:00:33,070
+And the crowd goes wild.
+
+9
+00:00:33,510 --> 00:00:34,180
+So there we are.
+
+10
+00:00:34,200 --> 00:00:34,880
+Yep.
+
+11
+00:00:35,250 --> 00:00:37,580
+The the group commanders manage to work that way as well.
+
+12
+00:00:37,580 --> 00:00:39,750
+We got the same answer both ways.
+
+13
+00:00:39,900 --> 00:00:43,500
+Now you can use the grep command to search inside multiple files at once.
+
+14
+00:00:43,500 --> 00:00:44,010
+By the way.
+
+15
+00:00:44,070 --> 00:00:44,410
+OK.
+
+16
+00:00:44,550 --> 00:00:50,760
+So I have I have a file on the desktop don't I called haloed RTX States if I just head back to the estop
+
+17
+00:00:50,760 --> 00:00:53,430
+a little bit and Katta out it says hello.
+
+18
+00:00:53,430 --> 00:00:55,260
+There you see it for people and surprisingly.
+
+19
+00:00:55,260 --> 00:01:02,340
+Now if we wanted to compare the literary genius of my haloed optics the fall and the Gadsby manuscript
+
+20
+00:01:02,790 --> 00:01:05,710
+then we could use GRABBE dash.
+
+21
+00:01:05,750 --> 00:01:11,500
+I would search for the letter E inside the Gatsby manuscript so that's going to be in the Gadsby folder.
+
+22
+00:01:11,520 --> 00:01:20,460
+Gatsby manuscript on my Hello textfile we can see that it's shown us that my haloed out here has a result
+
+23
+00:01:20,670 --> 00:01:20,980
+here.
+
+24
+00:01:21,000 --> 00:01:25,020
+And as a result here as a result here it has a result that you don't see anything for God's Bedacht
+
+25
+00:01:25,020 --> 00:01:30,090
+text and you can count as well so if I just do that you can see that the Gatsby manuscript returns zero
+
+26
+00:01:30,090 --> 00:01:35,060
+results for the latter a and my Hello 0.60 file returns for.
+
+27
+00:01:35,130 --> 00:01:43,420
+So even though I had five lines of text and the Gadsby one had 1914 guess four out of my five lines.
+
+28
+00:01:43,440 --> 00:01:48,630
+80 percent of my text had a letter in it and theirs had none.
+
+29
+00:01:48,630 --> 00:01:52,820
+So that's just what I just think Gadsby was was showing off.
+
+30
+00:01:53,280 --> 00:02:00,000
+So now that you know how to use the grep command to analyze literary masterpiece is the most common
+
+31
+00:02:00,000 --> 00:02:04,870
+way to actually use it is to search within data that you pipe to it.
+
+32
+00:02:04,980 --> 00:02:11,040
+OK so if I just if I just clean this this command line here we're going to show you how actually the
+
+33
+00:02:11,040 --> 00:02:17,200
+screen will show you how you can do something a bit more heavy duty with the find with the grep command.
+
+34
+00:02:17,220 --> 00:02:22,440
+So let's say that you wanted to look inside a big folder to see whether a file is inside.
+
+35
+00:02:22,530 --> 00:02:23,470
+OK.
+
+36
+00:02:23,940 --> 00:02:29,130
+Yes we could use the find command but perhaps we decided that the find command is a bit heavy duty for
+
+37
+00:02:29,130 --> 00:02:30,610
+such a quick check.
+
+38
+00:02:30,670 --> 00:02:37,800
+OK so let's make let's make a folder on the desktop called Hello in there and let's move the hello 0.60
+
+39
+00:02:38,550 --> 00:02:40,120
+into that hello folder.
+
+40
+00:02:40,300 --> 00:02:43,130
+OK when we look we should see that that is indeed the case.
+
+41
+00:02:43,290 --> 00:02:43,930
+Yep there we go.
+
+42
+00:02:43,950 --> 00:02:45,630
+Hello RTX t inside.
+
+43
+00:02:45,710 --> 00:02:49,980
+OK let's create some more files inside let's touch inside the hello folder.
+
+44
+00:02:49,980 --> 00:02:55,300
+I dunno I guess like files say 100 or the files Kosa in there.
+
+45
+00:02:55,320 --> 00:02:58,740
+Now we can see that there's 100 of the files somewhere in there is haloed text.
+
+46
+00:02:58,740 --> 00:02:59,600
+OK.
+
+47
+00:03:00,150 --> 00:03:05,860
+So let's say that we wanted to use the ls command to list what's in Hello.
+
+48
+00:03:05,910 --> 00:03:10,740
+Can you see you get quite a bit of information coming out of the ls command especially if we have the
+
+49
+00:03:10,920 --> 00:03:12,100
+option.
+
+50
+00:03:12,120 --> 00:03:15,010
+Definitely a lot of information coming out there.
+
+51
+00:03:15,400 --> 00:03:21,960
+But you can do is you can just use the last option and pipe it to the grep command and say hey we're
+
+52
+00:03:21,960 --> 00:03:25,980
+looking for Hello Dotti XTi and you'll see that it is highlighted.
+
+53
+00:03:26,070 --> 00:03:30,150
+Hello Dottie XTi as as something thats being present.
+
+54
+00:03:30,150 --> 00:03:33,400
+OK so that can help you search things in there.
+
+55
+00:03:33,420 --> 00:03:38,160
+Another example that I use often is what I'm looking for details about a particular file or folders
+
+56
+00:03:38,160 --> 00:03:39,860
+permissions using the ls command.
+
+57
+00:03:39,870 --> 00:03:46,000
+So for example if I want to see the permissions for The Root home directory I could do ls with the L
+
+58
+00:03:46,000 --> 00:03:48,170
+and capital f option.
+
+59
+00:03:48,280 --> 00:03:53,610
+But with the fourth slashes see everything all the permissions for everything in the base directory.
+
+60
+00:03:53,700 --> 00:03:59,050
+OK but let's say I wanted to look specifically at the folder called Root.
+
+61
+00:03:59,190 --> 00:04:04,650
+Well then I could just pipe it into grep and say root and it will tell us that you'll be able to see
+
+62
+00:04:04,650 --> 00:04:07,450
+hear the root folder coming out like that.
+
+63
+00:04:07,450 --> 00:04:12,140
+Or we could have a look at the OPT or the optional folder if you want to look at that.
+
+64
+00:04:12,140 --> 00:04:18,300
+We just look at it and it will just cut out that line for you and you can just see that so you can see
+
+65
+00:04:18,300 --> 00:04:22,280
+how you're filtering out just what you're looking for.
+
+66
+00:04:22,310 --> 00:04:24,300
+OK so this is a very very useful option.
+
+67
+00:04:24,300 --> 00:04:26,080
+Let's say we were looking in.
+
+68
+00:04:26,220 --> 00:04:32,280
+So you know I wanted all of the files not the folders in the ETSI directory.
+
+69
+00:04:32,310 --> 00:04:37,470
+Let's say then what I could do is I could say ls with the f option for the ETSI folder and you can see
+
+70
+00:04:37,470 --> 00:04:38,950
+that it showed us everything in here.
+
+71
+00:04:38,970 --> 00:04:43,370
+All the folders have a slash after them and all the files don't.
+
+72
+00:04:43,530 --> 00:04:48,810
+OK so if I want to find all the files I just have to find everything that doesn't have a slash right.
+
+73
+00:04:49,020 --> 00:04:53,100
+So if I take all that data into grep give it the v option and a slash.
+
+74
+00:04:53,100 --> 00:04:58,710
+This is saying OK take all that data and give me every line that doesn't have a slash and that we are
+
+75
+00:04:58,800 --> 00:05:04,240
+we've got all of the the game that I could maybe redirect that into a list of files.
+
+76
+00:05:04,280 --> 00:05:08,880
+Dr. XTi And now here I've got a list of files that are in the N.Z. folder.
+
+77
+00:05:08,990 --> 00:05:09,350
+OK.
+
+78
+00:05:09,380 --> 00:05:14,180
+And of course we could sort all of those and whatever else if you wanted so you know we could take it
+
+79
+00:05:14,420 --> 00:05:21,590
+from there and then sort it reverse let's say we wanted them backwards and then put that into the files.
+
+80
+00:05:21,740 --> 00:05:28,200
+Team and we'll see that everything is now backwards with Zed at the top and the letter A at the bottom.
+
+81
+00:05:28,550 --> 00:05:32,450
+So you can see how we're using all this stuff really links together very well and if you're understanding
+
+82
+00:05:32,450 --> 00:05:38,390
+this you're a pro OK because like you know if you're you know it wasn't that long ago that all of this
+
+83
+00:05:38,390 --> 00:05:42,440
+would have been complete and utter jibberish to you but now you understand that hey we're just using
+
+84
+00:05:42,440 --> 00:05:43,320
+the ls command.
+
+85
+00:05:43,370 --> 00:05:45,830
+We're classifying what's coming out with the f option.
+
+86
+00:05:45,830 --> 00:05:50,120
+So it gives us a slash around around directories and nothing around files.
+
+87
+00:05:50,120 --> 00:05:55,550
+I'm looking in the ETSI folder we're searching inside they're using the inside all that data using the
+
+88
+00:05:55,550 --> 00:05:58,160
+grep command for everything that doesn't have a slash.
+
+89
+00:05:58,160 --> 00:05:59,380
+That gives us all the files.
+
+90
+00:05:59,510 --> 00:06:04,610
+And then let's say we're sorting them reverse reverse wise and then save it not in a file called file
+
+91
+00:06:04,610 --> 00:06:05,560
+start XTi.
+
+92
+00:06:05,570 --> 00:06:10,010
+OK so you can see how we're using multiple different commands to build up these pipelines easier and
+
+93
+00:06:10,010 --> 00:06:11,670
+easier as we go through the course.
+
+94
+00:06:11,840 --> 00:06:18,020
+Now another really common uses of this is when you're using the man dash K command.
+
+95
+00:06:18,020 --> 00:06:23,060
+So you know when when you wanted to search for things in the manual pages so I wanted to search for
+
+96
+00:06:23,060 --> 00:06:23,680
+print.
+
+97
+00:06:23,800 --> 00:06:27,650
+OK we can see that we get loads of different options to print.
+
+98
+00:06:27,640 --> 00:06:31,670
+Now you could read all of these out yourself but it's kind of a bit of a pain when you want to search
+
+99
+00:06:31,670 --> 00:06:33,190
+for something a bit more specific.
+
+100
+00:06:33,350 --> 00:06:37,290
+Well you know you could grap and say OK well I'm looking for files specifically.
+
+101
+00:06:37,340 --> 00:06:42,890
+OK so and then it will tell me you know to find all the ones that mentioned files which you know makes
+
+102
+00:06:42,890 --> 00:06:48,410
+it a lot easier for us to see and we might then notice the LPL command which prints files.
+
+103
+00:06:48,500 --> 00:06:49,130
+OK.
+
+104
+00:06:49,650 --> 00:06:55,520
+There's also the camp command up here which can concat which can concatenate files try saying that three
+
+105
+00:06:55,520 --> 00:07:00,310
+times fast can concatenate files to standard output.
+
+106
+00:07:00,470 --> 00:07:06,860
+OK so this is another common usage of the of the grep command and we have less results to page through
+
+107
+00:07:07,160 --> 00:07:12,240
+than we would have otherwise had because we filtered out what we were looking for.
+
+108
+00:07:12,290 --> 00:07:13,820
+So they have a beautiful people.
+
+109
+00:07:13,880 --> 00:07:19,220
+That's how you can use the grep command to search within files and filter the output from other commands.
+
+110
+00:07:19,220 --> 00:07:23,720
+Now the grep command has to be one of the most commonly used commands of all time and you'll probably
+
+111
+00:07:23,720 --> 00:07:27,140
+use a whole lot in your work with the Linux terminal as well.
+
+112
+00:07:27,140 --> 00:07:30,980
+So to make sure that we've got the important points down let's have a recap.
+
+113
+00:07:30,980 --> 00:07:36,620
+So first of all you saw how to use the grep command to search for text within files and the group can
+
+114
+00:07:36,620 --> 00:07:41,330
+search through any kind of data whether it's static within a file or it's piped to it.
+
+115
+00:07:41,450 --> 00:07:47,240
+And what you found was that the grep command will return lines that match a certain piece of text or
+
+116
+00:07:47,270 --> 00:07:52,880
+a regular expression made up of wild cards so you could give instead of giving the group command a piece
+
+117
+00:07:52,880 --> 00:07:54,050
+of text to search for.
+
+118
+00:07:54,050 --> 00:07:59,300
+You could give it a regular expression using wildcards and it will find all the lines that have something
+
+119
+00:07:59,300 --> 00:08:03,030
+that matches that wildcards that's a really useful ability as well.
+
+120
+00:08:03,260 --> 00:08:08,540
+And you can count how many lines that match that text instead of returning the lines themselves just
+
+121
+00:08:08,540 --> 00:08:13,580
+return the line count by giving the grep command the C option which we used multiple times in the last
+
+122
+00:08:13,580 --> 00:08:14,440
+few videos.
+
+123
+00:08:14,650 --> 00:08:23,060
+Now by default because Linux is a case sensitive operating system the you can make the search case insensitive
+
+124
+00:08:23,090 --> 00:08:25,430
+so that uppercase and lowercase don't matter.
+
+125
+00:08:25,430 --> 00:08:30,890
+By giving the grep command the option which is really useful and if you don't know whether it's an uppercase
+
+126
+00:08:30,920 --> 00:08:35,180
+or a lower case letter that you're searching for but you know it's that thing that you're searching
+
+127
+00:08:35,180 --> 00:08:38,510
+for Arka you don't know whether it's up against other guys but you know it's at least that word or at
+
+128
+00:08:38,510 --> 00:08:41,500
+least that that letter or something like that.
+
+129
+00:08:41,570 --> 00:08:42,170
+OK.
+
+130
+00:08:42,310 --> 00:08:48,140
+Then we also use the grep command to analyze the validity of the 1939 literary masterpiece of Gadsby
+
+131
+00:08:48,380 --> 00:08:51,720
+which is the 50000 word book that never used the letter.
+
+132
+00:08:51,860 --> 00:08:56,000
+And we have now confirmed that using using our lyrics or grep command.
+
+133
+00:08:56,000 --> 00:09:00,770
+And you can find a copy of that manuscript in a link to where I got it from in the resources section
+
+134
+00:09:00,770 --> 00:09:04,070
+of this video and the last one if you if you want to take a look and play with it yourself.
+
+135
+00:09:04,130 --> 00:09:04,760
+OK.
+
+136
+00:09:05,120 --> 00:09:09,470
+We also saw the v option which will invert the search so that means it'll do the opposite.
+
+137
+00:09:09,470 --> 00:09:14,180
+So instead of searching for lines that match a certain piece of text or match a certain regular expression
+
+138
+00:09:14,450 --> 00:09:16,790
+it'll will find all the lines that don't.
+
+139
+00:09:16,790 --> 00:09:22,790
+And finally one thing that we saw was how a group works so well when you piped data to it and you saw
+
+140
+00:09:22,790 --> 00:09:27,980
+how you can use it to filter out a lot of data to give you the lines that you're looking for from a
+
+141
+00:09:27,980 --> 00:09:29,490
+big bunch of data that comes out.
+
+142
+00:09:29,510 --> 00:09:34,940
+So it's useful with the ls command the man command so many other things as well just any time that you
+
+143
+00:09:34,940 --> 00:09:39,460
+are looking for a specific piece of text or a specific word or something that matches a certain format.
+
+144
+00:09:39,680 --> 00:09:43,100
+Use the grep command and you'll save yourself a bit Juliann hours of time.
+
+145
+00:09:43,150 --> 00:09:43,530
+OK.
+
+146
+00:09:43,640 --> 00:09:45,330
+So there we go.
+
+147
+00:09:45,380 --> 00:09:50,450
+The next great thing about the grep command is its flexibility and its versatility you know can be used
+
+148
+00:09:50,450 --> 00:09:55,690
+pretty much anywhere and it will be a tool that you'll likely use time and time again.
+
+149
+00:09:55,700 --> 00:10:00,720
+So now you know how to do many many things with files and directories you can create them copy them
+
+150
+00:10:00,720 --> 00:10:05,460
+delete them move them rename them edit them search for them search within them sort them and so much
+
+151
+00:10:05,460 --> 00:10:05,810
+more.
+
+152
+00:10:05,840 --> 00:10:11,870
+OK you've come a very very very long way in this section and I applaud you for your progress.
+
+153
+00:10:11,880 --> 00:10:14,720
+OK but we have one last thing that I want to cover.
+
+154
+00:10:14,880 --> 00:10:16,940
+File compression and archiving.
+
+155
+00:10:17,070 --> 00:10:21,730
+Now the last thing that you want to do is lose data on your system and know how to compress an uncompressed
+
+156
+00:10:21,740 --> 00:10:27,030
+files to create backups will allow you to insure yourself against loss of data.
+
+157
+00:10:27,030 --> 00:10:30,970
+And it's one of those things that's so important that you just kind of got to know how to do it.
+
+158
+00:10:30,990 --> 00:10:31,380
+OK.
+
+159
+00:10:31,530 --> 00:10:36,330
+So in the next video we're going to be discussing how you can compress an uncompressed files to create
+
+160
+00:10:36,390 --> 00:10:37,630
+and restore backups.
+
+161
+00:10:37,710 --> 00:10:38,730
+So for that good stuff.
+
+162
+00:10:38,760 --> 00:10:40,470
+I'll see you in the next video.

@@ -1,0 +1,667 @@
+1
+00:00:00,180 --> 00:00:01,460
+Hello you beautiful people.
+
+2
+00:00:01,460 --> 00:00:02,380
+And welcome back.
+
+3
+00:00:02,380 --> 00:00:07,620
+Now in this video we're going to be discussing one of the most powerful features of the find command
+
+4
+00:00:07,650 --> 00:00:14,100
+and to be honest of the command line in general a nice how you can once you've gotten your big list
+
+5
+00:00:14,100 --> 00:00:20,010
+of results from the find command how you can take those results and perform another command on each
+
+6
+00:00:20,010 --> 00:00:20,520
+of those.
+
+7
+00:00:20,520 --> 00:00:22,200
+This is an incredibly powerful ability.
+
+8
+00:00:22,200 --> 00:00:25,080
+So I hope you're very very very excited.
+
+9
+00:00:25,080 --> 00:00:28,890
+So you can see here that I'm on the desktop using the PWT command.
+
+10
+00:00:29,010 --> 00:00:32,900
+And we're going to make a directory called copy copy here.
+
+11
+00:00:33,080 --> 00:00:33,740
+OK.
+
+12
+00:00:33,840 --> 00:00:38,670
+Noticing that I'm having an underscore to represent the space that's good practice as I've mentioned
+
+13
+00:00:38,670 --> 00:00:41,120
+to you before to stop a command line messing up.
+
+14
+00:00:41,190 --> 00:00:41,580
+OK.
+
+15
+00:00:41,760 --> 00:00:43,220
+So what we're going to do.
+
+16
+00:00:43,350 --> 00:00:53,190
+OK let's say that we want to search the entire file system for every file that is bigger than 100 kilobytes
+
+17
+00:00:53,760 --> 00:00:57,750
+and less than 5 megabytes.
+
+18
+00:00:57,750 --> 00:01:02,950
+So what I want you to do is I want is you just have a go at writing that command.
+
+19
+00:01:03,090 --> 00:01:11,040
+So how would you starting from the very base directory find every single file on the system and that
+
+20
+00:01:11,040 --> 00:01:16,930
+is greater than 100 megabytes and less than 5 megabytes.
+
+21
+00:01:17,050 --> 00:01:17,500
+OK.
+
+22
+00:01:17,550 --> 00:01:27,320
+So put that video now go have a go at it and then come back to see how you did.
+
+23
+00:01:27,370 --> 00:01:27,820
+How did you get on.
+
+24
+00:01:27,820 --> 00:01:28,720
+Did you manage it.
+
+25
+00:01:28,840 --> 00:01:30,820
+If you did I'm so proud of you.
+
+26
+00:01:30,820 --> 00:01:35,090
+That's like a technique that you're going to use so often when you work with the command line.
+
+27
+00:01:35,110 --> 00:01:37,410
+I'm really really proud that you've got that skill if you haven't.
+
+28
+00:01:37,450 --> 00:01:40,320
+Practice makes perfect don't where you get plenty of practice.
+
+29
+00:01:40,600 --> 00:01:43,170
+As we as you go with your assignment later on.
+
+30
+00:01:43,290 --> 00:01:44,520
+But this is how I go about it.
+
+31
+00:01:44,590 --> 00:01:45,310
+OK.
+
+32
+00:01:45,350 --> 00:01:48,650
+I'd use the find command starting at the base directory.
+
+33
+00:01:48,670 --> 00:01:51,270
+So we're going to press can type a slash.
+
+34
+00:01:51,430 --> 00:01:56,140
+We're going to specify that we want only files by using the type option.
+
+35
+00:01:56,150 --> 00:02:02,200
+We're going to say the size has to be greater than 100 kilobytes and the size has to be less than 5
+
+36
+00:02:02,200 --> 00:02:03,040
+megabytes.
+
+37
+00:02:03,120 --> 00:02:07,810
+Now because we're starting at the base directory here to make sure that our foreign command has the
+
+38
+00:02:07,810 --> 00:02:14,770
+ability to go into every folder we're going to prefix this entire command with a pseudo because otherwise
+
+39
+00:02:14,770 --> 00:02:18,190
+we get permission access errors and we don't want those.
+
+40
+00:02:18,190 --> 00:02:21,910
+So let's just run the whole command as the administrator.
+
+41
+00:02:22,180 --> 00:02:22,680
+OK.
+
+42
+00:02:22,930 --> 00:02:27,080
+So if we if we run that.
+
+43
+00:02:27,270 --> 00:02:27,890
+OK.
+
+44
+00:02:28,230 --> 00:02:32,180
+We're going to find a big list of results but I give in my password.
+
+45
+00:02:32,440 --> 00:02:36,260
+We'll find a massive list of results comes out OK.
+
+46
+00:02:36,400 --> 00:02:38,560
+And by the way one of these things are running.
+
+47
+00:02:38,650 --> 00:02:44,080
+You can actually cancel it from running any come on the command line by holding the control key and
+
+48
+00:02:44,080 --> 00:02:45,760
+pressing C OK.
+
+49
+00:02:45,770 --> 00:02:48,890
+I'm not will that will stop the the command running.
+
+50
+00:02:48,940 --> 00:02:49,520
+OK.
+
+51
+00:02:49,650 --> 00:02:53,780
+And if you know it it's taking too long will you type something wrong and you realize it and you don't
+
+52
+00:02:53,810 --> 00:02:55,520
+have to wait until the thing finishes.
+
+53
+00:02:55,570 --> 00:02:57,460
+OK but we're getting a whole bunch of results.
+
+54
+00:02:57,530 --> 00:03:00,470
+Actually we can tell you how many there are.
+
+55
+00:03:00,780 --> 00:03:06,370
+When you see see by piping into the word count Come on you can see we got 3000 and 31 results.
+
+56
+00:03:06,370 --> 00:03:07,650
+That's quite a lot results.
+
+57
+00:03:07,660 --> 00:03:08,140
+OK.
+
+58
+00:03:08,350 --> 00:03:15,970
+Now let's say that we want to copy every single one of those files every single one of those 3000 and
+
+59
+00:03:16,030 --> 00:03:21,160
+it one results that matched I find Command's criteria to this copy here folder.
+
+60
+00:03:21,270 --> 00:03:21,520
+OK.
+
+61
+00:03:21,520 --> 00:03:23,360
+How would we do that.
+
+62
+00:03:23,560 --> 00:03:28,750
+Well the way that we would do that is using another option if I clear the screen using another option
+
+63
+00:03:28,990 --> 00:03:36,340
+for the find command called the exec option or the exact option stands for execute.
+
+64
+00:03:36,340 --> 00:03:40,340
+And I am I'm going to do it I actually going maximize the screen and so it has a bit easier to see.
+
+65
+00:03:40,570 --> 00:03:47,220
+So we're saying OK once you've done the search here on each result execute something.
+
+66
+00:03:48,150 --> 00:03:51,820
+Now here you just type the command as you normally would.
+
+67
+00:03:51,960 --> 00:03:58,410
+So we'd we'd say copy because we're going to use the CPE command to copy which is you know like we normally
+
+68
+00:03:58,410 --> 00:03:58,960
+would.
+
+69
+00:03:58,970 --> 00:04:05,010
+Now if you remember how the copy command works first what you do is you say what you want to copy and
+
+70
+00:04:05,010 --> 00:04:06,240
+then you say where.
+
+71
+00:04:06,420 --> 00:04:06,920
+OK.
+
+72
+00:04:07,020 --> 00:04:09,890
+So you say what you want to copy and then you say where.
+
+73
+00:04:10,110 --> 00:04:15,170
+Well we know where we want to copy it which is going to be on a desktop.
+
+74
+00:04:15,380 --> 00:04:16,030
+OK.
+
+75
+00:04:16,050 --> 00:04:18,810
+And it's going to be in the copy here folder.
+
+76
+00:04:18,820 --> 00:04:24,480
+So that's our path to the copy here for us rush home slashes the slash desktop slash copy here.
+
+77
+00:04:24,660 --> 00:04:28,520
+We can rather the other shorter by just putting the tilde there as well that would be fine.
+
+78
+00:04:28,680 --> 00:04:31,380
+OK but what do we want to copy.
+
+79
+00:04:31,560 --> 00:04:34,320
+Well we want to copy every single one of those files.
+
+80
+00:04:34,500 --> 00:04:39,800
+The way to represent that is by using a pair of square squiggly brackets.
+
+81
+00:04:39,870 --> 00:04:43,170
+OK so you type some squiggly brackets.
+
+82
+00:04:43,290 --> 00:04:50,010
+And that what fills that space is every single one of those files.
+
+83
+00:04:50,010 --> 00:04:58,230
+Ok so in turn it will say copy whatever file one was to this directory then copy Faltu to this directory
+
+84
+00:04:58,230 --> 00:04:59,940
+and copy 4:03 to this directory.
+
+85
+00:04:59,960 --> 00:05:03,130
+So we've got all 3000 results now.
+
+86
+00:05:03,210 --> 00:05:06,830
+When you build out these these expressions you can have multiple of these.
+
+87
+00:05:06,840 --> 00:05:12,270
+You know if you needed to in your command for whatever reason but once you have created it like we have
+
+88
+00:05:12,270 --> 00:05:18,250
+so we're saying OK find every file that's greater than a hundred kilobytes and less than 5 megabytes.
+
+89
+00:05:18,330 --> 00:05:24,420
+And once you find all those execute the copy command on it and copy it to our copy here directory on
+
+90
+00:05:24,490 --> 00:05:25,700
+our desktop.
+
+91
+00:05:25,890 --> 00:05:30,460
+And then when she finished all of that to end the command you don't just press enter.
+
+92
+00:05:30,510 --> 00:05:36,390
+You've got to tell it when you've finished your execute option and the way you do that is by pressing
+
+93
+00:05:36,450 --> 00:05:38,960
+a backslash and then a semi-colon.
+
+94
+00:05:39,060 --> 00:05:39,480
+OK.
+
+95
+00:05:39,630 --> 00:05:44,990
+So you see the backslash in the semi-colon and that is the command completely finished.
+
+96
+00:05:45,000 --> 00:05:45,490
+OK.
+
+97
+00:05:45,630 --> 00:05:50,620
+So if you go ahead and run that's OK.
+
+98
+00:05:51,300 --> 00:05:58,890
+And we wait just a little while until our show comes back what it is doing is it is copying and pasting
+
+99
+00:05:59,610 --> 00:06:03,150
+every single one of those options into our copy here folder.
+
+100
+00:06:03,260 --> 00:06:03,710
+OK.
+
+101
+00:06:03,930 --> 00:06:13,940
+So I guess if I stop that for now and then close this and go to the copyright holder there we go you'll
+
+102
+00:06:13,940 --> 00:06:22,100
+see that we actually have every single one of those files copied and pasted into our copy here directory
+
+103
+00:06:22,100 --> 00:06:24,850
+or at least as many as it did before I stopped running the commands.
+
+104
+00:06:24,950 --> 00:06:29,410
+It's awesome but we've managed to just use the find command and not only find what we want.
+
+105
+00:06:29,410 --> 00:06:34,940
+On the whole system but also execute a command on each of the results.
+
+106
+00:06:35,000 --> 00:06:40,190
+So just as an aside depending upon what type of hardware that you're running bringing this command in
+
+107
+00:06:40,190 --> 00:06:43,780
+it's entirety might give your computer a bit of trouble.
+
+108
+00:06:43,800 --> 00:06:48,740
+So if you're finding that your virtual machine crashes just try and run the whole command to just a
+
+109
+00:06:48,740 --> 00:06:52,950
+maximum depth of four to save it you know finding every file on your files.
+
+110
+00:06:52,970 --> 00:06:57,860
+This should reduce it quite significantly the load on your computer anyway or try and maximum depth
+
+111
+00:06:57,860 --> 00:06:59,120
+of three.
+
+112
+00:06:59,180 --> 00:07:03,810
+I'm not sure that that should stop any problems if you find your virtual machine is crashing.
+
+113
+00:07:04,190 --> 00:07:09,590
+But first we don't want to do at the minute is just take a look at this command.
+
+114
+00:07:09,590 --> 00:07:10,930
+Isn't that awesome.
+
+115
+00:07:10,940 --> 00:07:15,680
+I mean considering that you haven't you maybe didn't know anything about the Linux command line just
+
+116
+00:07:15,680 --> 00:07:17,270
+a few videos ago.
+
+117
+00:07:17,270 --> 00:07:22,340
+Now you're looking at this command and you're probably thinking wow if I actually come that far and
+
+118
+00:07:22,340 --> 00:07:26,630
+this is the thing the links come on line isn't it at unbelievably complicated.
+
+119
+00:07:26,630 --> 00:07:28,780
+It's just a few concepts.
+
+120
+00:07:28,850 --> 00:07:33,500
+If they're explained to you badly or you don't quite understand what they mean it can be an absolute
+
+121
+00:07:33,530 --> 00:07:34,380
+nightmare.
+
+122
+00:07:34,480 --> 00:07:39,530
+But once you understand them it's very easy to take you know just a few building blocks here and build
+
+123
+00:07:39,530 --> 00:07:41,670
+something incredibly powerful.
+
+124
+00:07:41,690 --> 00:07:46,820
+So here you are you found a way to search for every filing system in between 100 kilobytes and five
+
+125
+00:07:46,820 --> 00:07:51,640
+megabytes in size and copy them all to a specific folder in just a command.
+
+126
+00:07:51,650 --> 00:07:55,700
+And yet now you know how to do that so I think that's amazing and I really wanted to pause in this video
+
+127
+00:07:55,700 --> 00:08:00,180
+just to say I'm very very proud of you for making it this far.
+
+128
+00:08:00,240 --> 00:08:05,520
+And you're going to get many more congratulations on this in the conclusion section 4 for this section
+
+129
+00:08:05,520 --> 00:08:06,370
+of the course.
+
+130
+00:08:06,440 --> 00:08:11,270
+Now what I want to do is I want to move on just a little bit to talk about this exact option here.
+
+131
+00:08:11,660 --> 00:08:17,530
+This exact option is awesome as is to execute a command but it's not the safest of all things.
+
+132
+00:08:17,540 --> 00:08:27,910
+OK so if you can do if is instead of using the exact option you can actually type the OK option.
+
+133
+00:08:28,040 --> 00:08:28,570
+OK.
+
+134
+00:08:28,610 --> 00:08:31,180
+And what this will do is it'll do exactly the same.
+
+135
+00:08:31,180 --> 00:08:33,630
+It works exactly the same you don't have to change anything.
+
+136
+00:08:33,710 --> 00:08:37,040
+But instead of just doing the action directly.
+
+137
+00:08:37,070 --> 00:08:44,990
+If I if I try this it will noce ask me every time that it tries to copy something whether it's OK or
+
+138
+00:08:44,990 --> 00:08:45,260
+not.
+
+139
+00:08:45,300 --> 00:08:49,160
+If I type y it will continue and I type Y it'll continue for time.
+
+140
+00:08:49,160 --> 00:08:50,460
+No it won't.
+
+141
+00:08:50,510 --> 00:08:51,020
+And so on.
+
+142
+00:08:51,020 --> 00:08:54,410
+So I have a choice here about what it does for each file.
+
+143
+00:08:54,410 --> 00:09:00,440
+Now this would clearly be a massive pain if you have thousands of files but it's a good thing to bear
+
+144
+00:09:00,440 --> 00:09:06,350
+in mind if you are doing something for a few files and you're doing something destructive like deleting
+
+145
+00:09:06,350 --> 00:09:11,180
+or moving files instead of just copying like in this case and you want to make sure doubly sure that
+
+146
+00:09:11,180 --> 00:09:14,860
+nothing goes wrong you can use the OK option.
+
+147
+00:09:14,980 --> 00:09:18,110
+So then the exec option in order to do exactly the same stuff.
+
+148
+00:09:18,110 --> 00:09:22,480
+So the OK option is exactly the same as the execute option you don't have to change anything else from
+
+149
+00:09:22,470 --> 00:09:29,360
+it from here on just just bear in mind that you know it's it's it's a bit safer than using the exact
+
+150
+00:09:29,360 --> 00:09:33,780
+option but it's you know it's a massive pain if you've got thousands of files to do.
+
+151
+00:09:34,070 --> 00:09:39,200
+So as I was saying I'm really really proud of you for getting as far as you have in this section in
+
+152
+00:09:39,200 --> 00:09:40,050
+this video.
+
+153
+00:09:40,110 --> 00:09:45,680
+And by the way you can cancel your way out of the O.K. option by pressing control and see like you see
+
+154
+00:09:45,680 --> 00:09:46,810
+I've just done here.
+
+155
+00:09:46,970 --> 00:09:50,110
+And of course you can clear the screen by pressing control and Al.
+
+156
+00:09:50,180 --> 00:09:54,750
+But what I want to do in the next video is we're going to take this to the extreme.
+
+157
+00:09:54,800 --> 00:10:00,830
+OK we're going to really really show you how powerful the find command can be by doing a little finding
+
+158
+00:10:00,830 --> 00:10:05,870
+the needle in the haystack kind of activity in the next video we're going to create a folder called
+
+159
+00:10:05,880 --> 00:10:13,110
+haystack that contains 500 other folders and in each of those folders we're gonna make another 100 files.
+
+160
+00:10:13,130 --> 00:10:14,060
+This will be very easy.
+
+161
+00:10:14,060 --> 00:10:18,020
+Using our knowledge of our knowledge of brace expansion.
+
+162
+00:10:18,560 --> 00:10:25,610
+But inside one of those folders at random we're going to create a file called needle t XTi and then
+
+163
+00:10:25,610 --> 00:10:30,940
+we're going to use the find command to find the needle in the haystack and move it into our home directory.
+
+164
+00:10:30,980 --> 00:10:37,550
+OK so out of about 50000 possible files we're going to find that one and copy it exactly where we need
+
+165
+00:10:37,580 --> 00:10:40,110
+and it's going to be so easy to do you won't believe it.
+
+166
+00:10:40,200 --> 00:10:40,720
+OK.
+
+167
+00:10:40,970 --> 00:10:46,010
+We can do is we'll shift over into next video and I'll see you there to find the needle in the haystack.

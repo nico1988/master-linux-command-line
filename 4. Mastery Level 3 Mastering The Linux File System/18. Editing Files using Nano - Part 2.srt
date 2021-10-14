@@ -1,0 +1,823 @@
+1
+00:00:00,620 --> 00:00:01,870
+Hello you beautiful people.
+
+2
+00:00:01,880 --> 00:00:08,810
+And welcome back to our discussion of how to use the Nano command line text editor to get your work
+
+3
+00:00:08,810 --> 00:00:09,200
+done.
+
+4
+00:00:09,200 --> 00:00:14,090
+So we were in the last video we were discussing some of the options that Nano has and we discussed the
+
+5
+00:00:14,090 --> 00:00:20,090
+Right-O option the read option the where is option and we got up to the replace option.
+
+6
+00:00:20,090 --> 00:00:25,570
+So let's actually use the read form option to read in birthday doc text again.
+
+7
+00:00:25,580 --> 00:00:30,620
+So we're going to say birthday Dot text and you see that we've got happy birthday.
+
+8
+00:00:30,680 --> 00:00:32,110
+Read into the file once again.
+
+9
+00:00:32,130 --> 00:00:37,400
+And the reason I've done that is so that we can now use the replace command and you can see here that
+
+10
+00:00:37,400 --> 00:00:44,450
+the replace command although replace option here is activated by pressing control and a backslash.
+
+11
+00:00:44,450 --> 00:00:50,360
+Now I find the backslash next to the letter Zed on my keyboard but it might be wherever that is on your
+
+12
+00:00:50,600 --> 00:00:52,280
+on your computer or on your keyboard.
+
+13
+00:00:52,280 --> 00:00:52,710
+OK.
+
+14
+00:00:52,850 --> 00:00:55,060
+So the press control and backslash.
+
+15
+00:00:55,550 --> 00:00:59,180
+And now it's asking me what I want to replace.
+
+16
+00:00:59,240 --> 00:01:02,950
+So let's replace birthday.
+
+17
+00:01:03,380 --> 00:01:03,920
+OK.
+
+18
+00:01:03,970 --> 00:01:07,040
+And we're going to replace it with code day.
+
+19
+00:01:07,070 --> 00:01:13,370
+And when I press Enter it's going to now go through each instance of where it found the word birthday
+
+20
+00:01:13,880 --> 00:01:15,770
+and ask if you want to replace it.
+
+21
+00:01:15,770 --> 00:01:19,640
+Now you can see it on the bottom here is because I do want to place this instance I could say yes I
+
+22
+00:01:19,640 --> 00:01:26,020
+could say no or I could say all or I could say control and see for cancel.
+
+23
+00:01:26,180 --> 00:01:30,370
+So let's just press a to make it replace all.
+
+24
+00:01:30,870 --> 00:01:35,500
+And we see that every instance of birthday has been replaced with the word code day.
+
+25
+00:01:35,660 --> 00:01:38,710
+So happy code day to you you beautiful person.
+
+26
+00:01:38,870 --> 00:01:43,860
+So that's replacing text what about cutting text cutting text is the next one.
+
+27
+00:01:43,940 --> 00:01:48,900
+So cutting is very easy you can see here we've got this line that says Happy code day.
+
+28
+00:01:49,040 --> 00:01:56,030
+If I press control and K to cut that basically deletes the line and if I want to paste that.
+
+29
+00:01:56,330 --> 00:02:00,810
+So basically it's just like cutting and pasting just in your normal everyday computer use.
+
+30
+00:02:00,830 --> 00:02:06,860
+So if I want to uncut it I press control and you and I can do that as many times as I want.
+
+31
+00:02:06,860 --> 00:02:09,890
+So this is a very very happy code day.
+
+32
+00:02:10,130 --> 00:02:21,020
+We can also justify the text using control and JS control obvious NJ we'll see that the text has been
+
+33
+00:02:21,020 --> 00:02:26,070
+set so that it takes up the full width of the screen are controlling you now to unjustified.
+
+34
+00:02:26,270 --> 00:02:31,480
+But you can see if I press control NJ to justify the text the paragraph that I mean takes up the full
+
+35
+00:02:31,480 --> 00:02:37,190
+width of the right context for with the screen and for birth control and you can justify it.
+
+36
+00:02:37,220 --> 00:02:40,070
+So something to bear in mind if you look at control J is justified.
+
+37
+00:02:40,310 --> 00:02:44,130
+And before you justify control you is uncut text.
+
+38
+00:02:44,270 --> 00:02:45,550
+But if birth control and J.
+
+39
+00:02:45,680 --> 00:02:52,370
+You see that control you has now switched to justify kind it tells you here you can now justify controlling
+
+40
+00:02:52,370 --> 00:02:52,730
+you.
+
+41
+00:02:52,730 --> 00:02:54,670
+It goes back to the way that it was.
+
+42
+00:02:54,710 --> 00:03:00,540
+So up next we've got the two spell option which is basically a spell checker.
+
+43
+00:03:00,680 --> 00:03:03,920
+Now by default a spell checker isn't set up for Nonno.
+
+44
+00:03:03,920 --> 00:03:10,720
+So if I press control t it will say spellchecking failed error invoking spell like OK.
+
+45
+00:03:10,820 --> 00:03:16,100
+What that means is that there's a spell checker not actually set up but we can set one up.
+
+46
+00:03:16,100 --> 00:03:19,370
+So let's just save our file by pressing control in 0 to write it.
+
+47
+00:03:19,550 --> 00:03:20,510
+Yes that'll do.
+
+48
+00:03:20,510 --> 00:03:25,520
+And then press control X to exit and clear the screen with control and l see a lot of keyboard shortcuts
+
+49
+00:03:25,520 --> 00:03:26,330
+going on here.
+
+50
+00:03:26,540 --> 00:03:34,640
+So to actually edit the text they that's sort of a spell checker that is used for Nonno that's in the
+
+51
+00:03:34,640 --> 00:03:43,040
+Nano configuration file which is actually located in our ETSI folder in a file called Nano or C so that's
+
+52
+00:03:43,100 --> 00:03:49,920
+open not really ironically with nano because if we do that here we are we've now opened our nano Ossy
+
+53
+00:03:49,940 --> 00:03:53,810
+So it's slash ATC slash nano Ossy.
+
+54
+00:03:53,930 --> 00:04:01,610
+So if I show you that graphically where where we're going we are in our base directory by going to other
+
+55
+00:04:01,610 --> 00:04:02,360
+location I think.
+
+56
+00:04:02,380 --> 00:04:04,250
+So this is the slash folder.
+
+57
+00:04:04,400 --> 00:04:05,510
+Then you go ATC.
+
+58
+00:04:05,510 --> 00:04:14,920
+So sloshy UTC then somewhere in here there'll be a file called none and none of us see this.
+
+59
+00:04:14,930 --> 00:04:18,130
+If we click on NORC that's basically what we've opened.
+
+60
+00:04:18,200 --> 00:04:22,960
+OK but let's make sure that we open it in in here.
+
+61
+00:04:23,120 --> 00:04:24,060
+OK.
+
+62
+00:04:24,080 --> 00:04:31,500
+Actually at the minute this file is in fact on ridable because we don't have the Persians to edit it.
+
+63
+00:04:31,520 --> 00:04:38,820
+So to make that actually editable we need to do pseudo nano sloshy UTC slash nano RC.
+
+64
+00:04:38,870 --> 00:04:43,940
+OK so this pseudo bare basic alleged to run this command is the administrator but we'll come onto that
+
+65
+00:04:43,970 --> 00:04:45,370
+a bit more later in the course.
+
+66
+00:04:45,530 --> 00:04:48,130
+You enter your password that you normally use for logging in.
+
+67
+00:04:48,470 --> 00:04:51,360
+And now you can edit the file.
+
+68
+00:04:51,530 --> 00:04:52,170
+OK.
+
+69
+00:04:52,520 --> 00:04:57,080
+Now there's a line in here that has the word a spell or spell in it.
+
+70
+00:04:57,080 --> 00:05:03,410
+So let's find that by using the where is Command says where is aspell press enter.
+
+71
+00:05:03,470 --> 00:05:04,180
+And it found it.
+
+72
+00:05:04,250 --> 00:05:04,760
+OK.
+
+73
+00:05:04,760 --> 00:05:09,650
+So this line it says here use this spelling checker instead of the internal one.
+
+74
+00:05:09,650 --> 00:05:11,960
+This option does not properly have a default value.
+
+75
+00:05:11,960 --> 00:05:17,390
+OK so to get rid of that actually to make that actually happen we just need to get rid of this hash
+
+76
+00:05:17,480 --> 00:05:19,960
+symbol and get rid of the leading space.
+
+77
+00:05:20,000 --> 00:05:23,860
+Now there's no there's no hash just set Spellar.
+
+78
+00:05:24,020 --> 00:05:26,790
+I spell dash ecstasy just like that.
+
+79
+00:05:26,990 --> 00:05:29,740
+And we write out and close.
+
+80
+00:05:30,230 --> 00:05:37,010
+And now if we go back into nano for our diary text if we press control and t to actually stop the spell
+
+81
+00:05:37,010 --> 00:05:43,620
+checker we now have a spell checker working so it's not quite cool right we just use Nonno to edit Nonno.
+
+82
+00:05:43,670 --> 00:05:44,350
+It's awesome.
+
+83
+00:05:44,510 --> 00:05:45,490
+So here we are.
+
+84
+00:05:45,500 --> 00:05:48,310
+It's going through a spell checker is telling me my name is wrong.
+
+85
+00:05:48,590 --> 00:05:50,220
+Well that's charming isn't it.
+
+86
+00:05:50,260 --> 00:05:50,690
+There you go.
+
+87
+00:05:50,720 --> 00:05:55,700
+That's how you can actually go about setting up your spell checker and you can just enter things in
+
+88
+00:05:55,700 --> 00:05:55,850
+here.
+
+89
+00:05:55,850 --> 00:06:01,690
+So if I wanted to change my name to let's say Yoda which of course I do.
+
+90
+00:06:01,690 --> 00:06:03,140
+Because that's totally awesome.
+
+91
+00:06:03,140 --> 00:06:09,550
+I just enter five and you see that my name is now Yoda and it's a fact because it's on a video.
+
+92
+00:06:09,620 --> 00:06:09,990
+OK.
+
+93
+00:06:10,130 --> 00:06:15,890
+So if I now go I can also close a human to any of these Otterman you can ignore replace Agta dictionary
+
+94
+00:06:16,340 --> 00:06:19,440
+and replace all or ignore all or whatever it might be.
+
+95
+00:06:19,520 --> 00:06:24,280
+But let's just press X to exit and there we are we're back into normal stuff.
+
+96
+00:06:24,280 --> 00:06:29,300
+So once you've edited that all you've got to do it when you get to that so that your spell checker works
+
+97
+00:06:30,290 --> 00:06:36,140
+you're good to go and it is possible to to also add different dictionaries and stuff like that as well
+
+98
+00:06:36,140 --> 00:06:39,780
+and you can find that information online as well.
+
+99
+00:06:39,920 --> 00:06:46,130
+OK so there we are that's how you do spellchecking and control and see is apparently tells you your
+
+100
+00:06:46,130 --> 00:06:51,560
+current positions if I press control and say they will tell us I'm on line 1 out of ninety five percent
+
+101
+00:06:51,560 --> 00:06:55,830
+of the way through column one to 70 characters 0 out of 275.
+
+102
+00:06:55,880 --> 00:07:02,330
+So if I move over here now and I press control and say change I'm now on line 7 column 10.
+
+103
+00:07:02,390 --> 00:07:07,520
+So for us this is this is good you know if you are working on a file and you want to give it to someone
+
+104
+00:07:07,820 --> 00:07:13,010
+and you say Oh hey can you change this file at this given position or you're giving people instructions
+
+105
+00:07:13,010 --> 00:07:18,180
+on how to use a file you say online 7 in column 11 change this text.
+
+106
+00:07:18,200 --> 00:07:18,630
+OK.
+
+107
+00:07:18,800 --> 00:07:23,130
+So in fact just to show you let me let me actually save that.
+
+108
+00:07:23,150 --> 00:07:24,300
+Yes.
+
+109
+00:07:24,410 --> 00:07:33,840
+If I go to any slash ETSI slash Nonno or C file and I can search for where is that a spell.
+
+110
+00:07:33,890 --> 00:07:41,250
+Now I can tell you I'm on a spell and if I press control and see I can see here that I'm on line 172.
+
+111
+00:07:41,270 --> 00:07:47,390
+So if you want to set your spell checker go to line 172 and that's the line that you need to edit.
+
+112
+00:07:47,510 --> 00:07:49,190
+For example that would be one way to do it right.
+
+113
+00:07:49,220 --> 00:07:52,510
+So I can close that get back into the direct text.
+
+114
+00:07:52,520 --> 00:07:59,180
+Now we're getting through the next option is control and under score and that allows us to go to a line.
+
+115
+00:07:59,270 --> 00:07:59,810
+OK.
+
+116
+00:07:59,810 --> 00:08:04,880
+So if I press control on the scope and first control the underscore.
+
+117
+00:08:05,000 --> 00:08:07,420
+Oh sorry I'm pressing the wrong button here.
+
+118
+00:08:07,790 --> 00:08:11,580
+There we go because it just goes in a bit of a weird position on my computer so controlling.
+
+119
+00:08:11,600 --> 00:08:13,970
+And he says enter the line number and column number.
+
+120
+00:08:13,970 --> 00:08:15,820
+So let's go to line 10.
+
+121
+00:08:15,920 --> 00:08:23,720
+Column 2 and then we are in line 10 column to see if I can actually get this stuff to get a bit bigger.
+
+122
+00:08:23,720 --> 00:08:25,380
+There we go I've made the font a bit bigger.
+
+123
+00:08:25,880 --> 00:08:32,420
+So control on the score done it because I have to press control and shift and underscore there we go
+
+124
+00:08:32,420 --> 00:08:33,720
+on mine anyway.
+
+125
+00:08:33,870 --> 00:08:39,630
+So so now you're going to do a line number and column numbers or let's say Line 9 column 12.
+
+126
+00:08:39,650 --> 00:08:40,200
+There we go.
+
+127
+00:08:40,220 --> 00:08:45,160
+We are in line on Ivan columns aren't separated by spaces separated by letters.
+
+128
+00:08:45,170 --> 00:08:45,650
+OK.
+
+129
+00:08:45,770 --> 00:08:51,120
+So here are his column 1 2 3 4 5 6 7 8 9 10 11 12.
+
+130
+00:08:51,160 --> 00:08:51,490
+OK.
+
+131
+00:08:51,530 --> 00:08:55,420
+That's that's where we are this way we might get two if you want to call it 12 on whatever line.
+
+132
+00:08:55,430 --> 00:09:05,060
+So if I said to you let's ask Slash ETSI slash non-war was fall and I looked for using using the where
+
+133
+00:09:05,150 --> 00:09:06,060
+is command.
+
+134
+00:09:06,080 --> 00:09:10,900
+I do control the B and I search for a spell and I get to this line.
+
+135
+00:09:10,940 --> 00:09:11,580
+I'm like Huh.
+
+136
+00:09:11,630 --> 00:09:12,600
+Where is this line.
+
+137
+00:09:12,620 --> 00:09:14,450
+Control and see which is composition.
+
+138
+00:09:14,450 --> 00:09:16,610
+It says Line 172.
+
+139
+00:09:16,730 --> 00:09:18,870
+OK so now on your computer.
+
+140
+00:09:18,980 --> 00:09:19,460
+OK.
+
+141
+00:09:19,610 --> 00:09:28,040
+When you open the file you get like ha Z and says Line 172 surplus control and underscore into line
+
+142
+00:09:28,050 --> 00:09:30,890
+172 press enter.
+
+143
+00:09:30,980 --> 00:09:35,630
+And I've ended up at the correct line so you can see how useful that might be if you're collaborating
+
+144
+00:09:35,630 --> 00:09:36,890
+on something with someone.
+
+145
+00:09:36,890 --> 00:09:40,590
+So let's get back into our diary duct tape.
+
+146
+00:09:40,850 --> 00:09:43,420
+We've then got undo and redo.
+
+147
+00:09:43,430 --> 00:09:52,100
+So if I for example cut out all these things here and then I was like oh I don't want that.
+
+148
+00:09:52,130 --> 00:09:53,330
+Let me undo.
+
+149
+00:09:53,330 --> 00:10:00,610
+You can see I just undo and it undid all those bleatings I could also press Olt and remember this could
+
+150
+00:10:00,610 --> 00:10:06,220
+be escape or command depending on your keyboard layout and just the modify key whatever that is for
+
+151
+00:10:06,220 --> 00:10:06,770
+you.
+
+152
+00:10:06,970 --> 00:10:16,480
+On my keyboard it's old but if I press alt and we should redo Altan you undo redo Olson.
+
+153
+00:10:17,140 --> 00:10:18,170
+Alton you.
+
+154
+00:10:18,410 --> 00:10:19,340
+Yeah yeah.
+
+155
+00:10:19,450 --> 00:10:21,410
+I've broke it now but you get the point.
+
+156
+00:10:21,530 --> 00:10:22,280
+So.
+
+157
+00:10:22,380 --> 00:10:25,160
+So that's how you can undo and redo stuff.
+
+158
+00:10:25,410 --> 00:10:27,790
+And instead of cutting Could you see if I could.
+
+159
+00:10:27,820 --> 00:10:31,630
+Now I can uncut instead of cutting.
+
+160
+00:10:31,630 --> 00:10:33,250
+You can actually just directly copy.
+
+161
+00:10:33,340 --> 00:10:35,260
+So here you've got to do all.
+
+162
+00:10:35,320 --> 00:10:38,400
+And the number 6 for press ultimate number 6.
+
+163
+00:10:38,410 --> 00:10:45,880
+Now I can press control in you and I'll start pasting so maybe if I if I do it here Alton's 6 and then
+
+164
+00:10:45,880 --> 00:10:46,940
+press control on you.
+
+165
+00:10:46,990 --> 00:10:49,690
+Now I'm copying and pasting just like that.
+
+166
+00:10:50,020 --> 00:10:54,910
+So that saves you from actually cutting and Mark text as far as I've seen.
+
+167
+00:10:54,940 --> 00:11:00,060
+I don't use that one very often but as far as I can tell all that does is allow you to highlight stuff
+
+168
+00:11:00,070 --> 00:11:04,840
+so yeah it just it just kind of allows you to highlight stuff.
+
+169
+00:11:04,840 --> 00:11:06,630
+So there we go.
+
+170
+00:11:06,910 --> 00:11:14,040
+That's basically everything you need to know about using the Nano command so you are you beautiful people
+
+171
+00:11:14,160 --> 00:11:19,520
+in the last couple of videos you become very familiar with using the Nano command line based text editor.
+
+172
+00:11:19,530 --> 00:11:24,570
+Now the benefit of using a command line based text editors such as nano is that you can get all of your
+
+173
+00:11:24,570 --> 00:11:28,980
+work done without leaving the command line which basically maximizes your productivity.
+
+174
+00:11:29,130 --> 00:11:36,510
+It's a command line editors have lower resource requirements than graphical equivalents so you don't
+
+175
+00:11:36,510 --> 00:11:39,710
+need as much hardware usage in order to actually run them.
+
+176
+00:11:39,720 --> 00:11:43,920
+And also if you are remote administering something like a server the techniques you've learnt here would
+
+177
+00:11:43,920 --> 00:11:49,540
+still work because nano basically comes with every version of Linux at least the most common ones anyway.
+
+178
+00:11:49,740 --> 00:11:54,630
+So you've learned how to use nano and we've looked at a lot of keyboard shortcut options and you saw
+
+179
+00:11:54,840 --> 00:11:57,600
+how to use and pretty much all of those.
+
+180
+00:11:57,720 --> 00:12:01,530
+So you don't have to memorize them don't worry about that now you've got a bit of an idea about how
+
+181
+00:12:01,530 --> 00:12:02,070
+they work.
+
+182
+00:12:02,070 --> 00:12:04,020
+Honestly not I was just a text editor.
+
+183
+00:12:04,080 --> 00:12:09,720
+You can just type text in there you can write code in there whatever you want to do and you can edit
+
+184
+00:12:09,720 --> 00:12:10,610
+files in there.
+
+185
+00:12:10,830 --> 00:12:16,410
+But just bear in mind that the tools are the options in there are accessed using keyboard shortcuts.
+
+186
+00:12:16,410 --> 00:12:19,880
+So if you see this little hat then that means the control key.
+
+187
+00:12:19,890 --> 00:12:26,700
+And if you see minus that either the old escape or command keys on your keyboard depending upon your
+
+188
+00:12:26,700 --> 00:12:29,920
+layout to try them out see which one works on your keyboard.
+
+189
+00:12:30,150 --> 00:12:32,190
+On mine it was all it might be different on yours.
+
+190
+00:12:32,400 --> 00:12:38,010
+And you also saw that you can edit how nano works by editing its configuration file which is located
+
+191
+00:12:38,010 --> 00:12:41,180
+at slash ETSI slash nano or C.
+
+192
+00:12:41,400 --> 00:12:45,930
+So a lot of this stuff is going to be probably for reference for you so you've got it here in this video
+
+193
+00:12:45,930 --> 00:12:48,720
+in this course to refer back to later on if you want to look anything up.
+
+194
+00:12:48,870 --> 00:12:53,810
+But really Nano is very simple to use you to type Nano and then they found that you want to edit.
+
+195
+00:12:54,030 --> 00:12:56,440
+And you know you can just go and edit it like any other text file.
+
+196
+00:12:56,460 --> 00:13:00,330
+So there you are you know know how to end it follows from the command line and should be feeling quite
+
+197
+00:13:00,330 --> 00:13:02,210
+a lot more like a computer wizard.
+
+198
+00:13:02,340 --> 00:13:03,190
+At this point.
+
+199
+00:13:03,450 --> 00:13:08,930
+So with all this super awesome file creation moving copying and pasting and editing that you'll be doing.
+
+200
+00:13:08,940 --> 00:13:12,990
+It's possible that you might want to find where certain important configuration files are located so
+
+201
+00:13:12,990 --> 00:13:16,980
+that you can edit them or where that fall that Ukraine is run off to but you don't want to have to go
+
+202
+00:13:16,980 --> 00:13:19,340
+through each folder manually to look for them.
+
+203
+00:13:19,350 --> 00:13:23,790
+So in the next video you're going to learn how to search for files anywhere on your system using the
+
+204
+00:13:23,790 --> 00:13:27,770
+locate command locate command is one of my favorites and I can't wait to show you.
+
+205
+00:13:27,810 --> 00:13:29,210
+So for all that good stuff.
+
+206
+00:13:29,340 --> 00:13:30,780
+I'll see you in the next video.

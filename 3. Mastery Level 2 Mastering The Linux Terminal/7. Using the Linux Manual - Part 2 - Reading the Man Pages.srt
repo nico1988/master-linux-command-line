@@ -1,0 +1,983 @@
+1
+00:00:00,630 --> 00:00:04,980
+Hello you beautiful people know in the last video you learned about the structure of the intox manual
+
+2
+00:00:05,040 --> 00:00:07,850
+and you saw the way that it was broken up into eight sections.
+
+3
+00:00:08,010 --> 00:00:12,080
+And those eight seconds each deal with a different part of the Linux experience.
+
+4
+00:00:12,090 --> 00:00:15,250
+Now we're going to take that theory from the last video and we're going to turn it into practice.
+
+5
+00:00:15,270 --> 00:00:16,080
+In this video.
+
+6
+00:00:16,230 --> 00:00:21,600
+So in this video you can learn how to search the minute and discover new commands and how to access
+
+7
+00:00:21,600 --> 00:00:23,550
+the manual pages for those commands.
+
+8
+00:00:23,550 --> 00:00:28,800
+And you're also going to learn how to read them so that you can go out there and independently learn
+
+9
+00:00:28,800 --> 00:00:30,360
+how to use new stuff.
+
+10
+00:00:30,480 --> 00:00:33,930
+So by the end of this video you'll have the independence to search for new commands and learn about
+
+11
+00:00:33,930 --> 00:00:34,610
+how they work.
+
+12
+00:00:34,620 --> 00:00:38,610
+And this is going to put you in the driver's seat because it makes it possible for you to gain more
+
+13
+00:00:38,610 --> 00:00:42,780
+control of your Linux system because you can start learning independently about how everything works
+
+14
+00:00:43,020 --> 00:00:48,490
+rather than waiting for a random chances that you randomly bump into learning new commands.
+
+15
+00:00:48,510 --> 00:00:52,440
+You can take a lot more of an active role in your learning and your development of the Linux operating
+
+16
+00:00:52,440 --> 00:00:53,030
+system.
+
+17
+00:00:53,040 --> 00:00:55,420
+So let's go ahead and get right into it.
+
+18
+00:00:57,470 --> 00:01:02,480
+OK so now that you know that the manual is broken up into eight sections How would you know what section
+
+19
+00:01:02,480 --> 00:01:04,370
+to look in to find what you're looking for.
+
+20
+00:01:04,610 --> 00:01:10,730
+Well let's say that you wanted to look up information about the which command first to search the manual
+
+21
+00:01:10,730 --> 00:01:15,680
+you would have to use the man command that a man command is short for the word manual.
+
+22
+00:01:15,710 --> 00:01:20,370
+And it's the command that deals with everything to do with the manual basically.
+
+23
+00:01:20,420 --> 00:01:24,890
+And this is why they're actually called man pages because it's the man command that looks through the
+
+24
+00:01:24,890 --> 00:01:25,350
+manual.
+
+25
+00:01:25,430 --> 00:01:25,880
+OK.
+
+26
+00:01:26,060 --> 00:01:27,590
+Now that's the command name.
+
+27
+00:01:27,620 --> 00:01:28,370
+So we're good at that.
+
+28
+00:01:28,370 --> 00:01:30,890
+Now we need to give it any options if necessary.
+
+29
+00:01:30,890 --> 00:01:34,630
+Mark are you going to use the k option which is what deals with searching.
+
+30
+00:01:34,700 --> 00:01:37,130
+OK so we've got some unnamed options now.
+
+31
+00:01:37,220 --> 00:01:41,180
+It needs an input and the input that we're going to give is the search term.
+
+32
+00:01:41,210 --> 00:01:42,600
+So we type which.
+
+33
+00:01:42,740 --> 00:01:43,110
+OK.
+
+34
+00:01:43,220 --> 00:01:47,690
+So we got a command name we've got our options we've got our inputs the same general structure that
+
+35
+00:01:47,690 --> 00:01:54,320
+I was setting up before but now what we're doing actually is using the man come on to search the manual
+
+36
+00:01:54,470 --> 00:01:57,620
+for this search term the search term here called which.
+
+37
+00:01:57,960 --> 00:02:01,490
+Is going to look all the way through the manual and find anything that might be relevant to that search
+
+38
+00:02:01,490 --> 00:02:01,670
+time.
+
+39
+00:02:01,670 --> 00:02:04,130
+It's like your own mini search engine for your manual.
+
+40
+00:02:04,150 --> 00:02:08,600
+So if Representer we get quite a few lines of output here.
+
+41
+00:02:08,710 --> 00:02:08,950
+OK.
+
+42
+00:02:08,960 --> 00:02:12,600
+So let's let's have a look at what this is on the left here.
+
+43
+00:02:12,620 --> 00:02:16,070
+You're going to get the names of certain manual pages.
+
+44
+00:02:16,100 --> 00:02:16,480
+OK.
+
+45
+00:02:16,520 --> 00:02:20,540
+Every single one of these is a manual page that is appropriate to this search term.
+
+46
+00:02:20,660 --> 00:02:21,250
+OK.
+
+47
+00:02:21,530 --> 00:02:28,130
+And on the right you get a bit of a synopsis about the actual page so you can pick which one might be
+
+48
+00:02:28,310 --> 00:02:29,430
+most appropriate.
+
+49
+00:02:29,600 --> 00:02:30,650
+OK.
+
+50
+00:02:31,190 --> 00:02:37,370
+And the other thing is in the parentheses here you get the section number of the manual that that page
+
+51
+00:02:37,430 --> 00:02:38,270
+is in.
+
+52
+00:02:38,270 --> 00:02:44,690
+So for example this command at manual page is in the first section of the manual which means it's a
+
+53
+00:02:44,690 --> 00:02:50,630
+user command whereas this one is in the 8th section of the manual which means that it is a more system
+
+54
+00:02:50,630 --> 00:02:52,460
+administrative kind of thing.
+
+55
+00:02:52,550 --> 00:03:00,890
+And this one is in Section 5 which is going to be a file file configuration how the files are structured
+
+56
+00:03:00,920 --> 00:03:05,840
+and things are that information about how files are structured so that we can actually see at a glance
+
+57
+00:03:05,840 --> 00:03:08,530
+whether it actually suits our needs or not.
+
+58
+00:03:08,600 --> 00:03:13,100
+And if we decide that we want to take a further look it seems like this one is exactly what we're looking
+
+59
+00:03:13,100 --> 00:03:18,020
+forward to the use a command section and it's a command that locates a command.
+
+60
+00:03:18,350 --> 00:03:22,240
+We can actually take a deeper look at that by using the map again.
+
+61
+00:03:22,730 --> 00:03:24,250
+Then the section number.
+
+62
+00:03:24,290 --> 00:03:28,760
+So the section number is 1 and then we type the search term.
+
+63
+00:03:28,780 --> 00:03:32,070
+And so the page name which is on the left there which is which.
+
+64
+00:03:32,130 --> 00:03:33,560
+OK and if I press enter.
+
+65
+00:03:34,070 --> 00:03:37,780
+We've opened up the manual page for the which command.
+
+66
+00:03:37,790 --> 00:03:42,380
+It's only very small and once we've opened that to close it and get back out we just press the q key
+
+67
+00:03:42,590 --> 00:03:47,940
+on the on the keyboards or press the letter Q And I'm back on my command line.
+
+68
+00:03:48,080 --> 00:03:54,530
+So for example we could open up this small section here this soul thing by doing MAN 6 because it's
+
+69
+00:03:54,530 --> 00:04:01,610
+Section 6 salt and I press enter and it opens up that that manual page for salt which you can see at
+
+70
+00:04:01,610 --> 00:04:02,750
+the top right there.
+
+71
+00:04:02,750 --> 00:04:03,240
+OK.
+
+72
+00:04:03,470 --> 00:04:10,790
+Now because the first section of the manual is used so often you don't usually have to type the number
+
+73
+00:04:10,790 --> 00:04:15,970
+one even so instead of typing Man 1 which is a nice Shoko I can just type the word man.
+
+74
+00:04:16,010 --> 00:04:16,880
+Can you type man.
+
+75
+00:04:16,910 --> 00:04:23,210
+Which which will open up the same page the same manual page and you can see that it is indeed in Section
+
+76
+00:04:23,330 --> 00:04:23,820
+1.
+
+77
+00:04:23,900 --> 00:04:27,380
+OK so that's a shortcut if you see that something is in Section 1.
+
+78
+00:04:27,380 --> 00:04:31,100
+You don't need to talk the one you just type the actual name of the page.
+
+79
+00:04:31,100 --> 00:04:32,880
+So like a page we've got LCF right.
+
+80
+00:04:32,900 --> 00:04:41,270
+LCF is in section 1 man LCF and we see that we all know in the LCF man page in section 1 which means
+
+81
+00:04:41,270 --> 00:04:42,560
+that it's a user command.
+
+82
+00:04:42,620 --> 00:04:43,020
+OK.
+
+83
+00:04:43,130 --> 00:04:46,090
+So that's how you would open up a manual page.
+
+84
+00:04:46,190 --> 00:04:50,050
+And up next now we're going to take a look at how you would actually read it.
+
+85
+00:04:50,330 --> 00:04:50,660
+OK.
+
+86
+00:04:50,660 --> 00:04:53,590
+So let's take a look at the man page for the which command.
+
+87
+00:04:53,630 --> 00:04:54,770
+So I'm going to talk man.
+
+88
+00:04:54,770 --> 00:04:55,820
+And then which.
+
+89
+00:04:55,820 --> 00:04:59,510
+And because it's actually a command that I've used very recently I could have just pressed the arrow
+
+90
+00:04:59,540 --> 00:05:01,810
+key a couple of times and I get back to the same result.
+
+91
+00:05:01,880 --> 00:05:02,360
+OK.
+
+92
+00:05:02,360 --> 00:05:06,250
+So I press man which press enter and we've opened up the manual page.
+
+93
+00:05:06,260 --> 00:05:11,230
+Now we can see that this manual page is actually broken up into the following sections of the top we've
+
+94
+00:05:11,240 --> 00:05:18,210
+got name then we've got a synopsis then we've got a description that we've got options.
+
+95
+00:05:18,530 --> 00:05:20,130
+Then we've got exit status.
+
+96
+00:05:20,180 --> 00:05:24,470
+OK now the sections a man page may include all examples.
+
+97
+00:05:24,500 --> 00:05:31,520
+See also section an environment section things about Bogues things about office things about reporting
+
+98
+00:05:31,520 --> 00:05:35,780
+bugs history of the command copyright things.
+
+99
+00:05:35,780 --> 00:05:36,400
+Stuff like that.
+
+100
+00:05:36,440 --> 00:05:41,360
+OK but this is what we get in this specific manual page because they're not always structured the same
+
+101
+00:05:41,360 --> 00:05:44,280
+way but they usually follow this kind of structure.
+
+102
+00:05:44,330 --> 00:05:44,780
+OK.
+
+103
+00:05:44,930 --> 00:05:50,000
+Now in the name section we see that we are dealing with the which command and we see a little bit about
+
+104
+00:05:50,000 --> 00:05:54,530
+what it does and this is actually what came up when we searched the manual in the first place.
+
+105
+00:05:54,530 --> 00:05:55,800
+OK this is exactly what came up.
+
+106
+00:05:55,790 --> 00:06:00,070
+We saw the name and then this little piece of information on the right hand side.
+
+107
+00:06:00,100 --> 00:06:02,160
+OK.
+
+108
+00:06:02,550 --> 00:06:07,710
+Now in the description section this is where you this is where you really see what the common does in
+
+109
+00:06:07,710 --> 00:06:11,640
+the description sections of every important section and it gives you a much more in-depth description
+
+110
+00:06:11,910 --> 00:06:13,700
+of what the commander actually does.
+
+111
+00:06:13,860 --> 00:06:17,430
+This is likely going to be one of the most useful parts of the man page for any command.
+
+112
+00:06:17,460 --> 00:06:21,170
+And as it will try to explain what the commanders in plain English.
+
+113
+00:06:21,420 --> 00:06:26,910
+OK so you've got the which command description there and here you've got these in the synopsis section
+
+114
+00:06:26,940 --> 00:06:32,380
+we can see a layout of how to actually use the command.
+
+115
+00:06:32,750 --> 00:06:36,930
+So German when I was telling you the each command is structured differently and you need to read the
+
+116
+00:06:36,930 --> 00:06:39,110
+manual pages to see how to use a command.
+
+117
+00:06:39,270 --> 00:06:43,530
+Well this is the section of the manual page that will tell you how to use the command.
+
+118
+00:06:43,530 --> 00:06:44,910
+The synopsis section.
+
+119
+00:06:45,000 --> 00:06:48,430
+So for the which come on we can see the first type which OK.
+
+120
+00:06:48,480 --> 00:06:55,160
+The command name and then we see the A option in some square brackets which will come into in a minute
+
+121
+00:06:55,530 --> 00:06:57,800
+and then some kind of file name.
+
+122
+00:06:58,020 --> 00:07:02,360
+And then three dots although also known as an ellipsis afterwards.
+
+123
+00:07:02,370 --> 00:07:03,960
+So let me explain what this stuff means.
+
+124
+00:07:03,960 --> 00:07:12,110
+OK so first we enter the which come they will just type which then we have the option which is optional.
+
+125
+00:07:12,120 --> 00:07:17,430
+Now we know it's optional because it's inside the square brackets in a man page.
+
+126
+00:07:17,430 --> 00:07:21,420
+If something is inside square brackets that means it's optional.
+
+127
+00:07:21,480 --> 00:07:23,960
+OK you don't have to enter it but you can.
+
+128
+00:07:23,970 --> 00:07:24,500
+OK.
+
+129
+00:07:24,690 --> 00:07:29,670
+Now next after that once we've entered our optional option we.
+
+130
+00:07:30,150 --> 00:07:34,390
+Next you have to enter the name of a command that you're actually looking for.
+
+131
+00:07:34,410 --> 00:07:40,940
+Now you can see so you enter a name when you looking for example which may be decay and then echo.
+
+132
+00:07:40,940 --> 00:07:41,400
+OK.
+
+133
+00:07:41,550 --> 00:07:43,160
+That would show you where the echo command was.
+
+134
+00:07:43,170 --> 00:07:49,200
+But you also see this ellipsis Oh these three dots that these three dots mean that you can enter more
+
+135
+00:07:49,200 --> 00:07:50,610
+than one file name.
+
+136
+00:07:50,610 --> 00:07:55,650
+So in other words the command can take more than one input.
+
+137
+00:07:55,650 --> 00:07:57,400
+Things are starting to fall into place now.
+
+138
+00:07:57,420 --> 00:08:00,810
+Right so how do you know how many inputs the command takes will you look at the man page you look at
+
+139
+00:08:00,810 --> 00:08:03,750
+the synopsis and it will tell you how many inputs it takes.
+
+140
+00:08:03,750 --> 00:08:04,260
+OK.
+
+141
+00:08:04,410 --> 00:08:05,430
+Now just to prove it.
+
+142
+00:08:05,570 --> 00:08:06,000
+OK.
+
+143
+00:08:06,090 --> 00:08:06,650
+Just prove this.
+
+144
+00:08:06,650 --> 00:08:07,740
+We're going to take what we've learned here.
+
+145
+00:08:07,770 --> 00:08:08,680
+And we're going to apply it.
+
+146
+00:08:08,700 --> 00:08:13,440
+OK so I'm going to go back and clear the screen presence by holding control in now and we're going to
+
+147
+00:08:13,440 --> 00:08:19,790
+see we're going to try and use the command to find the data command and the command at the same time.
+
+148
+00:08:20,090 --> 00:08:20,480
+OK.
+
+149
+00:08:20,580 --> 00:08:21,920
+So we've used the which command.
+
+150
+00:08:22,080 --> 00:08:26,450
+We didn't give it the option but we didn't have to because it's just option just optional because we
+
+151
+00:08:26,450 --> 00:08:31,380
+because it was in the square brackets and we've given it a one far name and then another I say if we
+
+152
+00:08:31,380 --> 00:08:37,650
+press enter that we see that we get two outputs and then it's found the locations of the date command
+
+153
+00:08:37,740 --> 00:08:39,320
+and then the count command.
+
+154
+00:08:39,360 --> 00:08:44,820
+We didn't need to run the command twice because if we look at the man page it tells us we can actually
+
+155
+00:08:44,820 --> 00:08:47,360
+give it more than one file name.
+
+156
+00:08:47,490 --> 00:08:47,790
+OK.
+
+157
+00:08:47,820 --> 00:08:51,440
+So that's really really useful and maybe not maybe something we wouldn't have known had to do.
+
+158
+00:08:51,450 --> 00:08:53,510
+We had not looked at the man page.
+
+159
+00:08:53,580 --> 00:08:58,270
+And as I said the things inside square brackets in the main page will be opened up again.
+
+160
+00:08:58,920 --> 00:09:01,780
+Things inside the square brackets are optional.
+
+161
+00:09:01,890 --> 00:09:06,180
+This kind of stuff you don't have to have but you can have and if you want to know what it does you
+
+162
+00:09:06,180 --> 00:09:07,350
+just go to the Options section.
+
+163
+00:09:07,350 --> 00:09:13,350
+So if I put in the option it says it'll print all the matching pathnames of each argument so all matching
+
+164
+00:09:13,350 --> 00:09:15,240
+pathnames so is short for all.
+
+165
+00:09:15,240 --> 00:09:19,120
+So what I could do is I could type which I could do.
+
+166
+00:09:19,350 --> 00:09:23,320
+Which date and cow but I could type dash.
+
+167
+00:09:23,520 --> 00:09:24,870
+And see if that does any difference.
+
+168
+00:09:24,870 --> 00:09:26,810
+It actually and it doesn't make any difference.
+
+169
+00:09:27,210 --> 00:09:32,360
+But it will show us all of the different all of the different results.
+
+170
+00:09:32,490 --> 00:09:38,070
+So maybe you know when I told you about searching searching on the path maybe this will allow us to
+
+171
+00:09:38,070 --> 00:09:41,660
+look in folders that were later on in the path if they had the same name as where they were earlier
+
+172
+00:09:41,670 --> 00:09:42,080
+on.
+
+173
+00:09:42,090 --> 00:09:42,560
+OK.
+
+174
+00:09:42,750 --> 00:09:44,310
+So there we go.
+
+175
+00:09:44,310 --> 00:09:47,870
+Now there's other the symbols in the manual pages such as angle brackets.
+
+176
+00:09:47,970 --> 00:09:49,330
+So these kind of things.
+
+177
+00:09:49,470 --> 00:09:49,790
+Right.
+
+178
+00:09:49,890 --> 00:09:54,260
+So if you have something inside here inside the manual page.
+
+179
+00:09:54,300 --> 00:10:00,590
+So if we have like which And then it was like this and then you had something ok inside angle brackets.
+
+180
+00:10:00,900 --> 00:10:03,460
+Anything inside the angle brackets is mandatory.
+
+181
+00:10:03,480 --> 00:10:05,150
+That means you have to have it.
+
+182
+00:10:05,400 --> 00:10:05,850
+OK.
+
+183
+00:10:05,940 --> 00:10:09,630
+So if you see something inside angle brackets that means you have to have it and you can't miss it at
+
+184
+00:10:09,870 --> 00:10:10,560
+all right.
+
+185
+00:10:11,070 --> 00:10:12,340
+So just bear that in mind.
+
+186
+00:10:12,340 --> 00:10:14,420
+There's also the pipe character.
+
+187
+00:10:14,430 --> 00:10:20,230
+So if I have an option here and it was something like say you had the f option.
+
+188
+00:10:20,360 --> 00:10:20,850
+OK.
+
+189
+00:10:20,910 --> 00:10:24,490
+Because there's a pipe character between the two options.
+
+190
+00:10:24,600 --> 00:10:29,570
+That means OK you have to pick one or the other.
+
+191
+00:10:29,880 --> 00:10:32,190
+OK so the pipe means one or the other.
+
+192
+00:10:32,310 --> 00:10:33,750
+You cannot have both.
+
+193
+00:10:33,750 --> 00:10:41,590
+So I couldn't type I couldn't type which which Dasch a death date.
+
+194
+00:10:41,720 --> 00:10:47,280
+OK I would have to type which dash A or which dash f couldn't have both.
+
+195
+00:10:47,290 --> 00:10:50,390
+That's what happens if you see something inside.
+
+196
+00:10:50,640 --> 00:10:51,930
+Inside angle brackets.
+
+197
+00:10:51,950 --> 00:10:53,680
+OK some second time I think again.
+
+198
+00:10:53,940 --> 00:10:56,530
+So the angle brackets with a pipe in between them.
+
+199
+00:10:56,930 --> 00:11:00,120
+OK so what Beduin so far.
+
+200
+00:11:01,210 --> 00:11:01,970
+OK.
+
+201
+00:11:02,230 --> 00:11:04,690
+It's probably what you'll come up with most of the time.
+
+202
+00:11:04,780 --> 00:11:06,580
+So these are all the different things that you'll see.
+
+203
+00:11:06,580 --> 00:11:07,850
+You'll have the name.
+
+204
+00:11:08,170 --> 00:11:09,610
+You have some options.
+
+205
+00:11:09,620 --> 00:11:14,860
+It will tell you which ones are optional and which ones you need and which ones cannot be combined with
+
+206
+00:11:14,860 --> 00:11:15,870
+others.
+
+207
+00:11:16,010 --> 00:11:20,080
+You will see things that may be a mantra inside square brackets and anything with a dot dot dot after
+
+208
+00:11:20,080 --> 00:11:21,670
+it means you can have more than one thing.
+
+209
+00:11:21,670 --> 00:11:25,840
+So if it's sad like this it was a file name was in it and then dot dot dot that means you can have more
+
+210
+00:11:25,840 --> 00:11:28,600
+than one file name when you use this command.
+
+211
+00:11:28,600 --> 00:11:32,560
+Now I'm actually going to put a PTF in the resort in the resource section for this lecture that lists
+
+212
+00:11:32,670 --> 00:11:34,050
+what the different symbols mean.
+
+213
+00:11:34,180 --> 00:11:38,460
+So you can use it if you ever need a quick refresher but it's pretty much all you need to remember.
+
+214
+00:11:38,460 --> 00:11:38,760
+OK.
+
+215
+00:11:38,770 --> 00:11:41,820
+Just the anything in square brackets is optional.
+
+216
+00:11:42,240 --> 00:11:46,900
+And with a pipe in between it you can only have one or the other anything and square anything in angle
+
+217
+00:11:46,900 --> 00:11:48,630
+brackets is mandatory.
+
+218
+00:11:48,670 --> 00:11:52,150
+And I think with dot dot dot after it you can use more than once because pretty much all you need to
+
+219
+00:11:52,150 --> 00:11:52,520
+know.
+
+220
+00:11:52,620 --> 00:11:56,620
+And if you want to know how to look up what different options do to scroll down to the Options section
+
+221
+00:11:56,620 --> 00:11:59,200
+in the main page and it'll tell you exactly how to use them all.
+
+222
+00:11:59,590 --> 00:11:59,930
+OK.
+
+223
+00:11:59,950 --> 00:12:04,090
+Awesome So we've covered a whole lot of stuff in this video and you should start feeling a lot more
+
+224
+00:12:04,090 --> 00:12:07,210
+comfortable using the command line already in this video.
+
+225
+00:12:07,220 --> 00:12:12,710
+So have to search the manual using the man command with the k option and after that you can give it
+
+226
+00:12:12,800 --> 00:12:14,980
+any search term that you want.
+
+227
+00:12:15,140 --> 00:12:19,810
+And the command will search the manual for that search term and give you a list of results as well as
+
+228
+00:12:19,810 --> 00:12:23,730
+what those results are and where section of the manual page they're in.
+
+229
+00:12:23,920 --> 00:12:31,050
+So I had to access those specific manual pages and also how to read them for specific command structure.
+
+230
+00:12:31,180 --> 00:12:36,030
+So we saw how Tota actually use the which command using its manual page.
+
+231
+00:12:36,220 --> 00:12:40,290
+And we saw the different symbols that might come up in the manual page to tell you how to use it.
+
+232
+00:12:40,420 --> 00:12:44,920
+But I've attached cheat sheet in the resources section for this video that I massively encourage you
+
+233
+00:12:44,920 --> 00:12:49,390
+to use and keep on hand because it's going to give you an explanation of each of the different symbols
+
+234
+00:12:49,630 --> 00:12:52,570
+that might show up in a manual page so that you can keep that to hand.
+
+235
+00:12:52,600 --> 00:12:55,180
+And you know make sure that you don't forget anything.
+
+236
+00:12:55,330 --> 00:12:57,070
+But to ensure that you don't forget anything.
+
+237
+00:12:57,070 --> 00:13:00,880
+Up next we're going to have some practice what we're going to do is we're going to go together and we're
+
+238
+00:13:00,880 --> 00:13:05,600
+going to look at we're going to search for a new command and we're going to read about how it works.
+
+239
+00:13:05,600 --> 00:13:09,970
+We can look at it's manual page and we're going to take that learning and actually apply it and show
+
+240
+00:13:09,970 --> 00:13:14,980
+you how how you would take a man page that you've never seen before and learn how to use it.
+
+241
+00:13:14,980 --> 00:13:19,360
+So we're going to be applying what we've learned in this lecture about reading manual pages and apply
+
+242
+00:13:19,360 --> 00:13:21,870
+it to a completely new command and go through it together.
+
+243
+00:13:22,000 --> 00:13:26,650
+And after that you should definitely feel as though hey any command or any manual page that I've come
+
+244
+00:13:26,650 --> 00:13:31,030
+up against I'll know how to read and know how to use which is going to give you a massive boost of confidence
+
+245
+00:13:31,030 --> 00:13:36,100
+and a massive boost of independence for you to explore and learn more about the Linux operating system.
+
+246
+00:13:36,100 --> 00:13:40,110
+So let's go ahead and jump into the next video and get some super super cool practice.

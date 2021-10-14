@@ -1,0 +1,915 @@
+1
+00:00:00,120 --> 00:00:02,590
+Lovin，欢迎你们这些漂亮的人来看第二部分。
+Lovin you beautiful people are welcome to part two.
+
+2
+00:00:02,670 --> 00:00:04,780
+导航Linux文件系统。
+Navigating the Linux file system.
+
+3
+00:00:04,830 --> 00:00:09,660
+因此，在这段视频中，我们将在上一段视频中了解到的有关使用PWT的知识的基础上再接再厉
+So in this video we're going to build upon what we learned in the last video about using the PWT and
+
+4
+00:00:09,660 --> 00:00:10,910
+LS命令。
+the LS commands.
+
+5
+00:00:10,970 --> 00:00:16,910
+但在本视频中，您将了解如何使用cd命令在文件系统中实际移动。
+But in this video you're going to learn how to use the cd command to actually move around the file system.
+
+6
+00:00:17,010 --> 00:00:20,440
+您将学习绝对路径和相对路径之间的区别。
+You're going to learn the difference between absolute and relative paths.
+
+7
+00:00:20,460 --> 00:00:25,140
+您可以了解一些非常棒的键盘快捷键，这些快捷键将使文件系统导航变得如此快速
+You can learn some awesome keyboard shortcuts that will make navigating the file system so quick and
+
+8
+00:00:25,140 --> 00:00:31,950
+非常简单，基本上您将看到如何将pwt、ls和cd命令组合在一起，以
+so easy and you basically going to see how you can put together the PWT the Ls and the CD commands to
+
+9
+00:00:32,040 --> 00:00:34,510
+优雅地导航文件系统。
+elegantly navigate the file system.
+
+10
+00:00:34,630 --> 00:00:39,390
+在本视频结束时，您将了解有关导航Linux所需了解的一切
+By the end of this video you're going to know everything you need to know about navigating the Linux
+
+11
+00:00:39,390 --> 00:00:44,220
+使用命令行的文件系统，您稍加练习就会发现，您很快就会同意我的观点
+file system using the command line and you watch with a bit of practice you'll soon agree with me that
+
+12
+00:00:44,220 --> 00:00:50,250
+这样做比使用点击式图形方法要快得多，效率也高得多
+doing it this way is a lot faster and a lot more effective than using your pointy clicky graphical methods
+
+13
+00:00:50,250 --> 00:00:51,360
+你一直在用的东西。
+that you've been using.
+
+14
+00:00:51,360 --> 00:00:53,540
+到目前为止可能是你一生中的全部。
+Probably all of your life so far.
+
+15
+00:00:53,640 --> 00:00:58,220
+那么让我们直接跳到你的超级英雄训练的下一部分吧。
+So let's go ahead and jump right into this next part of your superhero training.
+
+16
+00:00:58,530 --> 00:00:59,060
+好的。
+OK.
+
+17
+00:00:59,070 --> 00:01:04,530
+在上一个视频中，我们看到可以使用P W D命令来查看我们在文件系统上的位置
+So in the last video we saw that we could use the P W D command to see where we were on the file system
+
+18
+00:01:04,800 --> 00:01:09,510
+我们看到，我们可以将ls命令与各种不同的选项一起使用，基本上可以四处查看
+and we saw that we could use the ls command with a variety of different options to basically look around
+
+19
+00:01:09,540 --> 00:01:11,760
+并列出进入时目录中的内容。
+and list what was in the directory the way in.
+
+20
+00:01:11,790 --> 00:01:17,130
+但是仅使用这两个命令，我们就有点停留在一个地方，如何才能真正移动
+But using just these two commands we're kind of stuck in the one place right how can we actually move
+
+21
+00:01:17,370 --> 00:01:19,070
+从我们的主目录。
+from our home directory.
+
+22
+00:01:19,200 --> 00:01:25,790
+好的，缺少的部分是CD命令，而CD命令代表更改目录。
+Well the missing piece is the C D command and the cd command stands for change directory.
+
+23
+00:01:25,800 --> 00:01:30,930
+假设我们使用的是最后一个类型，我们注意到Downloads文件夹位于
+So let's say that we used our last kind and we saw that the downloads folder by noting that it's in
+
+24
+00:01:30,930 --> 00:01:35,280
+蓝色，这是一个文件夹，我们想进入Downloads文件夹。
+blue and it's a folder and we wanted to go into the downloads folder.
+
+25
+00:01:35,280 --> 00:01:36,260
+我们怎么才能做到这一点。
+How would we do that.
+
+26
+00:01:36,300 --> 00:01:37,960
+我们可以用几种方式做到这一点。
+What we could do it in a few ways.
+
+27
+00:01:38,130 --> 00:01:44,010
+首先，我们可以为cd命令提供我们想要到达的位置的绝对路径，从
+Firstly we can give the cd command the absolute path for where we want to go with a go starting at the
+
+28
+00:01:44,010 --> 00:01:51,810
+基本目录，我们去劈开，然后回家，然后Ziyad下载，好的，我们可以像这样键入
+base directory we'd go slash then home then Ziyad then downloads OK and we could type that in like that
+
+29
+00:01:51,840 --> 00:01:58,020
+这完全可以工作，或者如果我们不想将整个路径写入我们的主目录
+and that would totally work or if we didn't want to have to write the entire path to our home directory
+
+30
+00:01:58,260 --> 00:02:00,830
+我们可以把这一切都换成蒂尔达。
+we could just replace all that with the Tilda.
+
+31
+00:02:00,860 --> 00:02:07,030
+我们说OK，转到我们的主目录，然后下载，这就是您可以通过快捷方式使用波浪号的地方
+We say OK go change to our home directory and then download that's where you'd use the tilde at a shortcut
+
+32
+00:02:07,540 --> 00:02:15,330
+或者我们可以使用的是所谓的相对路径号相对路径是相对于的路径
+or what we could use is something known as a relative path number relative path is a path relative to
+
+33
+00:02:15,330 --> 00:02:17,400
+你现在的位置。
+where you currently are.
+
+34
+00:02:17,570 --> 00:02:22,670
+好的，因为我们当前在主文件夹中，如何才能到达Downloads文件夹。
+OK so because we're currently in the home folder how do we get to the downloads folder.
+
+35
+00:02:22,890 --> 00:02:26,420
+好的，如果我们打开图形图形菜单，让我们想一想。
+Well let's think about it if we open up the graphical graphical menu.
+
+36
+00:02:26,730 --> 00:02:28,990
+我们在这里，我们在主文件夹中，从这里开始。
+Here we are we're in the home folder from here.
+
+37
+00:02:29,010 --> 00:02:31,350
+我们要怎么做才能进入Downloads文件夹。
+What do we do to get to the downloads folder.
+
+38
+00:02:32,660 --> 00:02:39,110
+我们真正要做的就是点击正确的下载，这样你就可以说那是一个亲戚
+We literally all we have to do is just click downloads right so that you can say that that's a relative
+
+39
+00:02:39,110 --> 00:02:42,870
+从这里到下载的路径，这就是我们要做的全部工作。
+path which is going from here to the download that's all we've got to do.
+
+40
+00:02:43,100 --> 00:02:49,370
+因此，要切换到Downloads文件夹，我们所要做的就是键入Downloads。
+So to change to the downloads folder all we've got to do is type downloads.
+
+41
+00:02:49,580 --> 00:02:56,870
+如果我们这样做，如果我们只键入cd，然后像这样下载，然后按Enter键，您就可以看到
+So if we do that if we just type CD and then downloads just like that and press ENTER you can see that
+
+42
+00:02:56,870 --> 00:03:02,060
+我们更改了目录，shell提示符也发生了更改，之前它只是Tilda告诉我们的
+we have changed directory and a shell prompt has changed as well before it was just the tilda telling
+
+43
+00:03:02,060 --> 00:03:04,430
+我们在我们的主目录中。
+us that we were in our home directory.
+
+44
+00:03:04,430 --> 00:03:08,590
+现在，它显示我们位于主目录和内部的Downloads文件夹中。
+Now it's saying we're in our home directory and the downloads folder inside.
+
+45
+00:03:08,730 --> 00:03:09,270
+好的。
+OK.
+
+46
+00:03:09,290 --> 00:03:15,580
+如果我们使用pwt命令，这里的蓝色文本显示了我们当前所在位置的路径
+So this is this text in blue here shows us the path to where we currently on if we use the PWT command
+
+47
+00:03:15,620 --> 00:03:21,950
+现在我们可以看到，我们可以在劈开主页获得SLASY或劈开下载，我们还可以通过按下
+now we can see that we get slash home slashy or slash downloads and we can also look around by pressing
+
+48
+00:03:21,950 --> 00:03:26,050
+ls命令，我们可以看到该文件夹中实际上什么都没有。
+the ls command and we can see that there's actually nothing inside that folder.
+
+49
+00:03:26,270 --> 00:03:28,410
+好的，所以都不是，我们不是下载文件夹。
+OK so neither We're not Downloads folder.
+
+50
+00:03:28,460 --> 00:03:30,090
+这是给你的一个挑战。
+Here's a challenge for you.
+
+51
+00:03:30,140 --> 00:03:37,080
+继续发布视频，看看是否可以使用cd命令切换回我们的主目录。
+Go ahead and post the video and see if you can use the CD command to change back to our home directory.
+
+52
+00:03:37,100 --> 00:03:40,700
+因此，请继续暂停视频，尝试一下，然后再回来看看您做得如何。
+So go ahead and pause the video and give it a shot and then come back to see how you did.
+
+53
+00:03:47,110 --> 00:03:47,810
+你成功了吗。
+Did you manage it.
+
+54
+00:03:47,830 --> 00:03:49,860
+如果是这样的话真的真的做得很好。
+If so really really well done.
+
+55
+00:03:49,900 --> 00:03:55,600
+您现在学得非常快，您可以使用这样的绝对路径来完成它，您可以输入cd
+You learn super quickly now you could have done it using an absolute path like this you could type CD
+
+56
+00:03:55,600 --> 00:04:00,350
+然后是劈开，主页劈开，你的用户名，或者其他任何东西，在我的例子中，它是兹亚德劈开。
+then slash home slash your username or whatever would be in my case it Ziyad slash.
+
+57
+00:04:00,520 --> 00:04:01,340
+就这样了。
+And that's it.
+
+58
+00:04:01,390 --> 00:04:02,620
+好的，这样就可以了。
+OK that would work.
+
+59
+00:04:02,620 --> 00:04:08,510
+或者你可以用一辆蒂尔达，让它变得又好又简单，只需用CD，然后用阿提拉。
+Or you could have used a Tilda to make it nice and easy just use CD and then Attilla.
+
+60
+00:04:08,590 --> 00:04:12,040
+现在我有点作弊，因为你可以用另一种方式来做这件事。
+Now I kind of cheated a little bit because there's another way that you could have done it.
+
+61
+00:04:12,160 --> 00:04:14,710
+从现在开始，这可能就是你做这件事的方式。
+And this is the way you probably do it from now on.
+
+62
+00:04:15,100 --> 00:04:16,510
+但我以前没给你看过这个。
+But I haven't shown you this before.
+
+63
+00:04:16,690 --> 00:04:22,780
+现在，默认情况下，如果您不给我任何输入，cd命令会将您带到您的主文件夹。
+Now by default if you don't give me any input the CD command will take you to your home folder.
+
+64
+00:04:22,780 --> 00:04:28,570
+因此，如果我们只需从头开始输入cd，输入cd并按Enter键，您只需查看shell即可看到
+So if we just type CD like from scratch type CD and press ENTER you can see by just looking at the shell
+
+65
+00:04:28,570 --> 00:04:33,190
+提示我们已返回主目录，我们可以使用Peter Beattie进行确认。
+prompt that we've ended up back in our home directory we can use Peter Beattie to confirm that.
+
+66
+00:04:33,220 --> 00:04:39,520
+我的意思是，它告诉我们，我们回到了主目录，无论我之前在哪里，这都会起作用
+I mean it tells us that we are back in our home directory and that will work no matter where I was previously
+
+67
+00:04:39,730 --> 00:04:44,220
+在文件系统上，我可能在文件系统的任何位置，所有的DO都是键入cd或按Enter键
+on the file system I could have been anywhere on the file system all of the do is type CD or press Enter
+
+68
+00:04:44,490 --> 00:04:47,230
+然后我将返回主目录。
+then I will end up back in the home directory.
+
+69
+00:04:47,270 --> 00:04:48,140
+很酷，对吧。
+Pretty cool right.
+
+70
+00:04:48,420 --> 00:04:49,030
+好的很好。
+Okay great.
+
+71
+00:04:49,030 --> 00:04:54,340
+现在我们回到主文件夹，我想向您展示ls命令的一个非常有用的选项。
+So now we're back in the home folder I want to show you a very useful option for the ls command.
+
+72
+00:04:54,360 --> 00:04:56,900
+这有点像戴着X光眼镜。
+It's kind of like wearing X-ray glasses.
+
+73
+00:04:57,010 --> 00:05:00,860
+这是一个A选项，这个选项对所有人来说都是短的。
+And it's the A option that the option is short for all.
+
+74
+00:05:00,970 --> 00:05:05,760
+它还允许您查看目录中的所有文件，甚至包括隐藏的文件。
+And it allows you to see all of the files in a directory even the hidden files.
+
+75
+00:05:05,770 --> 00:05:08,950
+所以如果我输入ls并给它一个选项OK。
+So if I type ls and give it the option OK.
+
+76
+00:05:09,000 --> 00:05:13,620
+如果我按Enter键，您会注意到我们在这里看到了很多东西。
+If I press Enter you'll notice that we see a whole lot of stuff in here.
+
+77
+00:05:13,620 --> 00:05:14,250
+把它打印出来。
+Print it out.
+
+78
+00:05:14,290 --> 00:05:19,240
+好的，如果我清除顶部的屏幕，只显示最后一个选项，然后显示带有A选项的ls
+OK if I clear the screen on top you just the last option and then show you the ls with the A option
+
+79
+00:05:19,250 --> 00:05:22,740
+你会看到我们用A选项得到了更多的东西。
+you'll see we get a lot more stuff with the A option.
+
+80
+00:05:22,870 --> 00:05:28,830
+现在，您会注意到很多这样的文件都有以点开头的秋季名称，这意味着
+Now a lot of these files you'll notice have fall names beginning with dots and that means that there
+
+81
+00:05:28,840 --> 00:05:31,760
+隐藏文件，甚至隐藏目录。
+hidden files or even hidden directories.
+
+82
+00:05:31,840 --> 00:05:32,300
+好的。
+OK.
+
+83
+00:05:32,410 --> 00:05:37,690
+现在，如果我们在图形编辑器中查看，默认情况下可能无法实际看到它们，但是如果我们
+Now if we look in the graphical editor we may not be able to actually see them by default but if we
+
+84
+00:05:37,690 --> 00:05:42,780
+像我们在上几个视频中所做的那样，单击此处并显示隐藏文件，我们现在也可以看到它们
+click up here like we do in the last few videos and show hidden files we can now see them as well so
+
+85
+00:05:42,790 --> 00:05:46,630
+您可以看到，我们得到的输出完全相同，这就是您显示隐藏文件的方式
+you look you can see that we're getting exactly the same output so that's how you show hidden files
+
+86
+00:05:47,020 --> 00:05:51,120
+使用使用ls命令。
+using the using the the the ls command.
+
+87
+00:05:51,190 --> 00:05:51,580
+好的。
+OK.
+
+88
+00:05:51,760 --> 00:05:57,450
+您可能还注意到，我们在这里有我们在几个视频之前制作的bash别名文件。
+And you may also notice in here that we've got our bash alias's file that we made a few videos ago.
+
+89
+00:05:57,460 --> 00:06:04,900
+我之所以提到这一点，是因为每个文件夹中有两个非常重要的隐藏文件夹。
+Now the reason I mention this is because these two very important hidden folders inside each folder.
+
+90
+00:06:05,230 --> 00:06:08,850
+它们是点文件夹和双点文件夹。
+They are the dot and the double dot folders.
+
+91
+00:06:08,890 --> 00:06:09,100
+好的。
+OK.
+
+92
+00:06:09,100 --> 00:06:14,050
+现在，这些快捷方式可以让您更轻松地移动或引用整个文件系统上的内容
+Now these are shortcuts to allow you to move around easier or refer to stuff on your file system a whole
+
+93
+00:06:14,050 --> 00:06:14,600
+容易多了。
+lot easier.
+
+94
+00:06:14,670 --> 00:06:18,960
+doc文件夹只是指当前目录。
+The doc folder simply refers to the current directory.
+
+95
+00:06:19,090 --> 00:06:19,430
+好的。
+OK.
+
+96
+00:06:19,540 --> 00:06:24,430
+例如，如果我转到Desktop文件夹，OK，我们就可以打印了。
+So for example if I go to the Desktop folder OK then we can print.
+
+97
+00:06:24,670 --> 00:06:29,500
+很抱歉，如果我可以打印工作目录，我们可以看到我们在桌面上
+My apologies if I can do print working directory and we can see that we have that we are in the desktop
+
+98
+00:06:29,770 --> 00:06:34,050
+如果我们的列表包含内容，那么我的桌面上应该不会有任何内容。
+and if our list its contents this shouldn't really be anything on my desktop.
+
+99
+00:06:34,120 --> 00:06:40,270
+但始终存在此数据文件夹和双点文件夹，它们仅在使用ls和选项时才可见
+But there always is this data and double dot folders which are only visible using the ls with the option
+
+100
+00:06:40,270 --> 00:06:41,260
+正常地址的地址。
+of just the normal address.
+
+101
+00:06:41,290 --> 00:06:43,260
+决斗选手DASH 8不会出现。
+It doesn't show up for duellists dash 8.
+
+102
+00:06:43,360 --> 00:06:43,930
+他们出现了。
+They show up.
+
+103
+00:06:44,050 --> 00:06:44,590
+好的。
+OK.
+
+104
+00:06:44,800 --> 00:06:48,250
+现在我们在这里有圆点和双点文件夹。
+Now in here we've got the dot and the double dot folders.
+
+105
+00:06:48,250 --> 00:06:57,190
+如果我尝试对doc文件夹执行cd操作，Bash基本上会停留在shell将停留的位置
+If I try to do cd to the doc folder Bash is basically going to stay where is the shell is going to stay
+
+106
+00:06:57,190 --> 00:06:59,480
+如果我这么做的话具体在哪里。
+exactly where is if I do that.
+
+107
+00:07:00,280 --> 00:07:05,080
+您可以看到，我们仍然在桌面上查看shell提示符，因为DOT文件夹引用了
+You can see that we're still in the desktop looking at the shell prompt because the DOT folder refers
+
+108
+00:07:05,080 --> 00:07:07,690
+到我们当前所在的文件夹。
+to the current folder that we're in.
+
+109
+00:07:07,780 --> 00:07:08,210
+好的。
+OK.
+
+110
+00:07:08,320 --> 00:07:10,600
+这只是这个文件夹的一种说法。
+It's just a way of saying this folder.
+
+111
+00:07:10,960 --> 00:07:11,480
+好的。
+OK.
+
+112
+00:07:11,680 --> 00:07:13,880
+现在如果我去打双打怎么样？
+Now what if I went to the doubleback.
+
+113
+00:07:13,930 --> 00:07:16,230
+如果我做CD翻倍怎么样？好的。
+What if I do cd doubled up OK.
+
+114
+00:07:17,110 --> 00:07:22,930
+您注意到我们确实进行了更改，并且实际上回到了我们的主文件夹Double Up文件夹中
+You noticed that we did actually change and were in fact back in our home folder the doubled up folder
+
+115
+00:07:23,140 --> 00:07:28,610
+指的是父文件夹或我们当前所在的上面的文件夹。
+means the parent folder or the folder above where we currently are.
+
+116
+00:07:28,750 --> 00:07:29,170
+好的。
+OK.
+
+117
+00:07:29,290 --> 00:07:34,260
+如果我回到桌面，你可以看到，如果我按下CD，我们就会有翻倍的东西，翻倍
+So if I go back to the desktop you can see that we've got the doubled up for if I press CD double that
+
+118
+00:07:34,360 --> 00:07:36,280
+我们又回到了一个文件夹里。
+we've gone back up a folder.
+
+119
+00:07:36,280 --> 00:07:40,620
+这会将我们带到主目录，以防我们回到主目录，让我们清除屏幕。
+Which brings us into the home directory in case we're back in a home directory let's clear the screen.
+
+120
+00:07:40,870 --> 00:07:42,240
+如果我继续走下去。
+What if I kept going.
+
+121
+00:07:42,420 --> 00:07:50,830
+好的，如果我看到点，我现在在实际的主文件夹中，它不是我的主文件夹，而是
+OK if I go see the dot dot I'm now in the actual home folder which is not my home folder but it's the
+
+122
+00:07:50,830 --> 00:07:53,170
+位于我的主文件夹上方的文件夹。
+folder above my home folder.
+
+123
+00:07:53,260 --> 00:07:54,400
+好的，我们继续走吧。
+OK let's keep going.
+
+124
+00:07:54,400 --> 00:07:55,600
+请看圆点。
+See the dot dot.
+
+125
+00:07:55,780 --> 00:08:03,630
+现在我们实际上只是在劈开中，我们在整个系统的基本目录中。
+And now we're actually just in the slash for the we're in the base directory for the whole system.
+
+126
+00:08:03,640 --> 00:08:04,180
+好的。
+OK.
+
+127
+00:08:04,390 --> 00:08:07,280
+看看还能不能再高一点，我们去C.D.点。
+See if we can go any higher we go C.D dot dot.
+
+128
+00:08:07,330 --> 00:08:13,510
+你可以看到我们不能再往上走了，因为雪泥文件夹里的灰尘是
+You can see that we can't go any higher because the dust the slush folder is the highest point on the
+
+129
+00:08:13,510 --> 00:08:14,430
+文件系统。
+file system.
+
+130
+00:08:14,440 --> 00:08:15,020
+好的。
+OK.
+
+131
+00:08:15,280 --> 00:08:19,270
+如果我做一个基本目录中的内容，我们可以看一下周围的情况。
+And we can actually have a look around if I do an ls what's in the base directory.
+
+132
+00:08:19,770 --> 00:08:24,670
+看，这里有相当多的文件，当我们有一些文件的下一步信息时，你会看到这些文件
+See there's quite a lot of files here that you saw when we had a little bit of next mation of the file
+
+133
+00:08:24,670 --> 00:08:30,070
+系统中有bin文件夹、boot文件夹、ETSI文件夹，其中包含您的配置
+system you've got the bin folder the boot folder the folder the ETSI folder which is full of your configuration
+
+134
+00:08:30,070 --> 00:08:30,730
+文件。
+files.
+
+135
+00:08:30,730 --> 00:08:33,530
+主文件夹，这是我们刚要去取我们的家居用品的地方。
+The home folder which is where we just were to get our home stuff.
+
+136
+00:08:33,580 --> 00:08:39,060
+图书馆的媒体，也就是你拥有房间的地方，移走衣柜里的你可选的东西。
+The library's media which is where you have your room remove wardrobe's your optional stuff.
+
+137
+00:08:39,250 --> 00:08:43,030
+路由用户主文件夹等。
+The route users home folder and so on.
+
+138
+00:08:43,030 --> 00:08:49,150
+关于变量文件、临时文件、用户内容等等，我猜这些是文件夹和
+So on the variable files temp files user stuff and so on and so on I guess these are the folders and
+
+139
+00:08:49,150 --> 00:08:53,050
+不管怎么说，其中最重要的是我给你的小抄，我们谈到的那些
+the most important of these anyway are the ones that I gave you a cheat sheet where we talked about
+
+140
+00:08:53,320 --> 00:08:54,670
+文件系统。
+the file system.
+
+141
+00:08:54,790 --> 00:08:55,160
+好的。
+OK.
+
+142
+00:08:55,310 --> 00:08:56,880
+看看会发生什么。
+And see what happens.
+
+143
+00:08:56,890 --> 00:08:59,110
+这是root用户的主文件夹。
+This is the root user's home folder right.
+
+144
+00:08:59,110 --> 00:09:02,650
+这是管理员的主文件夹。
+This is the home folder for the administrator.
+
+145
+00:09:03,400 --> 00:09:05,450
+让我们试着看看如果我们试图进入它会发生什么。
+Let's try and see what happens if we try to enter it.
+
+146
+00:09:05,530 --> 00:09:12,160
+如果我们确实看到路线OK并按Enter，您可以看到我们得到的许可被拒绝。
+If we do see the route OK and press enter you can see that we get permission denied.
+
+147
+00:09:12,160 --> 00:09:17,340
+好的，这里有一些你被允许进入的文件夹和一些你不被允许进入的文件夹。
+OK so there's some folders that you were allowed into and some folders that you're not allowed into.
+
+148
+00:09:17,530 --> 00:09:22,250
+因此，我们没有足够的权限来访问root用户的主目录。
+So we don't have enough privileges to be able to access the root user's home directory.
+
+149
+00:09:22,330 --> 00:09:25,760
+嗯，试试看ETSI文件夹和配置文件怎么样？
+Well what about the ETSI folder OK along with the configuration files as try that.
+
+150
+00:09:25,800 --> 00:09:30,670
+如果我们试一试CD，看看我们怎样才能进入那张CD，让我们看看里面有什么。
+If we try CD and see how we can get into that one let's see what's in there for us.
+
+151
+00:09:30,670 --> 00:09:34,530
+告诉我们你能看到里面所有的东西，对吧。
+Ls us who you can see the whole bunch of stuff in there right.
+
+152
+00:09:34,570 --> 00:09:36,030
+你在这里放了一些文件夹。
+And you get some folders in here.
+
+153
+00:09:36,110 --> 00:09:41,040
+蓝色的或文件夹和白色的文件，有些也有不同的类型。
+The blue ones or folders and the white ones files and some of them have different types as well.
+
+154
+00:09:41,050 --> 00:09:42,430
+但你不必担心这一点。
+But you don't have to worry about that.
+
+155
+00:09:42,430 --> 00:09:48,430
+大多数情况下，你会看到蓝色和白色，蓝色的文件夹，白色的文件，你可以输入任何东西
+Mostly what you'll see are blue and white blue ones folders white one files and you can enter anything
+
+156
+00:09:48,430 --> 00:09:49,060
+你想要的东西。
+that you want in there.
+
+157
+00:09:49,060 --> 00:09:52,130
+例如，这里有一个，我们在哪里找呢。
+For example there's one here where are we looking.
+
+158
+00:09:52,150 --> 00:09:55,270
+这里有一个叫DHC Pay的，我们可以进入那个文件夹。
+There's one here called DHC pay we could go into that folder.
+
+159
+00:09:55,300 --> 00:09:57,710
+我们可以试试CD DHC页面。
+We could try CD DHC page.
+
+160
+00:09:58,120 --> 00:09:58,720
+好的。
+OK.
+
+161
+00:09:58,720 --> 00:10:00,060
+现在看看里面有什么。
+Now what's in there.
+
+162
+00:10:00,170 --> 00:10:03,340
+我们可以做l，我们可以四处看看，我们可以在那里看到其他的东西。
+We could do ls and we can have a look around we can see this other stuff in there.
+
+163
+00:10:03,340 --> 00:10:04,250
+那边还有一个。
+There's another one there.
+
+164
+00:10:04,270 --> 00:10:06,580
+De D.H.爬了上去，并到了钩天。
+De D.H. climbed and to hook day.
+
+165
+00:10:06,640 --> 00:10:12,040
+我们试着把DH客户的仪表盘和仪表盘挂钩。
+Let's try to get the D.H. client dash and dash hooks.
+
+166
+00:10:12,400 --> 00:10:16,410
+你可以看到我们在那里，那里有两个L，我们在那里看到了其他的东西。
+You can see that we're in there what's in there two Ls we see this other stuff in there.
+
+167
+00:10:16,540 --> 00:10:23,020
+这里的绿色是程序，但是您可以在这里看到我们在文件中移动的方式
+The green ones here are programs but you can see here right the way that we are moving around the file
+
+168
+00:10:23,020 --> 00:10:30,820
+系统使用CD来移动LS来查看我们周围的情况，或者使用Peter Beattie来确认确切的位置
+system using either CD to move LS to see what's around us or Peter Beattie to confirm exactly where
+
+169
+00:10:30,880 --> 00:10:31,620
+我们是。
+we are.
+
+170
+00:10:31,690 --> 00:10:37,420
+就是这样，你实际上会在整个系统中移动，而且它不会改变
+And it's this way that you will actually move around the entire system and it doesn't change no matter
+
+171
+00:10:37,420 --> 00:10:41,560
+您所在的位置只要您有权限输入这些文件夹，您只需使用以下命令即可进入这些文件夹
+where you are as long as you've got the permissions to enter those folders you can get there using just
+
+172
+00:10:41,560 --> 00:10:45,820
+cd命令，您可以使用ls命令四处查看，并且可以确认您正在使用的位置
+the cd command and you can look around using the ls command and you can confirm where you are using
+
+173
+00:10:45,820 --> 00:10:47,260
+PIDO EDI命令。
+the Pido EDI command.
+
+174
+00:10:47,260 --> 00:10:49,790
+现在我们怎么才能一直回到我们的主文件夹。
+Now how do we get all the way back to our home folder.
+
+175
+00:10:49,810 --> 00:10:55,850
+非常简单，只需按cd按Enter，我们就会回到主文件夹。
+Very easy just press CD press enter and we are back in our home folder.
+
+176
+00:10:56,020 --> 00:11:00,290
+因此，您可以在Linux文件系统中的任何位置看到您需要做的几乎任何事情
+So you can see the pretty much anything that you need to do in the Linux file system anywhere in the
+
+177
+00:11:00,400 --> 00:11:04,710
+只要您对CD拥有所需的权限，就可以移动到您想要移动到的扩展。
+expansion that you want to move to as long as you have the required permissions on the CD.
+
+178
+00:11:04,840 --> 00:11:09,750
+LS和Peter真的很有号召力，你可以去任何你想去的地方，如果你迷路了，或者穿上了Pido的鞋子
+LS And Peter really commands and you can get wherever you want and if you get lost or shoes the Pido
+
+179
+00:11:09,760 --> 00:11:11,910
+E-D命令检查你在哪里相当史诗吧。
+E-D command to check where you are pretty epic right.
+
+180
+00:11:12,130 --> 00:11:16,460
+现在我们回到了主文件夹，我想教你们最后一件事。
+So now that we're back in our home folder there's one final thing that I want to teach you.
+
+181
+00:11:16,660 --> 00:11:18,940
+这就是所谓的制表符补全。
+And that's called tab completion.
+
+182
+00:11:19,330 --> 00:11:24,190
+但是看在上帝的份上，以及我们在过去几个视频中学到的所有东西的总结，我会再来看你的
+But for goodness as well as a summary of everything we've learned in the past few videos I'll see you
+
+183
+00:11:24,520 --> 00:11:25,600
+在下一个视频中。
+in the next video.
+
