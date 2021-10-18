@@ -1,0 +1,32 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "testtour",
+  "steps": [
+    {
+      "file": "3. Mastery Level 2 Mastering The Linux Terminal/4. Understanding Command Structure.srt",
+      "description": "1",
+      "line": 30,
+      "selection": {
+        "start": {
+          "line": 30,
+          "character": 1
+        },
+        "end": {
+          "line": 31,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "3. Mastery Level 2 Mastering The Linux Terminal/4. Understanding Command Structure.srt",
+      "description": "2",
+      "line": 99
+    },
+    {
+      "file": "3. Mastery Level 2 Mastering The Linux Terminal/4. Understanding Command Structure.srt",
+      "description": "3",
+      "line": 169
+    }
+  ],
+  "ref": "main"
+}
